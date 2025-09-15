@@ -1,0 +1,26 @@
+name: dnb-briefing
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # 09:00 Europe/Prague = 07:00 UTC
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Generate briefing
+        env:
+          APPSCRIPT_WEBHOOK_URL: ${{ secrets.APPSCRIPT_WEBHOOK_URL }}
+          GOOGLE_SLIDES_PRESENTATION_ID: ${{ secrets.GOOGLE_SLIDES_PRESENTATION_ID }}
+        run: python aggregator.py
+      - name: Publish to Pages
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/index.*
+          git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "no changes"
+          git push
