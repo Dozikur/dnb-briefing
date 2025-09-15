@@ -1,5 +1,7 @@
 name: dnb-briefing
+
 on:
+
   schedule:
     - cron: "0 7 * * 1"   # 09:00 Europe/Prague = 07:00 UTC
   workflow_dispatch:
