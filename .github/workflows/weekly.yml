@@ -1,5 +1,6 @@
 name: dnb-briefing
-
+permissions:
+  contents: write
 on:
 
   schedule:
