@@ -1,0 +1,7 @@
+feedparser
+requests
+python-dateutil
+pytz
+beautifulsoup4
+markdown
+htmlmin
