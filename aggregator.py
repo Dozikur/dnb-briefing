@@ -168,9 +168,12 @@ MIN_REDDIT= 2
 def is_dnb_related(title: str, summary: str, url: str) -> bool:
     t = f"{title} {summary}".lower()
     host = urlparse(url).netloc.lower()
+    # důvěryhodné hudební domény a YouTube projdou bez dalších podmínek
     if any(host.endswith(d) for d in ALLOWLIST):
-    return True
+        return True
+    # jinak pozitivní/negativní filtr
     return any(p in t for p in POS) and not any(n in t for n in NEG)
+
 
 def is_czsk_dnb(title: str, summary: str) -> bool:
     t = f"{title} {summary}".lower()
