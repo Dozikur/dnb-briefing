@@ -21,7 +21,7 @@ def week_bounds(d):
     sun = mon + timedelta(days=6)
     return mon, sun
 
-# Jen minulý týden
+# Generujeme jen minulý týden
 PREV_MON, PREV_SUN = week_bounds(TODAY - timedelta(days=7))
 
 def within(date_dt, start_date, end_date):
@@ -68,6 +68,7 @@ def resolve_news_url(link: str) -> str:
     return link
 
 def extract_original_url(entry):
+    # z RSS položky vytáhni původní cílový odkaz, ne přesměrování z Google News
     for l in (entry.get("links") or []):
         href = l.get("href")
         if not href:
@@ -113,6 +114,7 @@ def normalize_url(u: str) -> str:
 
 # ================================ FEEDY ======================================
 def google_news_feed(site, when_days=28):
+    # svět anglicky, CZ/SK česky
     if site.endswith(".cz") or site.endswith(".sk") or site in ("rave.cz","musicserver.cz"):
         hl, gl, ceid = "cs", "CZ", "CZ:cs"
     else:
@@ -189,7 +191,7 @@ CZSK_TOKENS = [
     "dnb","drum and bass","drum’n’bass","drum n bass","drum&bass",
     "neuro","neurofunk","liquid","jump up","rollers","let it roll",
     "hospitality","cross club","roxy","perpetuum","fléda","storm club",
-    "bestiar","fabric brno"
+    "bestiar","fabric brno","ostrava","brno","praha","bratislava","košice","plzeň"
 ]
 HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
 ALLOWLIST = ("ukf.com","youtube.com","youtu.be")
@@ -207,15 +209,12 @@ REDDIT_TITLE_NEG = [
 ]
 
 def reddit_is_signal(title: str, summary: str) -> bool:
+    # zjemněná filtrace: odřízni self-promo a ID dotazy, zbytek nech projít pokud obsahuje DnB indicie
     t = f"{title} {summary}".lower()
     if any(x in t for x in REDDIT_TITLE_NEG):
         return False
-    if "?" in (title or "").lower():
-        q = (title or "").lower()
-        if any(k in q for k in ["where","how","what","best"]) and not any(k in t for k in ["discussion","thread","ama","announcement","release notes","hardware"]):
-            return False
-    allow = ["discussion","thread","ama","festival","line-up","lineup","hardware","cdj","controller","interview","review","debate","announcement","allstars","liquicity","rampage","hospitality"]
-    if any(k in t for k in allow):
+    allow_kw = ["discussion","thread","festival","line-up","lineup","hardware","cdj","controller","interview","review","debate","announcement","allstars","liquicity","rampage","hospitality","set","mix","ra.co"]
+    if any(k in t for k in allow_kw):
         return True
     return any(p in t for p in POS)
 
@@ -276,6 +275,7 @@ for handle in YOUTUBES:
             "url": url,
             "source_label": f"YouTube {handle}"
         })
+# DogsOnAcid jako „reddit“ sekce
 FEEDS.append({
     "name":"DogsOnAcidForum",
     "kind":"rss",
@@ -288,7 +288,9 @@ FEEDS.append({
 def _jsonld_blocks(html: str):
     out = []
     for m in re.finditer(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.S | re.I):
-        txt = m.group(1).strip()
+        txt = (m.group(1) or "").strip()
+        if not txt:
+            continue
         try:
             data = json.loads(txt)
             if isinstance(data, list):
@@ -358,13 +360,17 @@ def _extract_ra_event_links_from_list(html: str, base="https://ra.co"):
             href = urljoin(base, href)
         if not href.startswith("https://ra.co/events/"):
             continue
+        # konkrétní eventy mají ID v URL
         if re.search(r"/events/\d", href) or re.search(r"/events/.+/\d", href):
             urls.add(normalize_url(href))
     return list(urls)
 
-def scrape_ra_czsk_events(max_pages=25):
+def scrape_ra_czsk_events(max_pages=40):
     out = []
+    # rozšířeno: ALL i DRUMANDBASS, CZ i SK
     list_urls = [
+        "https://ra.co/events/cz/all",
+        "https://ra.co/events/sk/all",
         "https://ra.co/events/cz/all/drumandbass",
         "https://ra.co/events/sk/all/drumandbass",
     ]
@@ -380,14 +386,15 @@ def scrape_ra_czsk_events(max_pages=25):
                 item = _parse_ra_event_page(ev, ev_html)
                 if not item or not item.get("date"):
                     continue
-                if not is_czsk_dnb(item["title"], item["summary"]) and not is_dnb_related(item["title"], item["summary"], item["link"]):
+                # žánrová filtrace
+                if not (is_czsk_dnb(item["title"], item["summary"]) or is_dnb_related(item["title"], item["summary"], item["link"])):
                     continue
                 out.append(item)
     except Exception:
         pass
     return out
 
-# ============================== DJ MAG SCRAPER ===============================
+# ========================== DJ MAG SCRAPER (svět) ============================
 def scrape_djmag_news(max_articles=30):
     try:
         html = fetch("https://djmag.com/news", headers=HEADERS, timeout=20).text
@@ -453,19 +460,16 @@ def scrape_djmag_news(max_articles=30):
                     dt = None
         if not dt:
             continue
-
         NEEDLES = ("drum and bass","drum & bass","d&b","dnb","jungle")
+        def _has_needles(txt): 
+            return any(n in txt for n in NEEDLES)
         sec_meta  = s.find("meta", attrs={"property":"article:section"})
         tags_meta = [m.get("content","").lower() for m in s.find_all("meta", attrs={"property":"article:tag"})]
         keys_meta = (s.find("meta", attrs={"name":"keywords"}) or {}).get("content","").lower()
-
-        def _has_needles(txt): return any(n in txt for n in NEEDLES)
         cat_hit = _has_needles((sec_meta.get("content","").lower() if sec_meta else ""))
         tag_hit = any(_has_needles(t) for t in tags_meta) or _has_needles(keys_meta)
-
         if not (is_dnb_related(title, summary, u) or cat_hit or tag_hit):
             continue
-
         item = {"title": title, "summary": summary, "link": u, "date": dt, "source": "DJ Mag", "section": "world"}
         if within(dt, PREV_MON, PREV_SUN):
             items_prev_world.append(item)
@@ -538,12 +542,9 @@ for f in FEEDS:
         if within(it["date"], PREV_MON, PREV_SUN):
             (items_prev_czsk if sec=="czsk" else items_prev_world).append(it)
 
-# Scrapers (omezit pouze na minulý týden)
+# Scrapers: DJ Mag (svět) + RA (CZ/SK)
 scrape_djmag_news()
-_ra_items = scrape_ra_czsk_events(max_pages=30)
-for it in _ra_items:
-    if not it.get("date"):
-        continue
+for it in scrape_ra_czsk_events(max_pages=40):
     if within(it["date"], PREV_MON, PREV_SUN):
         items_prev_czsk.append(it)
 
@@ -587,44 +588,10 @@ def topup_to_min(lst, needed, extras):
             break
     return lst + add
 
-def harvest_archival(sites, days=28, start_limit=None, end_limit=None):
-    cutoff = TODAY - timedelta(days=days)
-    out = []
-    for label, domain in sites:
-        feed_url = google_news_feed(domain, when_days=days)
-        feed = fetch_feed(feed_url)
-        if not feed or not feed.entries:
-            continue
-        for e in feed.entries:
-            it = entry_to_item(e, label)
-            if not it["date"]:
-                continue
-            d = it["date"].date()
-            if d < cutoff:
-                continue
-            if start_limit and d < start_limit:
-                continue
-            if end_limit and d > end_limit:
-                continue
-            if not is_dnb_related(it["title"], it["summary"], it["link"]):
-                continue
-            it["section"] = "world"
-            it["_archival"] = True
-            out.append(it)
-    return out
-
-# Předchozí týden: sekundární + případně archiv -7..-1 dnů před PREV_MON
+# svět: když je málo, doplň sekundáry
 if len(items_prev_world) < MIN_WORLD:
     extra_prev = harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN)
     items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, extra_prev)
-    if len(items_prev_world) < MIN_WORLD:
-        arch_prev = harvest_archival(
-            PRIMARY_SITES + SECONDARY_SITES,
-            days=28,
-            start_limit=PREV_MON - timedelta(days=7),
-            end_limit=PREV_MON - timedelta(days=1),
-        )
-        items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, arch_prev)
 
 # ============================== DEDUPE / VÝSTUP ==============================
 def dedupe(lst, maxn=None):
@@ -659,8 +626,6 @@ def summarize_item(it):
 def add_ref_and_format(it):
     dstr = it["date"].strftime("%-d. %-m. %Y")
     txt = summarize_item(it)
-    if it.get("_archival"):
-        txt = f"Archivní – {txt}"
     idx = add_ref(it["link"], it["source"])
     return f"* {txt} ({dstr}) ([{it['source']}][{idx}])"
 
@@ -694,21 +659,16 @@ world_prev = pick(items_prev_world, MIN_WORLD)
 cz_prev    = pick(items_prev_czsk,  MIN_CZSK)
 rd_prev    = pick(reddit_prev,      MIN_REDDIT + 1)
 
-used_urls = {it["link"] for it in (items_prev_world + items_prev_czsk)}
-def pick_curiosity(cands):
-    KEYS = ["ai","uměl","rekord","rare","prototype","leak","patent","cdj","controller","hardware","behind the scenes","cover story","in conversation","exclusive"]
+# Kuriozita: pokud nic nevyhoví, vezmi první světovou položku
+def pick_curiosity(cands, fallback_pool):
+    KEYS = ["ai","uměl","rekord","rare","prototype","leak","patent","cdj","controller","hardware","cover story","interview","exclusive"]
     for it in cands:
-        if it["link"] in used_urls:
-            continue
         blob = (it["title"] + " " + it["summary"]).lower()
         if any(k in blob for k in KEYS):
             return it
-    for it in cands:
-        if it["link"] not in used_urls:
-            return it
-    return None
+    return fallback_pool[0] if fallback_pool else None
 
-cur_prev = pick_curiosity(items_prev_world) or pick_curiosity(items_prev_czsk)
+cur_prev = pick_curiosity(items_prev_world, items_prev_world)
 
 def build_curio(period, it):
     if not it:
