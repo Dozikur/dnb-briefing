@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os, re, sys, json, time, hashlib
+import os, re, sys, json, hashlib
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus, urlparse, parse_qs, unquote, urljoin
 import requests
@@ -12,9 +12,7 @@ from bs4 import BeautifulSoup as BS
 from html import unescape
 from markdown import markdown as md_to_html
 
-# ---------------------------------------------------------------------------
-# Čas / období
-# ---------------------------------------------------------------------------
+# ----------------------------- ČAS / OBDOBÍ ---------------------------------
 TZ = pytz.timezone("Europe/Prague")
 TODAY = datetime.now(TZ).date()
 
@@ -23,16 +21,14 @@ def week_bounds(d):
     sun = mon + timedelta(days=6)
     return mon, sun
 
-CUR_MON, CUR_SUN = week_bounds(TODAY)
+CUR_MON, CUR_SUN   = week_bounds(TODAY)
 PREV_MON, PREV_SUN = week_bounds(TODAY - timedelta(days=7))
 
-# ---------------------------------------------------------------------------
-# Pomocné
-# ---------------------------------------------------------------------------
 def within(date_dt, start_date, end_date):
     d = date_dt.astimezone(TZ).date()
     return start_date <= d <= end_date
 
+# ---------------------------- TEXT / URL UTILITY -----------------------------
 def clean_text(s, limit=400):
     if not s:
         return ""
@@ -60,7 +56,6 @@ def fetch(url, headers=None, timeout=20):
     r.raise_for_status()
     return r
 
-# --- URL normalizace a rozbalení z Google News --------------------------------
 def resolve_news_url(link: str) -> str:
     try:
         u = urlparse(link)
@@ -73,7 +68,6 @@ def resolve_news_url(link: str) -> str:
     return link
 
 def extract_original_url(entry):
-    # 1) z entry.links
     for l in (entry.get("links") or []):
         href = l.get("href")
         if not href:
@@ -84,7 +78,6 @@ def extract_original_url(entry):
                 return cand
         else:
             return href
-    # 2) z HTML summary_detail.value / summary
     html = None
     sd = entry.get("summary_detail")
     if sd and isinstance(sd, dict):
@@ -101,7 +94,6 @@ def extract_original_url(entry):
             u = resolve_news_url(m.group(0))
             if "news.google.com" not in u:
                 return u
-    # 3) fallback
     return entry.get("link")
 
 def normalize_url(u: str) -> str:
@@ -119,12 +111,9 @@ def normalize_url(u: str) -> str:
     except Exception:
         return u
 
-# ---------------------------------------------------------------------------
-# Feedy / dotazy
-# ---------------------------------------------------------------------------
+# -------------------------------- FEEDY --------------------------------------
 def google_news_feed(site, when_days=28):
-    # svět: en-US; CZ/SK domény: cs-CZ
-    if site.endswith(".cz") or site.endswith(".sk") or site in ("rave.cz", "musicserver.cz"):
+    if site.endswith(".cz") or site.endswith(".sk") or site in ("rave.cz","musicserver.cz"):
         hl, gl, ceid = "cs", "CZ", "CZ:cs"
     else:
         hl, gl, ceid = "en-US", "US", "US:en"
@@ -161,9 +150,7 @@ def youtube_rss_from_handle(handle):
 def xenforo_forum_index_rss(base):
     return base.rstrip("/") + "/forums/index.rss"
 
-# ---------------------------------------------------------------------------
-# Konfigurace a heuristiky
-# ---------------------------------------------------------------------------
+# -------------------------- KONFIGURACE / HEURISTIKY -------------------------
 PRIMARY_SITES = [
     ("Mixmag", "mixmag.net"),
     ("Resident Advisor", "ra.co"),
@@ -172,10 +159,10 @@ PRIMARY_SITES = [
     ("Musicserver.cz", "musicserver.cz"),
     ("Rave.cz", "rave.cz"),
     ("PM Studio", "pmstudio.com"),
-    ("DogsOnAcid", "dogsonacid.com"),
+    # DogsOnAcid vyřazen z primárních (jde do reddit sekce níže)
 ]
-REDDITS = [("r/DnB", "DnB"), ("r/LetItRollFestival", "LetItRollFestival")]
-YOUTUBES = ["@Liquicity", "@dnballstars", "@WeAreRampageEvents", "@DJMag", "@UKFDrumandBass"]
+REDDITS  = [("r/DnB","DnB"), ("r/LetItRollFestival","LetItRollFestival")]
+YOUTUBES = ["@Liquicity", "@dnballstars", "@WeAreRampageEvents", "@UKFDrumandBass"]
 
 SECONDARY_SITES = [
     ("EDM.com", "edm.com"),
@@ -195,6 +182,10 @@ NEG = [
     "techno","tech house","house","trance","edm pop","electro house",
     "hardstyle","psytrance","deep house","progressive house","hard techno",
 ]
+GEAR = [
+    "cdj","xdj","turntable","plx","mixer","controller","rekordbox","serato",
+    "traktor","alphatheta","pioneer dj","dj controller","mk2","mk3"
+]
 CZSK_TOKENS = [
     "dnb","drum and bass","drum’n’bass","drum n bass","drum&bass",
     "neuro","neurofunk","liquid","jump up","rollers","let it roll",
@@ -206,25 +197,26 @@ HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
 # auto-pass jen pro skutečné DnB kanály
 ALLOWLIST = ("ukf.com","youtube.com","youtu.be")
 
-MIN_WORLD = 5
-MIN_CZSK = 2
+MIN_WORLD  = 5
+MIN_CZSK   = 2
 MIN_REDDIT = 2
 
 REDDIT_TITLE_NEG = [
     "track id","id?","what is this track","free download","promo",
-    "my mix","mixcloud","out now","mashup","remix","soundcloud","spotify","bandcamp"
+    "my mix","my track","my tune","mixcloud","out now","mashup","remix",
+    "soundcloud","spotify","bandcamp","first dnb song","feedback","wip","demo",
+    "check out","rate my"
 ]
+
 def reddit_is_signal(title: str, summary: str) -> bool:
     t = f"{title} {summary}".lower()
     if any(x in t for x in REDDIT_TITLE_NEG):
         return False
-    # potlač čisté "Artist - Track" bez kontextu
     if " - " in (title or "") and not any(k in t for k in [
         "discussion","thread","ama","festival","line-up","lineup",
         "hardware","cdj","setup","review","interview","debate","question","help"
     ]):
         return False
-    # musí být DnB signál
     return any(p in t for p in POS)
 
 def is_dnb_related(title: str, summary: str, url: str) -> bool:
@@ -232,9 +224,9 @@ def is_dnb_related(title: str, summary: str, url: str) -> bool:
     host = urlparse(url).netloc.lower()
     if any(host == d or host.endswith("." + d) for d in ALLOWLIST):
         return True
-    if any(p in t for p in POS) and not any(n in t for n in NEG):
+    if any(host.endswith(d) or host == d for d in ("ra.co","mixmag.net","djmag.com")) and any(g in t for g in GEAR):
         return True
-    return False
+    return any(p in t for p in POS) and not any(n in t for n in NEG)
 
 def is_czsk_dnb(title: str, summary: str) -> bool:
     t = f"{title} {summary}".lower()
@@ -249,9 +241,7 @@ def tags_hit(entry):
     except Exception:
         return False
 
-# ---------------------------------------------------------------------------
-# Build seznam feedů
-# ---------------------------------------------------------------------------
+# ------------------------------- FEED SEZNAM ---------------------------------
 FEEDS = []
 for name, domain in PRIMARY_SITES:
     FEEDS.append({
@@ -262,11 +252,11 @@ for name, domain in PRIMARY_SITES:
         "source_label": name
     })
 FEEDS.append({
-    "name": "Rave.cz",
-    "kind": "rss",
-    "section": "czsk",
-    "url": "https://www.rave.cz/feed/",
-    "source_label": "RAVE.cz"
+    "name":"Rave.cz",
+    "kind":"rss",
+    "section":"czsk",
+    "url":"https://www.rave.cz/feed/",
+    "source_label":"RAVE.cz"
 })
 for label, sub in REDDITS:
     FEEDS.append({
@@ -286,18 +276,15 @@ for handle in YOUTUBES:
             "url": url,
             "source_label": f"YouTube {handle}"
         })
-# DogsOnAcid jako "reddit" (diskusní obsah)
 FEEDS.append({
-    "name": "DogsOnAcidForum",
-    "kind": "rss",
-    "section": "reddit",
+    "name":"DogsOnAcidForum",
+    "kind":"rss",
+    "section":"reddit",
     "url": xenforo_forum_index_rss("https://www.dogsonacid.com"),
-    "source_label": "DogsOnAcid Forum"
+    "source_label":"DogsOnAcid Forum"
 })
 
-# ---------------------------------------------------------------------------
-# RA Events scraping (CZ/SK)
-# ---------------------------------------------------------------------------
+# --------------------------- RA EVENTS SCRAPER (CZ/SK) -----------------------
 def _jsonld_blocks(html: str):
     out = []
     for m in re.finditer(r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>', html, re.S | re.I):
@@ -376,8 +363,6 @@ def _extract_ra_event_links_from_list(html: str, base="https://ra.co"):
     soup = BS(html, "html.parser")
     for a in soup.select('a[href*="/events/"]'):
         href = a.get("href") or ""
-        if not href:
-            continue
         if href.startswith("/"):
             href = urljoin(base, href)
         if not href.startswith("https://ra.co/events/"):
@@ -411,9 +396,7 @@ def scrape_ra_czsk_events(max_pages=25):
         pass
     return out
 
-# ---------------------------------------------------------------------------
-# DJ Mag scraper (News)
-# ---------------------------------------------------------------------------
+# ------------------------------- DJ MAG SCRAPER ------------------------------
 def scrape_djmag_news(max_articles=30):
     try:
         html = fetch("https://djmag.com/news", headers=HEADERS, timeout=20).text
@@ -430,13 +413,11 @@ def scrape_djmag_news(max_articles=30):
         if not href.startswith("https://djmag.com/news/"):
             continue
         raw_links.append(normalize_url(href))
-    seen = set()
-    urls = []
+    seen, urls = set(), []
     for u in raw_links:
         if u in seen:
             continue
-        seen.add(u)
-        urls.append(u)
+        seen.add(u); urls.append(u)
     for u in urls[:max_articles]:
         try:
             art = fetch(u, headers=HEADERS, timeout=20).text
@@ -469,8 +450,7 @@ def scrape_djmag_news(max_articles=30):
                         for obj in data:
                             if isinstance(obj, dict) and "datePublished" in obj:
                                 dt = dtparse(obj["datePublished"]).astimezone(TZ); break
-                        if dt:
-                            break
+                        if dt: break
                 except Exception:
                     pass
         if not dt:
@@ -483,8 +463,7 @@ def scrape_djmag_news(max_articles=30):
         if not dt:
             continue
 
-        # DnB gate (žádný auto-pass přes ALLOWLIST)
-        sec_meta = s.find("meta", attrs={"property": "article:section"})
+        sec_meta  = s.find("meta", attrs={"property":"article:section"})
         tags_meta = [m.get("content","").lower() for m in s.find_all("meta", attrs={"property":"article:tag"})]
         keys_meta = (s.find("meta", attrs={"name":"keywords"}) or {}).get("content","").lower()
         cat_hit = "drum" in (sec_meta.get("content","").lower() if sec_meta else "")
@@ -498,26 +477,21 @@ def scrape_djmag_news(max_articles=30):
         elif within(dt, CUR_MON, CUR_SUN):
             items_cur_world.append(item)
 
-# ---------------------------------------------------------------------------
-# Zpracování položek
-# ---------------------------------------------------------------------------
+# ------------------------------ ZPRACOVÁNÍ RSS ------------------------------
 def classify_section(entry, src_label, link):
     host = re.sub(r"^www\.", "", (re.findall(r"https?://([^/]+)", link) or [""])[0])
     tld = host.split(".")[-1] if host else ""
-    if tld in ("cz", "sk") or "rave.cz" in host or "musicserver.cz" in host:
+    if tld in ("cz","sk") or "rave.cz" in host or "musicserver.cz" in host:
         return "czsk"
     return "world"
 
 def entry_to_item(entry, source_label):
     raw_link = entry.get("link") or ""
     orig = extract_original_url(entry)
-    if orig:
-        link = normalize_url(orig)
-    else:
-        link = normalize_url(resolve_news_url(raw_link))
+    link = normalize_url(orig if orig else resolve_news_url(raw_link))
     title = clean_text(entry.get("title") or "")
-    desc = clean_text(entry.get("summary") or entry.get("description") or "")
-    dt = get_best_date(entry)
+    desc  = clean_text(entry.get("summary") or entry.get("description") or "")
+    dt    = get_best_date(entry)
     return {"title": title, "summary": desc, "link": link, "date": dt, "source": source_label}
 
 def fetch_feed(url):
@@ -529,21 +503,6 @@ def fetch_feed(url):
             return feedparser.parse(url)
         except Exception:
             return None
-
-def summarize_item(it):
-    base = it["title"]
-    if it["summary"] and it["summary"][:len(base)].lower() != base.lower():
-        text = f"{base} — {it['summary']}"
-    else:
-        text = base
-    sents = re.split(r"(?<=[.!?])\s+", text)
-    if len(sents) >= 2:
-        text = " ".join(sents[:2])
-    return text
-
-def uniq_key(it):
-    raw = (it["title"] or "") + (it["link"] or "")
-    return hashlib.sha1(raw.encode("utf-8", errors="ignore")).hexdigest()[:16]
 
 items_prev_world, items_cur_world = [], []
 items_prev_czsk, items_cur_czsk = [], []
@@ -558,18 +517,15 @@ def add_ref(url, label):
     all_refs.append((label, url))
     return idx
 
-# 1) Sběr RSS
 for f in FEEDS:
     feed = fetch_feed(f["url"])
     if not feed or not feed.entries:
         continue
-
     for e in feed.entries:
         it = entry_to_item(e, f["source_label"])
         if not it["date"]:
             continue
 
-        # Reddit / diskusní zdroje
         if f["section"] == "reddit":
             if not reddit_is_signal(it["title"], it["summary"]):
                 continue
@@ -579,7 +535,6 @@ for f in FEEDS:
                 reddit_cur.append(it)
             continue
 
-        # Klasifikace CZ/SK vs. svět
         sec = classify_section(e, f["source_label"], it["link"])
         it["section"] = sec
 
@@ -591,14 +546,12 @@ for f in FEEDS:
                 continue
 
         if within(it["date"], PREV_MON, PREV_SUN):
-            (items_prev_czsk if sec == "czsk" else items_prev_world).append(it)
+            (items_prev_czsk if sec=="czsk" else items_prev_world).append(it)
         elif within(it["date"], CUR_MON, CUR_SUN):
-            (items_cur_czsk if sec == "czsk" else items_cur_world).append(it)
+            (items_cur_czsk if sec=="czsk" else items_cur_world).append(it)
 
-# 2) Scrapery navíc
+# Scraper doplňky
 scrape_djmag_news()
-
-# 3) RA CZ/SK eventy → doplň „ČR / SK“ podle data konání
 _ra_items = scrape_ra_czsk_events(max_pages=30)
 for it in _ra_items:
     if not it.get("date"):
@@ -608,9 +561,11 @@ for it in _ra_items:
     elif within(it["date"], CUR_MON, CUR_SUN):
         items_cur_czsk.append(it)
 
-# ---------------------------------------------------------------------------
-# Fallbacky
-# ---------------------------------------------------------------------------
+# ------------------------------ FALLBACKY ------------------------------------
+def uniq_key(it):
+    raw = (it["title"] or "") + (it["link"] or "")
+    return hashlib.sha1(raw.encode("utf-8", errors="ignore")).hexdigest()[:16]
+
 def harvest_sites(sites, start_date, end_date):
     out = []
     for label, domain in sites:
@@ -647,7 +602,6 @@ def topup_to_min(lst, needed, extras):
     return lst + add
 
 def harvest_archival(sites, days=28, end_limit=None):
-    # Vrátí kandidáty z posledních N dní, ne novější než end_limit (pokud je).
     cutoff = TODAY - timedelta(days=days)
     out = []
     for label, domain in sites:
@@ -685,17 +639,14 @@ if len(items_cur_world) < MIN_WORLD:
         arch_cur = harvest_archival(PRIMARY_SITES + SECONDARY_SITES, days=28, end_limit=CUR_SUN)
         items_cur_world = topup_to_min(items_cur_world, MIN_WORLD, arch_cur)
 
-# ---------------------------------------------------------------------------
-# Deduplikace
-# ---------------------------------------------------------------------------
+# ------------------------------- DEDUP / VÝSTUP ------------------------------
 def dedupe(lst, maxn=None):
     seen, out = set(), []
     for it in sorted(lst, key=lambda x: x["date"], reverse=True):
         k = uniq_key(it)
         if k in seen:
             continue
-        seen.add(k)
-        out.append(it)
+        seen.add(k); out.append(it)
         if maxn and len(out) >= maxn:
             break
     return out
@@ -707,27 +658,47 @@ items_cur_czsk   = dedupe(items_cur_czsk,   maxn=10)
 reddit_prev      = dedupe(reddit_prev,      maxn=8)
 reddit_cur       = dedupe(reddit_cur,       maxn=8)
 
-# ---------------------------------------------------------------------------
-# Výstup
-# ---------------------------------------------------------------------------
 def pick(items, need):
     return items[:need] if len(items) >= need else items
 
-def format_item(it):
+def summarize_item(it):
+    base = it["title"]
+    if it["summary"] and it["summary"][:len(base)].lower() != base.lower():
+        text = f"{base} — {it['summary']}"
+    else:
+        text = base
+    sents = re.split(r"(?<=[.!?])\s+", text)
+    if len(sents) >= 2:
+        text = " ".join(sents[:2])
+    return text
+
+def add_ref_and_format(it):
     dstr = it["date"].strftime("%-d. %-m. %Y")
     txt = summarize_item(it)
     if it.get("_archival"):
         txt = f"Archivní – {txt}"
-    ref_idx = add_ref(it["link"], it["source"])
-    label = f"[{it['source']}][{ref_idx}]"
-    return f"* {txt} ({dstr}) ({label})"
+    idx = add_ref(it["link"], it["source"])
+    return f"* {txt} ({dstr}) ([{it['source']}][{idx}])"
 
 def build_section(header, period, items, min_needed):
     if len(items) < min_needed:
         return f"## {header} ({period})\n\n* Žádné zásadní novinky.\n"
     lines = [f"## {header} ({period})\n"]
     for it in items:
-        lines.append(format_item(it))
+        lines.append(add_ref_and_format(it))
+    return "\n".join(lines) + "\n"
+
+def build_reddit_section(period, lst):
+    if len(lst) < MIN_REDDIT:
+        return f"## Reddit vlákna ({period})\n\n* Žádné zásadní novinky.\n"
+    lines = [f"## Reddit vlákna ({period})\n"]
+    for it in lst:
+        t = it["title"] or "Vlákno"
+        summary = it["summary"] or ""
+        dstr = it["date"].strftime("%-d. %-m. %Y")
+        brief = clean_text(f"{t}. {summary}", 260)
+        idx = add_ref(it["link"], it["source"])
+        lines.append(f"* {brief} ({dstr}) ([{it['source']}][{idx}])")
     return "\n".join(lines) + "\n"
 
 def period_str(a, b):
@@ -743,26 +714,19 @@ cz_cur     = pick(items_cur_czsk,   MIN_CZSK)
 rd_prev    = pick(reddit_prev,      MIN_REDDIT + 1)
 rd_cur     = pick(reddit_cur,       MIN_REDDIT + 1)
 
-def build_reddit_section(period, lst):
-    if len(lst) < MIN_REDDIT:
-        return f"## Reddit vlákna ({period})\n\n* Žádné zásadní novinky.\n"
-    lines = [f"## Reddit vlákna ({period})\n"]
-    for it in lst:
-        t = it["title"] or "Vlákno"
-        summary = it["summary"] or ""
-        dstr = it["date"].strftime("%-d. %-m. %Y")
-        brief = clean_text(f"{t}. {summary}", 260)
-        idx = add_ref(it["link"], it["source"])
-        lines.append(f"* {brief} ({dstr}) ([{it['source']}][{idx}])")
-    return "\n".join(lines) + "\n"
-
+used_urls = {it["link"] for it in (items_prev_world + items_prev_czsk + items_cur_world + items_cur_czsk)}
 def pick_curiosity(cands):
-    KEYS = ["AI","uměl","study","rekord","unikátní","rare","prototype","leak","patent","CDJ","controller","hardware"]
+    KEYS = ["ai","uměl","study","rekord","unikátní","rare","prototype","leak","patent","cdj","controller","hardware"]
     for it in cands:
+        if it["link"] in used_urls:
+            continue
         blob = (it["title"] + " " + it["summary"]).lower()
-        if any(k.lower() in blob for k in KEYS):
+        if any(k in blob for k in KEYS):
             return it
-    return cands[0] if cands else None
+    for it in cands:
+        if it["link"] not in used_urls:
+            return it
+    return None
 
 cur_prev = pick_curiosity(items_prev_world) or pick_curiosity(items_prev_czsk)
 cur_cur  = pick_curiosity(items_cur_world)  or pick_curiosity(items_cur_czsk)
@@ -786,7 +750,7 @@ md_parts.append(build_curio(PER_PREV, cur_prev))
 md_parts.append(build_curio(PER_CUR,  cur_cur))
 
 refs_lines = ["\n## Zdroje\n"]
-for i, (label, url) in enumerate(all_refs, start=1):
+for i,(label,url) in enumerate(all_refs, start=1):
     refs_lines.append(f"[{i}]: {url}")
 md_parts.append("\n".join(refs_lines) + "\n")
 
@@ -825,7 +789,7 @@ print(f"Collected prev: world={len(items_prev_world)} czsk={len(items_prev_czsk)
 print(f"Collected cur : world={len(items_cur_world)} czsk={len(items_cur_czsk)} reddit={len(reddit_cur)}")
 print("OK: docs/index.md + docs/index.html")
 
-# Volitelně: Google Slides webhook
+# ----------------------- VOLITELNÝ Google Slides webhook ---------------------
 WEBHOOK = os.environ.get("APPSCRIPT_WEBHOOK_URL", "").strip()
 PRESENTATION_ID = os.environ.get("GOOGLE_SLIDES_PRESENTATION_ID", "").strip()
 if WEBHOOK and PRESENTATION_ID:
@@ -834,16 +798,16 @@ if WEBHOOK and PRESENTATION_ID:
         "period_prev": PER_PREV,
         "period_cur": PER_CUR,
         "sections": {
-            "world_prev": [format_item(it) for it in world_prev] or ["* Žádné zásadní novinky."],
-            "world_cur":  [format_item(it) for it in world_cur]  or ["* Žádné zásadní novinky."],
-            "cz_prev":    [format_item(it) for it in cz_prev]    or ["* Žádné zásadní novinky."],
-            "cz_cur":     [format_item(it) for it in cz_cur]     or ["* Žádné zásadní novinky."],
+            "world_prev": [add_ref_and_format(it) for it in world_prev] or ["* Žádné zásadní novinky."],
+            "world_cur":  [add_ref_and_format(it) for it in world_cur]  or ["* Žádné zásadní novinky."],
+            "cz_prev":    [add_ref_and_format(it) for it in cz_prev]    or ["* Žádné zásadní novinky."],
+            "cz_cur":     [add_ref_and_format(it) for it in cz_cur]     or ["* Žádné zásadní novinky."],
             "reddit_prev":[f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_prev] or ["* Žádné zásadní novinky."],
             "reddit_cur": [f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_cur] or ["* Žádné zásadní novinky."],
-            "curiosity_prev": [build_curio(PER_PREV, cur_prev).split('\n', 2)[2] if cur_prev else "* Žádné zásadní novinky."],
-            "curiosity_cur":  [build_curio(PER_CUR,  cur_cur ).split('\n', 2)[2] if cur_cur  else "* Žádné zásadní novinky."],
+            "curiosity_prev": [build_curio(PER_PREV, cur_prev).split('\n',2)[2] if cur_prev else "* Žádné zásadní novinky."],
+            "curiosity_cur":  [build_curio(PER_CUR,  cur_cur ).split('\n',2)[2] if cur_cur  else "* Žádné zásadní novinky."],
         },
-        "sources": [f"[{i}]: {u}" for i, (_, u) in enumerate(all_refs, start=1)],
+        "sources": [f"[{i}]: {u}" for i,(_,u) in enumerate(all_refs, start=1)],
         "presentationId": PRESENTATION_ID
     }
     try:
