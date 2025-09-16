@@ -1,29 +1,58 @@
 name: dnb-briefing
-permissions:
-  contents: write
-on:
 
+on:
   schedule:
     - cron: "0 7 * * 1"   # 09:00 Europe/Prague = 07:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dnb-briefing-publish
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0         # nutné pro rebase
+          persist-credentials: true
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - run: pip install -r requirements.txt
+
       - name: Generate briefing
         env:
           APPSCRIPT_WEBHOOK_URL: ${{ secrets.APPSCRIPT_WEBHOOK_URL }}
           GOOGLE_SLIDES_PRESENTATION_ID: ${{ secrets.GOOGLE_SLIDES_PRESENTATION_ID }}
         run: python aggregator.py
-      - name: Publish to Pages
+
+      - name: Commit and push (rebase-safe)
+        env:
+          BRANCH: ${{ github.ref_name }}
         run: |
+          set -e
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
+
+          # nic necommituj, pokud není změna
           git add docs/index.*
-          git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "no changes"
-          git push
+          if git diff --cached --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+
+          git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+
+          # přitáhni nové commity a zrebasuj
+          git fetch origin
+          git pull --rebase origin "${BRANCH:-main}" || git pull --rebase origin main
+
+          # push s pojistkou proti závodu
+          git push origin HEAD:"${BRANCH:-main}" || git push --force-with-lease origin HEAD:"${BRANCH:-main}"
