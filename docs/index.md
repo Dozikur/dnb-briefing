@@ -11,7 +11,7 @@
 ## Svět (15. – 21. 09. 2025)
 
 * Berlin football club renames home ground after Paul Kalkbrenner — The hometown hero DJ and producer is set to take over naming rights for Sparta Lichtenberg's stadium at the end of the month (16. 9. 2025) ([DJ Mag][6])
-* the best thing about jungle..is its old mans music now. | DOA | Drum & Bass Forum - Drum & Bass Forum — the best thing about jungle..is its old mans music now. (16. 9. 2025) ([DogsOnAcid][7])
+* Thread in which we'll chronicle why SurgeXT is the best soft synth today | DOA | Drum & Bass Forum - Drum & Bass Forum — Thread in which we'll chronicle why SurgeXT is the best soft synth today | DOA | Drum & Bass Forum Drum & Bass Forum (16. 9. 2025) ([DogsOnAcid][7])
 * Jazzy shares new track, ‘Hypnotic’: Listen — Described as "a euphoric ode to mesmerising lust" (15. 9. 2025) ([DJ Mag][8])
 * Coki shares unreleased tracks from 2003 - 2006 on Tempa: Listen — The trailblazing dubstep imprint relaunched last year (15. 9. 2025) ([DJ Mag][9])
 * Massive Attack announce São Paulo show in partnership with Indigenous communities — The artists will use the event to "support, platform & give full voice to the efforts of the Indigenous people of Brazil and the Amazon G9" (15. 9. 2025) ([DJ Mag][10])
@@ -51,7 +51,7 @@
 [4]: https://djmag.com/news/28-of-music-uploaded-deezer-fully-ai-generated-platform-reveals
 [5]: https://djmag.com/news/new-photobook-original-ravers-compiles-unseen-portraits-hacienda
 [6]: https://djmag.com/news/berlin-football-club-renames-home-ground-after-paul-kalkbrenner
-[7]: https://news.google.com/rss/articles/CBMinAFBVV95cUxNM2pLcHhRclEwNlRyX0pzTTAzWlNldURrTjFqNi1YZ2FNTUdyYi1KS0p3Z1poTGpFaHFEN3ZpYlhSYzlydHAxVXRBNkZjcElNaHd1eWlPTFZWZXNKaE9aalRVZGctM3VwYnZDbzdWdE9VZXNOZHk1aXltLVVlZl83WWdRdVo3ZDIyM0JtbXJST0g1b2trb0RNSFNUOUg?oc=5
+[7]: https://news.google.com/rss/articles/CBMitAFBVV95cUxNUHVvOEhlUlEtQUFGcFhMb2UwcHdSZW4xTFZSaUtRRkZYSE1jSnpOSE9oQkpEVmV4aVhpb0UwMU1qMUdIQUNkQkNzOGwxMjZMNWpUUjdJUDkwZVRZZmlIajlGY2JLYkQ0Y2xDYnRKeUE1ajRBejF5bV9sY0R2bThPb013UWsyM1BxS0Z3UGJOYk12bmJNOXNxRG0zN29sTHNhaTVxT2dzUWRZSnFTVGl5TG5rd2w?oc=5
 [8]: https://djmag.com/news/jazzy-shares-new-track-hypnotic-listen
 [9]: https://djmag.com/news/coki-shares-unreleased-tracks-2003-2006-tempa-listen
 [10]: https://djmag.com/news/massive-attack-announce-sao-paulo-show-partnership-indigenous-communities
