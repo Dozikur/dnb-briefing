@@ -324,8 +324,7 @@ def harvest_sites(sites, start_date, end_date):
     return out
     
     def harvest_archival(sites, days=28):
-    """Vrať kandidáty z posledních N dní bez ohledu na týdenní okna.
-       Použije se jen jako 'archivní poznámka' při nedostatku položek."""
+    # Kandidáti z posledních N dní bez ohledu na týdenní okna.
     cutoff = TODAY - timedelta(days=days)
     out = []
     for label, domain in sites:
@@ -342,8 +341,7 @@ def harvest_sites(sites, start_date, end_date):
             if not is_dnb_related(it["title"], it["summary"], it["link"]):
                 continue
             it["section"] = "world"
-            # označ 'archivní' pro pozdější formátování
-            it.setdefault("_archival", True)
+            it["_archival"] = True
             out.append(it)
     return out
 
