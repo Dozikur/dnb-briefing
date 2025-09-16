@@ -192,46 +192,46 @@ POS = [
     "liquicity","dnb allstars","rampage","darkshire","hoofbeats"
 ]
 NEG = [
-    "techno", "tech house", "house", "trance", "edm pop", "electro house",
-    "hardstyle", "psytrance", "deep house", "progressive house", "hard techno",
+    "techno","tech house","house","trance","edm pop","electro house",
+    "hardstyle","psytrance","deep house","progressive house","hard techno",
 ]
 CZSK_TOKENS = [
-    "dnb", "drum and bass", "drum’n’bass", "drum n bass", "drum&bass",
-    "neuro", "neurofunk", "liquid", "jump up", "rollers", "let it roll",
-    "hospitality", "cross club", "roxy", "perpetuum", "fléda", "storm club",
-    "bestiar", "fabric brno"
+    "dnb","drum and bass","drum’n’bass","drum n bass","drum&bass",
+    "neuro","neurofunk","liquid","jump up","rollers","let it roll",
+    "hospitality","cross club","roxy","perpetuum","fléda","storm club",
+    "bestiar","fabric brno"
 ]
 HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
-ALLOWLIST = (
-    "mixmag.net", "ra.co", "ukf.com", "djmag.com",
-    "edm.com", "dancingastronaut.com", "rollingstone.com.au", "billboard.com",
-    "youtube.com", "youtu.be", "rave.cz", "musicserver.cz", "dogsonacid.com"
-)
+
+# auto-pass jen pro skutečné DnB kanály
+ALLOWLIST = ("ukf.com","youtube.com","youtu.be")
 
 MIN_WORLD = 5
 MIN_CZSK = 2
 MIN_REDDIT = 2
 
 REDDIT_TITLE_NEG = [
-    "track id","id?","what is this track","free download","promo","my mix","mixcloud","out now"
+    "track id","id?","what is this track","free download","promo",
+    "my mix","mixcloud","out now","mashup","remix","soundcloud","spotify","bandcamp"
 ]
 def reddit_is_signal(title: str, summary: str) -> bool:
     t = f"{title} {summary}".lower()
     if any(x in t for x in REDDIT_TITLE_NEG):
         return False
-    # potlač typ "Artist - Track" bez kontextu
-    if " - " in (title or "") and not any(k in t for k in ["discussion","thread","ama","festival","line-up","hardware","cdj","setup","review","interview"]):
+    # potlač čisté "Artist - Track" bez kontextu
+    if " - " in (title or "") and not any(k in t for k in [
+        "discussion","thread","ama","festival","line-up","lineup",
+        "hardware","cdj","setup","review","interview","debate","question","help"
+    ]):
         return False
-    # aspoň nějaká DnB stopa
+    # musí být DnB signál
     return any(p in t for p in POS)
 
 def is_dnb_related(title: str, summary: str, url: str) -> bool:
     t = f"{title} {summary}".lower()
     host = urlparse(url).netloc.lower()
-    # auto-pass pouze UKF/YouTube (kanálové feedy, které už vybíráš ručně)
     if any(host == d or host.endswith("." + d) for d in ALLOWLIST):
         return True
-    # všechny ostatní musí projít přes POS/NEG
     if any(p in t for p in POS) and not any(n in t for n in NEG):
         return True
     return False
@@ -244,7 +244,7 @@ def tags_hit(entry):
     try:
         tags = entry.get("tags") or []
         tags = [(t.get("term") or "").lower() for t in tags if isinstance(t, dict)]
-        needles = ["dnb", "drum and bass", "drum&bass", "drum n bass", "drum’n’bass", "drumandbass"]
+        needles = ["dnb","drum and bass","drum&bass","drum n bass","drum’n’bass","drumandbass"]
         return any(any(n in tg for n in needles) for tg in tags)
     except Exception:
         return False
@@ -286,10 +286,11 @@ for handle in YOUTUBES:
             "url": url,
             "source_label": f"YouTube {handle}"
         })
+# DogsOnAcid jako "reddit" (diskusní obsah)
 FEEDS.append({
     "name": "DogsOnAcidForum",
     "kind": "rss",
-    "section": "world",
+    "section": "reddit",
     "url": xenforo_forum_index_rss("https://www.dogsonacid.com"),
     "source_label": "DogsOnAcid Forum"
 })
@@ -481,9 +482,17 @@ def scrape_djmag_news(max_articles=30):
                     dt = None
         if not dt:
             continue
-        item = {"title": title, "summary": summary, "link": u, "date": dt, "source": "DJ Mag", "section": "world"}
-        if not is_dnb_related(title, summary, u):
+
+        # DnB gate (žádný auto-pass přes ALLOWLIST)
+        sec_meta = s.find("meta", attrs={"property": "article:section"})
+        tags_meta = [m.get("content","").lower() for m in s.find_all("meta", attrs={"property":"article:tag"})]
+        keys_meta = (s.find("meta", attrs={"name":"keywords"}) or {}).get("content","").lower()
+        cat_hit = "drum" in (sec_meta.get("content","").lower() if sec_meta else "")
+        tag_hit = any("drum" in t or "dnb" in t or "jungle" in t for t in tags_meta) or ("drum" in keys_meta or "dnb" in keys_meta or "jungle" in keys_meta)
+        if not (is_dnb_related(title, summary, u) or cat_hit or tag_hit):
             continue
+
+        item = {"title": title, "summary": summary, "link": u, "date": dt, "source": "DJ Mag", "section": "world"}
         if within(dt, PREV_MON, PREV_SUN):
             items_prev_world.append(item)
         elif within(dt, CUR_MON, CUR_SUN):
@@ -560,7 +569,7 @@ for f in FEEDS:
         if not it["date"]:
             continue
 
-        # Reddit zvlášť
+        # Reddit / diskusní zdroje
         if f["section"] == "reddit":
             if not reddit_is_signal(it["title"], it["summary"]):
                 continue
@@ -748,7 +757,7 @@ def build_reddit_section(period, lst):
     return "\n".join(lines) + "\n"
 
 def pick_curiosity(cands):
-    KEYS = ["AI", "uměl", "study", "rekord", "unikátní", "rare", "prototype", "leak", "patent", "CDJ", "controller", "hardware"]
+    KEYS = ["AI","uměl","study","rekord","unikátní","rare","prototype","leak","patent","CDJ","controller","hardware"]
     for it in cands:
         blob = (it["title"] + " " + it["summary"]).lower()
         if any(k.lower() in blob for k in KEYS):
