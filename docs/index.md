@@ -10,7 +10,7 @@
 
 ## Svět (15. – 21. 09. 2025)
 
-* Thread in which we'll chronicle why SurgeXT is the best soft synth today | DOA | Drum & Bass Forum - Drum & Bass Forum — Thread in which we'll chronicle why SurgeXT is the best soft synth today | DOA | Drum & Bass Forum Drum & Bass Forum (16. 9. 2025) ([DogsOnAcid][6])
+* the best thing about jungle..is its old mans music now. | DOA | Drum & Bass Forum - Drum & Bass Forum — the best thing about jungle..is its old mans music now. (16. 9. 2025) ([DogsOnAcid][6])
 * In Conversation With Billain - ukf.com — In Conversation With Billain ukf.com (15. 9. 2025) ([UKF][7])
 * Archivní – Voicenote Violence - ukf.com — Voicenote Violence ukf.com (12. 9. 2025) ([UKF][3])
 * Archivní – Cover Story: Flava D - ukf.com — Cover Story: Flava D ukf.com (10. 9. 2025) ([UKF][8])
@@ -50,7 +50,7 @@
 [3]: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4ZWt1UWF1X1EyWFdiUmJvVlV3TUViaTJXTzZ1U2EtanhmRkF6UEltYm1EUVAyR2FTODYtY3JFbS1HeHJtQVFPUURpZ1dOYWlJLXNNUU93MmVJcGpyMGNETw?oc=5
 [4]: https://www.youtube.com/watch?v=eQE-7wcL6UI
 [5]: https://djmag.com/news/tim-reaper-mantra-and-decibella-announce-collaborative-fabriclive-ep-sage
-[6]: https://news.google.com/rss/articles/CBMitAFBVV95cUxNUHVvOEhlUlEtQUFGcFhMb2UwcHdSZW4xTFZSaUtRRkZYSE1jSnpOSE9oQkpEVmV4aVhpb0UwMU1qMUdIQUNkQkNzOGwxMjZMNWpUUjdJUDkwZVRZZmlIajlGY2JLYkQ0Y2xDYnRKeUE1ajRBejF5bV9sY0R2bThPb013UWsyM1BxS0Z3UGJOYk12bmJNOXNxRG0zN29sTHNhaTVxT2dzUWRZSnFTVGl5TG5rd2w?oc=5
+[6]: https://news.google.com/rss/articles/CBMinAFBVV95cUxNM2pLcHhRclEwNlRyX0pzTTAzWlNldURrTjFqNi1YZ2FNTUdyYi1KS0p3Z1poTGpFaHFEN3ZpYlhSYzlydHAxVXRBNkZjcElNaHd1eWlPTFZWZXNKaE9aalRVZGctM3VwYnZDbzdWdE9VZXNOZHk1aXltLVVlZl83WWdRdVo3ZDIyM0JtbXJST0g1b2trb0RNSFNUOUg?oc=5
 [7]: https://news.google.com/rss/articles/CBMiX0FVX3lxTE56NU5LZWFWN1RjSFFtOW50eGxzZjRJcDlaMENiRU1jckJfV2FqUThiQTFxSHY3TXpnUEQwRlhRTjRuUWNpdUJBdEJfa0FfTWY3bnhNUGtDeFRibEdmMUsw?oc=5
 [8]: https://news.google.com/rss/articles/CBMiU0FVX3lxTE50aTlVWWlKZ1l1WWNIRE9kTU92VXI2R0NNUGFNZU9yTFVwYzhmZ2dJUlBEY2pNYTBDWHZMRmJPZjV0T01rcmJ2RDV2Z2xhZVJXZUhv?oc=5
 [9]: https://news.google.com/rss/articles/CBMie0FVX3lxTE1yRDBnOGFTUDl2b2M0cDBaWm45aEpCVFBuNnltSWRMdkhwY09YQ01SRUlTSXhnTWh0VkxmcWF3cUF5Zk9JVEtCM21vQWFDUV80WjIyNUdCWEZpUXItcEdiMkR4YnNzcUM0SW9XLWZvTy1SanV2b2dTX1M0TQ?oc=5
