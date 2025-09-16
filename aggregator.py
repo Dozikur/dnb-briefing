@@ -21,7 +21,7 @@ def week_bounds(d):
     sun = mon + timedelta(days=6)
     return mon, sun
 
-CUR_MON, CUR_SUN   = week_bounds(TODAY)
+# Jen minulý týden
 PREV_MON, PREV_SUN = week_bounds(TODAY - timedelta(days=7))
 
 def within(date_dt, start_date, end_date):
@@ -44,7 +44,7 @@ def get_best_date(entry):
             except Exception:
                 pass
     for k in ("published_parsed", "updated_parsed"):
-        if k in entry and k in entry and entry[k]:
+        if k in entry and entry[k]:
             return datetime(*entry[k][:6], tzinfo=timezone.utc).astimezone(TZ)
     return None
 
@@ -68,7 +68,6 @@ def resolve_news_url(link: str) -> str:
     return link
 
 def extract_original_url(entry):
-    # 1) z <link> elementů
     for l in (entry.get("links") or []):
         href = l.get("href")
         if not href:
@@ -79,7 +78,6 @@ def extract_original_url(entry):
                 return cand
         else:
             return href
-    # 2) ze summary HTML
     html = None
     sd = entry.get("summary_detail")
     if sd and isinstance(sd, dict):
@@ -161,7 +159,6 @@ PRIMARY_SITES = [
     ("Musicserver.cz", "musicserver.cz"),
     ("Rave.cz", "rave.cz"),
     ("PM Studio", "pmstudio.com"),
-    # DogsOnAcid z primárních pryč (jde do reddit sekce níže)
 ]
 REDDITS  = [("r/DnB","DnB"), ("r/LetItRollFestival","LetItRollFestival")]
 YOUTUBES = ["@Liquicity", "@dnballstars", "@WeAreRampageEvents", "@UKFDrumandBass"]
@@ -457,15 +454,12 @@ def scrape_djmag_news(max_articles=30):
         if not dt:
             continue
 
-        # přísný žánrový test pro DJ Mag
         NEEDLES = ("drum and bass","drum & bass","d&b","dnb","jungle")
         sec_meta  = s.find("meta", attrs={"property":"article:section"})
         tags_meta = [m.get("content","").lower() for m in s.find_all("meta", attrs={"property":"article:tag"})]
         keys_meta = (s.find("meta", attrs={"name":"keywords"}) or {}).get("content","").lower()
 
-        def _has_needles(txt):
-            return any(n in txt for n in NEEDLES)
-
+        def _has_needles(txt): return any(n in txt for n in NEEDLES)
         cat_hit = _has_needles((sec_meta.get("content","").lower() if sec_meta else ""))
         tag_hit = any(_has_needles(t) for t in tags_meta) or _has_needles(keys_meta)
 
@@ -475,8 +469,6 @@ def scrape_djmag_news(max_articles=30):
         item = {"title": title, "summary": summary, "link": u, "date": dt, "source": "DJ Mag", "section": "world"}
         if within(dt, PREV_MON, PREV_SUN):
             items_prev_world.append(item)
-        elif within(dt, CUR_MON, CUR_SUN):
-            items_cur_world.append(item)
 
 # ========================== ZPRACOVÁNÍ RSS / SBĚR ===========================
 def classify_section(entry, src_label, link):
@@ -505,9 +497,8 @@ def fetch_feed(url):
         except Exception:
             return None
 
-items_prev_world, items_cur_world = [], []
-items_prev_czsk, items_cur_czsk = [], []
-reddit_prev, reddit_cur = [], []
+items_prev_world, items_prev_czsk = [], []
+reddit_prev = []
 all_refs, ref_map = [], {}
 
 def add_ref(url, label):
@@ -532,8 +523,6 @@ for f in FEEDS:
                 continue
             if within(it["date"], PREV_MON, PREV_SUN):
                 reddit_prev.append(it)
-            elif within(it["date"], CUR_MON, CUR_SUN):
-                reddit_cur.append(it)
             continue
 
         sec = classify_section(e, f["source_label"], it["link"])
@@ -548,10 +537,8 @@ for f in FEEDS:
 
         if within(it["date"], PREV_MON, PREV_SUN):
             (items_prev_czsk if sec=="czsk" else items_prev_world).append(it)
-        elif within(it["date"], CUR_MON, CUR_SUN):
-            (items_cur_czsk if sec=="czsk" else items_cur_world).append(it)
 
-# Scraper doplňky
+# Scrapers (omezit pouze na minulý týden)
 scrape_djmag_news()
 _ra_items = scrape_ra_czsk_events(max_pages=30)
 for it in _ra_items:
@@ -559,8 +546,6 @@ for it in _ra_items:
         continue
     if within(it["date"], PREV_MON, PREV_SUN):
         items_prev_czsk.append(it)
-    elif within(it["date"], CUR_MON, CUR_SUN):
-        items_cur_czsk.append(it)
 
 # =============================== FALLBACKY ===================================
 def uniq_key(it):
@@ -628,7 +613,7 @@ def harvest_archival(sites, days=28, start_limit=None, end_limit=None):
             out.append(it)
     return out
 
-# Předchozí týden: nejdřív sekundární, pak archiv jen z -7..-1 dnů před PREV_MON
+# Předchozí týden: sekundární + případně archiv -7..-1 dnů před PREV_MON
 if len(items_prev_world) < MIN_WORLD:
     extra_prev = harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN)
     items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, extra_prev)
@@ -640,11 +625,6 @@ if len(items_prev_world) < MIN_WORLD:
             end_limit=PREV_MON - timedelta(days=1),
         )
         items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, arch_prev)
-
-# Aktuální týden: žádný archiv, jen sekundární v okně týdne
-if len(items_cur_world) < MIN_WORLD:
-    extra_cur = harvest_sites(SECONDARY_SITES, CUR_MON, CUR_SUN)
-    items_cur_world = topup_to_min(items_cur_world, MIN_WORLD, extra_cur)
 
 # ============================== DEDUPE / VÝSTUP ==============================
 def dedupe(lst, maxn=None):
@@ -659,11 +639,8 @@ def dedupe(lst, maxn=None):
     return out
 
 items_prev_world = dedupe(items_prev_world, maxn=20)
-items_cur_world  = dedupe(items_cur_world,  maxn=20)
 items_prev_czsk  = dedupe(items_prev_czsk,  maxn=10)
-items_cur_czsk   = dedupe(items_cur_czsk,   maxn=10)
 reddit_prev      = dedupe(reddit_prev,      maxn=8)
-reddit_cur       = dedupe(reddit_cur,       maxn=8)
 
 def pick(items, need):
     return items[:need] if len(items) >= need else items
@@ -712,16 +689,12 @@ def period_str(a, b):
     return f"{a.strftime('%-d.')}\u2009–\u2009{b.strftime('%-d. %m. %Y')}"
 
 PER_PREV = period_str(PREV_MON, PREV_SUN)
-PER_CUR  = period_str(CUR_MON, CUR_SUN)
 
 world_prev = pick(items_prev_world, MIN_WORLD)
-world_cur  = pick(items_cur_world,  MIN_WORLD)
 cz_prev    = pick(items_prev_czsk,  MIN_CZSK)
-cz_cur     = pick(items_cur_czsk,   MIN_CZSK)
 rd_prev    = pick(reddit_prev,      MIN_REDDIT + 1)
-rd_cur     = pick(reddit_cur,       MIN_REDDIT + 1)
 
-used_urls = {it["link"] for it in (items_prev_world + items_prev_czsk + items_cur_world + items_cur_czsk)}
+used_urls = {it["link"] for it in (items_prev_world + items_prev_czsk)}
 def pick_curiosity(cands):
     KEYS = ["ai","uměl","rekord","rare","prototype","leak","patent","cdj","controller","hardware","behind the scenes","cover story","in conversation","exclusive"]
     for it in cands:
@@ -736,7 +709,6 @@ def pick_curiosity(cands):
     return None
 
 cur_prev = pick_curiosity(items_prev_world) or pick_curiosity(items_prev_czsk)
-cur_cur  = pick_curiosity(items_cur_world)  or pick_curiosity(items_cur_czsk)
 
 def build_curio(period, it):
     if not it:
@@ -749,13 +721,9 @@ def build_curio(period, it):
 md_parts = []
 md_parts.append(f"# DnB NOVINKY – {TODAY.strftime('%-d. %-m. %Y')}\n")
 md_parts.append(build_section("Svět", PER_PREV, world_prev, MIN_WORLD))
-md_parts.append(build_section("Svět", PER_CUR,  world_cur,  MIN_WORLD))
 md_parts.append(build_section("ČR / SK", PER_PREV, cz_prev, MIN_CZSK))
-md_parts.append(build_section("ČR / SK", PER_CUR,  cz_cur,  MIN_CZSK))
 md_parts.append(build_reddit_section(PER_PREV, rd_prev))
-md_parts.append(build_reddit_section(PER_CUR,  rd_cur))
 md_parts.append(build_curio(PER_PREV, cur_prev))
-md_parts.append(build_curio(PER_CUR,  cur_cur))
 
 refs_lines = ["\n## Zdroje\n"]
 for i,(label,url) in enumerate(all_refs, start=1):
@@ -792,9 +760,7 @@ html = html_template.replace("{CONTENT}", html_content)
 with open("docs/index.html", "w", encoding="utf-8") as f:
     f.write(html)
 
-print(f"FEEDS: {len(FEEDS)}")
 print(f"Collected prev: world={len(items_prev_world)} czsk={len(items_prev_czsk)} reddit={len(reddit_prev)}")
-print(f"Collected cur : world={len(items_cur_world)} czsk={len(items_cur_czsk)} reddit={len(reddit_cur)}")
 print("OK: docs/index.md + docs/index.html")
 
 # ===================== VOLITELNÝ Google Slides webhook =======================
@@ -804,16 +770,11 @@ if WEBHOOK and PRESENTATION_ID:
     payload = {
         "date": TODAY.strftime("%Y-%m-%d"),
         "period_prev": PER_PREV,
-        "period_cur": PER_CUR,
         "sections": {
             "world_prev": [add_ref_and_format(it) for it in world_prev] or ["* Žádné zásadní novinky."],
-            "world_cur":  [add_ref_and_format(it) for it in world_cur]  or ["* Žádné zásadní novinky."],
             "cz_prev":    [add_ref_and_format(it) for it in cz_prev]    or ["* Žádné zásadní novinky."],
-            "cz_cur":     [add_ref_and_format(it) for it in cz_cur]     or ["* Žádné zásadní novinky."],
             "reddit_prev":[f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_prev] or ["* Žádné zásadní novinky."],
-            "reddit_cur": [f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_cur] or ["* Žádné zásadní novinky."],
             "curiosity_prev": [build_curio(PER_PREV, cur_prev).split('\n',2)[2] if cur_prev else "* Žádné zásadní novinky."],
-            "curiosity_cur":  [build_curio(PER_CUR,  cur_cur ).split('\n',2)[2] if cur_cur  else "* Žádné zásadní novinky."],
         },
         "sources": [f"[{i}]: {u}" for i,(_,u) in enumerate(all_refs, start=1)],
         "presentationId": PRESENTATION_ID
