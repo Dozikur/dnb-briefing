@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os, re, sys, json, time, hashlib
 from datetime import datetime, timedelta, timezone
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urlparse, parse_qs, unquote
 import requests
 import feedparser
 from dateutil import tz
@@ -60,6 +60,39 @@ def fetch(url, headers=None, timeout=20):
 # ---------------------------------------------------------------------------
 # Dotazy / Feedy
 # ---------------------------------------------------------------------------
+def resolve_news_url(link: str) -> str:
+    # vrátí původní URL z Google News redirectu, jinak beze změn
+    try:
+        u = urlparse(link)
+        if u.netloc.endswith("news.google.com"):
+            qs = parse_qs(u.query)
+            if "url" in qs and qs["url"]:
+                return unquote(qs["url"][0])
+    except Exception:
+        pass
+    return link
+
+def normalize_url(u: str) -> str:
+    # odstraň UTM a fragment
+    try:
+        p = urlparse(u)
+        if not p.scheme or not p.netloc:
+            return u
+        qs = parse_qs(p.query)
+        qs = {k: v for k, v in qs.items() if not k.lower().startswith("utm_")}
+        qstr = "&".join(f"{k}={quote_plus(v[0])}" for k, v in qs.items() if v)
+        base = f"{p.scheme}://{p.netloc}{p.path}"
+        return f"{base}?{qstr}" if qstr else base
+    except Exception:
+        return u
+def entry_to_item(entry, source_label):
+    raw_link = entry.get("link") or ""
+    link = normalize_url(resolve_news_url(raw_link))
+    title = clean_text(entry.get("title") or "")
+    desc = clean_text(entry.get("summary") or entry.get("description") or "")
+    dt = get_best_date(entry)
+    return {"title": title, "summary": desc, "link": link, "date": dt, "source": source_label}
+
 def google_news_feed(site, when_days=14, lang="cs", region="CZ"):
     # Pouze site:, filtr až heuristikou
     query = f"site:{site} when:{when_days}d"
@@ -211,17 +244,12 @@ def classify_section(entry, src_label, link):
     return "world"
 
 def entry_to_item(entry, source_label):
-    link = entry.get("link") or ""
+    raw_link = entry.get("link") or ""
+    link = normalize_url(resolve_news_url(raw_link))
     title = clean_text(entry.get("title") or "")
     desc = clean_text(entry.get("summary") or entry.get("description") or "")
     dt = get_best_date(entry)
-    return {
-        "title": title,
-        "summary": desc,
-        "link": link,
-        "date": dt,
-        "source": source_label
-    }
+    return {"title": title, "summary": desc, "link": link, "date": dt, "source": source_label}
 
 def fetch_feed(url):
     try:
