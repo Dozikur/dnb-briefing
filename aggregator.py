@@ -306,25 +306,44 @@ for f in FEEDS:
         elif within(it["date"], CUR_MON, CUR_SUN):
             (items_cur_czsk if sec=="czsk" else items_cur_world).append(it)
 
-# Fallback sekundárních webů
+# Fallback: sekundární zdroje, pokud svět nedosáhl minima
 def harvest_sites(sites, start_date, end_date):
     out = []
     for label, domain in sites:
         feed_url = google_news_feed(domain, when_days=28)
         feed = fetch_feed(feed_url)
-        if not feed or not feed.entries: 
+        if not feed or not feed.entries:
             continue
         for e in feed.entries:
             it = entry_to_item(e, label)
-            if not it["date"]: continue
-            if not within(it["date"], start_date, end_date): continue
-            if not is_dnb_related(it["title"], it["summary"], it["link"]): continue
+            if not it["date"]:
+                continue
+            if not within(it["date"], start_date, end_date):
+                continue
+            if not is_dnb_related(it["title"], it["summary"], it["link"]):
+                continue
             it["section"] = "world"
             out.append(it)
     return out
-    
-    def harvest_archival(sites, days=28):
-    # Kandidáti z posledních N dní bez ohledu na týdenní okna.
+
+def topup_to_min(lst, needed, extras):
+    if len(lst) >= needed:
+        return lst
+    room = needed - len(lst)
+    seen = {uniq_key(x) for x in lst}
+    add = []
+    for it in sorted(extras, key=lambda x: x["date"], reverse=True):
+        k = uniq_key(it)
+        if k in seen:
+            continue
+        seen.add(k)
+        add.append(it)
+        if len(add) >= room:
+            break
+    return lst + add
+
+def harvest_archival(sites, days=28):
+    # Kandidáti z posledních N dní bez ohledu na týdenní okna (pro „Archivní – …“ doplnění).
     cutoff = TODAY - timedelta(days=days)
     out = []
     for label, domain in sites:
@@ -345,31 +364,20 @@ def harvest_sites(sites, start_date, end_date):
             out.append(it)
     return out
 
-def topup_to_min(lst, needed, extras):
-    if len(lst) >= needed: return lst
-    room = needed - len(lst)
-    seen = {uniq_key(x) for x in lst}
-    add = []
-    for it in sorted(extras, key=lambda x: x["date"], reverse=True):
-        k = uniq_key(it)
-        if k in seen: continue
-        seen.add(k); add.append(it)
-        if len(add) >= room: break
-    return lst + add
-
 if len(items_prev_world) < MIN_WORLD:
     extra_prev = harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN)
     items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, extra_prev)
     if len(items_prev_world) < MIN_WORLD:
         arch_prev = harvest_archival(PRIMARY_SITES + SECONDARY_SITES, days=28)
         items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, arch_prev)
-        
+
 if len(items_cur_world) < MIN_WORLD:
     extra_cur = harvest_sites(SECONDARY_SITES, CUR_MON, CUR_SUN)
     items_cur_world = topup_to_min(items_cur_world, MIN_WORLD, extra_cur)
     if len(items_cur_world) < MIN_WORLD:
         arch_cur = harvest_archival(PRIMARY_SITES + SECONDARY_SITES, days=28)
         items_cur_world = topup_to_min(items_cur_world, MIN_WORLD, arch_cur)
+
 
 # Dedupe
 def dedupe(lst, maxn=None):
