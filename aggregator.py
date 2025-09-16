@@ -555,30 +555,35 @@ for f in FEEDS:
     if not feed or not feed.entries:
         continue
     for e in feed.entries:
-        it = entry_to_item(e, f["source_label"])
-        if not it["date"]:
-            continue
-        if f["section"] == "reddit":
-            if not reddit_is_signal(it["title"], it["summary"]):
-                continue
-            if within(it["date"], PREV_MON, PREV_SUN):
-                reddit_prev.append(it)
-            elif within(it["date"], CUR_MON, CUR_SUN):
-                reddit_cur.append(it)
-            continue
-        sec = classify_section(e, f["source_label"], it["link"])
-        it["section"] = sec
-        if sec == "czsk":
-        if not (tags_hit(e) or is_czsk_dnb(it["title"], it["summary"])):
-        continue
-        else:
-        if not is_dnb_related(it["title"], it["summary"], it["link"]):
+    it = entry_to_item(e, f["source_label"])
+    if not it["date"]:
         continue
 
+    # Reddit zvlášť
+    if f["section"] == "reddit":
+        if not reddit_is_signal(it["title"], it["summary"]):
+            continue
         if within(it["date"], PREV_MON, PREV_SUN):
-            (items_prev_czsk if sec == "czsk" else items_prev_world).append(it)
+            reddit_prev.append(it)
         elif within(it["date"], CUR_MON, CUR_SUN):
-            (items_cur_czsk if sec == "czsk" else items_cur_world).append(it)
+            reddit_cur.append(it)
+        continue
+
+    # Klasifikace CZ/SK vs svět
+    sec = classify_section(e, f["source_label"], it["link"])
+    it["section"] = sec
+
+    if sec == "czsk":
+        if not (tags_hit(e) or is_czsk_dnb(it["title"], it["summary"])):
+            continue
+    else:
+        if not is_dnb_related(it["title"], it["summary"], it["link"]):
+            continue
+
+    if within(it["date"], PREV_MON, PREV_SUN):
+        (items_prev_czsk if sec == "czsk" else items_prev_world).append(it)
+    elif within(it["date"], CUR_MON, CUR_SUN):
+        (items_cur_czsk if sec == "czsk" else items_cur_world).append(it)
 
 # 2) Scrapery navíc
 scrape_djmag_news()
