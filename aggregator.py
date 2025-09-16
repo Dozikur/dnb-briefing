@@ -186,9 +186,10 @@ SECONDARY_SITES = [
 ]
 
 POS = [
-    "drum and bass", "drum’n’bass", "drum n bass", "dnb", "dn'b", "jungle",
-    "neurofunk", "liquid", "jump up", "rollers", "ukf", "hospital records",
-    "let it roll", "ram records", "blackout music", "shogun audio",
+    "drum and bass","drum & bass","d&b","drum’n’bass","drum n bass","dnb","dn'b","jungle",
+    "neurofunk","neuro","liquid","jump up","jump-up","roller","rollers",
+    "ukf","hospital records","let it roll","ram records","blackout music","shogun audio",
+    "liquicity","dnb allstars","rampage","darkshire","hoofbeats"
 ]
 NEG = [
     "techno", "tech house", "house", "trance", "edm pop", "electro house",
@@ -212,19 +213,28 @@ MIN_CZSK = 2
 MIN_REDDIT = 2
 
 REDDIT_TITLE_NEG = [
-    "track id", "id?", "what is this track", "free download",
-    "promo", "my mix", "mixcloud", "out now"
+    "track id","id?","what is this track","free download","promo","my mix","mixcloud","out now"
 ]
-def reddit_is_signal(title: str) -> bool:
-    t = (title or "").lower()
-    return not any(x in t for x in REDDIT_TITLE_NEG)
+def reddit_is_signal(title: str, summary: str) -> bool:
+    t = f"{title} {summary}".lower()
+    if any(x in t for x in REDDIT_TITLE_NEG):
+        return False
+    # potlač typ "Artist - Track" bez kontextu
+    if " - " in (title or "") and not any(k in t for k in ["discussion","thread","ama","festival","line-up","hardware","cdj","setup","review","interview"]):
+        return False
+    # aspoň nějaká DnB stopa
+    return any(p in t for p in POS)
 
 def is_dnb_related(title: str, summary: str, url: str) -> bool:
     t = f"{title} {summary}".lower()
     host = urlparse(url).netloc.lower()
+    # auto-pass pouze UKF/YouTube (kanálové feedy, které už vybíráš ručně)
     if any(host == d or host.endswith("." + d) for d in ALLOWLIST):
         return True
-    return any(p in t for p in POS) and not any(n in t for n in NEG)
+    # všechny ostatní musí projít přes POS/NEG
+    if any(p in t for p in POS) and not any(n in t for n in NEG):
+        return True
+    return False
 
 def is_czsk_dnb(title: str, summary: str) -> bool:
     t = f"{title} {summary}".lower()
@@ -549,7 +559,7 @@ for f in FEEDS:
         if not it["date"]:
             continue
         if f["section"] == "reddit":
-            if not reddit_is_signal(it["title"]):
+            if not reddit_is_signal(it["title"], it["summary"]):
                 continue
             if within(it["date"], PREV_MON, PREV_SUN):
                 reddit_prev.append(it)
@@ -559,11 +569,12 @@ for f in FEEDS:
         sec = classify_section(e, f["source_label"], it["link"])
         it["section"] = sec
         if sec == "czsk":
-            if not (tags_hit(e) or is_czsk_dnb(it["title"], it["summary"])):
-                continue
+        if not (tags_hit(e) or is_czsk_dnb(it["title"], it["summary"])):
+        continue
         else:
-            if not is_dnb_related(it["title"], it["summary"], it["link"]):
-                continue
+        if not is_dnb_related(it["title"], it["summary"], it["link"]):
+        continue
+
         if within(it["date"], PREV_MON, PREV_SUN):
             (items_prev_czsk if sec == "czsk" else items_prev_world).append(it)
         elif within(it["date"], CUR_MON, CUR_SUN):
