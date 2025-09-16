@@ -192,7 +192,7 @@ FEEDS.append({
     "url":"https://www.rave.cz/feed/",
     "source_label":"RAVE.cz"
 })
-for label, sub in REDEDITS := REDDITS:
+for label, sub in REDDITS:
     FEEDS.append({
         "name": f"Reddit:{label}",
         "kind": "rss",
