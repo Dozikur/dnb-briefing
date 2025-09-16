@@ -18,7 +18,7 @@
 
 ## Kuriozita (8. – 14. 09. 2025)
 
-* Žádné zásadní novinky.
+* Mandidextrous x FooR x Eddie Craig - Premonition 2025 (13. 9. 2025) ([YouTube @UKFDrumandBass][2])
 
 
 ## Zdroje
