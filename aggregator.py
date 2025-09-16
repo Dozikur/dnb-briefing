@@ -84,7 +84,7 @@ def normalize_url(u: str) -> str:
 # ---------------------------------------------------------------------------
 # Feedy / dotazy
 # ---------------------------------------------------------------------------
-def google_news_feed(site, when_days=14):
+def google_news_feed(site, when_days=28):
     # svět: en-US (víc výsledků), CZ/SK domény: cs-CZ
     if site.endswith(".cz") or site.endswith(".sk") or site in ("rave.cz","musicserver.cz"):
         hl, gl, ceid = "cs", "CZ", "CZ:cs"
@@ -126,12 +126,13 @@ def xenforo_forum_index_rss(base):
 # ---------------------------------------------------------------------------
 PRIMARY_SITES = [
     ("Mixmag", "mixmag.net"),
-    ("Resident Advisor", "ra.co"),
-    ("UKF", "ukf.com"),
-    ("Musicserver.cz", "musicserver.cz"),
-    ("Rave.cz", "rave.cz"),
-    ("PM Studio", "pmstudio.com"),
-    ("DogsOnAcid", "dogsonacid.com"),
+     ("Resident Advisor", "ra.co"),
+     ("UKF", "ukf.com"),
+     ("DJ Mag", "djmag.com"),
+     ("Musicserver.cz", "musicserver.cz"),
+     ("Rave.cz", "rave.cz"),
+     ("PM Studio", "pmstudio.com"),
+     ("DogsOnAcid", "dogsonacid.com"),
 ]
 REDDITS = [("r/DnB","DnB"), ("r/LetItRollFestival","LetItRollFestival")]
 YOUTUBES = ["@Liquicity", "@dnballstars", "@WeAreRampageEvents"]
@@ -141,6 +142,7 @@ SECONDARY_SITES = [
     ("Dancing Astronaut", "dancingastronaut.com"),
     ("Rolling Stone Australia", "rollingstone.com.au"),
     ("Billboard", "billboard.com"),
+    ("DJ Mag", "djmag.com"),
 ]
 
 POS = [
@@ -156,7 +158,8 @@ CZSK_TOKENS = [
     "dnb","drum and bass","drum’n’bass","drum n bass","neuro","liquid","jump up","let it roll"
 ]
 HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
-ALLOWLIST = ("mixmag.net", "ra.co", "ukf.com")
+ALLOWLIST = ("mixmag.net", "ra.co", "ukf.com", "djmag.com", "edm.com", "dancingastronaut.com", "rollingstone.com.au", 
+            "billboard.com", "youtube.com", "youtu.be", "rave.cz", "musicserver.cz", "dogsonacid.com")
 
 MIN_WORLD = 5
 MIN_CZSK  = 2
@@ -164,9 +167,9 @@ MIN_REDDIT= 2
 
 def is_dnb_related(title: str, summary: str, url: str) -> bool:
     t = f"{title} {summary}".lower()
-    if any(d in url for d in ALLOWLIST):
-        # RA/Mixmag/UKF propusť, pokud to není očividně jiný žánr
-        return not any(n in t for n in NEG)
+    host = urlparse(url).netloc.lower()
+    if any(host.endswith(d) for d in ALLOWLIST):
+    return True
     return any(p in t for p in POS) and not any(n in t for n in NEG)
 
 def is_czsk_dnb(title: str, summary: str) -> bool:
@@ -304,7 +307,7 @@ for f in FEEDS:
 def harvest_sites(sites, start_date, end_date):
     out = []
     for label, domain in sites:
-        feed_url = google_news_feed(domain, when_days=14)
+        feed_url = google_news_feed(domain, when_days=28)
         feed = fetch_feed(feed_url)
         if not feed or not feed.entries: 
             continue
@@ -314,6 +317,30 @@ def harvest_sites(sites, start_date, end_date):
             if not within(it["date"], start_date, end_date): continue
             if not is_dnb_related(it["title"], it["summary"], it["link"]): continue
             it["section"] = "world"
+            out.append(it)
+    return out
+    
+    def harvest_archival(sites, days=28):
+    """Vrať kandidáty z posledních N dní bez ohledu na týdenní okna.
+       Použije se jen jako 'archivní poznámka' při nedostatku položek."""
+    cutoff = TODAY - timedelta(days=days)
+    out = []
+    for label, domain in sites:
+        feed_url = google_news_feed(domain, when_days=days)
+        feed = fetch_feed(feed_url)
+        if not feed or not feed.entries:
+            continue
+        for e in feed.entries:
+            it = entry_to_item(e, label)
+            if not it["date"]:
+                continue
+            if it["date"].date() < cutoff:
+                continue
+            if not is_dnb_related(it["title"], it["summary"], it["link"]):
+                continue
+            it["section"] = "world"
+            # označ 'archivní' pro pozdější formátování
+            it.setdefault("_archival", True)
             out.append(it)
     return out
 
@@ -330,11 +357,18 @@ def topup_to_min(lst, needed, extras):
     return lst + add
 
 if len(items_prev_world) < MIN_WORLD:
-    items_prev_world = topup_to_min(items_prev_world, MIN_WORLD,
-                                    harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN))
+    extra_prev = harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN)
+    items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, extra_prev)
+    if len(items_prev_world) < MIN_WORLD:
+        arch_prev = harvest_archival(PRIMARY_SITES + SECONDARY_SITES, days=28)
+        items_prev_world = topup_to_min(items_prev_world, MIN_WORLD, arch_prev)
+        
 if len(items_cur_world) < MIN_WORLD:
-    items_cur_world = topup_to_min(items_cur_world, MIN_WORLD,
-                                   harvest_sites(SECONDARY_SITES, CUR_MON, CUR_SUN))
+    extra_cur = harvest_sites(SECONDARY_SITES, CUR_MON, CUR_SUN)
+    items_cur_world = topup_to_min(items_cur_world, MIN_WORLD, extra_cur)
+    if len(items_cur_world) < MIN_WORLD:
+        arch_cur = harvest_archival(PRIMARY_SITES + SECONDARY_SITES, days=28)
+        items_cur_world = topup_to_min(items_cur_world, MIN_WORLD, arch_cur)
 
 # Dedupe
 def dedupe(lst, maxn=None):
@@ -362,6 +396,8 @@ def pick(items, need):
 def format_item(it):
     dstr = it["date"].strftime("%-d. %-m. %Y")
     txt = summarize_item(it)
+    if it.get("_archival"):
+        txt = f"Archivní – {txt}"
     ref_idx = add_ref(it["link"], it["source"])
     label = f"[{it['source']}][{ref_idx}]"
     return f"* {txt} ({dstr}) ({label})"
