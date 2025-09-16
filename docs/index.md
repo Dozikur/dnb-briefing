@@ -10,11 +10,7 @@
 
 ## Svět (15. – 21. 09. 2025)
 
-* In Conversation With Billain - ukf.com — In Conversation With Billain ukf.com (15. 9. 2025) ([UKF][6])
-* Archivní – Voicenote Violence - ukf.com — Voicenote Violence ukf.com (12. 9. 2025) ([UKF][3])
-* Archivní – Cover Story: Flava D - ukf.com — Cover Story: Flava D ukf.com (10. 9. 2025) ([UKF][7])
-* Archivní – Pola & Bryson Drum And Bass DJ Set Live From DJ Mag HQ - DJ Mag — Pola & Bryson Drum And Bass DJ Set Live From DJ Mag HQ DJ Mag (8. 9. 2025) ([DJ Mag][8])
-* Archivní – We Need To Talk About Blooom - ukf.com — We Need To Talk About Blooom ukf.com (4. 9. 2025) ([UKF][9])
+* Žádné zásadní novinky.
 
 ## ČR / SK (8. – 14. 09. 2025)
 
@@ -30,9 +26,9 @@
 
 ## Reddit vlákna (15. – 21. 09. 2025)
 
-* What did we think of the mud at dnb allstars 🤣. submitted by /u/No_Slide1989 [link] [comments] (16. 9. 2025) ([Reddit r/DnB][10])
-* SKEPSIS and K-Motionz along with a Teklife Takeover in San Francisco (Footwork and DnB!?). Hey guys! An interesting lineup happening in SF. Skepsis and K-Motionz coming in from UK along with a Teklife footwork takeover in another room. There is growing excitem (16. 9. 2025) ([Reddit r/DnB][11])
-* Where to find a proper DnB Jungle in London?. Hey, I am visiting London and wanted to experience a good DnB/Jungle Party. Does someone know where I Can find one this Friday? submitted by /u/Aggravating_Tea_4896 [link] [comments] (15. 9. 2025) ([Reddit r/DnB][12])
+* What did we think of the mud at dnb allstars 🤣. submitted by /u/No_Slide1989 [link] [comments] (16. 9. 2025) ([Reddit r/DnB][6])
+* Searching for the BBC Radio1 Interview with A.M.C and Charlie Tee. Does somebody know where I can find this Interview? Its not available anymore :( https://preview.redd.it/g5oaygwd0ipf1.png?width=815&format=png&auto=webp&s=9d999e65da96d536f9dbc8cf64000befb006d (16. 9. 2025) ([Reddit r/DnB][7])
+* SKEPSIS and K-Motionz along with a Teklife Takeover in San Francisco (Footwork and DnB!?). Hey guys! An interesting lineup happening in SF. Skepsis and K-Motionz coming in from UK along with a Teklife footwork takeover in another room. There is growing excitem (16. 9. 2025) ([Reddit r/DnB][8])
 
 ## Kuriozita (8. – 14. 09. 2025)
 
@@ -50,10 +46,6 @@
 [3]: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4ZWt1UWF1X1EyWFdiUmJvVlV3TUViaTJXTzZ1U2EtanhmRkF6UEltYm1EUVAyR2FTODYtY3JFbS1HeHJtQVFPUURpZ1dOYWlJLXNNUU93MmVJcGpyMGNETw?oc=5
 [4]: https://www.youtube.com/watch?v=eQE-7wcL6UI
 [5]: https://djmag.com/news/debit-announces-new-album-desaceleradas-modern-love
-[6]: https://news.google.com/rss/articles/CBMiX0FVX3lxTE56NU5LZWFWN1RjSFFtOW50eGxzZjRJcDlaMENiRU1jckJfV2FqUThiQTFxSHY3TXpnUEQwRlhRTjRuUWNpdUJBdEJfa0FfTWY3bnhNUGtDeFRibEdmMUsw?oc=5
-[7]: https://news.google.com/rss/articles/CBMiU0FVX3lxTE50aTlVWWlKZ1l1WWNIRE9kTU92VXI2R0NNUGFNZU9yTFVwYzhmZ2dJUlBEY2pNYTBDWHZMRmJPZjV0T01rcmJ2RDV2Z2xhZVJXZUhv?oc=5
-[8]: https://news.google.com/rss/articles/CBMie0FVX3lxTE1yRDBnOGFTUDl2b2M0cDBaWm45aEpCVFBuNnltSWRMdkhwY09YQ01SRUlTSXhnTWh0VkxmcWF3cUF5Zk9JVEtCM21vQWFDUV80WjIyNUdCWEZpUXItcEdiMkR4YnNzcUM0SW9XLWZvTy1SanV2b2dTX1M0TQ?oc=5
-[9]: https://news.google.com/rss/articles/CBMiX0FVX3lxTE02NzluMkVXUFNVX09SSzMxTVJDNElHUndFWTB2Zmxkd2F4X1c1UzY0dGJrWWx1QlZRREVJLUJOd3BmT2dYVmcwbUZRRGlVdXdPMTItTkhjTlQyRnJ0S0JZ?oc=5
-[10]: https://old.reddit.com/r/DnB/comments/1nijms1/what_did_we_think_of_the_mud_at_dnb_allstars/
-[11]: https://old.reddit.com/r/DnB/comments/1ni3eis/skepsis_and_kmotionz_along_with_a_teklife/
-[12]: https://old.reddit.com/r/DnB/comments/1nhqguh/where_to_find_a_proper_dnb_jungle_in_london/
+[6]: https://old.reddit.com/r/DnB/comments/1nijms1/what_did_we_think_of_the_mud_at_dnb_allstars/
+[7]: https://old.reddit.com/r/DnB/comments/1nid294/searching_for_the_bbc_radio1_interview_with_amc/
+[8]: https://old.reddit.com/r/DnB/comments/1ni3eis/skepsis_and_kmotionz_along_with_a_teklife/
