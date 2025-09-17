@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# DnB NOVINKY – aggregator.py
+# - Generuje briefing za MINULÝ týden (Po–Ne) v češtině
+# - Zdroje: Google News RSS (site: + DnB dotazy) pro vybrané weby, Rave.cz RSS, Reddit RSS, YouTube channel RSS, DogsOnAcid forum RSS (s žánrovým filtrem)
+# - Eventy: výhradně z DnBHeard (JSON-LD), řízeno env DNBHEARD_URLS="https://...,https://..."
+# - Výstup: docs/index.md + docs/index.html
+# - Persist: data/events_seen.json pro sekci „Nově oznámené“
+
 import os, re, sys, json, hashlib
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote_plus, urlparse, parse_qs, unquote
@@ -93,12 +100,13 @@ def normalize_url(u: str) -> str:
 # ============================ RSS / DOTAZY ==================================
 
 def google_news_feed(site, when_days=14):
-    # International weby → en/US pro širší pokrytí, CZ/SK domény → cs/CZ
+    # International weby → en/US, CZ/SK domény → cs/CZ
     if site.endswith(".cz") or site.endswith(".sk") or site in ("rave.cz","musicserver.cz"):
         hl, gl, ceid = "cs", "CZ", "CZ:cs"
     else:
         hl, gl, ceid = "en", "US", "US:en"
-    query = f"site:{site} when:{when_days}d"
+    terms = '("drum and bass" OR "drum & bass" OR dnb OR jungle)'
+    query = f"site:{site} {terms} when:{when_days}d"
     base = "https://news.google.com/rss/search?q="
     tail = f"&hl={hl}&gl={gl}&ceid={ceid}"
     return base + quote_plus(query) + tail
@@ -149,9 +157,8 @@ SECONDARY_SITES = [
 ]
 
 REDDITS = [("r/DnB","DnB"), ("r/LetItRollFestival","LetItRollFestival")]
-YOUTUBES = ["@Liquicity", "@dnballstars", "@WeAreRampageEvents"]
+YOUTUBES = ["@Liquicity", "@dnballstars", "@WeAreRampageEvents", "@UKFDrumandBass"]
 
-# Filtry
 POS = [
     "drum and bass","drum’n’bass","drum n bass","dnb","dn'b","jungle",
     "neurofunk","liquid","jump up","roller","rollers","ukf","hospital records",
@@ -162,11 +169,15 @@ NEG = [
     "hardstyle","psytrance","deep house","progressive house",
 ]
 HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github-actions)"}
-ALLOWLIST = (
-    "mixmag.net", "ra.co", "ukf.com", "djmag.com",
-    "rave.cz", "musicserver.cz", "dogsonacid.com",
-    "youtube.com", "youtu.be"
+
+# BYPASS_POS: domény, kde DnB je nativní obsah → stačí neobsahovat NEG
+# FORCE_POS: domény, kde chceme DnB klíčová slova povinně
+BYPASS_POS = (
+    "mixmag.net","ra.co","ukf.com","djmag.com",
+    "edm.com","dancingastronaut.com","rollingstone.com.au","billboard.com",
+    "youtube.com","youtu.be"
 )
+FORCE_POS = ("rave.cz","musicserver.cz")
 
 MIN_WORLD = 5
 MIN_CZSK  = 2
@@ -175,8 +186,9 @@ MIN_REDDIT= 2
 def is_dnb_related(title: str, summary: str, url: str) -> bool:
     t = f"{title} {summary}".lower()
     host = urlparse(url).netloc.lower()
-    if any(host.endswith(d) for d in ALLOWLIST):
-        # hosty, kde DnB je typicky relevantní → stačí vyloučit explicitní NEG
+    if any(host.endswith(d) for d in FORCE_POS):
+        return any(p in t for p in POS) and not any(n in t for n in NEG)
+    if any(host.endswith(d) for d in BYPASS_POS):
         return not any(n in t for n in NEG)
     return any(p in t for p in POS) and not any(n in t for n in NEG)
 
@@ -197,7 +209,6 @@ for name, domain in PRIMARY_SITES:
         "source_label": name
     })
 
-# Přímý Rave.cz feed → CZ/SK
 FEEDS.append({
     "name":"Rave.cz",
     "kind":"rss",
@@ -206,8 +217,7 @@ FEEDS.append({
     "source_label":"RAVE.cz"
 })
 
-# Reddit
-for label, sub in REDDITS:
+for label, sub in READDITS := REDDITS if False else REDDITS:
     FEEDS.append({
         "name": f"Reddit:{label}",
         "kind": "rss",
@@ -216,7 +226,6 @@ for label, sub in REDDITS:
         "source_label": f"Reddit {label}"
     })
 
-# YouTube kanály
 for handle in YOUTUBES:
     url = youtube_rss_from_handle(handle)
     if url:
@@ -228,7 +237,6 @@ for handle in YOUTUBES:
             "source_label": f"YouTube {handle}"
         })
 
-# DogsOnAcid fórum
 FEEDS.append({
     "name":"DogsOnAcidForum",
     "kind":"rss",
@@ -286,7 +294,6 @@ def dedupe(items, maxn=None):
             break
     return out
 
-# Sběr
 items_prev_world, items_prev_czsk = [], []
 reddit_prev = []
 all_refs, ref_map = [], {}
@@ -338,7 +345,6 @@ def harvest_sites(sites, start_date, end_date):
 
 if len(items_prev_world) < MIN_WORLD:
     extra_prev = harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN)
-    # doplň do minima
     need = MIN_WORLD - len(items_prev_world)
     if need > 0:
         extra_prev = dedupe(extra_prev, maxn=20)
@@ -355,13 +361,17 @@ if len(items_prev_world) < MIN_WORLD:
 # Deduplikace finální
 items_prev_world = dedupe(items_prev_world, maxn=20)
 items_prev_czsk  = dedupe(items_prev_czsk,  maxn=20)
-reddit_prev      = dedupe(reddit_prev,      maxn=12)
+reddit_prev      = dedupe(reddit_prev,      maxn=20)
 
 # ============================== EVENTY (DnBHeard only) ======================
 
-# Persist pro „nově oznámené“
-EVENTS_SEEN_PATH = os.path.join("data", "events_seen.json")
+# Bezpečné vytvoření složky data/ (pokud je 'data' soubor, smaž ho)
+if os.path.exists("data") and not os.path.isdir("data"):
+    try: os.remove("data")
+    except Exception: pass
 os.makedirs("data", exist_ok=True)
+
+EVENTS_SEEN_PATH = os.path.join("data", "events_seen.json")
 try:
     with open(EVENTS_SEEN_PATH, "r", encoding="utf-8") as f:
         EVENTS_SEEN = json.load(f)
@@ -375,7 +385,6 @@ def persist_events_seen():
     except Exception:
         pass
 
-# Priority
 BRANDS = [
     "hospitality","rampage","liquicity","dnb allstars","darkshire","beats for love",
     "hoofbeats","let it roll","roxy","epic","cross club","fuchs2","trojhalí",
@@ -418,21 +427,20 @@ def parse_jsonld_events(html: str, base_label: str) -> list:
     soup = BS(html, "html.parser")
     for tag in soup.find_all("script", attrs={"type":"application/ld+json"}):
         try:
-            node = json.loads(tag.string.strip())
+            node = json.loads(tag.string.strip()) if tag.string else None
         except Exception:
+            node = None
+        if not node: 
             continue
         nodes = node if isinstance(node, list) else node.get("@graph") if isinstance(node, dict) and "@graph" in node else [node]
         if not isinstance(nodes, list):
             nodes = [nodes]
         for n in nodes:
-            if not isinstance(n, dict):
-                continue
-            if n.get("@type") not in ("Event","MusicEvent"):
-                continue
+            if not isinstance(n, dict): continue
+            if n.get("@type") not in ("Event","MusicEvent"): continue
             name = clean_text(n.get("name") or "")
             url  = normalize_url(n.get("url") or "")
-            if not name or not url:
-                continue
+            if not name or not url: continue
             start = n.get("startDate") or n.get("start_date")
             start_dt = None
             try:
@@ -457,8 +465,6 @@ def parse_jsonld_events(html: str, base_label: str) -> list:
 def scrape_dnbeheard() -> list:
     """
     DnBHeard zdroje definuj v env DNBHEARD_URLS jako CSV (např. https://dnbeheard.com/cz,https://dnbeheard.com/sk).
-    Skript stáhne stránky, vytěží JSON-LD Event a vrátí kandidáty.
-    Pokud proměnná není nastavena, vrací prázdný seznam.
     """
     urls_env = os.environ.get("DNBHEARD_URLS", "").strip()
     if not urls_env:
@@ -471,12 +477,11 @@ def scrape_dnbeheard() -> list:
         except Exception:
             continue
         out.extend(parse_jsonld_events(html, "DnBHeard"))
-    # filtrování DnB + CZ/SK
+    # filtrování DnB + CZ/SK + priorita (LOW pryč)
     ev = []
     for it in out:
         if not is_event_czsk(it): 
             continue
-        # priorita: ignoruj LOW
         if priority_bucket(it["title"]) == "LOW":
             continue
         ev.append(it)
@@ -485,25 +490,20 @@ def scrape_dnbeheard() -> list:
 def classify_events(evts: list):
     """Rozděl DnBHeard eventy: recap minulý týden, tento týden, nově oznámené."""
     recap, thisweek, announced = [], [], []
+    cur_mon, cur_sun = week_bounds(TODAY)
     for it in (evts or []):
         d = it.get("date")
         url = it.get("link","")
         ttl = (it.get("title") or "").lower()
 
-        # lokalizace a priorita už proběhly ve scrape_dnbeheard()
-
-        # Rozdělení podle data eventu
         if isinstance(d, datetime):
             if within(d, PREV_MON, PREV_SUN):
                 recap.append(it); remember_seen(url); 
                 continue
-            # „tento týden“ = aktuální Po–Ne od dneška
-            cur_mon, cur_sun = week_bounds(TODAY)
             if within(d, cur_mon, cur_sun):
                 thisweek.append(it); remember_seen(url); 
                 continue
 
-        # Nově oznámené: první výskyt <= 7 dní + jazykový hint
         remember_seen(url)
         try:
             first_seen = datetime.fromisoformat(EVENTS_SEEN.get(url, TODAY.isoformat())).date()
@@ -537,7 +537,9 @@ def build_reddit_section(period, lst, min_needed=MIN_REDDIT):
     lines = [f"## Reddit vlákna ({period})\n"]
     for it in lst:
         dstr = it["date"].strftime("%-d. %-m. %Y")
-        brief = clean_text(f"{it['title']}. {it.get('summary','')}", 260)
+        title = (it["title"] or "")
+        title = re.sub(r"\s*submitted by.*$", "", title, flags=re.I)
+        brief = clean_text(f"{title}. {it.get('summary','')}", 260)
         idx = add_ref(it["link"], it["source"])
         lines.append(f"* {brief} ({dstr}) ([{it['source']}][{idx}])")
     return "\n".join(lines) + "\n"
@@ -582,27 +584,24 @@ def build_events_block(events_all):
         parts.append("* Žádné relevantní novinky tento týden.")
     # Nově oznámené
     parts.append("\n### Nově oznámené\n")
-    # odfiltruj duplicity s recap/thisweek
     dup = {uniq_key(x) for x in (recap + thisweek)}
     announced = [x for x in announced if uniq_key(x) not in dup]
     if announced:
         for it in announced: parts.append(format_event_item(it))
     else:
         parts.append("* Žádné relevantní novinky tento týden.")
-    parts.append("")  # trailing newline
+    parts.append("")
     return "\n".join(parts)
 
 # ============================== GENERACE ====================================
 
-# Vyber minimální počty
 world_prev = items_prev_world[:MIN_WORLD] if len(items_prev_world) >= MIN_WORLD else items_prev_world
 cz_prev    = items_prev_czsk[:MIN_CZSK]   if len(items_prev_czsk)   >= MIN_CZSK   else items_prev_czsk
-rd_prev    = reddit_prev[:max(MIN_REDDIT, 3)] if len(reddit_prev) >= MIN_REDDIT else reddit_prev
+# Víc vláken z Redditu (cíluj 4, ale respektuj minimum)
+rd_prev    = reddit_prev[:max(MIN_REDDIT, 4)] if len(reddit_prev) >= MIN_REDDIT else reddit_prev
 
-# Kuriozita z „svět“ nebo CZ/SK
 cur_prev = pick_curiosity(items_prev_world) or pick_curiosity(items_prev_czsk)
 
-# Markdown
 md_parts = []
 md_parts.append(f"# DnB NOVINKY – {TODAY.strftime('%-d. %-m. %Y')}\n")
 md_parts.append(build_section_news("Svět", PERIOD_PREV, world_prev, MIN_WORLD))
@@ -610,11 +609,9 @@ md_parts.append(build_section_news("ČR / SK", PERIOD_PREV, cz_prev, MIN_CZSK))
 md_parts.append(build_reddit_section(PERIOD_PREV, rd_prev))
 md_parts.append(build_curio(PERIOD_PREV, cur_prev))
 
-# Eventy — pouze DnBHeard
 events_all = scrape_dnbeheard()
 md_parts.append(build_events_block(events_all))
 
-# Zdroje
 refs_lines = ["\n## Zdroje\n"]
 for i,(label,url) in enumerate(all_refs, start=1):
     refs_lines.append(f"[{i}]: {url}")
