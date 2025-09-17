@@ -2,7 +2,7 @@ name: dnb-briefing
 
 on:
   schedule:
-    - cron: "0 7 * * 1"
+    - cron: "0 7 * * 1"   # 09:00 Europe/Prague
   workflow_dispatch:
 
 permissions:
@@ -17,22 +17,26 @@ jobs:
           persist-credentials: true
           fetch-depth: 0
 
+      - name: Setup git identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Fix legacy data file
         run: |
-          # Pokud je 'data' verzovaný soubor, odstraň ho z Gitu a vytvoř složku
+          # Pokud je "data" verzovaný soubor, odeber z indexu a vytvoř adresář
           if git ls-files --error-unmatch data >/dev/null 2>&1; then
-            git rm -f data
-            mkdir -p data
-            touch data/.gitkeep
-            git add data/.gitkeep
-            git commit -m "fix: replace file 'data' with directory"
+            # je to verzovaný soubor (ne adresář)
+            if [ -f data ]; then
+              git rm -f data
+            fi
           else
-            # Pokud je to ne-verzovaný obyč. soubor, smaž a vytvoř složku
+            # není verzovaný, ale může existovat jako soubor
             if [ -f data ]; then rm -f data; fi
-            mkdir -p data
-            touch data/.gitkeep
           fi
-          ls -la
+          mkdir -p data
+          touch data/.gitkeep
+          git add -A
 
       - uses: actions/setup-python@v5
         with:
@@ -48,8 +52,6 @@ jobs:
 
       - name: Commit & push Pages
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add docs/index.* data/events_seen.json data/.gitkeep || true
           git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "no changes"
           git fetch origin
