@@ -155,6 +155,7 @@ INTL_HEADLINERS = [
     "venjent","akel","tc","wilkinson","monrroe","polaris","etherwood","alix perez",
     "black sun empire","phace","misanthrop","matrix & futurebound","sub zero","dillinja","break"
 ]
+ANNOUNCE_HINTS = ["announce", "announced", "oznámen", "line-up", "lineup", "přidáv", "added to the bill"]
 
 MIN_WORLD = 5
 MIN_CZSK  = 2
@@ -391,7 +392,9 @@ except Exception:
 
 def parse_jsonld_events(html: str, base_label: str) -> list[dict]:
     out=[]
-    for tag in BS(html, "html.parser").find_all("script", attrs={"type":"application/ld+json"}):
+    soup = BS(html, "html.parser")
+    # 1) standardní JSON-LD
+    for tag in soup.find_all("script", attrs={"type":"application/ld+json"}):
         try:
             node = json.loads(tag.string.strip())
         except Exception:
@@ -399,18 +402,22 @@ def parse_jsonld_events(html: str, base_label: str) -> list[dict]:
         nodes = node if isinstance(node, list) else node.get("@graph") if isinstance(node, dict) and "@graph" in node else [node]
         if not isinstance(nodes, list): nodes=[nodes]
         for n in nodes:
-            if not isinstance(n, dict): continue
-            if n.get("@type") not in ("Event","MusicEvent"): continue
+            if not isinstance(n, dict): 
+                continue
+            if n.get("@type") not in ("Event","MusicEvent"):
+                continue
             name = clean_text(n.get("name") or "")
             url  = normalize_url(n.get("url") or "")
-            if not name or not url: continue
+            if not name or not url: 
+                continue
+            # datumy
             start = n.get("startDate") or n.get("start_date")
-            end   = n.get("endDate") or n.get("end_date")
             start_dt = None
             try:
                 if start: start_dt = dtparse(start).astimezone(TZ)
-            except: 
+            except Exception:
                 start_dt = None
+            # místo
             loc = ""
             locn = n.get("location")
             if isinstance(locn, dict):
@@ -425,34 +432,83 @@ def parse_jsonld_events(html: str, base_label: str) -> list[dict]:
                 "source": base_label
             })
     return out
+    EVENT_LINK_RE = re.compile(r"/events?/\d+|/akce/|/event/", re.I)
+
+def extract_event_links(html: str, domain: str, max_links: int = 30) -> list[str]:
+    soup = BS(html, "html.parser")
+    links = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if href.startswith("//"):
+            href = "https:" + href
+        elif href.startswith("/"):
+            href = f"https://{domain}{href}"
+        try:
+            u = urlparse(href)
+        except Exception:
+            continue
+        if u.netloc and domain.split(":")[0] in u.netloc and EVENT_LINK_RE.search(u.path):
+            n = normalize_url(href)
+            if n not in links:
+                links.append(n)
+        if len(links) >= max_links:
+            break
+    return links
+
+def fetch_events_from_detail_pages(urls: list[str], label: str, max_pages: int = 30) -> list[dict]:
+    out=[]
+    for i, u in enumerate(urls[:max_pages]):
+        try:
+            html = fetch(u, timeout=20).text
+        except Exception:
+            continue
+        # nejprve z detailu přímo JSON-LD
+        evs = parse_jsonld_events(html, label)
+        if evs:
+            out.extend(evs)
+            continue
+        # fallback: vytvoř aspoň položku s názvem z <title>
+        try:
+            soup = BS(html, "html.parser")
+            title = clean_text(soup.title.get_text()) if soup.title else ""
+        except Exception:
+            title = ""
+        if title:
+            out.append({"title": title, "summary": "", "link": u, "date": None, "source": label})
+    return out
 
 def scrape_ra_cz() -> list[dict]:
-    urls = [
+    listings = [
         "https://ra.co/events/cz/all/drumandbass",
         "https://ra.co/events/cz/prague/drumandbass",
     ]
-    out=[]
-    for u in urls:
+    domain = "ra.co"
+    detail_urls = []
+    for lu in listings:
         try:
-            html = fetch(u).text
-            out += parse_jsonld_events(html, "Resident Advisor")
+            html = fetch(lu).text
+            detail_urls += extract_event_links(html, domain, max_links=40)
         except Exception:
             continue
-    return dedupe(out, 100)
+    out = fetch_events_from_detail_pages(dedupe([{"link":u} for u in detail_urls], None) and list(dict.fromkeys(detail_urls)), "Resident Advisor", max_pages=35)
+    return dedupe(out, 120)
 
 def scrape_goout_cz() -> list[dict]:
-    urls = [
+    listings = [
         "https://goout.net/cs/cesko/akce/lezfymfti/?genres=party_drum_and_bass",
         "https://goout.net/cs/praha/parties/leznyvlkkzj/?genres=party_drum_and_bass",
     ]
-    out=[]
-    for u in urls:
+    domain = "goout.net"
+    detail_urls = []
+    for lu in listings:
         try:
-            html = fetch(u).text
-            out += parse_jsonld_events(html, "GoOut")
+            html = fetch(lu).text
+            detail_urls += extract_event_links(html, domain, max_links=60)
         except Exception:
             continue
-    return dedupe(out, 150)
+    out = fetch_events_from_detail_pages(list(dict.fromkeys(detail_urls)), "GoOut", max_pages=40)
+    return dedupe(out, 160)
+
 
 def scrape_dnbeheard() -> list[dict]:
     # fallback: prostý výpis linků z textu
@@ -484,27 +540,7 @@ def remember_seen(url: str):
     if url not in EVENTS_SEEN:
         EVENTS_SEEN[url] = TODAY.isoformat()
 
-def classify_events(evts: list[dict]):
-    recap, thisweek, announced = [], [], []
-    for it in evts:
-        # odfiltruj LOW
-        if priority_bucket(it["title"]) == "LOW":
-            continue
-        # dátum z JSON-LD; pokud není, nevíme – použijeme jen „Nově oznámené“, pokud nové
-        d = it.get("date")
-        # nově oznámené
-        remember_seen(it["link"])
-        first_seen = datetime.fromisoformat(EVENTS_SEEN[it["link"]]).date()
-        if (TODAY - first_seen).days <= 7:
-            announced.append(it)
-
-        if d:
-            if within(d, PREV_MON, PREV_SUN):
-                recap.append(it)
-            elif within(d, CUR_MON, CUR_SUN):
-                thisweek.append(it)
-    # unikáty a top N
-    return (dedupe(recap, 10), dedupe(thisweek, 10), dedupe(announced, 10))
+classify_events
 
 # stáhni vše a ulož „seen“
 events_all = scrape_ra_cz() + scrape_goout_cz() + scrape_dnbeheard()
