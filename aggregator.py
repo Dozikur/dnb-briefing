@@ -328,15 +328,25 @@ for f in FEEDS:
         else:
             items_world_prev.append(it)
 
+def _sort_key_dt(it):
+    dt = it.get("date")
+    if isinstance(dt, datetime):
+        return dt
+    # fallback pro položky bez data
+    return datetime(1900, 1, 1, tzinfo=TZ)
+
 def dedupe(items, maxn=None):
     seen, out = set(), []
-    for it in sorted(items, key=lambda x: x["date"], reverse=True):
+    for it in sorted(items or [], key=_sort_key_dt, reverse=True):
         k = uniq_key_from(it)
-        if k in seen: 
+        if k in seen:
             continue
-        seen.add(k); out.append(it)
-        if maxn and len(out) >= maxn: break
+        seen.add(k)
+        out.append(it)
+        if maxn and len(out) >= maxn:
+            break
     return out
+
 
 items_world_prev = dedupe(items_world_prev, 20)
 items_cz_prev    = dedupe(items_cz_prev, 10)
