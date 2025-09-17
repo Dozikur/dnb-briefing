@@ -2,11 +2,11 @@ name: dnb-briefing
 
 on:
   schedule:
-    - cron: "0 7 * * 1"   # 09:00 Europe/Prague
+    - cron: "0 7 * * 1"
   workflow_dispatch:
 
 permissions:
-  contents: write   # nutné pro push přes GITHUB_TOKEN
+  contents: write
 
 jobs:
   run:
@@ -17,12 +17,22 @@ jobs:
           persist-credentials: true
           fetch-depth: 0
 
-      - name: Debug env
+      - name: Fix legacy data file
         run: |
-          git --version
-          python3 -V
+          # Pokud je 'data' verzovaný soubor, odstraň ho z Gitu a vytvoř složku
+          if git ls-files --error-unmatch data >/dev/null 2>&1; then
+            git rm -f data
+            mkdir -p data
+            touch data/.gitkeep
+            git add data/.gitkeep
+            git commit -m "fix: replace file 'data' with directory"
+          else
+            # Pokud je to ne-verzovaný obyč. soubor, smaž a vytvoř složku
+            if [ -f data ]; then rm -f data; fi
+            mkdir -p data
+            touch data/.gitkeep
+          fi
           ls -la
-          mkdir -p data
 
       - uses: actions/setup-python@v5
         with:
@@ -40,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/index.* data/events_seen.json || true
+          git add docs/index.* data/events_seen.json data/.gitkeep || true
           git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "no changes"
           git fetch origin
           git pull --rebase origin "${GITHUB_REF_NAME}"
