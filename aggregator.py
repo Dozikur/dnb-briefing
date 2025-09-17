@@ -542,11 +542,7 @@ def remember_seen(url: str):
 
 classify_events
 
-# stáhni vše a ulož „seen“
-events_all = scrape_ra_cz() + scrape_goout_cz() + scrape_dnbeheard()
-json.dump(EVENTS_SEEN, open(SEEN_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-
-events_recap, events_thisweek, events_new = classify_events(events_all)
+events_all = scrape_dnbeheard
 
 # =========================
 # VÝSTUP
