@@ -2,15 +2,11 @@ name: dnb-briefing
 
 on:
   schedule:
-    - cron: "0 7 * * 1"   # 09:00 Europe/Prague = 07:00 UTC
+    - cron: "0 7 * * 1"   # 09:00 Europe/Prague
   workflow_dispatch:
 
 permissions:
-  contents: write
-
-concurrency:
-  group: dnb-briefing-publish
-  cancel-in-progress: false
+  contents: write   # nutné pro push přes GITHUB_TOKEN
 
 jobs:
   run:
@@ -18,8 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0         # nutné pro rebase
           persist-credentials: true
+          fetch-depth: 0
+
+      - name: Debug env
+        run: |
+          git --version
+          python3 -V
+          ls -la
+          mkdir -p data
 
       - uses: actions/setup-python@v5
         with:
@@ -33,26 +36,12 @@ jobs:
           GOOGLE_SLIDES_PRESENTATION_ID: ${{ secrets.GOOGLE_SLIDES_PRESENTATION_ID }}
         run: python aggregator.py
 
-      - name: Commit and push (rebase-safe)
-        env:
-          BRANCH: ${{ github.ref_name }}
+      - name: Commit & push Pages
         run: |
-          set -e
-          git config user.name "github-actions"
-          git config user.email "actions@users.noreply.github.com"
-
-          # nic necommituj, pokud není změna
-          git add docs/index.*
-          if git diff --cached --quiet; then
-            echo "no changes"
-            exit 0
-          fi
-
-          git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-
-          # přitáhni nové commity a zrebasuj
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.* data/events_seen.json || true
+          git commit -m "update briefing $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "no changes"
           git fetch origin
-          git pull --rebase origin "${BRANCH:-main}" || git pull --rebase origin main
-
-          # push s pojistkou proti závodu
-          git push origin HEAD:"${BRANCH:-main}" || git push --force-with-lease origin HEAD:"${BRANCH:-main}"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
