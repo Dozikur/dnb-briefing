@@ -217,7 +217,7 @@ FEEDS.append({
     "source_label":"RAVE.cz"
 })
 
-for label, sub in READDITS := REDDITS if False else REDDITS:
+for label, sub in REDDITS:
     FEEDS.append({
         "name": f"Reddit:{label}",
         "kind": "rss",
