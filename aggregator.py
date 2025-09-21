@@ -486,7 +486,7 @@ def build_events_section(prev_start: date, prev_end: date):
 
     # Tento týden – přehled nadcházejících eventů
     parts.append("\n### Tento týden")
-        if next_events:
+    if next_events:
         for it in next_events:
             parts.append(line(it))
     else:
