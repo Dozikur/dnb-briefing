@@ -17,6 +17,8 @@ from markdown import markdown as md_to_html
 # ---------------------------------------------------------------------------
 TZ = pytz.timezone("Europe/Prague")
 TODAY = datetime.now(TZ).date()
+EVENT_PAST_DAYS = 7
+EVENT_FUTURE_DAYS = 7
 
 def week_bounds(d: date):
     """Pondělí–Neděle týdne obsahujícího datum d."""
@@ -34,6 +36,15 @@ HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
 
 def fmt_date(dt: datetime) -> str:
     return f"{dt.day}. {dt.month}. {dt.year}"
+
+def fmt_date_range(start: date, end: date) -> str:
+    if start > end:
+        start, end = end, start
+    if start.year == end.year:
+        if start.month == end.month:
+            return f"{start.day}.–{end.day}. {end.month}. {end.year}"
+        return f"{start.day}. {start.month}. {start.year} – {end.day}. {end.month}. {end.year}"
+    return f"{start.day}. {start.month}. {start.year} – {end.day}. {end.month}. {end.year}"
 
 def within(date_dt: datetime, start_date: date, end_date: date) -> bool:
     d = date_dt.astimezone(TZ).date()
@@ -288,35 +299,6 @@ def add_ref(url, label):
     all_refs.append((label, url))
     return idx
 
-# Sběr a třídění JEN pro minulý týden
-for f in FEEDS:
-    feed = fetch_feed(f["url"])
-    if not feed or not feed.entries:
-        continue
-    for e in feed.entries:
-        it = entry_to_item(e, f["source_label"])
-        if not it["date"]:
-            continue
-
-        # Reddit zvlášť, jen minulý týden
-        if f["section"] == "reddit":
-            if within(it["date"], PREV_MON, PREV_SUN):
-                reddit_prev.append(it)
-            continue
-
-        sec = classify_section(e, f["source_label"], it["link"])
-        it["section"] = sec
-
-        if sec == "czsk":
-            if not is_czsk_dnb(it["title"], it["summary"]): 
-                continue
-        else:
-            if not is_dnb_related(it["title"], it["summary"], it["link"]): 
-                continue
-
-        if within(it["date"], PREV_MON, PREV_SUN):
-            (items_prev_czsk if sec=="czsk" else items_prev_world).append(it)
-
 # Fallback: sekundární zdroje, pokud svět nedosáhl minima
 def harvest_sites(sites, start_date, end_date):
     out = []
@@ -345,14 +327,6 @@ def dedupe(lst, maxn=None):
         seen.add(k); out.append(it)
         if maxn and len(out) >= maxn: break
     return out
-
-if len(items_prev_world) < MIN_WORLD:
-    extra_prev = harvest_sites(SECONDARY_SITES, PREV_MON, PREV_SUN)
-    items_prev_world = items_prev_world + extra_prev
-
-items_prev_world = dedupe(items_prev_world, maxn=20)
-items_prev_czsk  = dedupe(items_prev_czsk,  maxn=10)
-reddit_prev      = dedupe(reddit_prev,      maxn=8)
 
 # ---------------------------------------------------------------------------
 # DnBHeard: Eventy ČR/SK (jen DnBHeard zdroj)
