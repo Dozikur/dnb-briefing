@@ -451,14 +451,18 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
     except Exception:
         return []
     soup = BS(html, "html.parser")
-    year = start_date.year
+    start_year = start_date.year
+    end_year = end_date.year
     months = sorted({start_date.month, end_date.month})
     items = []
     for m in months:
         h = cz_month_h2(soup, m)
         if not h:
             continue
-        items += parse_dnbeheard_lines(h, year=year)
+          year_for_month = start_year
+        if end_year > start_year and m < start_date.month:
+            year_for_month = end_year
+        items += parse_dnbeheard_lines(h, year=year_for_month)
 
     picked = []
     for it in items:
