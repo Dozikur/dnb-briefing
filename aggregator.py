@@ -371,7 +371,9 @@ EVENT_KEYWORDS = [
     "kanine", "k-motionz", "merikan", "alix perez", "phace", "venjent", "akov"
 ]
 
-def event_is_priority(title: str) -> bool:
+def event_is_priority(title: str, foreign_guest: bool = False) -> bool:
+    if foreign_guest:
+        return True
     t = title.lower()
     return any(k in t for k in EVENT_KEYWORDS)
 
@@ -418,9 +420,11 @@ def parse_dnbeheard_lines(container_tag, year: int):
 
             # název = část textu za posledním datem, očištěná
             after = text[dates[-1].end():].strip()
+            foreign_guest = "👑" in after
             after = re.sub(r"^#\S+\s+", "", after)
             after = after.split(" ~ ")[0].strip()
-            title = after if after else "(bez názvu)"
+            title = after.replace("👑", "").strip() if after else ""
+            title = title if title else "(bez názvu)"
 
             # vytvoř instanci pro každý nalezený den
             for dm in dates:
@@ -433,7 +437,8 @@ def parse_dnbeheard_lines(container_tag, year: int):
                     "title": title,
                     "date": dt,
                     "link": link,
-                    "city": city
+                    "city": city,
+                    "foreign_guest": foreign_guest,
                 })
         ptr = ptr.next_sibling
     return out
@@ -471,7 +476,7 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
         seen.add(k)
         unique.append(it)
 
-    pri = [x for x in unique if event_is_priority(x["title"])]
+    pri = [x for x in unique if event_is_priority(x["title"], x.get("foreign_guest", False))]
     return pri if pri else unique
 
 def build_events_section(prev_start: date, prev_end: date):
@@ -483,7 +488,8 @@ def build_events_section(prev_start: date, prev_end: date):
         idx = add_ref(it["link"] or "https://dnbeheard.cz/kalendar-akci/", "DnBHeard")
         dstr = fmt_date(it["date"])
         city = f" #{it['city']}" if it.get("city") else ""
-        return f"* {it['title']}{city} ({dstr}) ([DnBHeard][{idx}])"
+        guest = " 👑" if it.get("foreign_guest") else ""
+        return f"* {it['title']}{guest}{city} ({dstr}) ([DnBHeard][{idx}])"
 
     parts = []
     parts.append("## Eventy ČR / SK\n")
