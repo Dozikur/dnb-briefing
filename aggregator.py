@@ -428,7 +428,7 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
     soup = BS(html, "html.parser")
     
     items = []
-     current_month = date(start_date.year, start_date.month, 1)
+    current_month = date(start_date.year, start_date.month, 1)
     end_month = date(end_date.year, end_date.month, 1)
     while current_month <= end_month:
         h = cz_month_h2(soup, current_month.month)
