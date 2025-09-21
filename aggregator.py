@@ -443,6 +443,7 @@ def parse_dnbeheard_lines(container_tag, year: int):
         ptr = ptr.next_sibling
     return out
 
+
 def scrape_dnbeheard_window(start_date: date, end_date: date):
     """Stáhne stránku a vrátí položky spadající do intervalu."""
     url = "https://dnbeheard.cz/kalendar-akci/"
@@ -451,18 +452,19 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
     except Exception:
         return []
     soup = BS(html, "html.parser")
-    start_year = start_date.year
-    end_year = end_date.year
-    months = sorted({start_date.month, end_date.month})
+    
     items = []
-    for m in months:
-        h = cz_month_h2(soup, m)
-        if not h:
-            continue
-          year_for_month = start_year
-        if end_year > start_year and m < start_date.month:
-            year_for_month = end_year
-        items += parse_dnbeheard_lines(h, year=year_for_month)
+     current_month = date(start_date.year, start_date.month, 1)
+    end_month = date(end_date.year, end_date.month, 1)
+    while current_month <= end_month:
+        h = cz_month_h2(soup, current_month.month)
+        if h:
+            items += parse_dnbeheard_lines(h, year=current_month.year)
+
+        if current_month.month == 12:
+            current_month = date(current_month.year + 1, 1, 1)
+        else:
+            current_month = date(current_month.year, current_month.month + 1, 1)
 
     picked = []
     for it in items:
