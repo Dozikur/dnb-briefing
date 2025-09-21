@@ -4,9 +4,9 @@
 
 * Duckworthsound & Dread MC - Rip It (14. 9. 2025) ([YouTube @UKFDrumandBass][1])
 * Mandidextrous x FooR x Eddie Craig - Premonition 2025 (13. 9. 2025) ([YouTube @UKFDrumandBass][2])
-* Jeff Mills at 宀 [Live at Liquid Room Tokyo 30th Anniversary] at 宀 Club, Hong Kong ⟋ RA Tickets - Resident Advisor — Jeff Mills at 宀 [Live at Liquid Room Tokyo 30th Anniversary] at 宀 Club, Hong Kong ⟋ RA Tickets Resident Advisor (12. 9. 2025) ([Resident Advisor][3])
-* Shadow League - Bus Driver (11. 9. 2025) ([YouTube @UKFDrumandBass][4])
-* Voicenote Violence - ukf.com — Voicenote Violence ukf.com (11. 9. 2025) ([UKF][5])
+* Shadow League - Bus Driver (11. 9. 2025) ([YouTube @UKFDrumandBass][3])
+* Voicenote Violence - ukf.com — Voicenote Violence ukf.com (11. 9. 2025) ([UKF][4])
+* Cover Story: Flava D - ukf.com — Cover Story: Flava D ukf.com (10. 9. 2025) ([UKF][5])
 
 ## ČR / SK (8.–14. 9. 2025)
 
@@ -37,8 +37,8 @@
 
 [1]: https://www.youtube.com/watch?v=1Bu_wblCNGM
 [2]: https://www.youtube.com/watch?v=ZmmKWe1d9Lg
-[3]: https://news.google.com/rss/articles/CBMiQkFVX3lxTFBmVENCa0RFVlNudjEyQlpvTmY5ZERUZUlNMGctNElHSlZ5N3VTZzIwVDk1cGxqMGVpM1hxajRVTHpUdw?oc=5
-[4]: https://www.youtube.com/watch?v=eQE-7wcL6UI
-[5]: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4ZWt1UWF1X1EyWFdiUmJvVlV3TUViaTJXTzZ1U2EtanhmRkF6UEltYm1EUVAyR2FTODYtY3JFbS1HeHJtQVFPUURpZ1dOYWlJLXNNUU93MmVJcGpyMGNETw?oc=5
+[3]: https://www.youtube.com/watch?v=eQE-7wcL6UI
+[4]: https://news.google.com/rss/articles/CBMiYEFVX3lxTFA4ZWt1UWF1X1EyWFdiUmJvVlV3TUViaTJXTzZ1U2EtanhmRkF6UEltYm1EUVAyR2FTODYtY3JFbS1HeHJtQVFPUURpZ1dOYWlJLXNNUU93MmVJcGpyMGNETw?oc=5
+[5]: https://news.google.com/rss/articles/CBMiU0FVX3lxTE50aTlVWWlKZ1l1WWNIRE9kTU92VXI2R0NNUGFNZU9yTFVwYzhmZ2dJUlBEY2pNYTBDWHZMRmJPZjV0T01rcmJ2RDV2Z2xhZVJXZUhv?oc=5
 [6]: https://www.facebook.com/events/9556883804395729/
 [7]: https://www.facebook.com/events/759296430158124/
