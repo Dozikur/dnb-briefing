@@ -1,4 +1,4 @@
-# DnB NOVINKY – 18. 9. 2025
+# DnB NOVINKY – 21. 9. 2025
 
 ## Svět (8. – 14. 09. 2025)
 
@@ -14,7 +14,7 @@
 
 ## Kuriozita (8. – 14. 09. 2025)
 
-* Voicenote Violence - ukf.com — Voicenote Violence ukf.com (12. 9. 2025) ([UKF][1])
+* Voicenote Violence - ukf.com — Voicenote Violence ukf.com (11. 9. 2025) ([UKF][1])
 
 ## Eventy ČR / SK
 
