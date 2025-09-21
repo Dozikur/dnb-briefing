@@ -460,7 +460,7 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
     return pri if pri else unique
 
 def build_events_section(prev_start: date, prev_end: date):
-"""Složí tři bloky: recap min. týden, nadcházející týden, nově oznámené."""
+    """Složí tři bloky: recap min. týden, nadcházející týden, nově oznámené."""
     prev_events = scrape_dnbeheard_window(prev_start, prev_end)
     next_start = prev_end + timedelta(days=1)
     next_end = next_start + timedelta(days=EVENT_FUTURE_DAYS - 1)
