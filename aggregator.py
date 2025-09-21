@@ -460,9 +460,11 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
     return pri if pri else unique
 
 def build_events_section(prev_start: date, prev_end: date):
-    """Složí tři bloky: recap min. týden, tento týden, nově oznámené.
-       POZOR: reportujeme pouze minulý týden → 'Tento týden' bude fallback."""
+"""Složí tři bloky: recap min. týden, nadcházející týden, nově oznámené."""
     prev_events = scrape_dnbeheard_window(prev_start, prev_end)
+    next_start = prev_end + timedelta(days=1)
+    next_end = next_start + timedelta(days=EVENT_FUTURE_DAYS - 1)
+    next_events = scrape_dnbeheard_window(next_start, next_end)
 
     def line(it):
         idx = add_ref(it["link"] or "https://dnbeheard.cz/kalendar-akci/", "DnBHeard")
@@ -482,9 +484,13 @@ def build_events_section(prev_start: date, prev_end: date):
     else:
         parts.append("* Žádné relevantní novinky tento týden.")
 
-    # Tento týden – neagregujeme, protože briefing je jen za minulý týden
+    # Tento týden – přehled nadcházejících eventů
     parts.append("\n### Tento týden")
-    parts.append("* Žádné relevantní novinky tento týden.")
+        if next_events:
+        for it in next_events:
+            parts.append(line(it))
+    else:
+        parts.append("* Žádné relevantní novinky tento týden.")
 
     # Nově oznámené – kalendář neobsahuje datum oznámení
     parts.append("\n### Nově oznámené")
