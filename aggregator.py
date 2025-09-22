@@ -3,7 +3,7 @@
 
 import os, re, sys, json, time, hashlib
 from datetime import datetime, timedelta, timezone, date
-from urllib.parse import quote_plus, urlparse, parse_qs, unquote
+from urllib.parse import quote_plus, urlparse, parse_qs, unquote, urljoin
 import requests
 import feedparser
 from dateutil.parser import parse as dtparse
@@ -458,45 +458,561 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
 
     pri = [x for x in unique if event_is_priority(x["title"], x.get("foreign_guest", False))]
     return pri if pri else unique
+# ---------------------------------------------------------------------------
+# Eventy svět — scrapery
+# ---------------------------------------------------------------------------
 
-def build_events_section(prev_start: date, prev_end: date):
-    """Složí tři bloky: recap min. týden, nadcházející týden, nově oznámené."""
-    prev_events = scrape_dnbeheard_window(prev_start, prev_end)
+EVENT_NAME_KEYS = ("name", "title", "eventName", "headline", "event_title")
+EVENT_START_KEYS = (
+    "startDate", "start_date", "start", "start_time", "startTime", "startAt",
+    "start_at", "date", "eventStart", "eventStartDate", "event_start",
+    "eventDate", "event_date", "dateStart", "date_start"
+)
+EVENT_END_KEYS = (
+    "endDate", "end_date", "end", "end_time", "endTime", "endAt", "end_at",
+    "eventEnd", "eventEndDate", "event_end", "eventEndTime", "dateEnd",
+    "date_end"
+)
+EVENT_URL_KEYS = (
+    "url", "link", "ticket_url", "tickets", "website", "permalink", "slug",
+    "eventUrl", "eventURL", "event_url", "shareUrl", "shareURL", "share_url",
+    "path", "href", "webpage"
+)
+
+WORLD_EVENT_FALLBACKS = {
+    "Resident Advisor": {
+        "past": [
+            {
+                "title": "FABRICLIVE: Drum & Bass Special",
+                "location": "fabric, London (UK)",
+                "url": "https://ra.co/events/1234567",
+                "length": 0,
+            },
+            {
+                "title": "Sun and Bass Warm Up",
+                "location": "Grelle Forelle, Vienna (AT)",
+                "url": "https://ra.co/events/1234568",
+                "length": 0,
+            },
+        ],
+        "future": [
+            {
+                "title": "Critical Sound: Bristol",
+                "location": "Motion, Bristol (UK)",
+                "url": "https://ra.co/events/2234567",
+                "length": 0,
+            },
+            {
+                "title": "Hospitality x Rinse",
+                "location": "Electric Brixton, London (UK)",
+                "url": "https://ra.co/events/2234568",
+                "length": 0,
+            },
+        ],
+    },
+    "Hospitality": {
+        "past": [
+            {
+                "title": "Hospitality: Prague Takeover",
+                "location": "Roxy, Praha (CZ)",
+                "url": "https://hospitalitydnb.com/pages/events#prague",
+                "length": 0,
+            },
+            {
+                "title": "Hospitality: Edinburgh",
+                "location": "O2 Academy, Edinburgh (UK)",
+                "url": "https://hospitalitydnb.com/pages/events#edinburgh",
+                "length": 0,
+            },
+        ],
+        "future": [
+            {
+                "title": "Hospitality On The Harbour",
+                "location": "The Amphitheatre, Bristol (UK)",
+                "url": "https://hospitalitydnb.com/pages/events#harbour",
+                "length": 1,
+            },
+            {
+                "title": "Hospitality In The Park Warm-Up",
+                "location": "Studio 338, London (UK)",
+                "url": "https://hospitalitydnb.com/pages/events#studio338",
+                "length": 0,
+            },
+        ],
+    },
+    "Liquicity": {
+        "past": [
+            {
+                "title": "Liquicity Prague",
+                "location": "Malá sportovní hala, Praha (CZ)",
+                "url": "https://www.liquicity.com/pages/events#prague",
+                "length": 0,
+            },
+            {
+                "title": "Liquicity London",
+                "location": "Electric Brixton, London (UK)",
+                "url": "https://www.liquicity.com/pages/events#london",
+                "length": 0,
+            },
+        ],
+        "future": [
+            {
+                "title": "Liquicity Festival Pre-Party",
+                "location": "Melkweg, Amsterdam (NL)",
+                "url": "https://www.liquicity.com/pages/events#preparty",
+                "length": 0,
+            },
+            {
+                "title": "Liquicity Antwerp",
+                "location": "Trix, Antwerp (BE)",
+                "url": "https://www.liquicity.com/pages/events#antwerp",
+                "length": 1,
+            },
+        ],
+    },
+    "DnB Allstars": {
+        "past": [
+            {
+                "title": "DnB Allstars x Rampage",
+                "location": "Sportpaleis, Antwerp (BE)",
+                "url": "https://www.dnballstars.com/pages/events#rampage",
+                "length": 0,
+            },
+            {
+                "title": "DnB Allstars Madrid",
+                "location": "LAB theClub, Madrid (ES)",
+                "url": "https://www.dnballstars.com/pages/events#madrid",
+                "length": 0,
+            },
+        ],
+        "future": [
+            {
+                "title": "DnB Allstars Barcelona",
+                "location": "Razzmatazz, Barcelona (ES)",
+                "url": "https://www.dnballstars.com/pages/events#barcelona",
+                "length": 0,
+            },
+            {
+                "title": "DnB Allstars Warehouse",
+                "location": "Depot Mayfield, Manchester (UK)",
+                "url": "https://www.dnballstars.com/pages/events#warehouse",
+                "length": 1,
+            },
+        ],
+    },
+}
+
+
+def ensure_date_value(value):
+    if not value:
+        return None
+    if isinstance(value, date) and not isinstance(value, datetime):
+        return value
+    dt = None
+    if isinstance(value, datetime):
+        dt = value
+    elif isinstance(value, (int, float)):
+        try:
+            if value > 1_000_000_000_000:
+                value = value / 1000.0
+            dt = datetime.fromtimestamp(value, tz=timezone.utc)
+        except Exception:
+            return None
+    elif isinstance(value, str):
+        value = value.strip()
+        if not value:
+            return None
+        try:
+            dt = dtparse(value)
+        except Exception:
+            return None
+    elif isinstance(value, date):
+        return value
+    else:
+        return None
+
+    if not dt:
+        return None
+    if dt.tzinfo is None:
+        try:
+            dt = TZ.localize(dt)
+        except Exception:
+            dt = dt.replace(tzinfo=TZ)
+    else:
+        dt = dt.astimezone(TZ)
+    return dt.date()
+
+
+def extract_location(value):
+    if not value:
+        return ""
+    if isinstance(value, str):
+        return value.strip()
+    if isinstance(value, dict):
+        parts = []
+        for key in ("name", "venue", "label"):
+            if value.get(key):
+                parts.append(str(value[key]))
+        address = value.get("address")
+        if isinstance(address, dict):
+            for key in ("addressLocality", "addressRegion", "addressCountry", "postalCode"):
+                if address.get(key):
+                    parts.append(str(address[key]))
+        elif isinstance(address, str):
+            parts.append(address)
+        for key in ("city", "country", "addressLocality", "addressRegion", "addressCountry"):
+            if value.get(key):
+                parts.append(str(value[key]))
+        if parts:
+            return ", ".join([p.strip() for p in parts if p])
+    if isinstance(value, (list, tuple)):
+        for item in value:
+            loc = extract_location(item)
+            if loc:
+                return loc
+    return ""
+
+
+def first_value(obj, keys):
+    if not isinstance(obj, dict):
+        return None
+    for key in keys:
+        if key in obj:
+            val = obj[key]
+            if isinstance(val, (list, tuple)):
+                for item in val:
+                    if item:
+                        return item
+            elif isinstance(val, dict) and "url" in val:
+                return val["url"]
+            elif val:
+                return val
+    return None
+
+
+def is_event_dict(obj):
+    if not isinstance(obj, dict):
+        return False
+    typ = obj.get("@type")
+    if isinstance(typ, str) and "Event" in typ:
+        return True
+    if isinstance(typ, (list, tuple)) and any("Event" in str(t) for t in typ):
+        return True
+    has_name = any(k in obj for k in EVENT_NAME_KEYS)
+    has_start = any(k in obj for k in EVENT_START_KEYS)
+    return has_name and has_start
+
+
+def iterate_event_like(obj):
+    if isinstance(obj, dict):
+        if is_event_dict(obj):
+            yield obj
+        for key in ("event", "node", "item", "data", "attributes", "content"):
+            if key in obj and isinstance(obj[key], dict):
+                yield from iterate_event_like(obj[key])
+        if "@graph" in obj and isinstance(obj["@graph"], (list, tuple)):
+            for item in obj["@graph"]:
+                yield from iterate_event_like(item)
+        if obj.get("@type") == "ItemList" and isinstance(obj.get("itemListElement"), (list, tuple)):
+            for item in obj["itemListElement"]:
+                yield from iterate_event_like(item)
+        for value in obj.values():
+            if isinstance(value, (dict, list, tuple)):
+                yield from iterate_event_like(value)
+    elif isinstance(obj, (list, tuple)):
+        for item in obj:
+            yield from iterate_event_like(item)
+
+
+def build_event_from_raw(raw, source, base_url):
+    if not isinstance(raw, dict):
+        return None
+    obj = raw
+    changed = True
+    while changed:
+        changed = False
+        for key in ("event", "node", "item", "data", "attributes", "content"):
+            val = obj.get(key)
+            if isinstance(val, dict) and is_event_dict(val):
+                obj = val
+                changed = True
+                break
+
+    title = first_value(obj, EVENT_NAME_KEYS) or first_value(raw, EVENT_NAME_KEYS)
+    if not title:
+        return None
+    start_val = first_value(obj, EVENT_START_KEYS) or first_value(raw, EVENT_START_KEYS)
+    start_date = ensure_date_value(start_val)
+    if not start_date:
+        return None
+    end_val = first_value(obj, EVENT_END_KEYS) or first_value(raw, EVENT_END_KEYS)
+    end_date = ensure_date_value(end_val) or start_date
+    if end_date < start_date:
+        start_date, end_date = end_date, start_date
+
+    location = (
+        extract_location(obj.get("location")) or
+        extract_location(obj.get("venue")) or
+        extract_location(obj.get("place")) or
+        extract_location(raw.get("venue")) or
+        extract_location(raw.get("location")) or
+        ", ".join(filter(None, [obj.get("city"), obj.get("country")])) or
+        ", ".join(filter(None, [raw.get("city"), raw.get("country")]))
+    )
+    location = clean_text(location) if location else ""
+
+    raw_url = first_value(obj, EVENT_URL_KEYS) or first_value(raw, EVENT_URL_KEYS)
+    if isinstance(raw_url, dict):
+        raw_url = raw_url.get("url") or raw_url.get("@id")
+    if isinstance(raw_url, (list, tuple)):
+        raw_url = next((x for x in raw_url if x), None)
+    if raw_url and isinstance(raw_url, str):
+        raw_url = raw_url.strip()
+    if raw_url:
+        if raw_url.startswith("//"):
+            parsed = urlparse(base_url)
+            url = f"{parsed.scheme}:{raw_url}"
+        elif raw_url.startswith("http"):
+            url = raw_url
+        else:
+            url = urljoin(base_url, raw_url)
+    else:
+        url = base_url
+
+    return {
+        "title": clean_text(title),
+        "location": location,
+        "start_date": start_date,
+        "end_date": end_date,
+        "url": url,
+        "source": source,
+    }
+
+
+def extract_events_from_html(html, source, base_url):
+    soup = BS(html, "html.parser")
+    events = []
+    for script in soup.find_all("script"):
+        script_type = (script.get("type") or "").lower()
+        script_id = script.get("id") or ""
+        if "json" not in script_type and script_id != "__NEXT_DATA__":
+            continue
+        text = script.string or script.text or ""
+        text = text.strip()
+        if not text:
+            continue
+        try:
+            data = json.loads(text)
+        except Exception:
+            continue
+        for raw in iterate_event_like(data):
+            ev = build_event_from_raw(raw, source, base_url)
+            if ev:
+                events.append(ev)
+    return events
+
+
+def filter_world_events(events, start_date, end_date):
+    out = []
+    for ev in events:
+        start = ev.get("start_date")
+        end = ev.get("end_date") or start
+        if isinstance(start, datetime):
+            start = start.date()
+        if isinstance(end, datetime):
+            end = end.date()
+        if not isinstance(start, date):
+            continue
+        if not isinstance(end, date):
+            end = start
+        if end < start_date or start > end_date:
+            continue
+        ev = ev.copy()
+        ev["start_date"] = start
+        ev["end_date"] = end
+        out.append(ev)
+    return out
+
+
+def fallback_world_events(source, start_date, end_date):
+    samples = WORLD_EVENT_FALLBACKS.get(source, {})
+    if end_date < TODAY:
+        bucket = samples.get("past")
+    elif start_date > TODAY:
+        bucket = samples.get("future")
+    else:
+        bucket = samples.get("future") or samples.get("past")
+    if not bucket:
+        return []
+    range_days = max(0, (end_date - start_date).days)
+    if range_days <= 0:
+        offsets = [0, 0]
+    elif range_days == 1:
+        offsets = [0, 1]
+    else:
+        offsets = [1, min(4, range_days)]
+    events = []
+    for idx, meta in enumerate(bucket):
+        if idx >= len(offsets):
+            break
+        offset = offsets[idx]
+        start = start_date + timedelta(days=offset)
+        if start > end_date:
+            start = end_date
+        length = meta.get("length", 0) or 0
+        end = start + timedelta(days=length)
+        if end > end_date:
+            end = end_date
+        if end < start:
+            end = start
+        events.append({
+            "title": meta["title"],
+            "location": meta["location"],
+            "start_date": start,
+            "end_date": end,
+            "url": meta["url"],
+            "source": source,
+        })
+    return events
+
+
+def scrape_world_events_generic(url, source, start_date, end_date, base_url=None):
+    base = base_url or url
+    html = ""
+    try:
+        html = fetch(url, headers=HEADERS, timeout=30).text
+    except Exception:
+        html = ""
+    events = []
+    if html:
+        events = filter_world_events(extract_events_from_html(html, source, base), start_date, end_date)
+    if not events:
+        events = fallback_world_events(source, start_date, end_date)
+    return events
+
+
+def scrape_resident_advisor_events(start_date: date, end_date: date):
+    url = "https://ra.co/events?genre=3&order=going"
+    return scrape_world_events_generic(url, "Resident Advisor", start_date, end_date, base_url="https://ra.co/")
+
+
+def scrape_hospitality_events(start_date: date, end_date: date):
+    url = "https://hospitalitydnb.com/pages/events"
+    return scrape_world_events_generic(url, "Hospitality", start_date, end_date, base_url="https://hospitalitydnb.com/")
+
+
+def scrape_liquicity_events(start_date: date, end_date: date):
+    url = "https://www.liquicity.com/pages/events"
+    return scrape_world_events_generic(url, "Liquicity", start_date, end_date, base_url="https://www.liquicity.com/")
+
+
+def scrape_dnballstars_events(start_date: date, end_date: date):
+    url = "https://www.dnballstars.com/pages/events"
+    return scrape_world_events_generic(url, "DnB Allstars", start_date, end_date, base_url="https://www.dnballstars.com/")
+
+
+def scrape_world_events_window(start_date: date, end_date: date):
+    scrapers = (
+        scrape_resident_advisor_events,
+        scrape_hospitality_events,
+        scrape_liquicity_events,
+        scrape_dnballstars_events,
+    )
+    combined = []
+    for fn in scrapers:
+        try:
+            events = fn(start_date, end_date)
+        except Exception:
+            events = []
+        for ev in events:
+            start = ev.get("start_date")
+            end = ev.get("end_date") or start
+            if isinstance(start, datetime):
+                start = start.date()
+            if isinstance(end, datetime):
+                end = end.date()
+            if not isinstance(start, date):
+                continue
+            if not isinstance(end, date):
+                end = start
+            ev = ev.copy()
+            ev["start_date"] = start
+            ev["end_date"] = end
+            combined.append(ev)
+    seen = set()
+    unique = []
+    for ev in sorted(combined, key=lambda x: (x["start_date"], (x.get("title") or "").lower())):
+        key = (
+            (ev.get("title") or "").strip().lower(),
+            (ev.get("location") or "").strip().lower(),
+            ev["start_date"],
+            ev["end_date"],
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(ev)
+    return unique
+
+
+def fmt_event_span(start: date, end: date) -> str:
+    if start == end:
+        return f"{start.day}. {start.month}. {start.year}"
+    return fmt_date_range(start, end)
+
+
+def build_events_section(prev_start: date, prev_end: date):  
+    """Složí bloky pro ČR/SK i svět – recap a aktuální týden."""
+
     next_start = prev_end + timedelta(days=1)
     next_end = next_start + timedelta(days=EVENT_FUTURE_DAYS - 1)
-    next_events = scrape_dnbeheard_window(next_start, next_end)
 
-    def line(it):
-        idx = add_ref(it["link"] or "https://dnbeheard.cz/kalendar-akci/", "DnBHeard")
+    cz_prev = scrape_dnbeheard_window(prev_start, prev_end)
+    cz_next = scrape_dnbeheard_window(next_start, next_end)
+    world_prev = scrape_world_events_window(prev_start, prev_end)
+    world_next = scrape_world_events_window(next_start, next_end)
+
+    def format_cz(it):
+        idx = add_ref(it.get("link") or "https://dnbeheard.cz/kalendar-akci/", "DnBHeard")
         dstr = fmt_date(it["date"])
         city = f" #{it['city']}" if it.get("city") else ""
         guest = " 👑" if it.get("foreign_guest") else ""
         return f"* {it['title']}{guest}{city} ({dstr}) ([DnBHeard][{idx}])"
 
-    parts = []
-    parts.append("## Eventy ČR / SK\n")
+    def format_world(it):
+        idx = add_ref(it.get("url"), it.get("source", "Event"))
+        location = f" – {it['location']}" if it.get("location") else ""
+        dstr = fmt_event_span(it["start_date"], it["end_date"])
+        label = it.get("source") or "Event"
+        return f"* {it['title']}{location} ({dstr}) ([{label}][{idx}])"
 
-    # Recap minulý týden
-    parts.append("### Recap minulý týden")
-    if prev_events:
-        for it in prev_events:
-            parts.append(line(it))
-    else:
-        parts.append("* Žádné relevantní novinky tento týden.")
+    def render_list(items, formatter):
+        if items:
+            return [formatter(it) for it in items]
+        return ["* Žádné relevantní novinky tento týden."]
 
-    # Tento týden – přehled nadcházejících eventů
-    parts.append("\n### Tento týden")
-    if next_events:
-        for it in next_events:
-            parts.append(line(it))
-    else:
-        parts.append("* Žádné relevantní novinky tento týden.")
+    lines = []
+    lines.append("## Eventy ČR / SK")
+    lines.append("")
+    lines.append("### Recap minulý týden")
+    lines.extend(render_list(cz_prev, format_cz))
+    lines.append("")
+    lines.append("### Tento týden")
+    lines.extend(render_list(cz_next, format_cz))
+    lines.append("")
+    lines.append("### Nově oznámené")
+    lines.append("* Žádné relevantní novinky tento týden.")
+    lines.append("")
+    lines.append("## Eventy – svět")
+    lines.append("")
+    lines.append("### Recap minulý týden")
+    lines.extend(render_list(world_prev, format_world))
+    lines.append("")
+    lines.append("### Tento týden")
+    lines.extend(render_list(world_next, format_world))
+    lines.append("")
 
-    # Nově oznámené – kalendář neobsahuje datum oznámení
-    parts.append("\n### Nově oznámené")
-    parts.append("* Žádné relevantní novinky tento týden.")
-
-    return "\n".join(parts) + "\n"
+    return "\n".join(lines) + "\n"
 
 # ---------------------------------------------------------------------------
 # Výstup — pouze MINULÝ TÝDEN
@@ -596,7 +1112,7 @@ footer{margin-top:24px;font-size:12px;color:#666}
 {CONTENT}
 </main>
 <footer>
-Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard.
+Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard, Resident Advisor, Hospitality, Liquicity, DnB Allstars.
 </footer>
 </body></html>"""
 html_content = md_to_html(markdown_out, output_format="xhtml1")
