@@ -694,12 +694,20 @@ def is_event_dict(obj):
     if not isinstance(obj, dict):
         return False
     typ = obj.get("@type")
-    if isinstance(typ, str) and "Event" in typ:
+
+    def type_is_event(value):
+        if isinstance(value, str):
+            return "Event" in value
+        if isinstance(value, (list, tuple)):
+            return any("Event" in str(t) for t in value)
+        return False
+
+    if type_is_event(typ):
         return True
-    if isinstance(typ, (list, tuple)) and any("Event" in str(t) for t in typ):
-        return True
+        
     has_name = any(k in obj for k in EVENT_NAME_KEYS)
-    has_start = any(k in obj for k in EVENT_START_KEYS)
+    start_keys = [k for k in EVENT_START_KEYS if k != "date"]
+    has_start = any(k in obj for k in start_keys)
     return has_name and has_start
 
 
