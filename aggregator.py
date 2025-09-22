@@ -706,9 +706,39 @@ def is_event_dict(obj):
         return True
         
     has_name = any(k in obj for k in EVENT_NAME_KEYS)
+    if not has_name:
+        return False
+
     start_keys = [k for k in EVENT_START_KEYS if k != "date"]
-    has_start = any(k in obj for k in start_keys)
-    return has_name and has_start
+    if any(k in obj for k in start_keys):
+        return True
+
+    if "date" not in obj:
+        return False
+
+    def value_exists(value):
+        if isinstance(value, str):
+            return bool(value.strip())
+        if isinstance(value, (list, tuple, set)):
+            return any(value_exists(v) for v in value)
+        if isinstance(value, dict):
+            return any(value_exists(v) for v in value.values())
+        return bool(value)
+
+    location_keys = ("location", "venue", "place", "club", "eventLocation")
+    for key in location_keys:
+        if key in obj and extract_location(obj.get(key)):
+            return True
+
+    context_keys = (
+        "city",
+        "country",
+        "address",
+        "addressLocality",
+        "addressRegion",
+        "addressCountry",
+    )
+    return any(key in obj and value_exists(obj.get(key)) for key in context_keys)
 
 
 def iterate_event_like(obj):
