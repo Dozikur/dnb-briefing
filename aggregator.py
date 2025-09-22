@@ -603,11 +603,64 @@ WORLD_EVENT_FALLBACKS = {
 }
 
 
-def ensure_date_value(value):
+def ensure_date_value(value, _visited=None):
     if not value:
         return None
     if isinstance(value, date) and not isinstance(value, datetime):
         return value
+        
+    if _visited is None:
+        _visited = set()
+
+    if isinstance(value, dict):
+        obj_id = id(value)
+        if obj_id in _visited:
+            return None
+        _visited.add(obj_id)
+
+        candidate_keys = (
+            "start",
+            "startDate",
+            "start_date",
+            "from",
+            "date",
+            "dateStart",
+            "date_start",
+            "iso",
+            "isoDate",
+            "iso8601",
+            "isoDateTime",
+            "iso_datetime",
+            "@value",
+            "value",
+            "datetime",
+            "dateTime",
+            "time",
+            "timestamp",
+            "end",
+            "endDate",
+            "end_date",
+            "to",
+            "until",
+        )
+        for key in candidate_keys:
+            if key in value and value[key]:
+                result = ensure_date_value(value[key], _visited)
+                if result:
+                    return result
+        for v in value.values():
+            result = ensure_date_value(v, _visited)
+            if result:
+                return result
+        return None
+
+    if isinstance(value, (list, tuple, set)):
+        for item in value:
+            result = ensure_date_value(item, _visited)
+            if result:
+                return result
+        return None
+
     dt = None
     if isinstance(value, datetime):
         dt = value
@@ -784,6 +837,11 @@ def build_event_from_raw(raw, source, base_url):
     if not start_date:
         return None
     end_val = first_value(obj, EVENT_END_KEYS) or first_value(raw, EVENT_END_KEYS)
+    if not end_val and isinstance(start_val, dict):
+        for key in ("end", "endDate", "end_date", "to", "until"):
+            if start_val.get(key):
+                end_val = start_val[key]
+                break
     end_date = ensure_date_value(end_val) or start_date
     if end_date < start_date:
         start_date, end_date = end_date, start_date
