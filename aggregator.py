@@ -480,129 +480,6 @@ EVENT_URL_KEYS = (
     "path", "href", "webpage"
 )
 
-WORLD_EVENT_FALLBACKS = {
-    "Resident Advisor": {
-        "past": [
-            {
-                "title": "FABRICLIVE: Drum & Bass Special",
-                "location": "fabric, London (UK)",
-                "url": "https://ra.co/events/1234567",
-                "length": 0,
-            },
-            {
-                "title": "Sun and Bass Warm Up",
-                "location": "Grelle Forelle, Vienna (AT)",
-                "url": "https://ra.co/events/1234568",
-                "length": 0,
-            },
-        ],
-        "future": [
-            {
-                "title": "Critical Sound: Bristol",
-                "location": "Motion, Bristol (UK)",
-                "url": "https://ra.co/events/2234567",
-                "length": 0,
-            },
-            {
-                "title": "Hospitality x Rinse",
-                "location": "Electric Brixton, London (UK)",
-                "url": "https://ra.co/events/2234568",
-                "length": 0,
-            },
-        ],
-    },
-    "Hospitality": {
-        "past": [
-            {
-                "title": "Hospitality: Prague Takeover",
-                "location": "Roxy, Praha (CZ)",
-                "url": "https://hospitalitydnb.com/pages/events#prague",
-                "length": 0,
-            },
-            {
-                "title": "Hospitality: Edinburgh",
-                "location": "O2 Academy, Edinburgh (UK)",
-                "url": "https://hospitalitydnb.com/pages/events#edinburgh",
-                "length": 0,
-            },
-        ],
-        "future": [
-            {
-                "title": "Hospitality On The Harbour",
-                "location": "The Amphitheatre, Bristol (UK)",
-                "url": "https://hospitalitydnb.com/pages/events#harbour",
-                "length": 1,
-            },
-            {
-                "title": "Hospitality In The Park Warm-Up",
-                "location": "Studio 338, London (UK)",
-                "url": "https://hospitalitydnb.com/pages/events#studio338",
-                "length": 0,
-            },
-        ],
-    },
-    "Liquicity": {
-        "past": [
-            {
-                "title": "Liquicity Prague",
-                "location": "Malá sportovní hala, Praha (CZ)",
-                "url": "https://www.liquicity.com/pages/events#prague",
-                "length": 0,
-            },
-            {
-                "title": "Liquicity London",
-                "location": "Electric Brixton, London (UK)",
-                "url": "https://www.liquicity.com/pages/events#london",
-                "length": 0,
-            },
-        ],
-        "future": [
-            {
-                "title": "Liquicity Festival Pre-Party",
-                "location": "Melkweg, Amsterdam (NL)",
-                "url": "https://www.liquicity.com/pages/events#preparty",
-                "length": 0,
-            },
-            {
-                "title": "Liquicity Antwerp",
-                "location": "Trix, Antwerp (BE)",
-                "url": "https://www.liquicity.com/pages/events#antwerp",
-                "length": 1,
-            },
-        ],
-    },
-    "DnB Allstars": {
-        "past": [
-            {
-                "title": "DnB Allstars x Rampage",
-                "location": "Sportpaleis, Antwerp (BE)",
-                "url": "https://www.dnballstars.com/pages/events#rampage",
-                "length": 0,
-            },
-            {
-                "title": "DnB Allstars Madrid",
-                "location": "LAB theClub, Madrid (ES)",
-                "url": "https://www.dnballstars.com/pages/events#madrid",
-                "length": 0,
-            },
-        ],
-        "future": [
-            {
-                "title": "DnB Allstars Barcelona",
-                "location": "Razzmatazz, Barcelona (ES)",
-                "url": "https://www.dnballstars.com/pages/events#barcelona",
-                "length": 0,
-            },
-            {
-                "title": "DnB Allstars Warehouse",
-                "location": "Depot Mayfield, Manchester (UK)",
-                "url": "https://www.dnballstars.com/pages/events#warehouse",
-                "length": 1,
-            },
-        ],
-    },
-}
-
 
 def ensure_date_value(value, _visited=None):
     if not value:
@@ -957,48 +834,6 @@ def filter_world_events(events, start_date, end_date):
     return out
 
 
-def fallback_world_events(source, start_date, end_date):
-    samples = WORLD_EVENT_FALLBACKS.get(source, {})
-    if end_date < TODAY:
-        bucket = samples.get("past")
-    elif start_date > TODAY:
-        bucket = samples.get("future")
-    else:
-        bucket = samples.get("future") or samples.get("past")
-    if not bucket:
-        return []
-    range_days = max(0, (end_date - start_date).days)
-    if range_days <= 0:
-        offsets = [0, 0]
-    elif range_days == 1:
-        offsets = [0, 1]
-    else:
-        offsets = [1, min(4, range_days)]
-    events = []
-    for idx, meta in enumerate(bucket):
-        if idx >= len(offsets):
-            break
-        offset = offsets[idx]
-        start = start_date + timedelta(days=offset)
-        if start > end_date:
-            start = end_date
-        length = meta.get("length", 0) or 0
-        end = start + timedelta(days=length)
-        if end > end_date:
-            end = end_date
-        if end < start:
-            end = start
-        events.append({
-            "title": meta["title"],
-            "location": meta["location"],
-            "start_date": start,
-            "end_date": end,
-            "url": meta["url"],
-            "source": source,
-        })
-    return events
-
-
 def scrape_world_events_generic(url, source, start_date, end_date, base_url=None):
     base = base_url or url
     html = ""
@@ -1009,8 +844,6 @@ def scrape_world_events_generic(url, source, start_date, end_date, base_url=None
     events = []
     if html:
         events = filter_world_events(extract_events_from_html(html, source, base), start_date, end_date)
-    if not events:
-        events = fallback_world_events(source, start_date, end_date)
     return events
 
 
