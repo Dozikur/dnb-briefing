@@ -33,6 +33,7 @@ PREV_MON, PREV_SUN = week_bounds(TODAY - timedelta(days=7))
 # Pomocné
 # ---------------------------------------------------------------------------
 HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
+RUN_MAIN = os.environ.get("DNB_BRIEFING_SKIP_MAIN") != "1"
 
 def fmt_date(dt: datetime) -> str:
     return f"{dt.day}. {dt.month}. {dt.year}"
@@ -618,6 +619,32 @@ def ensure_date_value(value, _visited=None):
             return None
         _visited.add(obj_id)
 
+        if all(key in value for key in ("year", "month", "day")):
+            try:
+                def parse_part(key, default=None):
+                    if key not in value:
+                        if default is None:
+                            raise ValueError
+                        return default
+                    raw = value[key]
+                    if raw is None or (isinstance(raw, str) and not raw.strip()):
+                        if default is None:
+                            raise ValueError
+                        return default
+                    if isinstance(raw, str):
+                        raw = raw.strip()
+                    return int(raw)
+
+                year = parse_part("year")
+                month = parse_part("month")
+                day = parse_part("day")
+                hour = parse_part("hour", 0)
+                minute = parse_part("minute", 0)
+                dt_candidate = datetime(year, month, day, hour, minute, tzinfo=TZ)
+                return dt_candidate.date()
+            except Exception:
+                pass
+        
         candidate_keys = (
             "start",
             "startDate",
@@ -1170,72 +1197,73 @@ def build_curio(period, it):
     return f"## Kuriozita ({period})\n\n* {summarize_item(it)} ({dstr}) ([{it['source']}][{idx}])\n"
 
 # Markdown skladba
-md_parts = []
-md_parts.append(f"# DnB NOVINKY – {fmt_date(datetime.now(TZ))}\n")
-md_parts.append(build_section("Svět", PER_PREV, world_prev, MIN_WORLD))
-md_parts.append(build_section("ČR / SK", PER_PREV, cz_prev, MIN_CZSK))
-md_parts.append(build_reddit_section(PER_PREV, rd_prev))
-md_parts.append(build_curio(PER_PREV, cur_prev))
-md_parts.append(build_events_section(PREV_MON, PREV_SUN))
+if RUN_MAIN:
+    md_parts = []
+    md_parts.append(f"# DnB NOVINKY – {fmt_date(datetime.now(TZ))}\n")
+    md_parts.append(build_section("Svět", PER_PREV, world_prev, MIN_WORLD))
+    md_parts.append(build_section("ČR / SK", PER_PREV, cz_prev, MIN_CZSK))
+    md_parts.append(build_reddit_section(PER_PREV, rd_prev))
+    md_parts.append(build_curio(PER_PREV, cur_prev))
+    md_parts.append(build_events_section(PREV_MON, PREV_SUN))
 
-# Zdroje
-refs_lines = ["\n## Zdroje\n"]
-for i,(label,url) in enumerate(all_refs, start=1):
-    refs_lines.append(f"[{i}]: {url}")
-md_parts.append("\n".join(refs_lines) + "\n")
+    # Zdroje
+    refs_lines = ["\n## Zdroje\n"]
+    for i,(label,url) in enumerate(all_refs, start=1):
+        refs_lines.append(f"[{i}]: {url}")
+    md_parts.append("\n".join(refs_lines) + "\n")
 
-markdown_out = "\n".join(md_parts).strip()
+    markdown_out = "\n".join(md_parts).strip()
 
-# Ulož MD + HTML (pro GitHub Pages)
-os.makedirs("docs", exist_ok=True)
-with open("docs/index.md", "w", encoding="utf-8") as f:
-    f.write(markdown_out + "\n")
+    # Ulož MD + HTML (pro GitHub Pages)
+    os.makedirs("docs", exist_ok=True)
+    with open("docs/index.md", "w", encoding="utf-8") as f:
+        f.write(markdown_out + "\n")
 
-html_template = """<!DOCTYPE html><html lang="cs"><meta charset="utf-8">
-<title>DnB NOVINKY</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.55}
-h1{font-size:28px;margin:0 0 16px}
-h2{font-size:20px;margin:24px 0 8px;border-bottom:1px solid #e5e7eb;padding-bottom:4px}
-h3{font-size:16px;margin:18px 0 6px}
-ul{padding-left:22px}
-code,pre{background:#f6f8fa}
-footer{margin-top:24px;font-size:12px;color:#666}
-</style>
-<body>
-<main>
-{CONTENT}
-</main>
-<footer>
-Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard, Resident Advisor, Hospitality, Liquicity, DnB Allstars.
-</footer>
-</body></html>"""
-html_content = md_to_html(markdown_out, output_format="xhtml1")
-html = html_template.replace("{CONTENT}", html_content)
-with open("docs/index.html", "w", encoding="utf-8") as f:
-    f.write(html)
+    html_template = """<!DOCTYPE html><html lang="cs"><meta charset="utf-8">
+    <title>DnB NOVINKY</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.55}
+    h1{font-size:28px;margin:0 0 16px}
+    h2{font-size:20px;margin:24px 0 8px;border-bottom:1px solid #e5e7eb;padding-bottom:4px}
+    h3{font-size:16px;margin:18px 0 6px}
+    ul{padding-left:22px}
+    code,pre{background:#f6f8fa}
+    footer{margin-top:24px;font-size:12px;color:#666}
+    </style>
+    <body>
+    <main>
+    {CONTENT}
+    </main>
+    <footer>
+    Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard, Resident Advisor, Hospitality, Liquicity, DnB Allstars.
+    </footer>
+    </body></html>"""
+    html_content = md_to_html(markdown_out, output_format="xhtml1")
+    html = html_template.replace("{CONTENT}", html_content)
+    with open("docs/index.html", "w", encoding="utf-8") as f:
+        f.write(html)
 
-print("OK: docs/index.md + docs/index.html")
+    print("OK: docs/index.md + docs/index.html")
 
-# Volitelné: Google Slides webhook — zachováno pro případné použití
-WEBHOOK = os.environ.get("APPSCRIPT_WEBHOOK_URL", "").strip()
-PRESENTATION_ID = os.environ.get("GOOGLE_SLIDES_PRESENTATION_ID", "").strip()
-if WEBHOOK and PRESENTATION_ID:
-    payload = {
-        "date": TODAY.strftime("%Y-%m-%d"),
-        "period_prev": PER_PREV,
-        "sections": {
-            "world_prev": [format_item(it) for it in world_prev] or ["* Žádné zásadní novinky."],
-            "cz_prev":    [format_item(it) for it in cz_prev]    or ["* Žádné zásadní novinky."],
-            "reddit_prev":[f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_prev] or ["* Žádné zásadní novinky."],
-            "curiosity_prev": [build_curio(PER_PREV, cur_prev).split('\n',2)[2] if cur_prev else "* Žádné zásadní novinky."],
-        },
-        "sources": [f"[{i}]: {u}" for i,(_,u) in enumerate(all_refs, start=1)],
-        "presentationId": PRESENTATION_ID
-    }
-    try:
-        r = requests.post(WEBHOOK, json=payload, timeout=25)
-        print("AppsScript:", r.status_code, r.text[:200])
-    except Exception as ex:
-        print("AppsScript error:", ex, file=sys.stderr)
+    # Volitelné: Google Slides webhook — zachováno pro případné použití
+    WEBHOOK = os.environ.get("APPSCRIPT_WEBHOOK_URL", "").strip()
+    PRESENTATION_ID = os.environ.get("GOOGLE_SLIDES_PRESENTATION_ID", "").strip()
+    if WEBHOOK and PRESENTATION_ID:
+        payload = {
+            "date": TODAY.strftime("%Y-%m-%d"),
+            "period_prev": PER_PREV,
+            "sections": {
+                "world_prev": [format_item(it) for it in world_prev] or ["* Žádné zásadní novinky."],
+                "cz_prev":    [format_item(it) for it in cz_prev]    or ["* Žádné zásadní novinky."],
+                "reddit_prev":[f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_prev] or ["* Žádné zásadní novinky."],
+                "curiosity_prev": [build_curio(PER_PREV, cur_prev).split('\n',2)[2] if cur_prev else "* Žádné zásadní novinky."],
+            },
+            "sources": [f"[{i}]: {u}" for i,(_,u) in enumerate(all_refs, start=1)],
+            "presentationId": PRESENTATION_ID
+        }
+        try:
+            r = requests.post(WEBHOOK, json=payload, timeout=25)
+            print("AppsScript:", r.status_code, r.text[:200])
+        except Exception as ex:
+            print("AppsScript error:", ex, file=sys.stderr)
