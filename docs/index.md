@@ -46,6 +46,9 @@
 ### Tento týden
 * Žádné relevantní novinky tento týden.
 
+### Nově oznámené
+* Žádné relevantní novinky tento týden.
+
 
 
 ## Zdroje
