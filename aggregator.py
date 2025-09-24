@@ -35,6 +35,49 @@ PREV_MON, PREV_SUN = week_bounds(TODAY - timedelta(days=7))
 HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
 RUN_MAIN = os.environ.get("DNB_BRIEFING_SKIP_MAIN") != "1"
 
+FACEBOOK_ACCESS_TOKEN = (
+    os.environ.get("DNB_BRIEFING_FACEBOOK_TOKEN")
+    or os.environ.get("FACEBOOK_GRAPH_TOKEN")
+    or os.environ.get("FACEBOOK_ACCESS_TOKEN")
+)
+
+FACEBOOK_DEFAULT_PAGES = {
+    "hospitalitydnb": "Hospitality",
+    "rampagebelgium": "Rampage",
+    "Liquicity": "Liquicity",
+    "KorsakovMusic": "Korsakov",
+    "DnBAllstars": "DnB Allstars",
+    "darkshirednb": "Darkshire",
+    "BeatsForLoveFestival": "Beats for Love",
+    "hoofbeatsmusic": "Hoofbeats",
+    "roxyprague": "Roxy Prague",
+    "epicprague": "EPIC Prague",
+}
+
+
+def parse_facebook_pages_config(value: str):
+    mapping = {}
+    for chunk in value.split(","):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        if ":" in chunk:
+            page_id, label = chunk.split(":", 1)
+        else:
+            page_id, label = chunk, chunk
+        page_id = page_id.strip()
+        label = label.strip() or page_id
+        if page_id:
+            mapping[page_id] = label
+    return mapping
+
+
+def load_facebook_pages():
+    env = os.environ.get("DNB_BRIEFING_FACEBOOK_PAGES", "").strip()
+    if env:
+        return parse_facebook_pages_config(env)
+    return FACEBOOK_DEFAULT_PAGES
+
 def fmt_date(dt: datetime) -> str:
     return f"{dt.day}. {dt.month}. {dt.year}"
 
@@ -463,21 +506,88 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
 # Eventy svět — scrapery
 # ---------------------------------------------------------------------------
 
-EVENT_NAME_KEYS = ("name", "title", "eventName", "headline", "event_title")
+EVENT_NAME_KEYS = (
+    "name",
+    "title",
+    "eventName",
+    "headline",
+    "event_title",
+    "shortTitle",
+    "nameRaw",
+    "displayName",
+    "eventTitle",
+)
 EVENT_START_KEYS = (
-    "startDate", "start_date", "start", "start_time", "startTime", "startAt",
-    "start_at", "date", "eventStart", "eventStartDate", "event_start",
-    "eventDate", "event_date", "dateStart", "date_start"
+    "startDate",
+    "start_date",
+    "start",
+    "start_time",
+    "startTime",
+    "startAt",
+    "start_at",
+    "startLocal",
+    "start_local",
+    "startUTC",
+    "startUtc",
+    "startTimestamp",
+    "startsAt",
+    "date",
+    "eventStart",
+    "eventStartDate",
+    "event_start",
+    "eventDate",
+    "event_date",
+    "eventDateTime",
+    "event_date_time",
+    "dateStart",
+    "date_start",
+    "startDateTime",
+    "start_date_time",
+    "localDate",
+    "dateTime",
 )
 EVENT_END_KEYS = (
-    "endDate", "end_date", "end", "end_time", "endTime", "endAt", "end_at",
-    "eventEnd", "eventEndDate", "event_end", "eventEndTime", "dateEnd",
-    "date_end"
+    "endDate",
+    "end_date",
+    "end",
+    "end_time",
+    "endTime",
+    "endAt",
+    "end_at",
+    "endLocal",
+    "end_local",
+    "endUTC",
+    "endUtc",
+    "endTimestamp",
+    "endsAt",
+    "eventEnd",
+    "eventEndDate",
+    "event_end",
+    "eventEndTime",
+    "eventEndDateTime",
+    "dateEnd",
+    "date_end",
+    "endDateTime",
+    "end_date_time",
 )
 EVENT_URL_KEYS = (
-    "url", "link", "ticket_url", "tickets", "website", "permalink", "slug",
-    "eventUrl", "eventURL", "event_url", "shareUrl", "shareURL", "share_url",
-    "path", "href", "webpage"
+    "url",
+    "link",
+    "ticket_url",
+    "tickets",
+    "website",
+    "permalink",
+    "slug",
+    "eventUrl",
+    "eventURL",
+    "event_url",
+    "shareUrl",
+    "shareURL",
+    "share_url",
+    "shareLink",
+    "path",
+    "href",
+    "webpage",
 )
 
 
@@ -607,17 +717,41 @@ def extract_location(value):
         return value.strip()
     if isinstance(value, dict):
         parts = []
-        for key in ("name", "venue", "label"):
+        for key in ("name", "venue", "label", "title", "venueName", "locationName"):
             if value.get(key):
                 parts.append(str(value[key]))
         address = value.get("address")
         if isinstance(address, dict):
-            for key in ("addressLocality", "addressRegion", "addressCountry", "postalCode"):
+            for key in (
+                "addressLocality",
+                "addressRegion",
+                "addressCountry",
+                "postalCode",
+                "city",
+                "country",
+                "state",
+                "region",
+            ):
                 if address.get(key):
                     parts.append(str(address[key]))
         elif isinstance(address, str):
             parts.append(address)
-        for key in ("city", "country", "addressLocality", "addressRegion", "addressCountry"):
+        location_obj = value.get("location")
+        if isinstance(location_obj, dict):
+            loc = extract_location(location_obj)
+            if loc:
+                parts.append(loc)
+        for key in (
+            "city",
+            "country",
+            "addressLocality",
+            "addressRegion",
+            "addressCountry",
+            "locality",
+            "state",
+            "region",
+            "shortAddress",
+        ):
             if value.get(key):
                 parts.append(str(value[key]))
         if parts:
@@ -654,23 +788,41 @@ def is_event_dict(obj):
 
     def type_is_event(value):
         if isinstance(value, str):
-            return "Event" in value
-        if isinstance(value, (list, tuple)):
-            return any("Event" in str(t) for t in value)
+            return "event" in value.lower()
+        if isinstance(value, (list, tuple, set)):
+            return any(type_is_event(v) for v in value)
         return False
 
     if type_is_event(typ):
         return True
         
-    has_name = any(k in obj for k in EVENT_NAME_KEYS)
+
+    for type_key in ("modelType", "__typename", "kind", "itemType", "type"):
+        if type_is_event(obj.get(type_key)):
+            return True
+
+    has_name = any(k in obj and obj.get(k) for k in EVENT_NAME_KEYS)
     if not has_name:
         return False
 
-    start_keys = [k for k in EVENT_START_KEYS if k != "date"]
-    if any(k in obj for k in start_keys):
+    def has_start(container):
+        if not isinstance(container, dict):
+            return False
+        return any(key in container for key in EVENT_START_KEYS)
+
+    if has_start(obj):
         return True
 
-    if "date" not in obj:
+    for nested_key in ("dates", "dateInfo", "schedule", "eventDates", "timing", "times"):
+        nested = obj.get(nested_key)
+        if isinstance(nested, dict) and has_start(nested):
+            return True
+        if isinstance(nested, (list, tuple)):
+            for item in nested:
+                if isinstance(item, dict) and has_start(item):
+                    return True
+
+    if not has_start(obj) and "date" not in obj and "localDate" not in obj:
         return False
 
     def value_exists(value):
@@ -682,7 +834,7 @@ def is_event_dict(obj):
             return any(value_exists(v) for v in value.values())
         return bool(value)
 
-    location_keys = ("location", "venue", "place", "club", "eventLocation")
+    location_keys = ("location", "venue", "place", "club", "eventLocation", "venueName")
     for key in location_keys:
         if key in obj and extract_location(obj.get(key)):
             return True
@@ -694,6 +846,9 @@ def is_event_dict(obj):
         "addressLocality",
         "addressRegion",
         "addressCountry",
+        "locality",
+        "region",
+        "state",
     )
     return any(key in obj and value_exists(obj.get(key)) for key in context_keys)
 
@@ -737,6 +892,21 @@ def build_event_from_raw(raw, source, base_url):
     if not title:
         return None
     start_val = first_value(obj, EVENT_START_KEYS) or first_value(raw, EVENT_START_KEYS)
+    if not start_val:
+        for container_key in ("dates", "dateInfo", "schedule", "eventDates", "timing", "times"):
+            container = obj.get(container_key) or raw.get(container_key)
+            if isinstance(container, dict):
+                start_val = first_value(container, EVENT_START_KEYS) or container.get("start")
+                if start_val:
+                    break
+            elif isinstance(container, (list, tuple)):
+                for item in container:
+                    if isinstance(item, dict):
+                        start_val = first_value(item, EVENT_START_KEYS) or item.get("start")
+                        if start_val:
+                            break
+                if start_val:
+                    break
     start_date = ensure_date_value(start_val)
     if not start_date:
         return None
@@ -746,6 +916,21 @@ def build_event_from_raw(raw, source, base_url):
             if start_val.get(key):
                 end_val = start_val[key]
                 break
+    if not end_val:
+        for container_key in ("dates", "dateInfo", "schedule", "eventDates", "timing", "times"):
+            container = obj.get(container_key) or raw.get(container_key)
+            if isinstance(container, dict):
+                end_val = first_value(container, EVENT_END_KEYS) or container.get("end")
+                if end_val:
+                    break
+            elif isinstance(container, (list, tuple)):
+                for item in container:
+                    if isinstance(item, dict):
+                        end_val = first_value(item, EVENT_END_KEYS) or item.get("end")
+                        if end_val:
+                            break
+                if end_val:
+                    break
     end_date = ensure_date_value(end_val) or start_date
     if end_date < start_date:
         start_date, end_date = end_date, start_date
@@ -754,8 +939,11 @@ def build_event_from_raw(raw, source, base_url):
         extract_location(obj.get("location")) or
         extract_location(obj.get("venue")) or
         extract_location(obj.get("place")) or
+        extract_location(obj.get("eventLocation")) or
+        extract_location(obj.get("club")) or
         extract_location(raw.get("venue")) or
         extract_location(raw.get("location")) or
+        extract_location(raw.get("eventLocation")) or
         ", ".join(filter(None, [obj.get("city"), obj.get("country")])) or
         ", ".join(filter(None, [raw.get("city"), raw.get("country")]))
     )
@@ -848,7 +1036,7 @@ def scrape_world_events_generic(url, source, start_date, end_date, base_url=None
 
 
 def scrape_resident_advisor_events(start_date: date, end_date: date):
-    url = "https://ra.co/events?genre=3&order=going"
+    url = "https://ra.co/events/cz/all/drumandbass"
     return scrape_world_events_generic(url, "Resident Advisor", start_date, end_date, base_url="https://ra.co/")
 
 
@@ -866,6 +1054,108 @@ def scrape_dnballstars_events(start_date: date, end_date: date):
     url = "https://www.dnballstars.com/pages/events"
     return scrape_world_events_generic(url, "DnB Allstars", start_date, end_date, base_url="https://www.dnballstars.com/")
 
+def scrape_rampage_events(start_date: date, end_date: date):
+    url = "https://www.rampage.be/events"
+    return scrape_world_events_generic(url, "Rampage", start_date, end_date, base_url="https://www.rampage.be/")
+
+
+def scrape_korsakov_events(start_date: date, end_date: date):
+    url = "https://korsakovmusic.com/pages/events"
+    return scrape_world_events_generic(url, "Korsakov", start_date, end_date, base_url="https://korsakovmusic.com/")
+
+
+def scrape_darkshire_events(start_date: date, end_date: date):
+    url = "https://www.darkshire.cz/en/events"
+    return scrape_world_events_generic(url, "Darkshire", start_date, end_date, base_url="https://www.darkshire.cz/")
+
+
+def scrape_beatsforlove_events(start_date: date, end_date: date):
+    url = "https://www.beatsforlove.cz/en/events"
+    return scrape_world_events_generic(url, "Beats for Love", start_date, end_date, base_url="https://www.beatsforlove.cz/")
+
+
+def scrape_hoofbeats_events(start_date: date, end_date: date):
+    url = "https://www.hoofbeats.cz/events"
+    return scrape_world_events_generic(url, "Hoofbeats", start_date, end_date, base_url="https://www.hoofbeats.cz/")
+
+
+def scrape_roxy_events(start_date: date, end_date: date):
+    url = "https://www.roxy.cz/program"
+    return scrape_world_events_generic(url, "Roxy", start_date, end_date, base_url="https://www.roxy.cz/")
+
+
+def scrape_epic_events(start_date: date, end_date: date):
+    url = "https://epicprague.com/en/program"
+    return scrape_world_events_generic(url, "EPIC", start_date, end_date, base_url="https://epicprague.com/")
+
+
+def scrape_facebook_events(start_date: date, end_date: date):
+    token = FACEBOOK_ACCESS_TOKEN
+    pages = load_facebook_pages()
+    if not token or not pages:
+        return []
+
+    since_dt = datetime.combine(start_date, datetime.min.time(), tzinfo=TZ) - timedelta(days=1)
+    until_dt = datetime.combine(end_date, datetime.max.time(), tzinfo=TZ) + timedelta(days=1)
+    since_ts = int(since_dt.timestamp())
+    until_ts = int(until_dt.timestamp())
+
+    events = []
+    for page_id, label in pages.items():
+        url = f"https://graph.facebook.com/v17.0/{page_id}/events"
+        params = {
+            "access_token": token,
+            "since": since_ts,
+            "until": until_ts,
+            "fields": "id,name,start_time,end_time,place",
+            "limit": 100,
+        }
+        next_url = url
+        next_params = params
+        while next_url:
+            try:
+                resp = requests.get(next_url, params=next_params, timeout=20)
+                resp.raise_for_status()
+                payload = resp.json()
+            except Exception:
+                break
+
+            data_list = payload.get("data") or []
+            for ev in data_list:
+                name = clean_text(ev.get("name") or "")
+                if not name:
+                    continue
+                start_val = ev.get("start_time")
+                end_val = ev.get("end_time") or start_val
+                start_date_val = ensure_date_value(start_val)
+                end_date_val = ensure_date_value(end_val) or start_date_val
+                if not start_date_val:
+                    continue
+                if end_date_val and end_date_val < start_date:
+                    continue
+                if start_date_val > end_date:
+                    continue
+                location = ""
+                place = ev.get("place")
+                if isinstance(place, dict):
+                    location = extract_location(place)
+                fb_url = f"https://www.facebook.com/events/{ev.get('id')}" if ev.get("id") else ""
+                events.append(
+                    {
+                        "title": name,
+                        "location": location,
+                        "start_date": start_date_val,
+                        "end_date": end_date_val,
+                        "url": fb_url,
+                        "source": f"Facebook {label}",
+                    }
+                )
+
+            paging = payload.get("paging") or {}
+            next_url = paging.get("next")
+            next_params = None
+    return events
+
 
 def scrape_world_events_window(start_date: date, end_date: date):
     scrapers = (
@@ -873,6 +1163,13 @@ def scrape_world_events_window(start_date: date, end_date: date):
         scrape_hospitality_events,
         scrape_liquicity_events,
         scrape_dnballstars_events,
+        scrape_rampage_events,
+        scrape_korsakov_events,
+        scrape_darkshire_events,
+        scrape_beatsforlove_events,
+        scrape_hoofbeats_events,
+        scrape_roxy_events,
+        scrape_epic_events,
     )
     combined = []
     for fn in scrapers:
@@ -895,6 +1192,21 @@ def scrape_world_events_window(start_date: date, end_date: date):
             ev["start_date"] = start
             ev["end_date"] = end
             combined.append(ev)
+    for ev in scrape_facebook_events(start_date, end_date):
+        start = ev.get("start_date")
+        end = ev.get("end_date") or start
+        if isinstance(start, datetime):
+            start = start.date()
+        if isinstance(end, datetime):
+            end = end.date()
+        if not isinstance(start, date):
+            continue
+        if not isinstance(end, date):
+            end = start
+        ev = ev.copy()
+        ev["start_date"] = start
+        ev["end_date"] = end
+        combined.append(ev)
     seen = set()
     unique = []
     for ev in sorted(combined, key=lambda x: (x["start_date"], (x.get("title") or "").lower())):
@@ -1069,7 +1381,7 @@ if RUN_MAIN:
     {CONTENT}
     </main>
     <footer>
-    Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard, Resident Advisor, Hospitality, Liquicity, DnB Allstars.
+    Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard, Resident Advisor, Hospitality, Liquicity, DnB Allstars, Rampage, Korsakov, Darkshire, Beats for Love, Hoofbeats, Roxy, EPIC, Facebook Events.
     </footer>
     </body></html>"""
     html_content = md_to_html(markdown_out, output_format="xhtml1")
