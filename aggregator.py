@@ -32,7 +32,19 @@ PREV_MON, PREV_SUN = week_bounds(TODAY - timedelta(days=7))
 # ---------------------------------------------------------------------------
 # Pomocné
 # ---------------------------------------------------------------------------
-HEADERS = {"User-Agent": "DnB-Novinky/1.0 (+github actions)"}
+DEFAULT_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/123.0.0.0 Safari/537.36"
+)
+
+HEADERS = {
+    "User-Agent": DEFAULT_UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9,cs;q=0.8",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+}
 RUN_MAIN = os.environ.get("DNB_BRIEFING_SKIP_MAIN") != "1"
 
 FACEBOOK_ACCESS_TOKEN = (
@@ -110,9 +122,20 @@ def get_best_date(entry):
             return datetime(*entry[k][:6], tzinfo=timezone.utc).astimezone(TZ)
     return None
 
+def merge_headers(base, extra):
+    if not extra:
+        return base.copy()
+    merged = base.copy()
+    for key, value in extra.items():
+        if value is None:
+            merged.pop(key, None)
+        else:
+            merged[key] = value
+    return merged
+
+
 def fetch(url, headers=None, timeout=20):
-    h = {"User-Agent":"Mozilla/5.0 (GitHubActions DnB Briefing)"}
-    if headers: h.update(headers)
+    h = merge_headers(HEADERS, headers)
     r = requests.get(url, headers=h, timeout=timeout)
     r.raise_for_status()
     return r
