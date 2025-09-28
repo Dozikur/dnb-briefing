@@ -1,12 +1,12 @@
-# DnB NOVINKY – 24. 9. 2025
+# DnB NOVINKY – 28. 9. 2025
 
 ## Svět (15.–21. 9. 2025)
 
 * MPH - ABC's (ft. AntsLive) (20. 9. 2025) ([YouTube @UKFDrumandBass][1])
 * Ruth Royall - Easy Fix (19. 9. 2025) ([YouTube @UKFDrumandBass][2])
 * Lokal & Freddy B - Cold Front (17. 9. 2025) ([YouTube @UKFDrumandBass][3])
-* Jeff Mills announces ‘Live At Liquid Room - Tokyo’ 30th anniversary tour - djmag.com — Jeff Mills announces ‘Live At Liquid Room - Tokyo’ 30th anniversary tour djmag.com (17. 9. 2025) ([DJ Mag][4])
-* Ten Tracks That Inspired AIRGLO - ukf.com — Ten Tracks That Inspired AIRGLO ukf.com (17. 9. 2025) ([UKF][5])
+* Ten Tracks That Inspired AIRGLO - ukf.com — Ten Tracks That Inspired AIRGLO ukf.com (17. 9. 2025) ([UKF][4])
+* Jeff Mills announces ‘Live At Liquid Room - Tokyo’ 30th anniversary tour - DJ Mag — Jeff Mills announces ‘Live At Liquid Room - Tokyo’ 30th anniversary tour DJ Mag (17. 9. 2025) ([DJ Mag][5])
 
 ## ČR / SK (15.–21. 9. 2025)
 
@@ -18,7 +18,7 @@
 
 ## Kuriozita (15.–21. 9. 2025)
 
-* Ten Tracks That Inspired AIRGLO - ukf.com — Ten Tracks That Inspired AIRGLO ukf.com (17. 9. 2025) ([UKF][5])
+* Ten Tracks That Inspired AIRGLO - ukf.com — Ten Tracks That Inspired AIRGLO ukf.com (17. 9. 2025) ([UKF][4])
 
 ## Eventy ČR / SK
 
@@ -45,14 +45,15 @@
 ## Eventy – svět
 
 ### Recap minulý týden
-* Madonna to release new dance music album in 2026 (18. 9. 2025) ([Resident Advisor][19])
-* Over 400 artists and labels announce Israel streaming boycott (18. 9. 2025) ([Resident Advisor][19])
-* This week's new music: Low Jack, Julianna Barwick & Mary Lattimore, Jasmín (19. 9. 2025) ([Resident Advisor][19])
-* JD Twitch, pioneering Scottish DJ and one half of Optimo, dies aged 57 (20. 9. 2025) ([Resident Advisor][19])
+* Žádné relevantní novinky tento týden.
 
 ### Tento týden
 * Legendary Chicago vocalist and DJ Ron Carroll dies aged 57 (22. 9. 2025) ([Resident Advisor][19])
 * Marcel Dettmann reveals new alias, My Own Shadow, with new !K7 EP (22. 9. 2025) ([Resident Advisor][19])
+* Jeff Mills' Tomorrow Comes The Harvest announces new album, Forbidden Planet (23. 9. 2025) ([Resident Advisor][19])
+* First-of-its-kind Queer Nightlife Community Center to open in New York (25. 9. 2025) ([Resident Advisor][19])
+* Kraków festival Unsound to return to iconic Hotel Forum for 2025 (25. 9. 2025) ([Resident Advisor][19])
+* Read the full transcript from Burial's 2007 Guardian interview (25. 9. 2025) ([Resident Advisor][19])
 
 
 
@@ -61,8 +62,8 @@
 [1]: https://www.youtube.com/watch?v=2x-KLEQcK_Y
 [2]: https://www.youtube.com/watch?v=fbXVGJmjILI
 [3]: https://www.youtube.com/watch?v=6DGyNhZnK6w
-[4]: https://news.google.com/rss/articles/CBMikgFBVV95cUxPdFlZYzI0cXA5aHRoMGdLMjBOZVhHTkM3ZzNmbHA4WFg1TjhFakJ3OVdNRW9mWFNyRV90alBkb0Q5c0lUM3ptbG5TN3VsWEJ4YXZFTXkzcHVnbDBDaDIxeW5WSVEyX0NnVXRoNTF2Q3J6cC1uNkoyXzZ1RzF1cFJjdTczZF9rNXpXNFlOSkw3LTlYUQ?oc=5
-[5]: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PUTBOcmZoT1Y0NTh6ODBvOU16OHhkdXBLMkVZeWRRVkZER2UtSHhlSUVDMWhYblU3ZEJ6eElwZVFyYm81RkdlWlNTUGNlNW1tR3FxTHc3M3R1aHlVWXlSVXVWWQ?oc=5
+[4]: https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PUTBOcmZoT1Y0NTh6ODBvOU16OHhkdXBLMkVZeWRRVkZER2UtSHhlSUVDMWhYblU3ZEJ6eElwZVFyYm81RkdlWlNTUGNlNW1tR3FxTHc3M3R1aHlVWXlSVXVWWQ?oc=5
+[5]: https://news.google.com/rss/articles/CBMikgFBVV95cUxPdFlZYzI0cXA5aHRoMGdLMjBOZVhHTkM3ZzNmbHA4WFg1TjhFakJ3OVdNRW9mWFNyRV90alBkb0Q5c0lUM3ptbG5TN3VsWEJ4YXZFTXkzcHVnbDBDaDIxeW5WSVEyX0NnVXRoNTF2Q3J6cC1uNkoyXzZ1RzF1cFJjdTczZF9rNXpXNFlOSkw3LTlYUQ?oc=5
 [6]: https://www.facebook.com/events/754272993968832/
 [7]: https://www.facebook.com/events/1418724722571939/
 [8]: https://www.facebook.com/events/2608314909510791/
