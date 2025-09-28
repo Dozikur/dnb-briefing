@@ -48,12 +48,7 @@
 * Žádné relevantní novinky tento týden.
 
 ### Tento týden
-* Legendary Chicago vocalist and DJ Ron Carroll dies aged 57 (22. 9. 2025) ([Resident Advisor][19])
-* Marcel Dettmann reveals new alias, My Own Shadow, with new !K7 EP (22. 9. 2025) ([Resident Advisor][19])
-* Jeff Mills' Tomorrow Comes The Harvest announces new album, Forbidden Planet (23. 9. 2025) ([Resident Advisor][19])
-* First-of-its-kind Queer Nightlife Community Center to open in New York (25. 9. 2025) ([Resident Advisor][19])
-* Kraków festival Unsound to return to iconic Hotel Forum for 2025 (25. 9. 2025) ([Resident Advisor][19])
-* Read the full transcript from Burial's 2007 Guardian interview (25. 9. 2025) ([Resident Advisor][19])
+* Žádné relevantní novinky tento týden.
 
 
 
@@ -77,4 +72,3 @@
 [16]: https://www.facebook.com/events/1251210932777500/
 [17]: https://www.facebook.com/events/1232143318146823/
 [18]: https://www.facebook.com/events/1993313891410407/
-[19]: https://ra.co/
