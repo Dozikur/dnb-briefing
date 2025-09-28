@@ -517,7 +517,6 @@ def scrape_dnbeheard_window(start_date: date, end_date: date):
 # Eventy svět — scrapery (multi-RA + promotéři)
 # ---------------------------------------------------------------------------
 
-# Klíče pro „announce“ datum (nově rozšířené – důležité pro „nově oznámené“)
 ANNOUNCE_KEYS = (
     "datePublished", "published", "publishDate", "publishedAt",
     "dateCreated", "created", "createdAt", "created_time",
@@ -697,25 +696,37 @@ def first_value(obj, keys):
                 return val
     return None
 
+# --------- STRIKTNĚJŠÍ DETEKTOR EVENTŮ (odmítá články) ---------
 def is_event_dict(obj):
     if not isinstance(obj, dict):
         return False
-    typ = obj.get("@type")
 
-    def type_is_event(value):
-        if isinstance(value, str):
-            return "event" in value.lower()
-        if isinstance(value, (list, tuple, set)):
-            return any(type_is_event(v) for v in value)
+    bad_types = {"newsarticle", "article", "blogposting"}
+    def type_normalized(x):
+        if isinstance(x, str):
+            return {x.lower()}
+        if isinstance(x, (list, tuple, set)):
+            return {str(t).lower() for t in x if t}
+        return set()
+
+    typ = type_normalized(obj.get("@type"))
+    if bad_types & typ:
         return False
 
-    if type_is_event(typ):
+    def type_is_event(value):
+        types = type_normalized(value)
+        return any("event" in t for t in types)
+
+    # 1) JSON-LD: @type obsahuje Event
+    if type_is_event(obj.get("@type")):
         return True
 
+    # 2) GraphQL/Next data: jiné klíče s typem
     for type_key in ("modelType", "__typename", "kind", "itemType", "type"):
         if type_is_event(obj.get(type_key)):
             return True
 
+    # 3) Měkké pravidlo: musí být název i nějaký start
     has_name = any(k in obj and obj.get(k) for k in EVENT_NAME_KEYS)
     if not has_name:
         return False
@@ -737,26 +748,7 @@ def is_event_dict(obj):
                 if isinstance(item, dict) and has_start(item):
                     return True
 
-    if not has_start(obj) and "date" not in obj and "localDate" not in obj:
-        return False
-
-    def value_exists(value):
-        if isinstance(value, str):
-            return bool(value.strip())
-        if isinstance(value, (list, tuple, set)):
-            return any(value_exists(v) for v in value)
-        if isinstance(value, dict):
-            return any(value_exists(v) for v in value.values())
-        return bool(value)
-
-    location_keys = ("location", "venue", "place", "club", "eventLocation", "venueName")
-    for key in location_keys:
-        if key in obj and extract_location(obj.get(key)):
-            return True
-
-    context_keys = ("city", "country", "address", "addressLocality",
-                    "addressRegion", "addressCountry", "locality", "region", "state")
-    return any(key in obj and value_exists(obj.get(key)) for key in context_keys)
+    return False
 
 def iterate_event_like(obj):
     if isinstance(obj, dict):
@@ -778,6 +770,7 @@ def iterate_event_like(obj):
         for item in obj:
             yield from iterate_event_like(item)
 
+# --------- RA-FILTR uvnitř builderu: jen /events a s lokací ---------
 def build_event_from_raw(raw, source, base_url):
     if not isinstance(raw, dict):
         return None
@@ -872,6 +865,17 @@ def build_event_from_raw(raw, source, base_url):
     else:
         url = base_url
 
+    # RA specifický filtr: jen skutečné eventy
+    if source == "Resident Advisor":
+        try:
+            p = urlparse(url)
+            if "/events" not in p.path:  # např. /news, /features ... ven
+                return None
+        except Exception:
+            return None
+        if not location:
+            return None
+
     return {
         "title": clean_text(title),
         "location": location,
@@ -903,6 +907,7 @@ def extract_events_from_html(html, source, base_url):
                 events.append(ev)
     return events
 
+# --------- Síto pro světové eventy (RA musí mít lokaci) ---------
 def filter_world_events(events, start_date, end_date):
     out = []
     for ev in events:
@@ -916,8 +921,16 @@ def filter_world_events(events, start_date, end_date):
             continue
         if not isinstance(end, date):
             end = start
+        # interval
         if end < start_date or start > end_date:
             continue
+        # název
+        if not ev.get("title"):
+            continue
+        # RA second-pass: musí mít lokaci
+        if ev.get("source") == "Resident Advisor" and not ev.get("location"):
+            continue
+
         ev = ev.copy()
         ev["start_date"] = start
         ev["end_date"] = end
