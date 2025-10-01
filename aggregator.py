@@ -1204,10 +1204,10 @@ def build_events_section(prev_start: date, prev_end: date):
     lines = []
     lines.append("## Eventy ČR / SK")
     lines.append("")
-    lines.append("### Recap minulý týden")
+    lines.append("### Proběhlé akce v minulém týdnu")
     lines.extend(render_list(cz_prev, format_cz))
     lines.append("")
-    lines.append("### Tento týden")
+    lines.append("### Chystané akce v aktuálním týdnu")
     lines.extend(render_list(cz_next, format_cz))
     lines.append("")
     lines.append("### Nově oznámené")
@@ -1215,10 +1215,10 @@ def build_events_section(prev_start: date, prev_end: date):
     lines.append("")
     lines.append("## Eventy – svět")
     lines.append("")
-    lines.append("### Recap minulý týden")
+    lines.append("### Proběhlé akce v minulém týdnu")
     lines.extend(render_list(world_prev, format_world))
     lines.append("")
-    lines.append("### Tento týden")
+    lines.append("### Chystané akce v aktuálním týdnu")
     lines.extend(render_list(world_next, format_world))
     lines.append("")
 
@@ -1230,20 +1230,26 @@ def build_events_section(prev_start: date, prev_end: date):
 def pick(items, need):
     return items[:need] if len(items)>=need else items
 
-def format_item(it):
+def format_news_block(it):
     dstr = fmt_date(it["date"])
-    txt = summarize_item(it)
+    title = it["title"] or "Novinka"
+    summary = summarize_item(it)
     ref_idx = add_ref(it["link"], it["source"])
-    label = f"[{it['source']}][{ref_idx}]"
-    return f"* {txt} ({dstr}) ({label})"
+    lines = [f"### {title} ({dstr})", "", summary, "", f"Zdroj: [{it['source']}][{ref_idx}]"]
+    return "\n".join(lines)
 
 def build_section(header, period, items, min_needed):
+    lines = [f"## {header} ({period})", ""]
     if len(items) < min_needed:
-        return f"## {header} ({period})\n\n* Žádné zásadní novinky.\n"
-    lines = [f"## {header} ({period})\n"]
-    for it in items:
-        lines.append(format_item(it))
-    return "\n".join(lines) + "\n"
+        lines.append("Žádné zásadní novinky za sledované období.")
+        lines.append("")
+        return "\n".join(lines)
+    for idx, it in enumerate(items):
+        lines.append(format_news_block(it))
+        if idx != len(items) - 1:
+            lines.append("")
+    lines.append("")
+    return "\n".join(lines)
 
 def period_str(a,b):
     return f"{a.day}.–{b.day}. {b.month}. {b.year}"
@@ -1285,18 +1291,27 @@ world_prev = pick(items_prev_world, MIN_WORLD)
 cz_prev    = pick(items_prev_czsk,  MIN_CZSK)
 rd_prev    = pick(reddit_prev,      max(MIN_REDDIT, 3))  # ideál 3
 
+def format_reddit_block(it):
+    title = it["title"] or "Vlákno"
+    summary = clean_text(f"{title}. {it['summary'] or ''}", 260)
+    dstr = fmt_date(it["date"])
+    ref_idx = add_ref(it["link"], it["source"])
+    block = [f"### {title} ({dstr})", "", summary, "", f"Zdroj: [{it['source']}][{ref_idx}]"]
+    return "\n".join(block)
+
+
 def build_reddit_section(period, lst):
+    lines = [f"## Reddit vlákna ({period})", ""]
     if len(lst) < MIN_REDDIT:
-        return f"## Reddit vlákna ({period})\n\n* Žádné zásadní novinky.\n"
-    lines = [f"## Reddit vlákna ({period})\n"]
-    for it in lst:
-        t = it["title"] or "Vlákno"
-        summary = it["summary"] or ""
-        dstr = fmt_date(it["date"])
-        brief = clean_text(f"{t}. {summary}", 260)
-        idx = add_ref(it["link"], it["source"])
-        lines.append(f"* {brief} ({dstr}) ([{it['source']}][{idx}])")
-    return "\n".join(lines) + "\n"
+        lines.append("Žádné zásadní novinky za sledované období.")
+        lines.append("")
+        return "\n".join(lines)
+    for idx, it in enumerate(lst):
+        lines.append(format_reddit_block(it))
+        if idx != len(lst) - 1:
+            lines.append("")
+    lines.append("")
+    return "\n".join(lines)
 
 def pick_curiosity(cands):
     KEYS = ["AI","uměl","study","rekord","unikátní","rare","prototype","leak","patent","CDJ","controller","hardware"]
@@ -1310,18 +1325,21 @@ def pick_curiosity(cands):
 cur_prev = pick_curiosity(items_prev_world) or pick_curiosity(items_prev_czsk)
 
 def build_curio(period, it):
+    lines = [f"## Kuriozita ({period})", ""]
     if not it:
-        return f"## Kuriozita ({period})\n\n* Žádné zásadní novinky.\n"
-    dstr = fmt_date(it["date"])
-    idx = add_ref(it["link"], it["source"])
-    return f"## Kuriozita ({period})\n\n* {summarize_item(it)} ({dstr}) ([{it['source']}][{idx}])\n"
+        lines.append("Žádné zásadní novinky za sledované období.")
+        lines.append("")
+        return "\n".join(lines)
+    lines.append(format_news_block(it))
+    lines.append("")
+    return "\n".join(lines)
 
 # Markdown skladba
 if RUN_MAIN:
     md_parts = []
     md_parts.append(f"# DnB NOVINKY – {fmt_date(datetime.now(TZ))}\n")
-    md_parts.append(build_section("Svět", PER_PREV, world_prev, MIN_WORLD))
-    md_parts.append(build_section("ČR / SK", PER_PREV, cz_prev, MIN_CZSK))
+    md_parts.append(build_section("Ze světa", PER_PREV, world_prev, MIN_WORLD))
+    md_parts.append(build_section("Tuzemsko", PER_PREV, cz_prev, MIN_CZSK))
     md_parts.append(build_reddit_section(PER_PREV, rd_prev))
     md_parts.append(build_curio(PER_PREV, cur_prev))
     md_parts.append(build_events_section(PREV_MON, PREV_SUN))
@@ -1374,10 +1392,10 @@ if RUN_MAIN:
             "date": TODAY.strftime("%Y-%m-%d"),
             "period_prev": PER_PREV,
             "sections": {
-                "world_prev": [format_item(it) for it in world_prev] or ["* Žádné zásadní novinky."],
-                "cz_prev":    [format_item(it) for it in cz_prev]    or ["* Žádné zásadní novinky."],
-                "reddit_prev":[f"* {clean_text((it['title'] or '') + '. ' + (it['summary'] or ''),260)}" for it in rd_prev] or ["* Žádné zásadní novinky."],
-                "curiosity_prev": [build_curio(PER_PREV, cur_prev).split('\n',2)[2] if cur_prev else "* Žádné zásadní novinky."],
+                "world_prev": [format_news_block(it) for it in world_prev] or ["Žádné zásadní novinky za sledované období."],
+                "cz_prev":    [format_news_block(it) for it in cz_prev]    or ["Žádné zásadní novinky za sledované období."],
+                "reddit_prev": [format_reddit_block(it) for it in rd_prev] or ["Žádné zásadní novinky za sledované období."],
+                "curiosity_prev": [format_news_block(cur_prev)] if cur_prev else ["Žádné zásadní novinky za sledované období."],
             },
             "sources": [f"[{i}]: {u}" for i,(_,u) in enumerate(all_refs, start=1)],
             "presentationId": PRESENTATION_ID
