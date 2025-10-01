@@ -1,0 +1,18 @@
+# DnB Monday Briefing — týden {{ week_label }}
+**Období:** {{ period_from }}–{{ period_to }}
+
+## Tuzemsko
+{% for i in items.cz %}- **{{ i.title }}** — {{ i.summary }} [zdroj]({{ i.proof_links[0] if i.proof_links }})
+{% endfor %}
+
+## Ze světa
+{% for i in items.world %}- **{{ i.title }}** — {{ i.summary }} [zdroj]({{ i.proof_links[0] if i.proof_links }})
+{% endfor %}
+
+## Reddit
+{% for i in items.reddit %}- **{{ i.title }}** — {{ i.summary }} [vlákno]({{ i.proof_links[0] if i.proof_links }})
+{% endfor %}
+
+## Kuriozita
+{% for i in items.curiosum %}- **{{ i.title }}** — {{ i.summary }} [zdroj]({{ i.proof_links[0] if i.proof_links }})
+{% endfor %}
