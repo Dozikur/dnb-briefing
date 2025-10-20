@@ -1,45 +1,43 @@
-# DnB NOVINKY – 13. 10. 2025
+# DnB NOVINKY – 20. 10. 2025
 
-## Svět (6.–12. 10. 2025)
-
-* The Resonance VIII: What The Remixers Had To Say - ukf.com — The Resonance VIII: What The Remixers Had To Say ukf.com (12. 10. 2025) ([UKF][1])
-* Hedex, Holy Goof & Doktor - SEND DEM (10. 10. 2025) ([YouTube @UKFDrumandBass][2])
-* Everen Maxwell - Overpowered (7. 10. 2025) ([YouTube @UKFDrumandBass][3])
-* Let It Roll míří do Kanady, Londýna i Karibiku. Praha se chystá na rekordní zimní edici - musicserver.cz — Let It Roll míří do Kanady, Londýna i Karibiku. (7. 10. 2025) ([Musicserver.cz][4])
-* Rakjay - Headback (Edges Remix) (6. 10. 2025) ([YouTube @UKFDrumandBass][5])
-
-## ČR / SK (6.–12. 10. 2025)
+## Svět (13.–19. 10. 2025)
 
 * Žádné zásadní novinky.
 
-## Reddit vlákna (6.–12. 10. 2025)
+## ČR / SK (13.–19. 10. 2025)
 
-* Check out my DnB project. submitted by /u/NUVYN [link] [comments] (12. 10. 2025) ([Reddit r/DnB][6])
-* Livecoding drum n bass with a text sequencer. submitted by /u/lutherdriggers [link] [comments] (12. 10. 2025) ([Reddit r/DnB][7])
-* Now playing - Waeys - Stopping Turning. 🔊🔥🔥🔥🎼 🎧: https://youtu.be/kOlSeoA4Hzg?si=nvJJMeIE6RNpblqq submitted by /u/SonicStories [link] [comments] (12. 10. 2025) ([Reddit r/DnB][8])
+* Žádné zásadní novinky.
 
-## Kuriozita (6.–12. 10. 2025)
+## Reddit vlákna (13.–19. 10. 2025)
 
-* Let It Roll míří do Kanady, Londýna i Karibiku. Praha se chystá na rekordní zimní edici - musicserver.cz — Let It Roll míří do Kanady, Londýna i Karibiku. (7. 10. 2025) ([Musicserver.cz][4])
+* Jacques Maya - Lonely. submitted by /u/tapsaff [link] [comments] (19. 10. 2025) ([Reddit r/DnB][1])
+* Sfork - Can't Keep Up ft. Elizabelle. Just released this DnB track and would love to hear the community’s thoughts. It leans into a more emotional direction than standard DnB while still keeping the energy up, just with a different vibe. Curious whether that e (19. 10. 2025) ([Reddit r/DnB][2])
+* Quarter pounder bass serum remix. Hello, does anyone have this tune that isn’t ripped, need it so bad but sly fucked everyone over and I’m very against ripping stuff so if anyone could supply me this or tell me otherwise then please do submitted by /u/Alfiecoo (19. 10. 2025) ([Reddit r/DnB][3])
+
+## Kuriozita (13.–19. 10. 2025)
+
+* Grafix Levels Up On Sophomore Album Don’t Slow Down - ukf.com — Grafix Levels Up On Sophomore Album Don’t Slow Down ukf.com (17. 10. 2025) ([UKF][4])
 
 ## Eventy ČR / SK
 
 ### Recap minulý týden
-* Dub FX & Woodnote , Lucerna Music Bar 👑 #Praha (8. 10. 2025) ([DnBHeard][9])
-* DNB WEDNIGHT: ZIGI SC INVITES , Roxy #Praha (8. 10. 2025) ([DnBHeard][10])
-* Dub FX (AU) & Woodnote (UK) | support PREZENCE (USA) , Fléda Club 👑 #Brno (9. 10. 2025) ([DnBHeard][11])
-* bg*collectiv presents SIMULA [UK] & Buunshin [NL] 👑 #Brno (10. 10. 2025) ([DnBHeard][12])
-* DUB FX (AUS) & WOODNOTE , Barrák music club 👑 #Ostrava (10. 10. 2025) ([DnBHeard][13])
+* DRUM&BOUNCE , Cross club #Praha (14. 10. 2025) ([DnBHeard][5])
+* Pendulum – Live (AUS) , Forum Karlín 👑 #Praha (16. 10. 2025) ([DnBHeard][6])
+* Ingredients w/ MOLECULAR [ PT ] , FUGA 👑 #Bratislava (17. 10. 2025) ([DnBHeard][7])
+* Bassproof w/ Black Sun Empire (NL) , Tržnice Brno 👑 #Brno (17. 10. 2025) ([DnBHeard][8])
+* Therapy Sessions CZ XVIII – brutal D’n’B party už v pátek – YOU NEED THERAPY!!! , MC Fabrika 👑 #ČeskéBudějovice (17. 10. 2025) ([DnBHeard][9])
+* Hoofbeats Music with Wilkinson (Uk) , Sklub 👑 #Olomouc (17. 10. 2025) ([DnBHeard][10])
+* Drum Session: Klinical (UK) , New MōōVEMENT 👑 #Plzeň (17. 10. 2025) ([DnBHeard][11])
+* Drum and Bus Station w/ Venjent B2B Akov (1st time ever) , Cross club 👑 #Praha (17. 10. 2025) ([DnBHeard][12])
+* DIMENSION WEEKENDER , Roxy 👑 #Praha (18. 10. 2025) ([DnBHeard][13])
+* Corrupted Order – Outbreed , Fabric 👑 #Ostrava (18. 10. 2025) ([DnBHeard][14])
 
 ### Tento týden
-* Pendulum – Live (AUS) , Forum Karlín 👑 #Praha (16. 10. 2025) ([DnBHeard][14])
-* Ingredients w/ MOLECULAR [ PT ] , FUGA 👑 #Bratislava (17. 10. 2025) ([DnBHeard][15])
-* Bassproof w/ Black Sun Empire (NL) , Tržnice Brno 👑 #Brno (17. 10. 2025) ([DnBHeard][16])
-* Hoofbeats Music with Wilkinson (Uk) , Sklub 👑 #Olomouc (17. 10. 2025) ([DnBHeard][17])
-* Drum Session: Klinical (UK) , New MōōVEMENT 👑 #Plzeň (17. 10. 2025) ([DnBHeard][18])
-* Drum and Bus Station w/ Venjent B2B Akov (1st time ever) , Cross club 👑 #Praha (17. 10. 2025) ([DnBHeard][19])
-* DIMENSION WEEKENDER , Roxy 👑 #Praha (18. 10. 2025) ([DnBHeard][20])
-* Corrupted Order – Outbreed , Fabric 👑 #Ostrava (18. 10. 2025) ([DnBHeard][21])
+* GRLS On The Decks w/ Charlie Tee , Fabric 👑 #Ostrava (24. 10. 2025) ([DnBHeard][15])
+* DrumCity – 10 Years Anniversary | Delta Heavy & Metrik , ABC Klub 👑 #Pardubice (24. 10. 2025) ([DnBHeard][16])
+* KOVEN , EPIC 👑 #Praha (24. 10. 2025) ([DnBHeard][17])
+* DNB[SPACE] w/ Break, Skeptical, Lens, Kyrist , GARBE Holešovice 👑 #Praha (24. 10. 2025) ([DnBHeard][18])
+* DNB RAVE Vol.5 , Star Club Flip 👑 #Zlín (24. 10. 2025) ([DnBHeard][19])
 
 ### Nově oznámené
 * Žádné relevantní novinky tento týden.
@@ -56,24 +54,22 @@
 
 ## Zdroje
 
-[1]: https://news.google.com/rss/articles/CBMieEFVX3lxTE84RmtDSi1YcVpkR1dnUnc4VC1CNDBJTm54aHVoci1TOEpOQmVHbDlERWt2b0ppZGJPQ1FpWjJZWThoZllsbDBKTzRneVlkU0tlVlpVUW1yaFNpLWhoZWJsR1JSV0tFc0pROEVGcHJlazRHZTBoa3o0dQ?oc=5
-[2]: https://www.youtube.com/watch?v=pdv-l6uxuN4
-[3]: https://www.youtube.com/watch?v=YjUrGMGik1Q
-[4]: https://news.google.com/rss/articles/CBMivwFBVV95cUxNcktUYVFfNFAzOHQtZjNmM0xGOHZjdVNDekIxSnQyZnVQNEstYngxZWVIdXF2WGUxMWd6Tzk4N2NkSl9UV0FCXzZxSkJwLXp5ZWxnUFBNek5CUDk1SUNyT1U3d0Jlb3FZai1KU0RsMkQ3enFvcmZ4c3JUemVqRjdMcHBwRDVBSDFDaV9FMkNBMG12dmxIWE9HMEYzU2xjZkhJM0JpR0plZzA1aW5PVFJ0RVZBMmNEWjdqOVo1bVZwdw?oc=5
-[5]: https://www.youtube.com/watch?v=rU1V_h8e1AA
-[6]: https://old.reddit.com/r/DnB/comments/1o5147k/check_out_my_dnb_project/
-[7]: https://old.reddit.com/r/DnB/comments/1o50pvo/livecoding_drum_n_bass_with_a_text_sequencer/
-[8]: https://old.reddit.com/r/DnB/comments/1o5064g/now_playing_waeys_stopping_turning/
-[9]: https://www.facebook.com/events/850359810561725/
-[10]: https://www.facebook.com/events/783945167835687/
-[11]: https://www.facebook.com/events/981857270215329/
-[12]: https://www.facebook.com/events/1032664542142904/
-[13]: https://www.facebook.com/events/1731493187715722/
-[14]: https://www.facebook.com/events/1252653462993250/
-[15]: https://www.facebook.com/events/1488408975526413/
-[16]: https://www.facebook.com/events/2160806824443142/
-[17]: https://www.facebook.com/events/1042375764771372/
-[18]: https://www.facebook.com/events/1210808520386777/
-[19]: https://www.facebook.com/events/1101241511465562/
-[20]: https://www.facebook.com/events/649618694175689/
-[21]: https://www.facebook.com/events/771419542720119
+[1]: https://old.reddit.com/r/DnB/comments/1ob04xc/jacques_maya_lonely/
+[2]: https://old.reddit.com/r/DnB/comments/1ob03ja/sfork_cant_keep_up_ft_elizabelle/
+[3]: https://old.reddit.com/r/DnB/comments/1oaymel/quarter_pounder_bass_serum_remix/
+[4]: https://news.google.com/rss/articles/CBMifEFVX3lxTE9VRXJLRXNlYzRMdXlqaGNTaDNHNHRmb3RFVUN0dXlGcnNyVWhPR2xBQy1UM1RTUDE3OFdOTVZoZk5yNmJCQ3BrZVhjRWR6Tk5iVUZnOXhXMDNWZWZfZmdlV08tdDU5enpvX1R5aG1rcjE3U21xeVNJcldaaTU?oc=5
+[5]: https://www.facebook.com/events/4201192550127944/
+[6]: https://www.facebook.com/events/1252653462993250/
+[7]: https://www.facebook.com/events/1488408975526413/
+[8]: https://www.facebook.com/events/2160806824443142/
+[9]: https://www.facebook.com/events/1440237543798417
+[10]: https://www.facebook.com/events/1042375764771372/
+[11]: https://www.facebook.com/events/1210808520386777/
+[12]: https://www.facebook.com/events/1101241511465562/
+[13]: https://www.facebook.com/events/649618694175689/
+[14]: https://www.facebook.com/events/771419542720119
+[15]: https://www.facebook.com/events/1741996486518377
+[16]: https://www.facebook.com/events/609640032216283/
+[17]: https://www.facebook.com/events/1083966723361325/
+[18]: https://www.facebook.com/events/1457321965415138/
+[19]: https://www.facebook.com/events/813143071094257
