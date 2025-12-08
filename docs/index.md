@@ -1,41 +1,40 @@
-# DnB NOVINKY – 1. 12. 2025
+# DnB NOVINKY – 8. 12. 2025
 
-## Svět (24.–30. 11. 2025)
+## Svět (1.–7. 12. 2025)
 
-* After Hours & Mushkilla - Any Minute (27. 11. 2025) ([YouTube @UKFDrumandBass][1])
-* Hospital Records opens mentorship schemes for emerging artists in drum ‘n’ bass - Mixmag — Hospital Records opens mentorship schemes for emerging artists in drum ‘n’ bass Mixmag (27. 11. 2025) ([Mixmag][2])
-* After Hours - Self Destruct (26. 11. 2025) ([YouTube @UKFDrumandBass][3])
-* Hospital Records launches 2026 mentorship schemes - DJ Mag — Hospital Records launches 2026 mentorship schemes DJ Mag (25. 11. 2025) ([DJ Mag][4])
-* 10 + 1 Years of Liquidators – Brno slaví liquid funk ve velkém! - RAVE.cz — 10 + 1 Years of Liquidators – Brno slaví liquid funk ve velkém! (25. 11. 2025) ([Rave.cz][5])
+* DNB Sunday at Cross Club, Prague ⟋ RA - Resident Advisor — DNB Sunday at Cross Club, Prague ⟋ RA Resident Advisor (7. 12. 2025) ([Resident Advisor][1])
+* PHYNYKS ALL NIGHT LONG at Liquid Club, Malta ⟋ RA Tickets - Resident Advisor — PHYNYKS ALL NIGHT LONG at Liquid Club, Malta ⟋ RA Tickets Resident Advisor (6. 12. 2025) ([Resident Advisor][2])
+* Fish56Octagon, Abi Flynn - I Wanna Know (5. 12. 2025) ([YouTube @UKFDrumandBass][3])
+* BCee Talks 20 years of Spearhead Records - ukf.com — BCee Talks 20 years of Spearhead Records ukf.com (5. 12. 2025) ([UKF][4])
+* Lost Tonight (ft. HEIGHTS) - ukf.com — Lost Tonight (ft. (4. 12. 2025) ([UKF][5])
 
-## ČR / SK (24.–30. 11. 2025)
+## ČR / SK (1.–7. 12. 2025)
 
-* 10 + 1 Years of Liquidators – Brno slaví liquid funk ve velkém! — Před rokem jim to nevyšlo… tak do toho šlápli letos. (25. 11. 2025) ([RAVE.cz][6])
-* London Elektricity: Lidi, co poslouchají D&B, jsou ty pravé legendy — Tento pátek se Roxy Prague promění v drum & bassový vesmír, do kterého přiletí skutečná britská sestava snů – London Elektricity, Etherwood a Trimer. Na domácí straně to rozjedou 2K & Sweg (Shadowbox) a Akira & Anakin (Deadly Viperz) v B2B setech, zatímco ROOM8 ovládne Tele2Beatz crew. (24. 11. 2025) ([RAVE.cz][7])
+* Žádné zásadní novinky.
 
-## Reddit vlákna (24.–30. 11. 2025)
+## Reddit vlákna (1.–7. 12. 2025)
 
-* Danny C - Star this is a bad boy tune!! 💢🍁💢. submitted by /u/sonata8787 [link] [comments] (30. 11. 2025) ([Reddit r/DnB][8])
-* WHATS THIS SONG CALLED. Andy C played this at his last concert in nz need help finding the song submitted by /u/Resident_Shock2626 [link] [comments] (30. 11. 2025) ([Reddit r/DnB][9])
-* Charity Record Fair Next weekend in Peckham. submitted by /u/Organic_Fortune7714 [link] [comments] (30. 11. 2025) ([Reddit r/DnB][10])
+* Windrift - Villainous Nature & Eyelace Lmk what u think. pre save My Spotify submitted by /u/villainousbynature [link] [comments] (7. 12. 2025) ([Reddit r/DnB][6])
+* Looking for Drum & Bass remixes of classic songs (aka “Drum & Bass for Old People”). Hey all, I’m trying to build a playlist for my dad and I’m looking for classic, very well-known songs that have been flipped into drum and bass. Think the vibe of that Sweet C (7. 12. 2025) ([Reddit r/DnB][7])
+* S.P.Y tearing apart a tiny sweat box in Philly. @hostilecitydnb goes crazy submitted by /u/Salt_Attitudee [link] [comments] (7. 12. 2025) ([Reddit r/DnB][8])
 
-## Kuriozita (24.–30. 11. 2025)
+## Kuriozita (1.–7. 12. 2025)
 
-* After Hours & Mushkilla - Any Minute (27. 11. 2025) ([YouTube @UKFDrumandBass][1])
+* DNB Sunday at Cross Club, Prague ⟋ RA - Resident Advisor — DNB Sunday at Cross Club, Prague ⟋ RA Resident Advisor (7. 12. 2025) ([Resident Advisor][1])
 
 ## Eventy ČR / SK
 
 ### Recap minulý týden
-* LQDT w/ Sigma , Fabric 👑 #Ostrava (28. 11. 2025) ([DnBHeard][11])
-* Next:Gen Audio night w/ VISLA (UK) & 4NIMAL (UK) , Cross club 👑 #Praha (28. 11. 2025) ([DnBHeard][12])
-* LONDON ELEKTRICITY & ETHERWOOD , Roxy 👑 #Praha (28. 11. 2025) ([DnBHeard][13])
-* Pulsation pres. DIMENSION(UK) , A4 Studio #Bratislava (29. 11. 2025) ([DnBHeard][14])
+* DEEP DOWN w/ NEBULATE (DE) , STOUN 👑 #FrýdekMístek (5. 12. 2025) ([DnBHeard][9])
+* Bassproof w/ Venjent & Oktae & Morty (UK) , Tržnice 👑 #Brno (6. 12. 2025) ([DnBHeard][10])
+* APHRODITE uk DRUMANDBASS RELEASED ON VINYL , BUNKR Music Club 👑 #Liberec (6. 12. 2025) ([DnBHeard][11])
+* SIGMA , EPIC 👑 #Praha (6. 12. 2025) ([DnBHeard][12])
 
 ### Tento týden
-* DEEP DOWN w/ NEBULATE (DE) , STOUN 👑 #FrýdekMístek (5. 12. 2025) ([DnBHeard][15])
-* Bassproof w/ Venjent & Oktae & Morty (UK) , Tržnice 👑 #Brno (6. 12. 2025) ([DnBHeard][16])
-* APHRODITE uk DRUMANDBASS RELEASED ON VINYL , BUNKR Music Club 👑 #Liberec (6. 12. 2025) ([DnBHeard][17])
-* SIGMA , EPIC 👑 #Praha (6. 12. 2025) ([DnBHeard][18])
+* Ingredients w/ ASKEL & ELERE [ FI ] , FUGA 👑 #Bratislava (12. 12. 2025) ([DnBHeard][13])
+* DOUBLE TROUBLE w/ APHRODITE (UK) & MJOI (UK) , Cross club 👑 #Praha (12. 12. 2025) ([DnBHeard][14])
+* 10+1 Years of Liquidators Crew w/ BCEE & MAKOTO , ARTBAR 👑 #Brno (13. 12. 2025) ([DnBHeard][15])
+* CAMO&KROOKED , Roxy 👑 #Praha (13. 12. 2025) ([DnBHeard][16])
 
 ### Nově oznámené
 * Žádné relevantní novinky tento týden.
@@ -52,21 +51,19 @@
 
 ## Zdroje
 
-[1]: https://www.youtube.com/watch?v=y-fFBz0nEQE
-[2]: https://news.google.com/rss/articles/CBMipAFBVV95cUxPdkZlaTItUTBvaE9wVFZXSDB0ZEsyS2ZjUXI0dUYwNldfZUphbFZVUjUtdzdSVDE4VE9rX2RBUGp3Z1Y3LUp4R2phSzFobUQ2V2N4VE9haHdKdGhXZVR2MmJnY2ppcDVpbnRYRUlPTGZUNFZBYnU4UWRORFhfQXJhbkZfbFMtWEItZzNDVXYzTGhHX3RtQ21pX29lRUhSaEdXaGtzQtIBnAFBVV95cUxOM2ZQdjJuaU5hTnhpT0NWM1ZXNndWV2c3UWFJYmVqQVlUdEltOXY1UVRfUmJGVWlUVGRqN1JSYjNDMkFiTTVJXzZTVzZ2ZzY3NVRrRHZ5ckY4T2ZnODhrb1hhYlBTbVVHNEpxbGJGNkhTWmlCczF2YnVyc0puYzUzeHFEeTgtZVNFb3l0VU1WbjJ2WWZIQmRBZmZ2dEU?oc=5
-[3]: https://www.youtube.com/watch?v=rZuL7_mmsZg
-[4]: https://news.google.com/rss/articles/CBMifEFVX3lxTFBSRFExaV9Cc0ZNWUdscU5zR2ZzMFotaXlfV3h4Mnl6TmRoSktrTmN2YjVXT3VDZmVBeUpNZTVULWtqWW5rYVFaQU10RWJwSU5RSkVtcEV1MGhxNlhtb0pndmg4VW5nSHI1eVFFM0RUaHdpV3ZSanRIVkE0Y0I?oc=5
-[5]: https://news.google.com/rss/articles/CBMijgFBVV95cUxNVmYzSmFVRzVXdHIyYndHOFZHS3B2Y1hieUZSQWRXa0hkWVlvU0l5RVBhM2lHWWt5c0owQnlQVUZMUC1LNE1oaWZfQVAweFBkYU9rdmpLaFdnMjZocHcxeC16Um8yclZsa21ObmgybXViYXBxWFlsS2hCMlI4RVlvUUE1RGxFQ3BFdWwyRHp3?oc=5
-[6]: https://www.rave.cz/27469/10-1-years-of-liquidators-brno-slavi-liquid-funk-ve-velkem/
-[7]: https://www.rave.cz/27432/london-elektricity-lidi-co-poslouchaji-db-jsou-ty-prave-legendy/
-[8]: https://old.reddit.com/r/DnB/comments/1pav23g/danny_c_star_this_is_a_bad_boy_tune/
-[9]: https://old.reddit.com/r/DnB/comments/1paupxi/whats_this_song_called/
-[10]: https://old.reddit.com/r/DnB/comments/1paqcju/charity_record_fair_next_weekend_in_peckham/
-[11]: https://www.facebook.com/events/1455779909204239/
-[12]: https://www.facebook.com/events/25224016907182537/
-[13]: https://www.facebook.com/events/1594719495372252/
-[14]: https://www.facebook.com/events/3740037922953821/
-[15]: https://www.facebook.com/events/1189477389817563/
-[16]: https://www.facebook.com/events/1360023248842523/
-[17]: https://www.facebook.com/events/2949534985238291/
-[18]: https://www.facebook.com/events/1253492166319635/
+[1]: https://news.google.com/rss/articles/CBMiQkFVX3lxTE9kbUNiZXNtZFpmZktCaXlxb0Fuc3kyZFRXcmRyZkJSNU9fTXJrV2p2cW05Rjd5YVZjRGI4eWI1ZEpaUQ?oc=5
+[2]: https://news.google.com/rss/articles/CBMiQkFVX3lxTE9aM3dzSk1RNnFMSUNiQ3g4bUttTGRIX2h6YkpZUlRMYUJNWDBtRG92QXMtZUN1YzN3cWhlZUc2ZHlNUQ?oc=5
+[3]: https://www.youtube.com/watch?v=omdTcEok9JY
+[4]: https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWUDJpUUVVRzVlbTVVNERpNVhUYTNvaUFXbV8xMGxxWFNvNl9PT1ZzS2Q0dHd2SUZ1dWNTaDNLR1Rrb1NEZ1ZmUW8wdFJQSDZsTjU3MC0xZU5DR2JqaHhRRjZVX08?oc=5
+[5]: https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBEYUM0NHBUM1hWaWZoUFlldV9OcGJLZ3hoVXJPMWRZajktdkl3b0UzMEQ0bGgxbk9VVm5DUU4wdlBkbVZLbE5rWm90cjNtTVdPNDFwUE1EZDViRE50SFJNUDc0c2QzSWM?oc=5
+[6]: https://old.reddit.com/r/DnB/comments/1pguxac/windrift_villainous_nature_eyelace_lmk_what_u/
+[7]: https://old.reddit.com/r/DnB/comments/1pgubgp/looking_for_drum_bass_remixes_of_classic_songs/
+[8]: https://old.reddit.com/r/DnB/comments/1pgu9dr/spy_tearing_apart_a_tiny_sweat_box_in_philly/
+[9]: https://www.facebook.com/events/1189477389817563/
+[10]: https://www.facebook.com/events/1360023248842523/
+[11]: https://www.facebook.com/events/2949534985238291/
+[12]: https://www.facebook.com/events/1253492166319635/
+[13]: https://www.facebook.com/events/867243318991320/
+[14]: https://www.facebook.com/events/1873057940311141/
+[15]: https://www.facebook.com/events/1515613943196265/
+[16]: https://www.facebook.com/events/1322787932654207/
