@@ -1,36 +1,35 @@
-# DnB NOVINKY – 29. 12. 2025
+# DnB NOVINKY – 5. 1. 2026
 
-## Svět (22.–28. 12. 2025)
-
-* Žádné zásadní novinky.
-
-## ČR / SK (22.–28. 12. 2025)
+## Svět (29.–4. 1. 2026)
 
 * Žádné zásadní novinky.
 
-## Reddit vlákna (22.–28. 12. 2025)
+## ČR / SK (29.–4. 1. 2026)
 
-* DJ Hype And DJ Zinc True Playaz Vol One (1997) this is a bloody brilliant album🔥🍁🔥. submitted by /u/sonata8787 [link] [comments] (28. 12. 2025) ([Reddit r/DnB][1])
-* anyone got some dark dnb soundcloud links to listen to!? share please!!. need new 1z to listen to submitted by /u/OMGSWAGGEDOUT [link] [comments] (28. 12. 2025) ([Reddit r/DnB][2])
-* Drum and bass proper featured Friday episode #217. I was drum and bass propers last featured Friday of 2025. Deep DNB and Neurofunk Track list 1.Death Row- JED 2.Higher Places feat. PHAE -Nickbee, KRÆK, PHAE 3.Hypnotic- JED 4.Off Lock-Regrowth 5.Pluto- JED 6.A (28. 12. 2025) ([Reddit r/DnB][3])
+* Žádné zásadní novinky.
 
-## Kuriozita (22.–28. 12. 2025)
+## Reddit vlákna (29.–4. 1. 2026)
 
-* 10 years Archives - ukf.com — 10 years Archives ukf.com (28. 12. 2025) ([UKF][4])
+* DnB and Breakbeat equivalent of Noise music?. Hey yall; I’m primarily an Industrial guy, and I love Power Electronics in particular. However, I am also very partial to DnB, particularly Techstep, Liquid, and classic Jungle. I like weirder Breakcore as well. So (4. 1. 2026) ([Reddit r/DnB][1])
+* Here is how i program my drums!. whats your favorite groove? submitted by /u/itsjust_dread [link] [comments] (4. 1. 2026) ([Reddit r/DnB][2])
+* Anyone from Switzerland/Southern Germany going to the Andromedik Invites in Amsterdam on 13/02. I'm looking for fellow ravers from Switzerland or Southern Germany who want to go to the Andromedik Invites event in Amsterdam on 13 February 2026. I'd like to go, (4. 1. 2026) ([Reddit r/DnB][3])
+
+## Kuriozita (29.–4. 1. 2026)
+
+* Žádné zásadní novinky.
 
 ## Eventy ČR / SK
 
 ### Recap minulý týden
-* SSD 101. Christmas , Fabric 👑 #Ostrava (25. 12. 2025) ([DnBHeard][5])
-* Drum & Bells w/ MC Coppa & 5HA5H (Eatbrain) , Cross club 👑 #Praha (26. 12. 2025) ([DnBHeard][6])
+* BASS ROUTE Night , Velkej Cajk #MnichovoHradiště (3. 1. 2026) ([DnBHeard][4])
+* DEORBITAL NIGHT , Cross club #Praha (3. 1. 2026) ([DnBHeard][5])
+* STORM 360: PRDK vs. Beast:Freqnz , Storm Club #Praha (3. 1. 2026) ([DnBHeard][6])
+* Welcome 2025 „dnb edition“ w/ KAAMA [FREE ENTRY] , EXIT Club #Brno (4. 1. 2026) ([DnBHeard][7])
+* Poslechovka Bass Blazed , Naproti #Brno (4. 1. 2026) ([DnBHeard][8])
+* In:Depth w/ Moongose (Antihero Bday) , Project Bar #Ostrava (4. 1. 2026) ([DnBHeard][9])
 
 ### Tento týden
-* BASS ROUTE Night , Velkej Cajk #MnichovoHradiště (3. 1. 2026) ([DnBHeard][7])
-* DEORBITAL NIGHT , Cross club #Praha (3. 1. 2026) ([DnBHeard][8])
-* STORM 360: PRDK vs. Beast:Freqnz , Storm Club #Praha (3. 1. 2026) ([DnBHeard][9])
-* Welcome 2025 „dnb edition“ w/ KAAMA [FREE ENTRY] , EXIT Club #Brno (4. 1. 2026) ([DnBHeard][10])
-* Poslechovka Bass Blazed , Naproti #Brno (4. 1. 2026) ([DnBHeard][11])
-* In:Depth w/ Moongose (Antihero Bday) , Project Bar #Ostrava (4. 1. 2026) ([DnBHeard][12])
+* DRUM BEAST VOL. 3 // special guest: CONFUSION , ROXY Club #Třebíč (10. 1. 2026) ([DnBHeard][10])
 
 ### Nově oznámené
 * Žádné relevantní novinky tento týden.
@@ -47,15 +46,13 @@
 
 ## Zdroje
 
-[1]: https://old.reddit.com/r/DnB/comments/1py53fm/dj_hype_and_dj_zinc_true_playaz_vol_one_1997_this/
-[2]: https://old.reddit.com/r/DnB/comments/1py4yv6/anyone_got_some_dark_dnb_soundcloud_links_to/
-[3]: https://old.reddit.com/r/DnB/comments/1py3ckr/drum_and_bass_proper_featured_friday_episode_217/
-[4]: https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBiY3pmNEV6WlBITDFNYzZPT3d4M1pEVkx2LTZnamVIM19XSDJJaGF2RG8zU3AxSVd3dFdJbkl2cWhJY2M?oc=5
-[5]: https://www.facebook.com/events/864932586061833/
-[6]: https://www.facebook.com/events/1151496026382277/
-[7]: https://www.facebook.com/events/1308416080277087/
-[8]: https://www.facebook.com/events/976230841045549/
-[9]: https://www.facebook.com/events/458025570254671/
-[10]: https://www.facebook.com/events/1155832882867531/
-[11]: https://www.facebook.com/events/3799513450311822/
-[12]: https://www.facebook.com/events/1102628511398875/
+[1]: https://old.reddit.com/r/DnB/comments/1q43zow/dnb_and_breakbeat_equivalent_of_noise_music/
+[2]: https://old.reddit.com/r/DnB/comments/1q42p7i/here_is_how_i_program_my_drums/
+[3]: https://old.reddit.com/r/DnB/comments/1q42ebg/anyone_from_switzerlandsouthern_germany_going_to/
+[4]: https://www.facebook.com/events/1308416080277087/
+[5]: https://www.facebook.com/events/976230841045549/
+[6]: https://www.facebook.com/events/458025570254671/
+[7]: https://www.facebook.com/events/1155832882867531/
+[8]: https://www.facebook.com/events/3799513450311822/
+[9]: https://www.facebook.com/events/1102628511398875/
+[10]: https://www.facebook.com/events/584682017508020
