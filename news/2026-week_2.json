@@ -1,0 +1,42 @@
+[
+  {
+    "id": 4,
+    "date": "2025-12-18",
+    "title": "Mind Vortex jsou oficiálně zpět",
+    "content": [
+      "Drum & bassové duo Mind Vortex se oficiálně vrací na scénu po několikaleté pauze..."
+    ],
+    "source": "LoveThatBass / MB Artists",
+    "source_url": "https://www.lovethatbass.com/news/mind-vortex-signal-their-return/",
+    "image": "https://www.lovethatbass.com/wp-content/uploads/2023/12/Mind-Vortex.jpg",
+    "genre": "COMEBACK"
+  },
+  {
+    "id": 5,
+    "date": "2026-01-09",
+    "title": "Nové album od Sub Focus",
+    "content": [
+      "Rok 2025 byl v drum & bassu rokem, kdy se undergroundová syrovost naplno propojila s globálními ambicemi žánru. Zásadním momentem byl návrat Valve Sound System, kdy Dillinja znovu přivezl do Londýna svůj 96k sound system a připomněl fyzickou sílu subbasu, na němž byl žánr postaven. Na dědictví devadesátých let navázal také Goldie se znovuoživeným projektem Rufige Kru, který potvrdil nadčasovost technicky propracovaného breakbeatového zvuku.",
+      "V oblasti vydání dominovala velká jména. Pendulum vydali album Inertia a absolvovali intenzivní turné, zatímco London Elektricity oslavil komunitního ducha scénickým projektem Lunatics and Legends. Výrazným trendem roku byl posun k umělecké nezávislosti, symbolizovaný Sigmou a jejich prvním plně nezávislým albem Day One. Andy C debutoval v Boiler Roomu a Camo & Krooked rozvíjeli spojení taneční hudby s vysokým uměním prostřednictvím Red Bull Symphonic orchestrálních vystoupení.",
+      "Rok byl zároveň definován silnou komunitní soudržností, ať už skrze podporu Lenzmana během jeho zdravotních problémů, nebo spuštěním Hospitality Weekenderu v Butlins Bognor Regis.",
+      "Součástí článku je i přehled nejprodávanějších drum & bassových umělců roku 2025, v jehož čele stál Sub Focus, a seznam nejvlivnějších nezávislých labelů vedený UKF, přičemž statistiky vycházejí z dat BeatStats založených na pozicích skladeb v Beatport Top 100 a nezahrnují další obchody ani streamovací platformy."
+    ],
+    "source": "UKF",
+    "source_url": "https://ukf.com/news/sub-focus-announces-new-album-evolve/31234",
+    "image": "https://cdn.kudyznudy.cz/files/dc/dc58b3c3-bd27-4a5c-b444-07ae70b0d47b.jpg?v=20250812124348",
+    "genre": "ALBUM"
+  },
+  {
+    "id": 5,
+    "date": "2026-01-06",
+    "title": "Ivy Lab – poslední rok projektu",
+    "content": [
+      "Duo Ivy Lab oznámilo, že rok 2026 bude posledním rokem jejich společného projektu. Formace Stray a Sabre tím uzavře více než třináctileté působení na drum & bass scéně.", 
+      "Oznámení potvrdilo, že před ukončením činnosti plánují poslední nové nahrávky i závěrečná živá vystoupení. Ivy Lab byli dlouhodobě vnímáni jako výrazná tvůrčí síla díky propojení drum & bassu s leftfieldovými a bassovými prvky. Jejich tvorba měla vliv napříč klubovou i experimentálnější elektronickou scénou. Projekt skončí po roce, který má sloužit jako symbolické uzavření celé éry."
+    ],
+    "source": "DJ Mag",
+    "source_url": "https://mixmag.net/read/2026-last-year-operation-ivy-lab-part-ways-after-13-years-news?utm_source=chatgpt.com",
+    "image": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/Ivy-Lab-Web-Layout3.jpg?width=660&fit=cover&s=PKvnB0MuEPKSeHgegz1F93pVbonyeOR42M_ktxnoDqc",
+    "genre": "KONEC PROJEKTU"
+  }
+]
