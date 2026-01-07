@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DnB News</title>
+<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://www.allfreefonts.co/rbno3-1-font-family/" rel="stylesheet">
+<!-- Chosen Palette: Warm Neutrals -->
+  <!-- Application Structure Plan: Cílem je transformovat lineární report na interaktivní dashboard. Struktura je rozdělena do čtyř logických, úkolově orientovaných sekcí (Přehled, Svět, CZ/SK, Komunita), mezi kterými se uživatel pohybuje pomocí hlavní navigace. Tímto přístupem se uživatel dostane k relevantním informacím rychleji a nelineárně. 'Přehled' slouží jako úvodní dashboard s nejdůležitějšími daty (highlighty, nadcházející akce, vizualizovaný puls komunity), zatímco ostatní sekce nabízejí detailní pohled s možnostmi filtrování a přepínání. Tato architektura byla zvolena pro maximalizaci uživatelské kontroly a rychlosti orientace v obsahu. -->
+  <!-- Visualization & Content Choices: 1. Data: Engagement skóre z Redditu. Cíl: Rychle informovat o nejdiskutovanějších tématech. Metoda: Barový graf (Chart.js/Canvas) pro vizuální srovnání. Interakce: Tooltipy s detaily při najetí myší. Zdůvodnění: Graf je mnohem rychlejší na pochopení než prostý text s číslem. 2. Data: Zprávy a události. Cíl: Uspořádat a prezentovat novinky. Metoda: Kartový design (HTML/Tailwind), filtrovatelné kategorie. Interakce: Tlačítka pro filtrování (Svět) a přepínání pohledů (CZ/SK Report/Preview). Zdůvodnění: Poskytuje uživateli kontrolu nad zobrazeným obsahem a zlepšuje přehlednost. 3. Data: Textové informace. Cíl: Kontextualizovat sekce. Metoda: Úvodní odstavce pro každou sekci. Interakce: Žádná, slouží k navigaci. Zdůvodnění: Pomáhá uživateli pochopit účel každé části aplikace. -->
+  <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #E0E0E0;
+      position: relative;
+    }
+body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://letitroll.cz/wp-content/uploads/2025/07/lir26_web_event-page_16x9-768x432.jpg') center/cover no-repeat;
+      z-index: -1;
+      opacity: 0.2;
+    }
+.holiday-lights {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, 
+        #ff0000, #ff7f00, #ffff00, #00ff00, 
+        #0000ff, #4b0082, #9400d3, #ff0000);
+      background-size: 800% 800%;
+      animation: gradient 10s ease infinite;
+      z-index: 100;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+.nav-link {
+      transition: all 0.3s;
+      color: #B0B0B0;
+      position: relative;
+    }
+    .nav-link.active,
+    .nav-link:hover {
+      color: #FFFFFF;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #8a2be2;
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 100%;
+    }
+.filter-btn {
+      transition: all 0.3s;
+    }
+    .filter-btn.active {
+      background-color: #ff0000;
+      color: #FFFFFF;
+      box-shadow: 0 4px 6px -1px rgba(255, 0, 0, 0.3),
+                  0 2px 4px -1px rgba(255, 0, 0, 0.2);
+    }
+    .card {
+      background: linear-gradient(135deg, #2a0a0a 0%, #4a0a0a 100%);
+      border: 1px solid #7a1d1d;
+transition: all 0.3s;
+      backdrop-filter: blur(5px);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(122, 29, 29, 0.3);
+}
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px -5px rgba(176, 41, 41, 0.5);
+      border-color: #b02929;
+}
+.chart-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 300px;
+      max-height: 400px;
+    }
+    @media (min-width: 768px) {
+      .chart-container {
+        height: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+  <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold tracking-tighter text-white">
+        DnB News 🎧
+</div>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#overview" class="nav-link active text-white">Přehled</a>
+</div>
+
+      <div class="md:hidden">
+        <select id="mobile-nav" class="bg-gray-800 border border-gray-600 rounded-md p-2 text-white">
+          <option value="#overview">Přehled</option>
+</select>
+      </div>
+    </nav>
+  </header>
+  <main class="container mx-auto p-4 md:p-8">
+    <section id="overview" class="mb-16">
+      <div class="text-center mb-12 relative">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">DnB News</h1>
+        <p class="mt-2 text-lg text-red-300">22.12.2025 - 4.1.2026</p>
+</div>
+      <div class="news-list" id="news-container">
+<!-- News cards will be loaded here -->
+      </div>
+    </section>
+</main>
+
+  <footer class="mt-20 border-t border-gray-800">
+    <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+      <p></p>
+<p class="text-sm mt-1">&copy; 2026 DNB NEWS</p>
+    </div>
+  </footer>
+
+  <script>
+    const appData = {
+      news: [
+          {
+            id: 3,
+            date: "2025-12-31",
+            title: "Shruntí událostí v DnB 2025 podle portálu LoveThatBass",
+            content: "Rok 2025 byl v drum & bassu rokem, kdy se undergroundová syrovost naplno propojila s globálními ambicemi žánru. Zásadním momentem byl návrat Valve Sound System, kdy Dillinja znovu přivezl do Londýna svůj 96k sound system a připomněl fyzickou sílu subbasu, na němž byl žánr postaven. Na dědictví devadesátých let navázal také Goldie se znovuoživeným projektem Rufige Kru, který potvrdil nadčasovost technicky propracovaného breakbeatového zvuku. V oblasti vydání dominovala velká jména. Pendulum vydali album Inertia a absolvovali intenzivní turné, zatímco London Elektricity oslavil komunitního ducha scénickým projektem Lunatics and Legends. Výrazným trendem roku byl posun k umělecké nezávislosti, symbolizovaný Sigmou a jejich prvním plně nezávislým albem Day One. Andy C debutoval v Boiler Roomu a Camo & Krooked rozvíjeli spojení taneční hudby s vysokým uměním prostřednictvím Red Bull Symphonic orchestrálních vystoupení. Rok byl zároveň definován silnou komunitní soudržností, ať už skrze podporu Lenzmana během jeho zdravotních problémů, nebo spuštěním Hospitality Weekenderu v Butlins Bognor Regis. Součástí článku je i přehled nejprodávanějších drum & bassových umělců roku 2025, v jehož čele stál Sub Focus, a seznam nejvlivnějších nezávislých labelů vedený UKF, přičemž statistiky vycházejí z dat BeatStats založených na pozicích skladeb v Beatport Top 100 a nezahrnují další obchody ani streamovací platformy. ",
+            source: "LoveThatBass",
+            source_url: "https://www.lovethatbass.com/news/best-drum-bass-of-2025/",
+            image: "https://www.lovethatbass.com/wp/wp-content/uploads/2025/10/IMG_1696-1-1200x1025.jpeg",
+            genre:"RECAP",
+        },
+        {
+  "id": 2,
+  "date": "2026-01-01",
+  "title": "Pět trendů, které dominovaly drum & bassu v roce 2025",
+  "content": "Rok 2025 na drum & bassové scéně přinesl několik výrazných trendů, které žánr ovlivnily jak hudebně, tak komunitně. Prvním bylo dokončení procesu amerikanizace DNB, kdy velká evropská jména rozšiřovala svou působnost do USA a Asie včetně Číny a Indie. Dalším trendem se stala posílená orientace na individualismus – umělci stále častěji budovali vlastní značku a odmítali vystoupení, pokud jejich jméno nebylo hlavní na plakátu. Třetí trend zaznamenal posun tuzemské scény, kde Brno přerostlo očekávání a stalo se novým centrem významných drum & bass akcí s vysokou návštěvností. Čtvrtý trend byl viditelný v rostoucí roli mladé generace DJs a producentů, kteří přinášeli svěží a různorodý zvuk, který publikum přijímalo s otevřenou náručí. Poslední významný trend byla sílící komunita na DNB akcích, kdy fanoušci, promotéři i umělci více než kdy dříve spolupracovali na budování soudržné scény, kterou považuje DNBe HearD za základní složku (sub)kultury.",
+  "source": "DNBeheard",
+  "source_url": "https://dnbeheard.cz/5-trendu-ktere-dominovaly-dnb-v-roce-2025/",
+  "image": "https://dnbeheard.cz/wp-content/uploads/2026/01/tohle-je-dnb-768x768.png",
+  genre:"RECAP"
+},
+        {
+          id: 2,
+          date: "2025-12-18",
+          title: "Mind Vortex jsou oficiálně zpět",
+          content: "Drum & bassové duo Mind Vortex, tvořené Laurie Carrollem a Stefanem Anfieldem, se oficiálně vrací na scénu po několikaleté pauze. Projekt byl nově podepsán agenturou MB Artists a první reunion vystoupení je potvrzeno na červen 2026. Návrat Mind Vortex je koncipován jako plnohodnotný comeback, jehož součástí je vývoj kompletní AV show určené speciálně pro jejich nové živé sety. Duo pracuje na rozsáhlém množství nové hudby, včetně VIP verzí a remixů jejich starších skladeb i zcela nového materiálu. Součástí příprav je také vizuální koncept, jehož raná demo podoba již existuje, přestože finální verze AV show je stále ve vývoji. Návrat Mind Vortex tak zahrnuje jak novou koncertní podobu projektu, tak systematické vydávání nové i přepracované hudby.",
+          source: "LoveThatBass / MB Artists",
+          source_url: "https://www.lovethatbass.com/news/mind-vortex-signal-their-return/",
+          image: "https://www.lovethatbass.com/wp/wp-content/uploads/2025/12/Mind-Vortex.jpg",
+          genre: "COMEBACK"
+        },
+        {
+          id: 3,
+          date: "2026-01-02",
+          title: "The state of dnb in the US: scéna je silnější než kdy dřív (jen v jiném formátu)",
+          content: "Vlákno na r/DnB řeší, jestli „mainstream“ drum & bass ničí americkou scénu — a převládající odpověď zní: ne. Podle diskutujících je US DnB momentálně v nejlepší kondici za dlouhou dobu, jen se proměnila podoba: méně klasických „underground rave“, více festivalů a klubových showcase večerů s UK headlinery a lokální podporou. Dancefloor/Worship sound je pro část lidí osobně mimo, ale zároveň funguje jako vstupní brána, která přivádí nové publikum a tím roste i prostor pro liquid, jungle, neuro a další niche styly. Opakuje se i důležitý point: USA nejsou jedna scéna — některé regiony (Kalifornie, jihovýchod nebo New York) jedou výrazný boom, jinde se nostalgicky vzpomíná na 90s/00s, kdy byla klubová kultura „jinde“. Celé to uzavírá mantra cykličnosti: trendy přijdou a odejdou, ale „real heads“ zůstávají.",
+          source: "Reddit",
+          source_url: "https://www.reddit.com/r/DnB/comments/1q243ax/the_state_of_dnb_in_the_us/",
+          image: "https://cdn.aptoide.com/imgs/a/e/d/aedc1fdb324cf3f3caaf84d7c3d1749d_fgraphic.png",
+          genre: "REDDIT"
+          }
+      ]
+    };
+document.addEventListener('DOMContentLoaded', () => {
+      const renderCard = (item) => {
+        const sourceLink = item.source_url 
+          ? `<a href="${item.source_url}" target="_blank" class="hover:underline">${item.source}</a>`
+          : item.source;
+
+        return `
+          <div class="card rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 w-full" style="display: flex;">
+<div class="relative w-full h-full overflow-hidden">
+<img src="${item.image}" alt="${item.title}" class="w-full h-64 md:h-80 object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                <span class="inline-block px-3 py-1 bg-gradient-to-r from-slate-800 to-slate-600 text-slate-100 text-xs font-bold rounded-full">
+${item.genre}
+                </span>
+              </div>
+            </div>
+            <div class="p-5" style="flex: 1; min-width: 60%;">
+<p class="text-sm text-slate-400 mb-1">
+${new Date(item.date).toLocaleDateString('cz-CZ', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+              <h4 class="font-bold text-xl mb-2 text-white">${item.title}</h4>
+              <p class="text-gray-300 mb-4">${item.content}</p>
+              <div class="flex items-center justify-between">
+                <p class="text-sm text-slate-500">Zdroj: ${sourceLink}</p>
+                
+              </div>
+            </div>
+          </div>
+        `;
+      };
+
+      const loadNews = () => {
+        const container = document.getElementById('news-container');
+        appData.news.forEach(item => {
+          container.innerHTML += renderCard(item);
+        });
+      };
+
+      loadNews();
+const setupNav = () => {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main section');
+        const mobileNav = document.getElementById('mobile-nav');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.getAttribute('id');
+              navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+              });
+              mobileNav.value = `#${id}`;
+            }
+          });
+        }, { rootMargin: "-50% 0px -50% 0px" });
+        sections.forEach(section => observer.observe(section));
+        mobileNav.addEventListener('change', () => {
+          window.location.href = mobileNav.value;
+        });
+      };
+      setupNav();
+});
+  </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>
