@@ -1,42 +1,100 @@
 [
   {
+   "id": 1,
+   "date": "2026-01-06",
+   "title": "Ivy Lab – poslední rok projektu",
+   "content": [
+    "Duo Ivy Lab oznámilo, že rok 2026 bude posledním rokem jejich společného projektu. Formace Stray a Sabre tím uzavře více než třináctileté působení na drum & bass scéně.", 
+    "Oznámení potvrdilo, že před ukončením činnosti plánují poslední nové nahrávky i závěrečná živá vystoupení. Ivy Lab byli dlouhodobě vnímáni jako výrazná tvůrčí síla díky propojení drum & bassu s leftfieldovými a bassovými prvky. Jejich tvorba měla vliv napříč klubovou i experimentálnější elektronickou scénou. Projekt skončí po roce, který má sloužit jako symbolické uzavření celé éry."
+              ],
+   "source": "DJ Mag",
+   "source_url": "https://mixmag.net/read/2026-last-year-operation-ivy-lab-part-ways-after-13-years-news?utm_source=chatgpt.com",
+   "image": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/Ivy-Lab-Web-Layout3.jpg?width=660&fit=cover&s=PKvnB0MuEPKSeHgegz1F93pVbonyeOR42M_ktxnoDqc",
+   "genre": "OZNÁMENÍ"
+   },
+  
+  {
+    "id": 3,
+    "date": "2026-01-07",
+    "title": "Dvě rychlosti labelů: boutique přístup vs. major infrastruktura",
+    "content": ["Beatportal zveřejnil pětileté ohlédnutí labelu Invicta Audio, které popisuje fungování značky postavené na „artist-first“ přístupu. Text uvádí, že Invicta Audio staví release kampaně kolem identity konkrétního umělce a klade důraz na dlouhodobou spolupráci místo rychlé frekvence vydávání.", 
+                "Label podle článku pracuje napříč subžánry drum & bassu, ale udržuje jednotné kurátorské vedení a vizuální i dramaturgickou konzistenci.", 
+                "Beatportal zmiňuje také propojení releasů s eventy a komunitními aktivitami, které mají posilovat značku mimo samotné streamovací platformy. Materiál rámuje Invicta Audio jako příklad nezávislého „boutique“ modelu v kontrastu k major infrastruktuře, která operuje s větším dosahem, ale jinou logikou práce s umělci."
+              ],
+    "source": "Beatportal",
+    "source_url": "https://www.beatportal.com/playlists/1233071-invicta-audio-five-years-at-the-heart-of-drum-bass",
+    "image": "https://assets.beatportal.com/images/transforms/content-item/_1334x750_crop_center-center_none/1233990/Invicta-Audio-Header-Beatportal.avif",
+    "genre": "MEDIA"
+  },
+  {
+      "id": 2,
+      "date": "2026-01-09",
+      "title": "„Long game“ místo honu za singlem",
+      "content": ["Článek Drum & Bass UK popisuje posun v kariérním modelu drum & bass producentů směrem k dlouhodobému rozvoji místo rychlého releasování singlů. Text jako příklady uvádí labely Dirtbox Recordings a Evolution Chamber, které staví na mentoringu, kurátorství a práci s identitou umělce.",
+                  "Dirtbox je prezentován jako inkubátor nových talentů, kde kompilace propojují nové producenty s etablovanými jmény labelu. Evolution Chamber je v článku popsán jako prostor pro experimentální přístup a dlouhodobou spolupráci napříč projekty.",
+                  "Autor zdůrazňuje, že labely dnes nevytvářejí jen katalog hudby, ale komunitní infrastrukturu, která nahrazuje tlak na neustálý algoritmický output."
+                ],
+      "source": "Drum & Bass UK",
+      "source_url": "https://drumandbassuk.com/news/article/the-long-game-artist-development-in-modern-drum-and-bass",
+      "image": "https://drumandbassuk.com/cdn-cgi/image/dpr=1,fit=cover,format=auto,gravity=face,height=600,metadata=none,quality=85,width=1200/https://drumandbassuk.com/storage/254235/conversions/01KEH4K1AR5ZY9ZHBBXZNMEKXA-main-image.jpg",
+      "genre": "TREND"
+  },
+  {
     "id": 4,
-    "date": "2025-12-18",
-    "title": "Mind Vortex jsou oficiálně zpět",
-    "content": [
-      "Drum & bassové duo Mind Vortex se oficiálně vrací na scénu po několikaleté pauze..."
-    ],
-    "source": "LoveThatBass / MB Artists",
-    "source_url": "https://www.lovethatbass.com/news/mind-vortex-signal-their-return/",
-    "image": "https://www.lovethatbass.com/wp-content/uploads/2023/12/Mind-Vortex.jpg",
-    "genre": "COMEBACK"
-  },
-  {
-    "id": 5,
-    "date": "2026-01-09",
-    "title": "Nové album od Sub Focus",
-    "content": [
-      "Rok 2025 byl v drum & bassu rokem, kdy se undergroundová syrovost naplno propojila s globálními ambicemi žánru. Zásadním momentem byl návrat Valve Sound System, kdy Dillinja znovu přivezl do Londýna svůj 96k sound system a připomněl fyzickou sílu subbasu, na němž byl žánr postaven. Na dědictví devadesátých let navázal také Goldie se znovuoživeným projektem Rufige Kru, který potvrdil nadčasovost technicky propracovaného breakbeatového zvuku.",
-      "V oblasti vydání dominovala velká jména. Pendulum vydali album Inertia a absolvovali intenzivní turné, zatímco London Elektricity oslavil komunitního ducha scénickým projektem Lunatics and Legends. Výrazným trendem roku byl posun k umělecké nezávislosti, symbolizovaný Sigmou a jejich prvním plně nezávislým albem Day One. Andy C debutoval v Boiler Roomu a Camo & Krooked rozvíjeli spojení taneční hudby s vysokým uměním prostřednictvím Red Bull Symphonic orchestrálních vystoupení.",
-      "Rok byl zároveň definován silnou komunitní soudržností, ať už skrze podporu Lenzmana během jeho zdravotních problémů, nebo spuštěním Hospitality Weekenderu v Butlins Bognor Regis.",
-      "Součástí článku je i přehled nejprodávanějších drum & bassových umělců roku 2025, v jehož čele stál Sub Focus, a seznam nejvlivnějších nezávislých labelů vedený UKF, přičemž statistiky vycházejí z dat BeatStats založených na pozicích skladeb v Beatport Top 100 a nezahrnují další obchody ani streamovací platformy."
-    ],
-    "source": "UKF",
-    "source_url": "https://ukf.com/news/sub-focus-announces-new-album-evolve/31234",
-    "image": "https://cdn.kudyznudy.cz/files/dc/dc58b3c3-bd27-4a5c-b444-07ae70b0d47b.jpg?v=20250812124348",
-    "genre": "ALBUM"
-  },
-  {
-    "id": 5,
-    "date": "2026-01-06",
-    "title": "Ivy Lab – poslední rok projektu",
-    "content": [
-      "Duo Ivy Lab oznámilo, že rok 2026 bude posledním rokem jejich společného projektu. Formace Stray a Sabre tím uzavře více než třináctileté působení na drum & bass scéně.", 
-      "Oznámení potvrdilo, že před ukončením činnosti plánují poslední nové nahrávky i závěrečná živá vystoupení. Ivy Lab byli dlouhodobě vnímáni jako výrazná tvůrčí síla díky propojení drum & bassu s leftfieldovými a bassovými prvky. Jejich tvorba měla vliv napříč klubovou i experimentálnější elektronickou scénou. Projekt skončí po roce, který má sloužit jako symbolické uzavření celé éry."
-    ],
+    "date": "2026-01-08",
+    "title": "Positiva 2026 ",
+    "content": ["DJ Mag publikoval článek zaměřený na label Positiva a jeho aktuální směřování v rámci major infrastruktury. Článek popisuje, že Positiva navazuje na svou dlouhodobou historii v britské klubové hudbě a zároveň systematicky buduje roster pro rok 2026.",
+                "Drum & bass je v textu prezentován jako integrální součást širší „UK club“ kontinuity, nikoli jako izolovaný žánr. Článek jmenuje konkrétní DnB interprety, mezi nimi Sub Focus a K Motionz, a zasazuje je do kontextu crossover spoluprací a track-level strategie. Text se věnuje také A&R přístupu, který kombinuje kulturně silná jména s flexibilní spoluprací napříč žánry.",
+                "DJ Mag dále popisuje, že Positiva vědomě využívá nástroje major labelu, jako jsou globální distribuční kanály, streamovací platformy a sociální sítě, k posílení dosahu drum & bassu v mainstreamovém prostředí."
+              ],
     "source": "DJ Mag",
-    "source_url": "https://mixmag.net/read/2026-last-year-operation-ivy-lab-part-ways-after-13-years-news?utm_source=chatgpt.com",
-    "image": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/Ivy-Lab-Web-Layout3.jpg?width=660&fit=cover&s=PKvnB0MuEPKSeHgegz1F93pVbonyeOR42M_ktxnoDqc",
-    "genre": "KONEC PROJEKTU"
+    "source_url": "https://djmag.com/positivas-class-of-now",
+    "image": "https://djmag.com/sites/default/files/styles/djm_23_1499x843/public/2025-12/Positiva-HEADER.jpg.webp?itok=PbYrBQhf",
+    "genre": "LABEL"
+  },
+  {
+    "id": 9,
+    "date": "2026-01-08",
+    "title": "UKF – 2026: Ones To Watch",
+    "content": ["UKF zveřejnil svůj výběr talentů, na které bude ve 2026 třeba dát pozor napříč bass scénou. Mezi vyzdvihovanými jmény je T-Lex, britská producentka a DJka, která v roce 2025 excelovala jak na festivalech jako Boomtown a Let It Roll, tak s vydáními jako ‘On Top’, ‘GTFO’ a ‘No Answer’, a UKF ji vidí jako jednu z hlavních tváří jump-upu v roce 2026.",
+                "Dalším interpretem uvedeným v přehledu je Surreal, německý producent moderní liquid drum & bass s robustním katalogem skladeb jako ‘Get Down’ nebo ‘Let Me Know’, jehož produkce přináší „moderní liquid funk“.",
+                "Článek dále představuje Jaz Imsky, která si buduje pozornost napříč elektronickými žánry díky energickým vystoupením a výrazným trackům jako ‘FM Allstars’ a Kade, rakouský nováček s rafinovaným zvukem a produkcemi jako ‘Glorp Business’.",
+                "V seznamu jsou i Des McMahon, americký umělec s vydáním ‘Propane’ a dalšími ambiciózními projekty, Automatic z Nového Zélandu se svým progresivně-acidovým přístupem, VXRGO jako rostoucí jméno v jungle/old skool DnB, a Soldat, australský talent s energickým repertoárem podporovaným mixy a bootlegy.",
+                "Tento průřezový výběr ilustruje různorodost stylů a osobností, které podle UKF mohou významně formovat bass a DnB scénu v roce 2026."
+              ],
+    "source": "UKF",
+    "source_url": "https://ukf.com/read/2026-ones-to-watch/?utm_source=chatgpt.com",
+    "image": "https://ukf.com/wp-content/uploads/2026/01/UKF-BestOf2025-OnesToWatch-2048x1365.jpg",
+    "genre": "TALENTI"
+  },
+  {
+    "id": 10,
+    "date": "2026-01-09",
+    "title": "DnB merch jako sociální signál",
+    "content": ["Diskuse ve vlákně r/DnB „Does anyone wear DnB t-shirts?“ ukazuje, že merch je pro část drum & bass komunity každodenním identitním symbolem a nástrojem sociální interakce. V kontextu Let It Roll se objevují pouze dvě explicitní zmínky, obě zaměřené výhradně na design.",
+                "Jeden z uživatelů uvádí, že vlastní dva DnB merch kusy a oba jsou Let It Roll, přičemž zvlášť pozitivně hodnotí kolaboraci Hospital × Let It Roll a její vizuální zpracování. Druhá zmínka je kritická a poukazuje na to, že merch největšího DnB festivalu podle autora působí příliš jednoduše a je založený jen na typografii bez výraznějších motivů.",
+                "Z kontextu celé debaty vyplývá, že u velkých značek a festivalů fanoušci očekávají výraznější, chytřejší vizuální jazyk, který je rozpoznatelný i mimo scénu. Let It Roll je tak ve vlákně rámováno jako silná značka s vysokou viditelností, ale s nejednoznačně vnímanou úrovní merch designu."
+              ],
+    "source": "Reddit r/DnB",
+    "source_url": "https://www.reddit.com/r/DnB/comments/1q7uxsz/does_anyone_wear_dnb_tshirts/",
+    "image": "https://pentagram-production.imgix.net/506cc7b9-5998-4798-9420-3be03c1202e7/Reddit_Thumbnail.jpg?auto=compress%2Cformat&crop=entropy&fit=crop&fm=jpg&h=470&q=80&rect=4%2C0%2C2992%2C1870&w=900",
+    "genre": "REDDIT"
+  },
+  
+    {
+    "id": 8,
+    "date": "2026-01-08",
+    "title": "Koncert v Kanadě zrušen kvůli chybě AI: umělce systém mylně označil za sexuálního delikventa",
+    "content": ["Mixmag informuje o případu kanadského hudebníka Ashleyho MacIsaaca, kterému byl zrušen koncert plánovaný na 19. prosince v rezervaci Sipekne’katik First Nation v Novém Skotsku. Pořadatelé podle článku vycházeli z výsledků vyhledávání Google, kde jej AI systém mylně spojil s osobou odsouzenou za sexuální trestné činy.",
+                "MacIsaac uvedl, že byl v minulosti zatčen pouze jednou za kouření marihuany a že informace pocházely ze záměny s jiným člověkem stejného jména. Google podle Mixmag následně chybný AI výstup opravil a MacIsaac zvažuje právní kroky. Mluvčí Google Canada Wendy Manton pro CBC News uvedla, že firma tyto případy používá ke zlepšení svých systémů, pokud dojde k chybné interpretaci obsahu nebo ztrátě kontextu.",
+                "Sipekne’katik First Nation se za zrušení koncertu omluvili a přiznali, že situace poškodila hudebníkovu pověst i obživu."
+              ],
+    "source": "Mixmag",
+    "source_url": "https://mixmag.net/read/venue-in-canada-cancels-gig-after-ai-wrongly-identifies-artist-as-sex-offender-news",
+    "image": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/Ashley-MacIsaac-1.png?fit=cover&s=jbA42g0mdrrCbQd6cJv404JpvMnUjIyxj4LPfAUJnCQ&width=660",
+    "genre": "KURIOZITA"
   }
+  
+  
+
 ]

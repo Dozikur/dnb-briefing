@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
     html {
         min-height: 100vh;
@@ -20,9 +20,25 @@
     }
     body {
         background-color: transparent;
+        font-family: 'Montserrat', sans-serif;
     }
-    .font-unbounded {
-      font-family: 'Unbounded', sans-serif;
+    .news-list {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: calc(100vh - 150px); /* Make room for header and title */
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    .news-list::-webkit-scrollbar {
+      display: none; /* Chrome, Safari and Opera */
+    }
+    .news-card {
+      scroll-snap-align: start;
+      min-height: 300px; /* Ensure cards have a minimum height */
+      margin-bottom: 4rem; /* Space between snap points */
+    }
+    .news-card:last-child {
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -30,7 +46,7 @@
 <body class="antialiased">
   <header class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700">
     <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl tracking-tighter text-white font-unbounded">
+      <div class="text-2xl tracking-tighter text-white">
         <span class="font-bold border-b-4 border-red-500 pb-1">DnB</span><span class="font-semibold"> News</span>
       </div>
       <div class="flex items-center space-x-4">
@@ -44,27 +60,21 @@
     </nav>
   </header>
 
-  <main class="container mx-auto p-4 md:p-8">
-    <section id="overview" class="mb-16">
-      <div class="text-center mb-12 relative">
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white font-unbounded">DnB News</h1>
+  <main class="container mx-auto px-4">
+    <section id="overview">
+      <div class="text-center my-8 relative">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">DnB News</h1>
         <p id="date-range" class="mt-2 text-lg text-red-500"></p>
       </div>
-      <div class="news-list flex flex-col gap-8" id="news-container">
+      <div class="news-list" id="news-container">
         <!-- News cards will be loaded here -->
       </div>
     </section>
   </main>
 
-  <footer class="mt-20 border-t border-gray-800">
-    <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-      <p class="text-sm mt-1">&copy; 2026 DNB NEWS</p>
-    </div>
-  </footer>
-
   <script>
     // This list is now dynamically injected
-    const newsFiles = ["news/2026-week_1.json","news/2026-week_2.json"];
+    const newsFiles = ["news/2026-week_1.json","news/2026-week_2.json","news/2026-week_3.json", "news/2026-week_4.json", "news/2026-week_5.json"];
   </script>
 
   <script>
@@ -79,28 +89,44 @@
           item.source;
 
         const contentHtml = Array.isArray(item.content)
-          ? item.content.map(p => `<p class="text-gray-300 mb-4 leading-relaxed">${p}</p>`).join('')
+          ? item.content.map(p => {
+              if (p.startsWith('soundcloud:')) {
+                const trackId = p.split(':')[1];
+                const embedUrl = `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackId}`;
+                return `<div class="my-4"><iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="${embedUrl}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div>`;
+              } else if (p.startsWith('spotify-track:')) {
+                const trackId = p.split(':')[1];
+                const embedUrl = `https://open.spotify.com/embed/track/${trackId}`;
+                return `<div class="my-4"><iframe style="border-radius:12px" src="${embedUrl}?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>`;
+              } else if (p.startsWith('spotify-album:')) {
+                const albumId = p.split(':')[1];
+                const embedUrl = `https://open.spotify.com/embed/album/${albumId}`;
+                return `<div class="my-4"><iframe style="border-radius:12px" src="${embedUrl}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>`;
+              } else {
+                return `<p class="text-gray-300 mb-4 leading-relaxed">${p}</p>`;
+              }
+            }).join('')
           : `<p class="text-gray-300 mb-4 leading-relaxed">${item.content}</p>`;
 
         return `
-          <div class="card bg-gray-800/50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col md:flex-row">
-            <div class="md:w-1/3 w-full h-64 md:h-auto relative overflow-hidden">
-              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" loading="lazy">
+          <div class="news-card group bg-gray-800/60 backdrop-blur-sm rounded-xl overflow-hidden shadow-2xl flex flex-col md:flex-row items-start mx-auto max-w-5xl">
+            <div class="md:w-2/5 w-full p-6 md:p-8">
+              <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover rounded-xl shadow-lg transition-transform duration-500 group-hover:scale-105" loading="lazy">
             </div>
-            <div class="md:w-2/3 p-6 flex flex-col justify-between">
+            <div class="md:w-3/5 w-full p-6 pt-0 md:p-8 md:pl-0 flex flex-col justify-between self-stretch">
               <div>
-                <div class="flex justify-between items-start mb-2">
-                    <span class="inline-block px-3 py-1 bg-gradient-to-r from-red-600 to-red-500 text-white text-xs font-bold rounded-full">
+                <div class="flex justify-between items-start mb-3">
+                    <span class="inline-block px-3 py-1 bg-gradient-to-r from-red-600 to-red-500 text-white text-sm font-bold rounded-full">
                       ${item.genre}
                     </span>
-                    <p class="text-sm text-slate-400">
+                    <p class="text-sm text-slate-400 whitespace-nowrap ml-4">
                       ${new Date(item.date).toLocaleDateString('cz-CZ', { year: 'numeric', month: 'long', day: 'numeric' })}
                     </p>
                 </div>
-                <h4 class="font-bold text-2xl mb-3 text-white">${item.title}</h4>
-                <div class="news-content">${contentHtml}</div>
+                <h4 class="font-bold text-2xl md:text-3xl mb-4 text-white group-hover:text-red-400 transition-colors">${item.title}</h4>
+                <div class="news-content text-base pr-4">${contentHtml}</div>
               </div>
-              <div class="mt-4">
+              <div class="mt-6 text-right">
                 <p class="text-sm text-slate-500">Zdroj: ${sourceLink}</p>
               </div>
             </div>
@@ -111,7 +137,7 @@
       const loadNews = async (period) => {
         newsContainer.innerHTML = '';
         try {
-          const response = await fetch(`${period}`, { cache: 'no-cache' }); // Force reload
+          const response = await fetch(`${period}`, { cache: 'no-cache' });
           if (!response.ok) throw new Error(`Network response was not ok: ${response.statusText}`);
           const newsItems = await response.json();
           if (newsItems.length > 0) {
@@ -131,8 +157,8 @@
 
       const populatePeriodSelector = () => {
         try {
-          const periods = newsFiles.slice(); // Create a copy to avoid modifying the original
-          periods.sort().reverse(); // Sort descending to have the latest first
+          const periods = newsFiles.slice();
+          periods.sort().reverse();
 
           if (periods.length === 0) {
               periodSelect.innerHTML = '<option>Žádná data k zobrazení</option>';
@@ -143,7 +169,7 @@
             const period = periodFile.replace('news/','').replace('.json','');
             const [year, week] = period.split('-');
             const option = document.createElement('option');
-            option.value = periodFile; // Use the full path for fetching
+            option.value = periodFile;
             option.textContent = `Týden ${week.replace('week_', '')}, ${year}`;
             periodSelect.appendChild(option);
           });
@@ -153,7 +179,7 @@
           });
 
           if (periods.length > 0) {
-            loadNews(periods[0]); // Load the latest news by default
+            loadNews(periods[0]);
           }
         } catch (error) {
           console.error('Error populating period selector:', error);
