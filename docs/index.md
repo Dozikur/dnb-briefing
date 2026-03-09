@@ -1,41 +1,44 @@
-# DnB NOVINKY – 2. 3. 2026
+# DnB NOVINKY – 9. 3. 2026
 
-## Svět (23.–1. 3. 2026)
+## Svět (2.–8. 3. 2026)
 
-* Mix - 10" vinyl set ~ Jungle and DnB ~ February 2026 - Drum & Bass Forum — Mix - 10" vinyl set ~ Jungle and DnB ~ February 2026 Drum & Bass Forum (28. 2. 2026) ([DogsOnAcid][1])
-* Original Riddim | Jungle + Drum & Bass DJ Mix | February 2026 - Drum & Bass Forum — Original Riddim | Jungle + Drum & Bass DJ Mix | February 2026 Drum & Bass Forum (28. 2. 2026) ([DogsOnAcid][2])
-* NOTION & Redlight - Get Out My Head (27. 2. 2026) ([YouTube @UKFDrumandBass][3])
-* Mix - Detrimental Konduct - Neurofunk In Your Face 02-24-2026) - Drum & Bass Forum — Mix - Detrimental Konduct - Neurofunk In Your Face 02-24-2026) Drum & Bass Forum (25. 2. 2026) ([DogsOnAcid][4])
-* Who The Hell Is Miss Medik - ukf.com — Who The Hell Is Miss Medik ukf.com (25. 2. 2026) ([UKF][5])
+* DnBUnited - Drum & Bass Forum — DnBUnited Drum & Bass Forum (7. 3. 2026) ([DogsOnAcid][1])
+* Gentlemens Club - Hit The Ground (6. 3. 2026) ([YouTube @UKFDrumandBass][2])
+* NATION 001 - New jungle / hardcore project from Craggz & Haste - vinyl / digital out now 💥 | DOA | Drum & Bass Forum - Drum & Bass Forum — NATION 001 - New jungle / hardcore project from Craggz & Haste - vinyl / digital out now 💥 | DOA | Drum & Bass Forum Drum & Bass Forum (6. 3. 2026) ([DogsOnAcid][3])
+* msft - Can't Fly (ft. Tia Talks) (5. 3. 2026) ([YouTube @UKFDrumandBass][4])
+* Ones To Watch: Lexed - ukf.com — Ones To Watch: Lexed ukf.com (5. 3. 2026) ([UKF][5])
 
-## ČR / SK (23.–1. 3. 2026)
+## ČR / SK (2.–8. 3. 2026)
 
 * Žádné zásadní novinky.
 
-## Reddit vlákna (23.–1. 3. 2026)
+## Reddit vlákna (2.–8. 3. 2026)
 
-* Probably not conventional drum and bass...but what do you think? (Dabbler - Twnty Knots). I've been dabbling in drum and bass for a few years and take a lot of inspiration from artists like Pendulum, Metrik, The Qemists and others - my style is a blend of DnB, (1. 3. 2026) ([Reddit r/DnB][6])
-* artist recs similar to Blame, Intense, Greenfly from Good Looking? especially anything on bandcamp. background: been listening to a lot of jungle/dnb recently and found the Good Looking EP and Singles collections on the Internet Archive and really fell in love (1. 3. 2026) ([Reddit r/DnB][7])
-* Jason Axis - Exploration. submitted by /u/Safe-Recognition-460 [link] [comments] (1. 3. 2026) ([Reddit r/DnB][8])
+* Link me to the best current dnb set…have an hour drive ahead of me. Anything but drum core or beard step…easy on the clown step…no Spotify links, thanks a ton Apple Music or SoundCloud works anything high quality . Cheers . submitted by /u/wratx [link] [commen (8. 3. 2026) ([Reddit r/DnB][6])
+* DJ Icewind - Apex (In The Groove) (2026). submitted by /u/Icewind_Sound [link] [comments] (8. 3. 2026) ([Reddit r/DnB][7])
+* How and where to upload 15 gigs of jungle/dnb/breaks sessions from the late 90's and early 2000's? Think napster, bearshare and limewire days.. I'd love to share this music, but I'm not sure where to start. Which platforms would leave them up? Is this even wor (8. 3. 2026) ([Reddit r/DnB][8])
 
-## Kuriozita (23.–1. 3. 2026)
+## Kuriozita (2.–8. 3. 2026)
 
-* Mix - 10" vinyl set ~ Jungle and DnB ~ February 2026 - Drum & Bass Forum — Mix - 10" vinyl set ~ Jungle and DnB ~ February 2026 Drum & Bass Forum (28. 2. 2026) ([DogsOnAcid][1])
+* [MIX] Atmospheric Jungle & Rare Groove Vibes | DOA | Drum & Bass Forum - Drum & Bass Forum — [MIX] Atmospheric Jungle & Rare Groove Vibes | DOA | Drum & Bass Forum Drum & Bass Forum (5. 3. 2026) ([DogsOnAcid][9])
 
 ## Eventy ČR / SK
 
 ### Recap minulý týden
-* 🎶 DnB night – FREAKS & GEEKS LIVE (UK), ChangingFaces live (SK) 🎧, Fléda 👑 #Brno (24. 2. 2026) ([DnBHeard][9])
-* DEEP DOWN 360° w/ NEBULATE (DE) , STOUN 👑 #FrýdekMístek (27. 2. 2026) ([DnBHeard][10])
-* Hoofbeats Music with Jade Venom & Neonlight , Sklub 👑 #Olomouc (27. 2. 2026) ([DnBHeard][11])
-* Unity Rage Warm.-up w/ Merikan , K2 👑 #KralupyNadVltavou (28. 2. 2026) ([DnBHeard][12])
-* NOVÝ DÁTUM *enjoyDNB by III Trident w. BLACK SUN EMPIRE , Enjoyclub 👑 #Žilina (28. 2. 2026) ([DnBHeard][13])
+* Hoofbeats night w/ ZARDONIC , Fabric 👑 #Ostrava (6. 3. 2026) ([DnBHeard][10])
+* 5 Years Of Yamatai Records , Cross club 👑 #Praha (6. 3. 2026) ([DnBHeard][11])
+* DOUBLE TROUBLE „13 YEARS ANNIVERSARY“ w/ SUBSONIC (UK) & YAMATAI REC. , Cross 👑 #Praha (6. 3. 2026) ([DnBHeard][12])
+* FRICTION: SYNERGY TOUR , Roxy 👑 #Praha (6. 3. 2026) ([DnBHeard][13])
+* SUBSONIC (UK) , EXIT 👑 #Brno (7. 3. 2026) ([DnBHeard][14])
+* YAMATAI RECORDS x NEVER ENOUGH – Prague Pop Up , NeverEnough 👑 #Praha (7. 3. 2026) ([DnBHeard][15])
 
 ### Tento týden
-* Hoofbeats night w/ ZARDONIC , Fabric 👑 #Ostrava (6. 3. 2026) ([DnBHeard][14])
-* DOUBLE TROUBLE „13 YEARS ANNIVERSARY“ w/ SUBSONIC (UK) & YAMATAI REC. , Cross 👑 #Praha (6. 3. 2026) ([DnBHeard][15])
-* FRICTION: SYNERGY TOUR , Roxy 👑 #Praha (6. 3. 2026) ([DnBHeard][16])
-* SUBSONIC (UK) , EXIT 👑 #Brno (7. 3. 2026) ([DnBHeard][17])
+* Bassproof w/ Skrimor & Disphonia & Scalez , Perpetuum 👑 #Brno (13. 3. 2026) ([DnBHeard][16])
+* Next:Gen Audio Label Night w/ TESEN (UK) & BOROWSKI (LUX) & MAGENTA & PAIN , Cross 👑 #Praha (13. 3. 2026) ([DnBHeard][17])
+* HIGHLANDERZ x SALTY SQUAD: FRIDAY THE 13TH 🔪🩸, ROXY #Třebíč (13. 3. 2026) ([DnBHeard][18])
+* Bassound /w LEDUY [Hoofbeats] , Rafanda.cz #Zábřeh (13. 3. 2026) ([DnBHeard][19])
+* ❄️ GOPASS FESTIVAL Špindl 2026 ❄️, Skiareál 👑 #ŠpindlerůvMlýn (14. 3. 2026) ([DnBHeard][20])
+* Liquicity Prage 2026 , Výstaviště Holešovice #Praha (14. 3. 2026) ([DnBHeard][21])
 
 ### Nově oznámené
 * Žádné relevantní novinky tento týden.
@@ -52,20 +55,24 @@
 
 ## Zdroje
 
-[1]: https://news.google.com/rss/articles/CBMijAFBVV95cUxPN1NKM0UwMWFKQXVocHdyckVHZTQ5bXFkeWNaTGY5T2kxd1hOS0N5cHB0RWpIQXo0WHJvcUt4ZDh1MXJwcjV6ZnNyYVA0UWhSZkJRV29Ha25JUEdWbVQtaGotbV9jZlM2M1ZTS3dmSXJ4TzFoZzZCWUtMay1wWUxEeHBkVzRDYWQtY29yQQ?oc=5
-[2]: https://news.google.com/rss/articles/CBMinAFBVV95cUxQU2ROQ1lTWEVwZm4yVkF2bDhqdnNDZVdkb05zVnAta3UwY0hIMmVYV0xKVXpKdm9vX0Z4cEVzU2l4em80MFRkdDdEY3IxaW5McFplRVdFMW5GLTV5SXlhVVJMRUJvTDE3Y2tvb3lUQ1FuWnJISGhMSW12THBqcWpDVkNGYzY0SWtFeGJDbkFNSjZ6ajlKWXFXZHlWX3c?oc=5
-[3]: https://www.youtube.com/watch?v=Xy0Sv6yA8_s
-[4]: https://news.google.com/rss/articles/CBMinAFBVV95cUxNcDduRVpoeHNCczJTSXN4QlU5dzl3N0dDTWF0U2tvdnJTYldidEpMeHpyNUJSMmVKMjZEQVdLZE5PYmp0dWNLNmdhdlJUSnB5Z0ZFUmRxb2JvRi1lR2wzT1o4Z3BQa25ONFNuS0dNanBpV2Nrdm4yZGxhbFhBSTAxQmlwYjlCWjlXV3ZNSm1SX2o0bWxTV2xONWUxclg?oc=5
-[5]: https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVVTFGdHNock9rWDkxemZTOVBENXRPWWJDblBCeGVRMGN4RTlHNGhOVnhKV3I0dXlwcklfTVBOQWU2WENLM05oOHRsbmRNeGhueVJ3bXRNZjgwMG1l?oc=5
-[6]: https://old.reddit.com/r/DnB/comments/1ribd7h/probably_not_conventional_drum_and_bassbut_what/
-[7]: https://old.reddit.com/r/DnB/comments/1riabv8/artist_recs_similar_to_blame_intense_greenfly/
-[8]: https://old.reddit.com/r/DnB/comments/1ri9gcf/jason_axis_exploration/
-[9]: https://www.facebook.com/events/876129458188201/
-[10]: https://www.facebook.com/events/863307179932383/
-[11]: https://www.facebook.com/events/1946287713437675/
-[12]: https://www.facebook.com/events/1357963206125031/
-[13]: https://www.facebook.com/events/672246405581409/
-[14]: https://www.facebook.com/events/2143402286491022/
-[15]: https://www.facebook.com/events/914264377946976/
-[16]: https://www.facebook.com/events/1393943712407866/
-[17]: https://www.facebook.com/events/848039601554278/
+[1]: https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZMzJFaE1iQVgyWkJFZ3JzX183bEtBUXIxRnJRejh0M0d2RW03el9HMkxHNGlKWUw4ekpCRjNnU1FQdXhZbDNIZnUzT0ozLUFjeXVXNEFwWFRWeE15UlU1VHJ3?oc=5
+[2]: https://www.youtube.com/watch?v=W1GyriXbR00
+[3]: https://news.google.com/rss/articles/CBMizwFBVV95cUxQSnRmVXZBcFRCb3ROQ2NIOWU4UzVrZXVuVjhHR1l4a1pRUnBoZy1aWlBid3dMaEtYY1NMeFB1Zno1MXY3cU4zVzJ4TTNjdjlzYnpmTHRYUGJ4TEVtZnlBZ2N6WUZJczNxdl9lNUJBdGdhVVN2Q1A4QVdaZ0dkbVlNVkNObmptTzZVVllVZjBPZTdKU1BCMElXNmV2R3JYY09kTDJtLW5ZS2N1d2RhUXRHZUNjSnc3a2d1VmNVRm9mc0FUVlR3Zm5TS3plekl4dk0?oc=5
+[4]: https://www.youtube.com/watch?v=_YjaFNrnrnU
+[5]: https://news.google.com/rss/articles/CBMiU0FVX3lxTE1STFZ5NFN3SHZaMmx0OXBRakFMeFlzLUxibmZuWWJfN0pZbDViY0piMUlDRk9DUlNHSzgyejRES0lQREVkaXc5dzRNajFSWWdKeDA0?oc=5
+[6]: https://old.reddit.com/r/DnB/comments/1roi63b/link_me_to_the_best_current_dnb_sethave_an_hour/
+[7]: https://old.reddit.com/r/DnB/comments/1rohdga/dj_icewind_apex_in_the_groove_2026/
+[8]: https://old.reddit.com/r/DnB/comments/1rognau/how_and_where_to_upload_15_gigs_of/
+[9]: https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTjNwM3hSV0prS08wOFRsS1BsZS03RldUTVpUbHlCMEo4R0hSUFluaUhteXkzSXNSZ080VVdoaUVHM0szN3dJcnppMURYbW5OckJLSUJzZUlXaV94dXZubjlTcU9XeHNtZzh5eUxCWUtoaW5uSmhSNjREbWxHV051TUZkVFZ1c2xzR3Nr?oc=5
+[10]: https://www.facebook.com/events/2143402286491022/
+[11]: https://www.facebook.com/events/1967891224060015/
+[12]: https://www.facebook.com/events/914264377946976/
+[13]: https://www.facebook.com/events/1393943712407866/
+[14]: https://www.facebook.com/events/848039601554278/
+[15]: https://www.facebook.com/events/2038621193377270/
+[16]: https://www.facebook.com/events/880863808048076/
+[17]: https://www.facebook.com/events/1595514291497933/
+[18]: https://www.facebook.com/events/2301250570397985
+[19]: https://www.facebook.com/events/2120313318514162/
+[20]: https://www.facebook.com/events/1136310924634185/
+[21]: https://www.facebook.com/events/1694845871230033/
