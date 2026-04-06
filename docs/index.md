@@ -1,42 +1,39 @@
-# DnB NOVINKY – 30. 3. 2026
+# DnB NOVINKY – 6. 4. 2026
 
-## Svět (23.–29. 3. 2026)
+## Svět (30.–5. 4. 2026)
 
-* Mix - DJ Iso D: Drum and Bass mix 27 March 2026 - Drum & Bass Forum — Mix - DJ Iso D: Drum and Bass mix 27 March 2026 Drum & Bass Forum (28. 3. 2026) ([DogsOnAcid][1])
-* Y U QT - Call My Name (27. 3. 2026) ([YouTube @UKFDrumandBass][2])
-* To Infinity And Beyond: Exploring Wilkinson’s Latest Album - ukf.com — To Infinity And Beyond: Exploring Wilkinson’s Latest Album ukf.com (27. 3. 2026) ([UKF][3])
-* Vermont dnb | DOA | Drum & Bass Forum - Drum & Bass Forum — Vermont dnb | DOA | Drum & Bass Forum Drum & Bass Forum (26. 3. 2026) ([DogsOnAcid][4])
-* DNB legends interviews episode 2 : Kemal | DOA | Drum & Bass Forum - Drum & Bass Forum — DNB legends interviews episode 2 : Kemal | DOA | Drum & Bass Forum Drum & Bass Forum (26. 3. 2026) ([DogsOnAcid][5])
+* VexedDnB | DOA | Drum & Bass Forum - Drum & Bass Forum — VexedDnB | DOA | Drum & Bass Forum Drum & Bass Forum (5. 4. 2026) ([DogsOnAcid][1])
+* DnB Industry Research | DOA | Drum & Bass Forum - Drum & Bass Forum — DnB Industry Research | DOA | Drum & Bass Forum Drum & Bass Forum (5. 4. 2026) ([DogsOnAcid][2])
+* Track ID - DJ Brockie Starsip Jungle Remix | DOA | Drum & Bass Forum - Drum & Bass Forum — Track ID - DJ Brockie Starsip Jungle Remix | DOA | Drum & Bass Forum Drum & Bass Forum (3. 4. 2026) ([DogsOnAcid][3])
+* Ashdunn - Say Bo (2. 4. 2026) ([YouTube @UKFDrumandBass][4])
+* Napes Continues To Evolve - ukf.com — Napes Continues To Evolve ukf.com (1. 4. 2026) ([UKF][5])
 
-## ČR / SK (23.–29. 3. 2026)
+## ČR / SK (30.–5. 4. 2026)
 
 * Žádné zásadní novinky.
 
-## Reddit vlákna (23.–29. 3. 2026)
+## Reddit vlákna (30.–5. 4. 2026)
 
-* NOŪS - Neverfeel [Drum Army]. submitted by /u/rebornfisk [link] [comments] (29. 3. 2026) ([Reddit r/DnB][6])
-* I'm really starting to love DnB. I'm really new and I've had some songs recommended to me and I'm absolutely loving them but this song is making me dive deeper into DNB. recommend me songs like this one please ! submitted by /u/Weary-Wasabi1721 [link] [comment (29. 3. 2026) ([Reddit r/DnB][7])
-* VA Live @ Psychosis Timeslip Episode III (19.06.1993). submitted by /u/Moxser [link] [comments] (29. 3. 2026) ([Reddit r/DnB][8])
+* What happened to Ram Records?. Ram Records hasn't released a compilation in several years and the latest release that's featured on their website was released in 2023. There wasn't an announcement about Ram Records shutting down so I've been wondering why they (5. 4. 2026) ([Reddit r/DnB][6])
+* Tobax interview (New tunes, too!). We sit down with neurofunk powerhouse Tobax to discuss his latest release, Distorted Minds, on Warlock Audio and the technical precision behind his evolving sound. He opens up about balancing high-octane production with famil (5. 4. 2026) ([Reddit r/DnB][7])
+* How To: short, rhythmic, melodic "plucks" or "hooks" in intelligent DnB. I worked for a few hours on a song and I got this super cool pad loop with my own violin and some birds near my house in the back sampled, but it sounds really empty on its own. I want to (5. 4. 2026) ([Reddit r/DnB][8])
 
-## Kuriozita (23.–29. 3. 2026)
+## Kuriozita (30.–5. 4. 2026)
 
-* Bad Patterns & Subten - MAIN STAGE (25. 3. 2026) ([YouTube @UKFDrumandBass][9])
+* VexedDnB | DOA | Drum & Bass Forum - Drum & Bass Forum — VexedDnB | DOA | Drum & Bass Forum Drum & Bass Forum (5. 4. 2026) ([DogsOnAcid][1])
 
 ## Eventy ČR / SK
 
 ### Recap minulý týden
-* Andromedik Invites ✧ Prague 2026 , EPIC #Praha (27. 3. 2026) ([DnBHeard][10])
-* Grow Fest Afterparty w/ Ed Rush & Aphrodite → Vstupné Zdarma , Tržnice 👑 #Brno (27. 3. 2026) ([DnBHeard][11])
-* DNB MOOD w/ SIGMA , MOOD 👑 #HradecKrálové (27. 3. 2026) ([DnBHeard][12])
-* J.Cop Invites w/ Muzaman (PL) , Centrála 👑 #Praha (27. 3. 2026) ([DnBHeard][13])
-* Drum & Bus Station w/ Tantrum Desire , Cross 👑 #Praha (27. 3. 2026) ([DnBHeard][14])
-* ŠELEST #11: gyrofield + Proc Fiskal (live) + Herss b2b Vooku + gabi98 , Bike_Jesus 👑 #Praha (28. 3. 2026) ([DnBHeard][15])
+* LIR Warm Up w/ CIRCADIAN (UK) , EXIT 👑 #Brno (2. 4. 2026) ([DnBHeard][9])
+* BrokenBase XL37 w/MEFJUS/C:RCLE , Stará Sladovňa 👑 #Košice (2. 4. 2026) ([DnBHeard][10])
+* BEATS FOR LOVE: ON THE ROAD ♡ , Fabric #Ostrava (2. 4. 2026) ([DnBHeard][11])
+* DNB Production Night w/ NORTY (UK) , Cross 👑 #Praha (3. 4. 2026) ([DnBHeard][12])
+* BASSCRYPT [Drum & Bass Edition] w/ ZIGI SC (Darkshire) , STAGE #JablonecNadNisou (3. 4. 2026) ([DnBHeard][13])
+* ANDY C, ANDROMEDIK, DELTA HEAVY, and more… , Bobycentrum #Brno (4. 4. 2026) ([DnBHeard][14])
 
 ### Tento týden
-* BEATS FOR LOVE: ON THE ROAD ♡ , Fabric #Ostrava (2. 4. 2026) ([DnBHeard][16])
-* DNB Production Night w/ NORTY (UK) , Cross 👑 #Praha (3. 4. 2026) ([DnBHeard][17])
-* BASSCRYPT [Drum & Bass Edition] w/ ZIGI SC (Darkshire) , STAGE #JablonecNadNisou (3. 4. 2026) ([DnBHeard][18])
-* ANDY C, ANDROMEDIK, DELTA HEAVY, and more… , Bobycentrum #Brno (4. 4. 2026) ([DnBHeard][19])
+* NETSKY WEEKENDER , Roxy 👑 #Praha (11. 4. 2026) ([DnBHeard][15])
 
 ### Nově oznámené
 * Žádné relevantní novinky tento týden.
@@ -53,22 +50,18 @@
 
 ## Zdroje
 
-[1]: https://news.google.com/rss/articles/CBMikwFBVV95cUxOT3BTVlBUNnNRVWZIcDdVVk5jS0JrR0xMWmlpNUUxYWhmdlppaGVoR1FKZmFYR0xuUWd4VVRlVjJPblYxV0twdkYxRTRUUHFvUlNETzVqak02N1FTRzk0bjdlSXNaVXZMSE5CNEdWSHNvenRPbVZKakhtSUNOcGRGaUpmcGRrOHRBMmUzZEx4V0p6eTA?oc=5
-[2]: https://www.youtube.com/watch?v=F7uPQFuKqXE
-[3]: https://news.google.com/rss/articles/CBMihAFBVV95cUxQYVQ4NUpncFoyOG9mcVZWYXJSaXhGRlRETzlGTnN5eEIwaERXOTdzai1yMERvRGlxeEdRQVhHeXoyWERhb1YtbVp6N3JMTVhscWt0MGRxb2ZSeVNISHBQSXVmd3FzTmQ0d2JHU2JrTWUtU1MwZlJoWlQ2M01pZjgtLWJHZ2o?oc=5
-[4]: https://news.google.com/rss/articles/CBMiZEFVX3lxTE1FaVJySEx0YmZzMWdneWxlMnVRcjItQ2xaVEFqbW5pbEN2U0ViYXNwSUdvY19uZ1F5UEJuXzR0aDFWOTFlRUlvZmtXUEd6OGYwci16V2QxT3ljbWYwQ0l6dGlIUjc?oc=5
-[5]: https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVjFrWEJaZS1rN0x5R2JsMEk2b1ZWbUVQSkdWSktjajlOZWtBSk1jU3RRYks3amswT1N0QTg2WktUeEJjZjdRTExrTkk5RzZtcG1jRXJLakpmMHZCQkV4a2ZWRW01OC1SR3g0T0FlUXZjY3ZaMHRneVRueU9jU2FUc0VkemlsYmtI?oc=5
-[6]: https://old.reddit.com/r/DnB/comments/1s76v3d/noūs_neverfeel_drum_army/
-[7]: https://old.reddit.com/r/DnB/comments/1s76nys/im_really_starting_to_love_dnb/
-[8]: https://old.reddit.com/r/DnB/comments/1s73fu4/va_live_psychosis_timeslip_episode_iii_19061993/
-[9]: https://www.youtube.com/watch?v=klBjhZZkx_U
-[10]: https://www.facebook.com/events/1332226151983214/
-[11]: https://www.facebook.com/events/1267626468606561/
-[12]: https://www.facebook.com/events/1210561750599703/
-[13]: https://www.facebook.com/events/765223883081265
-[14]: https://www.facebook.com/events/2192454844618637/
-[15]: https://www.facebook.com/events/4407596889560777
-[16]: https://www.facebook.com/events/1657455132009773/
-[17]: https://www.facebook.com/events/3937501409874379/
-[18]: https://www.facebook.com/events/2168951077249317/
-[19]: https://www.facebook.com/events/820313147486276/
+[1]: https://news.google.com/rss/articles/CBMiYEFVX3lxTFBpNDhOQ2dsVUFRSHlpX1JqZHFobDBmWDNVYTVvZi04LW1MeV9vb2FjMHdLOVVXM1M0bjdYQW5SRDJjU1JpOGluS1RNYTlIdW5VaEhtM1psUkF5Z0pFX01jbw?oc=5
+[2]: https://news.google.com/rss/articles/CBMickFVX3lxTE04V3JIMXBrZ3BNYXZxV3hucDc0azRKcFJFM0FLdGc3ODZJdEh0eWdRaDlGZmlGYzZZV0Z2MENlVWxxOFhkeTNoWlpfQWhVS0ZHQmxTMVhqU0s0UTRzdEk4TE5CMUxJd2huNU1EVF9Na1V3Zw?oc=5
+[3]: https://news.google.com/rss/articles/CBMikwFBVV95cUxNOUZoQmdzZ0p0WHUxdHZ0TFZIRF9CeXhKOWNWZnNrV1lGdjlBWGdOS1NxVC1VeURNb19EdkYtZXZsT0d2NGlBcVdFU01hcXJQRmRXNW94UHg4MFBlUHA3VkZZYWR3bE84S3F4bVI4QWxYSl9zZkpMeWtTZnRhM19ob09OT1pobU5wemc1bi1id1BrMjA?oc=5
+[4]: https://www.youtube.com/watch?v=cXgyjVS8gn0
+[5]: https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MVFhjamtOMFRBOTVXd3dKeUt3dWthTlZLMWFWT0pPWEVRc2dGc2FPcTVXeWVCNFVsZDY1ZDF6YmQwNy10dl84SWpXVEN1WEwyT2hqQnlhbmwxU3c?oc=5
+[6]: https://old.reddit.com/r/DnB/comments/1sdge6t/what_happened_to_ram_records/
+[7]: https://old.reddit.com/r/DnB/comments/1sdfwu7/tobax_interview_new_tunes_too/
+[8]: https://old.reddit.com/r/DnB/comments/1sdf8yg/how_to_short_rhythmic_melodic_plucks_or_hooks_in/
+[9]: https://www.facebook.com/events/947659154396347
+[10]: https://www.facebook.com/events/646054238596707/
+[11]: https://www.facebook.com/events/1657455132009773/
+[12]: https://www.facebook.com/events/3937501409874379/
+[13]: https://www.facebook.com/events/2168951077249317/
+[14]: https://www.facebook.com/events/820313147486276/
+[15]: https://www.facebook.com/events/25238167649155789/
