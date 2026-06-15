@@ -1,41 +1,40 @@
-# DnB NOVINKY – 8. 6. 2026
+# DnB NOVINKY – 15. 6. 2026
 
-## Svět (1.–7. 6. 2026)
+## Svět (8.–14. 6. 2026)
 
-* Habstrakt - Old School (5. 6. 2026) ([YouTube @UKFDrumandBass][1])
-* Mid-90s Mixtape: Jazzy & Atmospheric DnB | DOA | Drum & Bass Forum - Drum & Bass Forum — Mid-90s Mixtape: Jazzy & Atmospheric DnB | DOA | Drum & Bass Forum Drum & Bass Forum (5. 6. 2026) ([DogsOnAcid][2])
-* We Need To Talk About Ashdunn - ukf.com — We Need To Talk About Ashdunn ukf.com (4. 6. 2026) ([UKF][3])
-* Conducta selects 10 jungle tracks that inspire his productions - Mixmag — Conducta selects 10 jungle tracks that inspire his productions Mixmag (4. 6. 2026) ([Mixmag][4])
-* You Believe - ukf.com — You Believe ukf.com (4. 6. 2026) ([UKF][5])
+* Adult Swim DnB mix (Memory System | Ambient Swim :: DnB & Jungle ::) | DOA | Drum & Bass Forum - Drum & Bass Forum — Adult Swim DnB mix (Memory System | Ambient Swim :: DnB & Jungle ::) | DOA | Drum & Bass Forum Drum & Bass Forum (13. 6. 2026) ([DogsOnAcid][1])
+* Rova - Undisputed - listen.ukf.com — Rova - Undisputed listen.ukf.com (13. 6. 2026) ([UKF][2])
+* Bristol's jungle heritage explored in new exhibition curated by Krust - DJ Mag — Bristol's jungle heritage explored in new exhibition curated by Krust DJ Mag (12. 6. 2026) ([DJ Mag][3])
+* New exhibition explores the 30-year evolution of jungle in Bristol - Mixmag — New exhibition explores the 30-year evolution of jungle in Bristol Mixmag (11. 6. 2026) ([Mixmag][4])
+* Tracing The Milestones with DRS & Zar - ukf.com — Tracing The Milestones with DRS & Zar ukf.com (11. 6. 2026) ([UKF][5])
 
-## ČR / SK (1.–7. 6. 2026)
+## ČR / SK (8.–14. 6. 2026)
 
 * Žádné zásadní novinky.
 
-## Reddit vlákna (1.–7. 6. 2026)
+## Reddit vlákna (8.–14. 6. 2026)
 
-* I remember 1996/97 being generally a time when people were happy. So how did dnb start getting much darker at this time?. Disclaimer, I was 17 going on 18, so my perception of this being a happier time for everyone is going to be skewed by my youthful optimism (7. 6. 2026) ([Reddit r/DnB][6])
-* 1 free ticket for the brownies and lemonade day party in SF today w/chase and status and Delta heavy. I've had something come up so I can't go. First come first serve as the show starts at 2 on treasure island Edit:CLAIMED submitted by /u/ShoulderGoesPop [link (7. 6. 2026) ([Reddit r/DnB][7])
-* Sighting (Cooh) new EP "Voices Of Chaos Vol.1" out now on Bandcamp. https://abcdmusic.bandcamp.com/album/voices-of-chaos-vol-1 submitted by /u/IgorrrKkK [link] [comments] (7. 6. 2026) ([Reddit r/DnB][8])
+* Any love for the more experimental left field side of halftime?. it's not NOT dnb submitted by /u/Mods_are_losers666 [link] [comments] (14. 6. 2026) ([Reddit r/DnB][6])
+* Oliver Tree & Robin Schulz - Miss You (Georgie Riot Remix) (Free Download). Tune. :( submitted by /u/Sheik-mon [link] [comments] (14. 6. 2026) ([Reddit r/DnB][7])
+* Break - Isis. YES BREAK submitted by /u/FierceWarrior11 [link] [comments] (14. 6. 2026) ([Reddit r/DnB][8])
 
-## Kuriozita (1.–7. 6. 2026)
+## Kuriozita (8.–14. 6. 2026)
 
-* Habstrakt - Old School (5. 6. 2026) ([YouTube @UKFDrumandBass][1])
+* Adult Swim DnB mix (Memory System | Ambient Swim :: DnB & Jungle ::) | DOA | Drum & Bass Forum - Drum & Bass Forum — Adult Swim DnB mix (Memory System | Ambient Swim :: DnB & Jungle ::) | DOA | Drum & Bass Forum Drum & Bass Forum (13. 6. 2026) ([DogsOnAcid][1])
 
 ## Eventy ČR / SK
 
 ### Recap minulý týden
-* HAUNTEDVILLA WARM-UP | BY YAMAN | w/ ZEDBERG, RAIDO, KARPA , Cross 👑 #Praha (5. 6. 2026) ([DnBHeard][9])
-* DNB FESTIVAL , Abertamy 👑 #Abertamy (6. 6. 2026) ([DnBHeard][10])
-* EXIT Showcase , Galerie Vaňkovka 👑 #Brno (6. 6. 2026) ([DnBHeard][11])
-* Next D’n’B Session /w Tr Tactics B2B Symplex , Hřiště 👑 #Těšetice (6. 6. 2026) ([DnBHeard][12])
+* Hoofbeats Open Air 2026 w/ Netsky (BE) & Subsonic (UK) , Sklub 👑 #Olomouc (12. 6. 2026) ([DnBHeard][9])
+* breaXperiment w/ BONNOT (IT), AKIRA & more + VIDEOGAME PROJECTION , Cross 👑 #Praha (12. 6. 2026) ([DnBHeard][10])
+* PULSATION CASTLE w/ CAMO & KROOKED B2B MEFJUS, KANINE & MORE , Bratislavský hrad 👑 #Bratislava (13. 6. 2026) ([DnBHeard][11])
+* 2026: Ještědská Odysea , Sportovní areál Vesec 👑 #Liberec (13. 6. 2026) ([DnBHeard][12])
+* ZLOMENÁ SCÉNA x SOFA SOUND w/ Bussines As Usual, Zero T, Trex, Bassi , Fuchs2 👑 #Praha (13. 6. 2026) ([DnBHeard][13])
 
 ### Tento týden
-* Hoofbeats Open Air 2026 w/ Netsky (BE) & Subsonic (UK) , Sklub 👑 #Olomouc (12. 6. 2026) ([DnBHeard][13])
-* breaXperiment w/ BONNOT (IT), AKIRA & more + VIDEOGAME PROJECTION , Cross 👑 #Praha (12. 6. 2026) ([DnBHeard][14])
-* PULSATION CASTLE w/ CAMO & KROOKED B2B MEFJUS, KANINE & MORE , Bratislavský hrad 👑 #Bratislava (13. 6. 2026) ([DnBHeard][15])
-* 2026: Ještědská Odysea , Sportovní areál Vesec 👑 #Liberec (13. 6. 2026) ([DnBHeard][16])
-* ZLOMENÁ SCÉNA x SOFA SOUND w/ Bussines As Usual, Zero T, Trex, Bassi , Fuchs2 👑 #Praha (13. 6. 2026) ([DnBHeard][17])
+* BEATS FOR LOVE: EXPERIENCE ♡ w/ HYBRID MINDS | VSTUP ZDARMA , Nová Osmička 👑 #Boskovice (19. 6. 2026) ([DnBHeard][14])
+* Darkshire Festival In The Woods 2026 , RS Kateřina #Chotěvice (20. 6. 2026) ([DnBHeard][15])
+* BEATS FOR LOVE: EXPERIENCE ♡ w/ HYBRID MINDS | VSTUP ZDARMA , Nová Osmička 👑 #Boskovice (20. 6. 2026) ([DnBHeard][14])
 
 ### Nově oznámené
 * Žádné relevantní novinky tento týden.
@@ -52,20 +51,18 @@
 
 ## Zdroje
 
-[1]: https://www.youtube.com/watch?v=BwOgOcqr4uw
-[2]: https://news.google.com/rss/articles/CBMihwFBVV95cUxQTjVLWWpYNTdSSl9ZSXp2Y19ablRLZzB0TjJKVm15ME5LY01jR0x1N25PeUJEMFM2VTF3aVNkbTV5TDQ5UFVGRjZfX1lWRk1BcTRSeldPTk9kOGJvanJ5N3o5NGxVci1Tb0JIMkd0ODF3OWl4NWUxcm5QZjNrM3NLQTUtbGozZFk?oc=5
-[3]: https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hSlJtaTNybjFJVXUwYkpSRnBvS1djWXhHX2NwRFZPcHFmQ1dmeFJkVjEzUXRrN2hyQkpPUURkMEZ6aFNwN2JXdXhxdDBCa01uaDVEeHFxNXNscDJlV1M1NQ?oc=5
-[4]: https://news.google.com/rss/articles/CBMikwFBVV95cUxON0xnSkc4N3dldWlBenVjV0c2bnlrd0tyZllPTDlfWGRJenVMRGtnRjZCSWlwOTB1NHp4eTVJOW5LQmZEMFZVd1dkUzZEclhPMWlRRlpLdHJ4NV81RTdHRWd2Rk5EclNlUjlieFE4ZzljTW5DeDFSNkl6MVF1c3hZeFR2Mm9NTnJNNHFOTS1INjh2Ulk?oc=5
-[5]: https://news.google.com/rss/articles/CBMiV0FVX3lxTE0yWWhDaTBxckRfUzN0U3pUVjMwTHVXcGxWcnk2SHl6amlXWndhWURCZTdoSjJNZVBtQmJtbEZGMnU3SWwxOWVVSWVTMEI5cHlBRE5XZU9VVQ?oc=5
-[6]: https://old.reddit.com/r/DnB/comments/1tznz8g/i_remember_199697_being_generally_a_time_when/
-[7]: https://old.reddit.com/r/DnB/comments/1tzmkku/1_free_ticket_for_the_brownies_and_lemonade_day/
-[8]: https://old.reddit.com/r/DnB/comments/1tzmds8/sighting_cooh_new_ep_voices_of_chaos_vol1_out_now/
-[9]: https://www.facebook.com/events/1712928856590159/
-[10]: https://www.facebook.com/events/945986861705165/
-[11]: https://www.facebook.com/events/1621505975808951/
-[12]: https://www.facebook.com/events/796425586422166
-[13]: https://www.facebook.com/events/1634948484289593/
-[14]: https://www.facebook.com/events/1634871277627582/
-[15]: https://www.facebook.com/events/1279823460767871/
-[16]: https://www.facebook.com/events/1589227855106896/
-[17]: https://www.facebook.com/events/963046220028070/
+[1]: https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0JqeWoyQVZEdENnSWR6RGM4QTZUT3FJRGZUd3JiVk50QVU1Rkx2dllsMlFpSkdKYU4tYkJWR05zM2gxc1VhN2xXU2FyM0lTeFU2U0NUZE1LYWFETktoeWREaUpZd2d2c1RuR0x3OXNLaXVfdzNUNWw5WEJkNjlUY2NFUkpoY09QR1g5WlItSUxrOFV3blQ1SnhlQkZuYnhnWlVnbHhSRjA?oc=5
+[2]: https://news.google.com/rss/articles/CBMi5AJBVV95cUxORUU4a2dWdWlKNDZlcGR1YzBlOHc3ZVR2b0N4NnJ0dnE0Mjd6M3hOel9TUXQ3blRBRjBKQjVLb2xFQ25kbDl1SzFBTnhMVjMxbWI3WTBMQUlBSi1xUGVjMnBFV0YwNEFGcUpySWFuZ3JNYUdrbFRNUm4wSG5PSW85V3RTQVlsVWZHODBtd0VyaXVqQmxVdmF4ZEFFWGFobEJpZ0M4SnJiZW9lX3g3WHVYZzZsbzBGV2hKR1ZMa2VnWjRyLUw4YzBCWmFYZFdtak1UMnFWZDhvdVkwOTZDRUR6NHVFd0dVRmNHVXhaejRyNWJlbHFGZkdmQ1BqYm50YzhlWm5ydE5mTmdvTUJpbVhjZEM2SFUzcTRCY2RpME9hX0dqbHV2MXRIQ3FYaTJ1UWQxZ0oxV09rcFowSFN3ektxbU5kTEwyTkMtbmRnZkdWS1paaWRUM3A5RFVPbG9jWGYzZURxUA?oc=5
+[3]: https://news.google.com/rss/articles/CBMijgFBVV95cUxQWG9oVFo2cldyWmVXeTRYeGtGdTU1dGxTWDcwTElWNG5KZndDUjRlYTBBTzFXUVFVSWFZS1lLUlpzb0dGT3VzdmNOVDdRNnVjTU05TXVvMWJuRjNfNXhHWTBVRlpWZkVoblBLclFrcE0yNnhJRnFmbUlaVlR1bWR4elZTMWpvVVA5QnU5bjZB?oc=5
+[4]: https://news.google.com/rss/articles/CBMimwFBVV95cUxNbGxZSEgtd2JDQ3ZzNmZBQkJlQ3hfWXNwb1FUU2J0LW90TFh1UHNLTVQzSFlBOEJOZEdVc1BxV2pCQlZxRHAxSmRoX0NiMktrWmpJQWliZWE5bS1TYWdDZUdsTkJtSnFEVHVKY1JzMlU5RWFYNEZiaHllNHNfeGtWZFdEam1yQVlYQUY4dHgwQUJVcURLcnRUVk1aZ9IBkwFBVV95cUxQY0NEazZoRFRnX1NYYjN5MWduVVk1VWtPY3ZQVThnS2UwMjlCYUkzYnVfRmRJbjFTak9xLWZWSFlwSFZMNmhyRGN0QWFFMm5Jb04yZzZtQjZRV05mQXNvR19CMG16RS1sUU1jSHZGdGRKRHZlbDktOG52RGZCRGhTajZTV0hKTGJ5YmFtejQ1dnBoSXc?oc=5
+[5]: https://news.google.com/rss/articles/CBMiaEFVX3lxTE1vbkVQdU1OWFBBRHRpNi1zdExRMkVvbXZOVHBIanMyQUZMaXdjVjYzV0YwZm5WdjJlMUdYZFg2WlRIMlFmZnI5TEUyRjZIUzJyVXlHNkVheWVnYld3N2NEcnE3TDQxbTg3?oc=5
+[6]: https://old.reddit.com/r/DnB/comments/1u5y2is/any_love_for_the_more_experimental_left_field/
+[7]: https://old.reddit.com/r/DnB/comments/1u5ti32/oliver_tree_robin_schulz_miss_you_georgie_riot/
+[8]: https://old.reddit.com/r/DnB/comments/1u5swtg/break_isis/
+[9]: https://www.facebook.com/events/1634948484289593/
+[10]: https://www.facebook.com/events/1634871277627582/
+[11]: https://www.facebook.com/events/1279823460767871/
+[12]: https://www.facebook.com/events/1589227855106896/
+[13]: https://www.facebook.com/events/963046220028070/
+[14]: https://www.facebook.com/events/993754016466450/
+[15]: https://www.facebook.com/events/1443692270159348/
