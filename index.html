@@ -51,7 +51,7 @@
       </div>
       <div class="flex items-center space-x-4">
         <div>
-          <label for="period-select" class="text-sm font-medium text-gray-400 mr-2">ObdobĂ­</label>
+          <label for="period-select" class="text-sm font-medium text-gray-400 mr-2">Obdobíl>
           <select id="period-select" class="bg-gray-800 border border-gray-600 rounded-md py-1 px-2 text-white focus:ring-blue-500 focus:border-blue-500">
             <!-- Options will be populated by JS -->
           </select>
@@ -145,10 +145,10 @@
               newsContainer.innerHTML += renderCard(item);
             });
           } else {
-            newsContainer.innerHTML = '<p class="text-center text-gray-400">Pro vybranĂ© obdobĂ­ nebyly nalezeny ĹľĂˇdnĂ© zprĂˇvy.</p>';
+            newsContainer.innerHTML = '<p class="text-center text-gray-400">Pro vybrané období nebyly nalezeny žádné zprávy.</p>';
           }
           const [year, week] = period.replace('news/','').replace('.json','').split('-');
-          dateRangeEl.textContent = `TĂ˝den ${week.replace('week_', '')}, ${year}`;
+          dateRangeEl.textContent = `Týden ${week.replace('week_', '')}, ${year}`;
         } catch (error) { 
           console.error('Error loading news:', error);
           newsContainer.innerHTML = `<p class="text-center text-red-500">Nastala chyba pĹ™i naÄŤĂ­tĂˇnĂ­ zprĂˇv pro ${period}.</p>`;
@@ -161,7 +161,7 @@
           periods.sort((a, b) => Number(b.match(/week_(\d+)/)[1]) - Number(a.match(/week_(\d+)/)[1]));
 
           if (periods.length === 0) {
-              periodSelect.innerHTML = '<option>Ĺ˝ĂˇdnĂˇ data k zobrazenĂ­</option>';
+              periodSelect.innerHTML = '<option>Žádná data k zobrazení­</option>';
               return;
           }
 
@@ -170,7 +170,7 @@
             const [year, week] = period.split('-');
             const option = document.createElement('option');
             option.value = periodFile;
-            option.textContent = `TĂ˝den ${week.replace('week_', '')}, ${year}`;
+            option.textContent = `Týden ${week.replace('week_', '')}, ${year}`;
             periodSelect.appendChild(option);
           });
 
@@ -192,4 +192,7 @@
   </script>
 </body>
 </html>
+
+
+
 
