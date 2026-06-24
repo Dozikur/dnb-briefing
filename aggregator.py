@@ -1342,6 +1342,8 @@ if RUN_MAIN:
     html_template = """<!DOCTYPE html><html lang="cs"><meta charset="utf-8">
     <title>DnB NOVINKY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#111827">
+    <link rel="manifest" href="manifest.webmanifest">
     <style>
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.55}
     h1{font-size:28px;margin:0 0 16px}
@@ -1358,6 +1360,11 @@ if RUN_MAIN:
     <footer>
     Vygenerováno automaticky. Zdrojové kanály: Google News RSS, Reddit RSS, YouTube channel RSS, RAVE.cz feed, DnBHeard, Resident Advisor (multi-region), Hospitality, Liquicity, DnB Allstars, Rampage, Korsakov, Darkshire, Beats for Love, Hoofbeats, Roxy, EPIC, Facebook Events.
     </footer>
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+    }
+    </script>
     </body></html>"""
     html_content = md_to_html(markdown_out, output_format="xhtml1")
     html = html_template.replace("{CONTENT}", html_content)

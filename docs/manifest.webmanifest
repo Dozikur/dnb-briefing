@@ -1,0 +1,11 @@
+{
+  "name": "DnB NOVINKY",
+  "short_name": "DnB NOVINKY",
+  "description": "Statický briefing drum & bass novinek s podporou offline otevření po první návštěvě.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111827",
+  "lang": "cs"
+}
