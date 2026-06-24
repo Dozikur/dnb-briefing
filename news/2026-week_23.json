@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "date": "2026-06-01",
+    "title": "Titulek zprávy",
+    "content": [
+      "Odstavec 1.",
+      "Odstavec 2."
+    ],
+    "source": "Zdroj",
+    "source_url": "https://...",
+    "genre": "Release news",
+    "image": "https://..."
+  }
+]
