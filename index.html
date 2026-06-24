@@ -158,7 +158,7 @@
       const populatePeriodSelector = () => {
         try {
           const periods = newsFiles.slice();
-          periods.sort().reverse();
+          periods.sort((a, b) => Number(b.match(/week_(\d+)/)[1]) - Number(a.match(/week_(\d+)/)[1]));
 
           if (periods.length === 0) {
               periodSelect.innerHTML = '<option>Ĺ˝ĂˇdnĂˇ data k zobrazenĂ­</option>';
@@ -192,3 +192,4 @@
   </script>
 </body>
 </html>
+
