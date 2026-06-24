@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -51,7 +51,7 @@
       </div>
       <div class="flex items-center space-x-4">
         <div>
-          <label for="period-select" class="text-sm font-medium text-gray-400 mr-2">Období</label>
+          <label for="period-select" class="text-sm font-medium text-gray-400 mr-2">ObdobĂ­</label>
           <select id="period-select" class="bg-gray-800 border border-gray-600 rounded-md py-1 px-2 text-white focus:ring-blue-500 focus:border-blue-500">
             <!-- Options will be populated by JS -->
           </select>
@@ -74,7 +74,7 @@
 
   <script>
     // This list is now dynamically injected
-    const newsFiles = ["news/2026-week_1.json","news/2026-week_2.json","news/2026-week_3.json", "news/2026-week_4.json", "news/2026-week_5.json"];
+    const newsFiles = ["news/2026-week_1.json","news/2026-week_2.json","news/2026-week_3.json","news/2026-week_4.json","news/2026-week_5.json","news/2026-week_6.json","news/2026-week_7.json","news/2026-week_8.json","news/2026-week_9.json","news/2026-week_10.json","news/2026-week_11.json","news/2026-week_12.json","news/2026-week_13.json","news/2026-week_14.json","news/2026-week_15.json","news/2026-week_16.json","news/2026-week_17.json","news/2026-week_18.json","news/2026-week_19.json","news/2026-week_20.json","news/2026-week_21.json","news/2026-week_22.json","news/2026-week_23.json","news/2026-week_24.json","news/2026-week_25.json"];
   </script>
 
   <script>
@@ -145,13 +145,13 @@
               newsContainer.innerHTML += renderCard(item);
             });
           } else {
-            newsContainer.innerHTML = '<p class="text-center text-gray-400">Pro vybrané období nebyly nalezeny žádné zprávy.</p>';
+            newsContainer.innerHTML = '<p class="text-center text-gray-400">Pro vybranĂ© obdobĂ­ nebyly nalezeny ĹľĂˇdnĂ© zprĂˇvy.</p>';
           }
           const [year, week] = period.replace('news/','').replace('.json','').split('-');
-          dateRangeEl.textContent = `Týden ${week.replace('week_', '')}, ${year}`;
+          dateRangeEl.textContent = `TĂ˝den ${week.replace('week_', '')}, ${year}`;
         } catch (error) { 
           console.error('Error loading news:', error);
-          newsContainer.innerHTML = `<p class="text-center text-red-500">Nastala chyba při načítání zpráv pro ${period}.</p>`;
+          newsContainer.innerHTML = `<p class="text-center text-red-500">Nastala chyba pĹ™i naÄŤĂ­tĂˇnĂ­ zprĂˇv pro ${period}.</p>`;
         }
       };
 
@@ -161,7 +161,7 @@
           periods.sort().reverse();
 
           if (periods.length === 0) {
-              periodSelect.innerHTML = '<option>Žádná data k zobrazení</option>';
+              periodSelect.innerHTML = '<option>Ĺ˝ĂˇdnĂˇ data k zobrazenĂ­</option>';
               return;
           }
 
@@ -170,7 +170,7 @@
             const [year, week] = period.split('-');
             const option = document.createElement('option');
             option.value = periodFile;
-            option.textContent = `Týden ${week.replace('week_', '')}, ${year}`;
+            option.textContent = `TĂ˝den ${week.replace('week_', '')}, ${year}`;
             periodSelect.appendChild(option);
           });
 
@@ -183,7 +183,7 @@
           }
         } catch (error) {
           console.error('Error populating period selector:', error);
-          periodSelect.innerHTML = '<option>Chyba načítání</option>';
+          periodSelect.innerHTML = '<option>Chyba naÄŤĂ­tĂˇnĂ­</option>';
         }
       };
 
