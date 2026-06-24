@@ -108,14 +108,18 @@
                   const instagramUrl = `https://www.instagram.com/p/${postId}/`;
                   return `
                     <div class="my-5 rounded-xl border border-slate-700 bg-slate-900/60 p-4">
-                      <p class="text-sm text-slate-400 mb-3">Instagram post</p>
-                      <a href="${instagramUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 px-4 py-2 text-sm font-bold text-white hover:opacity-90 transition">
-                        Otevřít post na Instagramu
-                      </a>
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="${instagramUrl}"
+                        data-instgrm-version="14"
+                        style="background:#fff; border:0; border-radius:12px; box-shadow:none; margin: 0 auto; max-width:540px; min-width:326px; padding:0; width:100%;">
+                      </blockquote>
+                      <p class="mt-3 text-sm text-slate-400 text-center">
+                        Pokud se Instagram nenačte, <a href="${instagramUrl}" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:underline">otevřít post na Instagramu</a>.
+                      </p>
                     </div>
                   `;
-                }
-                return `<p class="text-gray-300 mb-4 leading-relaxed">${p}</p>`;
+                }                return `<p class="text-gray-300 mb-4 leading-relaxed">${p}</p>`;
               }
             }).join('')
           : `<p class="text-gray-300 mb-4 leading-relaxed">${item.content}</p>`;
@@ -202,8 +206,10 @@
       populatePeriodSelector();
     });
   </script>
+  <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
+
 
 
 
