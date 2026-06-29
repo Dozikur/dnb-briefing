@@ -102,6 +102,10 @@
                 const albumId = p.split(':')[1];
                 const embedUrl = `https://open.spotify.com/embed/album/${albumId}`;
                 return `<div class="my-4"><iframe style="border-radius:12px" src="${embedUrl}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>`;
+              } else if (p.startsWith('youtube:')) {
+                const videoId = p.split(':')[1].trim();
+                const embedUrl = `https://www.youtube.com/embed/${videoId}`;
+                return `<div class="my-4 aspect-video"><iframe src="${embedUrl}" title="YouTube video" class="w-full h-full rounded-lg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>`;
               } else {
                 if (p.startsWith('instagram-post:')) {
                   const postId = p.split(':')[1].trim();
