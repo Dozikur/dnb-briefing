@@ -1,3 +1,21 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# DnB & Festival Intelligence
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+Interní týdenní briefing pro Let It Roll a Beatworx publikovaný přes GitHub Pages.
+
+## Struktura
+
+- `index.html` — webový přehled a archiv.
+- `news/index.json` — dynamický seznam briefingů.
+- `news/YYYY-week_N.json` — týdenní výstupy.
+- `schemas/briefing.schema.json` — datové schéma verze 2.
+- `scripts/validate_briefing.py` — validace manifestu, historie a nových výstupů.
+- `AUTOMATION.md` — redakční a publikační pravidla.
+- `.github/workflows/validate-briefing.yml` — kontrola a automatické sloučení validních automatizačních PR.
+
+## Lokální kontrola
+
+```bash
+python scripts/validate_briefing.py --all
+```
+
+Historické soubory ve starém formátu se načítají zpětně kompatibilně. Nové briefingy musí používat schéma verze 2.
