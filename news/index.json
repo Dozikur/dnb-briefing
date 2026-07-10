@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "briefings": [
+    { "year": 2026, "week": 27, "file": "news/2026-week_27.json" },
+    { "year": 2026, "week": 26, "file": "news/2026-week_26.json" },
+    { "year": 2026, "week": 25, "file": "news/2026-week_25.json" },
+    { "year": 2026, "week": 24, "file": "news/2026-week_24.json" },
+    { "year": 2026, "week": 23, "file": "news/2026-week_23.json" },
+    { "year": 2026, "week": 22, "file": "news/2026-week_22.json" },
+    { "year": 2026, "week": 21, "file": "news/2026-week_21.json" },
+    { "year": 2026, "week": 20, "file": "news/2026-week_20.json" },
+    { "year": 2026, "week": 19, "file": "news/2026-week_19.json" },
+    { "year": 2026, "week": 18, "file": "news/2026-week_18.json" },
+    { "year": 2026, "week": 17, "file": "news/2026-week_17.json" },
+    { "year": 2026, "week": 16, "file": "news/2026-week_16.json" },
+    { "year": 2026, "week": 15, "file": "news/2026-week_15.json" },
+    { "year": 2026, "week": 14, "file": "news/2026-week_14.json" },
+    { "year": 2026, "week": 13, "file": "news/2026-week_13.json" },
+    { "year": 2026, "week": 12, "file": "news/2026-week_12.json" },
+    { "year": 2026, "week": 11, "file": "news/2026-week_11.json" },
+    { "year": 2026, "week": 10, "file": "news/2026-week_10.json" },
+    { "year": 2026, "week": 9, "file": "news/2026-week_9.json" },
+    { "year": 2026, "week": 8, "file": "news/2026-week_8.json" },
+    { "year": 2026, "week": 7, "file": "news/2026-week_7.json" },
+    { "year": 2026, "week": 6, "file": "news/2026-week_6.json" },
+    { "year": 2026, "week": 5, "file": "news/2026-week_5.json" },
+    { "year": 2026, "week": 4, "file": "news/2026-week_4.json" },
+    { "year": 2026, "week": 3, "file": "news/2026-week_3.json" },
+    { "year": 2026, "week": 2, "file": "news/2026-week_2.json" },
+    { "year": 2026, "week": 1, "file": "news/2026-week_1.json" }
+  ]
+}
