@@ -1,0 +1,32 @@
+name: Validate briefing
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "news/**"
+      - "schemas/**"
+      - "scripts/**"
+      - ".github/workflows/validate-briefing.yml"
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "news/**"
+      - "schemas/**"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate manifest and reports
+        run: python scripts/validate_briefing.py --all
