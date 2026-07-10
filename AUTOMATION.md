@@ -88,5 +88,6 @@ Reddit `r/DnB`, `r/LetItRollFestival`, `r/Rampagefestival` a relevantní veřejn
 5. Vytvořit větev `automation/briefing-YYYY-week-N`.
 6. Zapsat pouze nový briefing a manifest.
 7. Otevřít nedraftový pull request s názvem `Add DnB briefing YYYY week N`.
-8. Validovaný automatizační pull request sloučí workflow `.github/workflows/validate-briefing.yml`.
-9. Pokud validace selže, nic neobcházet a vrátit přesný seznam chyb.
+8. Workflow `.github/workflows/validate-briefing.yml` zkontroluje celý datový archiv.
+9. Pull request zůstane připravený ke sloučení. Automatické sloučení vyžaduje samostatné schválení zápisových oprávnění.
+10. Pokud validace selže, nic neobcházet a vrátit přesný seznam chyb.
