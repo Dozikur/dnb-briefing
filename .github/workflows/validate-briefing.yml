@@ -3,6 +3,7 @@ name: Validate briefing
 on:
   pull_request:
     paths:
+      - "AUTOMATION.md"
       - "index.html"
       - "news/**"
       - "schemas/**"
@@ -11,6 +12,7 @@ on:
   push:
     branches: [main]
     paths:
+      - "AUTOMATION.md"
       - "index.html"
       - "news/**"
       - "schemas/**"
