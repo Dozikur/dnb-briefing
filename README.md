@@ -10,7 +10,7 @@ Interní týdenní briefing pro Let It Roll a Beatworx publikovaný přes GitHub
 - `schemas/briefing.schema.json` — datové schéma verze 2.
 - `scripts/validate_briefing.py` — validace manifestu, historie a nových výstupů.
 - `AUTOMATION.md` — redakční a publikační pravidla.
-- `.github/workflows/validate-briefing.yml` — kontrola a automatické sloučení validních automatizačních PR.
+- `.github/workflows/validate-briefing.yml` — kontrola manifestu a briefingů bez zápisových oprávnění.
 
 ## Lokální kontrola
 
