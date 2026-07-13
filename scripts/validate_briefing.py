@@ -25,6 +25,7 @@ REGIONS = {"world", "europe", "cz_sk", "global"}
 CONFIDENCE = {"confirmed", "probable", "unverified"}
 SOURCE_KINDS = {"primary", "secondary", "community"}
 MEDIA_TYPES = {"image", "instagram", "youtube", "spotify", "soundcloud"}
+EDITORIAL_COVERAGE_START = (2026, 29)
 
 
 class ValidationError(Exception):
@@ -83,6 +84,13 @@ def validate_media(value: dict, field: str) -> None:
     if value["type"] not in MEDIA_TYPES:
         fail(f"{field}.type is invalid")
     https_url(value["url"], f"{field}.url")
+
+
+def is_reddit_dnb_url(value: str) -> bool:
+    parsed = urlparse(value)
+    host = parsed.netloc.casefold().split(":")[0]
+    path = parsed.path.casefold()
+    return (host == "reddit.com" or host.endswith(".reddit.com")) and path.startswith("/r/dnb/")
 
 
 def validate_unique_text_list(value, field: str, maximum: int, max_text: int = 80) -> None:
@@ -214,6 +222,24 @@ def validate_v2(path: Path, report: dict) -> list[str]:
         validate_unique_text_list(report["sources_scanned"], "sources_scanned", 100, 120)
         if not report["sources_scanned"]:
             fail("sources_scanned must not be empty")
+
+        if (period["year"], period["week"]) >= EDITORIAL_COVERAGE_START:
+            section_map = {section["id"]: section["items"] for section in sections}
+            if len(section_map["dnb_scene"]) < 2:
+                fail("dnb_scene must contain at least 2 items")
+
+            reddit_items = [
+                item
+                for item in section_map["audience_sentiment"]
+                if any(is_reddit_dnb_url(source["url"]) for source in item["sources"])
+            ]
+            if len(reddit_items) < 2:
+                fail("audience_sentiment must contain at least 2 items sourced from Reddit r/DnB")
+
+            scan_labels = [label.casefold() for label in report["sources_scanned"]]
+            if not any("reddit" in label and "r/dnb" in label and "top/week" in label for label in scan_labels):
+                fail("sources_scanned must record the Reddit r/DnB hot + top/week sweep")
+
         return []
     except ValidationError as exc:
         return [f"{path.relative_to(ROOT)}: {exc}"]
