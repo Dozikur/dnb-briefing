@@ -7,13 +7,13 @@
     "window_end": "2026-07-12",
     "generated_at": "2026-07-13T06:31:28+02:00"
   },
-  "headline": "Úmrtí Lenzmana zasáhlo DnB scénu, zatímco AI obsah a provozní tlaky mění hudební i festivalové prostředí",
+  "headline": "Lenzman, mladý producent Phantom a nové přesahy hudby do turistiky, bezpečnosti, běhu a fotbalu",
   "executive_summary": [
-    "Úmrtí Lenzmana po dlouhé nemoci zasáhlo liquid drum and bass i komunitu kolem The North Quarter. Pro LIR je důležité rychle ověřit případné bookingové vazby a zvolit citlivou, scéně přiměřenou komunikaci.",
-    "Jedna z nejaktivnějších diskuzí týdne na r/DnB řešila podezření na AI obsahové farmy v jungle a DnB kanálech na YouTube. Publikum reaguje návratem k důvěryhodným labelům, DJům, tracklistům a lidské kuraci.",
-    "Pozitivní ohlas na track postavený ze zvuku rozbitého dřezu ukázal opačný pól stejného trendu: viditelný lidský proces a nápad mají v komunitě větší hodnotu než anonymní objem uhlazeného obsahu.",
-    "Britský live sektor v roce 2025 přilákal rekordních 24,7 milionu hudebních turistů a vytvořil útratu 11,2 miliardy liber. Pro LIR to potvrzuje strategickou hodnotu destination positioningu a zahraničních návštěvníků.",
-    "Odklady festivalů, spor o basový hluk, kritická zdravotní událost a evropská vedra dál zvyšují provozní tlak. LIR potřebuje měřitelné spouštěče pro ekonomiku, hluk, medical i extrémní počasí."
+    "Rodina 12. července potvrdila úmrtí nizozemského producenta Lenzmana, zakladatele labelu The North Quarter a výrazné osobnosti soulful drum & bassu.",
+    "Čtrnáctiletý producent Phantom získal výraznou pozornost r/DnB skladbou postavenou ze zvuku rozbitého dřezu; příspěvek měl při sběru 472 bodů a 90 komentářů.",
+    "Hudební turistika ve Spojeném království vytvořila v roce 2025 výdaje 11,2 miliardy liber a přilákala rekordních 24,7 milionu návštěvníků.",
+    "Report Youth Music uvádí, že 72 procent oslovených mladých kreativců se při práci v hudebním průmyslu necítilo bezpečně.",
+    "Tomorrowland představil běžecko-raveový formát ZONE5 a Worship reagoval virálním fotbalovým reelem Drum and Bellingham."
   ],
   "sections": [
     {
@@ -30,14 +30,15 @@
           "published_at": "2026-07-10",
           "event_start": null,
           "event_end": null,
-          "title": "Rekordních 24,7 milionu hudebních turistů potvrzuje hodnotu destination eventů",
+          "title": "Hudební turistika přinesla britské ekonomice rekordních 11,2 miliardy liber",
           "summary": [
-            "Zpráva UK Music uvádí, že v roce 2025 cestovalo za britskými koncerty a festivaly 24,7 milionu hudebních turistů, meziročně o 4,8 procenta více.",
-            "Jejich útrata dosáhla rekordních 11,2 miliardy liber, což představuje meziroční růst o 11 procent.",
-            "Počet zahraničních hudebních turistů vzrostl o 27 procent na 2,1 milionu a ukazuje, že exkluzivní program dokáže generovat významný přeshraniční pohyb publika."
+            "Britské koncerty a festivaly navštívilo v roce 2025 rekordních 24,7 milionu hudebních turistů. Jejich počet meziročně vzrostl o 4,8 procenta a celkové výdaje dosáhly 11,2 miliardy liber.",
+            "Přibližně 85 procent návštěvníků tvořili domácí turisté. Počet zahraničních návštěvníků vzrostl o 27 procent z 1,6 milionu na 2,1 milionu.",
+            "K růstu přispěly koncerty Oasis, Coldplay, Beyoncé a Lany Del Rey. Pět koncertů Oasis v manchesterském Heaton Parku pomohlo zvýšit výdaje hudebních turistů v severozápadní Anglii o 16 procent na 1,4 miliardy liber.",
+            "Přímé útraty za vstupenky, občerstvení, merchandising, dopravu a ubytování činily 5,7 miliardy liber. Počet pracovních míst na plný úvazek v živé hudbě se zvýšil o tři procenta na 74 tisíc."
           ],
-          "why_it_matters": "Let It Roll má pro zahraniční publikum vlastnosti destination festivalu. Výsledky podporují investice do exkluzivního programu, balíčků s dopravou a ubytováním a přesnějšího měření útraty zahraničních návštěvníků.",
-          "recommended_action": "Doplnit do vyhodnocení LIR 2026 podíl zahraničních návštěvníků, délku pobytu a odhad jejich celkové útraty mimo vstupenku.",
+          "why_it_matters": "Položka dokumentuje rozsah britské hudební turistiky a její aktuální ekonomické výsledky.",
+          "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "festival_industry",
           "competitors": [],
@@ -49,145 +50,147 @@
               "kind": "secondary"
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://i.guim.co.uk/img/media/7f4011a5357a5d33227350d3b83f309ddf81a7cd/958_0_7200_5760/master/7200.jpg?crop=none&dpr=1&s=none&width=465"
+            }
+          ],
           "tags": [
             "music tourism",
-            "destination festival",
-            "international audience",
+            "United Kingdom",
+            "live music",
             "economics"
           ]
         },
         {
-          "id": "discovery-festivals-postponed-costs",
-          "published_at": "2026-07-08",
-          "event_start": "2026-07-26",
-          "event_end": "2026-08-09",
-          "title": "Růst nákladů a lokální konkurence odsunuly Discovery Festivals o celý rok",
-          "summary": [
-            "Pořadatelé Discovery Festivals odložili plánované akce v Dundee a Darlingtonu z roku 2026 na rok 2027.",
-            "Ve veřejném vyjádření uvedli kombinaci rostoucích nákladů, oslabené disponibilní kupní síly a dalších lokálních akcí, které zasáhly prodej i ekonomiku projektu.",
-            "Stávající vstupenky mají zůstat platné a pořadatelé nabídli držitelům další bezplatnou vstupenku jako kompenzaci."
-          ],
-          "why_it_matters": "Případ potvrzuje, že lineup s rozpoznatelnými jmény sám o sobě nestačí, pokud se současně zhorší cenová dostupnost, lokální konkurence a produkční náklady. Pro LIR je klíčové řídit break even po jednotlivých prodejních vlnách.",
-          "recommended_action": "Zavést týdenní scénářový dashboard LIR 2027 s break even, tempem prodeje, cenovou elasticitou a citlivostí na desetiprocentní růst hlavních nákladových položek.",
-          "region": "europe",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "The Sun",
-              "url": "https://www.thesun.co.uk/tvandshowbiz/39689449/5ive-fans-gutted-boyband-festival-cancelled/",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "festival economics",
-            "postponement",
-            "ticket sales",
-            "competition"
-          ]
-        },
-        {
-          "id": "rabbits-eat-lettuce-bass-noise-permit",
-          "published_at": "2026-07-07",
+          "id": "youth-music-industry-safety-report",
+          "published_at": "2026-07-10",
           "event_start": null,
           "event_end": null,
-          "title": "Nízkofrekvenční basový hluk se stal překážkou trvalého povolení festivalu",
+          "title": "Sedm z deseti mladých se v hudebním průmyslu necítilo bezpečně",
           "summary": [
-            "Rabbits Eat Lettuce žádá o trvalé povolení pětidenního festivalu a navýšení kapacity přibližně na 8 000 návštěvníků plus až 1 000 členů personálu, umělců a dobrovolníků.",
-            "Místní úřad požaduje další podklady kvůli hluku, dopravě a dopadu na okolí poté, co se při ročníku 2025 neočekávaně šířil nízkofrekvenční basový hluk.",
-            "Pořadatelé navrhují posílený monitoring, řízení dopravy a stížnostní linku, přestože akce podle jejich podkladů vytvořila přes 6 milionů australských dolarů lokálního ekonomického výstupu."
+            "Celkem 72 procent mladých lidí zažilo při práci v hudebním průmyslu pocit ohrožení. Vyplývá to z reportu Youth Music Just The Way It Is?, který vychází z odpovědí více než 50 mladých kreativců.",
+            "Tři čtvrtiny respondentů kvůli nebezpečným nebo nespravedlivým podmínkám uvažovaly o opuštění oboru. Devadesát procent mělo pocit, že o podobných zkušenostech nemůže otevřeně mluvit.",
+            "Report obsahuje 19 osobních svědectví. Victoria Canal v něm popsala obtěžování a grooming ze strany výrazně staršího umělce během turné i nečinnost lidí, kteří o situaci věděli.",
+            "Dokument zmiňuje také nízké nebo nulové odměny, diskriminaci, misogynii a umlčování. Studie Help Musicians a Musicians’ Union z roku 2024 uváděla sexuální obtěžování u 32 procent dotázaných hudebnic."
           ],
-          "why_it_matters": "Silný ekonomický přínos sám nevyřeší konflikt s okolím. U bassového festivalu může špatně modelovaná propagace nízkých frekvencí ohrozit povolení, vztahy s obcemi i dlouhodobou stabilitu lokality.",
-          "recommended_action": "Nechat po LIR 2026 zpracovat mapu šíření nízkých frekvencí podle času, větru a konfigurace stages a spojit ji s evidencí stížností okolních obcí.",
-          "region": "world",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "Courier Mail",
-              "url": "https://www.couriermail.com.au/news/queensland/south-burnett/business/rabbits-eat-lettuce-festival-future-in-doubt-over-noise-concerns/news-story/e6f9b4285ba7fa0adea836719a353e74",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "noise",
-            "permitting",
-            "low frequencies",
-            "community relations"
-          ]
-        },
-        {
-          "id": "tonnau-festival-medical-emergency",
-          "published_at": "2026-07-12",
-          "event_start": "2026-07-10",
-          "event_end": "2026-07-12",
-          "title": "Tonnau po úmrtí návštěvnice ukončil festival a uvolnil areál pro vyšetřování",
-          "summary": [
-            "Osmnáctiletá návštěvnice zemřela po zdravotní události v časných hodinách 11. července na Tonnau Festivalu v severním Walesu.",
-            "Na místě zasahoval festivalový welfare tým, zdravotníci a záchranná služba, pořadatelé následně zrušili zbytek akce.",
-            "Návštěvníci byli požádáni o opuštění areálu, aby policie a další složky mohly pokračovat ve vyšetřování."
-          ],
-          "why_it_matters": "Kritická zdravotní událost může během minut změnit festival z běžného provozu na řízenou evakuaci a krizovou komunikaci. Nejasné rozhodovací pravomoci v takové situaci zvyšují bezpečnostní i reputační riziko.",
-          "recommended_action": "Před otevřením LIR projít s vedením, security, medical a komunikací jeden společný tabletop scénář pro úmrtí nebo jinou závažnou událost během programu.",
-          "region": "europe",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "The Sun",
-              "url": "https://www.thesun.co.uk/news/39732694/woman-dies-uk-music-festival/",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "medical emergency",
-            "crisis management",
-            "cancellation",
-            "safety"
-          ]
-        },
-        {
-          "id": "europe-heatwave-health-fire-risk-july",
-          "published_at": "2026-07-12",
-          "event_start": "2026-07-06",
-          "event_end": "2026-07-12",
-          "title": "Pokračující vedra zvyšují zdravotní, požární a kapacitní riziko evropských akcí",
-          "summary": [
-            "Německo zaznamenalo během červnové vlny veder 99 úmrtí utonutím a vysokou celkovou zdravotní zátěž spojenou s extrémními teplotami.",
-            "V jižní Evropě pokračovaly požáry a omezení veřejných akcí, včetně uzavírání prostor a redukce přístupu návštěvníků.",
-            "Nová data navazují na předchozí rušení festivalů a potvrzují, že horko má sekundární dopady na koupání, zdravotnické kapacity, dopravu a požární bezpečnost."
-          ],
-          "why_it_matters": "Pro LIR není problém pouze teplota v areálu. Riziko se přenáší do vody, stínu, zdravotnických zásahů, požární prevence, směn personálu a schopnosti bezpečně odbavit příjezdy a odjezdy.",
-          "recommended_action": "Doplnit heatwave plán LIR o prahové hodnoty pro posílení medical, navýšení vody, omezení fyzicky náročných směn a změnu režimu pyrotechniky či otevřeného ohně.",
+          "why_it_matters": "Položka shrnuje zveřejněná data a svědectví o pracovních podmínkách mladých lidí v hudebním průmyslu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "festival_industry",
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
             {
-              "name": "The Guardian",
-              "url": "https://www.theguardian.com/world/2026/jul/12/germany-drowning-deaths-heatwave-paris-france-spain",
-              "kind": "secondary"
+              "name": "Youth Music",
+              "url": "https://www.youthmusic.org.uk/community/resource-hub/just-way-it-report",
+              "kind": "primary"
             },
             {
-              "name": "Associated Press",
-              "url": "https://apnews.com/article/8b78a5d051273e24455357da63551fef",
+              "name": "Mixmag",
+              "url": "https://mixmag.net/read/72-percent-young-people-felt-unsafe-working-music-industry-report-news",
               "kind": "secondary"
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/dj-credit-wolf-art.jpg?fit=cover&s=ZfKJRZ2d4hfyRaYRiDSDCw2M62e8CLGmUXxm_znetZ8&width=660"
+            },
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=d7bLEAn18E4"
+            }
+          ],
           "tags": [
-            "heatwave",
-            "wildfire",
-            "medical",
-            "operational continuity"
+            "Youth Music",
+            "safety",
+            "young creatives",
+            "music industry"
+          ]
+        },
+        {
+          "id": "tomorrowland-zone5-run-rave",
+          "published_at": "2026-07-06",
+          "event_start": "2026-08-29",
+          "event_end": null,
+          "title": "Tomorrowland spojuje pětikilometrový běh s ranním střízlivým ravem",
+          "summary": [
+            "Tomorrowland a Lucky Stride Running Club představily nový projekt ZONE5, který propojuje společný pětikilometrový běh s následnou taneční akcí.",
+            "První ročník se uskuteční 29. srpna v Antverpách. Organizátoři zdůrazňují, že nejde o závod: účastníci mají společně doběhnout do arény, kde program pokračuje hudbou.",
+            "Program začíná ráno, počítá přibližně se třemi tisíci účastníky a po doběhu pokračuje dvouhodinovým rave programem bez alkoholu.",
+            "Název odkazuje na nejvyšší tréninkovou tepovou zónu. Organizátoři uvádějí, že antverpská premiéra má být výchozím bodem pro další evropská města."
+          ],
+          "why_it_matters": "Položka představuje nový veřejně oznámený formát propojující běžeckou komunitu a elektronickou hudbu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Tomorrowland"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Lucky Stride",
+              "url": "https://lsrc.world/pages/zone5%E2%84%A2",
+              "kind": "primary"
+            },
+            {
+              "name": "EDMTunes",
+              "url": "https://www.edmtunes.com/2026/07/tomorrowland-launches-zone-5-run-rave-event-in-antwerp/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DasE4galugV/"
+            }
+          ],
+          "tags": [
+            "Tomorrowland",
+            "ZONE5",
+            "running",
+            "sober rave"
+          ]
+        },
+        {
+          "id": "worship-drum-and-bellingham",
+          "published_at": "2026-07-11",
+          "event_start": null,
+          "event_end": null,
+          "title": "Worship propojuje drum & bass s fotbalovou horečkou",
+          "summary": [
+            "Projekt Worship zveřejnil na Instagramu reel s titulkem Drum and Bellingham. Stejný příspěvek se objevil také pod profilem producenta Sub Focus.",
+            "Titulek spojuje drum & bass se jménem anglického fotbalisty Juda Bellinghama. Fotbalový kontext potvrzují i reakce sledujících, kteří se ptali na podporovaný tým nebo psali, že současně sledují zápas.",
+            "Jeden z komentářů přejmenoval Sub Focus na Soccer Focus, další uživatelé situaci označili za multitasking.",
+            "Reel měl při indexaci přibližně 11 tisíc lajků a 121 komentářů. Příspěvek ukazuje, jak se aktuální fotbalové dění propsalo do komunikace drum & bassového projektu Worship."
+          ],
+          "why_it_matters": "Položka zachycuje aktuální podobu sociální komunikace projektu Worship a reakce jeho publika.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Instagram — Worship",
+              "url": "https://www.instagram.com/worship_/reel/Daq3R7_NNA8/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/worship_/reel/Daq3R7_NNA8/"
+            }
+          ],
+          "tags": [
+            "Worship",
+            "Sub Focus",
+            "football",
+            "Instagram"
           ]
         }
       ]
@@ -197,72 +200,50 @@
       "title": "DnB scéna",
       "items": [
         {
-          "id": "lenzman-dies-north-quarter-legacy",
+          "id": "lenzman-dies-north-quarter",
           "published_at": "2026-07-12",
           "event_start": null,
           "event_end": null,
-          "title": "Lenzmanovo úmrtí zasáhlo liquid drum and bass a komunitu The North Quarter",
+          "title": "Zemřel nizozemský drum & bassový producent Lenzman",
           "summary": [
-            "Rodina Lenzmana 12. července oznámila, že nizozemský producent a DJ zemřel po tři a půl roku trvajícím boji s rakovinou ledvin.",
-            "Lenzman byl zakladatelem labelu The North Quarter a jednou z určujících osobností soulful a liquid drum and bassu.",
-            "Reakce scény zdůrazňují nejen jeho katalog, ale také roli kurátora, mentora a tvůrce komunity kolem labelu."
+            "Nizozemský producent Teije van Vliet, známý jako Lenzman, zemřel 11. července po tři a půl roku trvajícím boji s rakovinou. Zprávu následující den potvrdila jeho rodina.",
+            "Nemoc mu lékaři diagnostikovali v lednu 2023. Přestože podstoupil několik operací a další léčbu, v roce 2024 se ještě vrátil k vystupování.",
+            "Lenzman patřil k nejvýraznějším osobnostem soulful drum & bassu. Vydával na Metalheadz, kde v roce 2014 vyšlo jeho debutové album Looking At The Stars, a v roce 2016 založil vlastní label The North Quarter.",
+            "V posledních měsících pro něj komunita uspořádala benefiční akce v Londýně a Amsterdamu. Pokračoval také v práci na společném albu s Redeyes."
           ],
-          "why_it_matters": "Ztráta výrazné osobnosti mění kontext komunikace, programu i vztahů v části DnB scény. Pro LIR je relevantní ověřit případné bookingové závazky a reagovat způsobem, který respektuje komunitu i pozůstalé.",
-          "recommended_action": "Ověřit všechny přímé vazby na booking a připravit pouze citlivou, interně schválenou vzpomínkovou komunikaci.",
+          "why_it_matters": "Položka shrnuje potvrzenou zprávu o úmrtí Lenzmana a připomíná hlavní body jeho kariéry.",
+          "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "dnb_scene",
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
             {
-              "name": "DJ Mag",
-              "url": "https://djmag.com/news/lenzman-north-quarter-founder-and-drum-bass-stalwart-dies",
-              "kind": "secondary"
-            },
-            {
               "name": "Resident Advisor",
               "url": "https://ra.co/news/85562",
               "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "Lenzman",
-            "The North Quarter",
-            "liquid drum and bass",
-            "scene legacy"
-          ]
-        },
-        {
-          "id": "arky-waters-debut-bass-album",
-          "published_at": "2026-07-07",
-          "event_start": null,
-          "event_end": null,
-          "title": "Arky Waters debutovým albem Holdin’ On vstupuje naplno do bass music",
-          "summary": [
-            "Australský producent Arky Waters vydal u Mammal Sounds Records debutové album Holdin’ On, které označuje za svůj první plný vstup do bass music.",
-            "Projekt vychází ze zkušeností sydneyské klubové scény a propojuje osobní témata s experimentálním sound designem.",
-            "Focus track Take a Trip vznikl s vokalistou LX a ukazuje, jak se regionální producent může přes crossover zvuk dostat do širšího bassového prostoru."
-          ],
-          "why_it_matters": "Nejde o okamžitý headline booking, ale o užitečný signál z australského trhu a o typ crossover projektu, který může v horizontu měsíců vyrůst do relevantního klubového nebo labelového partnerství.",
-          "recommended_action": "Zařadit Arky Waters do šestíměsíčního watchlistu a sledovat streaming, support DJů a evropské bookingové kroky.",
-          "region": "world",
-          "category": "dnb_scene",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
+            },
             {
-              "name": "Data Transmission DnB",
-              "url": "https://datatransmission.co/dt-dnb/australian-producer-arky-waters-releases-debut-album-holdin-on/",
+              "name": "DJ Mag",
+              "url": "https://djmag.com/news/lenzman-north-quarter-founder-and-drum-bass-stalwart-dies",
               "kind": "secondary"
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://imgproxy.ra.co/_/quality%3A66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL25ld3MvMjAyNi9sZW56enoucG5n"
+            },
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=javDE3Z-y4k"
+            }
+          ],
           "tags": [
-            "Arky Waters",
-            "Australia",
-            "bass music",
-            "emerging artist"
+            "Lenzman",
+            "The North Quarter",
+            "Metalheadz",
+            "artist news"
           ]
         }
       ]
@@ -277,52 +258,19 @@
       "title": "Sentiment publika",
       "items": [
         {
-          "id": "reddit-ai-dnb-content-farms",
-          "published_at": "2026-07-06",
-          "event_start": null,
-          "event_end": null,
-          "title": "r/DnB řeší příval podezřelých AI kanálů a ztrátu důvěry v hudební discovery",
-          "summary": [
-            "Vlákno bylo při pondělním skenu r/DnB Top za týden mezi nejaktivnějšími příspěvky se zhruba 354 hlasy a 124 komentáři.",
-            "Autor a část diskutujících podezírají rychle publikující jungle a DnB kanály na YouTube z používání generativní AI a obsahových farem; konkrétní obvinění však nejsou nezávisle ověřena.",
-            "Nejčastější reakcí je návrat k zavedeným labelům, skutečným DJům, tracklistům, odběrům a komunitně kurátorovaným zdrojům místo algoritmického feedu.",
-            "Diskuze není jednotná: někteří uživatelé část této estetiky stále oceňují nebo odmítají dělat závěry bez důkazů."
-          ],
-          "why_it_matters": "Pro LIR a LIR Recordings roste hodnota jasně doloženého lidského autorství, kreditu a kurace. Důvěra v původ obsahu se stává součástí značky, ne jen produkčním detailem.",
-          "recommended_action": "U nového hudebního a video obsahu systematicky uvádět autory, kredity, tracklisty a krátký doklad tvůrčího procesu.",
-          "region": "global",
-          "category": "audience_sentiment",
-          "competitors": [],
-          "confidence": "unverified",
-          "sources": [
-            {
-              "name": "Reddit r/DnB",
-              "url": "https://www.reddit.com/r/DnB/comments/1up0qan/im_noticing_a_trend_here/",
-              "kind": "community"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "Reddit",
-            "AI music",
-            "discovery",
-            "trust"
-          ]
-        },
-        {
-          "id": "reddit-broken-sink-dnb-production",
+          "id": "phantom-broken-sink-dnb",
           "published_at": "2026-07-07",
           "event_start": null,
           "event_end": null,
-          "title": "Track ze zvuku rozbitého dřezu ukázal sílu viditelného lidského procesu",
+          "title": "Čtrnáctiletý producent Phantom proměnil zvuk rozbitého dřezu v drum & bass",
           "summary": [
-            "Příspěvek i turned that broken sink sample into dnb získal při pondělním skenu přibližně 472 hlasů a 90 komentářů.",
-            "Autor proměnil běžný zvuk rozbitého dřezu v základ DnB tracku a doplnil odkaz na plnou verzi.",
-            "Reakce byly převážně pozitivní, často zmiňovaly podobnost s tvorbou Venjent a žádaly další experimenty s nalezenými zvuky.",
-            "Úspěch příspěvku stojí na srozumitelném nápadu, viditelném procesu a autenticitě, nikoli na anonymní produkční dokonalosti."
+            "Uživatel Useful-Whereas-3548 zveřejnil na r/DnB devětapadesátisekundové video, ve kterém použil zvuk rozbitého dřezu jako základ drum & bassové produkce. V komentářích uvedl, že vystupuje pod jménem Phantom a je mu čtrnáct let.",
+            "Zvuk baterie použil jako basový prvek i krátký fill na konci každého druhého taktu. Sidechain vytvořil ručně pomocí automatizací, v úvodu použil low-pass filtr a zkreslení aplikoval přímo na master.",
+            "Příspěvek při načtení dat získal 472 bodů, 98 procent kladných hlasů a 90 komentářů. Část uživatelů výsledek přirovnávala k tvorbě Venjent, další žádali WAV verzi pro hraní v setech.",
+            "Po úspěchu na Redditu Phantom zveřejnil video také na YouTube a následně zpřístupnil delší verzi skladby."
           ],
-          "why_it_matters": "Komunita pozitivně reaguje na obsah, který rychle ukáže původ nápadu a lidské řemeslo. To je přímo použitelný formát pro organický obsah festivalu i labelu.",
-          "recommended_action": "Otestovat jeden krátký procesní formát LIR Recordings, který ukáže vznik konkrétního zvuku od nahrávky po hotový drop.",
+          "why_it_matters": "Položka zachycuje výrazně sledovaný komunitní příspěvek, jeho produkční postup a reakce posluchačů.",
+          "recommended_action": "Bez akce, pouze informační přehled",
           "region": "global",
           "category": "audience_sentiment",
           "competitors": [],
@@ -334,12 +282,21 @@
               "kind": "community"
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://external-preview.redd.it/ZGd6eDBzdzRtdWJoMfWNxMgYwpHxuinx048xhDqtpcDeeO3pxE5NoZA_vX9j.png?format=pjpg&auto=webp&s=6ea4fc8fd4b88d57a66091b00b61d750d390460e"
+            },
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=xp1w1pQmbb0"
+            }
+          ],
           "tags": [
             "Reddit",
+            "Phantom",
             "found sound",
-            "production",
-            "authenticity"
+            "production"
           ]
         }
       ]
@@ -347,203 +304,12 @@
     {
       "id": "strategic_releases",
       "title": "Strategické releasy",
-      "items": [
-        {
-          "id": "kanine-wide-awake-ukf-release",
-          "published_at": "2026-07-08",
-          "event_start": null,
-          "event_end": null,
-          "title": "Kanine pokračuje v dancefloor releasové linii singlem Wide Awake na UKF",
-          "summary": [
-            "UKF zveřejnilo 8. července nový singl Wide Awake od britského producenta Kanine.",
-            "Jednoskladbový release potvrzuje pokračující viditelnost Kanine v jednom z hlavních mediálních a distribučních kanálů současného drum and bassu.",
-            "Pro festivalový booking je důležitější pravidelnost jeho releasového cyklu a dosah ekosystému UKF než samotná existence jednoho singlu."
-          ],
-          "why_it_matters": "Kanine patří k relevantním dancefloor jménům pro LIR. Nový release pomáhá držet jeho aktuálnost a může podpořit načasování bookingové nebo obsahové komunikace.",
-          "recommended_action": "Promítnout nový singl do artist watchlistu a případné komunikace, pokud je Kanine součástí aktuálního nebo připravovaného programu.",
-          "region": "europe",
-          "category": "strategic_release",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "UKF",
-              "url": "https://ukf.com/listen/releases/wide-awake/",
-              "kind": "primary"
-            },
-            {
-              "name": "Drum & Bass UK",
-              "url": "https://drumandbassuk.com/artist/kanine/wide-awake-64338",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "Kanine",
-            "UKF",
-            "dancefloor",
-            "release"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "id": "lir_actions",
       "title": "Doporučené kroky pro LIR",
-      "items": [
-        {
-          "id": "lir-action-measure-music-tourism-value",
-          "published_at": "2026-07-12",
-          "event_start": null,
-          "event_end": null,
-          "title": "Změřit skutečnou hodnotu zahraničního návštěvníka",
-          "summary": [
-            "Po festivalu spojit zemi původu, délku pobytu, typ ubytování a odhad vedlejší útraty do jednoho reportu."
-          ],
-          "why_it_matters": "Bez této metriky nelze přesně rozhodnout, kolik investovat do zahraniční akvizice, dopravních partnerství a destination komunikace.",
-          "recommended_action": "Přidat otázky do post event survey a propojit je s ticketingovými daty podle trhu.",
-          "region": "global",
-          "category": "lir_action",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "The Guardian",
-              "url": "https://www.theguardian.com/business/2026/jul/10/oasis-reunion-uk-concerts-cold-play-lana-del-ray-beyonce-gigs-economy",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "analytics",
-            "international audience"
-          ]
-        },
-        {
-          "id": "lir-action-noise-propagation-audit",
-          "published_at": "2026-07-12",
-          "event_start": null,
-          "event_end": null,
-          "title": "Provést audit šíření nízkých frekvencí",
-          "summary": [
-            "Zmapovat reálné šíření basů z jednotlivých stages a porovnat je s větrem, programem a stížnostmi okolí."
-          ],
-          "why_it_matters": "Nízkofrekvenční hluk může ohrozit dlouhodobou použitelnost lokality i v situaci, kdy jsou běžné limity měřené u stage splněny.",
-          "recommended_action": "Určit odpovědného technika, měřicí body mimo areál a jednotný log pro celý festival.",
-          "region": "cz_sk",
-          "category": "lir_action",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "Courier Mail",
-              "url": "https://www.couriermail.com.au/news/queensland/south-burnett/business/rabbits-eat-lettuce-festival-future-in-doubt-over-noise-concerns/news-story/e6f9b4285ba7fa0adea836719a353e74",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "sound",
-            "permitting"
-          ]
-        },
-        {
-          "id": "lir-action-critical-incident-tabletop",
-          "published_at": "2026-07-12",
-          "event_start": null,
-          "event_end": null,
-          "title": "Procvičit zastavení programu po kritické události",
-          "summary": [
-            "V jednom scénáři projít rozhodnutí o přerušení programu, interní eskalaci, komunikaci s návštěvníky a řízený odchod z areálu."
-          ],
-          "why_it_matters": "Největší prodleva obvykle vzniká mezi zdravotnickým zásahem a manažerským rozhodnutím, co se zbytkem programu a veřejnou komunikací.",
-          "recommended_action": "Uspořádat třicetiminutový tabletop se jmenovitě určenými rozhodovacími pravomocemi.",
-          "region": "cz_sk",
-          "category": "lir_action",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "The Sun",
-              "url": "https://www.thesun.co.uk/news/39732694/woman-dies-uk-music-festival/",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "crisis management",
-            "safety"
-          ]
-        },
-        {
-          "id": "lir-action-heatwave-trigger-matrix",
-          "published_at": "2026-07-12",
-          "event_start": null,
-          "event_end": null,
-          "title": "Převést heatwave plán na spouštěcí matici",
-          "summary": [
-            "Pro jednotlivé teplotní a výstražné stupně určit předem aktivovaná opatření pro vodu, medical, směny, stín, oheň a komunikaci."
-          ],
-          "why_it_matters": "Obecný krizový plán nestačí, pokud není jasné, při jaké hodnotě a kdo konkrétní opatření spouští.",
-          "recommended_action": "Schválit prahové hodnoty a odpovědné osoby ještě před finálním produkčním meetingem.",
-          "region": "cz_sk",
-          "category": "lir_action",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "The Guardian",
-              "url": "https://www.theguardian.com/world/2026/jul/12/germany-drowning-deaths-heatwave-paris-france-spain",
-              "kind": "secondary"
-            },
-            {
-              "name": "Associated Press",
-              "url": "https://apnews.com/article/8b78a5d051273e24455357da63551fef",
-              "kind": "secondary"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "heatwave",
-            "operations"
-          ]
-        },
-        {
-          "id": "lir-action-human-provenance-content",
-          "published_at": "2026-07-12",
-          "event_start": null,
-          "event_end": null,
-          "title": "Zviditelnit lidský původ hudebního obsahu",
-          "summary": [
-            "Spojit jasné kredity a tracklisty s krátkým procesním obsahem, který ukazuje vznik konkrétního zvuku nebo skladby."
-          ],
-          "why_it_matters": "r/DnB současně ukazuje nedůvěru k anonymnímu AI obsahu a silnou pozitivní reakci na viditelný lidský nápad a řemeslo.",
-          "recommended_action": "Připravit jeden pilotní formát pro LIR Recordings a vyhodnotit dokončení videa, sdílení a kvalitativní reakce.",
-          "region": "global",
-          "category": "lir_action",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "Reddit r/DnB — AI discussion",
-              "url": "https://www.reddit.com/r/DnB/comments/1up0qan/im_noticing_a_trend_here/",
-              "kind": "community"
-            },
-            {
-              "name": "Reddit r/DnB — found sound",
-              "url": "https://www.reddit.com/r/DnB/comments/1uq31ly/i_turned_that_broken_sink_sample_into_dnb/",
-              "kind": "community"
-            }
-          ],
-          "media": [],
-          "tags": [
-            "content",
-            "provenance",
-            "AI",
-            "LIR Recordings"
-          ]
-        }
-      ]
+      "items": []
     }
   ],
   "sources_scanned": [
@@ -552,16 +318,14 @@
     "news/2026-week_26.json",
     "news/2026-week_25.json",
     "news/2026-week_24.json",
-    "The Guardian",
-    "Associated Press",
-    "Courier Mail",
-    "The Sun",
-    "UK Music",
-    "DJ Mag",
     "Resident Advisor",
-    "Data Transmission DnB",
-    "UKF",
-    "Drum & Bass UK",
-    "Reddit r/DnB: hot + top/week"
+    "DJ Mag",
+    "Reddit r/DnB: hot + top/week",
+    "The Guardian",
+    "Youth Music",
+    "Mixmag",
+    "Lucky Stride",
+    "EDMTunes",
+    "Instagram: Worship and Sub Focus"
   ]
 }
