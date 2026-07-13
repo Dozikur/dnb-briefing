@@ -7,11 +7,10 @@
     "window_end": "2026-07-12",
     "generated_at": "2026-07-13T06:31:28+02:00"
   },
-  "headline": "Lenzman, mladý producent Phantom a nové přesahy hudby do turistiky, bezpečnosti, běhu a fotbalu",
+  "headline": "Lenzman, mladý producent Phantom a nové přesahy hudby do bezpečnosti, běhu a fotbalu",
   "executive_summary": [
     "Rodina 12. července potvrdila úmrtí nizozemského producenta Lenzmana, zakladatele labelu The North Quarter a výrazné osobnosti soulful drum & bassu.",
     "Čtrnáctiletý producent Phantom získal výraznou pozornost r/DnB skladbou postavenou ze zvuku rozbitého dřezu; příspěvek měl při sběru 472 bodů a 90 komentářů.",
-    "Hudební turistika ve Spojeném království vytvořila v roce 2025 výdaje 11,2 miliardy liber a přilákala rekordních 24,7 milionu návštěvníků.",
     "Report Youth Music uvádí, že 72 procent oslovených mladých kreativců se při práci v hudebním průmyslu necítilo bezpečně.",
     "Tomorrowland představil běžecko-raveový formát ZONE5 a Worship reagoval virálním fotbalovým reelem Drum and Bellingham."
   ],
@@ -25,44 +24,6 @@
       "id": "festival_industry",
       "title": "Festivalový průmysl",
       "items": [
-        {
-          "id": "uk-music-tourism-record-2025",
-          "published_at": "2026-07-10",
-          "event_start": null,
-          "event_end": null,
-          "title": "Hudební turistika přinesla britské ekonomice rekordních 11,2 miliardy liber",
-          "summary": [
-            "Britské koncerty a festivaly navštívilo v roce 2025 rekordních 24,7 milionu hudebních turistů. Jejich počet meziročně vzrostl o 4,8 procenta a celkové výdaje dosáhly 11,2 miliardy liber.",
-            "Přibližně 85 procent návštěvníků tvořili domácí turisté. Počet zahraničních návštěvníků vzrostl o 27 procent z 1,6 milionu na 2,1 milionu.",
-            "K růstu přispěly koncerty Oasis, Coldplay, Beyoncé a Lany Del Rey. Pět koncertů Oasis v manchesterském Heaton Parku pomohlo zvýšit výdaje hudebních turistů v severozápadní Anglii o 16 procent na 1,4 miliardy liber.",
-            "Přímé útraty za vstupenky, občerstvení, merchandising, dopravu a ubytování činily 5,7 miliardy liber. Počet pracovních míst na plný úvazek v živé hudbě se zvýšil o tři procenta na 74 tisíc."
-          ],
-          "why_it_matters": "Položka dokumentuje rozsah britské hudební turistiky a její aktuální ekonomické výsledky.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "europe",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "The Guardian",
-              "url": "https://www.theguardian.com/business/2026/jul/10/oasis-reunion-uk-concerts-cold-play-lana-del-ray-beyonce-gigs-economy",
-              "kind": "secondary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://i.guim.co.uk/img/media/7f4011a5357a5d33227350d3b83f309ddf81a7cd/958_0_7200_5760/master/7200.jpg?crop=none&dpr=1&s=none&width=465"
-            }
-          ],
-          "tags": [
-            "music tourism",
-            "United Kingdom",
-            "live music",
-            "economics"
-          ]
-        },
         {
           "id": "youth-music-industry-safety-report",
           "published_at": "2026-07-10",
@@ -144,6 +105,10 @@
           ],
           "media": [
             {
+              "type": "image",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmY0EPp6wiMYMDhnR7ayPP7k_dTQnbo2x-y9d3hQ8hVKvjujkf1eTu_XA&s=10"
+            },
+            {
               "type": "instagram",
               "url": "https://www.instagram.com/p/DasE4galugV/"
             }
@@ -176,7 +141,7 @@
           "sources": [
             {
               "name": "Instagram — Worship",
-              "url": "https://www.instagram.com/worship_/reel/Daq3R7_NNA8/",
+              "url": "https://www.instagram.com/p/Daq3R7_NNA8/",
               "kind": "primary"
             }
           ],
@@ -187,7 +152,7 @@
             },
             {
               "type": "instagram",
-              "url": "https://www.instagram.com/worship_/reel/Daq3R7_NNA8/"
+              "url": "https://www.instagram.com/p/Daq3R7_NNA8/"
             }
           ],
           "tags": [
@@ -325,7 +290,6 @@
     "Resident Advisor",
     "DJ Mag",
     "Reddit r/DnB: hot + top/week",
-    "The Guardian",
     "Youth Music",
     "Mixmag",
     "Lucky Stride",
