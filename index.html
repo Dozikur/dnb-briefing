@@ -1,206 +1,118 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark">
-  <title>DnB & Festival Intelligence</title>
+  <title>DnB News</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #090d14;
-      --panel: rgba(20, 27, 40, .9);
-      --panel-strong: #151d2b;
-      --line: #2b3547;
-      --text: #f5f7fb;
-      --muted: #9da8ba;
-      --accent: #ef4444;
-      --accent-soft: rgba(239, 68, 68, .14);
-      --green: #34d399;
-      --amber: #fbbf24;
-      --red: #fb7185;
-      --radius: 18px;
-    }
-    * { box-sizing: border-box; }
-    html { background: var(--bg); scroll-behavior: smooth; }
-    body {
-      margin: 0;
+    html {
       min-height: 100vh;
-      color: var(--text);
-      font-family: Montserrat, system-ui, sans-serif;
-      background:
-        linear-gradient(rgba(9, 13, 20, .91), rgba(9, 13, 20, .98)),
-        url("https://d39-a.sdn.cz/d_39/c_img_oc_A/nPvSisOTaMB8ZnxdmD53QSS/a215/let-it-roll.jpeg") center top / cover fixed;
+      background-color: #111827;
+      background-image:
+        linear-gradient(rgba(17, 24, 39, .82), rgba(17, 24, 39, .9)),
+        url("https://d39-a.sdn.cz/d_39/c_img_oc_A/nPvSisOTaMB8ZnxdmD53QSS/a215/let-it-roll.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
-    a { color: inherit; }
-    .container { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      border-bottom: 1px solid var(--line);
-      background: rgba(9, 13, 20, .88);
-      backdrop-filter: blur(16px);
+    body { margin: 0; background: transparent; font-family: "Montserrat", sans-serif; }
+    .news-list {
+      height: calc(100vh - 164px);
+      overflow-y: auto;
+      scroll-snap-type: y proximity;
+      scrollbar-width: none;
     }
-    .header-inner {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+    .news-list::-webkit-scrollbar { display: none; }
+    .news-card {
+      scroll-snap-align: start;
+      margin-bottom: 4rem;
+      border: 1px solid rgba(71, 85, 105, .72);
+      background: rgba(31, 41, 55, .72);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, .34);
+      backdrop-filter: blur(10px);
     }
-    .brand { font-size: 18px; font-weight: 800; letter-spacing: -.03em; }
-    .brand span { border-bottom: 3px solid var(--accent); padding-bottom: 4px; }
-    select {
-      max-width: 240px;
-      padding: 10px 38px 10px 12px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      color: var(--text);
-      background: var(--panel-strong);
-      font: inherit;
-    }
-    .hero { padding: 58px 0 28px; }
-    .eyebrow { color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
-    h1 { max-width: 900px; margin: 12px 0 14px; font-size: clamp(34px, 6vw, 64px); line-height: 1.02; letter-spacing: -.055em; }
-    .period { color: var(--muted); font-size: 15px; }
-    .summary {
-      margin: 26px 0 8px;
-      padding: 26px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: linear-gradient(135deg, rgba(239, 68, 68, .13), var(--panel));
-      box-shadow: 0 24px 60px rgba(0, 0, 0, .25);
-    }
-    .summary h2 { margin: 0 0 14px; font-size: 18px; }
-    .summary ul { display: grid; gap: 10px; margin: 0; padding-left: 20px; }
-    .summary li { color: #dce2eb; line-height: 1.55; }
-    .tabs { display: flex; gap: 8px; overflow-x: auto; padding: 16px 0 4px; scrollbar-width: none; }
-    .tabs::-webkit-scrollbar { display: none; }
-    .tab {
-      flex: 0 0 auto;
-      padding: 9px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--muted);
-      background: rgba(20, 27, 40, .72);
-      font: inherit;
-      font-size: 12px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .tab.active, .tab:hover { color: white; border-color: var(--accent); background: var(--accent-soft); }
-    main { padding-bottom: 80px; }
-    .section { margin-top: 42px; scroll-margin-top: 100px; }
-    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 15px; }
-    .section h2 { margin: 0; font-size: clamp(22px, 3vw, 30px); letter-spacing: -.035em; }
-    .count { color: var(--muted); font-size: 12px; }
-    .grid { display: grid; gap: 18px; }
-    .card {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--panel);
-      box-shadow: 0 18px 44px rgba(0, 0, 0, .22);
-    }
-    .card-layout { display: grid; grid-template-columns: minmax(0, 1fr); }
-    .cover { width: 100%; height: 260px; object-fit: cover; background: #111827; }
-    .body { padding: 24px; }
-    .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 13px; }
-    .badge { padding: 6px 9px; border-radius: 999px; background: var(--accent-soft); color: #fecaca; font-size: 11px; font-weight: 800; }
-    .badge.confirmed { color: var(--green); background: rgba(52, 211, 153, .12); }
-    .badge.probable { color: var(--amber); background: rgba(251, 191, 36, .12); }
-    .badge.unverified { color: var(--red); background: rgba(251, 113, 133, .12); }
-    .date { color: var(--muted); font-size: 12px; }
-    .card h3 { margin: 0 0 14px; font-size: clamp(20px, 3vw, 27px); line-height: 1.24; letter-spacing: -.03em; }
-    .paragraphs { display: grid; gap: 11px; color: #ccd3de; line-height: 1.65; font-size: 14px; }
-    .paragraphs p { margin: 0; }
-    .insight-grid { display: grid; gap: 10px; margin-top: 18px; }
-    .insight { padding: 14px 16px; border-radius: 12px; background: rgba(9, 13, 20, .68); border-left: 3px solid var(--accent); }
-    .insight.action { border-left-color: var(--green); }
-    .insight strong { display: block; margin-bottom: 5px; color: white; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
-    .insight span { color: #cbd5e1; font-size: 13px; line-height: 1.5; }
-    .sources { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-    .source { padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 11px; }
-    .source:hover { color: white; border-color: #64748b; }
-    .media { margin-top: 18px; }
-    .media iframe { width: 100%; border: 0; border-radius: 12px; background: white; }
-    .media img { width: 100%; max-height: 520px; object-fit: cover; border-radius: 12px; }
-    .empty { padding: 18px; border: 1px dashed var(--line); border-radius: 12px; color: var(--muted); }
-    .error { margin: 50px 0; padding: 20px; border: 1px solid #7f1d1d; border-radius: 14px; background: rgba(127, 29, 29, .22); color: #fecaca; }
-    footer { padding: 28px 0 46px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
-    @media (min-width: 820px) {
-      .card-layout.with-cover { grid-template-columns: 36% minmax(0, 1fr); }
-      .cover { height: 100%; min-height: 360px; }
-      .body { padding: 30px; }
-      .insight-grid { grid-template-columns: 1fr 1fr; }
+    .news-card:last-child { margin-bottom: 1rem; }
+    .cover { aspect-ratio: 16 / 9; }
+    .media-frame { width: 100%; border: 0; border-radius: .75rem; background: white; }
+    @media (min-width: 768px) {
+      .news-card.has-cover .cover-wrap { width: 40%; }
+      .news-card.has-cover .card-body { width: 60%; }
+      .news-card.has-cover .cover { min-height: 100%; aspect-ratio: auto; }
     }
   </style>
 </head>
-<body>
-  <header>
-    <div class="container header-inner">
-      <div class="brand"><span>DnB</span> & Festival Intelligence</div>
-      <select id="period-select" aria-label="Vybrat týden"></select>
-    </div>
+<body class="antialiased text-white">
+  <header class="sticky top-0 z-50 border-b border-gray-700 bg-gray-900/80 backdrop-blur-md">
+    <nav class="container mx-auto flex items-center justify-between gap-5 px-6 py-4">
+      <div class="text-2xl tracking-tighter">
+        <span class="border-b-4 border-red-500 pb-1 font-bold">DnB</span><span class="font-semibold"> News</span>
+      </div>
+      <label class="sr-only" for="period-select">Období</label>
+      <select id="period-select" class="rounded-md border border-gray-600 bg-gray-800 px-3 py-2 text-white"></select>
+    </nav>
   </header>
 
-  <div class="container">
-    <section class="hero">
-      <div class="eyebrow">Interní briefing pro Let It Roll</div>
-      <h1 id="headline">Načítám briefing</h1>
-      <div id="period" class="period"></div>
-      <div id="summary"></div>
-      <nav id="tabs" class="tabs" aria-label="Sekce briefingu"></nav>
+  <main class="container mx-auto px-4">
+    <section>
+      <div class="my-8 text-center">
+        <h1 class="text-4xl font-extrabold tracking-tight md:text-5xl">DnB News</h1>
+        <p id="date-range" class="mt-2 text-lg text-red-500"></p>
+      </div>
+      <div id="news-container" class="news-list"></div>
     </section>
-    <main id="content"></main>
-    <footer>DnB & Festival Intelligence · interní pracovní přehled</footer>
-  </div>
+  </main>
 
   <script>
-    const state = { manifest: [], currentFile: null };
-    const sectionNames = {
-      competition: "Přímá konkurence",
-      festival_industry: "Festivalový průmysl",
-      dnb_scene: "DnB scéna",
-      cz_sk: "ČR a Slovensko",
-      audience_sentiment: "Sentiment publika",
-      strategic_releases: "Strategické releasy",
-      lir_actions: "Doporučené kroky pro LIR",
-      legacy_events: "Festivaly a eventy",
-      legacy_music: "DnB scéna a hudba",
-      legacy_sentiment: "Sentiment a diskuse",
-      legacy_other: "Další vývoj scény"
-    };
+    const state = { manifest: [] };
+    const displayOrder = [
+      "dnb_scene",
+      "strategic_releases",
+      "cz_sk",
+      "audience_sentiment",
+      "competition",
+      "festival_industry"
+    ];
 
-    const esc = (value = "") => String(value).replace(/[&<>'"]/g, char => ({
+    const esc = (value = "") => String(value).replace(/[&<>'"]/g, character => ({
       "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
-    })[char]);
+    })[character]);
 
     const safeUrl = value => {
       try {
         const url = new URL(value);
         return url.protocol === "https:" ? url.href : "";
-      } catch { return ""; }
+      } catch {
+        return "";
+      }
     };
 
     const formatDate = value => {
       if (!value) return "";
       const date = new Date(`${value}T12:00:00Z`);
-      return Number.isNaN(date.getTime()) ? "" : date.toLocaleDateString("cs-CZ", { day: "numeric", month: "long", year: "numeric" });
+      return Number.isNaN(date.getTime())
+        ? ""
+        : date.toLocaleDateString("cs-CZ", { year: "numeric", month: "long", day: "numeric" });
     };
 
-    const parseLegacyMedia = content => {
+    const legacyMedia = content => {
       const media = [];
       for (const part of Array.isArray(content) ? content : []) {
         if (typeof part !== "string") continue;
-        if (part.startsWith("instagram-post:")) media.push({ type: "instagram", url: `https://www.instagram.com/p/${part.slice(15).trim()}/` });
-        if (part.startsWith("youtube:")) media.push({ type: "youtube", url: `https://www.youtube.com/watch?v=${part.slice(8).trim()}` });
-        if (part.startsWith("spotify-track:")) media.push({ type: "spotify", url: `https://open.spotify.com/track/${part.slice(14).trim()}` });
-        if (part.startsWith("spotify-album:")) media.push({ type: "spotify", url: `https://open.spotify.com/album/${part.slice(14).trim().split("?")[0]}` });
-        if (part.startsWith("soundcloud:")) {
+        if (part.startsWith("instagram-post:")) {
+          media.push({ type: "instagram", url: `https://www.instagram.com/p/${part.slice(15).trim()}/` });
+        } else if (part.startsWith("youtube:")) {
+          media.push({ type: "youtube", url: `https://www.youtube.com/watch?v=${part.slice(8).trim()}` });
+        } else if (part.startsWith("spotify-track:")) {
+          media.push({ type: "spotify", url: `https://open.spotify.com/track/${part.slice(14).trim()}` });
+        } else if (part.startsWith("spotify-album:")) {
+          media.push({ type: "spotify", url: `https://open.spotify.com/album/${part.slice(14).trim().split("?")[0]}` });
+        } else if (part.startsWith("soundcloud:")) {
           const value = part.slice(11).trim();
           media.push({ type: "soundcloud", url: value.startsWith("http") ? value : `https://api.soundcloud.com/tracks/${value}` });
         }
@@ -208,124 +120,149 @@
       return media;
     };
 
-    const legacySection = item => {
-      const value = `${item.genre || ""} ${item.title || ""}`.toLowerCase();
-      if (/reddit|social|sentiment|diskus/.test(value)) return "legacy_sentiment";
-      if (/festival|event|tour|lineup|recap|klub|party|párty|venue|arena/.test(value)) return "legacy_events";
-      if (/release|album|single|track|set|mix|interview|rozhovor|artist|label|music|hudb/.test(value)) return "legacy_music";
-      return "legacy_other";
+    const normalizeLegacy = items => items.map((item, index) => {
+      const raw = Array.isArray(item.content) ? item.content : [item.content];
+      return {
+        id: item.id || `legacy-${index + 1}`,
+        published_at: item.date,
+        title: item.title,
+        summary: raw.filter(part => typeof part === "string" && !/^(instagram-post|youtube|spotify-track|spotify-album|soundcloud):/.test(part)),
+        sources: item.source_url ? [{ name: item.source || "Zdroj", url: item.source_url }] : [],
+        media: legacyMedia(raw),
+        image: item.image,
+        genre: item.genre
+      };
+    });
+
+    const normalizeV2 = report => {
+      const byId = Object.fromEntries((report.sections || []).map(section => [section.id, section]));
+      return displayOrder.flatMap(id => byId[id]?.items || []);
     };
 
-    const normalizeLegacy = (items, file) => {
-      const groups = new Map();
-      for (const item of items) {
-        const id = legacySection(item);
-        if (!groups.has(id)) groups.set(id, []);
-        const rawContent = Array.isArray(item.content) ? item.content : [item.content];
-        groups.get(id).push({
-          id: `legacy-${item.id || groups.get(id).length + 1}`,
-          published_at: item.date,
-          event_start: null,
-          event_end: null,
-          title: item.title,
-          summary: rawContent.filter(part => typeof part === "string" && !/^(instagram-post|youtube|spotify-track|spotify-album|soundcloud):/.test(part)),
-          why_it_matters: "",
-          recommended_action: "",
-          region: "",
-          confidence: "",
-          sources: item.source_url ? [{ name: item.source || "Zdroj", url: item.source_url, kind: "secondary" }] : [],
-          media: parseLegacyMedia(rawContent),
-          legacy_image: item.image,
-          legacy_genre: item.genre
-        });
+    const youtubeId = url => {
+      try {
+        const parsed = new URL(url);
+        if (parsed.hostname === "youtu.be") return parsed.pathname.split("/").filter(Boolean)[0] || "";
+        if (parsed.pathname.startsWith("/shorts/") || parsed.pathname.startsWith("/embed/")) {
+          return parsed.pathname.split("/").filter(Boolean)[1] || "";
+        }
+        return parsed.searchParams.get("v") || "";
+      } catch {
+        return "";
       }
-      const match = file.match(/(\d{4})-week_(\d+)/);
-      return {
-        headline: "Archivní týdenní přehled",
-        period: { year: Number(match?.[1]), week: Number(match?.[2]) },
-        executive_summary: [],
-        sections: [...groups].map(([id, sectionItems]) => ({ id, title: sectionNames[id], items: sectionItems }))
-      };
     };
 
     const renderMedia = media => {
       const url = safeUrl(media.url);
       if (!url) return "";
-      if (media.type === "image") return `<div class="media"><img src="${esc(url)}" alt="" loading="lazy"></div>`;
+
       if (media.type === "instagram") {
-        const match = url.match(/instagram\.com\/(?:p|reel)\/([^/?]+)/);
-        return match ? `<div class="media"><iframe height="620" loading="lazy" src="https://www.instagram.com/p/${esc(match[1])}/embed"></iframe></div>` : "";
+        const match = url.match(/instagram\.com\/(p|reel)\/([^/?]+)/);
+        if (!match) return "";
+        const canonical = `https://www.instagram.com/${match[1]}/${match[2]}/`;
+        return `
+          <div class="my-5 rounded-xl border border-slate-700 bg-slate-900/60 p-3">
+            <iframe class="media-frame" height="620" loading="lazy" scrolling="no" src="${canonical}embed"></iframe>
+            <p class="mt-3 text-center text-sm text-slate-400">
+              Pokud se příspěvek nenačte, <a class="text-pink-400 hover:underline" href="${canonical}" target="_blank" rel="noopener noreferrer">otevřít Instagram</a>.
+            </p>
+          </div>`;
       }
+
       if (media.type === "youtube") {
-        const id = new URL(url).searchParams.get("v") || url.split("/").pop();
-        return `<div class="media"><iframe height="420" loading="lazy" allowfullscreen src="https://www.youtube.com/embed/${esc(id)}"></iframe></div>`;
+        const id = youtubeId(url);
+        return id ? `
+          <div class="my-5 aspect-video overflow-hidden rounded-xl">
+            <iframe class="h-full w-full" loading="lazy" allowfullscreen
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              src="https://www.youtube.com/embed/${esc(id)}" title="YouTube video"></iframe>
+          </div>` : "";
       }
+
       if (media.type === "spotify") {
         const match = url.match(/spotify\.com\/(track|album)\/([^/?]+)/);
-        return match ? `<div class="media"><iframe height="${match[1] === "album" ? 352 : 152}" loading="lazy" src="https://open.spotify.com/embed/${esc(match[1])}/${esc(match[2])}"></iframe></div>` : "";
+        return match ? `
+          <div class="my-5">
+            <iframe class="media-frame" height="${match[1] === "album" ? 352 : 152}" loading="lazy"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              src="https://open.spotify.com/embed/${match[1]}/${esc(match[2])}"></iframe>
+          </div>` : "";
       }
-      if (media.type === "soundcloud") return `<div class="media"><iframe height="166" loading="lazy" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}"></iframe></div>`;
+
+      if (media.type === "soundcloud") {
+        return `
+          <div class="my-5">
+            <iframe class="media-frame" height="166" loading="lazy"
+              src="https://w.soundcloud.com/player/?url=${encodeURIComponent(url)}"></iframe>
+          </div>`;
+      }
+
       return "";
     };
 
     const renderCard = item => {
-      const stableImage = safeUrl(item.legacy_image || "");
-      const cover = stableImage ? `<img class="cover" src="${esc(stableImage)}" alt="" loading="lazy">` : "";
-      const dates = [item.published_at ? `Publikováno ${formatDate(item.published_at)}` : "", item.event_start ? `Event ${formatDate(item.event_start)}` : ""].filter(Boolean).join(" · ");
-      const confidence = item.confidence ? `<span class="badge ${esc(item.confidence)}">${esc(item.confidence)}</span>` : "";
-      const genre = item.legacy_genre ? `<span class="badge">${esc(item.legacy_genre)}</span>` : "";
+      const imageMedia = (item.media || []).find(media => media.type === "image" && safeUrl(media.url));
+      const image = safeUrl(item.image || imageMedia?.url || "");
+      const media = (item.media || []).filter(entry => entry !== imageMedia).map(renderMedia).join("");
       const sources = (item.sources || []).map(source => {
         const url = safeUrl(source.url);
-        return url ? `<a class="source" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(source.name)} · ${esc(source.kind)}</a>` : "";
-      }).join("");
-      const media = (item.media || []).map(renderMedia).join("");
+        return url
+          ? `<a class="hover:text-red-400 hover:underline" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(source.name || "Zdroj")}</a>`
+          : esc(source.name || "");
+      }).filter(Boolean).join(" · ");
+
       return `
-        <article class="card">
-          <div class="card-layout ${cover ? "with-cover" : ""}">
-            ${cover}
-            <div class="body">
-              <div class="meta">${confidence}${genre}<span class="date">${esc(dates)}</span></div>
-              <h3>${esc(item.title)}</h3>
-              <div class="paragraphs">${(item.summary || []).map(paragraph => `<p>${esc(paragraph)}</p>`).join("")}</div>
-              ${(item.why_it_matters || item.recommended_action) ? `
-                <div class="insight-grid">
-                  ${item.why_it_matters ? `<div class="insight"><strong>Dopad pro LIR</strong><span>${esc(item.why_it_matters)}</span></div>` : ""}
-                  ${item.recommended_action ? `<div class="insight action"><strong>Další krok</strong><span>${esc(item.recommended_action)}</span></div>` : ""}
-                </div>` : ""}
-              ${sources ? `<div class="sources">${sources}</div>` : ""}
+        <article class="news-card group mx-auto flex max-w-5xl flex-col overflow-hidden rounded-xl md:flex-row ${image ? "has-cover" : ""}">
+          ${image ? `
+            <div class="cover-wrap w-full p-6 md:p-8">
+              <img class="cover h-full w-full rounded-xl object-cover shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
+                src="${esc(image)}" alt="" loading="lazy">
+            </div>` : ""}
+          <div class="card-body flex w-full flex-col justify-between p-6 ${image ? "pt-0 md:pl-0 md:pt-8" : "md:p-10"}">
+            <div>
+              <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+                ${item.genre ? `<span class="rounded-full bg-gradient-to-r from-red-600 to-red-500 px-3 py-1 text-sm font-bold">${esc(item.genre)}</span>` : "<span></span>"}
+                <time class="text-sm text-slate-400">${esc(formatDate(item.published_at))}</time>
+              </div>
+              <h2 class="mb-4 text-2xl font-bold leading-tight transition-colors group-hover:text-red-400 md:text-3xl">${esc(item.title)}</h2>
+              <div class="text-base leading-relaxed text-gray-300">
+                ${(item.summary || []).map(paragraph => `<p class="mb-4">${esc(paragraph)}</p>`).join("")}
+              </div>
               ${media}
             </div>
+            ${sources ? `<p class="mt-6 text-right text-sm text-slate-500">Zdroj: ${sources}</p>` : ""}
           </div>
         </article>`;
     };
 
     const render = (raw, file) => {
-      const report = Array.isArray(raw) ? normalizeLegacy(raw, file) : raw;
-      document.getElementById("headline").textContent = report.headline || "DnB & Festival Intelligence";
-      const period = report.period || {};
-      const range = period.window_start && period.window_end ? `${formatDate(period.window_start)} až ${formatDate(period.window_end)}` : `Týden ${period.week || ""}, ${period.year || ""}`;
-      document.getElementById("period").textContent = range;
-      const summary = report.executive_summary || [];
-      document.getElementById("summary").innerHTML = summary.length ? `<div class="summary"><h2>Klíčové závěry</h2><ul>${summary.map(item => `<li>${esc(item)}</li>`).join("")}</ul></div>` : "";
-      const sections = report.sections || [];
-      document.getElementById("tabs").innerHTML = sections.map((section, index) => `<button class="tab ${index === 0 ? "active" : ""}" data-target="section-${esc(section.id)}">${esc(section.title || sectionNames[section.id] || section.id)}</button>`).join("");
-      document.getElementById("content").innerHTML = sections.map(section => `
-        <section class="section" id="section-${esc(section.id)}">
-          <div class="section-head"><h2>${esc(section.title || sectionNames[section.id] || section.id)}</h2><span class="count">${section.items.length} položek</span></div>
-          ${section.items.length ? `<div class="grid">${section.items.map(renderCard).join("")}</div>` : `<div class="empty">Žádná relevantní novinka v tomto období.</div>`}
-        </section>`).join("");
-      document.querySelectorAll(".tab").forEach(button => button.addEventListener("click", () => {
-        document.querySelectorAll(".tab").forEach(tab => tab.classList.remove("active"));
-        button.classList.add("active");
-        document.getElementById(button.dataset.target)?.scrollIntoView({ behavior: "smooth" });
-      }));
+      const items = Array.isArray(raw) ? normalizeLegacy(raw) : normalizeV2(raw);
+      const period = Array.isArray(raw)
+        ? (() => {
+            const match = file.match(/(\d{4})-week_(\d+)/);
+            return { year: Number(match?.[1]), week: Number(match?.[2]) };
+          })()
+        : raw.period || {};
+
+      document.getElementById("date-range").textContent =
+        period.window_start && period.window_end
+          ? `${formatDate(period.window_start)} – ${formatDate(period.window_end)}`
+          : `Týden ${period.week || ""}, ${period.year || ""}`;
+
+      document.getElementById("news-container").innerHTML = items.length
+        ? items.map(renderCard).join("")
+        : '<p class="text-center text-gray-400">Pro vybrané období nebyly nalezeny žádné zprávy.</p>';
     };
 
     const loadBriefing = async file => {
-      state.currentFile = file;
       const response = await fetch(file, { cache: "no-store" });
       if (!response.ok) throw new Error(`Briefing se nepodařilo načíst: ${response.status}`);
       render(await response.json(), file);
+    };
+
+    const showError = error => {
+      document.getElementById("news-container").innerHTML =
+        `<p class="text-center text-red-400">${esc(error.message || error)}</p>`;
     };
 
     const init = async () => {
@@ -334,17 +271,17 @@
         if (!response.ok) throw new Error(`Manifest se nepodařilo načíst: ${response.status}`);
         const manifest = await response.json();
         state.manifest = manifest.briefings || [];
-        const select = document.getElementById("period-select");
-        select.innerHTML = state.manifest.map(entry => `<option value="${esc(entry.file)}">Týden ${entry.week}, ${entry.year}</option>`).join("");
-        select.addEventListener("change", () => loadBriefing(select.value).catch(showError));
         if (!state.manifest.length) throw new Error("Manifest neobsahuje žádné briefingy.");
-        await loadBriefing(state.manifest[0].file);
-      } catch (error) { showError(error); }
-    };
 
-    const showError = error => {
-      document.getElementById("headline").textContent = "Briefing není dostupný";
-      document.getElementById("content").innerHTML = `<div class="error">${esc(error.message || error)}</div>`;
+        const select = document.getElementById("period-select");
+        select.innerHTML = state.manifest.map(entry =>
+          `<option value="${esc(entry.file)}">Týden ${entry.week}, ${entry.year}</option>`
+        ).join("");
+        select.addEventListener("change", () => loadBriefing(select.value).catch(showError));
+        await loadBriefing(state.manifest[0].file);
+      } catch (error) {
+        showError(error);
+      }
     };
 
     init();
