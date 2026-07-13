@@ -7,13 +7,13 @@
     "window_end": "2026-07-12",
     "generated_at": "2026-07-13T06:31:28+02:00"
   },
-  "headline": "Poptávka po cestování za hudbou roste, slabší festivaly však dál narážejí na náklady, hluk a provozní rizika",
+  "headline": "Úmrtí Lenzmana zasáhlo DnB scénu, zatímco AI obsah a provozní tlaky mění hudební i festivalové prostředí",
   "executive_summary": [
-    "Britský live sektor v roce 2025 přilákal rekordních 24,7 milionu hudebních turistů a vytvořil útratu 11,2 miliardy liber. Pro LIR je to potvrzení, že destination positioning a zahraniční návštěvníci mají vyšší strategickou hodnotu než čistě lokální zásah.",
-    "Discovery Festivals odložily ročník 2026 kvůli růstu nákladů, slabší disponibilní kupní síle a konkurenci dalších lokálních akcí. Kombinace drahé produkce a pozdního rozhodování publika zůstává hlavním obchodním rizikem středně velkých festivalů.",
-    "Povolování Rabbits Eat Lettuce ukazuje, že nízkofrekvenční basový hluk může ohrozit dlouhodobé fungování festivalu i při prokazatelném ekonomickém přínosu regionu. Pro LIR je nutné mít měřitelný hlukový model a aktivní vztah s okolními obcemi.",
-    "Po úmrtí osmnáctileté návštěvnice Tonnau Festival zrušil zbytek programu a uvolnil areál pro vyšetřování. Událost potvrzuje nutnost předem připraveného rozhodovacího protokolu pro zastavení programu, komunikaci a odchod návštěvníků.",
-    "Evropská vedra pokračují s vysokou zdravotní zátěží a požáry. LIR musí posuzovat horko jako plnohodnotný scénář provozní kontinuity, ne jen jako komfortní problém."
+    "Úmrtí Lenzmana po dlouhé nemoci zasáhlo liquid drum and bass i komunitu kolem The North Quarter. Pro LIR je důležité rychle ověřit případné bookingové vazby a zvolit citlivou, scéně přiměřenou komunikaci.",
+    "Jedna z nejaktivnějších diskuzí týdne na r/DnB řešila podezření na AI obsahové farmy v jungle a DnB kanálech na YouTube. Publikum reaguje návratem k důvěryhodným labelům, DJům, tracklistům a lidské kuraci.",
+    "Pozitivní ohlas na track postavený ze zvuku rozbitého dřezu ukázal opačný pól stejného trendu: viditelný lidský proces a nápad mají v komunitě větší hodnotu než anonymní objem uhlazeného obsahu.",
+    "Britský live sektor v roce 2025 přilákal rekordních 24,7 milionu hudebních turistů a vytvořil útratu 11,2 miliardy liber. Pro LIR to potvrzuje strategickou hodnotu destination positioningu a zahraničních návštěvníků.",
+    "Odklady festivalů, spor o basový hluk, kritická zdravotní událost a evropská vedra dál zvyšují provozní tlak. LIR potřebuje měřitelné spouštěče pro ekonomiku, hluk, medical i extrémní počasí."
   ],
   "sections": [
     {
@@ -195,7 +195,77 @@
     {
       "id": "dnb_scene",
       "title": "DnB scéna",
-      "items": []
+      "items": [
+        {
+          "id": "lenzman-dies-north-quarter-legacy",
+          "published_at": "2026-07-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "Lenzmanovo úmrtí zasáhlo liquid drum and bass a komunitu The North Quarter",
+          "summary": [
+            "Rodina Lenzmana 12. července oznámila, že nizozemský producent a DJ zemřel po tři a půl roku trvajícím boji s rakovinou ledvin.",
+            "Lenzman byl zakladatelem labelu The North Quarter a jednou z určujících osobností soulful a liquid drum and bassu.",
+            "Reakce scény zdůrazňují nejen jeho katalog, ale také roli kurátora, mentora a tvůrce komunity kolem labelu."
+          ],
+          "why_it_matters": "Ztráta výrazné osobnosti mění kontext komunikace, programu i vztahů v části DnB scény. Pro LIR je relevantní ověřit případné bookingové závazky a reagovat způsobem, který respektuje komunitu i pozůstalé.",
+          "recommended_action": "Ověřit všechny přímé vazby na booking a připravit pouze citlivou, interně schválenou vzpomínkovou komunikaci.",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DJ Mag",
+              "url": "https://djmag.com/news/lenzman-north-quarter-founder-and-drum-bass-stalwart-dies",
+              "kind": "secondary"
+            },
+            {
+              "name": "Resident Advisor",
+              "url": "https://ra.co/news/85562",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Lenzman",
+            "The North Quarter",
+            "liquid drum and bass",
+            "scene legacy"
+          ]
+        },
+        {
+          "id": "arky-waters-debut-bass-album",
+          "published_at": "2026-07-07",
+          "event_start": null,
+          "event_end": null,
+          "title": "Arky Waters debutovým albem Holdin’ On vstupuje naplno do bass music",
+          "summary": [
+            "Australský producent Arky Waters vydal u Mammal Sounds Records debutové album Holdin’ On, které označuje za svůj první plný vstup do bass music.",
+            "Projekt vychází ze zkušeností sydneyské klubové scény a propojuje osobní témata s experimentálním sound designem.",
+            "Focus track Take a Trip vznikl s vokalistou LX a ukazuje, jak se regionální producent může přes crossover zvuk dostat do širšího bassového prostoru."
+          ],
+          "why_it_matters": "Nejde o okamžitý headline booking, ale o užitečný signál z australského trhu a o typ crossover projektu, který může v horizontu měsíců vyrůst do relevantního klubového nebo labelového partnerství.",
+          "recommended_action": "Zařadit Arky Waters do šestíměsíčního watchlistu a sledovat streaming, support DJů a evropské bookingové kroky.",
+          "region": "world",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Data Transmission DnB",
+              "url": "https://datatransmission.co/dt-dnb/australian-producer-arky-waters-releases-debut-album-holdin-on/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Arky Waters",
+            "Australia",
+            "bass music",
+            "emerging artist"
+          ]
+        }
+      ]
     },
     {
       "id": "cz_sk",
@@ -205,12 +275,117 @@
     {
       "id": "audience_sentiment",
       "title": "Sentiment publika",
-      "items": []
+      "items": [
+        {
+          "id": "reddit-ai-dnb-content-farms",
+          "published_at": "2026-07-06",
+          "event_start": null,
+          "event_end": null,
+          "title": "r/DnB řeší příval podezřelých AI kanálů a ztrátu důvěry v hudební discovery",
+          "summary": [
+            "Vlákno bylo při pondělním skenu r/DnB Top za týden mezi nejaktivnějšími příspěvky se zhruba 354 hlasy a 124 komentáři.",
+            "Autor a část diskutujících podezírají rychle publikující jungle a DnB kanály na YouTube z používání generativní AI a obsahových farem; konkrétní obvinění však nejsou nezávisle ověřena.",
+            "Nejčastější reakcí je návrat k zavedeným labelům, skutečným DJům, tracklistům, odběrům a komunitně kurátorovaným zdrojům místo algoritmického feedu.",
+            "Diskuze není jednotná: někteří uživatelé část této estetiky stále oceňují nebo odmítají dělat závěry bez důkazů."
+          ],
+          "why_it_matters": "Pro LIR a LIR Recordings roste hodnota jasně doloženého lidského autorství, kreditu a kurace. Důvěra v původ obsahu se stává součástí značky, ne jen produkčním detailem.",
+          "recommended_action": "U nového hudebního a video obsahu systematicky uvádět autory, kredity, tracklisty a krátký doklad tvůrčího procesu.",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "unverified",
+          "sources": [
+            {
+              "name": "Reddit r/DnB",
+              "url": "https://www.reddit.com/r/DnB/comments/1up0qan/im_noticing_a_trend_here/",
+              "kind": "community"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Reddit",
+            "AI music",
+            "discovery",
+            "trust"
+          ]
+        },
+        {
+          "id": "reddit-broken-sink-dnb-production",
+          "published_at": "2026-07-07",
+          "event_start": null,
+          "event_end": null,
+          "title": "Track ze zvuku rozbitého dřezu ukázal sílu viditelného lidského procesu",
+          "summary": [
+            "Příspěvek i turned that broken sink sample into dnb získal při pondělním skenu přibližně 472 hlasů a 90 komentářů.",
+            "Autor proměnil běžný zvuk rozbitého dřezu v základ DnB tracku a doplnil odkaz na plnou verzi.",
+            "Reakce byly převážně pozitivní, často zmiňovaly podobnost s tvorbou Venjent a žádaly další experimenty s nalezenými zvuky.",
+            "Úspěch příspěvku stojí na srozumitelném nápadu, viditelném procesu a autenticitě, nikoli na anonymní produkční dokonalosti."
+          ],
+          "why_it_matters": "Komunita pozitivně reaguje na obsah, který rychle ukáže původ nápadu a lidské řemeslo. To je přímo použitelný formát pro organický obsah festivalu i labelu.",
+          "recommended_action": "Otestovat jeden krátký procesní formát LIR Recordings, který ukáže vznik konkrétního zvuku od nahrávky po hotový drop.",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/DnB",
+              "url": "https://www.reddit.com/r/DnB/comments/1uq31ly/i_turned_that_broken_sink_sample_into_dnb/",
+              "kind": "community"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Reddit",
+            "found sound",
+            "production",
+            "authenticity"
+          ]
+        }
+      ]
     },
     {
       "id": "strategic_releases",
       "title": "Strategické releasy",
-      "items": []
+      "items": [
+        {
+          "id": "kanine-wide-awake-ukf-release",
+          "published_at": "2026-07-08",
+          "event_start": null,
+          "event_end": null,
+          "title": "Kanine pokračuje v dancefloor releasové linii singlem Wide Awake na UKF",
+          "summary": [
+            "UKF zveřejnilo 8. července nový singl Wide Awake od britského producenta Kanine.",
+            "Jednoskladbový release potvrzuje pokračující viditelnost Kanine v jednom z hlavních mediálních a distribučních kanálů současného drum and bassu.",
+            "Pro festivalový booking je důležitější pravidelnost jeho releasového cyklu a dosah ekosystému UKF než samotná existence jednoho singlu."
+          ],
+          "why_it_matters": "Kanine patří k relevantním dancefloor jménům pro LIR. Nový release pomáhá držet jeho aktuálnost a může podpořit načasování bookingové nebo obsahové komunikace.",
+          "recommended_action": "Promítnout nový singl do artist watchlistu a případné komunikace, pokud je Kanine součástí aktuálního nebo připravovaného programu.",
+          "region": "europe",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "UKF",
+              "url": "https://ukf.com/listen/releases/wide-awake/",
+              "kind": "primary"
+            },
+            {
+              "name": "Drum & Bass UK",
+              "url": "https://drumandbassuk.com/artist/kanine/wide-awake-64338",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Kanine",
+            "UKF",
+            "dancefloor",
+            "release"
+          ]
+        }
+      ]
     },
     {
       "id": "lir_actions",
@@ -332,6 +507,41 @@
             "heatwave",
             "operations"
           ]
+        },
+        {
+          "id": "lir-action-human-provenance-content",
+          "published_at": "2026-07-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "Zviditelnit lidský původ hudebního obsahu",
+          "summary": [
+            "Spojit jasné kredity a tracklisty s krátkým procesním obsahem, který ukazuje vznik konkrétního zvuku nebo skladby."
+          ],
+          "why_it_matters": "r/DnB současně ukazuje nedůvěru k anonymnímu AI obsahu a silnou pozitivní reakci na viditelný lidský nápad a řemeslo.",
+          "recommended_action": "Připravit jeden pilotní formát pro LIR Recordings a vyhodnotit dokončení videa, sdílení a kvalitativní reakce.",
+          "region": "global",
+          "category": "lir_action",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/DnB — AI discussion",
+              "url": "https://www.reddit.com/r/DnB/comments/1up0qan/im_noticing_a_trend_here/",
+              "kind": "community"
+            },
+            {
+              "name": "Reddit r/DnB — found sound",
+              "url": "https://www.reddit.com/r/DnB/comments/1uq31ly/i_turned_that_broken_sink_sample_into_dnb/",
+              "kind": "community"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "content",
+            "provenance",
+            "AI",
+            "LIR Recordings"
+          ]
         }
       ]
     }
@@ -346,6 +556,12 @@
     "Associated Press",
     "Courier Mail",
     "The Sun",
-    "UK Music"
+    "UK Music",
+    "DJ Mag",
+    "Resident Advisor",
+    "Data Transmission DnB",
+    "UKF",
+    "Drum & Bass UK",
+    "Reddit r/DnB: hot + top/week"
   ]
 }
