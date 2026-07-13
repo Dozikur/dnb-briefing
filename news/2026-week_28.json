@@ -7,9 +7,10 @@
     "window_end": "2026-07-12",
     "generated_at": "2026-07-13T06:31:28+02:00"
   },
-  "headline": "Lenzman, mladý producent Phantom a nové přesahy hudby do bezpečnosti, běhu a fotbalu",
+  "headline": "Lenzman, komunitní plánování Let It Roll a nové přesahy drum & bassu do bezpečnosti, běhu a fotbalu",
   "executive_summary": [
     "Rodina 12. července potvrdila úmrtí nizozemského producenta Lenzmana, zakladatele labelu The North Quarter a výrazné osobnosti soulful drum & bassu.",
+    "Fanoušci Let It Roll sdílejí otevřený timetable v Google Sheets a aplikaci Setgrid, která eviduje sedm stages, 179 interpretů a 180 setů.",
     "Čtrnáctiletý producent Phantom získal výraznou pozornost r/DnB skladbou postavenou ze zvuku rozbitého dřezu; příspěvek měl při sběru 472 bodů a 90 komentářů.",
     "Report Youth Music uvádí, že 72 procent oslovených mladých kreativců se při práci v hudebním průmyslu necítilo bezpečně.",
     "Tomorrowland představil běžecko-raveový formát ZONE5 a Worship reagoval virálním fotbalovým reelem Drum and Bellingham."
@@ -227,6 +228,45 @@
       "title": "Sentiment publika",
       "items": [
         {
+          "id": "let-it-roll-community-planning-tools",
+          "published_at": "2026-07-09",
+          "event_start": null,
+          "event_end": null,
+          "title": "Fanoušci Let It Roll si staví vlastní plánovací nástroje",
+          "summary": [
+            "Vlákno na r/LetItRollFestival ukazuje prakticky zaměřenou komunitu, která si pro společné plánování festivalu vytváří vlastní nástroje. Autor příspěvku zveřejnil otevřený timetable pro Let It Roll 2026 v Google Sheets.",
+            "Tabulku mohou návštěvníci zkopírovat na svůj Disk Google a sdílet s přáteli. Skupinám má usnadnit rozhodování, kdo půjde na který set, aniž by musely zahlcovat společný chat zprávami o programu.",
+            "Další člen komunity nabídl aplikaci Setgrid s kompletním timetablem, exportem do XLSX a označováním setů jako povinné, plánované nebo volitelné. Pro Let It Roll 2026 eviduje sedm stages, 179 interpretů a 180 setů během tří dnů.",
+            "Po zveřejnění festivalové mapy chce autor Setgridu doplnit také časy přesunů mezi stages. V diskuzi se objevila i aplikace Woov; pozitivní reakce ukazují, že návštěvníci podobné komunitní nástroje aktivně využívají."
+          ],
+          "why_it_matters": "Položka zachycuje praktickou aktivitu komunity Let It Roll a nástroje, které návštěvníci používají pro společné plánování programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/LetItRollFestival",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1ury8j3/ive_made_an_open_access_timetable_for_let_it_roll/",
+              "kind": "community"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHVx5e859HDSL3xfqlY-yElk3wnN79CiN-v5EWdrsGWYHpLu2onaIW0lTy&s=10"
+            }
+          ],
+          "tags": [
+            "Let It Roll",
+            "Reddit",
+            "timetable",
+            "Setgrid",
+            "Woov"
+          ]
+        },
+        {
           "id": "phantom-broken-sink-dnb",
           "published_at": "2026-07-07",
           "event_start": null,
@@ -294,6 +334,7 @@
     "Mixmag",
     "Lucky Stride",
     "EDMTunes",
-    "Instagram: Worship and Sub Focus"
+    "Instagram: Worship and Sub Focus",
+    "Reddit r/LetItRollFestival"
   ]
 }
