@@ -1,0 +1,351 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 28,
+    "window_start": "2026-07-06",
+    "window_end": "2026-07-12",
+    "generated_at": "2026-07-13T06:31:28+02:00"
+  },
+  "headline": "Poptávka po cestování za hudbou roste, slabší festivaly však dál narážejí na náklady, hluk a provozní rizika",
+  "executive_summary": [
+    "Britský live sektor v roce 2025 přilákal rekordních 24,7 milionu hudebních turistů a vytvořil útratu 11,2 miliardy liber. Pro LIR je to potvrzení, že destination positioning a zahraniční návštěvníci mají vyšší strategickou hodnotu než čistě lokální zásah.",
+    "Discovery Festivals odložily ročník 2026 kvůli růstu nákladů, slabší disponibilní kupní síle a konkurenci dalších lokálních akcí. Kombinace drahé produkce a pozdního rozhodování publika zůstává hlavním obchodním rizikem středně velkých festivalů.",
+    "Povolování Rabbits Eat Lettuce ukazuje, že nízkofrekvenční basový hluk může ohrozit dlouhodobé fungování festivalu i při prokazatelném ekonomickém přínosu regionu. Pro LIR je nutné mít měřitelný hlukový model a aktivní vztah s okolními obcemi.",
+    "Po úmrtí osmnáctileté návštěvnice Tonnau Festival zrušil zbytek programu a uvolnil areál pro vyšetřování. Událost potvrzuje nutnost předem připraveného rozhodovacího protokolu pro zastavení programu, komunikaci a odchod návštěvníků.",
+    "Evropská vedra pokračují s vysokou zdravotní zátěží a požáry. LIR musí posuzovat horko jako plnohodnotný scénář provozní kontinuity, ne jen jako komfortní problém."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": []
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "uk-music-tourism-record-2025",
+          "published_at": "2026-07-10",
+          "event_start": null,
+          "event_end": null,
+          "title": "Rekordních 24,7 milionu hudebních turistů potvrzuje hodnotu destination eventů",
+          "summary": [
+            "Zpráva UK Music uvádí, že v roce 2025 cestovalo za britskými koncerty a festivaly 24,7 milionu hudebních turistů, meziročně o 4,8 procenta více.",
+            "Jejich útrata dosáhla rekordních 11,2 miliardy liber, což představuje meziroční růst o 11 procent.",
+            "Počet zahraničních hudebních turistů vzrostl o 27 procent na 2,1 milionu a ukazuje, že exkluzivní program dokáže generovat významný přeshraniční pohyb publika."
+          ],
+          "why_it_matters": "Let It Roll má pro zahraniční publikum vlastnosti destination festivalu. Výsledky podporují investice do exkluzivního programu, balíčků s dopravou a ubytováním a přesnějšího měření útraty zahraničních návštěvníků.",
+          "recommended_action": "Doplnit do vyhodnocení LIR 2026 podíl zahraničních návštěvníků, délku pobytu a odhad jejich celkové útraty mimo vstupenku.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "The Guardian",
+              "url": "https://www.theguardian.com/business/2026/jul/10/oasis-reunion-uk-concerts-cold-play-lana-del-ray-beyonce-gigs-economy",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "music tourism",
+            "destination festival",
+            "international audience",
+            "economics"
+          ]
+        },
+        {
+          "id": "discovery-festivals-postponed-costs",
+          "published_at": "2026-07-08",
+          "event_start": "2026-07-26",
+          "event_end": "2026-08-09",
+          "title": "Růst nákladů a lokální konkurence odsunuly Discovery Festivals o celý rok",
+          "summary": [
+            "Pořadatelé Discovery Festivals odložili plánované akce v Dundee a Darlingtonu z roku 2026 na rok 2027.",
+            "Ve veřejném vyjádření uvedli kombinaci rostoucích nákladů, oslabené disponibilní kupní síly a dalších lokálních akcí, které zasáhly prodej i ekonomiku projektu.",
+            "Stávající vstupenky mají zůstat platné a pořadatelé nabídli držitelům další bezplatnou vstupenku jako kompenzaci."
+          ],
+          "why_it_matters": "Případ potvrzuje, že lineup s rozpoznatelnými jmény sám o sobě nestačí, pokud se současně zhorší cenová dostupnost, lokální konkurence a produkční náklady. Pro LIR je klíčové řídit break even po jednotlivých prodejních vlnách.",
+          "recommended_action": "Zavést týdenní scénářový dashboard LIR 2027 s break even, tempem prodeje, cenovou elasticitou a citlivostí na desetiprocentní růst hlavních nákladových položek.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "The Sun",
+              "url": "https://www.thesun.co.uk/tvandshowbiz/39689449/5ive-fans-gutted-boyband-festival-cancelled/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "festival economics",
+            "postponement",
+            "ticket sales",
+            "competition"
+          ]
+        },
+        {
+          "id": "rabbits-eat-lettuce-bass-noise-permit",
+          "published_at": "2026-07-07",
+          "event_start": null,
+          "event_end": null,
+          "title": "Nízkofrekvenční basový hluk se stal překážkou trvalého povolení festivalu",
+          "summary": [
+            "Rabbits Eat Lettuce žádá o trvalé povolení pětidenního festivalu a navýšení kapacity přibližně na 8 000 návštěvníků plus až 1 000 členů personálu, umělců a dobrovolníků.",
+            "Místní úřad požaduje další podklady kvůli hluku, dopravě a dopadu na okolí poté, co se při ročníku 2025 neočekávaně šířil nízkofrekvenční basový hluk.",
+            "Pořadatelé navrhují posílený monitoring, řízení dopravy a stížnostní linku, přestože akce podle jejich podkladů vytvořila přes 6 milionů australských dolarů lokálního ekonomického výstupu."
+          ],
+          "why_it_matters": "Silný ekonomický přínos sám nevyřeší konflikt s okolím. U bassového festivalu může špatně modelovaná propagace nízkých frekvencí ohrozit povolení, vztahy s obcemi i dlouhodobou stabilitu lokality.",
+          "recommended_action": "Nechat po LIR 2026 zpracovat mapu šíření nízkých frekvencí podle času, větru a konfigurace stages a spojit ji s evidencí stížností okolních obcí.",
+          "region": "world",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Courier Mail",
+              "url": "https://www.couriermail.com.au/news/queensland/south-burnett/business/rabbits-eat-lettuce-festival-future-in-doubt-over-noise-concerns/news-story/e6f9b4285ba7fa0adea836719a353e74",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "noise",
+            "permitting",
+            "low frequencies",
+            "community relations"
+          ]
+        },
+        {
+          "id": "tonnau-festival-medical-emergency",
+          "published_at": "2026-07-12",
+          "event_start": "2026-07-10",
+          "event_end": "2026-07-12",
+          "title": "Tonnau po úmrtí návštěvnice ukončil festival a uvolnil areál pro vyšetřování",
+          "summary": [
+            "Osmnáctiletá návštěvnice zemřela po zdravotní události v časných hodinách 11. července na Tonnau Festivalu v severním Walesu.",
+            "Na místě zasahoval festivalový welfare tým, zdravotníci a záchranná služba, pořadatelé následně zrušili zbytek akce.",
+            "Návštěvníci byli požádáni o opuštění areálu, aby policie a další složky mohly pokračovat ve vyšetřování."
+          ],
+          "why_it_matters": "Kritická zdravotní událost může během minut změnit festival z běžného provozu na řízenou evakuaci a krizovou komunikaci. Nejasné rozhodovací pravomoci v takové situaci zvyšují bezpečnostní i reputační riziko.",
+          "recommended_action": "Před otevřením LIR projít s vedením, security, medical a komunikací jeden společný tabletop scénář pro úmrtí nebo jinou závažnou událost během programu.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "The Sun",
+              "url": "https://www.thesun.co.uk/news/39732694/woman-dies-uk-music-festival/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "medical emergency",
+            "crisis management",
+            "cancellation",
+            "safety"
+          ]
+        },
+        {
+          "id": "europe-heatwave-health-fire-risk-july",
+          "published_at": "2026-07-12",
+          "event_start": "2026-07-06",
+          "event_end": "2026-07-12",
+          "title": "Pokračující vedra zvyšují zdravotní, požární a kapacitní riziko evropských akcí",
+          "summary": [
+            "Německo zaznamenalo během červnové vlny veder 99 úmrtí utonutím a vysokou celkovou zdravotní zátěž spojenou s extrémními teplotami.",
+            "V jižní Evropě pokračovaly požáry a omezení veřejných akcí, včetně uzavírání prostor a redukce přístupu návštěvníků.",
+            "Nová data navazují na předchozí rušení festivalů a potvrzují, že horko má sekundární dopady na koupání, zdravotnické kapacity, dopravu a požární bezpečnost."
+          ],
+          "why_it_matters": "Pro LIR není problém pouze teplota v areálu. Riziko se přenáší do vody, stínu, zdravotnických zásahů, požární prevence, směn personálu a schopnosti bezpečně odbavit příjezdy a odjezdy.",
+          "recommended_action": "Doplnit heatwave plán LIR o prahové hodnoty pro posílení medical, navýšení vody, omezení fyzicky náročných směn a změnu režimu pyrotechniky či otevřeného ohně.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "The Guardian",
+              "url": "https://www.theguardian.com/world/2026/jul/12/germany-drowning-deaths-heatwave-paris-france-spain",
+              "kind": "secondary"
+            },
+            {
+              "name": "Associated Press",
+              "url": "https://apnews.com/article/8b78a5d051273e24455357da63551fef",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "heatwave",
+            "wildfire",
+            "medical",
+            "operational continuity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": []
+    },
+    {
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": []
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": [
+        {
+          "id": "lir-action-measure-music-tourism-value",
+          "published_at": "2026-07-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "Změřit skutečnou hodnotu zahraničního návštěvníka",
+          "summary": [
+            "Po festivalu spojit zemi původu, délku pobytu, typ ubytování a odhad vedlejší útraty do jednoho reportu."
+          ],
+          "why_it_matters": "Bez této metriky nelze přesně rozhodnout, kolik investovat do zahraniční akvizice, dopravních partnerství a destination komunikace.",
+          "recommended_action": "Přidat otázky do post event survey a propojit je s ticketingovými daty podle trhu.",
+          "region": "global",
+          "category": "lir_action",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "The Guardian",
+              "url": "https://www.theguardian.com/business/2026/jul/10/oasis-reunion-uk-concerts-cold-play-lana-del-ray-beyonce-gigs-economy",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "analytics",
+            "international audience"
+          ]
+        },
+        {
+          "id": "lir-action-noise-propagation-audit",
+          "published_at": "2026-07-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "Provést audit šíření nízkých frekvencí",
+          "summary": [
+            "Zmapovat reálné šíření basů z jednotlivých stages a porovnat je s větrem, programem a stížnostmi okolí."
+          ],
+          "why_it_matters": "Nízkofrekvenční hluk může ohrozit dlouhodobou použitelnost lokality i v situaci, kdy jsou běžné limity měřené u stage splněny.",
+          "recommended_action": "Určit odpovědného technika, měřicí body mimo areál a jednotný log pro celý festival.",
+          "region": "cz_sk",
+          "category": "lir_action",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Courier Mail",
+              "url": "https://www.couriermail.com.au/news/queensland/south-burnett/business/rabbits-eat-lettuce-festival-future-in-doubt-over-noise-concerns/news-story/e6f9b4285ba7fa0adea836719a353e74",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "sound",
+            "permitting"
+          ]
+        },
+        {
+          "id": "lir-action-critical-incident-tabletop",
+          "published_at": "2026-07-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "Procvičit zastavení programu po kritické události",
+          "summary": [
+            "V jednom scénáři projít rozhodnutí o přerušení programu, interní eskalaci, komunikaci s návštěvníky a řízený odchod z areálu."
+          ],
+          "why_it_matters": "Největší prodleva obvykle vzniká mezi zdravotnickým zásahem a manažerským rozhodnutím, co se zbytkem programu a veřejnou komunikací.",
+          "recommended_action": "Uspořádat třicetiminutový tabletop se jmenovitě určenými rozhodovacími pravomocemi.",
+          "region": "cz_sk",
+          "category": "lir_action",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "The Sun",
+              "url": "https://www.thesun.co.uk/news/39732694/woman-dies-uk-music-festival/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "crisis management",
+            "safety"
+          ]
+        },
+        {
+          "id": "lir-action-heatwave-trigger-matrix",
+          "published_at": "2026-07-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "Převést heatwave plán na spouštěcí matici",
+          "summary": [
+            "Pro jednotlivé teplotní a výstražné stupně určit předem aktivovaná opatření pro vodu, medical, směny, stín, oheň a komunikaci."
+          ],
+          "why_it_matters": "Obecný krizový plán nestačí, pokud není jasné, při jaké hodnotě a kdo konkrétní opatření spouští.",
+          "recommended_action": "Schválit prahové hodnoty a odpovědné osoby ještě před finálním produkčním meetingem.",
+          "region": "cz_sk",
+          "category": "lir_action",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "The Guardian",
+              "url": "https://www.theguardian.com/world/2026/jul/12/germany-drowning-deaths-heatwave-paris-france-spain",
+              "kind": "secondary"
+            },
+            {
+              "name": "Associated Press",
+              "url": "https://apnews.com/article/8b78a5d051273e24455357da63551fef",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "heatwave",
+            "operations"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources_scanned": [
+    "AUTOMATION.md",
+    "news/2026-week_27.json",
+    "news/2026-week_26.json",
+    "news/2026-week_25.json",
+    "news/2026-week_24.json",
+    "The Guardian",
+    "Associated Press",
+    "Courier Mail",
+    "The Sun",
+    "UK Music"
+  ]
+}
