@@ -11,9 +11,11 @@ Tento dokument je závazná specifikace pro týdenní automatizaci. Automatizace
 
 ## Účel
 
-Briefing není hudební magazín. Slouží jako interní podklad pro Let It Roll a Beatworx. Každá položka musí pomáhat rozhodovat o programu, konkurenci, produkci, návštěvnickém zážitku, marketingu, ticketingu nebo strategii značky.
+Briefing je vyvážený přehled tří rovnocenných oblastí: drum and bass scény, přímé festivalové konkurence a širšího festivalového průmyslu. Slouží jako interní podklad pro Let It Roll, Beatworx a LIR Recordings.
 
-Samostatný hudební release se zařazuje pouze tehdy, pokud mění pozici interpreta, labelu nebo festivalového trendu. Běžné releasy bez strategického dopadu se vynechávají.
+Scénová zpráva nemusí mít okamžitý provozní dopad na LIR. Musí ale pomáhat chápat, kteří interpreti a labely rostou, jak se mění zvuk a publikum, jaké nové projekty nebo formáty vznikají a co se v komunitě skutečně řeší. U položek z `dnb_scene`, `audience_sentiment` a `strategic_releases` se dopad posuzuje také z pohledu bookingu, dramaturgie, labelu, obsahu a dlouhodobého vývoje scény.
+
+Běžný samostatný release se nezařazuje automaticky. Výběr má zachytit nejdůležitější alba, EP, spolupráce, návraty, labelové přesuny a kampaně, které ukazují posun interpreta, labelu nebo subžánru. Festivalová témata nesmějí vytlačit povinné pokrytí DnB scény a Redditu.
 
 ## Poučení z historických briefingů
 
@@ -33,7 +35,7 @@ Před každým během přečíst nejméně čtyři poslední briefingy. Novou po
 6. `strategic_releases` — Strategické releasy
 7. `lir_actions` — Doporučené kroky pro LIR
 
-Prázdná sekce zůstává ve výstupu jako prázdné pole `items`.
+Sekce `competition`, `cz_sk` a `strategic_releases` mohou zůstat prázdné, pokud nejsou doložené relevantní změny. Od týdne 29 roku 2026 nesmějí být prázdné sekce `dnb_scene` a `audience_sentiment`. Nedostupnost povinného zdroje je chyba sběru a důvod běh zastavit, nikoli důvod publikovat degradovaný briefing.
 
 ## Sledovaná konkurence
 
@@ -85,21 +87,59 @@ Povinné tematické okruhy:
 
 Zprávu zařadit pouze tehdy, pokud lze vysvětlit konkrétní dopad na rozpočet, produkci, marketing, ticketing, bezpečnost nebo návštěvnický zážitek LIR.
 
+## DnB scéna
+
+Sekce `dnb_scene` je povinný redakční blok, nikoli doplněk festivalových zpráv. Každý týden projít zdroje napříč mainstreamem, undergroundem a hlavními subžánry a vybrat nejméně dvě nejsilnější scénové změny.
+
+Zachytit zejména:
+
+- významné kariérní posuny interpretů, nové projekty, návraty, rozpady a změny sestav;
+- nové labely, přesuny mezi labely, akvizice, distribuční změny a nové kurátorské směry;
+- alba, EP a spolupráce, pokud představují výrazný kreativní, komerční nebo subžánrový posun;
+- nové live show, tour koncepty, AV formáty, významné crossover momenty a růst DnB na nových trzích;
+- rozhovory a profily obsahující skutečné informace o fungování scény, tvorbě, kreditech, zastoupení nebo ekonomice;
+- změny vkusu, nástup nových jmen, návrat staršího zvuku a témata, která se opakují napříč médii, sety a komunitou.
+
+Pouhá vazba na festival není podmínkou. `why_it_matters` může vysvětlovat dopad na booking, dramaturgii, LIR Recordings, marketing, obsah nebo orientaci ve scéně.
+
+## Reddit r/DnB
+
+Při každém běhu povinně projít veřejné přehledy Redditu `r/DnB` v režimech Hot a Top za poslední týden. Doplnit kontrolu nových vláken z reportovacího období, aby pozdě publikované diskuse nebyly znevýhodněné.
+
+Z kandidátů vybrat nejméně dvě nejsilnější diskuse podle kombinace:
+
+- počtu a kvality komentářů;
+- skóre a relativní viditelnosti vůči ostatním vláknům daného týdne;
+- novosti tématu a šíře názorů;
+- významu pro hudební vkus, subžánry, interprety, produkci, chování publika nebo fungování scény.
+
+Vyřadit prosté identifikace tracku, izolované meme, vlastní promo bez diskuse, duplicitní příspěvky a otázky s několika povrchními odpověďmi. Každá zařazená položka musí odkázat přímo na vlákno, uvést stav skóre a počtu komentářů v době sběru a shrnout hlavní názorové proudy. Reddit dokládá existenci a intenzitu debaty, nikoli tvrdá fakta.
+
+Pokud nelze získat alespoň dvě kvalifikované diskuse nebo je Reddit nedostupný, běh se nesmí publikovat. Výstup musí vrátit chybu pokrytí.
+
 ## Výběrový filtr
 
-Každého kandidáta interně posoudit podle čtyř kritérií. Hodnocení se na webu nezobrazuje.
+Každého kandidáta interně posoudit podle tří společných kritérií a jednoho kritéria podle sekce. Hodnocení se na webu nezobrazuje.
 
-- dopad na Let It Roll: 0 až 3 body;
+Společná kritéria:
+
 - novost oproti posledním čtyřem briefingům: 0 až 2 body;
 - síla důkazů: 0 až 2 body;
 - rozsah nebo význam změny: 0 až 2 body.
 
-Zařadit položky se součtem nejméně 5 bodů. Výjimkou je bezprostřední bezpečnostní, reputační nebo termínové riziko pro LIR.
+Sekční kritérium:
+
+- `competition` a `festival_industry`: konkrétní dopad na Let It Roll, 0 až 3 body;
+- `dnb_scene` a `strategic_releases`: význam pro vývoj DnB scény, booking, dramaturgii, label nebo obsah, 0 až 3 body;
+- `audience_sentiment`: relativní engagement, kvalita diskuse a šíře názorů, 0 až 3 body;
+- `cz_sk`: význam pro lokální scénu nebo obchodní prostředí, 0 až 3 body.
+
+Zařadit položky se součtem nejméně 5 bodů. Scénové a komunitní zprávy se nesmějí vyřadit jen proto, že nemají okamžitý provozní dopad na LIR. Výjimkou z bodového prahu je bezprostřední bezpečnostní, reputační nebo termínové riziko.
 
 Nezařazovat:
 
-- běžný release bez festivalového nebo bookingového dopadu;
-- rozhovor, který pouze propaguje nové album;
+- běžný release bez širšího významu pro interpreta, label, subžánr, booking nebo publikum;
+- rozhovor, který pouze opakuje promo tvrzení k novému albu a nepřináší scénovou informaci;
 - rutinní klubovou pozvánku nebo lokální seznam akcí;
 - samotný lineup bez analýzy strategie a konkurenčního dopadu;
 - recyklované oznámení bez nové informace;
@@ -110,7 +150,7 @@ Nezařazovat:
 
 ### DnB a elektronická scéna
 
-Oficiální weby a sociální kanály festivalů, promotérů, labelů a interpretů; DJ Mag; Mixmag; Resident Advisor; UKF; Drum & Bass UK; LoveThatBass; Best Drum & Bass; Drumandbass.nl; Dogs On Acid; Beatportal.
+Povinný týdenní sweep: UKF; Drum & Bass UK; DJ Mag; Mixmag; Resident Advisor; Beatportal; Data Transmission DnB; LoveThatBass; Dogs On Acid; Drumandbass.nl; Best Drum & Bass. Doplnit oficiální weby a veřejné sociální kanály relevantních labelů a interpretů. Nespoléhat jen na obecné zpravodajské vyhledávání, protože zvýhodňuje festivaly a mainstreamová média.
 
 ### Festivalový průmysl
 
@@ -122,9 +162,9 @@ DNBe HearD; Hoofbeats; Musicserver; Rave.cz; GoOut; oficiální weby a kanály f
 
 ### Komunitní sentiment
 
-Reddit `r/DnB`, `r/LetItRollFestival`, `r/Rampagefestival` a relevantní veřejná diskusní vlákna. Komunitní zdroj nesmí být jediným důkazem tvrdého faktu.
+Reddit `r/DnB` je povinný každý týden. Do `sources_scanned` zapsat `Reddit r/DnB: hot + top/week`. Pro festivalový sentiment dále sledovat `r/LetItRollFestival`, `r/Rampagefestival` a další relevantní veřejná diskusní vlákna. Komunitní zdroj nesmí být jediným důkazem tvrdého faktu.
 
-Sentiment shrnout pouze při opakujícím se vzorci ve více komentářích nebo zdrojích. Uvést, co lidé chválí, co kritizují, zda jsou názory rozdělené a jaká provozní nebo obchodní lekce z toho plyne. Jednotlivý virální komentář nestačí.
+U obecných DnB debat shrnout hlavní názorové proudy, míru shody, sporné body a význam pro scénu. U festivalového sentimentu uvést, co lidé chválí, co kritizují, zda jsou názory rozdělené a jaká provozní nebo obchodní lekce z toho plyne. Jednotlivý virální komentář nestačí.
 
 ## Ověření
 
@@ -148,12 +188,12 @@ Sentiment shrnout pouze při opakujícím se vzorci ve více komentářích nebo
 - `executive_summary` obsahuje 3 až 5 bodů vhodných k přednesení na poradě bez čtení celého webu.
 - `competition` obsahuje zpravidla 2 až 5 položek.
 - `festival_industry` obsahuje zpravidla 1 až 4 položky.
-- `dnb_scene` obsahuje nejvýše 3 strategické položky.
-- `cz_sk` obsahuje 1 až 3 položky, pokud existují skutečně relevantní změny.
-- `audience_sentiment` obsahuje nejvýše 3 doložené vzorce.
+- `dnb_scene` obsahuje 2 až 4 nejsilnější scénové položky.
+- `cz_sk` obsahuje 0 až 3 položky podle skutečné relevance.
+- `audience_sentiment` obsahuje 2 až 3 položky; nejméně dvě musí vycházet z kvalifikovaných diskusí na `r/DnB`.
 - `strategic_releases` obsahuje 0 až 2 položky.
 - `lir_actions` shrnuje 3 až 5 konkrétních úkolů z celého briefingu.
-- Minimální počty se nevynucují. Prázdná sekce je lepší než výplň.
+- Od týdne 29 roku 2026 se vynucuje minimální pokrytí `dnb_scene` a `r/DnB`. Nedostatečný sběr je chyba běhu, ne omluva pro prázdnou sekci.
 - Žádná výplň, obecné promo formulace ani duplicity z předchozího týdne bez nové informace.
 
 ## Publikační postup
@@ -162,9 +202,10 @@ Sentiment shrnout pouze při opakujícím se vzorci ve více komentářích nebo
 2. Vytvořit `news/YYYY-week_N.json` ve schématu verze 2. Číslo týdne odpovídá zpracovanému období, nikoli dni spuštění.
 3. Přidat nový záznam na začátek `news/index.json`.
 4. Zkontrolovat JSON, duplicity, data, odkazy a všechna povinná pole.
-5. Vytvořit větev `automation/briefing-YYYY-week-N`.
-6. Zapsat pouze nový briefing a manifest.
-7. Otevřít nedraftový pull request s názvem `Add DnB briefing YYYY week N`.
-8. Workflow `.github/workflows/validate-briefing.yml` zkontroluje celý datový archiv.
-9. Pull request zůstane připravený ke sloučení. Automatické sloučení vyžaduje samostatné schválení zápisových oprávnění.
-10. Pokud validace selže, nic neobcházet a vrátit přesný seznam chyb.
+5. Provést kontrolu pokrytí: nejméně 2 položky v `dnb_scene`, nejméně 2 přímé odkazy na kvalifikované diskuse z `r/DnB` v `audience_sentiment` a záznam `Reddit r/DnB: hot + top/week` v `sources_scanned`.
+6. Vytvořit větev `automation/briefing-YYYY-week-N`.
+7. Zapsat pouze nový briefing a manifest.
+8. Otevřít nedraftový pull request s názvem `Add DnB briefing YYYY week N`.
+9. Workflow `.github/workflows/validate-briefing.yml` zkontroluje celý datový archiv.
+10. Pull request zůstane připravený ke sloučení. Automatické sloučení vyžaduje samostatné schválení zápisových oprávnění.
+11. Pokud validace selže, nic neobcházet a vrátit přesný seznam chyb.
