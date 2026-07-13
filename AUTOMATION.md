@@ -1,4 +1,4 @@
-# Pondělní DnB & Festival Intelligence
+# Pondělní DnB News
 
 Tento dokument je závazná specifikace pro týdenní automatizaci. Automatizace používá veřejný web a již připojený GitHub repozitář. Bez výslovného schválení nesmí připojit novou službu, účet ani datový zdroj vyžadující přihlášení.
 
@@ -11,7 +11,7 @@ Tento dokument je závazná specifikace pro týdenní automatizaci. Automatizace
 
 ## Účel
 
-Briefing je vyvážený přehled tří rovnocenných oblastí: drum and bass scény, přímé festivalové konkurence a širšího festivalového průmyslu. Slouží jako interní podklad pro Let It Roll, Beatworx a LIR Recordings.
+Briefing je čistě informační týdenní přehled drum and bass scény, komunitních diskusí, přímé festivalové konkurence a širšího festivalového průmyslu. Web tvoří jeden souvislý proud zpráv bez viditelného dělení na scénu, sentiment nebo doporučení.
 
 Scénová zpráva nemusí mít okamžitý provozní dopad na LIR. Musí ale pomáhat chápat, kteří interpreti a labely rostou, jak se mění zvuk a publikum, jaké nové projekty nebo formáty vznikají a co se v komunitě skutečně řeší. U položek z `dnb_scene`, `audience_sentiment` a `strategic_releases` se dopad posuzuje také z pohledu bookingu, dramaturgie, labelu, obsahu a dlouhodobého vývoje scény.
 
@@ -176,23 +176,33 @@ U obecných DnB debat shrnout hlavní názorové proudy, míru shody, sporné bo
 - Nepoužívat Google image cache, dočasné Instagram CDN adresy ani obrázky bez dohledatelného původu.
 - Pokud stabilní vizuál není dostupný, ponechat `media` prázdné.
 
+## Mediální přílohy
+
+U každé vybrané zprávy aktivně zkontrolovat oficiální Instagram interpreta, labelu, festivalu nebo organizátora a relevantní YouTube kanál. Pokud příspěvek nebo video přímo dokládá popsanou novinku, přidat jej do `media` jako `instagram` nebo `youtube`.
+
+- Preferovat původní oznámení, trailer, ukázku nové live show, relevantní rozhovor, oficiální video nebo příspěvek, který je předmětem zprávy.
+- Nepřidávat obecný profil, nesouvisející promo, fanouškovský reupload ani video pouze kvůli vizuálnímu zaplnění karty.
+- Instagram a YouTube používat jako vložené médium; důležité tvrdé tvrzení musí stále splnit běžný důkazní standard.
+- Pokud relevantní stabilní Instagram nebo YouTube odkaz neexistuje, ponechat `media` prázdné.
+
 ## Výstup
 
 - Čeština.
+- Tón je neutrální, stručný a informační. Text neoslovuje LIR, nepřikazuje další kroky a nevystupuje jako poradenský dokument.
 - Celkem nejvýše 14 obsahových položek mimo sekci `lir_actions`.
 - Položky se řadí podle významu, ale nepoužívají štítky TOP, MID ani LOW.
-- Titulek formuluje analytický závěr, nikoli pouze název článku.
-- `summary` obsahuje 2 až 4 krátké věty: změna, důkaz, měřítko a nutný kontext.
-- `why_it_matters` vysvětluje konkrétní dopad na Let It Roll.
-- `recommended_action` obsahuje jeden proveditelný krok nebo explicitní `Bez akce, pouze sledovat`.
-- `executive_summary` obsahuje 3 až 5 bodů vhodných k přednesení na poradě bez čtení celého webu.
+- Titulek jasně a věcně popisuje novinku; nepoužívá interní ani poradenské formulace.
+- `summary` obsahuje 3 až 5 informačních vět rozdělených do nejvýše 4 krátkých odstavců: co se stalo, konkrétní důkaz nebo měřítko a nutný kontext.
+- `why_it_matters`, `recommended_action` a `executive_summary` zůstávají pouze jako strojová pole kvůli kompatibilitě schématu a na webu se nezobrazují.
+- `recommended_action` má neutrální hodnotu `Bez akce, pouze informační přehled`, pokud není potřeba interní technická poznámka pro automatizaci.
+- `executive_summary` obsahuje 3 až 5 věcných informačních bodů bez doporučení.
 - `competition` obsahuje zpravidla 2 až 5 položek.
 - `festival_industry` obsahuje zpravidla 1 až 4 položky.
 - `dnb_scene` obsahuje 2 až 4 nejsilnější scénové položky.
 - `cz_sk` obsahuje 0 až 3 položky podle skutečné relevance.
 - `audience_sentiment` obsahuje 2 až 3 položky; nejméně dvě musí vycházet z kvalifikovaných diskusí na `r/DnB`.
 - `strategic_releases` obsahuje 0 až 2 položky.
-- `lir_actions` shrnuje 3 až 5 konkrétních úkolů z celého briefingu.
+- `lir_actions` zůstává prázdná; web tuto technickou sekci nezobrazuje.
 - Od týdne 29 roku 2026 se vynucuje minimální pokrytí `dnb_scene` a `r/DnB`. Nedostatečný sběr je chyba běhu, ne omluva pro prázdnou sekci.
 - Žádná výplň, obecné promo formulace ani duplicity z předchozího týdne bez nové informace.
 
