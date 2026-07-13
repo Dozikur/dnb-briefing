@@ -78,6 +78,14 @@
       "competition",
       "festival_industry"
     ];
+    const categoryNames = {
+      competition: "Festival news",
+      festival_industry: "Industry news",
+      dnb_scene: "Artist news",
+      cz_sk: "CZ / SK news",
+      audience_sentiment: "Socials sentiment report",
+      strategic_release: "Release news"
+    };
 
     const esc = (value = "") => String(value).replace(/[&<>'"]/g, character => ({
       "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;"
@@ -136,7 +144,10 @@
 
     const normalizeV2 = report => {
       const byId = Object.fromEntries((report.sections || []).map(section => [section.id, section]));
-      return displayOrder.flatMap(id => byId[id]?.items || []);
+      return displayOrder.flatMap(id => (byId[id]?.items || []).map(item => ({
+        ...item,
+        genre: categoryNames[item.category] || ""
+      })));
     };
 
     const youtubeId = url => {
@@ -216,7 +227,7 @@
           ${image ? `
             <div class="cover-wrap w-full p-6 md:p-8">
               <img class="cover h-full w-full rounded-xl object-cover shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
-                src="${esc(image)}" alt="" loading="lazy">
+                src="${esc(image)}" alt="${esc(item.title || "")}" loading="lazy" referrerpolicy="no-referrer">
             </div>` : ""}
           <div class="card-body flex w-full flex-col justify-between p-6 ${image ? "pt-0 md:pl-0 md:pt-8" : "md:p-10"}">
             <div>
