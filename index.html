@@ -38,12 +38,31 @@
       backdrop-filter: blur(10px);
     }
     .news-card:last-child { margin-bottom: 1rem; }
-    .cover { aspect-ratio: 16 / 9; }
+    .cover {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
     .media-frame { width: 100%; border: 0; border-radius: .75rem; background: white; }
     @media (min-width: 768px) {
-      .news-card.has-cover .cover-wrap { width: 40%; }
-      .news-card.has-cover .card-body { width: 60%; }
-      .news-card.has-cover .cover { min-height: 100%; aspect-ratio: auto; }
+      .news-card.has-cover { align-items: stretch; }
+      .news-card.has-cover .cover-wrap {
+        display: flex;
+        flex: 0 0 38%;
+        width: 38%;
+        align-items: flex-start;
+      }
+      .news-card.has-cover .card-body {
+        flex: 0 0 62%;
+        width: 62%;
+      }
+      .news-card.has-cover .cover {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 4 / 5;
+      }
     }
   </style>
 </head>
@@ -226,7 +245,7 @@
         <article class="news-card group mx-auto flex max-w-5xl flex-col overflow-hidden rounded-xl md:flex-row ${image ? "has-cover" : ""}">
           ${image ? `
             <div class="cover-wrap w-full p-6 md:p-8">
-              <img class="cover h-full w-full rounded-xl object-cover shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
+              <img class="cover w-full rounded-xl object-cover shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
                 src="${esc(image)}" alt="${esc(item.title || "")}" loading="lazy" referrerpolicy="no-referrer">
             </div>` : ""}
           <div class="card-body flex w-full flex-col justify-between p-6 ${image ? "pt-0 md:pl-0 md:pt-8" : "md:p-10"}">
