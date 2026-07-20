@@ -7,13 +7,13 @@
     "window_end": "2026-07-19",
     "generated_at": "2026-07-20T06:30:02+02:00"
   },
-  "headline": "Rampage vyráží do Austrálie a na Nový Zéland, Heritage Live ruší jedenáct koncertních dnů",
+  "headline": "Liquicity míří k vyprodání, Tomorrowland zakázal pyrotechniku a Pohoda hlásí rekordní předprodej",
   "executive_summary": [
-    "Rampage naplánoval pět srpnových zastávek v Austrálii a na Novém Zélandu a kombinuje přitom plný formát značky s menšími DnB a dubstep roadshows.",
-    "Heritage Live zrušil jedenáct koncertních dnů na třech britských panstvích po slabších prodejích a pádu připravovaného investičního balíčku.",
-    "Britský regulátor se chystá prověřit fungování trhu živé hudby a postavení společností Live Nation a Ticketmaster.",
-    "Ve scénické části týdne vyčnívá debutové album Unknown Face a nový singl T & Sugah na hlavní značce UKF.",
-    "Hospital Records připravil pro Forza Horizon 6 vlastní stanici a soundtrack se 24 skladbami."
+    "Liquicity Festival vydal poslední varování před vyprodáním poté, co počet zbývajících víkendových vstupenek klesl pod sto.",
+    "Tomorrowland nesměl během prvního víkendu použít ohňostroje ani pódiovou pyrotechniku kvůli zvýšenému požárnímu riziku.",
+    "Pohoda po vyprodaném jubilejním ročníku prodala během pěti dnů přes deset tisíc vstupenek na rok 2027.",
+    "Hedex oznámil nový koncertní koncept Nu Era Laser + Stage Show s premiérou na festivalu MHITR.",
+    "Protest proti vlastníkovi Boiler Room narušil dva programové dny v New Yorku a otevřel další spor o festivalové značky ovládané investiční skupinou KKR."
   ],
   "sections": [
     {
@@ -21,36 +21,24 @@
       "title": "Přímá konkurence",
       "items": [
         {
-          "id": "rampage-australia-new-zealand-roadshow-2026",
-          "published_at": "2026-07-18",
-          "event_start": "2026-08-21",
-          "event_end": "2026-08-29",
-          "title": "Rampage vyráží do Austrálie a na Nový Zéland s pěti zastávkami",
+          "id": "liquicity-final-sellout-warning-2026",
+          "published_at": "2026-07-17",
+          "event_start": null,
+          "event_end": null,
+          "title": "Liquicity vydal poslední varování před vyprodáním",
           "summary": [
-            "Rampage odehraje mezi 21. a 29. srpnem pět akcí v Brisbane, Perthu, Aucklandu, Sydney a Christchurchi. V Brisbane a Perthu představí plný formát Rampage Australia, další tři večery proběhnou jako menší roadshows.",
-            "Auckland dostane Rampage Roadshow, Sydney samostatnou dubstepovou zastávku a Christchurch DnB Roadshow. Jedna značka tak během devíti dnů otestuje pět měst a tři různé formáty bez stavby nového vícedenního festivalu.",
-            "Jde o konkrétní expanzi přímého konkurenta na nový trh a současně o ukázku, jak lze festivalovou značku rozšiřovat pomocí městské série."
+            "Liquicity Festival oznámil, že zbývá méně než sto víkendových vstupenek. Sobotní vstupenky a čtvrteční vstup do kempu byly podle pořadatelů téměř vyprodané.",
+            "Organizátoři příspěvek označili za poslední varování před vyprodáním. Zpráva ukazuje silný závěr předprodeje u přímého evropského konkurenta v týdnu před konáním festivalu."
           ],
-          "why_it_matters": "Rampage vstupuje na vzdálený trh pomocí škálovatelné série, která kombinuje plný brandový formát s menšími žánrovými roadshows.",
+          "why_it_matters": "Tempo doprodeje víkendových, jednodenních a kempových kategorií nabízí aktuální srovnání pro prodejní vývoj evropského DnB festivalu.",
           "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "global",
+          "region": "europe",
           "category": "competition",
-          "competitors": ["Rampage"],
+          "competitors": ["Liquicity Festival"],
           "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "Rampage",
-              "url": "https://www.rampage.eu/news/rampage-lands-in-australia-new-zealand",
-              "kind": "primary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://www.rampage.eu/content/img/1712-40416-screenshot-2026-03-25-at-093640-1d8a0b7b502bf6e7.jpg"
-            }
-          ],
-          "tags": ["Rampage", "Australia", "New Zealand", "roadshow", "market expansion"]
+          "sources": [{"name": "Liquicity Festival", "url": "https://www.instagram.com/p/Da5fKfDDK-V/?img_index=5", "kind": "primary"}],
+          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Da5fKfDDK-V/"}],
+          "tags": ["Liquicity", "ticket sales", "sellout", "camping"]
         }
       ]
     },
@@ -76,51 +64,74 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {
-              "name": "Englefield Estate",
-              "url": "https://www.englefieldestate.co.uk/whats-on/heritage-live-summer-concerts-cancelled",
-              "kind": "primary"
-            },
-            {
-              "name": "Pollstar",
-              "url": "https://news.pollstar.com/2026/07/15/uk-concert-series-hertiage-live-canceled-over-high-costs-low-ticket-sales/",
-              "kind": "secondary"
-            }
+            {"name": "Englefield Estate", "url": "https://www.englefieldestate.co.uk/whats-on/heritage-live-summer-concerts-cancelled", "kind": "primary"},
+            {"name": "Pollstar", "url": "https://news.pollstar.com/2026/07/15/uk-concert-series-hertiage-live-canceled-over-high-costs-low-ticket-sales/", "kind": "secondary"}
           ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://static.pollstar.com/wp-content/uploads/2024/11/GettyImages-1640877079-1024x579.jpg"
-            }
-          ],
+          "media": [{"type": "image", "url": "https://static.pollstar.com/wp-content/uploads/2024/11/GettyImages-1640877079-1024x579.jpg"}],
           "tags": ["festival cancellation", "ticket sales", "financing", "United Kingdom", "refunds"]
         },
         {
-          "id": "uk-cma-live-nation-market-scrutiny",
-          "published_at": "2026-07-19",
-          "event_start": null,
-          "event_end": null,
-          "title": "Britský regulátor se chystá prověřit Live Nation a Ticketmaster",
+          "id": "tomorrowland-pyrotechnics-ban-weekend-one",
+          "published_at": "2026-07-15",
+          "event_start": "2026-07-17",
+          "event_end": "2026-07-19",
+          "title": "Tomorrowland nesmí během prvního víkendu použít pyrotechniku",
           "summary": [
-            "Britský Competition and Markets Authority podle deníku The Times připravuje prověření trhu živé hudby. Pozornost se má soustředit na postavení Live Nation, vlastnictví Ticketmasteru a vazby skupiny na promotéry, festivaly a koncertní haly.",
-            "Debata se týká zejména cenové transparentnosti, dynamického pricingu a toho, zda vertikální propojení jednotlivých částí trhu omezuje konkurenci. Téma zesílilo po výhradách poslanců a spotřebitelů k prodeji vstupenek na velká turné.",
-            "Vyšetřování zatím nebylo uzavřeno a nejsou známá konkrétní opatření. Pro evropský live sektor je však podstatné už samotné otevření otázky pravidel pro dominantního promotéra a ticketingovou platformu."
+            "Tomorrowland 2026 nesměl během prvního festivalového víkendu použít ohňostroje ani pódiovou pyrotechniku. Starostové měst Boom a Rumst spolu s guvernérkou provincie rozhodli na doporučení hasičů po období extrémně vysokých teplot.",
+            "Areál De Schorre i kemp Dreamville se nacházely v oblasti s druhým nejvyšším stupněm požárního rizika Code Orange. O případném použití pyrotechniky během druhého víkendu se mělo rozhodnout podle dalšího vývoje.",
+            "Náhradu pomocí světelných dronů organizátoři vyloučili kvůli blízkému letišti. Festival uvedl, že se o původním rozhodnutí dozvěděl z médií; zástupci úřadů tento popis odmítli."
           ],
-          "why_it_matters": "Případné změny pravidel mohou ovlivnit cenovou transparentnost, dynamické ceny a vyjednávací podmínky ticketingových platforem v Evropě.",
+          "why_it_matters": "Případ ukazuje, že požární riziko může krátce před akcí změnit hlavní produkční prvky a že náhradní technologie nemusí být kvůli místním omezením dostupné.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "festival_industry",
           "competitors": [],
           "confidence": "probable",
-          "sources": [
-            {
-              "name": "The Times",
-              "url": "https://www.thetimes.com/business/companies-markets/article/ticketing-live-nation-investigation-g26kwpjlm",
-              "kind": "secondary"
-            }
+          "sources": [{"name": "DJ Mag", "url": "https://djmag.com/news/tomorrowland-2026-fireworks-and-pyrotechnics-banned-weekend-one-due-fire-risk", "kind": "secondary"}],
+          "media": [{"type": "image", "url": "https://djmag.com/sites/default/files/styles/djm_23_961x540/public/2026-07/Screenshot%202026-07-15%20at%2013.12.07.png.webp?itok=FZiZhVb4"}],
+          "tags": ["Tomorrowland", "pyrotechnics", "fire risk", "weather", "safety"]
+        },
+        {
+          "id": "boiler-room-new-york-anti-kkr-protest",
+          "published_at": "2026-07-16",
+          "event_start": "2026-07-10",
+          "event_end": "2026-07-11",
+          "title": "Protest proti KKR narušil Boiler Room v New Yorku",
+          "summary": [
+            "Dva programové dny Boiler Room v brooklynském prostoru Under The K Bridge narušili demonstranti spojení s hnutím Boycott Room. Protest mířil proti vlastníkovi značky Superstruct Entertainment a jeho majiteli, investiční společnosti KKR.",
+            "Část aktivistů rozdávala před vstupem letáky, další skupina uvnitř uspořádala hromadný protest vleže. Následující den jeden z protestujících vstoupil na pódium, odpojil techniku a následně jej odvedla ochranka.",
+            "Boiler Room uznal právo na pokojný protest a uvedl, že chování jednoho návštěvníka vůči demonstrantovi nemá na jeho akcích místo. Protestní skupiny současně uspořádaly alternativní rave v Queensu."
           ],
-          "media": [],
-          "tags": ["Live Nation", "Ticketmaster", "CMA", "ticketing", "regulation"]
+          "why_it_matters": "Spor ukazuje reputační riziko, které se může přenášet z vlastníka na jednotlivé festivalové a hudební značky skupiny Superstruct.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [{"name": "DJ Mag", "url": "https://djmag.com/news/boiler-room-new-york-event-disrupted-anti-kkr-protest-activists-allege-assault", "kind": "secondary"}],
+          "media": [{"type": "image", "url": "https://djmag.com/sites/default/files/styles/djm_23_961x540/public/2026-07/Screenshot%202026-07-16%20at%2014.30.51.png.webp?itok=AR-jR_oe"}],
+          "tags": ["Boiler Room", "Superstruct", "KKR", "protest", "reputation"]
+        },
+        {
+          "id": "pohoda-record-presale-2027",
+          "published_at": "2026-07-16",
+          "event_start": "2027-07-08",
+          "event_end": "2027-07-10",
+          "title": "Pohoda po jubilejním ročníku hlásí rekordní předprodej",
+          "summary": [
+            "Jubilejní 30. ročník Pohody navštívilo 33 tisíc platících návštěvníků. Festival nejprve vyprodal původní kapacitu třicet tisíc lidí a následně také dodatečně uvolněné vstupenky po desetiprocentním navýšení kapacity.",
+            "Od středy do nedělního poledne se prodalo více než deset tisíc vstupenek na Pohodu 2027, což pořadatelé označili za nejúspěšnější zahájení předprodeje ve své historii.",
+            "Další ročník se uskuteční od 8. do 10. července 2027 na trenčínském letišti."
+          ],
+          "why_it_matters": "Výsledek ukazuje, jak může vyprodaný jubilejní ročník a prodej přímo v areálu urychlit předprodej dalšího roku.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [{"name": "Pohoda Festival", "url": "https://www.instagram.com/p/Dazxsh7IEe0/", "kind": "primary"}],
+          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Dazxsh7IEe0/"}],
+          "tags": ["Pohoda", "presale", "sellout", "capacity", "Slovakia"]
         }
       ]
     },
@@ -128,6 +139,26 @@
       "id": "dnb_scene",
       "title": "DnB scéna",
       "items": [
+        {
+          "id": "hedex-nu-era-laser-stage-show",
+          "published_at": "2026-07-14",
+          "event_start": null,
+          "event_end": null,
+          "title": "Hedex představil Nu Era Laser + Stage Show",
+          "summary": [
+            "Hedex oznámil nový koncertní koncept Nu Era Laser + Stage Show. Projekt popsal jako další výrazný krok po svém vystoupení ve Wembley.",
+            "Exkluzivní premiéra má proběhnout na festivalu MHITR následující pátek. Podrobnosti o podobě produkce zatím nezveřejnil, současně ale uvedl, že vstupenky na festival se blíží vyprodání."
+          ],
+          "why_it_matters": "Nový show formát posouvá Hedexe od běžného DJ setu k vlastní značkové produkci a může ovlivnit jeho budoucí festivalové požadavky i pozici v lineupech.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [{"name": "Hedex", "url": "https://www.instagram.com/p/Daz6VdxqRcE/", "kind": "primary"}],
+          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Daz6VdxqRcE/"}],
+          "tags": ["Hedex", "live show", "lasers", "stage production", "MHITR"]
+        },
         {
           "id": "unknown-face-keep-it-running-debut-lp",
           "published_at": "2026-07-13",
@@ -144,22 +175,10 @@
           "category": "dnb_scene",
           "competitors": [],
           "confidence": "probable",
-          "sources": [
-            {
-              "name": "Kmag",
-              "url": "https://kmag.co.uk/premiere-keep-it-running-with-the-debut-lp-from-unknown-face-soul-in-motion/",
-              "kind": "secondary"
-            }
-          ],
+          "sources": [{"name": "Kmag", "url": "https://kmag.co.uk/premiere-keep-it-running-with-the-debut-lp-from-unknown-face-soul-in-motion/", "kind": "secondary"}],
           "media": [
-            {
-              "type": "image",
-              "url": "https://kmag.co.uk/wp-content/uploads/2026/07/SIMLP001-WEB-SQUARE-e1783970452952.jpg"
-            },
-            {
-              "type": "soundcloud",
-              "url": "https://soundcloud.com/kmaguk/keep-it-running/s-yKcrK3EeNu4"
-            }
+            {"type": "image", "url": "https://kmag.co.uk/wp-content/uploads/2026/07/SIMLP001-WEB-SQUARE-e1783970452952.jpg"},
+            {"type": "spotify", "url": "https://open.spotify.com/album/2hu08BPeB4DQVFNC8leHUN"}
           ],
           "tags": ["Unknown Face", "Soul In Motion", "debut album", "deep DnB"]
         },
@@ -179,147 +198,114 @@
           "category": "dnb_scene",
           "competitors": [],
           "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "UKF",
-              "url": "https://ukf.com/listen/releases/the-rush/",
-              "kind": "primary"
-            }
-          ],
+          "sources": [{"name": "UKF", "url": "https://ukf.com/listen/releases/the-rush/", "kind": "primary"}],
           "media": [
-            {
-              "type": "image",
-              "url": "https://ukf.com/wp-content/uploads/2026/07/TSugah-TheRush-Artwork-v3-2.jpg"
-            },
-            {
-              "type": "spotify",
-              "url": "https://open.spotify.com/album/2yoOGh1V1KSZuRw3AUqZNL"
-            }
+            {"type": "image", "url": "https://ukf.com/wp-content/uploads/2026/07/TSugah-TheRush-Artwork-v3-2.jpg"},
+            {"type": "spotify", "url": "https://open.spotify.com/album/2yoOGh1V1KSZuRw3AUqZNL"}
           ],
           "tags": ["T & Sugah", "UKF", "dancefloor", "label move"]
+        },
+        {
+          "id": "dimension-system-of-a-down-superfan",
+          "published_at": "2026-07-14",
+          "event_start": null,
+          "event_end": null,
+          "title": "Dimension jako superfanoušek System of a Down",
+          "summary": [
+            "Příspěvek účtu daddy_dimension pracuje s nadsázkou a představuje producenta Dimension jako velkého fanouška System of a Down. V popisku jsou přímo označeny profily interpreta i kapely.",
+            "Video používá původní zvuk a další kontext k zachycené situaci neuvádí. Jde především o odlehčený obsah kolem osobnosti interpreta, nikoli o oznámení nové hudby nebo spolupráce."
+          ],
+          "why_it_matters": "Příspěvek ukazuje, jak fanouškovské účty pracují s osobností velkých DnB jmen a s jejich vazbou na hudbu mimo vlastní žánr.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [{"name": "Instagram — daddy_dimension", "url": "https://www.instagram.com/p/Dazwg6EtSXe/", "kind": "community"}],
+          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Dazwg6EtSXe/"}],
+          "tags": ["Dimension", "System of a Down", "fan content", "social media"]
+        },
+        {
+          "id": "uk-full-album-listening-poll-2026",
+          "published_at": "2026-07-16",
+          "event_start": null,
+          "event_end": null,
+          "title": "41 procent Britů rok neposlouchalo celé album",
+          "summary": [
+            "Podle průzkumu společnosti National Rail si 41 procent lidí ve Spojeném království déle než rok neposlechlo celé album. Dalších osm procent z celkem dvou tisíc respondentů uvedlo, že album od začátku do konce neposlechli nikdy.",
+            "Sedmdesát procent dotázaných poslouchá stejné skladby opakovaně a oblíbené písně si během dvanácti měsíců pustili v průměru 343krát. Více než třetina zůstává u jediného playlistu a 27 procent nemá zájem rozšiřovat svůj hudební výběr.",
+            "Výsledky vznikly jako součást kampaně Track Reset, kterou podpořil Pete Tong. Jde o zadavatelský průzkum spojený s kampaní, nikoli o nezávislou akademickou studii."
+          ],
+          "why_it_matters": "Průzkum popisuje prostředí, ve kterém alba soutěží s opakovaným poslechem známých skladeb a úzkým výběrem playlistů.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [{"name": "Mixmag", "url": "https://mixmag.net/read/40-percent-people-uk-have-not-listened-to-full-album-year-according-to-new-poll-news", "kind": "secondary"}],
+          "media": [{"type": "image", "url": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/headphones_2026-07-16-111522_zizg.jpg?fit=cover&s=o-tJCZr5QVxqyJnjGeYc1x6FM1trSpeTFfwUZDT6YNE&width=660"}],
+          "tags": ["albums", "listening habits", "streaming", "United Kingdom", "survey"]
         }
       ]
     },
-    {
-      "id": "cz_sk",
-      "title": "ČR a Slovensko",
-      "items": []
-    },
+    {"id": "cz_sk", "title": "ČR a Slovensko", "items": []},
     {
       "id": "audience_sentiment",
       "title": "Sentiment publika",
       "items": [
         {
-          "id": "reddit-imanu-buunshin-tcp-set-response",
-          "published_at": "2026-07-19",
+          "id": "let-it-roll-2026-mainstage-reactions",
+          "published_at": "2026-07-16",
           "event_start": null,
           "event_end": null,
-          "title": "Společný set IMANU, Buunshin a The Caracal Project otevírá debatu o left-field DnB",
+          "title": "Mainstage Let It Roll 2026 rozdělila komentující",
           "summary": [
-            "Vlákno na r/DnB upozornilo na společný set IMANU, Buunshin a The Caracal Project. Autor vyzdvihl plynulé přechody a to, jak přirozeně se propojují produkční rukopisy všech tří interpretů.",
-            "Diskuse se rychle rozšířila k doporučením dalších jmen z experimentálního a left-field drum & bassu, zejména z okruhu labelu DIVIDID. Část komentářů současně řešila, jak náročnější halftime a technický DnB funguje před širším klubovým publikem.",
-            "Téma je zajímavé hlavně jako reakce na kurátorovaný b2b formát: publikum nevnímá spojení tří producentů jen jako atrakci v lineupu, ale jako samostatný hudební celek."
+            "Video z přípravy mainstage Let It Roll 2026 u jezera Most vyvolalo smíšené reakce. Část komentujících chválila rozsah stavby, další zpochybňovali její velikost ve srovnání s ročníky 2016, 2017 a 2018.",
+            "V diskusi zazněla tvrzení, že je současná konstrukce menší než v roce 2017, že ji projektuje nizozemská firma a že se stage z finančních důvodů postupně zmenšuje. Příspěvek tato tvrzení nedokládá, a proto je nelze považovat za potvrzené informace.",
+            "Jeden z komentujících navrhl zachovat základ jedné scény a každý rok jej rozšiřovat po vzoru Defqon.1. Celkový sentiment zůstává rozdělený mezi nadšení z nové stavby a nostalgické srovnávání se staršími ročníky."
           ],
-          "why_it_matters": "Diskuse ukazuje zájem o kurátorované b2b sety a současně popisuje hranici mezi experimentálním zvukem a očekáváním širšího publika.",
+          "why_it_matters": "Debata ukazuje, že část publika hodnotí novou produkci především podle srovnání s historickými ročníky a vnímané velikosti hlavní scény.",
           "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "global",
+          "region": "cz_sk",
           "category": "audience_sentiment",
           "competitors": [],
           "confidence": "probable",
-          "sources": [
-            {
-              "name": "Reddit r/DnB",
-              "url": "https://www.reddit.com/r/DnB/comments/1qq12cf/imanu_b2b_buunshin_b2b_tcp_holy_shit/",
-              "kind": "community"
-            }
-          ],
-          "media": [
-            {
-              "type": "youtube",
-              "url": "https://www.youtube.com/watch?v=v-DUS-9Yj1c"
-            }
-          ],
-          "tags": ["Reddit", "IMANU", "Buunshin", "The Caracal Project", "left-field DnB"]
+          "sources": [{"name": "Instagram — komentáře k mainstage Let It Roll", "url": "https://www.instagram.com/p/Da-a_p_MLl3/", "kind": "community"}],
+          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Da-a_p_MLl3/"}],
+          "tags": ["Let It Roll", "mainstage", "stage design", "audience sentiment"]
         },
         {
-          "id": "reddit-pendulum-catalogue-discussion",
-          "published_at": "2026-07-19",
+          "id": "pendulum-wargasm-festival-reactions",
+          "published_at": "2026-07-17",
           "event_start": null,
           "event_end": null,
-          "title": "Fanoušci Pendulum se přou o nejlepší období kapely",
+          "title": "Pendulum a Wargasm rozpoutali festivalovou bouři",
           "summary": [
-            "Video ve formátu This or That na r/DnB porovnávalo známé skladby Pendulum a vyvolalo rozsáhlou debatu o jejich katalogu. Nejčastěji se vracela jména skladeb Hold Your Colour, Still Grey, Vault, Another Planet a Watercolour.",
-            "Část diskutujících dává přednost ranému klubovému zvuku, jiní vyzdvihují pozdější spojení drum & bassu s rockovou kapelou. Rozdělení dobře ukazuje, že Pendulum oslovují několik generací i různé části DnB publika současně.",
-            "Nejde o novou aktivitu kapely, ale o výraznou komunitní diskusi nad tím, které období její tvorby dnes stále funguje nejsilněji."
+            "Instagramový příspěvek zachytil společné festivalové vystoupení Pendulum a Wargasm. Hostování Wargasm bylo podle jedné z reakcí nečekaným momentem setu.",
+            "Komentující označovali vystoupení za ikonické, masivní a elektrizující a řadili je mezi hlavní momenty festivalového dne. Vedle převážně nadšených reakcí se objevila také jednotlivá kritika slabšího moshingu v publiku.",
+            "Celkový sentiment komentářů byl výrazně pozitivní. Fotografie z vystoupení pořídil Jaden Tiger Moss, jehož profil je označen přímo v popisku."
           ],
-          "why_it_matters": "Debata ukazuje šíři publika Pendulum a rozdílná očekávání fanoušků od klubového, festivalového a kapelního pojetí drum & bassu.",
+          "why_it_matters": "Reakce ukazují, že neohlášené crossoverové hostování může vytvořit jeden z nejdiskutovanějších momentů festivalového setu.",
           "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "global",
+          "region": "europe",
           "category": "audience_sentiment",
           "competitors": [],
           "confidence": "probable",
-          "sources": [
-            {
-              "name": "Reddit r/DnB",
-              "url": "https://www.reddit.com/r/DnB/comments/1qq8pp0/this_or_that_pendulum_edition/",
-              "kind": "community"
-            }
-          ],
-          "media": [],
-          "tags": ["Reddit", "Pendulum", "catalogue", "community discussion"]
+          "sources": [{"name": "Instagram — Pendulum a Wargasm", "url": "https://www.instagram.com/p/Da3BCf7MoMr/", "kind": "community"}],
+          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Da3BCf7MoMr/"}],
+          "tags": ["Pendulum", "Wargasm", "festival performance", "audience sentiment"]
         }
       ]
     },
-    {
-      "id": "strategic_releases",
-      "title": "Strategické releasy",
-      "items": [
-        {
-          "id": "hospital-records-forza-horizon-6-soundtrack",
-          "published_at": "2026-07-15",
-          "event_start": "2026-07-24",
-          "event_end": null,
-          "title": "Hospital Records připravil pro Forza Horizon 6 vlastní DnB stanici",
-          "summary": [
-            "Hospital Records pokračuje ve spolupráci s herní sérií Forza Horizon a pro šestý díl sestavil vlastní stanici se 24 skladbami. Moderují ji spoluzakladatel labelu Chris Goss a Dynamite MC.",
-            "Výběr spojuje zavedená jména jako Metrik, S.P.Y, Logistics a Makoto s novějšími producenty TANTRON, Sudley, Formula nebo Nixxy Rain. Soundtrack vyjde 24. července digitálně, na CD a na trojvinylu.",
-            "Hospital uvádí, že kvůli vysoké poptávce posunul expedici fyzických nosičů na konec srpna. Jde už o páté propojení labelu se sérií Forza."
-          ],
-          "why_it_matters": "Partnerství propojuje label s velkou herní značkou a dostává kurátorovaný průřez DnB k publiku mimo běžné festivalové a streamingové kanály.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "global",
-          "category": "strategic_release",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "Hospital Records",
-              "url": "https://www.hospitalrecords.com/products/forza-horizon-6-hospital-records",
-              "kind": "primary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://www.hospitalrecords.com/cdn/shop/files/NHS594VA-ForzaHorizon6HospitalRecords.jpg?v=1781625075"
-            }
-          ],
-          "tags": ["Hospital Records", "Forza Horizon 6", "gaming", "soundtrack", "cross-platform"]
-        }
-      ]
-    },
-    {
-      "id": "lir_actions",
-      "title": "Doporučené kroky pro LIR",
-      "items": []
-    }
+    {"id": "strategic_releases", "title": "Strategické releasy", "items": []},
+    {"id": "lir_actions", "title": "Doporučené kroky pro LIR", "items": []}
   ],
   "sources_scanned": [
     "AUTOMATION.md",
     "news/index.json",
     "Poslední čtyři briefingy",
     "Reddit r/DnB: hot + top/week",
-    "Rampage",
+    "Instagram: interpreti, festivaly a veřejné komentáře",
     "Festival Insights",
     "IQ Magazine",
     "Access All Areas",
@@ -332,7 +318,6 @@
     "Mixmag",
     "Resident Advisor",
     "Kmag",
-    "Hospital Records",
     "VISION"
   ]
 }
