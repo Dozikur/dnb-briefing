@@ -189,10 +189,14 @@ U každé vybrané zprávy aktivně zkontrolovat oficiální Instagram interpret
 
 - Čeština.
 - Tón je neutrální, stručný a informační. Text neoslovuje LIR, nepřikazuje další kroky a nevystupuje jako poradenský dokument.
+- Jazyk a rytmus textu mají navazovat na redakční podobu týdnů 27 a 28: přirozený novinový titulek, nejdůležitější informace v první větě a konkrétní kontext v dalších dvou až čtyřech větách.
+- Nepoužívat manažerské obraty jako „převádí značku do modelu“, „strategický signál“, „potvrzuje pozici“, „distribuční uzel“, „pro LIR je klíčové“ nebo „doporučený krok“, pokud je lze nahradit konkrétním popisem toho, co se skutečně stalo.
+- Každý odstavec má přinést novou informaci. Neopakovat stejný závěr v titulku, první větě a poslední větě pouze jinými slovy.
+- U komunitních zpráv uvést konkrétní téma debaty a hlavní rozdílné názory. Nepopisovat samotnou viditelnost příspěvku jako trend bez dalšího důkazu.
 - Celkem nejvýše 14 obsahových položek mimo sekci `lir_actions`.
 - Položky se řadí podle významu, ale nepoužívají štítky TOP, MID ani LOW.
 - Titulek jasně a věcně popisuje novinku; nepoužívá interní ani poradenské formulace.
-- `summary` obsahuje 3 až 5 informačních vět rozdělených do nejvýše 4 krátkých odstavců: co se stalo, konkrétní důkaz nebo měřítko a nutný kontext.
+- `summary` obsahuje 3 až 5 informačních vět rozdělených do 2 až 3 krátkých odstavců: co se stalo, konkrétní důkaz nebo měřítko a nutný kontext.
 - `why_it_matters`, `recommended_action` a `executive_summary` zůstávají pouze jako strojová pole kvůli kompatibilitě schématu a na webu se nezobrazují.
 - `recommended_action` má neutrální hodnotu `Bez akce, pouze informační přehled`, pokud není potřeba interní technická poznámka pro automatizaci.
 - `executive_summary` obsahuje 3 až 5 věcných informačních bodů bez doporučení.
