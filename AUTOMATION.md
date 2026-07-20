@@ -15,7 +15,7 @@ Briefing je čistě informační týdenní přehled drum and bass scény, komuni
 
 Scénová zpráva nemusí mít okamžitý provozní dopad na LIR. Musí ale pomáhat chápat, kteří interpreti a labely rostou, jak se mění zvuk a publikum, jaké nové projekty nebo formáty vznikají a co se v komunitě skutečně řeší. U položek z `dnb_scene`, `audience_sentiment` a `strategic_releases` se dopad posuzuje také z pohledu bookingu, dramaturgie, labelu, obsahu a dlouhodobého vývoje scény.
 
-Běžný samostatný release se nezařazuje automaticky. Výběr má zachytit nejdůležitější alba, EP, spolupráce, návraty, labelové přesuny a kampaně, které ukazují posun interpreta, labelu nebo subžánru. Festivalová témata nesmějí vytlačit povinné pokrytí DnB scény a Redditu.
+Běžný samostatný release se nezařazuje automaticky. Výběr má zachytit nejdůležitější alba, EP, spolupráce, návraty, labelové přesuny a kampaně, které ukazují posun interpreta, labelu nebo subžánru. Festivalová témata nesmějí vytlačit pokrytí DnB scény a aktuálního komunitního sentimentu.
 
 ## Poučení z historických briefingů
 
@@ -35,7 +35,7 @@ Před každým během přečíst nejméně čtyři poslední briefingy. Novou po
 6. `strategic_releases` — Strategické releasy
 7. `lir_actions` — Doporučené kroky pro LIR
 
-Sekce `competition`, `cz_sk` a `strategic_releases` mohou zůstat prázdné, pokud nejsou doložené relevantní změny. Od týdne 29 roku 2026 nesmějí být prázdné sekce `dnb_scene` a `audience_sentiment`. Nedostupnost povinného zdroje je chyba sběru a důvod běh zastavit, nikoli důvod publikovat degradovaný briefing.
+Sekce `competition`, `cz_sk`, `audience_sentiment` a `strategic_releases` mohou zůstat prázdné, pokud nejsou doložené relevantní změny. Od týdne 29 roku 2026 nesmí být prázdná sekce `dnb_scene`. Nedostupnost povinného zdroje je chyba sběru a důvod běh zastavit, nikoli důvod publikovat degradovaný briefing.
 
 ## Sledovaná konkurence
 
@@ -106,7 +106,7 @@ Pouhá vazba na festival není podmínkou. `why_it_matters` může vysvětlovat 
 
 Při každém běhu povinně projít veřejné přehledy Redditu `r/DnB` v režimech Hot a Top za poslední týden. Doplnit kontrolu nových vláken z reportovacího období, aby pozdě publikované diskuse nebyly znevýhodněné.
 
-Z kandidátů vybrat nejméně dvě nejsilnější diskuse podle kombinace:
+Z kandidátů vybrat pouze aktuální kvalifikované diskuse podle kombinace:
 
 - počtu a kvality komentářů;
 - skóre a relativní viditelnosti vůči ostatním vláknům daného týdne;
@@ -115,7 +115,7 @@ Z kandidátů vybrat nejméně dvě nejsilnější diskuse podle kombinace:
 
 Vyřadit prosté identifikace tracku, izolované meme, vlastní promo bez diskuse, duplicitní příspěvky a otázky s několika povrchními odpověďmi. Každá zařazená položka musí odkázat přímo na vlákno, uvést stav skóre a počtu komentářů v době sběru a shrnout hlavní názorové proudy. Reddit dokládá existenci a intenzitu debaty, nikoli tvrdá fakta.
 
-Pokud nelze získat alespoň dvě kvalifikované diskuse nebo je Reddit nedostupný, běh se nesmí publikovat. Výstup musí vrátit chybu pokrytí.
+Pokud v reportovacím období není kvalifikovaná diskuse, nezařazovat starší vlákna jako výplň. Nedostupnost Redditu zaznamenat jako chybu sběru; samotná absence vhodné aktuální diskuse neblokuje publikaci.
 
 ## Výběrový filtr
 
@@ -202,12 +202,12 @@ U každé vybrané zprávy aktivně zkontrolovat oficiální Instagram interpret
 - `executive_summary` obsahuje 3 až 5 věcných informačních bodů bez doporučení.
 - `competition` obsahuje zpravidla 2 až 5 položek.
 - `festival_industry` obsahuje zpravidla 1 až 4 položky.
-- `dnb_scene` obsahuje 2 až 4 nejsilnější scénové položky.
+- `dnb_scene` obsahuje 2 až 6 nejsilnějších scénových položek.
 - `cz_sk` obsahuje 0 až 3 položky podle skutečné relevance.
-- `audience_sentiment` obsahuje 2 až 3 položky; nejméně dvě musí vycházet z kvalifikovaných diskusí na `r/DnB`.
+- `audience_sentiment` obsahuje 0 až 3 aktuální položky z Redditu, Instagramu nebo jiných veřejných diskusí; starší obsah se nesmí použít jen pro naplnění počtu.
 - `strategic_releases` obsahuje 0 až 2 položky.
 - `lir_actions` zůstává prázdná; web tuto technickou sekci nezobrazuje.
-- Od týdne 29 roku 2026 se vynucuje minimální pokrytí `dnb_scene` a `r/DnB`. Nedostatečný sběr je chyba běhu, ne omluva pro prázdnou sekci.
+- Od týdne 29 roku 2026 se vynucuje minimální pokrytí `dnb_scene` a provedení týdenního sweepu `r/DnB`. Zařazují se však pouze diskuse zveřejněné v reportovacím období.
 - Žádná výplň, obecné promo formulace ani duplicity z předchozího týdne bez nové informace.
 
 ## Publikační postup
@@ -216,7 +216,7 @@ U každé vybrané zprávy aktivně zkontrolovat oficiální Instagram interpret
 2. Vytvořit `news/YYYY-week_N.json` ve schématu verze 2. Číslo týdne odpovídá zpracovanému období, nikoli dni spuštění.
 3. Přidat nový záznam na začátek `news/index.json`.
 4. Zkontrolovat JSON, duplicity, data, odkazy a všechna povinná pole.
-5. Provést kontrolu pokrytí: nejméně 2 položky v `dnb_scene`, nejméně 2 přímé odkazy na kvalifikované diskuse z `r/DnB` v `audience_sentiment` a záznam `Reddit r/DnB: hot + top/week` v `sources_scanned`.
+5. Provést kontrolu pokrytí: nejméně 2 položky v `dnb_scene`, všechny zařazené komunitní diskuse z reportovacího období a záznam `Reddit r/DnB: hot + top/week` v `sources_scanned`.
 6. Vytvořit větev `automation/briefing-YYYY-week-N`.
 7. Zapsat pouze nový briefing a manifest.
 8. Otevřít nedraftový pull request s názvem `Add DnB briefing YYYY week N`.
