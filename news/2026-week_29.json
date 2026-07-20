@@ -5,15 +5,15 @@
     "week": 29,
     "window_start": "2026-07-13",
     "window_end": "2026-07-19",
-    "generated_at": "2026-07-20T06:30:02+02:00"
+    "generated_at": "2026-07-20T12:35:00+02:00"
   },
-  "headline": "Liquicity míří k vyprodání, Tomorrowland zakázal pyrotechniku a Pohoda hlásí rekordní předprodej",
+  "headline": "Chase & Status debutovali na Tomorrowlandu a příští víkend zamíří na Mainstage",
   "executive_summary": [
+    "Chase & Status odehráli svůj první set na Tomorrowlandu a 26. července se na festival vrátí s debutem na Mainstage.",
     "Liquicity Festival vydal poslední varování před vyprodáním poté, co počet zbývajících víkendových vstupenek klesl pod sto.",
     "Tomorrowland nesměl během prvního víkendu použít ohňostroje ani pódiovou pyrotechniku kvůli zvýšenému požárnímu riziku.",
     "Pohoda po vyprodaném jubilejním ročníku prodala během pěti dnů přes deset tisíc vstupenek na rok 2027.",
-    "Hedex oznámil nový koncertní koncept Nu Era Laser + Stage Show s premiérou na festivalu MHITR.",
-    "Protest proti vlastníkovi Boiler Room narušil dva programové dny v New Yorku a otevřel další spor o festivalové značky ovládané investiční skupinou KKR."
+    "Hedex oznámil nový koncertní koncept Nu Era Laser + Stage Show s premiérou na festivalu MHITR."
   ],
   "sections": [
     {
@@ -37,7 +37,10 @@
           "competitors": ["Liquicity Festival"],
           "confidence": "confirmed",
           "sources": [{"name": "Liquicity Festival", "url": "https://www.instagram.com/p/Da5fKfDDK-V/?img_index=5", "kind": "primary"}],
-          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Da5fKfDDK-V/"}],
+          "media": [
+            {"type": "image", "url": "https://www.instagram.com/p/Da5fKfDDK-V/media/?size=l"},
+            {"type": "instagram", "url": "https://www.instagram.com/p/Da5fKfDDK-V/"}
+          ],
           "tags": ["Liquicity", "ticket sales", "sellout", "camping"]
         }
       ]
@@ -46,30 +49,6 @@
       "id": "festival_industry",
       "title": "Festivalový průmysl",
       "items": [
-        {
-          "id": "heritage-live-cancels-2026-series",
-          "published_at": "2026-07-13",
-          "event_start": null,
-          "event_end": null,
-          "title": "Heritage Live ruší jedenáct koncertních dnů po propadu financování",
-          "summary": [
-            "Britský promotér Heritage Live zrušil celý letní program na Englefield Estate, Audley End Estate a Sandringham Estate. Na jedenácti koncertních dnech měli vystoupit mimo jiné Janet Jackson, Christina Aguilera, Eric Clapton, Lionel Richie, Faithless a The Streets.",
-            "Pořadatel uvedl, že část programu prodávala výrazně méně vstupenek než obvykle a připravovaný investiční a kapitálový balíček selhal na poslední chvíli. Pokračovat bez jistoty úhrady nákladů dodavatelům, umělcům a štábům označil za nezodpovědné.",
-            "Zrušení přišlo méně než dva týdny před prvním termínem. Oficiální prodejci mají návštěvníkům vrátit vstupné."
-          ],
-          "why_it_matters": "Případ spojuje tři současná rizika nezávislých promotérů: slabší předprodej, rostoucí náklady a nedostatek provozního kapitálu.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "europe",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {"name": "Englefield Estate", "url": "https://www.englefieldestate.co.uk/whats-on/heritage-live-summer-concerts-cancelled", "kind": "primary"},
-            {"name": "Pollstar", "url": "https://news.pollstar.com/2026/07/15/uk-concert-series-hertiage-live-canceled-over-high-costs-low-ticket-sales/", "kind": "secondary"}
-          ],
-          "media": [{"type": "image", "url": "https://static.pollstar.com/wp-content/uploads/2024/11/GettyImages-1640877079-1024x579.jpg"}],
-          "tags": ["festival cancellation", "ticket sales", "financing", "United Kingdom", "refunds"]
-        },
         {
           "id": "tomorrowland-pyrotechnics-ban-weekend-one",
           "published_at": "2026-07-15",
@@ -90,27 +69,6 @@
           "sources": [{"name": "DJ Mag", "url": "https://djmag.com/news/tomorrowland-2026-fireworks-and-pyrotechnics-banned-weekend-one-due-fire-risk", "kind": "secondary"}],
           "media": [{"type": "image", "url": "https://djmag.com/sites/default/files/styles/djm_23_961x540/public/2026-07/Screenshot%202026-07-15%20at%2013.12.07.png.webp?itok=FZiZhVb4"}],
           "tags": ["Tomorrowland", "pyrotechnics", "fire risk", "weather", "safety"]
-        },
-        {
-          "id": "boiler-room-new-york-anti-kkr-protest",
-          "published_at": "2026-07-16",
-          "event_start": "2026-07-10",
-          "event_end": "2026-07-11",
-          "title": "Protest proti KKR narušil Boiler Room v New Yorku",
-          "summary": [
-            "Dva programové dny Boiler Room v brooklynském prostoru Under The K Bridge narušili demonstranti spojení s hnutím Boycott Room. Protest mířil proti vlastníkovi značky Superstruct Entertainment a jeho majiteli, investiční společnosti KKR.",
-            "Část aktivistů rozdávala před vstupem letáky, další skupina uvnitř uspořádala hromadný protest vleže. Následující den jeden z protestujících vstoupil na pódium, odpojil techniku a následně jej odvedla ochranka.",
-            "Boiler Room uznal právo na pokojný protest a uvedl, že chování jednoho návštěvníka vůči demonstrantovi nemá na jeho akcích místo. Protestní skupiny současně uspořádaly alternativní rave v Queensu."
-          ],
-          "why_it_matters": "Spor ukazuje reputační riziko, které se může přenášet z vlastníka na jednotlivé festivalové a hudební značky skupiny Superstruct.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "global",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [{"name": "DJ Mag", "url": "https://djmag.com/news/boiler-room-new-york-event-disrupted-anti-kkr-protest-activists-allege-assault", "kind": "secondary"}],
-          "media": [{"type": "image", "url": "https://djmag.com/sites/default/files/styles/djm_23_961x540/public/2026-07/Screenshot%202026-07-16%20at%2014.30.51.png.webp?itok=AR-jR_oe"}],
-          "tags": ["Boiler Room", "Superstruct", "KKR", "protest", "reputation"]
         },
         {
           "id": "pohoda-record-presale-2027",
@@ -140,6 +98,33 @@
       "title": "DnB scéna",
       "items": [
         {
+          "id": "chase-status-tomorrowland-debut-2026",
+          "published_at": "2026-07-20",
+          "event_start": "2026-07-19",
+          "event_end": null,
+          "title": "Chase & Status debutovali na Tomorrowlandu",
+          "summary": [
+            "Chase & Status odehráli během prvního víkendu Tomorrowlandu 2026 DJ set na Freedom stage. Oficiální program je zařadil na neděli 19. července od 20:00 a zveřejněné záběry zachycují silné reakce publika během jejich drum & bassového setu.",
+            "Instagramový příspěvek označuje vystoupení za premiéru dua na Tomorrowlandu a vyzdvihuje množství nevydaných skladeb a neobvyklých mixů. Hodnocení setu jako jednoho z nejlepších vystoupení dvojice je názorem autora příspěvku, nikoli ověřeným faktem.",
+            "Chase & Status se na festival vrátí v neděli 26. července s DJ setem na Mainstage. Tomorrowland je řadí mezi interprety, kteří tam letos absolvují svůj debut, takže během jednoho ročníku vystoupí na Freedom stage i hlavním pódiu."
+          ],
+          "why_it_matters": "Dvě vystoupení během jednoho ročníku ukazují výrazný posun drum & bassu do hlavního programu jednoho z největších světových elektronických festivalů.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Instagram", "url": "https://www.instagram.com/p/DbAszJlk4Rg/?img_index=1", "kind": "community"},
+            {"name": "Tomorrowland", "url": "https://tomorrowlandbelgium.press.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium", "kind": "primary"}
+          ],
+          "media": [
+            {"type": "image", "url": "https://www.instagram.com/p/DbAszJlk4Rg/media/?size=l"},
+            {"type": "instagram", "url": "https://www.instagram.com/p/DbAszJlk4Rg/"}
+          ],
+          "tags": ["Chase & Status", "Tomorrowland", "Freedom stage", "Mainstage", "DnB crossover"]
+        },
+        {
           "id": "hedex-nu-era-laser-stage-show",
           "published_at": "2026-07-15",
           "event_start": null,
@@ -156,7 +141,10 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [{"name": "Hedex", "url": "https://www.instagram.com/p/Daz6VdxqRcE/", "kind": "primary"}],
-          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Daz6VdxqRcE/"}],
+          "media": [
+            {"type": "image", "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb8KnnBLPBak1g9e7QJSWIJpjc_yaYf_LVlTb3C1REl1jKIN7gDrIBl74&s=10"},
+            {"type": "instagram", "url": "https://www.instagram.com/p/Daz6VdxqRcE/"}
+          ],
           "tags": ["Hedex", "live show", "lasers", "stage production", "MHITR"]
         },
         {
@@ -201,7 +189,7 @@
           "sources": [{"name": "UKF", "url": "https://ukf.com/listen/releases/the-rush/", "kind": "primary"}],
           "media": [
             {"type": "image", "url": "https://ukf.com/wp-content/uploads/2026/07/TSugah-TheRush-Artwork-v3-2.jpg"},
-            {"type": "spotify", "url": "https://open.spotify.com/album/2yoOGh1V1KSZuRw3AUqZNL"}
+            {"type": "spotify", "url": "https://open.spotify.com/track/78jhWm8GMFK5lxqWdXz0u5"}
           ],
           "tags": ["T & Sugah", "UKF", "dancefloor", "label move"]
         },
@@ -292,7 +280,10 @@
           "competitors": [],
           "confidence": "probable",
           "sources": [{"name": "Instagram — Pendulum a Wargasm", "url": "https://www.instagram.com/p/Da3BCf7MoMr/", "kind": "community"}],
-          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Da3BCf7MoMr/"}],
+          "media": [
+            {"type": "image", "url": "https://www.instagram.com/p/Da3BCf7MoMr/media/?size=l"},
+            {"type": "instagram", "url": "https://www.instagram.com/p/Da3BCf7MoMr/"}
+          ],
           "tags": ["Pendulum", "Wargasm", "festival performance", "audience sentiment"]
         }
       ]
