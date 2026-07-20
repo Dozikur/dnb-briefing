@@ -38,7 +38,7 @@
           "confidence": "confirmed",
           "sources": [{"name": "Liquicity Festival", "url": "https://www.instagram.com/p/Da5fKfDDK-V/?img_index=5", "kind": "primary"}],
           "media": [
-            {"type": "image", "url": "https://www.instagram.com/p/Da5fKfDDK-V/media/?size=l"},
+            {"type": "image", "url": "https://imgproxy.ra.co/_/quality:66/aHR0cHM6Ly9pbWFnZXMucmEuY28vNTNlY2NhODMxYmZiMDQ5M2M1MTY0ZmE1OGM2MmI0MGVmMTdiMjIwZi5qcGc="},
             {"type": "instagram", "url": "https://www.instagram.com/p/Da5fKfDDK-V/"}
           ],
           "tags": ["Liquicity", "ticket sales", "sellout", "camping"]
@@ -88,7 +88,10 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [{"name": "Pohoda Festival", "url": "https://www.instagram.com/p/Dazxsh7IEe0/", "kind": "primary"}],
-          "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Dazxsh7IEe0/"}],
+          "media": [
+            {"type": "image", "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUfNP2yYieWQPsxaOBRfamcJM-o9qtpFfoZHHnOo2tXB80QB9Q8ftpmoMN&s=10"},
+            {"type": "instagram", "url": "https://www.instagram.com/p/Dazxsh7IEe0/"}
+          ],
           "tags": ["Pohoda", "presale", "sellout", "capacity", "Slovakia"]
         }
       ]
@@ -119,7 +122,7 @@
             {"name": "Tomorrowland", "url": "https://tomorrowlandbelgium.press.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium", "kind": "primary"}
           ],
           "media": [
-            {"type": "image", "url": "https://www.instagram.com/p/DbAszJlk4Rg/media/?size=l"},
+            {"type": "image", "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFhAOfXq5mXt9gxwU290vzmQU3ox-xBWUzXsJxYsHa7Roc_kgqMZIyv36T&s=10"},
             {"type": "instagram", "url": "https://www.instagram.com/p/DbAszJlk4Rg/"}
           ],
           "tags": ["Chase & Status", "Tomorrowland", "Freedom stage", "Mainstage", "DnB crossover"]
@@ -261,30 +264,6 @@
           "sources": [{"name": "Instagram — komentáře k mainstage Let It Roll", "url": "https://www.instagram.com/p/Da-a_p_MLl3/", "kind": "community"}],
           "media": [{"type": "instagram", "url": "https://www.instagram.com/p/Da-a_p_MLl3/"}],
           "tags": ["Let It Roll", "mainstage", "stage design", "audience sentiment"]
-        },
-        {
-          "id": "pendulum-wargasm-festival-reactions",
-          "published_at": "2026-07-16",
-          "event_start": null,
-          "event_end": null,
-          "title": "Pendulum a Wargasm rozpoutali festivalovou bouři",
-          "summary": [
-            "Instagramový příspěvek zachytil společné festivalové vystoupení Pendulum a Wargasm. Hostování Wargasm bylo podle jedné z reakcí nečekaným momentem setu.",
-            "Komentující označovali vystoupení za ikonické, masivní a elektrizující a řadili je mezi hlavní momenty festivalového dne. Vedle převážně nadšených reakcí se objevila také jednotlivá kritika slabšího moshingu v publiku.",
-            "Celkový sentiment komentářů byl výrazně pozitivní. Fotografie z vystoupení pořídil Jaden Tiger Moss, jehož profil je označen přímo v popisku."
-          ],
-          "why_it_matters": "Reakce ukazují, že neohlášené crossoverové hostování může vytvořit jeden z nejdiskutovanějších momentů festivalového setu.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "europe",
-          "category": "audience_sentiment",
-          "competitors": [],
-          "confidence": "probable",
-          "sources": [{"name": "Instagram — Pendulum a Wargasm", "url": "https://www.instagram.com/p/Da3BCf7MoMr/", "kind": "community"}],
-          "media": [
-            {"type": "image", "url": "https://www.instagram.com/p/Da3BCf7MoMr/media/?size=l"},
-            {"type": "instagram", "url": "https://www.instagram.com/p/Da3BCf7MoMr/"}
-          ],
-          "tags": ["Pendulum", "Wargasm", "festival performance", "audience sentiment"]
         }
       ]
     },
