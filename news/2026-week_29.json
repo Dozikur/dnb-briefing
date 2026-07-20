@@ -7,13 +7,13 @@
     "window_end": "2026-07-19",
     "generated_at": "2026-07-20T06:30:02+02:00"
   },
-  "headline": "Rampage míří do Austrálie a na Nový Zéland, Heritage Live ruší celou sezonu a Hospital Records rozšiřuje DnB ve Forza Horizon 6",
+  "headline": "Rampage vyráží do Austrálie a na Nový Zéland, Heritage Live ruší jedenáct koncertních dnů",
   "executive_summary": [
-    "Rampage zveřejnil srpnovou sérii pěti akcí v Austrálii a na Novém Zélandu, čímž převádí evropskou festivalovou značku do roadshow modelu na vzdáleném trhu.",
-    "Heritage Live 13. července zrušil jedenáct koncertních dnů na třech britských lokalitách kvůli výrazně slabším prodejům, nedokončenému financování a růstu nákladů.",
-    "Britský regulátor připravuje širší prověření trhu živé hudby a postavení Live Nation a Ticketmasteru, zejména v oblasti cenové transparentnosti a vertikální integrace.",
-    "Hospital Records pokračuje v partnerství s Forza Horizon: šestý díl dostane vlastní 24skladbovou DnB stanici a fyzický soundtrack.",
-    "Aktuální scénové signály zahrnují debutové album Unknown Face na Soul In Motion a nový singl T & Sugah vydaný přímo přes UKF."
+    "Rampage naplánoval pět srpnových zastávek v Austrálii a na Novém Zélandu a kombinuje přitom plný formát značky s menšími DnB a dubstep roadshows.",
+    "Heritage Live zrušil jedenáct koncertních dnů na třech britských panstvích po slabších prodejích a pádu připravovaného investičního balíčku.",
+    "Britský regulátor se chystá prověřit fungování trhu živé hudby a postavení společností Live Nation a Ticketmaster.",
+    "Ve scénické části týdne vyčnívá debutové album Unknown Face a nový singl T & Sugah na hlavní značce UKF.",
+    "Hospital Records připravil pro Forza Horizon 6 vlastní stanici a soundtrack se 24 skladbami."
   ],
   "sections": [
     {
@@ -25,21 +25,32 @@
           "published_at": "2026-07-18",
           "event_start": "2026-08-21",
           "event_end": "2026-08-29",
-          "title": "Rampage převádí festivalovou značku do pětidílné roadshow v Austrálii a na Novém Zélandu",
+          "title": "Rampage vyráží do Austrálie a na Nový Zéland s pěti zastávkami",
           "summary": [
-            "Rampage zveřejnil srpnovou sérii akcí v Brisbane, Perthu, Aucklandu, Sydney a Christchurchi. Program proběhne od 21. do 29. srpna.",
-            "Značka kombinuje plnohodnotné zastávky Rampage Australia s menšími formáty Rampage Roadshow a Dubstep Roadshow. Využívá tak jeden brand v několika produkčních měřítcích.",
-            "Tah ukazuje pokračující export evropských bassových značek na vzdálené trhy bez nutnosti stavět samostatný vícedenní festival."
+            "Rampage odehraje mezi 21. a 29. srpnem pět akcí v Brisbane, Perthu, Aucklandu, Sydney a Christchurchi. V Brisbane a Perthu představí plný formát Rampage Australia, další tři večery proběhnou jako menší roadshows.",
+            "Auckland dostane Rampage Roadshow, Sydney samostatnou dubstepovou zastávku a Christchurch DnB Roadshow. Jedna značka tak během devíti dnů otestuje pět měst a tři různé formáty bez stavby nového vícedenního festivalu.",
+            "Jde o konkrétní expanzi přímého konkurenta na nový trh a současně o ukázku, jak lze festivalovou značku rozšiřovat pomocí městské série."
           ],
-          "why_it_matters": "Roadshow model umožňuje testovat nové trhy, rozšiřovat dosah značky a využívat stejné bookingové i obsahové prvky ve více městech s nižším rizikem než u plného festivalu.",
+          "why_it_matters": "Rampage vstupuje na vzdálený trh pomocí škálovatelné série, která kombinuje plný brandový formát s menšími žánrovými roadshows.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "global",
           "category": "competition",
           "competitors": ["Rampage"],
           "confidence": "confirmed",
-          "sources": [{"name":"Rampage","url":"https://www.rampage.eu/news/rampage-lands-in-australia-new-zealand","kind":"primary"}],
-          "media": [],
-          "tags": ["Rampage","Australia","New Zealand","roadshow","market expansion"]
+          "sources": [
+            {
+              "name": "Rampage",
+              "url": "https://www.rampage.eu/news/rampage-lands-in-australia-new-zealand",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.rampage.eu/content/img/1712-40416-screenshot-2026-03-25-at-093640-1d8a0b7b502bf6e7.jpg"
+            }
+          ],
+          "tags": ["Rampage", "Australia", "New Zealand", "roadshow", "market expansion"]
         }
       ]
     },
@@ -52,45 +63,64 @@
           "published_at": "2026-07-13",
           "event_start": null,
           "event_end": null,
-          "title": "Heritage Live zrušil celou letní sérii kvůli slabým prodejům a nedokončenému financování",
+          "title": "Heritage Live ruší jedenáct koncertních dnů po propadu financování",
           "summary": [
-            "Britský promotér Heritage Live zrušil letní program na Sandringham Estate, Audley End Estate a Englefield Estate. Šlo o jedenáct koncertních dnů s interprety jako Janet Jackson, Christina Aguilera, Eric Clapton, Lionel Richie, Faithless a The Streets.",
-            "Pořadatel uvedl výrazně nižší než obvyklé prodeje vstupenek, obecnou finanční nejistotu a neúspěšné dokončení investičního a kapitálového balíčku.",
-            "Zrušení přišlo krátce před zahájením série. Vstupenky zakoupené přes oficiální prodejce mají být refundovány."
+            "Britský promotér Heritage Live zrušil celý letní program na Englefield Estate, Audley End Estate a Sandringham Estate. Na jedenácti koncertních dnech měli vystoupit mimo jiné Janet Jackson, Christina Aguilera, Eric Clapton, Lionel Richie, Faithless a The Streets.",
+            "Pořadatel uvedl, že část programu prodávala výrazně méně vstupenek než obvykle a připravovaný investiční a kapitálový balíček selhal na poslední chvíli. Pokračovat bez jistoty úhrady nákladů dodavatelům, umělcům a štábům označil za nezodpovědné.",
+            "Zrušení přišlo méně než dva týdny před prvním termínem. Oficiální prodejci mají návštěvníkům vrátit vstupné."
           ],
-          "why_it_matters": "Případ ukazuje, že ani silný lineup a etablované lokality nekompenzují slabé předprodeje, rostoucí náklady a nedostatek provozního kapitálu. Pozdní zrušení současně zvyšuje reputační a dodavatelské riziko.",
+          "why_it_matters": "Případ spojuje tři současná rizika nezávislých promotérů: slabší předprodej, rostoucí náklady a nedostatek provozního kapitálu.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "festival_industry",
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {"name":"The Irish News","url":"https://www.irishnews.com/entertainment/heritage-live-concerts-cancelled-amid-far-lower-than-average-ticket-sales-YNFT3NEURRP5JNAE2BTETVOTYY/","kind":"secondary"},
-            {"name":"The Standard","url":"https://www.standard.co.uk/culture/music/heritage-live-2026-sandringham-cancelled-b1289832.html","kind":"secondary"}
+            {
+              "name": "Englefield Estate",
+              "url": "https://www.englefieldestate.co.uk/whats-on/heritage-live-summer-concerts-cancelled",
+              "kind": "primary"
+            },
+            {
+              "name": "Pollstar",
+              "url": "https://news.pollstar.com/2026/07/15/uk-concert-series-hertiage-live-canceled-over-high-costs-low-ticket-sales/",
+              "kind": "secondary"
+            }
           ],
-          "media": [],
-          "tags": ["festival cancellation","ticket sales","financing","United Kingdom","refunds"]
+          "media": [
+            {
+              "type": "image",
+              "url": "https://static.pollstar.com/wp-content/uploads/2024/11/GettyImages-1640877079-1024x579.jpg"
+            }
+          ],
+          "tags": ["festival cancellation", "ticket sales", "financing", "United Kingdom", "refunds"]
         },
         {
           "id": "uk-cma-live-nation-market-scrutiny",
           "published_at": "2026-07-19",
           "event_start": null,
           "event_end": null,
-          "title": "Britský dohled nad živou hudbou se přesouvá k postavení Live Nation a Ticketmasteru",
+          "title": "Britský regulátor se chystá prověřit Live Nation a Ticketmaster",
           "summary": [
-            "Britský Competition and Markets Authority připravuje prověření trhu živé hudby po tlaku poslanců a spotřebitelů na ceny, transparentnost a koncentraci trhu.",
-            "Pozornost míří na vertikální propojení promotéra Live Nation, ticketingové platformy Ticketmaster a jejich vazby na festivaly a venue.",
-            "Debata zesílila po problémech s cenovou komunikací u velkých turné a po rostoucím počtu finančně ohrožených nezávislých akcí."
+            "Britský Competition and Markets Authority podle deníku The Times připravuje prověření trhu živé hudby. Pozornost se má soustředit na postavení Live Nation, vlastnictví Ticketmasteru a vazby skupiny na promotéry, festivaly a koncertní haly.",
+            "Debata se týká zejména cenové transparentnosti, dynamického pricingu a toho, zda vertikální propojení jednotlivých částí trhu omezuje konkurenci. Téma zesílilo po výhradách poslanců a spotřebitelů k prodeji vstupenek na velká turné.",
+            "Vyšetřování zatím nebylo uzavřeno a nejsou známá konkrétní opatření. Pro evropský live sektor je však podstatné už samotné otevření otázky pravidel pro dominantního promotéra a ticketingovou platformu."
           ],
-          "why_it_matters": "Případné zásahy do cenové transparentnosti, dynamického pricingu nebo vertikální integrace mohou změnit ticketingové standardy a vyjednávací podmínky v evropském live sektoru.",
+          "why_it_matters": "Případné změny pravidel mohou ovlivnit cenovou transparentnost, dynamické ceny a vyjednávací podmínky ticketingových platforem v Evropě.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "festival_industry",
           "competitors": [],
           "confidence": "probable",
-          "sources": [{"name":"The Times","url":"https://www.thetimes.com/business/companies-markets/article/ticketing-live-nation-investigation-g26kwpjlm","kind":"secondary"}],
+          "sources": [
+            {
+              "name": "The Times",
+              "url": "https://www.thetimes.com/business/companies-markets/article/ticketing-live-nation-investigation-g26kwpjlm",
+              "kind": "secondary"
+            }
+          ],
           "media": [],
-          "tags": ["Live Nation","Ticketmaster","CMA","ticketing","regulation"]
+          "tags": ["Live Nation", "Ticketmaster", "CMA", "ticketing", "regulation"]
         }
       ]
     },
@@ -103,122 +133,186 @@
           "published_at": "2026-07-13",
           "event_start": null,
           "event_end": null,
-          "title": "Unknown Face debutuje albem Keep It Running na Soul In Motion",
+          "title": "Unknown Face vydává debutové album Keep It Running",
           "summary": [
-            "Kmag 13. července představil debutové album Unknown Face Keep It Running vydané na Soul In Motion.",
-            "Projekt je profilován jako hlubší a experimentálněji orientovaný drum & bass a pokračuje v kurátorském směru labelu spojeného s Need For Mirrors.",
-            "Debut na etablovaném nezávislém labelu posouvá Unknown Face z jednotlivých releasů do plnohodnotného albového formátu."
+            "Unknown Face vydal na Soul In Motion své první album Keep It Running. Nahrávka staví na hlubším a experimentálnějším drum & bassu a navazuje na směr labelu, který vede Need For Mirrors.",
+            "Album ukazuje Unknown Face poprvé v dlouhém formátu, nikoli jen prostřednictvím jednotlivých singlů. Kmag nahrávku představil premiérou titulní skladby."
           ],
-          "why_it_matters": "Album je signálem pokračující síly hlubšího, méně festivalově přímočarého DnB a současně ukazuje, že menší labely stále investují do dlouhého formátu nových jmen.",
+          "why_it_matters": "Debut potvrzuje, že Soul In Motion dál rozvíjí hlubší a experimentální část scény prostřednictvím alb nových jmen.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "dnb_scene",
           "competitors": [],
-          "confidence": "confirmed",
-          "sources": [{"name":"Kmag","url":"https://kmag.co.uk/","kind":"secondary"}],
-          "media": [],
-          "tags": ["Unknown Face","Soul In Motion","debut album","deep DnB"]
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Kmag",
+              "url": "https://kmag.co.uk/premiere-keep-it-running-with-the-debut-lp-from-unknown-face-soul-in-motion/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://kmag.co.uk/wp-content/uploads/2026/07/SIMLP001-WEB-SQUARE-e1783970452952.jpg"
+            },
+            {
+              "type": "soundcloud",
+              "url": "https://soundcloud.com/kmaguk/keep-it-running/s-yKcrK3EeNu4"
+            }
+          ],
+          "tags": ["Unknown Face", "Soul In Motion", "debut album", "deep DnB"]
         },
         {
           "id": "t-and-sugah-the-rush-ukf",
           "published_at": "2026-07-15",
           "event_start": null,
           "event_end": null,
-          "title": "T & Sugah vydávají The Rush přímo pod značkou UKF",
+          "title": "T & Sugah přecházejí s The Rush na hlavní značku UKF",
           "summary": [
-            "UKF 15. července vydal singl The Rush od nizozemského dua T & Sugah.",
-            "Release vychází na hlavním labelu UKF, nikoli na vývojově zaměřeném imprintu Pilot.",
-            "Umístění na hlavní značce potvrzuje pokračující posun dua směrem k širšímu mezinárodnímu dancefloor publiku."
+            "Nizozemské duo T & Sugah vydalo 15. července singl The Rush přímo na UKF. Jejich předchozí spolupráce se značkou vycházela také přes Pilot, který UKF používá pro rozvoj novějších jmen.",
+            "Zařazení singlu na hlavní label posouvá duo do viditelnější části katalogu UKF. The Rush pokračuje v jejich melodickém dancefloorovém zvuku určeném pro velké stage i streaming."
           ],
-          "why_it_matters": "UKF zůstává důležitým distribučním a mediálním uzlem pro dancefloor DnB. Přesun interpreta na hlavní imprint je relevantní signál růstu jeho pozice.",
+          "why_it_matters": "Přesun z rozvojového imprintu na hlavní značku UKF je konkrétní změna v pozici dua na mezinárodní dancefloorové scéně.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "dnb_scene",
           "competitors": [],
           "confidence": "confirmed",
-          "sources": [{"name":"UKF","url":"https://ukf.com/listen/releases/","kind":"primary"}],
-          "media": [],
-          "tags": ["T & Sugah","UKF","dancefloor","artist growth"]
+          "sources": [
+            {
+              "name": "UKF",
+              "url": "https://ukf.com/listen/releases/the-rush/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://ukf.com/wp-content/uploads/2026/07/TSugah-TheRush-Artwork-v3-2.jpg"
+            },
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/album/2yoOGh1V1KSZuRw3AUqZNL"
+            }
+          ],
+          "tags": ["T & Sugah", "UKF", "dancefloor", "label move"]
         }
       ]
     },
-    {"id":"cz_sk","title":"ČR a Slovensko","items":[]},
     {
-      "id":"audience_sentiment",
-      "title":"Sentiment publika",
-      "items":[
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": []
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": [
         {
-          "id":"reddit-imanu-buunshin-tcp-set-response",
-          "published_at":"2026-07-19",
-          "event_start":null,
-          "event_end":null,
-          "title":"Komunita vyzdvihuje plynulost a technickou úroveň společného setu IMANU, Buunshin a The Caracal Project",
-          "summary":[
-            "Vlákno na r/DnB doporučovalo společný set IMANU, Buunshin a The Caracal Project jako mimořádně plynulý a technicky přesný.",
-            "Diskuse se soustředila na kvalitu přechodů, soulad produkční estetiky a zájem o další ethereal a left-field DnB jména.",
-            "Reddit při veřejném sběru nezobrazil číselné skóre ani souhrnný počet komentářů. Vlákno bylo přesto zařazeno mezi nejvýše zobrazené příspěvky týdenního přehledu r/DnB."
+          "id": "reddit-imanu-buunshin-tcp-set-response",
+          "published_at": "2026-07-19",
+          "event_start": null,
+          "event_end": null,
+          "title": "Společný set IMANU, Buunshin a The Caracal Project otevírá debatu o left-field DnB",
+          "summary": [
+            "Vlákno na r/DnB upozornilo na společný set IMANU, Buunshin a The Caracal Project. Autor vyzdvihl plynulé přechody a to, jak přirozeně se propojují produkční rukopisy všech tří interpretů.",
+            "Diskuse se rychle rozšířila k doporučením dalších jmen z experimentálního a left-field drum & bassu, zejména z okruhu labelu DIVIDID. Část komentářů současně řešila, jak náročnější halftime a technický DnB funguje před širším klubovým publikem.",
+            "Téma je zajímavé hlavně jako reakce na kurátorovaný b2b formát: publikum nevnímá spojení tří producentů jen jako atrakci v lineupu, ale jako samostatný hudební celek."
           ],
-          "why_it_matters":"Reakce potvrzuje, že publikum vnímá společné sety producentů z experimentálnějšího okruhu jako samostatný kurátorský formát, nikoli pouze jako náhodný back to back.",
-          "recommended_action":"Bez akce, pouze informační přehled",
-          "region":"global",
-          "category":"audience_sentiment",
-          "competitors":[],
-          "confidence":"probable",
-          "sources":[{"name":"Reddit r/DnB","url":"https://www.reddit.com/r/DnB/","kind":"community"}],
-          "media":[],
-          "tags":["Reddit","IMANU","Buunshin","The Caracal Project","left-field DnB"]
+          "why_it_matters": "Diskuse ukazuje zájem o kurátorované b2b sety a současně popisuje hranici mezi experimentálním zvukem a očekáváním širšího publika.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/DnB",
+              "url": "https://www.reddit.com/r/DnB/comments/1qq12cf/imanu_b2b_buunshin_b2b_tcp_holy_shit/",
+              "kind": "community"
+            }
+          ],
+          "media": [
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=v-DUS-9Yj1c"
+            }
+          ],
+          "tags": ["Reddit", "IMANU", "Buunshin", "The Caracal Project", "left-field DnB"]
         },
         {
-          "id":"reddit-pendulum-this-or-that-discussion",
-          "published_at":"2026-07-19",
-          "event_start":null,
-          "event_end":null,
-          "title":"Pendulum zůstává silným referenčním bodem mezi kapelním a klubovým pojetím DnB",
-          "summary":[
-            "Týdenní přehled r/DnB zvýraznil komunitní formát This or That zaměřený na Pendulum.",
-            "Viditelnost tématu ukazuje, že katalog a různé fáze kapely stále vytvářejí silnou generační debatu uvnitř DnB publika.",
-            "Reddit při veřejném sběru nezobrazil číselné skóre ani souhrnný počet komentářů. Příspěvek byl uveden mezi hlavními položkami režimu Top za týden."
+          "id": "reddit-pendulum-catalogue-discussion",
+          "published_at": "2026-07-19",
+          "event_start": null,
+          "event_end": null,
+          "title": "Fanoušci Pendulum se přou o nejlepší období kapely",
+          "summary": [
+            "Video ve formátu This or That na r/DnB porovnávalo známé skladby Pendulum a vyvolalo rozsáhlou debatu o jejich katalogu. Nejčastěji se vracela jména skladeb Hold Your Colour, Still Grey, Vault, Another Planet a Watercolour.",
+            "Část diskutujících dává přednost ranému klubovému zvuku, jiní vyzdvihují pozdější spojení drum & bassu s rockovou kapelou. Rozdělení dobře ukazuje, že Pendulum oslovují několik generací i různé části DnB publika současně.",
+            "Nejde o novou aktivitu kapely, ale o výraznou komunitní diskusi nad tím, které období její tvorby dnes stále funguje nejsilněji."
           ],
-          "why_it_matters":"Pendulum nadále fungují jako spojnice mezi rockovým live publikem, festivalovým headlinerem a tradiční DnB komunitou.",
-          "recommended_action":"Bez akce, pouze informační přehled",
-          "region":"global",
-          "category":"audience_sentiment",
-          "competitors":[],
-          "confidence":"probable",
-          "sources":[{"name":"Reddit r/DnB Top week","url":"https://www.reddit.com/r/DnB/top/?t=week","kind":"community"}],
-          "media":[],
-          "tags":["Reddit","Pendulum","catalogue","live DnB"]
+          "why_it_matters": "Debata ukazuje šíři publika Pendulum a rozdílná očekávání fanoušků od klubového, festivalového a kapelního pojetí drum & bassu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/DnB",
+              "url": "https://www.reddit.com/r/DnB/comments/1qq8pp0/this_or_that_pendulum_edition/",
+              "kind": "community"
+            }
+          ],
+          "media": [],
+          "tags": ["Reddit", "Pendulum", "catalogue", "community discussion"]
         }
       ]
     },
     {
-      "id":"strategic_releases",
-      "title":"Strategické releasy",
-      "items":[
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": [
         {
-          "id":"hospital-records-forza-horizon-6-soundtrack",
-          "published_at":"2026-07-15",
-          "event_start":"2026-07-24",
-          "event_end":null,
-          "title":"Hospital Records dostane ve Forza Horizon 6 vlastní 24skladbovou DnB stanici",
-          "summary":[
-            "Hospital Records pokračuje v partnerství s herní sérií Forza Horizon a pro šestý díl připravil vlastní 24skladbový soundtrack.",
-            "Stanici moderují Chris Goss a Dynamite MC. Tracklist kombinuje zavedená jména jako Metrik, S.P.Y, Logistics a Makoto s novějšími interprety včetně TANTRON, Sudley, Formula a Nixxy Rain.",
-            "Soundtrack vyjde také fyzicky jako trojvinyl a CD. Hospital uvádí odklad expedice vinylu kvůli mimořádné poptávce."
+          "id": "hospital-records-forza-horizon-6-soundtrack",
+          "published_at": "2026-07-15",
+          "event_start": "2026-07-24",
+          "event_end": null,
+          "title": "Hospital Records připravil pro Forza Horizon 6 vlastní DnB stanici",
+          "summary": [
+            "Hospital Records pokračuje ve spolupráci s herní sérií Forza Horizon a pro šestý díl sestavil vlastní stanici se 24 skladbami. Moderují ji spoluzakladatel labelu Chris Goss a Dynamite MC.",
+            "Výběr spojuje zavedená jména jako Metrik, S.P.Y, Logistics a Makoto s novějšími producenty TANTRON, Sudley, Formula nebo Nixxy Rain. Soundtrack vyjde 24. července digitálně, na CD a na trojvinylu.",
+            "Hospital uvádí, že kvůli vysoké poptávce posunul expedici fyzických nosičů na konec srpna. Jde už o páté propojení labelu se sérií Forza."
           ],
-          "why_it_matters":"Jde o dlouhodobý distribuční model, který propojuje label, gaming, kurátorství a fyzický produkt. Partnerství zasahuje publikum mimo běžné festivalové a streamingové kanály.",
-          "recommended_action":"Bez akce, pouze informační přehled",
-          "region":"global",
-          "category":"strategic_release",
-          "competitors":[],
-          "confidence":"confirmed",
-          "sources":[{"name":"Hospital Records","url":"https://www.hospitalrecords.com/products/forza-horizon-6-hospital-records","kind":"primary"}],
-          "media":[],
-          "tags":["Hospital Records","Forza Horizon 6","gaming","soundtrack","cross-platform"]
+          "why_it_matters": "Partnerství propojuje label s velkou herní značkou a dostává kurátorovaný průřez DnB k publiku mimo běžné festivalové a streamingové kanály.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Hospital Records",
+              "url": "https://www.hospitalrecords.com/products/forza-horizon-6-hospital-records",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.hospitalrecords.com/cdn/shop/files/NHS594VA-ForzaHorizon6HospitalRecords.jpg?v=1781625075"
+            }
+          ],
+          "tags": ["Hospital Records", "Forza Horizon 6", "gaming", "soundtrack", "cross-platform"]
         }
       ]
     },
-    {"id":"lir_actions","title":"Doporučené kroky pro LIR","items":[]}
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": []
+    }
   ],
   "sources_scanned": [
     "AUTOMATION.md",
