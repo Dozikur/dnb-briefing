@@ -171,6 +171,7 @@ U obecných DnB debat shrnout hlavní názorové proudy, míru shody, sporné bo
 - Každý tvrdý fakt musí mít primární zdroj nebo dva nezávislé sekundární zdroje.
 - Reddit a komentáře dokazují sentiment, nikoli návštěvnost, finance nebo oficiální rozhodnutí.
 - Datum publikace patří do `published_at`. Datum konání patří do `event_start` a `event_end`.
+- Pondělní zprávu lze výjimečně zařadit do předchozího týdne, pouze pokud popisuje událost z jeho neděle. `published_at` musí zůstat pravdivé a `event_start` musí doložit datum události v reportovacím období.
 - Neověřená tvrzení mají `confidence: unverified` a nesmějí být formulována jako fakta.
 - Nepoužívat Wikipedii jako hlavní zdroj nové zprávy.
 - Nepoužívat Google image cache, dočasné Instagram CDN adresy ani obrázky bez dohledatelného původu.
