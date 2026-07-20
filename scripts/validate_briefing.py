@@ -7,7 +7,7 @@ import argparse
 import json
 import re
 import sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -112,7 +112,7 @@ def validate_v2(path: Path, report: dict) -> list[str]:
         if start > end:
             fail("period.window_start is after period.window_end")
         try:
-            datetime.fromisoformat(period["generated_at"].replace("Z", "+00:00"))
+            generated_at = datetime.fromisoformat(period["generated_at"].replace("Z", "+00:00"))
         except (TypeError, ValueError):
             fail("period.generated_at must be an ISO datetime")
         expected_filename = f"{period['year']}-week_{period['week']}.json"
@@ -162,14 +162,20 @@ def validate_v2(path: Path, report: dict) -> list[str]:
                 seen_ids.add(item_id)
 
                 published = iso_date(item["published_at"], f"{field}.published_at")
-                if not start <= published <= end:
-                    fail(f"{field}.published_at is outside the reporting window")
                 event_start = iso_date(item["event_start"], f"{field}.event_start") if item["event_start"] else None
                 event_end = iso_date(item["event_end"], f"{field}.event_end") if item["event_end"] else None
                 if event_end and not event_start:
                     fail(f"{field}.event_end requires event_start")
                 if event_start and event_end and event_end < event_start:
                     fail(f"{field}.event_end is before event_start")
+                late_event_coverage = (
+                    published == end + timedelta(days=1)
+                    and published <= generated_at.date()
+                    and event_start is not None
+                    and start <= event_start <= end
+                )
+                if not start <= published <= end and not late_event_coverage:
+                    fail(f"{field}.published_at is outside the reporting window")
 
                 title = text(item["title"], f"{field}.title", 8, 180)
                 normalized = re.sub(r"\W+", " ", title.casefold()).strip()
