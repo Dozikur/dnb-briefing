@@ -48,7 +48,8 @@
     .media-frame { display: block; width: 100%; border: 0; border-radius: .75rem; background: transparent; }
     .instagram-embed { width: 100%; max-width: 540px; margin: 1.25rem auto; }
     .instagram-frame { height: auto; aspect-ratio: 4 / 5; }
-    .spotify-frame { min-height: 152px; }
+    .spotify-embed { overflow: hidden; border: 1px solid rgba(71, 85, 105, .72); border-radius: .75rem; background: #121212; }
+    .spotify-frame { min-height: 152px; border-radius: 0; background: #121212; }
     @media (min-width: 768px) {
       .news-card.has-cover { align-items: stretch; }
       .news-card.has-cover .cover-wrap {
@@ -215,11 +216,15 @@
       if (media.type === "spotify") {
         const match = url.match(/spotify\.com\/(track|album)\/([^/?]+)/);
         return match ? `
-          <div class="my-5">
-            <iframe class="media-frame spotify-frame" height="${match[1] === "album" ? 352 : 152}"
-              title="Spotify přehrávač" loading="eager" allowfullscreen
+          <div class="spotify-embed my-5">
+            <iframe class="media-frame spotify-frame" width="100%" height="${match[1] === "album" ? 352 : 152}"
+              title="Spotify přehrávač" loading="eager" frameborder="0" allowfullscreen=""
+              referrerpolicy="strict-origin-when-cross-origin"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              src="https://open.spotify.com/embed/${match[1]}/${esc(match[2])}?utm_source=generator&theme=0"></iframe>
+              src="https://open.spotify.com/embed/${match[1]}/${esc(match[2])}?utm_source=generator"></iframe>
+            <p class="m-0 border-t border-slate-700 px-4 py-3 text-center text-sm text-slate-300">
+              <a class="font-semibold text-green-400 hover:underline" href="${esc(url)}" target="_blank" rel="noopener noreferrer">Otevřít ve Spotify</a>
+            </p>
           </div>` : "";
       }
 
