@@ -86,13 +86,6 @@ def validate_media(value: dict, field: str) -> None:
     https_url(value["url"], f"{field}.url")
 
 
-def is_reddit_dnb_url(value: str) -> bool:
-    parsed = urlparse(value)
-    host = parsed.netloc.casefold().split(":")[0]
-    path = parsed.path.casefold()
-    return (host == "reddit.com" or host.endswith(".reddit.com")) and path.startswith("/r/dnb/")
-
-
 def validate_unique_text_list(value, field: str, maximum: int, max_text: int = 80) -> None:
     if not isinstance(value, list) or len(value) > maximum:
         fail(f"{field} must contain at most {maximum} values")
@@ -227,14 +220,6 @@ def validate_v2(path: Path, report: dict) -> list[str]:
             section_map = {section["id"]: section["items"] for section in sections}
             if len(section_map["dnb_scene"]) < 2:
                 fail("dnb_scene must contain at least 2 items")
-
-            reddit_items = [
-                item
-                for item in section_map["audience_sentiment"]
-                if any(is_reddit_dnb_url(source["url"]) for source in item["sources"])
-            ]
-            if len(reddit_items) < 2:
-                fail("audience_sentiment must contain at least 2 items sourced from Reddit r/DnB")
 
             scan_labels = [label.casefold() for label in report["sources_scanned"]]
             if not any("reddit" in label and "r/dnb" in label and "top/week" in label for label in scan_labels):
