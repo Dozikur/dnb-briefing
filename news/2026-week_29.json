@@ -5,10 +5,11 @@
     "week": 29,
     "window_start": "2026-07-13",
     "window_end": "2026-07-19",
-    "generated_at": "2026-07-20T06:30:02+02:00"
+    "generated_at": "2026-07-20T12:35:00+02:00"
   },
-  "headline": "Liquicity míří k vyprodání, Tomorrowland zakázal pyrotechniku a Pohoda hlásí rekordní předprodej",
+  "headline": "Chase & Status debutovali na Tomorrowlandu a příští víkend zamíří na Mainstage",
   "executive_summary": [
+    "Chase & Status odehráli svůj první set na Tomorrowlandu a 26. července se na festival vrátí s debutem na Mainstage.",
     "Liquicity Festival vydal poslední varování před vyprodáním poté, co počet zbývajících víkendových vstupenek klesl pod sto.",
     "Tomorrowland nesměl během prvního víkendu použít ohňostroje ani pódiovou pyrotechniku kvůli zvýšenému požárnímu riziku.",
     "Pohoda po vyprodaném jubilejním ročníku prodala během pěti dnů přes deset tisíc vstupenek na rok 2027.",
@@ -96,6 +97,33 @@
       "id": "dnb_scene",
       "title": "DnB scéna",
       "items": [
+        {
+          "id": "chase-status-tomorrowland-debut-2026",
+          "published_at": "2026-07-20",
+          "event_start": "2026-07-19",
+          "event_end": null,
+          "title": "Chase & Status debutovali na Tomorrowlandu",
+          "summary": [
+            "Chase & Status odehráli během prvního víkendu Tomorrowlandu 2026 DJ set na Freedom stage. Oficiální program je zařadil na neděli 19. července od 20:00 a zveřejněné záběry zachycují silné reakce publika během jejich drum & bassového setu.",
+            "Instagramový příspěvek označuje vystoupení za premiéru dua na Tomorrowlandu a vyzdvihuje množství nevydaných skladeb a neobvyklých mixů. Hodnocení setu jako jednoho z nejlepších vystoupení dvojice je názorem autora příspěvku, nikoli ověřeným faktem.",
+            "Chase & Status se na festival vrátí v neděli 26. července s DJ setem na Mainstage. Tomorrowland je řadí mezi interprety, kteří tam letos absolvují svůj debut, takže během jednoho ročníku vystoupí na Freedom stage i hlavním pódiu."
+          ],
+          "why_it_matters": "Dvě vystoupení během jednoho ročníku ukazují výrazný posun drum & bassu do hlavního programu jednoho z největších světových elektronických festivalů.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Instagram", "url": "https://www.instagram.com/p/DbAszJlk4Rg/?img_index=1", "kind": "community"},
+            {"name": "Tomorrowland", "url": "https://tomorrowlandbelgium.press.tomorrowland.com/tomorrowland-unveils-the-full-line-up-and-timetable-for-consciencia-in-belgium", "kind": "primary"}
+          ],
+          "media": [
+            {"type": "image", "url": "https://www.instagram.com/p/DbAszJlk4Rg/media/?size=l"},
+            {"type": "instagram", "url": "https://www.instagram.com/p/DbAszJlk4Rg/"}
+          ],
+          "tags": ["Chase & Status", "Tomorrowland", "Freedom stage", "Mainstage", "DnB crossover"]
+        },
         {
           "id": "hedex-nu-era-laser-stage-show",
           "published_at": "2026-07-15",
