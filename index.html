@@ -45,7 +45,10 @@
       aspect-ratio: 4 / 5;
       object-fit: cover;
     }
-    .media-frame { width: 100%; border: 0; border-radius: .75rem; background: white; }
+    .media-frame { display: block; width: 100%; border: 0; border-radius: .75rem; background: transparent; }
+    .instagram-embed { width: 100%; max-width: 540px; margin: 1.25rem auto; }
+    .instagram-frame { height: 460px; }
+    .spotify-frame { min-height: 152px; }
     @media (min-width: 768px) {
       .news-card.has-cover { align-items: stretch; }
       .news-card.has-cover .cover-wrap {
@@ -191,8 +194,8 @@
         if (!match) return "";
         const canonical = `https://www.instagram.com/${match[1]}/${match[2]}/`;
         return `
-          <div class="my-5 rounded-xl border border-slate-700 bg-slate-900/60 p-3">
-            <iframe class="media-frame" height="620" loading="lazy" scrolling="no" src="${canonical}embed"></iframe>
+          <div class="instagram-embed rounded-xl border border-slate-700 bg-slate-900/60 p-3">
+            <iframe class="media-frame instagram-frame" loading="lazy" scrolling="no" src="${canonical}embed"></iframe>
             <p class="mt-3 text-center text-sm text-slate-400">
               Pokud se příspěvek nenačte, <a class="text-pink-400 hover:underline" href="${canonical}" target="_blank" rel="noopener noreferrer">otevřít Instagram</a>.
             </p>
@@ -213,9 +216,10 @@
         const match = url.match(/spotify\.com\/(track|album)\/([^/?]+)/);
         return match ? `
           <div class="my-5">
-            <iframe class="media-frame" height="${match[1] === "album" ? 352 : 152}" loading="lazy"
+            <iframe class="media-frame spotify-frame" height="${match[1] === "album" ? 352 : 152}"
+              title="Spotify přehrávač" loading="eager" allowfullscreen
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              src="https://open.spotify.com/embed/${match[1]}/${esc(match[2])}"></iframe>
+              src="https://open.spotify.com/embed/${match[1]}/${esc(match[2])}?utm_source=generator&theme=0"></iframe>
           </div>` : "";
       }
 
