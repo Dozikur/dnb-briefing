@@ -169,7 +169,7 @@
           "sources": [{"name": "Kmag", "url": "https://kmag.co.uk/premiere-keep-it-running-with-the-debut-lp-from-unknown-face-soul-in-motion/", "kind": "secondary"}],
           "media": [
             {"type": "image", "url": "https://kmag.co.uk/wp-content/uploads/2026/07/SIMLP001-WEB-SQUARE-e1783970452952.jpg"},
-            {"type": "spotify", "url": "https://open.spotify.com/album/2hu08BPeB4DQVFNC8leHUN"}
+            {"type": "spotify", "url": "https://open.spotify.com/album/2hu08BPeB4DQVFNC8leHUN?si=n7FqhO6ZT02YVvMqPvZqFg"}
           ],
           "tags": ["Unknown Face", "Soul In Motion", "debut album", "deep DnB"]
         },
@@ -192,7 +192,7 @@
           "sources": [{"name": "UKF", "url": "https://ukf.com/listen/releases/the-rush/", "kind": "primary"}],
           "media": [
             {"type": "image", "url": "https://ukf.com/wp-content/uploads/2026/07/TSugah-TheRush-Artwork-v3-2.jpg"},
-            {"type": "spotify", "url": "https://open.spotify.com/track/78jhWm8GMFK5lxqWdXz0u5"}
+            {"type": "spotify", "url": "https://open.spotify.com/track/78jhWm8GMFK5lxqWdXz0u5?si=5421042b08c44def"}
           ],
           "tags": ["T & Sugah", "UKF", "dancefloor", "label move"]
         },
