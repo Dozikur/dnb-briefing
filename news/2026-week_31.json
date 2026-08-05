@@ -1,0 +1,547 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 31,
+    "window_start": "2026-07-30",
+    "window_end": "2026-08-04",
+    "generated_at": "2026-08-04T13:53:56+02:00"
+  },
+  "headline": "Let It Roll uzavřel ročník s 25 tisíci návštěvníky; artisté chválí show, Reddit řeší kempy a placené služby",
+  "executive_summary": [
+    "Let It Roll podle závěrečné zprávy navštívilo 25 tisíc lidí z 80 zemí; program proběhl na šesti stagích s více než 130 zahraničními umělci.",
+    "Policie zaznamenala 35 trestných činů a 57 přestupků, převážně spojených s dopravou, řízením pod vlivem a držením drog; závažnější násilnou ani mravnostní kriminalitu neevidovala.",
+    "Mediální recenze hodnotí hudební program a produkci převážně pozitivně, zatímco kritické pokrytí se soustředí na nápor u jezera, horko a dopad na místní obyvatele.",
+    "Chase & Status, Modestep, Pendulum, CONTROL ALT DΞLΞTΞ a další účinkující zveřejnili pozitivní nebo informační festivalové příspěvky; přímou kritiku od artistů přinesla pouze zklamání ze setů zrušených kvůli počasí.",
+    "Negativní návštěvnické reakce se opakují u stínu, vody a hygieny v kempech, Parking+, Silent Campu a odjezdu; část nejostřejších tvrzení o dopravě, cenách piva a zákazu batohů ostatní návštěvníci rozporovali."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": []
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "lir-2026-weather-evacuation-restart",
+          "published_at": "2026-07-31",
+          "event_start": "2026-07-31",
+          "event_end": "2026-07-31",
+          "title": "Let It Roll po preventivní evakuaci obnovil program přibližně po hodině",
+          "summary": [
+            "Festival 31. července v 19:45 po konzultaci s odborníky přerušil program a preventivně evakuoval hudební areál kvůli nepříznivé předpovědi. Návštěvníci se začali vracet kolem 21. hodiny a program po menší přeháňce pokračoval.",
+            "Luude uvedl, že evakuace přišla pět minut před plánovaným B2B s Rovou. B-Complex oznámila zrušení B2B s Tanukichi. Oba vyjádřili zklamání ze zrušeného vystoupení, ale postup festivalu přímo nekritizovali.",
+            "V diskusi o krizové komunikaci část uživatelů nejprve neviděla oznámení v aplikaci Woov. Autor vlákna později doplnil, že zpráva byla v aplikaci viditelná v 19:44, takže doloženým problémem je spíše její viditelnost než úplná absence."
+          ],
+          "why_it_matters": "Událost poskytuje konkrétní časovou osu preventivního přerušení, obnovení programu a veřejných reakcí dotčených umělců i návštěvníků.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Mostecká Vlaštovka",
+              "url": "https://mostecka-vlastovka.cz/aktualne-let-it-roll-kvuli-pocasi-prerusil-program-organizatori-preventivne-evakuovali-hudebni-areal/",
+              "kind": "secondary"
+            },
+            {
+              "name": "Instagram — Luude",
+              "url": "https://www.instagram.com/reel/DbgFKiuSVaU/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — B-Complex",
+              "url": "https://www.instagram.com/p/DbfWOxYoc54/",
+              "kind": "primary"
+            },
+            {
+              "name": "Reddit r/LetItRollFestival — Storm closure",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1vby6wv/storm_closure/",
+              "kind": "community"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://mostecka-vlastovka.cz/wp-content/uploads/2026/07/229583-1200x675.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DbgFKiuSVaU/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DbfWOxYoc54/"
+            }
+          ],
+          "tags": ["Let It Roll", "weather", "evacuation", "Woov", "cancelled sets"]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "lir-2026-headliner-artist-recaps",
+          "published_at": "2026-08-03",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-01",
+          "title": "Chase & Status a Modestep přenesli festival do vlastních kanálů",
+          "summary": [
+            "Chase & Status zveřejnili 3. srpna vlastní carousel z headline show s poděkováním drum & bassové komunitě. Nešlo pouze o sdílení festivalového účtu, ale o samostatný příspěvek v jejich feedu.",
+            "Modestep označili své živé vystoupení za moment pro historické knihy, vyzdvihli atmosféru a poděkovali publiku za přijetí. A Little Sound ve vlastním recapu popsala opening ceremony i druhý festivalový den jako mimořádný zážitek.",
+            "KJ Sawka zveřejnil další klip z vystoupení Pendulum LIVE. Projekt CONTROL ALT DΞLΞTΞ, drum & bassové alter ego Dona Diabla, použil vlastní účet k pozvánce na závěrečný set a následně sdílel také performance video."
+          ],
+          "why_it_matters": "Samostatné příspěvky na kanálech velkých jmen rozšiřují dosah festivalu mimo vlastní média a vytvářejí použitelné organické reference k programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Instagram — Chase & Status",
+              "url": "https://www.instagram.com/p/DblnsQfDXIt/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — Modestep",
+              "url": "https://www.instagram.com/p/DblXxTbDLe5/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — A Little Sound",
+              "url": "https://www.instagram.com/alittlesounduk/reel/Dbliy1jAoSG/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — KJ Sawka",
+              "url": "https://www.instagram.com/reel/Dbl-IVFCWFU/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — CONTROL ALT DΞLΞTΞ",
+              "url": "https://www.instagram.com/reel/DbbCrNvi-VM/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DblnsQfDXIt/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DblXxTbDLe5/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DbbCrNvi-VM/"
+            }
+          ],
+          "tags": ["Chase & Status", "Modestep", "Pendulum", "CONTROL ALT DELETE", "artist content"]
+        },
+        {
+          "id": "lir-2026-wider-lineup-recaps",
+          "published_at": "2026-08-03",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-01",
+          "title": "Pozitivní recapy pokračují napříč širším line-upem",
+          "summary": [
+            "Turno zveřejnil klip z B2B s Ginem, Elipsa připomněla svůj festivalový debut ve 35 °C a publikum označila za skvělé. QZB svůj návrat na Let It Roll popsali jako návrat domů.",
+            "B-Complex po zrušeném B2B přidala také samostatný pozitivní recap, ve kterém festival označila za epický a poděkovala lidem za zážitek. IVY zveřejnila poděkování po B2B s Mandidextrous.",
+            "Ve veřejně dohledaných feed postech těchto účinkujících se neobjevila přímá kritika festivalu. Negativní tón zůstal omezený na zklamání ze setů zasažených počasím."
+          ],
+          "why_it_matters": "Šíře samostatných pozitivních výstupů ukazuje, že organický obsah nevznikl pouze u headlinerů, ale napříč různými částmi programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Instagram — Turno",
+              "url": "https://www.instagram.com/turno_/reel/DblmhiEKiDa/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — Elipsa",
+              "url": "https://www.instagram.com/elipsamusic/reel/DbloH8ejIfm/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — QZB",
+              "url": "https://www.instagram.com/reel/Dbk3xAQOzQm/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — B-Complex",
+              "url": "https://www.instagram.com/p/DbiGsZYoKJv/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — IVY",
+              "url": "https://www.instagram.com/p/DblSAcHCBZW/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DblmhiEKiDa/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DbloH8ejIfm/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/Dbk3xAQOzQm/"
+            }
+          ],
+          "tags": ["artist recaps", "Turno", "Elipsa", "QZB", "B-Complex", "IVY"]
+        },
+        {
+          "id": "lir-2026-supporting-artist-posts",
+          "published_at": "2026-08-03",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-01",
+          "title": "Závěr festivalu reflektovali také menší a domácí účinkující",
+          "summary": [
+            "Akira a Bifidus Aktif doprovodili závěrečný set třemi příspěvky: pozvánkou, připomínkou v den vystoupení a následným poděkováním po konci festivalu v 05:03. GIYGAS svůj návrat označil za naplňující a poděkoval za další festivalovou zkušenost.",
+            "MIRO navázal na festivalový closing propagací dalšího vystoupení. DOVN a MIND:FREQNZ využili své účty k přesným show-day pozvánkám s uvedením stage a času.",
+            "Tyto výstupy mají menší dosah než posty headlinerů, ale rozšiřují organické pokrytí o domácí a nižší patra line-upu. Všechny dohledané příspěvky jsou pozitivní nebo informační."
+          ],
+          "why_it_matters": "Položka zachycuje další vrstvu organického obsahu, která dokládá aktivní festivalovou komunikaci i mimo největší jména programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Instagram — Akira B2B Bifidus Aktif",
+              "url": "https://www.instagram.com/reel/DbhrNTJtkS3/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — GIYGAS",
+              "url": "https://www.instagram.com/giygas.wav/reel/DbisWupjJK7/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — MIRO",
+              "url": "https://www.instagram.com/p/DbldFSesPEc/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — DOVN",
+              "url": "https://www.instagram.com/p/DbaVVygOMzr/",
+              "kind": "primary"
+            },
+            {
+              "name": "Instagram — MIND:FREQNZ",
+              "url": "https://www.instagram.com/p/Dbf3ia4qY1T/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DbhrNTJtkS3/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DbisWupjJK7/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DbldFSesPEc/"
+            }
+          ],
+          "tags": ["Czech DnB", "Akira", "Bifidus Aktif", "GIYGAS", "MIRO", "show-day content"]
+        },
+        {
+          "id": "pendulum-live-lir-2026-reddit-reaction",
+          "published_at": "2026-08-02",
+          "event_start": "2026-08-01",
+          "event_end": "2026-08-01",
+          "title": "Pendulum LIVE vyvolali převážně pozitivní reakce na r/DnB",
+          "summary": [
+            "Video z Pendulum LIVE na Let It Rollu vyvolalo na r/DnB převážně pozitivní reakce. Návštěvníci chválili výkon Roba Swirea, sílu produkce a celkovou vizuální podívanou.",
+            "Diskuse se částečně přesunula ke srovnání živé kapely a DJ setu. Část uživatelů preferuje DJ formát, další ale zdůraznili, že živá show představovala vítanou změnu v programu složeném převážně z DJ setů. Objevila se také poptávka po festivalovém livestreamu.",
+            "Při sběru 4. srpna veřejná stránka Redditu nezobrazovala stabilní skóre ani souhrnný počet komentářů. Vlákno proto dokládá směr debaty, nikoli její přesný rozsah vůči ostatním příspěvkům týdne."
+          ],
+          "why_it_matters": "Reakce podporují dramaturgickou hodnotu živé kapely jako odlišného programu, zároveň ale ukazují, že část jádra DnB publika stále preferuje DJ set.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/DnB — Pendulum LIVE",
+              "url": "https://www.reddit.com/r/DnB/comments/1vcivbq/pendulum_live_let_it_roll_2026/",
+              "kind": "community"
+            },
+            {
+              "name": "Let It Roll — Pendulum LIVE announcement",
+              "url": "https://letitroll.eu/pendulum-live-returns-to-let-it-roll/",
+              "kind": "primary"
+            }
+          ],
+          "media": [],
+          "tags": ["Pendulum", "live show", "Reddit", "audience reaction", "livestream"]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": [
+        {
+          "id": "lir-2026-attendance-and-police-summary",
+          "published_at": "2026-08-02",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-01",
+          "title": "Let It Roll uzavřel ročník s 25 tisíci návštěvníky z 80 zemí",
+          "summary": [
+            "Závěrečná zpráva uvádí 25 tisíc návštěvníků z 80 zemí, šest tematických stagí a více než 130 zahraničních umělců. Jde o konečné číslo po festivalu; předfestivalový odhad dvaceti tisíc lidí už není aktuální.",
+            "Údaj o více než 130 zahraničních umělcích není totožný s dříve propagovanými více než 250 celkovými acts. Festival se u jezera Most konal podruhé a podle vyjádření organizátorů citovaného ČTK proběhl příjezd bez čekání a od obyvatel přišlo minimum podnětů.",
+            "Policie zkontrolovala 6 255 osob a 2 713 vozidel, zadokumentovala 35 trestných činů a řešila 57 přestupků. Nejčastěji šlo o řízení pod vlivem, držení drog a dopravní přestupky; závažnější násilnou ani mravnostní kriminalitu nezaznamenala."
+          ],
+          "why_it_matters": "Položka sjednocuje konečná návštěvnická, programová a bezpečnostní čísla, která se v předfestivalových a závěrečných zprávách lišila.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "ČTK / České noviny",
+              "url": "https://www.ceskenoviny.cz/zpravy/2856793",
+              "kind": "secondary"
+            },
+            {
+              "name": "Policie ČR",
+              "url": "https://policie.gov.cz/clanek/uzemni-utvary-sprava-severoceskeho-kraje-zpravodajstvi-policiste-ukoncili-opatreni-na-let-it-roll.aspx",
+              "kind": "primary"
+            },
+            {
+              "name": "Let It Roll — kompletní line-up 2026",
+              "url": "https://letitroll.cz/kompletni-line-up-2026-je-venku/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://i3.cn.cz/15/1785425240_P2026073006614.jpg"
+            }
+          ],
+          "tags": ["Let It Roll", "attendance", "Most", "police", "festival statistics"]
+        },
+        {
+          "id": "lir-2026-media-review-and-lake-pressure",
+          "published_at": "2026-08-02",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-01",
+          "title": "Média chválí hudební program, kritika míří k náporu u jezera",
+          "summary": [
+            "Hudební recenze Novinek hodnotí festival jako pestrý a vizuálně výrazný. Mezi vrcholy řadí Chase & Status, Pendulum, Netskyho, Wilkinsona, Hybrid Minds, A.M.C a Modestep.",
+            "Samostatný report stejného média popsal při teplotách blížících se 40 °C silný nápor na pláž. Obyvatel Daniel Šonka kritizoval omezený pohyb a bezohlednost části návštěvníků, většina dalších oslovených rezidentů ale zásadní problém s festivalem neuváděla.",
+            "ČTK i lokální média přinesla převážně pozitivní závěrečné souhrny. Kritický mediální obraz se proto nesoustředí na hudbu nebo bezpečnost, ale hlavně na sdílení veřejného prostoru u jezera, horko, hluk a chování části publika."
+          ],
+          "why_it_matters": "Rozdíl mezi hudební recenzí a reportem od jezera ukazuje, že reputační riziko vzniká spíše v okolním veřejném prostoru než uvnitř programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Novinky — hudební recenze",
+              "url": "https://www.novinky.cz/clanek/kultura-hudba-festival-let-it-roll-prinesl-horko-pripravy-na-evakuaci-skvelou-hudbu-i-vizualni-zazitky-40590856",
+              "kind": "secondary"
+            },
+            {
+              "name": "Novinky — návštěvníci a rezidenti u jezera",
+              "url": "https://www.novinky.cz/clanek/domaci-hlava-na-hlave-u-jezera-most-se-prolinaji-navstevnici-festivalu-s-rezidenty-40590791",
+              "kind": "secondary"
+            },
+            {
+              "name": "ČTK / České noviny",
+              "url": "https://www.ceskenoviny.cz/zpravy/2856793",
+              "kind": "secondary"
+            },
+            {
+              "name": "Mostecká Vlaštovka — závěrečný fotoreport",
+              "url": "https://mostecka-vlastovka.cz/obrazem-tri-dny-sest-scen-a-25-tisic-navstevniku-letosni-let-it-roll-znovu-ovladl-most/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://d15-a.sdn.cz/d_15/c_img_qE_A/nO573v8MsNCYTbpBdsHXZSin/3e36/plaz-most-jezero-let-it-roll.jpeg?fl=cro%2C0%2C0%2C1920%2C1080%7Cres%2C1200%2C%2C1%7Cwebp%2C75"
+            }
+          ],
+          "tags": ["media coverage", "Lake Most", "residents", "heat", "festival review"]
+        }
+      ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": [
+        {
+          "id": "lir-2026-detailed-reddit-review",
+          "published_at": "2026-08-04",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-01",
+          "title": "Detailní recenze kritizuje kempy, stín a pocit snižování nákladů",
+          "summary": [
+            "Uživatel pasi_dnb ve srovnání s Rampage Open Air kritizuje minimum stínu v Homebase, málo toalet a absenci pisoárů ve Spot Campu, vzdálenost k vodě, úklid, štěrk u sprch i stagí, nedělní odjezd do 12:00, příplatek za Port Stage a chybějící přepočet Bolts na běžné měny. Sám upozorňuje, že srovnání s Rampage může jeho pohled ovlivňovat.",
+            "Recenze není pouze negativní. Autor chválí check-in bez čekání, lineup, stage, security a dostupnost vody v hudebním areálu. Přes kritiku píše, že se pravděpodobně vrátí.",
+            "Při sběru 4. srpna veřejná stránka Redditu nezobrazovala stabilní skóre ani souhrnný počet komentářů. Jde o nejpodrobnější jednotlivou postfestivalovou výpověď, nikoli reprezentativní průzkum návštěvníků."
+          ],
+          "why_it_matters": "Recenze soustřeďuje několik konkrétních provozních výtek do jednoho textu a zároveň umožňuje oddělit kritiku zázemí od pozitivního hodnocení programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": ["Rampage Open Air"],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/LetItRollFestival — My Review",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1veoltl/letitroll_2026_my_review/",
+              "kind": "community"
+            },
+            {
+              "name": "Let It Roll 2026 — informace pro návštěvníky",
+              "url": "https://letitroll.eu/event/let-it-roll-2026/",
+              "kind": "primary"
+            }
+          ],
+          "media": [],
+          "tags": ["Reddit", "camping", "shade", "sanitation", "customer experience", "Rampage"]
+        },
+        {
+          "id": "lir-2026-paid-services-and-departure-complaints",
+          "published_at": "2026-08-02",
+          "event_start": "2026-07-30",
+          "event_end": "2026-08-02",
+          "title": "Parking+, Silent Camp, NFCtron a odjezd přinesly konkrétní výtky",
+          "summary": [
+            "Oficiální web popisoval Parking+ jako parkoviště přibližně 500 metrů od festivalu. Wise-Dingo-9039 uvedl, že k hlavnímu vstupu chodil asi dva kilometry; Neonmauren naopak popsal přibližně desetiminutovou chůzi. Zkušenosti se tedy rozcházejí, ale očekávání vytvořené údajem 500 metrů je zřejmé.",
+            "Cryptothalamus a Figura89 kritizovali nedodržování klidových hodin v Silent Campu a provoz aut a čtyřkolek od 6–7 hodin ráno. Figura89 popsal nefunkční online dobití NFCtronu u dvou lidí, zatímco yBaylife uvedl bezproblémovou zkušenost skupiny přibližně patnácti návštěvníků.",
+            "Při nedělním odjezdu Routine-Ad-1748 uvedl 45 minut na sto metrů a DerpityDerplord hodinu bez pohybu. Jde o několik jednotlivých zkušeností; veřejné stránky Redditu při sběru nezobrazovaly stabilní skóre ani souhrnný počet komentářů jednotlivých vláken."
+          ],
+          "why_it_matters": "Výtky se týkají placených nebo explicitně popsaných služeb, kde vzniká přímý rozpor mezi očekáváním zákazníka a jeho zkušeností na místě.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Let It Roll 2026 — informace pro návštěvníky",
+              "url": "https://letitroll.eu/event/let-it-roll-2026/",
+              "kind": "primary"
+            },
+            {
+              "name": "Reddit — Parking Plus",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1vbqqge/parking_plus/",
+              "kind": "community"
+            },
+            {
+              "name": "Reddit — Quiet hours",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1vbk9fj/quiet_hours_not_being_respected_f_u_have_patience/",
+              "kind": "community"
+            },
+            {
+              "name": "Reddit — NFCtron",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1vbqx67/nfctron_is_shit/",
+              "kind": "community"
+            },
+            {
+              "name": "Reddit — odjezd z festivalu",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1vdduvi/why_takes_leaving_the_festival_so_long/",
+              "kind": "community"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://preview.redd.it/parking-plus-v0-9239mlztfkgh1.jpeg?auto=webp&crop=smart&s=5bc97a00551af5d0bcac49b5e15cad2cc6c71dc8&width=640"
+            }
+          ],
+          "tags": ["Parking+", "Silent Camp", "NFCtron", "departure", "paid services"]
+        },
+        {
+          "id": "lir-2026-disputed-negative-reddit-claims",
+          "published_at": "2026-07-30",
+          "event_start": "2026-07-30",
+          "event_end": "2026-07-30",
+          "title": "Nejostřejší obecná kritika obsahuje několik rozporovaných tvrzení",
+          "summary": [
+            "Uživatel Vast-Result6281 během prvního dne kritizoval vedro, nedostatek stínu, vzdálenost parkoviště, údajně chybějící dopravu, cenu piva šest eur, zákaz batohů a placené skříňky. Příspěvek vznikl ještě před hlavní večerní částí programu.",
+            "Cobaiye a Dadbod1987-010 upozornili na fungující shuttle busy, DarthPloKoon na možnost vnášet batoh po opakované kontrole a Seshter695 uvedl cenu přibližně 3,20 eura za 0,4 litru piva. Prázdnější denní stage komentující vysvětlovali extrémním horkem a pobytem návštěvníků u jezera.",
+            "Analogiczny ve stejném vlákně kritizoval Car Camp sprchy otevřené údajně jen od 8:00 do 20:00, s nízkým tlakem a studenou vodou. Oficiální informace přitom uváděly provoz sprch 24 hodin denně. Veřejná stránka Redditu při sběru nezobrazovala stabilní skóre ani souhrnný počet komentářů."
+          ],
+          "why_it_matters": "Položka odděluje snadno ověřitelná nepřesná tvrzení od konkrétního rozporu mezi oficiálním příslibem a návštěvnickou zkušeností.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "unverified",
+          "sources": [
+            {
+              "name": "Reddit r/LetItRollFestival — Let It Roll 2026",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1vaucnv/let_it_roll_festival_2026/",
+              "kind": "community"
+            },
+            {
+              "name": "Let It Roll 2026 — informace pro návštěvníky",
+              "url": "https://letitroll.eu/event/let-it-roll-2026/",
+              "kind": "primary"
+            }
+          ],
+          "media": [],
+          "tags": ["Reddit", "misinformation", "shuttle", "beer prices", "Car Camp", "showers"]
+        }
+      ]
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "AUTOMATION.md",
+    "news/2026-week_29.json",
+    "news/2026-week_28.json",
+    "news/2026-week_27.json",
+    "news/2026-week_26.json",
+    "ČTK / České noviny",
+    "Novinky.cz",
+    "Policie ČR",
+    "Mostecká Vlaštovka",
+    "e-Mostecko",
+    "Oficiální web Let It Roll 2026",
+    "Instagram: účinkující Let It Roll 2026 a jejich aliasy",
+    "Reddit r/DnB: hot + top/week",
+    "Reddit r/LetItRollFestival: hot + top/week"
+  ]
+}
