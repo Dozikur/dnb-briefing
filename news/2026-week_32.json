@@ -1,0 +1,227 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 32,
+    "window_start": "2026-08-03",
+    "window_end": "2026-08-09",
+    "generated_at": "2026-08-10T11:20:00+02:00"
+  },
+  "headline": "Boomtown vyprodal ročník, splátky posilují prodej festivalů a Live Nation vstoupil do tří pražských venues",
+  "executive_summary": [
+    "Boomtown vstupuje do termínu 12. až 16. srpna jako vyprodaný festival; pořadatel drží oficiální resale a umožňuje splátky i u některých přeprodaných vstupenek.",
+    "V Británii se přes splátkové plány prodává přibližně 45 procent vstupenek na campingové festivaly, zatímco od začátku roku bylo zrušeno 36 akcí.",
+    "Live Nation získal většinové podíly v O2 areně, O2 universu a Foru Karlín, což představuje jeho dosud největší investici ve střední a východní Evropě.",
+    "Ozora ukončila hudební program po dvou nesouvisejících úmrtích; jeden případ souvisel se srdeční zástavou a druhý s pádem z dekorativní konstrukce.",
+    "BBC Radio 6 Music spustilo srpnovou sérii Rave Forever s Goldiem, Krustem a dalšími osobnostmi, zatímco pocta Lenzmanovi na Let It Rollu získala samostatné mezinárodní mediální pokrytí."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "boomtown-2026-sold-out-payment-resale",
+          "published_at": "2026-08-08",
+          "event_start": "2026-08-12",
+          "event_end": "2026-08-16",
+          "title": "Boomtown vstupuje do festivalového týdne vyprodaný a drží vlastní přeprodej",
+          "summary": [
+            "Boomtown se před termínem 12. až 16. srpna vyprodal; běžné vstupenky nahradil oficiální Citizen-to-Citizen resale. Čtvrteční přeprodaná vstupenka stojí 380 liber, varianta s veřejnou dopravou 360 liber.",
+            "Festival umožňoval rozdělit cenu nákupu do splátek. U resale lze pro způsobilé zákazníky použít tři platby přes Klarnu a původní držitel dostane peníze až po prodeji vstupenky, bez vrácení booking fee.",
+            "Reuters uvádí, že Boomtown se v roce 2026 vyprodal rekordně rychle. Pořadatel spojuje poptávku také s doplňky, wellness a vyššími očekáváními lidí, kteří festival porovnávají s cenou zahraniční dovolené."
+          ],
+          "why_it_matters": "Boomtown ukazuje kombinaci vyprodaného bassového festivalu, splátek, řízeného přeprodeje a placených doplňků v cenové hladině srovnatelné s delší dovolenou.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": ["Boomtown"],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Boomtown — Tickets", "url": "https://www.boomtownfair.co.uk/tickets", "kind": "primary"},
+            {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"}
+          ],
+          "media": [],
+          "tags": ["Boomtown", "sold out", "payment plans", "resale", "ticketing"]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "uk-festivals-payment-plans-cancellations-2026",
+          "published_at": "2026-08-08",
+          "event_start": null,
+          "event_end": null,
+          "title": "Splátky už pokrývají téměř polovinu britských campingových festivalových vstupenek",
+          "summary": [
+            "Ticketingová platforma Kaboodle uvádí, že přibližně 45 procent vstupenek na britské campingové festivaly se prodává přes splátkové plány. Mighty Hoopla odhaduje podíl splátek na 70 procent a vedle nich využívá skupinové vstupenky s nižší cenou na osobu.",
+            "Vícedenní campingové festivaly stojí přibližně 200 až 380 liber a celý výjezd s dopravou a útratou může přesáhnout 800 liber. Vyšší cena zvyšuje poptávku po glampingu, lepších toaletách, nabíjení, wellness a dalších službách.",
+            "Oživení není plošné. Association of Independent Festivals eviduje v roce 2026 celkem 36 zrušených akcí; v roce 2025 jich bylo 43 a v roce 2024 celkem 78."
+          ],
+          "why_it_matters": "Konkrétní čísla ukazují, že splátky se změnily z doplňku na běžnou součást prodeje dražších festivalových vstupenek a současně rostou očekávání na placený komfort.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"},
+            {"name": "Boomtown — Instalment Tickets", "url": "https://www.boomtownfair.co.uk/tickets", "kind": "primary"}
+          ],
+          "media": [],
+          "tags": ["payment plans", "festival economics", "camping", "AIF", "cancellations"]
+        },
+        {
+          "id": "ozora-2026-two-deaths-early-close",
+          "published_at": "2026-08-03",
+          "event_start": "2026-08-01",
+          "event_end": "2026-08-02",
+          "title": "Ozora po dvou úmrtích předčasně ukončila hudební program",
+          "summary": [
+            "Maďarská Ozora ukončila 2. srpna o půlnoci veškerý hudební program, přestože festival měl pokračovat do 4. srpna. Rozhodnutí následovalo po dvou nesouvisejících úmrtích v areálu.",
+            "Devětatřicetiletá návštěvnice zemřela po náhlé srdeční zástavě navzdory rychlému zásahu zdravotníků. Pětačtyřicetiletý muž zemřel po pádu z dekorativní konstrukce u hlavní stage; okolnosti vyšetřují úřady.",
+            "Pořadatelé ve veřejném prohlášení potvrdili oba případy a ukončení programu. Dostupné zprávy nepřipisují festivalu odpovědnost za samotná úmrtí."
+          ],
+          "why_it_matters": "Případ spojuje krizové rozhodnutí o ukončení programu s rizikem lezení na dekorativní stage konstrukce a s medicínskou připraveností během extrémního horka.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Ozora Festival — official statement", "url": "https://www.instagram.com/p/DbiEbBuCJBR/", "kind": "primary"},
+            {"name": "DJ Mag", "url": "https://djmag.com/news/two-attendees-die-hungarys-ozora-festival-event-ends-early", "kind": "secondary"},
+            {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/hungarys-ozora-festival-closes-early-after-pair-of-attendee-deaths/", "kind": "secondary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/p/DbiEbBuCJBR/"}
+          ],
+          "tags": ["Ozora", "safety", "early closure", "medical response", "stage structure"]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "bbc-rave-forever-black-british-dance-music",
+          "published_at": "2026-08-03",
+          "event_start": "2026-08-07",
+          "event_end": "2026-08-28",
+          "title": "BBC věnuje srpnové pátky historii černé britské taneční hudby",
+          "summary": [
+            "BBC Radio 6 Music spustilo sérii Rave Forever, která během čtyř srpnových pátků vysílá od 7:00 do 19:00. Jednotlivé dny mapují osmdesátá, devadesátá, nultá a desátá léta.",
+            "Program zasazuje jungle a drum & bass vedle reggae, trip hopu, UK funky, garage a grime. Hosty a přispěvateli jsou mimo jiné Goldie, Krust, Sherelle, Norman Jay, Shy One a DJ Target.",
+            "Série vznikla ve spolupráci s výstavou The Music is Black: A British Story ve V&A East, která pracuje s více než 200 předměty a archivem BBC."
+          ],
+          "why_it_matters": "Celodenní vysílání BBC dává junglu a drum & bassu historický kontext v hlavním veřejnoprávním médiu a zapojuje několik generací zásadních osobností scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "BBC Radio 6 Music — Rave Forever", "url": "https://www.bbc.co.uk/mediacentre/articles/2026/6-music-rave-forever", "kind": "primary"},
+            {"name": "DJ Mag", "url": "https://djmag.com/news/bbc-radio-6-music-celebrate-black-british-dance-music-new-show-rave-forever", "kind": "secondary"}
+          ],
+          "media": [],
+          "tags": ["BBC Radio 6 Music", "jungle", "Goldie", "Krust", "Black British music"]
+        },
+        {
+          "id": "chase-status-lenzman-tribute-lir-coverage",
+          "published_at": "2026-08-06",
+          "event_start": "2026-08-01",
+          "event_end": "2026-08-01",
+          "title": "Pocta Lenzmanovi na Let It Rollu získala samostatné mezinárodní pokrytí",
+          "summary": [
+            "Chase & Status během headline setu na Let It Rollu věnovali Lenzmanovi slovní poctu a zahráli jeho bootleg skladby Unthinkable od Alicie Keys. DJ Mag moment 6. srpna zpracoval jako samostatnou zprávu.",
+            "Mediální pokrytí připomnělo Lenzmanovu práci pro Metalheadz a jeho label The North Quarter, který od roku 2016 vydával hudbu interpretů jako FD, Note, Fox a Objectiv.",
+            "Zpráva navazuje na širší vlnu vzpomínek od Goldieho, LSB, DJ Flight, Martyna a dalších osobností po Lenzmanově úmrtí v červenci."
+          ],
+          "why_it_matters": "Festivalový moment se proměnil v samostatnou mezinárodní scénovou zprávu a znovu otevřel téma Lenzmanova vlivu i významu The North Quarter.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "DJ Mag", "url": "https://djmag.com/news/chase-status-pay-tribute-lenzman-during-set-let-it-roll-festival", "kind": "secondary"},
+            {"name": "UKF Drum & Bass", "url": "https://www.facebook.com/ukfdrumandbass/posts/1489036896603208/", "kind": "secondary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/p/DbnIX9pkyXs/"}
+          ],
+          "tags": ["Chase & Status", "Lenzman", "The North Quarter", "Let It Roll", "tribute"]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": [
+        {
+          "id": "live-nation-majority-prague-venues-2026",
+          "published_at": "2026-08-07",
+          "event_start": null,
+          "event_end": null,
+          "title": "Live Nation získal většinové podíly ve třech klíčových pražských venues",
+          "summary": [
+            "Live Nation získal většinové podíly v O2 areně, O2 universu a Foru Karlín. IQ Magazine transakci označuje za dosud největší investici společnosti ve střední a východní Evropě.",
+            "Udávané kapacity jsou 20 tisíc pro O2 arenu, 5 tisíc pro O2 universum a 4 tisíce pro Forum Karlín. Všechny tři prostory se začlení do globální venue sítě Live Nation.",
+            "Společnost uvádí, že venues zůstanou otevřené všem interpretům, promotérům a pořadatelům. Transakce přesto propojuje významnou část pražské indoor infrastruktury s globálním promotérem a Ticketmasterem."
+          ],
+          "why_it_matters": "Změna vlastnictví se přímo týká pražských hal používaných pro velké koncerty a festivalové formáty a může ovlivnit dostupnost termínů, routing i ticketing v regionu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Live Nation CZ — announcement", "url": "https://www.instagram.com/p/DbvTfVdFxYe/", "kind": "primary"},
+            {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/live-nation-makes-major-cee-move-by-acquiring-trio-of-prague-venues/", "kind": "secondary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/p/DbvTfVdFxYe/"}
+          ],
+          "tags": ["Live Nation", "O2 arena", "O2 universum", "Forum Karlín", "Prague venues"]
+        }
+      ]
+    },
+    {"id": "audience_sentiment", "title": "Sentiment publika", "items": []},
+    {"id": "strategic_releases", "title": "Strategické releasy", "items": []},
+    {"id": "lir_actions", "title": "Doporučené kroky pro LIR", "items": []}
+  ],
+  "sources_scanned": [
+    "AUTOMATION.md",
+    "news/2026-week_31.json",
+    "news/2026-week_29.json",
+    "news/2026-week_28.json",
+    "news/2026-week_27.json",
+    "UKF",
+    "Drum & Bass UK",
+    "DJ Mag",
+    "Mixmag",
+    "Resident Advisor",
+    "Beatportal",
+    "Data Transmission DnB",
+    "LoveThatBass",
+    "Dogs On Acid",
+    "Drumandbass.nl",
+    "Best Drum & Bass",
+    "Festival Insights",
+    "IQ Magazine",
+    "Access All Areas",
+    "Music Business Worldwide",
+    "Pollstar",
+    "Event Industry News",
+    "Reuters",
+    "Reddit r/DnB: hot + top/week",
+    "Reddit r/LetItRollFestival",
+    "Boomtown",
+    "BBC Radio 6 Music"
+  ]
+}
