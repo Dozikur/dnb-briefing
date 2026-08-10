@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the manifest, legacy archive, and all schema v2 briefings."""
+"""Validate the manifest, legacy archive, schema v2 briefings, and the week 31 special."""
 
 from __future__ import annotations
 
@@ -236,6 +236,106 @@ def validate_v2(path: Path, report: dict) -> list[str]:
         return [f"{path.relative_to(ROOT)}: {exc}"]
 
 
+def validate_special(path: Path, report: dict) -> list[str]:
+    try:
+        if path.name != "2026-week_31-special.json":
+            fail("post_event_monitoring is only supported for 2026-week_31-special.json")
+        exact_keys(
+            report,
+            {
+                "schema_version", "type", "headline", "period", "methodology", "stats",
+                "instagram", "media", "community", "management_summary",
+            },
+            "special report",
+        )
+        if report["schema_version"] != 1 or report["type"] != "post_event_monitoring":
+            fail("special report must use schema_version 1 and type post_event_monitoring")
+        text(report["headline"], "headline", 8, 180)
+        text(report["methodology"], "methodology", 20, 1000)
+
+        period = report["period"]
+        exact_keys(period, {"window_start", "window_end", "updated_at", "metrics_checked_at"}, "period")
+        start = iso_date(period["window_start"], "period.window_start")
+        end = iso_date(period["window_end"], "period.window_end")
+        if start > end:
+            fail("period.window_start is after period.window_end")
+        for field in ("updated_at", "metrics_checked_at"):
+            try:
+                datetime.fromisoformat(period[field].replace("Z", "+00:00"))
+            except (AttributeError, TypeError, ValueError):
+                fail(f"period.{field} must be an ISO datetime")
+
+        stats = report["stats"]
+        stat_keys = {
+            "lineup_units", "units_with_posts", "units_without_posts",
+            "instagram_posts", "posts_with_visible_metrics",
+        }
+        exact_keys(stats, stat_keys, "stats")
+        if any(not isinstance(stats[key], int) or stats[key] < 0 for key in stat_keys):
+            fail("all stats values must be non-negative integers")
+        if stats["units_with_posts"] + stats["units_without_posts"] != stats["lineup_units"]:
+            fail("units_with_posts and units_without_posts must add up to lineup_units")
+
+        instagram = report["instagram"]
+        exact_keys(instagram, {"note", "top_posts", "posts", "without_post"}, "instagram")
+        text(instagram["note"], "instagram.note", 10, 1000)
+        for list_name in ("top_posts", "posts", "without_post"):
+            if not isinstance(instagram[list_name], list):
+                fail(f"instagram.{list_name} must be an array")
+        if len(instagram["top_posts"]) > 10:
+            fail("instagram.top_posts may contain at most 10 entries")
+        if len(instagram["posts"]) != stats["instagram_posts"]:
+            fail("instagram.posts count must match stats.instagram_posts")
+        for list_name in ("top_posts", "posts"):
+            for index, post in enumerate(instagram[list_name]):
+                field = f"instagram.{list_name}[{index}]"
+                if not isinstance(post, dict):
+                    fail(f"{field} must be an object")
+                for required in ("billing", "url", "published_at", "caption", "sentiment"):
+                    if required not in post:
+                        fail(f"{field} is missing {required}")
+                text(post["billing"], f"{field}.billing", 1, 160)
+                https_url(post["url"], f"{field}.url")
+                if post["published_at"] is not None:
+                    iso_date(post["published_at"], f"{field}.published_at")
+
+        media = report["media"]
+        exact_keys(media, {"note", "featured", "others"}, "media")
+        text(media["note"], "media.note", 10, 1000)
+        for list_name in ("featured", "others"):
+            if not isinstance(media[list_name], list):
+                fail(f"media.{list_name} must be an array")
+            for index, item in enumerate(media[list_name]):
+                field = f"media.{list_name}[{index}]"
+                if not isinstance(item, dict) or "title" not in item or "url" not in item:
+                    fail(f"{field} must contain title and url")
+                text(item["title"], f"{field}.title", 4, 220)
+                https_url(item["url"], f"{field}.url")
+
+        community = report["community"]
+        exact_keys(community, {"note", "positive", "negative", "themes"}, "community")
+        text(community["note"], "community.note", 10, 1000)
+        for list_name in ("positive", "negative", "themes"):
+            if not isinstance(community[list_name], list):
+                fail(f"community.{list_name} must be an array")
+        for list_name in ("positive", "negative"):
+            for index, item in enumerate(community[list_name]):
+                field = f"community.{list_name}[{index}]"
+                if not isinstance(item, dict) or "excerpt" not in item or "url" not in item:
+                    fail(f"{field} must contain excerpt and url")
+                text(item["excerpt"], f"{field}.excerpt", 10, 1000)
+                https_url(item["url"], f"{field}.url")
+
+        management = report["management_summary"]
+        exact_keys(management, {"worked", "problems", "verify"}, "management_summary")
+        for list_name in ("worked", "problems", "verify"):
+            validate_unique_text_list(management[list_name], f"management_summary.{list_name}", 20, 500)
+
+        return []
+    except ValidationError as exc:
+        return [f"{path.relative_to(ROOT)}: {exc}"]
+
+
 def validate_legacy(path: Path, report: list) -> list[str]:
     warnings: list[str] = []
     for index, item in enumerate(report):
@@ -270,10 +370,13 @@ def main() -> int:
     for entry in manifest["briefings"]:
         try:
             exact_keys(entry, {"year", "week", "file"}, "manifest entry")
-            expected = f"news/{entry['year']}-week_{entry['week']}.json"
-            if entry["file"] != expected:
-                fail(f"manifest expected {expected}, got {entry['file']}")
             period = (entry["year"], entry["week"])
+            expected = f"news/{entry['year']}-week_{entry['week']}.json"
+            allowed_files = {expected}
+            if period == (2026, 31):
+                allowed_files.add("news/2026-week_31-special.json")
+            if entry["file"] not in allowed_files:
+                fail(f"manifest expected one of {sorted(allowed_files)}, got {entry['file']}")
             if entry["file"] in seen_files or period in seen_periods:
                 fail(f"duplicate manifest entry: {period}")
             seen_files.add(entry["file"])
@@ -290,6 +393,8 @@ def main() -> int:
             continue
         if isinstance(report, list):
             warnings.extend(validate_legacy(path, report))
+        elif isinstance(report, dict) and report.get("type") == "post_event_monitoring":
+            errors.extend(validate_special(path, report))
         elif isinstance(report, dict) and report.get("schema_version") == 2:
             errors.extend(validate_v2(path, report))
         else:
