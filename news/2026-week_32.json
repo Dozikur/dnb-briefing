@@ -7,44 +7,19 @@
     "window_end": "2026-08-09",
     "generated_at": "2026-08-10T11:20:00+02:00"
   },
-  "headline": "Boomtown vyprodal ročník, splátky posilují prodej festivalů a Live Nation vstoupil do tří pražských venues",
+  "headline": "Hospital30 zrušilo show v Gentu bez jasné refundace, Worship rozdělili fanoušky a Live Nation posílil v Praze",
   "executive_summary": [
-    "Boomtown vstupuje do termínu 12. až 16. srpna jako vyprodaný festival; pořadatel drží oficiální resale a umožňuje splátky i u některých přeprodaných vstupenek.",
+    "Hospital30 v Gentu bylo před termínem zrušeno, ale ticket holdeři na Redditu ještě několik dní před akcí postrádali přímý e-mail i jasný postup refundace.",
+    "Debrief Worship ve Finsbury Parku rozdělil komunitu mezi chválu Pirapus a Charlie Tee a kritiku repetitivního headline setu, malé stage a méně energického publika.",
     "V Británii se přes splátkové plány prodává přibližně 45 procent vstupenek na campingové festivaly, zatímco od začátku roku bylo zrušeno 36 akcí.",
     "Live Nation získal většinové podíly v O2 areně, O2 universu a Foru Karlín, což představuje jeho dosud největší investici ve střední a východní Evropě.",
-    "Ozora ukončila hudební program po dvou nesouvisejících úmrtích; jeden případ souvisel se srdeční zástavou a druhý s pádem z dekorativní konstrukce.",
-    "BBC Radio 6 Music spustilo srpnovou sérii Rave Forever s Goldiem, Krustem a dalšími osobnostmi, zatímco pocta Lenzmanovi na Let It Rollu získala samostatné mezinárodní mediální pokrytí."
+    "Pocta Lenzmanovi během setu Chase & Status na Let It Rollu získala samostatné mezinárodní mediální pokrytí."
   ],
   "sections": [
     {
       "id": "competition",
       "title": "Přímá konkurence",
-      "items": [
-        {
-          "id": "boomtown-2026-sold-out-payment-resale",
-          "published_at": "2026-08-08",
-          "event_start": "2026-08-12",
-          "event_end": "2026-08-16",
-          "title": "Boomtown vstupuje do festivalového týdne vyprodaný a drží vlastní přeprodej",
-          "summary": [
-            "Boomtown se před termínem 12. až 16. srpna vyprodal; běžné vstupenky nahradil oficiální Citizen-to-Citizen resale. Čtvrteční přeprodaná vstupenka stojí 380 liber, varianta s veřejnou dopravou 360 liber.",
-            "Festival umožňoval rozdělit cenu nákupu do splátek. U resale lze pro způsobilé zákazníky použít tři platby přes Klarnu a původní držitel dostane peníze až po prodeji vstupenky, bez vrácení booking fee.",
-            "Reuters uvádí, že Boomtown se v roce 2026 vyprodal rekordně rychle. Pořadatel spojuje poptávku také s doplňky, wellness a vyššími očekáváními lidí, kteří festival porovnávají s cenou zahraniční dovolené."
-          ],
-          "why_it_matters": "Boomtown ukazuje kombinaci vyprodaného bassového festivalu, splátek, řízeného přeprodeje a placených doplňků v cenové hladině srovnatelné s delší dovolenou.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "europe",
-          "category": "competition",
-          "competitors": ["Boomtown"],
-          "confidence": "confirmed",
-          "sources": [
-            {"name": "Boomtown — Tickets", "url": "https://www.boomtownfair.co.uk/tickets", "kind": "primary"},
-            {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"}
-          ],
-          "media": [],
-          "tags": ["Boomtown", "sold out", "payment plans", "resale", "ticketing"]
-        }
-      ]
+      "items": []
     },
     {
       "id": "festival_industry",
@@ -71,35 +46,36 @@
             {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"},
             {"name": "Boomtown — Instalment Tickets", "url": "https://www.boomtownfair.co.uk/tickets", "kind": "primary"}
           ],
-          "media": [],
+          "media": [
+            {"type": "image", "url": "https://www.reuters.com/resizer/v2/AIJGFWQGEJOVDHXANCMV7W4T7Q.jpg?auth=1844703c009865a1fd1f2e00f7263700eda78486319f58b3f2c5f66fe8eda490&height=1005&width=1920&quality=80&smart=true"}
+          ],
           "tags": ["payment plans", "festival economics", "camping", "AIF", "cancellations"]
         },
         {
-          "id": "ozora-2026-two-deaths-early-close",
-          "published_at": "2026-08-03",
-          "event_start": "2026-08-01",
-          "event_end": "2026-08-02",
-          "title": "Ozora po dvou úmrtích předčasně ukončila hudební program",
+          "id": "hospital30-ghent-cancelled-refund-communication",
+          "published_at": "2026-08-05",
+          "event_start": "2026-08-08",
+          "event_end": "2026-08-08",
+          "title": "Hospital30 v Gentu bylo zrušeno bez včasné komunikace o refundaci",
           "summary": [
-            "Maďarská Ozora ukončila 2. srpna o půlnoci veškerý hudební program, přestože festival měl pokračovat do 4. srpna. Rozhodnutí následovalo po dvou nesouvisejících úmrtích v areálu.",
-            "Devětatřicetiletá návštěvnice zemřela po náhlé srdeční zástavě navzdory rychlému zásahu zdravotníků. Pětačtyřicetiletý muž zemřel po pádu z dekorativní konstrukce u hlavní stage; okolnosti vyšetřují úřady.",
-            "Pořadatelé ve veřejném prohlášení potvrdili oba případy a ukončení programu. Dostupné zprávy nepřipisují festivalu odpovědnost za samotná úmrtí."
+            "Ticket holder na r/DnB několik dní před termínem 8. srpna doložil, že venue Chinastraat i facebooková událost označily Hospital30 Belgium za zrušené a Hospitality odstranilo akci ze svého webu.",
+            "Autor vlákna ani další držitelé vstupenek podle diskuse nedostali přímý e-mail nebo jasné informace o refundaci. Chinastraat zveřejnila informaci ve Stories 5. srpna, zatímco Ready to Roll uvedli, že pouze hostovali stage a odpovědnost za organizaci a refundace má Bad Habitz.",
+            "Vlákno ukazuje praktický dopad na lidi cestující ze zahraničí s rezervovanými lety a ubytováním. Jde o komunitně doložený komunikační problém; veřejné stanovisko pořadatele nebylo ve zdrojích zachyceno."
           ],
-          "why_it_matters": "Případ spojuje krizové rozhodnutí o ukončení programu s rizikem lezení na dekorativní stage konstrukce a s medicínskou připraveností během extrémního horka.",
+          "why_it_matters": "Zrušení DnB akce bez přímé a včasné komunikace přenáší finanční riziko na fanoušky a současně poškozuje důvěru v promotéra, venue i značku hostujícího labelu.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "festival_industry",
           "competitors": [],
-          "confidence": "confirmed",
+          "confidence": "probable",
           "sources": [
-            {"name": "Ozora Festival — official statement", "url": "https://www.instagram.com/p/DbiEbBuCJBR/", "kind": "primary"},
-            {"name": "DJ Mag", "url": "https://djmag.com/news/two-attendees-die-hungarys-ozora-festival-event-ends-early", "kind": "secondary"},
-            {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/hungarys-ozora-festival-closes-early-after-pair-of-attendee-deaths/", "kind": "secondary"}
+            {"name": "Reddit r/DnB — Hospital30 Belgium", "url": "https://www.reddit.com/r/DnB/comments/1vf7q70/hospital30_belgium_ghent_cancelled_no_official/", "kind": "community"},
+            {"name": "DJGuide — event listing", "url": "https://www.djguide.nl/party.p/562276/hospital30-belgium", "kind": "secondary"}
           ],
           "media": [
-            {"type": "instagram", "url": "https://www.instagram.com/p/DbiEbBuCJBR/"}
+            {"type": "image", "url": "https://whathappens.be/sites/default/files/2023-10/chinaaaa.jpg?crop=1170%2C658%2C0%2C244&height=1080&width=1920"}
           ],
-          "tags": ["Ozora", "safety", "early closure", "medical response", "stage structure"]
+          "tags": ["Hospital30", "Hospitality", "Ghent", "cancellation", "refunds"]
         }
       ]
     },
@@ -108,28 +84,31 @@
       "title": "DnB scéna",
       "items": [
         {
-          "id": "bbc-rave-forever-black-british-dance-music",
-          "published_at": "2026-08-03",
-          "event_start": "2026-08-07",
-          "event_end": "2026-08-28",
-          "title": "BBC věnuje srpnové pátky historii černé britské taneční hudby",
+          "id": "worship-finsbury-park-community-debrief",
+          "published_at": "2026-08-04",
+          "event_start": "2026-08-02",
+          "event_end": "2026-08-02",
+          "title": "Worship ve Finsbury Parku rozdělili fanoušky mezi velkou show a kritiku repetitivního setu",
           "summary": [
-            "BBC Radio 6 Music spustilo sérii Rave Forever, která během čtyř srpnových pátků vysílá od 7:00 do 19:00. Jednotlivé dny mapují osmdesátá, devadesátá, nultá a desátá léta.",
-            "Program zasazuje jungle a drum & bass vedle reggae, trip hopu, UK funky, garage a grime. Hosty a přispěvateli jsou mimo jiné Goldie, Krust, Sherelle, Norman Jay, Shy One a DJ Target.",
-            "Série vznikla ve spolupráci s výstavou The Music is Black: A British Story ve V&A East, která pracuje s více než 200 předměty a archivem BBC."
+            "Debrief na r/DnB chválí energické a obsahově odlišné sety Pirapus a Charlie Tee, ale headline vystoupení Worship hodnotí jako příliš podobné předchozím online setům a s omezeným množstvím nové hudby.",
+            "Autor kritizuje malou hlavní stage, horší výhled v koncentrovaném davu a méně energickou londýnskou atmosféru. Část komentujících souhlasila s komerčním a repetitivním charakterem, jiní připomněli, že značka Worship svůj přístup dlouhodobě neskrývá a zvuk i prostor hodnotili pozitivně.",
+            "Diskuse tak nepřináší jednotný verdikt: support program získal výraznou chválu, zatímco očekávání od společného setu Sub Focus, Dimension, Culture Shock a 1991 se mezi zkušenými fanoušky zásadně lišila."
           ],
-          "why_it_matters": "Celodenní vysílání BBC dává junglu a drum & bassu historický kontext v hlavním veřejnoprávním médiu a zapojuje několik generací zásadních osobností scény.",
+          "why_it_matters": "Reakce ukazují rozdíl mezi masovým dosahem značky Worship a očekáváním části britského DnB publika na výraznější mixing, nové duby a specifičtější lokální show.",
           "recommended_action": "Bez akce, pouze informační přehled",
           "region": "europe",
           "category": "dnb_scene",
           "competitors": [],
-          "confidence": "confirmed",
+          "confidence": "probable",
           "sources": [
-            {"name": "BBC Radio 6 Music — Rave Forever", "url": "https://www.bbc.co.uk/mediacentre/articles/2026/6-music-rave-forever", "kind": "primary"},
-            {"name": "DJ Mag", "url": "https://djmag.com/news/bbc-radio-6-music-celebrate-black-british-dance-music-new-show-rave-forever", "kind": "secondary"}
+            {"name": "Reddit r/DnB — Worship Finsbury Park Debrief", "url": "https://www.reddit.com/r/DnB/comments/1vfdlcw/worship_finsbury_park_debrief/", "kind": "community"},
+            {"name": "See Tickets — Worship Finsbury Park", "url": "https://purchase.seetickets.com/event/worship/finsbury-park/3559338", "kind": "primary"},
+            {"name": "Songkick — event listing", "url": "https://www.songkick.com/concerts/42912670-sub-focus-at-finsbury-park", "kind": "secondary"}
           ],
-          "media": [],
-          "tags": ["BBC Radio 6 Music", "jungle", "Goldie", "Krust", "Black British music"]
+          "media": [
+            {"type": "image", "url": "https://images.sk-static.com/images/media/img/col6/20250313-121816-517418.jpg"}
+          ],
+          "tags": ["Worship", "Finsbury Park", "Sub Focus", "Dimension", "community reaction"]
         },
         {
           "id": "chase-status-lenzman-tribute-lir-coverage",
@@ -153,6 +132,7 @@
             {"name": "UKF Drum & Bass", "url": "https://www.facebook.com/ukfdrumandbass/posts/1489036896603208/", "kind": "secondary"}
           ],
           "media": [
+            {"type": "image", "url": "https://djmag.com/sites/default/files/styles/djm_23_1005x565/public/2026-08/chase%26%26status.jpg.webp?itok=S22KaZRY769547759"},
             {"type": "instagram", "url": "https://www.instagram.com/p/DbnIX9pkyXs/"}
           ],
           "tags": ["Chase & Status", "Lenzman", "The North Quarter", "Let It Roll", "tribute"]
@@ -185,6 +165,7 @@
             {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/live-nation-makes-major-cee-move-by-acquiring-trio-of-prague-venues/", "kind": "secondary"}
           ],
           "media": [
+            {"type": "image", "url": "https://www.iqmagazine.com/wp-content/uploads/2026/08/O2-Arena-Prague-%C2%A9-Dana-Rollins.png"},
             {"type": "instagram", "url": "https://www.instagram.com/p/DbvTfVdFxYe/"}
           ],
           "tags": ["Live Nation", "O2 arena", "O2 universum", "Forum Karlín", "Prague venues"]
@@ -220,8 +201,10 @@
     "Event Industry News",
     "Reuters",
     "Reddit r/DnB: hot + top/week",
+    "Reddit r/DnB: Hospital30 Belgium cancellation thread",
+    "Reddit r/DnB: Worship Finsbury Park debrief",
     "Reddit r/LetItRollFestival",
-    "Boomtown",
-    "BBC Radio 6 Music"
+    "Hospital30 Belgium",
+    "Worship Finsbury Park"
   ]
 }
