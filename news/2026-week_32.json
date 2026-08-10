@@ -73,7 +73,7 @@
             {"name": "DJGuide — event listing", "url": "https://www.djguide.nl/party.p/562276/hospital30-belgium", "kind": "secondary"}
           ],
           "media": [
-            {"type": "image", "url": "https://whathappens.be/sites/default/files/2023-10/chinaaaa.jpg?crop=1170%2C658%2C0%2C244&height=1080&width=1920"}
+            {"type": "image", "url": "https://cms.hospitalitydnb.com/wp-content/uploads/2026/04/1x1-2-1.png"}
           ],
           "tags": ["Hospital30", "Hospitality", "Ghent", "cancellation", "refunds"]
         }
@@ -106,7 +106,7 @@
             {"name": "Songkick — event listing", "url": "https://www.songkick.com/concerts/42912670-sub-focus-at-finsbury-park", "kind": "secondary"}
           ],
           "media": [
-            {"type": "image", "url": "https://images.sk-static.com/images/media/img/col6/20250313-121816-517418.jpg"}
+            {"type": "instagram", "url": "https://www.instagram.com/p/DboH__6DRAB/?img_index=1"}
           ],
           "tags": ["Worship", "Finsbury Park", "Sub Focus", "Dimension", "community reaction"]
         },
