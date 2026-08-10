@@ -68,7 +68,8 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"}
+            {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"},
+            {"name": "Boomtown — Instalment Tickets", "url": "https://www.boomtownfair.co.uk/tickets", "kind": "primary"}
           ],
           "media": [],
           "tags": ["payment plans", "festival economics", "camping", "AIF", "cancellations"]
@@ -148,9 +149,12 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {"name": "DJ Mag", "url": "https://djmag.com/news/chase-status-pay-tribute-lenzman-during-set-let-it-roll-festival", "kind": "secondary"}
+            {"name": "DJ Mag", "url": "https://djmag.com/news/chase-status-pay-tribute-lenzman-during-set-let-it-roll-festival", "kind": "secondary"},
+            {"name": "UKF Drum & Bass", "url": "https://www.facebook.com/ukfdrumandbass/posts/1489036896603208/", "kind": "secondary"}
           ],
-          "media": [],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/p/DbnIX9pkyXs/"}
+          ],
           "tags": ["Chase & Status", "Lenzman", "The North Quarter", "Let It Roll", "tribute"]
         }
       ]
