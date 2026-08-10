@@ -43,13 +43,30 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {"name": "Reuters", "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/", "kind": "secondary"},
-            {"name": "Boomtown — Instalment Tickets", "url": "https://www.boomtownfair.co.uk/tickets", "kind": "primary"}
+            {
+              "name": "Reuters",
+              "url": "https://www.reuters.com/world/uk/british-music-festivals-stage-tentative-revival-with-perks-payment-plans-2026-08-08/",
+              "kind": "secondary"
+            },
+            {
+              "name": "Boomtown — Instalment Tickets",
+              "url": "https://www.boomtownfair.co.uk/tickets",
+              "kind": "primary"
+            }
           ],
           "media": [
-            {"type": "image", "url": "https://www.reuters.com/resizer/v2/AIJGFWQGEJOVDHXANCMV7W4T7Q.jpg?auth=1844703c009865a1fd1f2e00f7263700eda78486319f58b3f2c5f66fe8eda490&height=1005&width=1920&quality=80&smart=true"}
+            {
+              "type": "image",
+              "url": "https://www.reuters.com/resizer/v2/AIJGFWQGEJOVDHXANCMV7W4T7Q.jpg?auth=1844703c009865a1fd1f2e00f7263700eda78486319f58b3f2c5f66fe8eda490&height=1005&width=1920&quality=80&smart=true"
+            }
           ],
-          "tags": ["payment plans", "festival economics", "camping", "AIF", "cancellations"]
+          "tags": [
+            "payment plans",
+            "festival economics",
+            "camping",
+            "AIF",
+            "cancellations"
+          ]
         },
         {
           "id": "hospital30-ghent-cancelled-refund-communication",
@@ -69,13 +86,30 @@
           "competitors": [],
           "confidence": "probable",
           "sources": [
-            {"name": "Reddit r/DnB — Hospital30 Belgium", "url": "https://www.reddit.com/r/DnB/comments/1vf7q70/hospital30_belgium_ghent_cancelled_no_official/", "kind": "community"},
-            {"name": "DJGuide — event listing", "url": "https://www.djguide.nl/party.p/562276/hospital30-belgium", "kind": "secondary"}
+            {
+              "name": "Reddit r/DnB — Hospital30 Belgium",
+              "url": "https://www.reddit.com/r/DnB/comments/1vf7q70/hospital30_belgium_ghent_cancelled_no_official/",
+              "kind": "community"
+            },
+            {
+              "name": "DJGuide — event listing",
+              "url": "https://www.djguide.nl/party.p/562276/hospital30-belgium",
+              "kind": "secondary"
+            }
           ],
           "media": [
-            {"type": "image", "url": "https://whathappens.be/sites/default/files/2023-10/chinaaaa.jpg?crop=1170%2C658%2C0%2C244&height=1080&width=1920"}
+            {
+              "type": "image",
+              "url": "https://cms.hospitalitydnb.com/wp-content/uploads/2026/04/1x1-2-1.png"
+            }
           ],
-          "tags": ["Hospital30", "Hospitality", "Ghent", "cancellation", "refunds"]
+          "tags": [
+            "Hospital30",
+            "Hospitality",
+            "Ghent",
+            "cancellation",
+            "refunds"
+          ]
         }
       ]
     },
@@ -101,14 +135,35 @@
           "competitors": [],
           "confidence": "probable",
           "sources": [
-            {"name": "Reddit r/DnB — Worship Finsbury Park Debrief", "url": "https://www.reddit.com/r/DnB/comments/1vfdlcw/worship_finsbury_park_debrief/", "kind": "community"},
-            {"name": "See Tickets — Worship Finsbury Park", "url": "https://purchase.seetickets.com/event/worship/finsbury-park/3559338", "kind": "primary"},
-            {"name": "Songkick — event listing", "url": "https://www.songkick.com/concerts/42912670-sub-focus-at-finsbury-park", "kind": "secondary"}
+            {
+              "name": "Reddit r/DnB — Worship Finsbury Park Debrief",
+              "url": "https://www.reddit.com/r/DnB/comments/1vfdlcw/worship_finsbury_park_debrief/",
+              "kind": "community"
+            },
+            {
+              "name": "See Tickets — Worship Finsbury Park",
+              "url": "https://purchase.seetickets.com/event/worship/finsbury-park/3559338",
+              "kind": "primary"
+            },
+            {
+              "name": "Songkick — event listing",
+              "url": "https://www.songkick.com/concerts/42912670-sub-focus-at-finsbury-park",
+              "kind": "secondary"
+            }
           ],
           "media": [
-            {"type": "image", "url": "https://images.sk-static.com/images/media/img/col6/20250313-121816-517418.jpg"}
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DboH__6DRAB/?img_index=1"
+            }
           ],
-          "tags": ["Worship", "Finsbury Park", "Sub Focus", "Dimension", "community reaction"]
+          "tags": [
+            "Worship",
+            "Finsbury Park",
+            "Sub Focus",
+            "Dimension",
+            "community reaction"
+          ]
         },
         {
           "id": "chase-status-lenzman-tribute-lir-coverage",
@@ -128,14 +183,34 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {"name": "DJ Mag", "url": "https://djmag.com/news/chase-status-pay-tribute-lenzman-during-set-let-it-roll-festival", "kind": "secondary"},
-            {"name": "UKF Drum & Bass", "url": "https://www.facebook.com/ukfdrumandbass/posts/1489036896603208/", "kind": "secondary"}
+            {
+              "name": "DJ Mag",
+              "url": "https://djmag.com/news/chase-status-pay-tribute-lenzman-during-set-let-it-roll-festival",
+              "kind": "secondary"
+            },
+            {
+              "name": "UKF Drum & Bass",
+              "url": "https://www.facebook.com/ukfdrumandbass/posts/1489036896603208/",
+              "kind": "secondary"
+            }
           ],
           "media": [
-            {"type": "image", "url": "https://djmag.com/sites/default/files/styles/djm_23_1005x565/public/2026-08/chase%26%26status.jpg.webp?itok=S22KaZRY769547759"},
-            {"type": "instagram", "url": "https://www.instagram.com/p/DbnIX9pkyXs/"}
+            {
+              "type": "image",
+              "url": "https://djmag.com/sites/default/files/styles/djm_23_1005x565/public/2026-08/chase%26%26status.jpg.webp?itok=S22KaZRY769547759"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DbnIX9pkyXs/"
+            }
           ],
-          "tags": ["Chase & Status", "Lenzman", "The North Quarter", "Let It Roll", "tribute"]
+          "tags": [
+            "Chase & Status",
+            "Lenzman",
+            "The North Quarter",
+            "Let It Roll",
+            "tribute"
+          ]
         }
       ]
     },
@@ -161,20 +236,52 @@
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
-            {"name": "Live Nation CZ — announcement", "url": "https://www.instagram.com/p/DbvTfVdFxYe/", "kind": "primary"},
-            {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/live-nation-makes-major-cee-move-by-acquiring-trio-of-prague-venues/", "kind": "secondary"}
+            {
+              "name": "Live Nation CZ — announcement",
+              "url": "https://www.instagram.com/p/DbvTfVdFxYe/",
+              "kind": "primary"
+            },
+            {
+              "name": "IQ Magazine",
+              "url": "https://www.iqmagazine.com/2026/08/live-nation-makes-major-cee-move-by-acquiring-trio-of-prague-venues/",
+              "kind": "secondary"
+            }
           ],
           "media": [
-            {"type": "image", "url": "https://www.iqmagazine.com/wp-content/uploads/2026/08/O2-Arena-Prague-%C2%A9-Dana-Rollins.png"},
-            {"type": "instagram", "url": "https://www.instagram.com/p/DbvTfVdFxYe/"}
+            {
+              "type": "image",
+              "url": "https://www.iqmagazine.com/wp-content/uploads/2026/08/O2-Arena-Prague-%C2%A9-Dana-Rollins.png"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DbvTfVdFxYe/"
+            }
           ],
-          "tags": ["Live Nation", "O2 arena", "O2 universum", "Forum Karlín", "Prague venues"]
+          "tags": [
+            "Live Nation",
+            "O2 arena",
+            "O2 universum",
+            "Forum Karlín",
+            "Prague venues"
+          ]
         }
       ]
     },
-    {"id": "audience_sentiment", "title": "Sentiment publika", "items": []},
-    {"id": "strategic_releases", "title": "Strategické releasy", "items": []},
-    {"id": "lir_actions", "title": "Doporučené kroky pro LIR", "items": []}
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": []
+    }
   ],
   "sources_scanned": [
     "AUTOMATION.md",
