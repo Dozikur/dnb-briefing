@@ -1,0 +1,264 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 33,
+    "window_start": "2026-08-10",
+    "window_end": "2026-08-16",
+    "generated_at": "2026-08-17T09:59:11+02:00"
+  },
+  "headline": "DnB Allstars rozšiřují destination model, Boomtown aktivoval režim pro vedro a dodavatelé eventové infrastruktury konsolidují",
+  "executive_summary": [
+    "DnB Allstars zveřejnili 15. srpna lineup návratového třídenního festivalu v Phuketu na 22. až 24. ledna 2027; vstupenky se prodávají od 129 liber.",
+    "Darkshire týden před Valley 2026 prodává třídenní lokální neuro festival za 1 990 Kč a staví program na Pythiusovi, Monrroeovi, Klinicalovi, Emperorovi a Agressor Bunx.",
+    "Boomtown při extrémním vedru a suchu nasadil zákaz otevřeného ohně a vařičů, vodní cisterny proti prachu, stíněné zóny a možnost omezit neesenciální spotřebu vody.",
+    "Spojení eps a NUSSLI vytvořilo skupinu s 820 zaměstnanci v 50 lokalitách, která spojuje ochranu povrchů, crowd control, tribuny, stages a dočasné stavby.",
+    "Justin Hawkes otestoval dvoutýdenní Bandcamp first distribuci s dobrovolnou cenou před vydáním dvanáctiskladbového alba na streamingu přes vlastní label."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "dnb-allstars-thailand-2027-lineup-return",
+          "published_at": "2026-08-15",
+          "event_start": "2027-01-22",
+          "event_end": "2027-01-24",
+          "title": "DnB Allstars mění Phuket z experimentu na opakovaný destination festival",
+          "summary": [
+            "DnB Allstars 15. srpna zveřejnili lineup druhého třídenního ročníku v Phuketu, který proběhne 22. až 24. ledna 2027. Megatix potvrzuje návrat značky po prvním ročníku 2026 a prodává vstupenky od 129 liber.",
+            "Značka tak pokračuje mimo evropský klubový a jednodenní model a buduje zimní DnB cestu do jihovýchodní Asie. Opakování akce je silnější důkaz životaschopnosti formátu než jednorázový vstup na nový trh."
+          ],
+          "why_it_matters": "Destination festival soutěží o stejný mezinárodní segment fanoušků a zimní cestovní rozpočet a současně vytváří další placený termín pro žádané DnB interprety.",
+          "recommended_action": "Porovnat lineupový překryv, základní cenu a délku pobytu Phuketu s mezinárodním prodejním argumentem Let It Rollu 2027.",
+          "region": "global",
+          "category": "competition",
+          "competitors": ["DnB Allstars"],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "DnB Allstars — Instagram", "url": "https://www.instagram.com/dnballstars/reel/DcDuZIbo5RL/", "kind": "primary"},
+            {"name": "Megatix Thailand", "url": "https://megatix.in.th/DnBAllstars2027", "kind": "primary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/dnballstars/reel/DcDuZIbo5RL/"}
+          ],
+          "tags": ["DnB Allstars", "Thailand", "destination festival", "ticket price", "international expansion"]
+        },
+        {
+          "id": "darkshire-valley-2026-final-week-positioning",
+          "published_at": "2026-08-14",
+          "event_start": "2026-08-21",
+          "event_end": "2026-08-23",
+          "title": "Darkshire Valley nabízí týden po hlavní sezoně třídenní neuro festival za 1 990 Kč",
+          "summary": [
+            "Darkshire vstoupil 14. srpna do posledního týdne prodeje druhého ročníku In The Valley, který proběhne 21. až 23. srpna v Rájence u Zlína. GoOut uvádí cenu 1 990 Kč za třídenní akci.",
+            "Program staví na Pythiusovi, Monrroeovi, Klinicalovi, Emperorovi, Agressor Bunx a Merikanovi a doplňuje ho česká sestava. Jde o úzce vymezený neuro a deep produkt s přírodní lokací, instalacemi a nižší vstupní cenou než velké evropské campingové festivaly."
+          ],
+          "why_it_matters": "Darkshire oslovuje stejné české tvrdší DnB publikum dostupným třídenním produktem jen tři týdny po Let It Rollu a vytváří další domácí poptávku po stejných neuro jménech.",
+          "recommended_action": "Po akci porovnat veřejně viditelný prodej, lineupový překryv a reakce na venue, zvuk a zázemí s výsledky Let It Rollu 2026.",
+          "region": "cz_sk",
+          "category": "competition",
+          "competitors": ["Darkshire"],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Darkshire — poslední týden", "url": "https://www.instagram.com/darkshire.events/p/DcBbth3CIE8/", "kind": "primary"},
+            {"name": "Darkshire", "url": "https://darkshire.cz/", "kind": "primary"},
+            {"name": "GoOut", "url": "https://goout.net/en/darkshire-festival-in-the-valley-2026/szgieiy/", "kind": "primary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/darkshire.events/p/DcBbth3CIE8/"}
+          ],
+          "tags": ["Darkshire", "neurofunk", "Czech Republic", "ticket price", "festival positioning"]
+        },
+        {
+          "id": "boomtown-extreme-heat-drought-response-2026",
+          "published_at": "2026-08-12",
+          "event_start": "2026-08-12",
+          "event_end": "2026-08-16",
+          "title": "Boomtown během festivalu aktivoval provozní režim pro extrémní vedro, prach a sucho",
+          "summary": [
+            "Boomtown při zahájení vyprodaného ročníku zveřejnil mimořádné pokyny pro horko na suchém křídovém areálu Matterley Estate. Zakázal otevřený oheň, jednorázové grily a campingové vařiče, nasadil stíněné odpočinkové zóny a vodní cisterny pro potlačení prachu.",
+            "Organizátor uvedl, že 50 procent Británie je v podmínkách sucha a že může během dne řídit neesenciální spotřebu vody, aby zachoval klíčové zásoby. Komunikace spojila změny pravidel, zdravotní symptomy, požární riziko, vodu a prach do jednoho návštěvnického balíku."
+          ],
+          "why_it_matters": "Stejná kombinace vysokých teplot, suché půdy, omezeného stínu a velkého campingu může změnit zdravotní, požární i vodní plán venkovního LIR během několika hodin.",
+          "recommended_action": "Připravit předem schválenou heat and drought matici s prahy pro stín, zásobování vodou, prach, zákazy ohně a jednotnou krizovou komunikaci.",
+          "region": "europe",
+          "category": "competition",
+          "competitors": ["Boomtown"],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Boomtown — Arrivals Welfare Info", "url": "https://www.instagram.com/p/Db8GxWUALzq/", "kind": "primary"},
+            {"name": "Boomtown — Weather Information", "url": "https://www.boomtownfair.co.uk/info", "kind": "primary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/p/Db8GxWUALzq/"}
+          ],
+          "tags": ["Boomtown", "extreme heat", "drought", "water", "fire safety", "dust"]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "eps-nussli-event-infrastructure-merger-2026",
+          "published_at": "2026-08-12",
+          "event_start": null,
+          "event_end": null,
+          "title": "eps a NUSSLI spojily crowd control, ochranu povrchů a dočasné stavby do jedné skupiny",
+          "summary": [
+            "Dodavatelé eps a NUSSLI oznámili spojení do evropské skupiny s globální působností. Nový celek má 820 zaměstnanců v 50 lokalitách a nabízí ochranu povrchů, crowd control, tribuny, stages, speciální konstrukce a dočasné stadiony.",
+            "Obě značky a jejich centrály v Mnichově a Hüttwilenu zůstávají zachované, skupinu vede dosavadní CEO NUSSLI Andy Böckli. Spojení rozšiřuje možnost nakoupit velkou část dočasné festivalové infrastruktury od jednoho dodavatele."
+          ],
+          "why_it_matters": "Konsolidace může zjednodušit koordinaci velkých staveb, ale současně zvyšuje závislost pořadatele na jednom dodavatelském celku a oslabuje oddělené cenové srovnání služeb.",
+          "recommended_action": "Zmapovat, zda jsou dodavatelé LIR 2027 napojeni na novou skupinu, a zachovat alternativní nabídky pro klíčové bariéry, povrchy a dočasné konstrukce.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "eps", "url": "https://eps.net/en/", "kind": "primary"},
+            {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/eps-and-nussli-merge-to-form-globally-active-event-infrastructure-group/", "kind": "secondary"},
+            {"name": "Access All Areas", "url": "https://accessaa.co.uk/eps-and-nussli-merge-to-create-new-group/", "kind": "secondary"}
+          ],
+          "media": [],
+          "tags": ["event infrastructure", "merger", "crowd control", "temporary structures", "suppliers"]
+        },
+        {
+          "id": "mari-acquires-atg-live-entertainment-2026",
+          "published_at": "2026-08-11",
+          "event_start": null,
+          "event_end": null,
+          "title": "Mari kupuje ATG a propojuje 70 venues, produkci a ticketing v obchodu za přibližně 4,5 miliardy liber",
+          "summary": [
+            "Skupina Mari Ariho Emanuela se dohodla na převzetí ATG Entertainment od Providence Equity. ATG provozuje 70 venues v Británii, USA, Německu a Španělsku a vedle správy prostor vlastní produkční a ticketingové kapacity.",
+            "Cena nebyla oficiálně zveřejněna; Financial Times ji podle zdrojů odhadují na přibližně 4,5 miliardy liber. Transakce podléhá regulatornímu schválení a představuje největší dosavadní investici Mari do živé zábavy."
+          ],
+          "why_it_matters": "Další spojení venues, produkce, ticketingu a talentové sítě posiluje vertikálně integrované skupiny, které mohou ovlivňovat routing, dostupnost termínů, data o publiku i vyjednávací sílu nezávislých promotérů.",
+          "recommended_action": "Sledovat, zda ATG Live po schválení transakce rozšíří evropské festivalové nebo koncertní aktivity a zda se objeví dopad na routing agentury WME.",
+          "region": "global",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "IQ Magazine", "url": "https://www.iqmagazine.com/2026/08/atg-entertainment-acquired-by-ari-emanuels-mari-in-e5bn-deal/", "kind": "secondary"},
+            {"name": "Financial Times", "url": "https://www.ft.com/content/df4d2721-d84b-475a-8139-d58d7418a881", "kind": "secondary"},
+            {"name": "Variety", "url": "https://variety.com/2026/biz/global/ari-emanuel-mari-acquires-atg-entertainment-theater-venue-giant-1236832004/", "kind": "secondary"}
+          ],
+          "media": [],
+          "tags": ["M&A", "ATG Entertainment", "Mari", "venues", "ticketing", "vertical integration"]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "bou-real-time-sample-las-vegas-content-loop",
+          "published_at": "2026-08-10",
+          "event_start": "2026-08-06",
+          "event_end": "2026-08-06",
+          "title": "Bou proměnil událost z letu během jediného dne v track, virální obsah a moment na pódiu",
+          "summary": [
+            "Bou během letu z Heathrow do Las Vegas nasamploval větu palubní průvodčí Sophie Turner, která řešila konfliktního cestujícího. Ještě během cesty ukázal vznik tracku na Instagramu a večer Turner pozval na pódium, aby vokál zahrála živě.",
+            "DJ Mag příběh zpracoval 10. srpna jako samostatnou zprávu a zveřejnil původní video. Formát spojil rychlou produkci, autentickou osobu z příběhu a koncertní vyvrcholení bez oddělených promo fází."
+          ],
+          "why_it_matters": "Ukazuje mimořádně rychlý obsahový cyklus, ve kterém nový zvuk, lidský příběh a živé vystoupení vzniknou současně a média mají hotový sdílitelný narativ.",
+          "recommended_action": "U vhodného momentu z cesty nebo backstage otestovat stejný jednodenní řetězec vznik zvuku, krátké video a živé použití bez inscenovaného příběhu.",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Bou — Instagram", "url": "https://www.instagram.com/reel/DbvP0HlPXzo/", "kind": "primary"},
+            {"name": "DJ Mag", "url": "https://djmag.com/news/bou-brings-flight-attendant-stage-las-vegas-after-sampling-passenger-cabin-crew-confrontation", "kind": "secondary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/reel/DbvP0HlPXzo/"}
+          ],
+          "tags": ["Bou", "content format", "sampling", "live moment", "social media"]
+        },
+        {
+          "id": "justin-hawkes-now-or-never-direct-first-release",
+          "published_at": "2026-08-14",
+          "event_start": null,
+          "event_end": null,
+          "title": "Justin Hawkes dal vlastnímu labelu dvoutýdenní Bandcamp first okno před streamingem",
+          "summary": [
+            "Justin Hawkes vydal 14. srpna na DSP své druhé album Now Or Never: dvanáct skladeb napříč tech DnB, future jungle, halftime a jump upem. Album vyšlo přes jeho vlastní Drumcaste Collective a navazuje na katalog s více než 100 miliony streamů.",
+            "Před plošným vydáním bylo album od 31. července dva týdny dostupné pouze na Bandcampu v režimu pay what you want. Tento postup dal přímému prodeji, komunitě a vlastním datům časový náskok před algoritmickou distribucí."
+          ],
+          "why_it_matters": "Jde o praktický model, jak u fanouškovsky silného alba spojit přímý výnos a vztah s komunitou s následným dosahem streamovacích služeb bez trvalého omezení dostupnosti.",
+          "recommended_action": "Vybrat jeden vhodný delší release LIR Recordings a předem spočítat test sedmi až čtrnáctidenního Bandcamp first okna proti standardnímu současnému vydání.",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {"name": "Justin Hawkes — Bandcamp", "url": "https://justinhawkes.bandcamp.com/album/now-or-never", "kind": "primary"},
+            {"name": "Data Transmission DnB", "url": "https://datatransmission.co/dt-dnb/justin-hawkes-releases-second-album-now-or-never/", "kind": "secondary"},
+            {"name": "Your EDM", "url": "https://www.youredm.com/2026/08/14/justin-hawkes-releases-second-album-now-or-never/", "kind": "secondary"}
+          ],
+          "media": [
+            {"type": "instagram", "url": "https://www.instagram.com/p/DcB7iB0qj0l/"}
+          ],
+          "tags": ["Justin Hawkes", "Drumcaste Collective", "Bandcamp", "direct to fan", "release strategy"]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": []
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "AUTOMATION.md",
+    "news/index.json",
+    "news/2026-week_32.json",
+    "news/2026-week_31-special.json",
+    "news/2026-week_29.json",
+    "news/2026-week_28.json",
+    "UKF",
+    "Drum & Bass UK",
+    "DJ Mag",
+    "Mixmag",
+    "Resident Advisor",
+    "Beatportal",
+    "Data Transmission DnB",
+    "LoveThatBass",
+    "Dogs On Acid",
+    "Drumandbass.nl",
+    "Best Drum & Bass",
+    "Festival Insights",
+    "IQ Magazine",
+    "Access All Areas",
+    "Music Business Worldwide",
+    "Pollstar",
+    "Event Industry News",
+    "Reddit r/DnB: hot + top/week",
+    "Reddit r/LetItRollFestival",
+    "Reddit r/BoomtownFestival",
+    "DnB Allstars",
+    "Darkshire",
+    "Boomtown"
+  ]
+}
