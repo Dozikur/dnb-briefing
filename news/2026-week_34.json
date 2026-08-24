@@ -1,0 +1,456 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 34,
+    "window_start": "2026-08-17",
+    "window_end": "2026-08-23",
+    "generated_at": "2026-08-24T10:22:44+02:00"
+  },
+  "headline": "Chase & Status vedou DnB blok Readingu, Darkshire ověřil butikový formát a velcí hráči rostou přes ticketing, festivaly i cestování",
+  "executive_summary": [
+    "Reading postavil Chase & Status Live do nedělního čela hlavní stage a ve stejný den soustředil Hybrid Minds, Hedexe, Bou a Sotu na The Warehouse.",
+    "Darkshire In The Valley přešel z příprav do prvního živého ročníku třídenního butikového formátu, který promotér staví pro přibližně tisíc návštěvníků.",
+    "CTS Eventim v prvním pololetí zvýšil tržby Live Entertainment o 18,6 % na 1,061 miliardy eur a upravenou EBITDA segmentu o 57,1 % na 52,9 milionu eur.",
+    "Live Nation Asia spojil koncerty s hotelem a věrnostním programem IHG; Way Out West mezitím poprvé vyprodal všechny kategorie a přilákal 81 500 lidí.",
+    "Debata kolem A.M.C nasbírala 775 bodů a 257 komentářů a otevřela rozpor mezi růstem amerického DnB trhu a kvalitou publika na multižánrových festivalech."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "reading-leeds-chase-status-dnb-sunday-2026",
+          "published_at": "2026-08-20",
+          "event_start": "2026-08-27",
+          "event_end": "2026-08-30",
+          "title": "Reading soustředí hlavní DnB jména do neděle zakončené Chase & Status Live",
+          "summary": [
+            "Zveřejněné rozdělení programu potvrzuje Chase & Status Live v neděli na hlavní stage The Grid. Duo je jedním ze šesti headlinerů ročníku a sdílí nedělní vrchol s Florence + The Machine.",
+            "Ve stejný den vystoupí na The Warehouse Hybrid Minds, Hedex, Bou a Sota. Velký multižánrový festival tak propojí DnB headlinera na hlavní stage s koncentrovaným žánrovým blokem na klubověji postavené scéně."
+          ],
+          "why_it_matters": "Program ukazuje, že britský mainstreamový festival už nepoužívá DnB jen jako doplněk: jeden projekt nese hlavní stage a další silná jména vytvářejí samostatnou cestu publikem během stejného dne.",
+          "recommended_action": "Po festivalu porovnat návštěvnost a online odezvu hlavní stage Chase & Status s DnB blokem na The Warehouse.",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Reading Festival",
+            "Leeds Festival"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Reading Festival — lineup 2026",
+              "url": "https://www.readingfestival.com/lineup",
+              "kind": "primary"
+            },
+            {
+              "name": "NME — Reading & Leeds stage times",
+              "url": "https://www.nme.com/news/music/reading-leeds-2026-check-out-the-full-stage-times-3963739",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DcQxf7bl1Lr/"
+            }
+          ],
+          "tags": [
+            "Reading Festival",
+            "Chase & Status",
+            "multi-genre festival",
+            "main stage",
+            "DnB programming"
+          ]
+        },
+        {
+          "id": "darkshire-valley-boutique-format-live-2026",
+          "published_at": "2026-08-22",
+          "event_start": "2026-08-21",
+          "event_end": "2026-08-23",
+          "title": "Darkshire uvedl do provozu třídenní butikový formát In The Valley",
+          "summary": [
+            "Darkshire In The Valley proběhl od 21. do 23. srpna v Rájence u Pohořelic. Po první noci organizátor zveřejnil záběry zvuku, světel a areálu a potvrdil, že nový formát přešel z příprav do ostrého provozu.",
+            "Promotér akci dlouhodobě popisuje jako přírodní butikový festival pro přibližně tisíc lidí. Proti velkým campingovým akcím tak soutěží omezenou kapacitou, třídenním pobytem a úzce zaměřeným neuro a deep programem."
+          ],
+          "why_it_matters": "Jde o domácí cenově dostupnější alternativu jen tři týdny po Let It Rollu, která stejnému tvrdšímu DnB publiku nabízí intimitu a pobyt v přírodě místo velkého areálu.",
+          "recommended_action": "Po zveřejnění rekapitulace porovnat komentáře k dopravě, kempu, zvuku a frontám s předchozími ročníky Darkshire.",
+          "region": "cz_sk",
+          "category": "competition",
+          "competitors": [
+            "Darkshire"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Darkshire — první noc In The Valley",
+              "url": "https://www.instagram.com/p/DcUmz0yCOoW/",
+              "kind": "primary"
+            },
+            {
+              "name": "Darkshire — butikový koncept In The Valley",
+              "url": "https://www.instagram.com/p/DZ0YVW6Fzxg/",
+              "kind": "primary"
+            },
+            {
+              "name": "Darkshire — lineup a informace",
+              "url": "https://darkshire.cz/line-up/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DcUmz0yCOoW/"
+            }
+          ],
+          "tags": [
+            "Darkshire",
+            "boutique festival",
+            "Czech Republic",
+            "camping",
+            "neurofunk"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "cts-eventim-h1-live-entertainment-growth-2026",
+          "published_at": "2026-08-20",
+          "event_start": null,
+          "event_end": null,
+          "title": "CTS Eventim zvýšil ziskovost živé zábavy o 57 procent, marže však zůstávají nízké",
+          "summary": [
+            "CTS Eventim vykázal za první pololetí tržby skupiny 1,513 miliardy eur, meziročně o 16,9 % více. Ticketing přidal 13,9 % na 473,3 milionu eur a prodal 80,6 milionu vstupenek, o 1,7 milionu více než před rokem.",
+            "Live Entertainment zvýšil tržby o 18,6 % na 1,061 miliardy eur a upravenou EBITDA o 57,1 % na 52,9 milionu eur. Marže segmentu se zlepšila z 3,8 % na 5,0 %, což zároveň ukazuje, jak výrazně nižší ziskovost má pořádání akcí proti ticketingu s marží 36,4 %."
+          ],
+          "why_it_matters": "Výsledky dávají konkrétní evropský benchmark: rostoucí festivalové portfolio může zvyšovat absolutní zisk, ale ticketing nadále vytváří násobně vyšší marži a posiluje výhodu vertikálně propojených skupin.",
+          "recommended_action": "Použít 5% marži Live Entertainment a 36,4% marži ticketingu jako externí referenci při hodnocení festivalových a prodejních partnerství.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [
+            "CTS Eventim",
+            "EVENTIM LIVE"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "CTS Eventim — pololetní zpráva 2026",
+              "url": "https://corporate.eventim.de/media/document/7fed2eea-b964-437c-ad86-263735fdbfea/assets/DE0005470306-Q2-2026-EQ-E-00.pdf?disposition=inline",
+              "kind": "primary"
+            },
+            {
+              "name": "IQ Magazine",
+              "url": "https://www.iqmagazine.com/2026/08/cts-eventim-reports-57-profit-growth-across-live-entertainment/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "CTS Eventim",
+            "ticketing",
+            "festival economics",
+            "EBITDA",
+            "margin"
+          ]
+        },
+        {
+          "id": "live-nation-ihg-concert-travel-partnership-2026",
+          "published_at": "2026-08-17",
+          "event_start": null,
+          "event_end": null,
+          "title": "Live Nation Asia propojuje koncertní vstupenky s hotely a věrnostním programem IHG",
+          "summary": [
+            "Live Nation Asia a IHG One Rewards uzavřely partnerství pro Hongkong a Tchaj-wan. Členům nabídnou balíčky spojující vybrané koncerty s pobyty v hotelech IHG, soutěže o vstupenky a společné kampaně.",
+            "IHG do distribuce přináší více než 160 milionů členů a síť přes sedm tisíc hotelů. Partnerství pracuje s celou cestou fanouška, nikoli jen se vstupenkou na samotnou show."
+          ],
+          "why_it_matters": "Model ukazuje nový zdroj distribuce a hodnoty pro destination akce: ubytování, věrnostní databáze a vstupenka mohou fungovat jako jeden produkt místo oddělených nákupů.",
+          "recommended_action": "Prověřit u hotelových partnerů možnost pilotního balíčku vstupenka plus ubytování s měřitelným podílem zahraničních návštěvníků.",
+          "region": "global",
+          "category": "festival_industry",
+          "competitors": [
+            "Live Nation"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "IHG — partnerství s Live Nation Asia",
+              "url": "https://www.ihgplc.com/en/news-and-media/news-releases/2026/ihg-one-rewards-partners-with-live-nation-asia-across-the-greater-china-region-to-unlock-exclusive-concert-experiences-for-travellers",
+              "kind": "primary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Live Nation",
+            "IHG",
+            "music tourism",
+            "loyalty",
+            "hotel packages"
+          ]
+        },
+        {
+          "id": "way-out-west-full-sellout-growth-2026",
+          "published_at": "2026-08-21",
+          "event_start": "2026-08-13",
+          "event_end": "2026-08-15",
+          "title": "Way Out West poprvé vyprodal všechny kategorie a za pět ročníků zvýšil návštěvnost o 63 procent",
+          "summary": [
+            "Way Out West poprvé ve své historii vyprodal všechny typy vstupenek včetně čtvrtka. Festival v göteborském Slottsskogen přilákal během 13. až 15. srpna celkem 81 500 lidí.",
+            "Podle IQ Magazine je to o 63 % více než před pěti ročníky. Organizátor po skončení okamžitě otevřel omezenou Blind Bird vlnu na termín 12. až 14. srpna 2027."
+          ],
+          "why_it_matters": "Příklad spojuje rozšíření vícedenního produktu, kompletní sellout a okamžitý předprodej dalšího roku; je to použitelný benchmark pro převod spokojenosti po akci do včasného cash flow.",
+          "recommended_action": "Porovnat podíl prvních 72 hodin předprodeje dalšího ročníku s festivaly, které otevírají Blind Bird vlnu přímo po skončení akce.",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [
+            "Way Out West"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Way Out West — rekapitulace 2026",
+              "url": "https://www.wayoutwest.se/nyheter/way-out-west-2026-is-over-long-live-way-out-west-2026/",
+              "kind": "primary"
+            },
+            {
+              "name": "IQ Magazine",
+              "url": "https://www.iqmagazine.com/2026/08/way-out-west-audience-swells-over-60-in-five-editions/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Way Out West",
+            "sellout",
+            "attendance",
+            "presale",
+            "festival growth"
+          ]
+        },
+        {
+          "id": "kkr-bookmyshow-full-stack-investment-2026",
+          "published_at": "2026-08-18",
+          "event_start": null,
+          "event_end": null,
+          "title": "KKR vstupuje do BookMyShow a financuje propojení ticketingu, produkce a vlastních akcí",
+          "summary": [
+            "KKR podepsala dohodu o získání menšinového podílu v indické platformě BookMyShow; dokončení podléhá regulatornímu schválení. Reuters s odkazem na zdroj ocenil šestiprocentní podíl na 40 až 50 milionů dolarů.",
+            "BookMyShow působí ve více než 700 indických městech a jeho divize Live pokrývá nákup talentu a IP, produkci, promotion, partnerství i práci s publikem. Pro KKR, která vlastní také Superstruct, jde o další investici do vertikálně propojené živé zábavy."
+          ],
+          "why_it_matters": "Kapitál dál míří do společností, které kontrolují prodej vstupenek i samotnou produkci akcí; takové skupiny mohou sdílet data, marketing a riziko napříč celým portfoliem.",
+          "recommended_action": "Bez akce, pouze sledovat dokončení transakce a případné evropské propojení s portfoliem Superstruct.",
+          "region": "global",
+          "category": "festival_industry",
+          "competitors": [
+            "KKR",
+            "Superstruct",
+            "BookMyShow"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "KKR — investice do BookMyShow",
+              "url": "https://media.kkr.com/news-details?news_id=6596363f-98bf-4ad7-a09d-36e84aaf7f4d",
+              "kind": "primary"
+            },
+            {
+              "name": "Reuters",
+              "url": "https://www.reuters.com/world/india/kkr-buy-stake-indias-bookmyshow-amid-live-entertainment-boom-2026-08-19/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "KKR",
+            "BookMyShow",
+            "Superstruct",
+            "ticketing",
+            "acquisition"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "dilemma-comeback-debut-album-spearhead-2026",
+          "published_at": "2026-08-21",
+          "event_start": null,
+          "event_end": null,
+          "title": "Dilemma se po pětileté vydavatelské pauze vrací debutovým albem na Spearhead",
+          "summary": [
+            "Dilemma v novém profilu popsala návrat po pěti letech bez releasu a své první album A River Without Banks, vydané 7. srpna na Spearhead Records. Nahrávka obsahuje čtrnáct skladeb a propojuje liquid DnB s náladou raných nultých let a současnou vokální produkcí.",
+            "Spearhead vydal také limitovaný dvojvinyl v nákladu 200 kusů za 29,99 libry. Album spojuje hosty včetně Random Movement, Tim Reapera, BCeeho, In:Most a T.R.A.C., takže návrat stojí na dlouhém formátu a scénových vazbách místo série singlů."
+          ],
+          "why_it_matters": "Návrat rozšiřuje současnou liquid scénu o zkušenou producentku s podporou etablovaného labelu a ukazuje, že malý fyzický náklad může doplnit digitální album jako sběratelský produkt.",
+          "recommended_action": "Zařadit Dilemmu do dlouhodobého bookerského watchlistu pro liquid program a sledovat reakci na album i návrat k živému hraní.",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Spearhead Records — A River Without Banks",
+              "url": "https://spearheadrecords.bandcamp.com/album/a-river-without-banks",
+              "kind": "primary"
+            },
+            {
+              "name": "Data Transmission — Renegade Riddims: Dilemma",
+              "url": "https://datatransmission.co/dt-dnb/renegade-riddims-dilemma-2/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/album/2AXodGvuc1e60PLlnV4NqO"
+            },
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=PblrMLqKOng"
+            }
+          ],
+          "tags": [
+            "Dilemma",
+            "Spearhead Records",
+            "debut album",
+            "liquid DnB",
+            "vinyl"
+          ]
+        },
+        {
+          "id": "vibe-chemistry-serotonin-own-label-2026",
+          "published_at": "2026-08-21",
+          "event_start": "2026-08-28",
+          "event_end": "2026-08-28",
+          "title": "Vibe Chemistry chystá album Serotonin jako hlavní projekt vlastního labelu Make Your Era",
+          "summary": [
+            "Vibe Chemistry vydal 21. srpna singl YOU a potvrdil album Serotonin na 28. srpna přes vlastní Make Your Era. Projekt navazuje na interpreta, který má podle Data Transmission třináct skladeb s více než milionem přehrání na Spotify.",
+            "Předchozí Balling strávil sedm týdnů v britské Top 40 a Dancing Is Healing dosáhl pátého místa. Nové album proto není jen dalším releasem, ale testem, zda lze mainstreamovou viditelnost převést do katalogu a publika vlastního imprintu."
+          ],
+          "why_it_matters": "Úspěšný interpret přesouvá pozornost z jednotlivých hitů k vlastní značce a distribuci; výsledek ukáže, jak silně může osobní dosah urychlit růst nezávislého DnB labelu.",
+          "recommended_action": "Po vydání porovnat výkon alba a růst profilů Make Your Era s předchozími singly Vibe Chemistry na externích labelech.",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Make Your Era — YOU",
+              "url": "https://www.facebook.com/MakeYourEra/posts/tomorrow-vibe-chemistry-drops-his-latest-single-on-mye-recordsyou-on-all-platfor/1052129577783408/",
+              "kind": "primary"
+            },
+            {
+              "name": "Data Transmission",
+              "url": "https://datatransmission.co/dt-dnb/vibe-chemistry-gets-emotional-on-you-the-last-stop-before-serotonin/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=BKihJJ93XrA"
+            }
+          ],
+          "tags": [
+            "Vibe Chemistry",
+            "Serotonin",
+            "Make Your Era",
+            "artist-owned label",
+            "album"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": []
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": [
+        {
+          "id": "amc-us-festival-crowd-debate-reddit-2026",
+          "published_at": "2026-08-22",
+          "event_start": null,
+          "event_end": null,
+          "title": "A.M.C otevřel debatu o rozdílu mezi růstem amerického DnB a energií festivalového publika",
+          "summary": [
+            "Vlákno na r/DnB založené na vyjádření A.M.C nasbíralo při pondělním sběru 775 bodů, poměr pozitivních hlasů 99 % a 257 komentářů. Diskuse řeší jeho pochybnosti o dalším hraní v USA a nejde o potvrzené zrušení turné.",
+            "Nejsilnější proud komentářů jeho postoj podporuje a rozlišuje mezi soustředěným klubovým publikem a pasivnějšími davy na multižánrových festivalech. Opačná část upozorňuje na růst scény v Los Angeles a na dlouhodobé týdenní akce Respect, zároveň ale zmiňuje obtížnou ekonomiku menších amerických DnB show."
+          ],
+          "why_it_matters": "Debata ukazuje, že samotný počet amerických bookingů nemusí znamenat kvalitní fanouškovskou zkušenost; pro artist relations je důležité rozlišovat mezi žánrovou komunitou a velkým, ale méně zapojeným publikem.",
+          "recommended_action": "U amerických agentů sledovat, zda se podobné výhrady opakují u dalších evropských DnB interpretů a zda ovlivňují jejich cestovní podmínky nebo fee.",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit r/DnB — A.M.C a americké hraní",
+              "url": "https://www.reddit.com/r/DnB/comments/1vvlmyg/amc_on_why_he_might_not_play_in_the_states_again/",
+              "kind": "community"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "A.M.C",
+            "United States",
+            "festival crowds",
+            "artist sentiment",
+            "Reddit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "AUTOMATION.md",
+    "news/index.json",
+    "Poslední čtyři briefingy",
+    "Reddit r/DnB: hot + top/week",
+    "Instagram: interpreti, festivaly a veřejné komentáře",
+    "UKF",
+    "Drum & Bass UK",
+    "DJ Mag",
+    "Mixmag",
+    "Resident Advisor",
+    "Beatportal",
+    "Data Transmission DnB",
+    "LoveThatBass",
+    "Dogs On Acid",
+    "Drumandbass.nl",
+    "Best Drum & Bass",
+    "Festival Insights",
+    "IQ Magazine",
+    "Access All Areas",
+    "Music Business Worldwide",
+    "Pollstar",
+    "Event Industry News",
+    "DNBe HearD",
+    "Hoofbeats",
+    "Musicserver",
+    "Rave.cz",
+    "GoOut"
+  ]
+}
