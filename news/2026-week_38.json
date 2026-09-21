@@ -5,289 +5,197 @@
     "week": 38,
     "window_start": "2026-09-14",
     "window_end": "2026-09-20",
-    "generated_at": "2026-09-21T09:52:12+02:00"
+    "generated_at": "2026-09-21T10:03:51+02:00"
   },
-  "headline": "Liquicity fixuje termín 2027, počasí ruší velký debut a Noisia oficiálně obnovuje činnost",
+  "headline": "Noisia obnovuje společnou činnost, čtyři DnB projekty uzavírají týden výraznými oznámeními a Praha nabízí dvě velké sobotní akce",
   "executive_summary": [
-    "Liquicity Festival potvrdil třídenní ročník 23.–25. července 2027 ve stejném areálu Geestmerambacht; pozdně červencový termín vytváří přímý tlak na evropské artist holds a exkluzivity.",
-    "Goldenvoice zrušil debut Ocean Way Festivalu dva týdny před akcí, protože eroze po hurikánu poškodila podstatnou část plážového areálu. Případ ukazuje, že předprodukční kontrola musí ověřovat i skutečně využitelnou geometrii a nouzové trasy po extrémním počasí.",
-    "Průzkum Tixel/Kantar mezi 5 107 lidmi zjistil, že 68 % kupujících kvůli algoritmům a AI hůře poznává, kterým doporučením akcí věřit. Lidské doporučení a komunitní důkaz zůstávají důležitou součástí akvizice.",
-    "Noisia nyní oficiálně potvrdila obnovení společné tvorby i první návratovou show 4. prosince v Melkweg. Zpráva okamžitě vyvolala silný ohlas a také neověřené spekulace publika o Winter Let It Roll.",
-    "VirtualDJ přidal export do OneLibrary pro šest aktuálně podporovaných zařízení AlphaTheta; změna rozšiřuje počet workflow, která mohou dorazit na festivalové stage, ale netýká se automaticky staršího hardware."
+    "Noisia se sedm let po oznámení konce vrací ke společné tvorbě a 4. prosince odehraje první comeback show v amsterdamském Melkweg. Dokument Vlucht, zveřejněný krátce před oznámením, dává návratu bezprostřední kontext.",
+    "Sigma oznámili druhé nezávislé album Country Greaze na 13. listopadu a pro vizuální odhalení využili stylizovanou venkovskou sérii místo běžného cover reveal.",
+    "Matrix & Futurebound připomínají 20 let projektu dvacetitrackovou kompilací MFXX; Myselor ve stejný den vydal dvacetitrackový debut Cosmic Expression.",
+    "V sobotu 26. září vyvrcholí 25. výročí Cross Clubu koncertem Dub FX a do Roxy se po dvou letech vrací Andy C s MC Tonn Piperem."
   ],
   "sections": [
     {
       "id": "competition",
       "title": "Přímá konkurence",
-      "items": [
-        {
-          "id": "liquicity-festival-2027-dates",
-          "published_at": "2026-09-17",
-          "event_start": "2027-07-23",
-          "event_end": "2027-07-25",
-          "title": "Liquicity drží třídenní destination formát a obsazuje poslední červencový víkend 2027",
-          "summary": [
-            "Oficiální kalendář Liquicity potvrdil Festival 2027 na 23.–25. července v nizozemském Geestmerambachtu. Samostatná landing page byla aktualizována 17. září.",
-            "Ročník 2026 se konal 24.–26. července; zachování místa i plného víkendu ukazuje kontinuitu formátu a opětovné obsazení pozdně červencového evropského bookingového okna."
-          ],
-          "why_it_matters": "Liquicity soutěží o stejné liquid a dancefloor publikum i část stejného lineupu. Pevný termín zvyšuje tlak na artist holds, exkluzivity a směrování fanoušků v období krátce před hlavní festivalovou sezonou Let It Rollu.",
-          "recommended_action": "Zanést 23.–25. červenec do bookingové matice 2027 a u nejvýše sdílených jmen včas ověřit holdy a teritoriální exkluzivity.",
-          "region": "europe",
-          "category": "competition",
-          "competitors": [
-            "Liquicity Festival"
-          ],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "Liquicity – events",
-              "url": "https://liquicity.com/events/",
-              "kind": "primary"
-            },
-            {
-              "name": "Liquicity Festival 2027",
-              "url": "https://festival.liquicity.com/",
-              "kind": "primary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://festival.liquicity.com/wp-content/uploads/2026/07/LF26_BestPhotos_4_WITHFLAGS.jpg"
-            }
-          ],
-          "tags": [
-            "termín 2027",
-            "destination festival",
-            "booking",
-            "artist holds"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "id": "festival_industry",
       "title": "Festivalový průmysl",
-      "items": [
-        {
-          "id": "ocean-way-cancelled-erosion",
-          "published_at": "2026-09-14",
-          "event_start": "2026-09-26",
-          "event_end": "2026-09-27",
-          "title": "Ocean Way padl dva týdny před premiérou, protože eroze změnila použitelnou část areálu",
-          "summary": [
-            "Goldenvoice a město Santa Monica zrušily debutový dvoudenní Ocean Way Festival dva týdny před termínem. Podle IQ se po hurikánu zhoršil stav velké části plážového areálu; dvě stage měly přivést až 35 000 lidí.",
-            "Pitchfork potvrzuje, že bouřkový příboj a odtok poškodily prostor mezi Santa Monica Pier a Bay Street. Pořadatelé chtějí koncept zkusit znovu v roce 2027."
-          ],
-          "why_it_matters": "Případ ukazuje riziko, které nevystihne běžná předpověď počasí: událost může být zrušena i po bouři, pokud se následně změní nosnost, rozměry nebo evakuační dostupnost areálu. To má přímý dopad na bezpečnost, produkční harmonogram a refundace.",
-          "recommended_action": "Doplnit do weather contingency formální kontrolní bod pro opětovné zaměření kapacity, únikových cest a zásobování areálu po extrémním počasí.",
-          "region": "world",
-          "category": "festival_industry",
-          "competitors": [
-            "Goldenvoice"
-          ],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "IQ Magazine",
-              "url": "https://www.iqmagazine.com/2026/09/goldenvoices-ocean-way-festival-washed-out-ahead-of-launch/",
-              "kind": "secondary"
-            },
-            {
-              "name": "Pitchfork",
-              "url": "https://pitchfork.com/story/coachella-organizers-ocean-way-festival-canceled-due-to-hurricane-marie/",
-              "kind": "secondary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://www.iqmagazine.com/wp-content/uploads/2025/12/Santa-Monica-Pier-%C2%A9-John-Allen-Ampong.png"
-            }
-          ],
-          "tags": [
-            "extrémní počasí",
-            "zrušení",
-            "bezpečnost",
-            "areál"
-          ]
-        },
-        {
-          "id": "tixel-ai-discovery-trust-gap",
-          "published_at": "2026-09-18",
-          "event_start": null,
-          "event_end": null,
-          "title": "Algoritmické doporučování oslabuje důvěru; 68 % kupujících hůře rozpoznává relevantní akce",
-          "summary": [
-            "Ve výzkumu The Live Equation 2030 uvedlo 68 % kupujících vstupenek, že nástup algoritmů a AI ztěžuje posouzení, kterým doporučením akcí lze věřit.",
-            "Tixel zadal výzkum agentuře Kantar; vzorek zahrnoval 5 107 lidí v USA, Británii a Austrálii. Výsledky staví proti automatizovanému discovery důvěru v lidi, komunitu a srozumitelný důvod k nákupu."
-          ],
-          "why_it_matters": "Festivalový marketing nemůže spoléhat pouze na personalizované doporučovací systémy. U dražšího víkendového produktu je ověřitelný lidský kontext, reference a jasná hodnota součástí konverze, zejména u publika rozhodujícího se později.",
-          "recommended_action": "V příštím prodejním testu odděleně měřit výkon kreativ s doporučením od interpreta, návštěvníka nebo kurátora proti čistě algoritmickému discovery.",
-          "region": "global",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "Tixel – The Live Equation 2030 methodology",
-              "url": "https://www.linkedin.com/posts/sylvie-maclean_the-live-equation-2030-activity-7506208194805788672-bj4-",
-              "kind": "primary"
-            },
-            {
-              "name": "IQ Magazine",
-              "url": "https://www.iqmagazine.com/2026/09/two-thirds-of-fans-say-ai-and-algorithms-confuse-event-discovery-report-finds/",
-              "kind": "secondary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://www.iqmagazine.com/wp-content/smush-webp/2026/09/raw-visual-studio-RL9h4htAB18-unsplash-scaled.jpg.webp"
-            }
-          ],
-          "tags": [
-            "ticketing",
-            "AI",
-            "discovery",
-            "důvěra"
-          ]
-        },
-        {
-          "id": "virtualdj-onelibrary-support",
-          "published_at": "2026-09-15",
-          "event_start": null,
-          "event_end": null,
-          "title": "VirtualDJ vstupuje do OneLibrary, kompatibilita se ale zatím týká jen šesti zařízení AlphaTheta",
-          "summary": [
-            "VirtualDJ nově exportuje kolekce na USB ve formátu OneLibrary. Přenášet lze playlisty, Hot Cues a beatgridy mezi softwarem a podporovaným hardwarem.",
-            "AlphaTheta uvádí kompatibilitu s CDJ-3000X, CDJ-1500X, XDJ-AZ, XDJ-AN, OPUS-QUAD a OMNIS-DUO. Oznámení proto nerozšiřuje podporu automaticky na starší festivalový inventář."
-          ],
-          "why_it_matters": "Na stage se může objevit více USB připravených mimo rekordbox. Přínosem je hladší changeover, ale pouze tam, kde nasazený model OneLibrary skutečně podporuje; neověřený předpoklad kompatibility může způsobit provozní problém těsně před setem.",
-          "recommended_action": "Doplnit OneLibrary do technické rider matice a před sezonou otestovat VirtualDJ USB na každém konkrétním modelu plánovaném pro festivalové stage.",
-          "region": "global",
-          "category": "festival_industry",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "AlphaTheta",
-              "url": "https://alphatheta.com/en/information/virtualdj-officially-supports-onelibrary/",
-              "kind": "primary"
-            },
-            {
-              "name": "DJ Mag",
-              "url": "https://djmag.com/tech/alphatheta-announces-onelibrary-support-virtualdj",
-              "kind": "secondary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://assets.alphatheta.com/wp-content/uploads/2026/04/News_OneLibrary_Virtual_DJ_Support_Key-visual_1200x630.jpg"
-            }
-          ],
-          "tags": [
-            "DJ technologie",
-            "OneLibrary",
-            "VirtualDJ",
-            "stage operations"
-          ]
-        }
-      ]
+      "items": []
     },
     {
       "id": "dnb_scene",
       "title": "DnB scéna",
       "items": [
         {
-          "id": "noisia-official-return-confirmed",
+          "id": "noisia-return-and-vlucht-documentary",
           "published_at": "2026-09-17",
           "event_start": "2026-12-04",
           "event_end": "2026-12-04",
-          "title": "Noisia oficiálně obnovuje tvorbu i živé hraní; spekulace po dokumentu se změnila v potvrzený návrat",
+          "title": "Noisia se vrací ke společné tvorbě a v prosinci odehraje první comeback show",
           "summary": [
-            "Nik Roos, Martijn van Sonderen a Thijs de Vlieger potvrdili, že znovu společně tvoří pod jménem Noisia. První show proběhne 4. prosince v amsterdamském Melkweg; sólové projekty mají s Noisií pokračovat souběžně.",
-            "Jde o novou změnu oproti minulému briefingu, kdy závěr dokumentu Vlucht vyvolával pouze fanouškovské dohady. Trio nyní chce na koncertech zkoušet katalog i nový materiál, ale datum dalšího releasu zatím neurčilo.",
-            "Příspěvek na r/DnB měl při sběru 21. září 408 bodů a 76 komentářů. Převládá silné nadšení; protinázor varuje před návratem tlaku, který projekt původně ukončil. Část komentujících okamžitě spojila návrat s neodhaleným nizozemským headlinerem Winter Let It Roll, což není oficiálně potvrzená informace."
+            "Nik Roos, Martijn van Sonderen a Thijs de Vlieger obnovili Noisii sedm let po oznámení konce projektu. Trio znovu společně pracuje na hudbě a 4. prosince vystoupí v amsterdamském Melkweg; další vývoj chce zveřejňovat postupně.",
+            "O dva dny dříve vyšel článek o dokumentu Vlucht, který sleduje poslední turné, rozchod a hledání dalšího směru. Film propojuje příběh skupiny se společným pozorováním ptáků; nizozemský název pracuje s významem letu i odchodu a díky následnému oznámení návratu dostal nový kontext."
           ],
-          "why_it_matters": "Návrat jednoho z nejvýznamnějších DnB projektů mění evropský headliner market a očekávání publika pro sezonu 2027. Současně už vzniká externí spojení se značkou Let It Roll, takže vedle bookingu jde i o reputační a komunikační téma.",
-          "recommended_action": "Sjednotit interní bookingový a komunikační status Noisie a do oficiálního oznámení veřejnou spekulaci nepotvrzovat ani nerozvíjet.",
-          "region": "europe",
-          "category": "dnb_scene",
-          "competitors": [
-            "Rampage"
-          ],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "Noisia",
-              "url": "https://www.noisia.nl/news/noisia-are-in-motion-again",
-              "kind": "primary"
-            },
-            {
-              "name": "UKF",
-              "url": "https://ukf.com/read/noisia-are-in-motion-again/",
-              "kind": "secondary"
-            },
-            {
-              "name": "Reddit r/DnB",
-              "url": "https://www.reddit.com/r/DnB/comments/1winqqq/noisia_returns_first_show_back_at_the_melkweg_in/",
-              "kind": "community"
-            }
-          ],
-          "media": [
-            {
-              "type": "instagram",
-              "url": "https://www.instagram.com/p/DdYYjcSjo-j/"
-            },
-            {
-              "type": "image",
-              "url": "https://cdn.noisia.nl/?url=%2F%2Fimages.ctfassets.net%2Fzx2a0h2rlwxh%2F4dLGwojTqLsirgcBAL6G2R%2Fc1b7365ad80c63fde4b96d14d65a96cb%2FWebsite_foto_cropped.jpg"
-            }
-          ],
-          "tags": [
-            "Noisia",
-            "návrat",
-            "headliner",
-            "živá show",
-            "sentiment"
-          ]
-        },
-        {
-          "id": "majesty-label-release-event-loop",
-          "published_at": "2026-09-14",
-          "event_start": "2026-09-18",
-          "event_end": "2026-09-18",
-          "title": "Majesty propojuje každý EP release s vlastní akcí a staví značku napříč hudbou, vizuálem a rádiem",
-          "summary": [
-            "Battery a Philth spustili vlastní label Majesty, aby získali kontrolu nad tempem vydávání, zvukem a ručně tvořenou vizuální identitou. Aktuální Mesmerize EP je druhým releasem značky.",
-            "Release party 18. září ve Four Quarters v Peckhamu kombinovala zakladatele s Rockwellem a nastupujícími selektory a měla vstup zdarma. Zakladatelé chtějí ke každému EP pořádat vlastní akci, vydávat přibližně tři EP ročně a postupně zapojovat nové producenty."
-          ],
-          "why_it_matters": "Model spojuje malý label, kurátorskou noc, vlastní vizuální jazyk a talent development do jednoho opakovatelného cyklu. Je to relevantní signál, jak si undergroundoví producenti budují publikum mimo samotné streamy a cizí release plány.",
-          "recommended_action": "Bez akce, pouze sledovat, zda Majesty dokáže převést opakované bezplatné launch nights do růstu značky a nových jmen.",
+          "why_it_matters": "Návrat Noisie otevírá jednu z největších DnB comebackových linií posledních let a znovu staví trio do evropského headlinerového trhu. Dokument současně nabízí aktuální příběh, který vysvětluje rozpad i nové podmínky společné práce.",
+          "recommended_action": "Prověřit dostupnost a podmínky evropských show Noisie pro sezonu 2027.",
           "region": "europe",
           "category": "dnb_scene",
           "competitors": [],
           "confidence": "confirmed",
           "sources": [
             {
-              "name": "UKF – rozhovor se zakladateli Majesty",
-              "url": "https://ukf.com/read/battery-philth-on-the-majesty-of-db/",
+              "name": "Noisia – Noisia Are In Motion Again",
+              "url": "https://www.noisia.nl/news/noisia-are-in-motion-again",
               "kind": "primary"
             },
             {
-              "name": "Resident Advisor – Mesmerize EP launch",
-              "url": "https://ra.co/events/2529635",
+              "name": "Noisia – Vlucht: een Noisia documentaire",
+              "url": "https://www.youtube.com/watch?v=Chi-DPWjRH0",
               "kind": "primary"
+            },
+            {
+              "name": "EDM.com",
+              "url": "https://edm.com/news/new-documentary-noisia-split/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQTgCE3HpiR728Bi4rP-TeDpfBen76l3cbzQOLsMH4jcc7sBAayy0mzvM&s=10"
+            },
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=Chi-DPWjRH0"
+            }
+          ],
+          "tags": [
+            "Noisia",
+            "comeback",
+            "Vlucht",
+            "dokument",
+            "Melkweg"
+          ]
+        },
+        {
+          "id": "sigma-country-greaze-album-announcement",
+          "published_at": "2026-09-17",
+          "event_start": "2026-11-13",
+          "event_end": "2026-11-13",
+          "title": "Sigma oznámili druhé nezávislé album Country Greaze venkovskou obrazovou kampaní",
+          "summary": [
+            "Sigma oznámili album Country Greaze s vydáním 13. listopadu. Půjde o jejich druhé nezávislé album a navazuje na materiál, který duo v průběhu roku postupně zveřejňovalo.",
+            "Kampaň začala fotografickou sérií s textem „Summer's over, back to the country“ a pokračovala přímým odhalením názvu a data. Stylizovaný venkovský vizuál nahrazuje běžné zveřejnění coveru a dává albu rozpoznatelný rámec už před vydáním."
+          ],
+          "why_it_matters": "Sigma patří mezi nejviditelnější crossoverové DnB projekty a oznámení ukazuje výrazně příběhovější způsob uvedení alba než standardní artwork a datum. Vydání zároveň rozšíří podzimní nabídku velkých dancefloor titulů.",
+          "recommended_action": "Bez akce, pouze sledovat další části kampaně a podobu koncertní prezentace alba.",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Sigma – oznámení alba Country Greaze",
+              "url": "https://www.facebook.com/sigma/videos/country-greaze-our-second-independent-album-out-13-november-link-in-bio/2279936962840644/",
+              "kind": "primary"
+            },
+            {
+              "name": "Sigma – Summer's over, back to the country",
+              "url": "https://www.instagram.com/p/DdE2xk0F_NZ/?img_index=1",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DdE2xk0F_NZ/?img_index=1"
+            }
+          ],
+          "tags": [
+            "Sigma",
+            "Country Greaze",
+            "album",
+            "kampaň"
+          ]
+        },
+        {
+          "id": "matrix-futurebound-mfxx-20-years",
+          "published_at": "2026-09-18",
+          "event_start": null,
+          "event_end": null,
+          "title": "Matrix & Futurebound slaví 20 let společného projektu dvacetitrackovým MFXX",
+          "summary": [
+            "Matrix & Futurebound vydali 18. září kompilaci MFXX – 20 Years Of Matrix & Futurebound přes Metro / Viper Recordings. Dvacet skladeb připomíná dvě dekády společného projektu jedním katalogovým titulem.",
+            "Výběr propojuje jejich známé vokální a dancefloorové nahrávky, remixy i starší klubový materiál. Jubileum tak není pouze výroční komunikací, ale dostalo vlastní release dostupný na streamovacích platformách."
+          ],
+          "why_it_matters": "Dvacetiletý milník jednoho z nejdéle fungujících dancefloorových projektů znovu otevírá jeho katalog a posiluje hodnotu výročních setů i generačního programu.",
+          "recommended_action": "Bez akce, pouze sledovat, zda na MFXX navážou výroční koncerty nebo speciální festivalové sety.",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Matrix & Futurebound",
+              "url": "https://www.instagram.com/p/DdT0FYEDCJc/",
+              "kind": "primary"
+            },
+            {
+              "name": "Drum & Bass UK",
+              "url": "https://drumandbassuk.com/artist/matrix-futurebound/mfxx-20-years-of-matrix-futurebound-66026",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DdT0FYEDCJc/"
+            }
+          ],
+          "tags": [
+            "Matrix & Futurebound",
+            "MFXX",
+            "20 let",
+            "Viper Recordings"
+          ]
+        },
+        {
+          "id": "myselor-cosmic-expression-debut-album",
+          "published_at": "2026-09-18",
+          "event_start": null,
+          "event_end": null,
+          "title": "Myselor dokončil čtyřměsíční rollout debutovým albem Cosmic Expression",
+          "summary": [
+            "Myselor vydal 18. září na Evolution Chamber debutové album Cosmic Expression. Dvacetitrackové LP uzavírá rollout rozdělený do čtyř samplerů a přidává devět dosud nevydaných skladeb.",
+            "Album propojuje neurofunk, rolling drum & bass, dubstep, breakbeat, ambient a experimentálnější elektroniku. Jde o jeden z nejrozsáhlejších bassových projektů týdne a o dlouhoformátový titul postavený proti běžné singlové logice scény."
+          ],
+          "why_it_matters": "Evolution Chamber ukazuje, že i dvacetiskladbové debutové LP lze budovat po kapitolách a po několik měsíců udržovat v oběhu. Šíře materiálu zároveň posouvá Myselora za čistě neurofunkové zařazení.",
+          "recommended_action": "Bez akce, pouze sledovat přijetí alba a případný převod materiálu do živého nebo AV formátu.",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Neurofunk Radio",
+              "url": "https://www.neurofunkradio.com/reviews/myselor-finally-lands-cosmic-expression-after-four-samplers",
+              "kind": "secondary"
+            },
+            {
+              "name": "Magnetic Magazine",
+              "url": "https://magneticmag.com/2026/09/myselor-makes-cosmic-expression-feel-complete/",
+              "kind": "secondary"
             }
           ],
           "media": [],
           "tags": [
-            "label",
-            "release event",
-            "talent development",
-            "underground"
+            "Myselor",
+            "Cosmic Expression",
+            "debutové album",
+            "Evolution Chamber"
           ]
         }
       ]
@@ -295,45 +203,84 @@
     {
       "id": "cz_sk",
       "title": "Česko a Slovensko",
-      "items": []
-    },
-    {
-      "id": "audience_sentiment",
-      "title": "Publikum a sentiment",
       "items": [
         {
-          "id": "dad-dnb-legacy-canon-sentiment",
-          "published_at": "2026-09-19",
-          "event_start": null,
-          "event_end": null,
-          "title": "Publikum chápe DnB nostalgii jako široký kánon 90. let a nultých let, ne jako jediný subžánr",
+          "id": "cross-club-25-years-dub-fx",
+          "published_at": "2026-09-18",
+          "event_start": "2026-09-26",
+          "event_end": "2026-09-27",
+          "title": "Cross Club uzavře oslavy 25 let venkovním koncertem Dub FX a programem do rána",
           "summary": [
-            "Vlákno na r/DnB o tom, co by odpovídalo pojmu „dad DnB“, mělo při sběru 21. září 98 bodů a 221 komentářů.",
-            "Převažují jména Goldie, Roni Size, Aphrodite, LTJ Bukem, DJ Hype, Andy C a Dillinja a odkazy na jungle a období zhruba 1997–2004. Silný doplňující proud přidává Pendulum, London Elektricity a Hospital jako přístupnější část stejné generační paměti.",
-            "Protinázor odmítá samotnou věkovou nálepku nebo upozorňuje, že nejde o jeden zvuk, ale o několik scénických větví. Vlákno proto dokládá sentiment a jazyk publika, nikoli objektivní hudební kategorii."
+            "Hlavní oslava 25 let Cross Clubu proběhne v sobotu 26. září od 16:00 před klubem a naváže na sérii letních koncertů. Venkovní část povede Dub FX, mezi dalšími hosty jsou Akira a MikkiM.",
+            "Program v Cross Square a klubu je uveden do nedělních 7:00. Výročí tak kombinuje bezprostřední venkovní koncertní formát s celonočním klubovým pokračováním."
           ],
-          "why_it_matters": "Reakce potvrzují, že legacy program může spojit jungleové základy, technický DnB i přístupnější nultá léta. Pro výroční komunikaci je přesnější pracovat s konkrétními obdobími, labely a jmény než s ironickou věkovou nálepkou.",
-          "recommended_action": "Při testování legacy obsahu segmentovat kreativní varianty podle období a jmen; výraz „dad DnB“ ponechat komunitě a nepoužívat jej jako oficiální označení.",
-          "region": "global",
-          "category": "audience_sentiment",
-          "competitors": [],
-          "confidence": "probable",
+          "why_it_matters": "Výroční program ukazuje, jak pražský klub rozšiřuje běžnou kapacitu a viditelnost značky propojením veřejného prostoru s nočním provozem. Dub FX zároveň přivádí publikum napříč bass music, reggae a live-looping scénou.",
+          "recommended_action": "Bez akce, pouze sledovat návštěvnost a přechod publika z venkovní části do klubu.",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [
+            "Cross Club"
+          ],
+          "confidence": "confirmed",
           "sources": [
             {
-              "name": "Reddit r/DnB",
-              "url": "https://www.reddit.com/r/DnB/comments/1wl1kyh/so_if_theres_dad_rock_what_could_be_considered/",
-              "kind": "community"
+              "name": "Cross Club – Facebook event",
+              "url": "https://www.facebook.com/events/2013123319289210/",
+              "kind": "primary"
+            },
+            {
+              "name": "Reggae.cz",
+              "url": "https://reggae.cz/events/cross-club-25-b-day-with-dub-fx/",
+              "kind": "secondary"
             }
           ],
           "media": [],
           "tags": [
-            "nostalgie",
-            "legacy",
-            "programming",
-            "Reddit"
+            "Cross Club",
+            "25 let",
+            "Dub FX",
+            "Praha"
+          ]
+        },
+        {
+          "id": "andy-c-tonn-piper-roxy-prague",
+          "published_at": "2026-09-18",
+          "event_start": "2026-09-26",
+          "event_end": "2026-09-27",
+          "title": "Andy C se po dvou letech vrací do Roxy s MC Tonn Piperem",
+          "summary": [
+            "Andy C a MC Tonn Piper vystoupí v sobotu 26. září v pražské Roxy. Resident Advisor uvádí program od 22:00 do 05:00 a žánrově jej řadí výhradně k drum & bassu a jungle.",
+            "Pro Andyho C jde o návrat do klubu po dvou letech. Booking staví jednoho z největších britských DnB headlinerů do celonočního klubového rámce namísto festivalového pódia."
+          ],
+          "why_it_matters": "Praha dostává ve stejný večer dvě silné bassové akce s rozdílným formátem. Roxy nabízí koncentrovaný headlinerový klubový produkt, který přímo pracuje s jádrovým DnB publikem.",
+          "recommended_action": "Bez akce, pouze sledovat prodej a reakce publika na souběh s výročím Cross Clubu.",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [
+            "Roxy Prague"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Resident Advisor",
+              "url": "https://ra.co/events/2441317",
+              "kind": "primary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "Andy C",
+            "Tonn Piper",
+            "Roxy",
+            "Praha"
           ]
         }
       ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Publikum a sentiment",
+      "items": []
     },
     {
       "id": "strategic_releases",
@@ -347,14 +294,13 @@
     }
   ],
   "sources_scanned": [
-    "Oficiální weby: Rampage, Liquicity, DnB Allstars, Hospitality, Beats for Love, Darkshire, SUNANDBASS, Boomtown, Korsakov",
-    "Oficiální kanály Noisia a AlphaTheta",
-    "UKF",
-    "DJ Mag",
-    "IQ Magazine",
+    "Oficiální kanály Noisia, Sigma, Matrix & Futurebound a Cross Club",
+    "EDM.com",
+    "Drum & Bass UK",
+    "Neurofunk Radio",
+    "Magnetic Magazine",
     "Resident Advisor",
-    "Pitchfork",
-    "Tixel / Kantar: The Live Equation 2030",
+    "Reggae.cz",
     "Reddit r/DnB: hot + top/week"
   ]
 }
