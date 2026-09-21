@@ -190,7 +190,12 @@
               "kind": "secondary"
             }
           ],
-          "media": [],
+          "media": [
+             {
+              "type": "image",
+              "url": "https://i1.sndcdn.com/artworks-rqPKVsy7Qk8Sg0MO-2sV8XA-t1080x1080.jpg"
+            }
+          ],
           "tags": [
             "Myselor",
             "Cosmic Expression",
@@ -234,7 +239,10 @@
               "kind": "secondary"
             }
           ],
-          "media": [],
+          "media": [ {
+              "type": "image",
+              "url": "https://scontent-prg1-1.xx.fbcdn.net/v/t39.99422-6/799224828_1610474897113976_5987448437247016936_n.png?stp=dst-jpg_tt6&cstp=mx1191x1684&ctp=s1191x1684&_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=sv-SZOTlqGUQ7kNvwGOSeVD&_nc_oc=Adp4q_KYLyl9FFIpq9SIMwD9RgGhknNFWJ6AbHb2gkRtJgu_vxnCg2Pn-spu5hXIM4Q&_nc_zt=14&_nc_ht=scontent-prg1-1.xx&_nc_gid=mn06tqG46ecryOBE4UskwA&_nc_ss=7b2a8&oh=00_AQL00RznlejsEItALWJrbPy3xIaZusVdFADWGMfsQIpzpg&oe=6AB6CD0A"
+            }],
           "tags": [
             "Cross Club",
             "25 let",
@@ -267,7 +275,10 @@
               "kind": "primary"
             }
           ],
-          "media": [],
+          "media": [{
+              "type": "image",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKN07TKU2-s_09-CsCIvM_Bz_irSnLZrxi9et2p8OCagijWA3U4dj5Hd59&s=10"
+            }],
           "tags": [
             "Andy C",
             "Tonn Piper",
