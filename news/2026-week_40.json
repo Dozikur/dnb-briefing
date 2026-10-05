@@ -1,0 +1,364 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 40,
+    "window_start": "2026-09-28",
+    "window_end": "2026-10-04",
+    "generated_at": "2026-10-05T12:12:38+02:00"
+  },
+  "headline": "Chase & Status v nové Apple Music Hall, omezení WHP a nové kampaně Roniho Size a Netskyho",
+  "executive_summary": [
+    "Apple Music Hall zahájila sezonu v Londýně a na 26. listopadu potvrdila Chase & Status.",
+    "The Warehouse Project omezí v roce 2027 známý sezonní formát. Netsky rozvíjí kampaň přes nový web a Liquicity uskutečnilo první vídeňskou akci v Exilu.",
+    "Glastonbury 2027 vyprodalo všeobecný prodej 4. října ještě před oznámením lineupu."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": []
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "apple-music-hall-chase-status-opening",
+          "published_at": "2026-09-28",
+          "event_start": "2026-11-26",
+          "event_end": "2026-11-26",
+          "title": "V Londýně otevřela Apple Music Hall, v první sezoně vystoupí Chase & Status",
+          "summary": [
+            "Apple Music Hall v londýnské Battersea Power Station zahájila koncertní sezonu 28. září vystoupením Eltona Johna. Nový prostor pro 600 návštěvníků uvede 26. listopadu Chase & Status a 2. prosince Charli xcx; mezi další oznámená jména patří Baby Keem, Arlo Parks a Burna Boy.",
+            "Apple představil venue už 21. září. Sál kombinuje intimní koncert s produkčním zázemím: 48 reproduktorů pro prostorový zvuk, dvě nahrávací a mixovací studia a vlastní režii pro video a přenosy. Z jediného vystoupení tak může vzniknout záznam ve Spatial Audio, finální zvukový mix i video z více kamer."
+          ],
+          "why_it_matters": "Chase & Status jsou součástí zahajovacího programu globální platformy, kde hodnotu malé show rozšiřují profesionální záznam a distribuce obsahu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Apple Newsroom",
+              "url": "https://www.apple.com/uk/newsroom/2026/09/apple-opens-apple-music-hall-a-state-of-the-art-live-music-venue-in-london/",
+              "kind": "primary"
+            },
+            {
+              "name": "Resident Advisor",
+              "url": "https://ra.co/news/86065",
+              "kind": "secondary"
+            },
+            {
+              "name": "DJ Mag",
+              "url": "https://djmag.com/news/chase-status-and-charli-xcx-confirmed-apple-music-halls-opening-season",
+              "kind": "secondary"
+            },
+            {
+              "name": "Apple Music Hall – program sezony",
+              "url": "https://applemusichall.com/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DdthrwWOkad/"
+            },
+            {
+              "type": "image",
+              "url": "https://djmag.com/sites/default/files/styles/djm_23_961x540/public/2026-09/Apple-Music-Hall-event-space-01_big.jpg.large_2x.jpg.webp?itok=B6ZohgZc"
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "warehouse-project-2027-scaled-back",
+          "published_at": "2026-10-01",
+          "event_start": null,
+          "event_end": null,
+          "title": "The Warehouse Project v roce 2027 výrazně omezí program po oslavách 20 let",
+          "summary": [
+            "Zakladatelé The Warehouse Project Sam Kandel a Rich McGinnis oznámili 30. září, že po letošní výroční sezoně projekt v roce 2027 zvolní. Akce budou pokračovat, ale v podstatně menším rozsahu; současný formát celé sezony si vezme přestávku.",
+            "WHP působí v manchesterském Depot Mayfield od roku 2019. Konkrétní podobu příštího programu zatím nezveřejnilo a zakladatelé výslovně vyloučili návrat do Store Street. Jde tedy o omezení známého modelu, nikoli oznámení definitivního konce značky."
+          ],
+          "why_it_matters": "Omezení velkého britského klubového odběratele může změnit dostupnost a routing interpretů. Tento bookingový dopad je odhad; rozsah programu 2027 zatím není znám.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [
+            "The Warehouse Project"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Resident Advisor",
+              "url": "https://ra.co/news/86125",
+              "kind": "secondary"
+            },
+            {
+              "name": "DJ Mag",
+              "url": "https://djmag.com/news/warehouse-project-take-fallow-year-2027",
+              "kind": "secondary"
+            },
+            {
+              "name": "WHP – prohlášení zakladatelů",
+              "url": "https://www.instagram.com/p/Dd64PMlCAaU/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Dd64PMlCAaU/"
+            },
+            {
+              "type": "image",
+              "url": "https://imgproxy.ra.co/_/quality%3A66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL25ld3MvMjAyNi93aHBwcC5wbmc%3D"
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "glastonbury-2027-general-sale-sellout",
+          "published_at": "2026-10-04",
+          "event_start": "2027-06-23",
+          "event_end": "2027-06-27",
+          "title": "Glastonbury 2027 je vyprodané; Fatboy Slim popsal hraní bez honoráře",
+          "summary": [
+            "Vstupenky do všeobecného prodeje šly 4. října v 9:00 a do 9:45 byly vyprodané. Balíčky s autobusovou dopravou zmizely už 1. října za méně než 30 minut; festival proběhne 23.–27. června 2027.",
+            "Festival se vyprodal ještě před zveřejněním lineupu při ceně standardní vstupenky 408 liber. Vrácené a zrušené vstupenky nabídne znovu na jaře 2027.",
+            "Fatboy Slim v rozhovoru zveřejněném 28. září uvedl, že za vystoupení na Glastonbury nikdy nedostal zaplaceno, ale sám tam neplatí vstupné a dostává volné lístky. Mixmag jeho výpověď převzal 30. září. Jde o osobní dohodu a tvrzení interpreta, nikoli doložené pravidlo odměňování celého festivalu."
+          ],
+          "why_it_matters": "Vyprodání bez lineupu ukazuje sílu značky; Cookova výpověď doplňuje roli dlouhodobého vztahu interpreta s festivalem. Jeho individuální dohoda není srovnatelná s běžným bookingovým fee.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [
+            "Glastonbury Festival"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "ITV News",
+              "url": "https://www.itv.com/news/2026-10-04/tickets-for-glastonbury-festival-2027-sell-out-in-less-than-45-minutes",
+              "kind": "secondary"
+            },
+            {
+              "name": "RTÉ Entertainment",
+              "url": "https://www.rte.ie/entertainment/2026/1004/1593949-glastonbury-tickets/",
+              "kind": "secondary"
+            },
+            {
+              "name": "Mixmag – výpověď Fatboy Slima",
+              "url": "https://mixmag.net/read/fatboy-slim-never-been-paid-play-glastonbury-festival-news",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/fatboy-slim-glasto.jpg?fit=cover&s=bEzyDTVxoMguB88lnzX7KdmawJetdWldWOMlQ5Ykd_k&width=660"
+            }
+          ],
+          "tags": [
+            "Glastonbury",
+            "ticketing",
+            "sellout",
+            "festivalová značka"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "roni-size-new-forms-30-tour",
+          "published_at": "2026-10-02",
+          "event_start": "2027-06-03",
+          "event_end": "2027-06-25",
+          "title": "Roni Size & Reprazent oslaví 30 let New Forms devíti britskými koncerty s plnou kapelou",
+          "summary": [
+            "Roni Size & Reprazent oznámili na červen 2027 devítizastávkové britské turné k 30 letům alba New Forms. Trasa vede od Bournemouthu přes O2 Academy Brixton a Victoria Warehouse až k závěru na Bristol Sounds 25. června.",
+            "Projekt se vrací jako plná živá kapela s Roni Sizem, Dynamite MC, Onallee, Si Johnem, bubeníkem a dalšími klávesisty. Fabio & Grooverider mají supportovat všechny termíny kromě Londýna; všeobecný prodej začíná 9. října."
+          ],
+          "why_it_matters": "Výroční show spojuje silný katalog, kompletní live formát a samostatně prodejnou britskou trasu. Pro festivalový booking jde o hodnotnější a produkčně náročnější nabídku než standardní DJ set Roniho Size.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Academy Music Group",
+              "url": "https://www.academymusicgroup.com/events/roni-size-tickets-ae332106",
+              "kind": "primary"
+            },
+            {
+              "name": "The FADER",
+              "url": "https://www.thefader.com/2026/10/02/roni-size-reprazent-new-forms-30th-anniversary-tour",
+              "kind": "secondary"
+            },
+            {
+              "name": "DJ Mag – oznámení turné",
+              "url": "https://djmag.com/news/roni-size-announce-uk-tour-marking-30-years-of-new-forms",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://dynamicmedia.livenationinternational.com/l/e/w/84cc380b-859a-4ad2-bff0-b89a14193090.png?format=webp&quality=75&width=3840"
+            },
+            {
+              "type": "youtube",
+              "url": "https://www.youtube.com/watch?v=cwI0gbGEyuI"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Dd_MoRVCm0_/"
+            }
+          ],
+          "tags": [
+            "Roni Size",
+            "Reprazent",
+            "New Forms",
+            "live show",
+            "heritage"
+          ]
+        },
+        {
+          "id": "netsky-feel-again-new-website-campaign",
+          "published_at": "2026-10-02",
+          "event_start": "2026-10-02",
+          "event_end": "2026-10-02",
+          "title": "Netsky otevírá novou kampaň singlem Feel Again a webem ve stylu počítačového terminálu",
+          "summary": [
+            "Netsky uvedl nový materiál přes web netsky.sh s estetikou počítačového terminálu. Podle článku Helix Records z 2. října předtím vymazal obsah svého Instagramu a následně zveřejnil záznam obrazovky nového webu, který fanouškům nabídl hudbu bez běžného oznámení.",
+            "Prvním vydaným titulem nové série je Feel Again s Hannah Boleyn, který vyšel 2. října přes Helix Records / N.E.W.S. Rozhlasovou premiéru měl již 25. září během Europe’s Biggest Dance Show, souběžně na BBC Radio 1, Studio Brussel a 3FM. Datum vydání potvrzuje i katalog Apple Music."
+          ],
+          "why_it_matters": "Kampaň propojuje nový materiál s vlastní digitální identitou a mezinárodní rozhlasovou premiérou. Zatím nepotvrzuje nové album ani změnu koncertního formátu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Helix Records / Beatportal",
+              "url": "https://www.beatportal.com/articles/1655435-a-new-era-begins-netsky-releases-feel-again",
+              "kind": "primary"
+            },
+            {
+              "name": "Netsky – nový web",
+              "url": "https://www.netsky.sh/",
+              "kind": "primary"
+            },
+            {
+              "name": "One World Artists – tisková zpráva",
+              "url": "https://press.oneworldartists.agency/a-new-era-begins-netsky-releases-feel-again",
+              "kind": "primary"
+            },
+            {
+              "name": "Apple Music – datum vydání",
+              "url": "https://music.apple.com/us/album/feel-again-single/6811089077",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://assets.beatportal.com/images/transforms/content-item/_1200x630_crop_center-center_none/Netsky-x-Feel-Again_16x9.png"
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "liquicity-vienna-exil-maduk-october",
+          "published_at": "2026-10-03",
+          "event_start": "2026-10-03",
+          "event_end": "2026-10-04",
+          "title": "Liquicity poprvé ve Vídni: sobotní akce proběhla v Exilu, kde se chystá LIR On Tour",
+          "summary": [
+            "Liquicity uspořádalo v sobotu 3. října svůj první večer ve vídeňské oblasti v Exil Clubu ve Vösendorfu. Oficiální program zahrnoval Fox Stevenson DJ set, Maduka, Technimatic, ESKEI83, Whiney, Anaïs, LOW:R, Paula SG a další místní supporty.",
+            "Exil je zároveň prostorem připravovaného Let It Roll On Tour, takže večer představuje přímou referenci pro další akci Beatworx ve stejné venue. Kartu doplňuje Madukův Instagram příspěvek z večera. Návštěvnost ani finální stav prodeje nebyly veřejně doloženy."
+          ],
+          "why_it_matters": "Akce nabízí bezprostředně relevantní referenci stejného prostoru a částečně překrývajícího se DnB publika pro připravovaný LIR On Tour. Návštěvnost nelze vyvozovat z jednoho videa.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Liquicity"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Liquicity – oficiální program",
+              "url": "https://liquicity.com/events/liquicity-vienna-2026/",
+              "kind": "primary"
+            },
+            {
+              "name": "Resident Advisor – program pořadatele",
+              "url": "https://ra.co/events/2406001",
+              "kind": "primary"
+            },
+            {
+              "name": "Maduk – video poskytnuté uživatelem",
+              "url": "https://www.instagram.com/p/DeDavLuI9xO/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DeDavLuI9xO/"
+            },
+            {
+              "type": "image",
+              "url": "https://liquicity.com/wp-content/uploads/2026/01/NOTBlurred_Banner_FB-scaled.jpg"
+            }
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": []
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Nálada publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Interní akce pro LIR a Beatworx",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "Apple Newsroom",
+    "Resident Advisor",
+    "DJ Mag",
+    "Mixmag",
+    "Helix Records / Beatportal",
+    "Netsky",
+    "Liquicity",
+    "Academy Music Group",
+    "The FADER",
+    "ITV News",
+    "RTÉ Entertainment",
+    "Instagram – propojené a uživatelem dodané příspěvky",
+    "Reddit r/DnB: hot + top/week – pokus o sběr, zdroj nedostupný"
+  ]
+}
