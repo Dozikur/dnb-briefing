@@ -290,7 +290,7 @@
           "event_end": "2026-10-18",
           "title": "Kam o víkendu 16.–17. října na zahraniční drum & bass",
           "summary": [
-            "V pátek 16. října nabídne brněnská Tržnice Magnetude, Skrimora, Disphonii a Akroma na Bassproof: Neuro Overdrive. Do ostravského Fabricu přijede Metrik. Českobudějovická MC Fabrika přivítá Burr Oak, Petera Kurtena a Artheista na Therapy Sessions CZ XIX. V plzeňském Mōōvementu vystoupí Wingz a do Roxy Clubu v Třebíči dorazí Mind Vortex.",
+            "V pátek 16. října nabídne brněnská Tržnice Magnetude, Skrimora, Disphonii a Akroma na Bassproof: Neuro Overdrive. Do ostravského Fabricu přijede Metrik.Britský producent Klinical vystoupí v Ostravském klubu Etáž. Českobudějovická Fabrika přivítá Burr Oak, Petera Kurtena a Artheista na Therapy Sessions CZ XIX. V plzeňském Mōōvementu vystoupí Wingz a do Roxy Clubu v Třebíči dorazí Mind Vortex.",
             "V sobotu 17. října se Metrik přesune do pražského EPICu, kde představí svou audiovizuální show AWAKE AV."
           ],
           "why_it_matters": "Přehled zahraničních DnB hostů v českých klubech během nadcházejícího víkendu.",
@@ -326,7 +326,12 @@
               "kind": "primary"
             }
           ],
-          "media": [],
+          "media": [
+             {
+              "type": "image",
+              "url": "https://scontent-prg1-1.xx.fbcdn.net/v/t39.30808-6/768949710_1353986770271470_3029924730758390360_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1440&ctp=p526x296&_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=18rtpLTEBj8Q7kNvwF4gtFq&_nc_oc=AdrahzvChySdUMGVJoRyV6sbLX5g5-D_dVF3J3PDj1CeGhlNRITKAbWcSOw5atiyDRk&_nc_zt=23&_nc_ht=scontent-prg1-1.xx&_nc_gid=ZBGM_CVHDTo-9l6QeysTog&_nc_ss=7b2a8&oh=00_AQO4cBYpimAYdbIyeMva3Y14rLsAVf_oaNnzWJfbG6wIDA&oe=6AD27D19"
+            }
+          ],
           "tags": [
             "Česko",
             "klubové akce",
