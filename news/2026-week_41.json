@@ -20,60 +20,6 @@
       "title": "Přímá konkurence",
       "items": [
         {
-          "id": "korsakov-weekender-2027-reinkarnation",
-          "published_at": "2026-10-09",
-          "event_start": "2027-01-29",
-          "event_end": "2027-01-31",
-          "title": "Korsakov otevírá novou éru. Weekender 2027 ponese název The Reinkarnation",
-          "summary": [
-            "Korsakov oznámil Weekender 2027 pod názvem The Reinkarnation. Dvě noci proběhnou 29. a 30. ledna v rotterdamských prostorech Maassilo a NOW&WOW.",
-            "Kampaň pracuje s motivem nové éry a novou černobílou vizuální identitou. Pořadatel otevřel registraci pro přístup do předprodeje, který začne ve středu 14. října v 19:00. Další podrobnosti mají následovat."
-          ],
-          "why_it_matters": "Přímý DnB konkurent oznamuje další ročník a novou kampaň. Termín a předprodej potvrzuje oficiální web. Datum 9. října je odvozené z mediálního ID dodaného IG příspěvku; jeho přímý timestamp nebyl dostupný.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "europe",
-          "category": "competition",
-          "competitors": [
-            "Korsakov"
-          ],
-          "confidence": "probable",
-          "sources": [
-            {
-              "name": "Korsakov – Weekender 2027",
-              "url": "https://www.korsakovdnb.com/korsakov-weekender-2027",
-              "kind": "primary"
-            },
-            {
-              "name": "Korsakov – termín a prostory",
-              "url": "https://www.korsakovdnb.com/",
-              "kind": "primary"
-            },
-            {
-              "name": "Korsakov – IG oznámení",
-              "url": "https://www.instagram.com/p/DeRWheBjeiS/?img_index=1",
-              "kind": "primary"
-            }
-          ],
-          "media": [
-            {
-              "type": "instagram",
-              "url": "https://www.instagram.com/p/DeRWheBjeiS/?img_index=1"
-            },
-            {
-              "type": "image",
-              "url": "https://images.squarespace-cdn.com/content/v1/6aa810925665fd7b64e6d90c/c720cd37-eba4-4453-99b3-448798a27fb1/KORSA%2Breinkarnation%2Boverlay.png"
-            }
-          ],
-          "tags": []
-        }
-      ]
-    },
-    {
-      "id": "festival_industry",
-      "title": "Festivalový průmysl",
-      "items": []
-    },
-    {
       "id": "dnb_scene",
       "title": "DnB scéna",
       "items": [
@@ -132,6 +78,61 @@
           ]
         },
         {
+          "id": "korsakov-weekender-2027-reinkarnation",
+          "published_at": "2026-10-09",
+          "event_start": "2027-01-29",
+          "event_end": "2027-01-31",
+          "title": "Korsakov otevírá novou éru. Weekender 2027 ponese název The Reinkarnation",
+          "summary": [
+            "Korsakov oznámil Weekender 2027 pod názvem The Reinkarnation. Dvě noci proběhnou 29. a 30. ledna v rotterdamských prostorech Maassilo a NOW&WOW.",
+            "Kampaň pracuje s motivem nové éry a novou černobílou vizuální identitou. Pořadatel otevřel registraci pro přístup do předprodeje, který začne ve středu 14. října v 19:00. Další podrobnosti mají následovat."
+          ],
+          "why_it_matters": "Přímý DnB konkurent oznamuje další ročník a novou kampaň. Termín a předprodej potvrzuje oficiální web. Datum 9. října je odvozené z mediálního ID dodaného IG příspěvku; jeho přímý timestamp nebyl dostupný.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Korsakov"
+          ],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Korsakov – Weekender 2027",
+              "url": "https://www.korsakovdnb.com/korsakov-weekender-2027",
+              "kind": "primary"
+            },
+            {
+              "name": "Korsakov – termín a prostory",
+              "url": "https://www.korsakovdnb.com/",
+              "kind": "primary"
+            },
+            {
+              "name": "Korsakov – IG oznámení",
+              "url": "https://www.instagram.com/p/DeRWheBjeiS/?img_index=1",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DeRWheBjeiS/?img_index=1"
+            },
+            {
+              "type": "image",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtqJHhdLEBVhnWBTv27qHuNbR5Gf8DEnRCcChFVC-VQ&s"
+            }
+          ],
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    
+        {
           "id": "gridlok-symptoms-chaos-mind-beatport",
           "published_at": "2026-10-08",
           "event_start": "2026-10-09",
@@ -163,8 +164,12 @@
             {
               "type": "image",
               "url": "https://www.bestdrumandbass.com/wp-content/uploads/2026/10/813748332_1623335775855904_7410974199302663579_n-300x300.jpg"
-            }
-          ],
+            },
+            {
+              "type": "soundcloud",
+              "url": "https://soundcloud.com/gridlokdnb/chaos"
+              }
+            ],
           "tags": [
             "Gridlok",
             "Project 51",
@@ -217,49 +222,60 @@
             "zvukový experiment"
           ]
         },
-        {
-          "id": "lens-first-us-tour-october",
-          "published_at": "2026-10-07",
-          "event_start": null,
-          "event_end": null,
-          "title": "Lens zahájila první americké turné. Po Submersion pokračovala do klubů",
-          "summary": [
-            "Lens zahájila první americké turné vystoupením na Submersion Festivalu a večerem v neworleanském The Crypt. Stemmily, která na této akci hrála a podílela se na péči o interpretku, popsala neworleanskou zastávku jako vyprodanou.",
-            "Dne 8. října následoval Washington. Cadence připravilo ve Flash společnou noc Lens a Winslowa pod značkou Hospital Records. Pro oba šlo o první vystoupení ve městě. Turné má v prosinci uzavřít Jungle Bells v Atlantě."
-          ],
-          "why_it_matters": "První americká trasa rozšiřuje koncertní působení Lens z britských klubů na severoamerický festivalový a klubový okruh.",
-          "recommended_action": "Bez akce, pouze informační přehled",
-          "region": "world",
-          "category": "dnb_scene",
-          "competitors": [],
-          "confidence": "confirmed",
-          "sources": [
-            {
-              "name": "Drum and Bass Proper – report účastnice Stemmily",
-              "url": "https://www.drumandbassproper.com/lens-kicks-off-u-s-debut-tour-with-submersion-festival-and-a-sold-out-new-orleans-show/",
-              "kind": "primary"
-            },
-            {
-              "name": "Cadence / Flash – oficiální event na RA",
-              "url": "https://ra.co/events/2555597",
-              "kind": "primary"
-            }
-          ],
-          "media": [
-            {
-              "type": "image",
-              "url": "https://imgproxy.ra.co/_/quality%3A66/aHR0cHM6Ly9pbWFnZXMucmEuY28vZDdlMWIzMDU0NTkzOTJiYmFhMGVmYmFhYWM2ZDczMmUwZThiNTdhNy5qcGc%3D"
-            }
-          ],
-          "tags": [
-            "Lens",
-            "USA",
-            "turné",
-            "Hospital Records"
-          ]
-        }
-      ]
+    {
+  "id": "cz-dnb-weekend-2026-october-16-17",
+  "published_at": "2026-10-12",
+  "event_start": "2026-10-16",
+  "event_end": "2026-10-18",
+  "title": "Kam o víkendu 16.–17. října na zahraniční drum & bass",
+  "summary": [
+    "V pátek 16. října nabídne brněnská Tržnice Magnetude, Skrimora, Disphonii a Akroma na Bassproof: Neuro Overdrive. Do ostravského Fabricu přijede Metrik. Českobudějovická MC Fabrika přivítá Burr Oak, Petera Kurtena a Artheista na Therapy Sessions CZ XIX. V plzeňském Mōōvementu vystoupí Wingz a do Roxy Clubu v Třebíči dorazí Mind Vortex.",
+    "V sobotu 17. října se Metrik přesune do pražského EPICu, kde představí svou audiovizuální show AWAKE AV."
+  ],
+  "why_it_matters": "Přehled zahraničních DnB hostů v českých klubech během nadcházejícího víkendu.",
+  "recommended_action": "Bez akce, pouze informační přehled",
+  "region": "cz_sk",
+  "category": "cz_sk",
+  "competitors": [],
+  "confidence": "confirmed",
+  "sources": [
+    {
+      "name": "Bassproof: Neuro Overdrive – Brno",
+      "url": "https://www.facebook.com/events/1086964234276308/",
+      "kind": "primary"
     },
+    {
+      "name": "Fabric – Metrik v Ostravě",
+      "url": "https://www.fabric.cz/program/",
+      "kind": "primary"
+    },
+    {
+      "name": "Therapy Sessions CZ XIX / Drum Session: Wingz",
+      "url": "https://goout.net/cs/",
+      "kind": "secondary"
+    },
+    {
+      "name": "Roxy Club Třebíč – Mind Vortex",
+      "url": "https://www.roxy-club.cz/",
+      "kind": "primary"
+    },
+    {
+      "name": "EPIC Prague – Metrik AWAKE AV",
+      "url": "https://tickets.epicprague.com/en/tickets/events/1540/book.html",
+      "kind": "primary"
+    }
+  ],
+  "media": [],
+  "tags": [
+    "Česko",
+    "klubové akce",
+    "Metrik",
+    "Magnetude",
+    "Burr Oak",
+    "Wingz",
+    "Mind Vortex"
+  ]
+},
     {
       "id": "cz_sk",
       "title": "Česko a Slovensko",
