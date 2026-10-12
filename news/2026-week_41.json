@@ -1,3 +1,259 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 41,
+    "window_start": "2026-10-05",
+    "window_end": "2026-10-11",
+    "generated_at": "2026-10-12T11:18:33+02:00"
+  },
+  "headline": "Korsakov chystá novou éru, vyšla alba Chase & Status a Gridloka; Halloween Madness v O₂ areně se ruší",
+  "executive_summary": [
+    "Chase & Status vydali Generic Everything a nabídli všech deset instrumentálních verzí na Beatportu.",
+    "Gridlok vydal na Beatportu první album od roku 2017. Další platformy následují 23. října.",
+    "Roni Size chystá zvukový experiment v dole Cwmorthin a Lens zahájila první americké turné.",
+    "Korsakov oznámil Weekender 2027 s novou kampaní. Halloween Madness s Oliverem Heldensem v O₂ areně je zrušený."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": []
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "chase-status-generic-everything-release",
+          "published_at": "2026-10-09",
+          "event_start": "2026-10-09",
+          "event_end": "2026-10-09",
+          "title": "Chase & Status vydali Generic Everything. Beatport nabízí i instrumentální verze",
+          "summary": [
+            "Chase & Status vydali 9. října desetiskladbové album Generic Everything. Hostují J Hus, Little Simz, Skrillex, Giggs a D Double E. Deska propojuje drum & bass s rapem a dalšími elektronickými styly.",
+            "Všech deset instrumentálních verzí je dostupných exkluzivně na Beatportu. Vlastní obchod nabízí také USB s albem a pěti bonusovými skladbami, mezi nimi Program VIP a Eastern Jam VIP se Sammym Virjim."
+          ],
+          "why_it_matters": "Velké crossoverové album přináší nový repertoár a samostatnou nabídku pro DJs i sběratele.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Chase & Status – album a tracklist",
+              "url": "https://chaseandstatus.co.uk/products/generic-everything-cd",
+              "kind": "primary"
+            },
+            {
+              "name": "Beatportal / Beatport – instrumentální verze",
+              "url": "https://www.beatportal.com/articles/1669727-chase-status-unleash-new-album-generic-everything",
+              "kind": "primary"
+            },
+            {
+              "name": "Chase & Status – USB edice",
+              "url": "https://chaseandstatus.co.uk/products/generic-everything-usb-store-exclusive",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://chaseandstatus.co.uk/cdn/shop/files/GE-CD-CS.png?v=1787350668&width=1946"
+            },
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/album/2cu3mSocMVwnSnV9Ge69Do"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/reel/DeHxmzWo1SE/"
+            }
+          ],
+          "tags": [
+            "Chase & Status",
+            "Generic Everything",
+            "album",
+            "instrumentály"
+          ]
+        },
+        {
+          "id": "korsakov-weekender-2027-reinkarnation",
+          "published_at": "2026-10-09",
+          "event_start": "2027-01-29",
+          "event_end": "2027-01-31",
+          "title": "Korsakov otevírá novou éru. Weekender 2027 ponese název The Reinkarnation",
+          "summary": [
+            "Korsakov oznámil Weekender 2027 pod názvem The Reinkarnation. Dvě noci proběhnou 29. a 30. ledna v rotterdamských prostorech Maassilo a NOW&WOW.",
+            "Kampaň pracuje s motivem nové éry a novou černobílou vizuální identitou. Pořadatel otevřel registraci pro přístup do předprodeje, který začne ve středu 14. října v 19:00. Další podrobnosti mají následovat."
+          ],
+          "why_it_matters": "Přímý DnB konkurent oznamuje další ročník a novou kampaň. Termín a předprodej potvrzuje oficiální web. Datum 9. října je odvozené z mediálního ID dodaného IG příspěvku; jeho přímý timestamp nebyl dostupný.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Korsakov"
+          ],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Korsakov – Weekender 2027",
+              "url": "https://www.korsakovdnb.com/korsakov-weekender-2027",
+              "kind": "primary"
+            },
+            {
+              "name": "Korsakov – termín a prostory",
+              "url": "https://www.korsakovdnb.com/",
+              "kind": "primary"
+            },
+            {
+              "name": "Korsakov – IG oznámení",
+              "url": "https://www.instagram.com/p/DeRWheBjeiS/?img_index=1",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DeRWheBjeiS/?img_index=1"
+            },
+            {
+              "type": "image",
+              "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJtqJHhdLEBVhnWBTv27qHuNbR5Gf8DEnRCcChFVC-VQ&s"
+            }
+          ],
+          "tags": []
+        },
+        {
+          "id": "gridlok-symptoms-chaos-mind-beatport",
+          "published_at": "2026-10-08",
+          "event_start": "2026-10-09",
+          "event_end": "2026-10-23",
+          "title": "Gridlok se vrací s prvním albem po devíti letech",
+          "summary": [
+            "Gridlok uvedl 9. října na Beatportu album Symptoms of the Chaos Mind. Dvanáct skladeb na jeho Project 51 navazuje na Z3R0 H0U2 z roku 2017. Plné vydání na dalších platformách je naplánované na 23. října.",
+            "Kampaň začala předobjednávkami 25. září a společným poslechem na Bandcampu 1. října. Fyzická edice zahrnuje CD a tři vinyly v nákladu 300 kusů. Lisování vinylu začne po dosažení stovky předobjednávek."
+          ],
+          "why_it_matters": "Nové plnohodnotné album obnovuje katalogovou aktivitu výrazného jména amerického techstepu a neurofunku.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Gridlok – Bandcamp a harmonogram vydání",
+              "url": "https://gridlok.bandcamp.com/album/symptoms-of-the-chaos-mind",
+              "kind": "primary"
+            },
+            {
+              "name": "Best Drum and Bass",
+              "url": "https://www.bestdrumandbass.com/gridlok-symptoms-of-the-chaos-mind-project-51/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.bestdrumandbass.com/wp-content/uploads/2026/10/813748332_1623335775855904_7410974199302663579_n-300x300.jpg"
+            },
+            {
+              "type": "soundcloud",
+              "url": "https://soundcloud.com/gridlokdnb/chaos"
+            }
+          ],
+          "tags": [
+            "Gridlok",
+            "Project 51",
+            "album",
+            "techstep"
+          ]
+        },
+        {
+          "id": "roni-size-cwmorthin-gshock-sessions",
+          "published_at": "2026-10-06",
+          "event_start": "2026-10-15",
+          "event_end": "2026-10-15",
+          "title": "Roni Size odehraje set přibližně 419 metrů pod zemí ve velšském dole",
+          "summary": [
+            "Roni Size vystoupí 15. října v opuštěném břidlicovém dole Cwmorthin v severním Walesu. G-SHOCK plánuje koncert v hloubce 1 375 stop, přibližně 419 metrů, jako pokus o nejhlubší undergroundový rave. Na místo se dostane jen malá skupina návštěvníků vybraných losováním.",
+            "Součástí bude zvukový experiment. Vibrace hudby procházející horninou, vodou a bahnem se mají zachytávat a vracet do mixu. Set bude vysílat G-SHOCK Radio a následně zpřístupní celý záznam. Akce doprovází uvedení hodinek MUDMAN."
+          ],
+          "why_it_matters": "Samostatný nový projekt kombinuje DnB, neobvyklou lokaci, přenos a partnerskou kampaň. Neopakuje oznámení turné Reprazent z týdne 40.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "G-SHOCK – oficiální program",
+              "url": "https://gshock.casio.com/uk/mudman/",
+              "kind": "primary"
+            },
+            {
+              "name": "DMY – oznámení 6. října",
+              "url": "https://dmy.co/news/drum-and-bass-artist-roni-size-to-set-world-record-for-deepest-rave-1-375-feet-below-a-welsh-mountain",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://gshock.casio.com/content/casio/locales/uk/en-gb/brands/gshock/mudman/_jcr_content/root/responsivegrid/container_1078487703_228213584/container_copy/container_copy_copy__1873496627/image.casiocoreimg.jpeg/1791554880596/ballot-closed---mudman-event.jpeg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DeJtvk7iNvF/"
+            }
+          ],
+          "tags": [
+            "Roni Size",
+            "G-SHOCK",
+            "Cwmorthin",
+            "zvukový experiment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": [
+        {
+          "id": "halloween-madness-o2-arena-cancelled",
+          "published_at": "2026-10-06",
+          "event_start": "2026-10-27",
+          "event_end": "2026-10-27",
+          "title": "Halloween Madness s Oliverem Heldensem v O₂ areně se ruší",
+          "summary": [
+            "Halloween Madness, plánovaný na 27. října v pražské O₂ areně, se neuskuteční. Hlavním oznámeným interpretem byl Oliver Heldens, který letos obsadil 39. místo v anketě DJ Mag Top 100 DJs. Dále měli vystoupit Manene, Maria Rose a Victor Tellagio.",
+            "Pořadatel uvedl, že za současných podmínek nedokáže zajistit požadovanou kvalitu a rozsah akce. Zakoupené vstupenky budou refundovány a podrobnosti rozešle ticketingová společnost. Značka MADNESS podle oznámení nekončí."
+          ],
+          "why_it_matters": "Zrušení arénové elektronické akce je relevantní místní zpráva. Oznámení neuvádí prodejní čísla ani nízkou poptávku jako důvod.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [
+            "MADNESS"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "O₂ arena – zrušení a vyjádření pořadatele",
+              "url": "https://www.o2arena.cz/events/halloween-madness/",
+              "kind": "primary"
+            },
+            {
+              "name": "O₂ arena – původní lineup",
+              "url": "https://www.o2arena.cz/zapomente-na-kluby-halloween-madness-prinasi-do-prahy-prvni-skutecny-arena-rave-experience/",
+              "kind": "primary"
             },
             {
               "name": "DJ Mag Top 100 DJs 2026",
@@ -85,7 +341,7 @@
     },
     {
       "id": "audience_sentiment",
-      "title": "Publikum a sentiment",
+      "title": "Nálada publika",
       "items": []
     },
     {
@@ -95,7 +351,7 @@
     },
     {
       "id": "lir_actions",
-      "title": "Akce pro Let It Roll",
+      "title": "Interní akce pro LIR a Beatworx",
       "items": []
     }
   ],
@@ -126,3 +382,4 @@
     "Ticketportal – oznámení 6. října 2026",
     "DJ Mag – Oliver Heldens, 39. místo v roce 2026"
   ]
+}
