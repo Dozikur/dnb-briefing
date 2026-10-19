@@ -174,7 +174,20 @@ def validate_v2(path: Path, report: dict) -> list[str]:
                     and event_start is not None
                     and start <= event_start <= end
                 )
-                if not start <= published <= end and not late_event_coverage:
+                # Monday's domestic outlook may cover confirmed events in the
+                # next 30 days; its date is the roundup date, not an announcement.
+                domestic_outlook = (
+                    section["id"] == "cz_sk"
+                    and item["category"] == "cz_sk"
+                    and item["confidence"] == "confirmed"
+                    and published == end + timedelta(days=1)
+                    and published <= generated_at.date()
+                    and event_start is not None
+                    and event_end is not None
+                    and published <= event_start <= event_end <= published + timedelta(days=30)
+                    and any(source.get("kind") == "primary" for source in item["sources"])
+                )
+                if not start <= published <= end and not late_event_coverage and not domestic_outlook:
                     fail(f"{field}.published_at is outside the reporting window")
 
                 title = text(item["title"], f"{field}.title", 8, 180)

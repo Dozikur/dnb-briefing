@@ -1,0 +1,359 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 42,
+    "window_start": "2026-10-12",
+    "window_end": "2026-10-18",
+    "generated_at": "2026-10-19T11:32:57+02:00"
+  },
+  "headline": "Worship v New Yorku, Evolution Chamber EC100, Roni Size v dole, René LaVice a domácí víkend",
+  "executive_summary": [
+    "Worship vystoupili v sobotu 17. října v newyorském Brooklyn Storehouse. V rámci North America 2026 se představili Sub Focus, Dimension, Culture Shock a 1991.",
+    "Evolution Chamber zahájil 12. října kampaň ke svému stému releasu. První sampler EC100 vyšel 16. října a spojuje skladbu Final Protocol od Audia s HealHurtHateHelp od Billaina a zpěvačky Catherine Pan.",
+    "Plánovaný set Roniho Size v dole Cwmorthin se 15. října uskutečnil. G-SHOCK Radio zveřejnilo záznam o délce 64 minut a 16 sekund. K publiku v podzemní komoře se návštěvníci dostávali přibližně dvě hodiny přes zatopené chodby, slaňování a zipline.",
+    "René LaVice zveřejnil, že přes rok žije s vážnou nemocí, která podle jeho vyjádření zasahuje nervový systém i celé tělo. Zdravotní potíže omezily jeho schopnost tvořit hudbu a cestovat na vystoupení. Podrobnosti o diagnóze nezveřejnil.",
+    "V pátek 23. října vystoupí v pražském Sacre Coeur S.P.Y, QZB a Markee Ledge na DNB[SPACE] 3. Olomoucký Sklub ve stejný večer nabídne Hoofbeats Halloween Rave s Ed Rushem, Merikanem a Hallucinator. Qo zde pokřtí album Advanced."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": []
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "worship-brooklyn-storehouse-new-york-2026",
+          "published_at": "2026-10-19",
+          "event_start": "2026-10-17",
+          "event_end": "2026-10-18",
+          "title": "Worship ovládli newyorský Brooklyn Storehouse s kapacitou 5 000 lidí",
+          "summary": [
+            "Worship vystoupili v sobotu 17. října v newyorském Brooklyn Storehouse. V rámci North America 2026 se představili Sub Focus, Dimension, Culture Shock a 1991.",
+            "Industriální prostor v Brooklyn Navy Yard má podle oficiálních podkladů kapacitu až 5 000 lidí. Newyorská zastávka spojila všechny čtyři členy Worship v jedné noci."
+          ],
+          "why_it_matters": "Uskutečněná akce 17. října, doplněná uživatelem 19. října. published_at označuje datum redakčního doplnění; původní datum zveřejnění plakátu není ověřené. Kapacita není údaj o návštěvnosti.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Brooklyn Storehouse / TCE Presents – událost",
+              "url": "https://ra.co/events/2553657",
+              "kind": "primary"
+            },
+            {
+              "name": "Teksupport – oficiální prodej",
+              "url": "https://site.fourvenues.com/en/teksupport/events/worship-17-10-2026-MHKP",
+              "kind": "primary"
+            },
+            {
+              "name": "Brooklyn Storehouse – oficiální kapacita",
+              "url": "https://brooklynstorehouse.com/app/uploads/2025/08/brooklyn-storehouse-venueoverview-privatehire.pdf",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.ra.co/9178312afa78fa8b21c8c795cb30882d1806c94b.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DepZqaONoN9/"
+            }
+          ],
+          "tags": [
+            "Worship",
+            "Sub Focus",
+            "Dimension",
+            "Culture Shock",
+            "1991",
+            "New York"
+          ]
+        },
+        {
+          "id": "evolution-chamber-ec100-campaign-sampler-one",
+          "published_at": "2026-10-12",
+          "event_start": "2026-10-16",
+          "event_end": "2026-10-16",
+          "title": "Evolution Chamber slaví stý release. Kampaň EC100 otevírají Audio a Billain",
+          "summary": [
+            "Evolution Chamber zahájil 12. října kampaň ke svému stému releasu. První sampler EC100 vyšel 16. října a spojuje skladbu Final Protocol od Audia s HealHurtHateHelp od Billaina a zpěvačky Catherine Pan.",
+            "Audio na label přináší první vlastní sólovou skladbu po dvou remixech. Jubilující vydavatelství v kampani propojuje interprety ze svého dosavadního katalogu s novými jmény. Sampler je úvodem širší oslavy EC100."
+          ],
+          "why_it_matters": "Milník důležitého neurofunkového labelu je zasazený do samostatné kampaně a představuje první sólový originál Audia na Evolution Chamber.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Evolution Chamber – oznámení EC100",
+              "url": "https://www.instagram.com/p/DeY8sd2NN7g/",
+              "kind": "primary"
+            },
+            {
+              "name": "Apple Music – první sampler",
+              "url": "https://music.apple.com/us/album/ec100-sampler-i-final-protocol-healhurthatehelp-single/6810292828",
+              "kind": "primary"
+            },
+            {
+              "name": "Best Drum and Bass – EC100 Sampler 1",
+              "url": "https://www.bestdrumandbass.com/evolution-chamber-100-sampler-1/",
+              "kind": "secondary"
+            },
+            {
+              "name": "Veřejná kopie oznámení labelu z 12. října",
+              "url": "https://imginn.com/p/DeY8sd2NN7g/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/28/68/c6/2868c661-046d-a911-def2-ce6973f5d529/5063879055392.png/632x632bb-60.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DeY8sd2NN7g/"
+            },
+            {
+              "type": "soundcloud",
+              "url": "https://api.soundcloud.com/tracks/2395862733"
+            }
+          ],
+          "tags": [
+            "Evolution Chamber",
+            "EC100",
+            "Audio",
+            "Billain",
+            "Catherine Pan",
+            "neurofunk"
+          ]
+        },
+        {
+          "id": "roni-size-cwmorthin-rave-recording-published",
+          "published_at": "2026-10-17",
+          "event_start": "2026-10-15",
+          "event_end": "2026-10-15",
+          "title": "Roni Size odehrál set v dole. Hodinový záznam je dostupný na Mixcloudu",
+          "summary": [
+            "Plánovaný set Roniho Size v dole Cwmorthin se 15. října uskutečnil. G-SHOCK Radio zveřejnilo záznam o délce 64 minut a 16 sekund. K publiku v podzemní komoře se návštěvníci dostávali přibližně dvě hodiny přes zatopené chodby, slaňování a zipline.",
+            "Podle pořadatele se do výkonu skutečně vracely vibrace zachycené v hornině, vodě a bahně. Podklady k pokusu o nejhlubší undergroundový rave se předkládají k nezávislému ověření. Oficiálně uznaný světový rekord proto zatím nelze potvrdit."
+          ],
+          "why_it_matters": "Nový posun oproti týdnu 41: uskutečnění akce potvrzují dvě reportáže přímo z místa a zveřejněný celý záznam. Neopakujeme pouze předběžné oznámení; reklamní tvrzení o světovém rekordu nepovažujeme za ratifikované.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "G-SHOCK Radio – celý set",
+              "url": "https://www.mixcloud.com/GShockRadio/g-shock-radio-presents-roni-size-the-deepest-underground-rave-1375ft-1510/",
+              "kind": "primary"
+            },
+            {
+              "name": "DMY – reportáž z místa, 17. října",
+              "url": "https://dmy.co/features/going-underground-inside-roni-sizes-record-breaking-rave-beneath-a-welsh-mountain",
+              "kind": "secondary"
+            },
+            {
+              "name": "The Times – reportáž z místa, 18. října",
+              "url": "https://www.thetimes.com/culture/music/article/worlds-deepest-rave-wales-slate-mine-xh0cgvfcp",
+              "kind": "secondary"
+            },
+            {
+              "name": "Go North Wales – zpráva pořadatele z 16. října",
+              "url": "https://www.gonorthwales.co.uk/ideas-and-inspiration/blog/read/2026/10/roni-size-plays-world-record-rave-1-375-feet-beneath-a-welsh-mountain-b159",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.gonorthwales.co.uk/dbimgs/G_SHOCK_Roni_Size_Underground_7%281%29.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Deji1l6KENc/"
+            }
+          ],
+          "tags": [
+            "Roni Size",
+            "G-SHOCK",
+            "Cwmorthin",
+            "záznam setu",
+            "zvukový experiment"
+          ]
+        },
+        {
+          "id": "rene-lavice-personal-health-update-2026",
+          "published_at": "2026-10-14",
+          "event_start": null,
+          "event_end": null,
+          "title": "René LaVice kvůli vážné nemoci omezuje tvorbu a vystupování",
+          "summary": [
+            "René LaVice zveřejnil, že přes rok žije s vážnou nemocí, která podle jeho vyjádření zasahuje nervový systém i celé tělo. Zdravotní potíže omezily jeho schopnost tvořit hudbu a cestovat na vystoupení. Podrobnosti o diagnóze nezveřejnil.",
+            "Nadále chce pracovat a odehrát část koncertů, jejich počet ale dočasně sníží, aby se mohl věnovat zotavení. Label DeVice díky jeho týmu pokračuje v činnosti."
+          ],
+          "why_it_matters": "Redakčně doplněno na výslovný pokyn uživatele. Fakta ověřena uvedenými primárními zdroji.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "René LaVice – osobní vyjádření",
+              "url": "https://www.instagram.com/p/DeexdOxCLI6/",
+              "kind": "primary"
+            },
+            {
+              "name": "René LaVice / DeVice – původní oznámení",
+              "url": "https://www.facebook.com/renelavice/posts/for-over-a-year-ive-been-living-with-a-severe-illness-that-affects-my-nervous-sy/1650402233119178/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DeexdOxCLI6/"
+            }
+          ],
+          "tags": [
+            "René LaVice",
+            "DeVice",
+            "omezení vystupování"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": [
+        {
+          "id": "cz-dnb-weekend-2026-october-23-24",
+          "published_at": "2026-10-19",
+          "event_start": "2026-10-23",
+          "event_end": "2026-10-25",
+          "title": "Kam o víkendu 23.–24. října na zahraniční drum & bass",
+          "summary": [
+            "V pátek 23. října vystoupí v pražském Sacre Coeur S.P.Y, QZB a Markee Ledge na DNB[SPACE] 3. Olomoucký Sklub ve stejný večer nabídne Hoofbeats Halloween Rave s Ed Rushem, Merikanem a Hallucinator. Qo zde pokřtí album Advanced.",
+            "V sobotu 24. října dorazí Mandidextrous do klubu STOUN ve Frýdku Místku. Akce je součástí Beats for Love Winter: On the Road."
+          ],
+          "why_it_matters": "Uživatelem vyžádaný výhled na následující víkend. published_at označuje datum sestavení přehledu, nikoli původní oznámení jednotlivých akcí.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DNB[SPACE] 3 – událost",
+              "url": "https://www.facebook.com/events/1420194970040160/",
+              "kind": "primary"
+            },
+            {
+              "name": "Hoofbeats Halloween Rave – událost",
+              "url": "https://www.facebook.com/events/2532297557239399/",
+              "kind": "primary"
+            },
+            {
+              "name": "Beats for Love / STOUN – událost",
+              "url": "https://www.facebook.com/events/2276728769723808/",
+              "kind": "primary"
+            },
+            {
+              "name": "DNB[SPACE] 3 – program",
+              "url": "https://goout.net/cs/dnb-space-3/szgvbmy/",
+              "kind": "primary"
+            },
+            {
+              "name": "STOUN – oficiální program",
+              "url": "https://www.stoun.cz/akce/beats-for-love-winter-on-the-road-w-mandidextrous-2026-10-24",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://static.ticketportal.cz//images/podujatie/-13891047/orig_extimg_1245428-800.jpg?tag=402EF8BA2833B884E01A679BB7D29BEC&tag=71070AF3C34E2D03C4756376A1ADE481"
+            }
+          ],
+          "tags": [
+            "S.P.Y",
+            "QZB",
+            "Markee Ledge",
+            "Ed Rush",
+            "Merikan",
+            "Hallucinator",
+            "Mandidextrous",
+            "Česko"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Nálada publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Interní akce pro LIR a Beatworx",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "UKF",
+    "Drum & Bass UK",
+    "DJ Mag",
+    "Mixmag",
+    "Resident Advisor – zpravodajský výpis bez obsahu",
+    "Beatportal",
+    "Data Transmission DnB",
+    "LoveThatBass – chyba 502",
+    "Dogs On Acid",
+    "Drumandbass.nl – bez čerstvého říjnového obsahu",
+    "Best Drum & Bass",
+    "Darkshire – web a IG prověřen; vyřazeno kvůli neověřenému datu publikace oznámení",
+    "Evolution Chamber – Instagram, Apple Music a SoundCloud",
+    "Klinical a Overview Music – Bandcamp; IG profily nedostupné, konkrétní post nenalezen",
+    "Danny L Harle a XL Recordings – Bandcamp a web; IG interpreta a labelu prověřen",
+    "Skrillex a ring noord – konkrétní IG oznámení a oficiální kanály",
+    "VISION – SoundCloud",
+    "Apple Music – primární katalogová data",
+    "G-SHOCK Radio – Mixcloud; Roni Size a G-SHOCK – IG kontrola, post z místa přes veřejnou kopii",
+    "DMY, The Times a Go North Wales – reportáže a zpráva po akci",
+    "Rampage, Liquicity, DnB Allstars, Korsakov – oficiální weby",
+    "Beats for Love, Boomtown, SUNANDBASS – oficiální weby",
+    "Hospitality – výpis Loading; Outlook a Outlook Origins – nedostupné",
+    "IQ, Access All Areas, Music Business Worldwide, Pollstar, Event Industry News",
+    "Festival Insights – nedostupné",
+    "DNBe HearD, Hoofbeats Booking, Musicserver, GoOut; Rave.cz – nedostupné",
+    "Reddit r/DnB: hot + top/week",
+    "Reddit r/DnB: new; hot/new mají starší cache, top/week nedostupný; sentiment nezařazen",
+    "Worship / Teksupport / Brooklyn Storehouse – akce a kapacita",
+    "René LaVice – původní Facebook vyjádření a Instagram 14. října",
+    "DNB[SPACE] / Hoofbeats / STOUN – nadcházející víkend"
+  ]
+}
