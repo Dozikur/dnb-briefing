@@ -1,5 +1,24 @@
 # Pondělní DnB News
 
+## Redakční priority uživatele – 26. října 2026
+
+Tato pravidla mají přednost před starší magazínovou kalibrací a počtovými doporučeními v zadání i projektových dokumentech.
+
+Briefing slouží značce Let It Roll a pondělnímu přehledu zásadního dění; nesmí vyznít jako release radar. Na začátku řaď aktuální festivalovou konkurenci: důležité headlinery a lineupové vlny, nové festivaly, formáty, termíny, prodej a návštěvnický servis. Vedle Rampage, Liquicity a Darkshire povinně kontroluj Worried About Henry / WAH včetně Malta a dalších festivalových projektů. Nové destinace typu Otherways jsou relevantní i při prvním oznámení; tvrdé údaje ověř na oficiálním webu.
+
+Hudbu vybírej přísně: pouze zásadní alba a singly, velké návraty a skutečně významné artist/scene změny s jasnou relevancí pro LIR, booking nebo domácí scénu. Rutinní releasy, drobné labelové novinky, niche rozhovory a track stories nezařazuj jen kvůli subžánrové pestrosti nebo kvótě. Kalibrace week 43: ponechat Venjentovo významné album a domácí Qo Advanced; Diverse, Tsuki, Tekill, DEAD P.A., Workforce, Anile, 4am Kru a JFB byly pro toto vydání vyřazeny jako málo relevantní. Nejde o trvalý zákaz jmen: příště je lze zařadit jen při podstatně významnějším novém příběhu. Raději kratší briefing než výplň.
+
+U každé zprávy o nové hudbě vždy připoj ověřený přehrávač konkrétního releasu (přednostně Spotify album/track, případně SoundCloud/YouTube) nebo konkrétní původní IG post/reel, který vydání skutečně oznamuje. Samotný artwork, obecný profil nebo playlist tuto povinnost nesplňuje. Ověř název, interpreta, datum a funkci embedu ve stávajícím rendereru. URL nikdy neodhaduj.
+
+Domácí týdenní výhled pokrývá všechny dohledatelné DnB akce se zahraničními DJs v bezprostředně následujícím pondělí–neděli, nejen jeden vybraný tip. Povinně čti https://dnbczevents.cz/akce.php, otevři jednotlivé profily akcí a srovnej program s oficiálním klubem, promotérem nebo ticketingem; doplň GoOut a CZ/SK lokální kanály. Nenech se zmást starší cache. Uveď data, města, venues a zahraniční hosty; SK hosty zahrň v českém programu také. Akce lze sdružit do přehledných karet podle města/dne, aby se vešly do schématu. Nevydávej kalendář za recap. Zachovej přímé zdroje a nepovažuj neznámý původ domácího DJs za zahraniční booking.
+
+Každou aktuální relevantní zmínku o Let It Roll, značce LIR nebo jí pořádané akci na Redditu aktivně prověř a zařaď její věcné shrnutí, i když nemá vysoký engagement. Hledej r/DnB, r/LetItRollFestival a související komunity, názvy značky i konkrétních akcí. Přečti příspěvek i dostupné komentáře, shrň pochvaly, kritiku, rozpory a konkrétní praktická témata. Rozliš jednotlivou zkušenost a reakce ostatních od reprezentativního sentimentu; uveď skutečné datum a stav skóre/komentářů v době sběru. Nepodložené výroky připisuj autorovi, nepřebírej je jako ověřená fakta.
+
+Když webový nástroj vrátí u Instagramu nebo Redditu cache miss, 429 či starý výpis, povinně zkus přímý veřejný odkaz v dostupném prohlížeči a ověř viditelný obsah, timestamp a relevantní komentáře. Neoznač zdroj za nedostupný pouze podle chyby vyhledávacího nástroje. Nepřihlašuj nové účty ani neobcházej přístupová omezení. Do sources_scanned zapiš reálný výsledek jednotlivých metod; starší neúspěšný pokus nesmí zastřít následně úspěšné čtení.
+
+Při redakční opravě existujícího vydání použij výslovně schválený výběr, zachovej technické schéma a vzhled; commituj pouze konkrétní opravený briefing a přímo související pravidla. Manifest a index.html měň jen pokud se skutečně mění seznam vydání. Aktuální renderer načítá news/index.json; const newsFiles synchronizuj pouze pokud v aktuálním main skutečně existuje.
+
+
 Tento dokument je závazná specifikace pro týdenní automatizaci. Automatizace používá veřejný web a již připojený GitHub repozitář. Bez výslovného schválení nesmí připojit novou službu, účet ani datový zdroj vyžadující přihlášení.
 
 ## Harmonogram
