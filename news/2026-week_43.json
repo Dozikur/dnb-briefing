@@ -1,0 +1,540 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 43,
+    "window_start": "2026-10-19",
+    "window_end": "2026-10-25",
+    "generated_at": "2026-10-26T09:53:19.774Z"
+  },
+  "headline": "Venjent a Qo vydali nová alba, JFB chystá sedm gramofonů; 4am Kru, Workforce a Anile přidávají novou hudbu",
+  "executive_summary": [
+    "Venjent vydal patnáctiskladbové Relieve the Pressure s kytarami, drum & bassem a hosty Oktae, JAX, Middle Milk a X4.",
+    "Qo uvedl na Hoofbeats Music šestnáctiskladbové album Advanced. Mezi spolupracovníky jsou Prdk, Merikan, Computerartist a Neonlight.",
+    "Diverse, Tekill, Tsuki a DEAD P.A. v nových rozhovorech popisují melodickou tvorbu, groove, vlastní identitu a živé hraní.",
+    "Nové singly přidali Workforce, Anile a 4am Kru se Shout Out Out Out Out. V pátek 30. října vystoupí 1991 v pražské Roxy."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": []
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "venjent-relieve-the-pressure-album-2026",
+          "published_at": "2026-10-21",
+          "event_start": null,
+          "event_end": null,
+          "title": "Venjent vydal Relieve the Pressure. Patnáct skladeb spojuje kytary a drum & bass",
+          "summary": [
+            "Venjent vydal 21. října album Relieve the Pressure. Patnáct skladeb propojuje písňovou formu, kytary a drum & bass; autor desku představuje jako hudební únik od tlaku každodenního života.",
+            "Mezi hosty jsou Oktae v Little World, JAX v Never Be Ashamed, Middle Milk v Sick of It a X4 v Imagine That. Na vlastním Bandcampu nabízí celé album za dobrovolnou cenu, včetně downloadu ve 24bitové kvalitě."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Venjent – album, tracklist a autorský komentář",
+              "url": "https://venjent.bandcamp.com/album/relieve-the-pressure",
+              "kind": "primary"
+            },
+            {
+              "name": "Apple Music – datum vydání",
+              "url": "https://music.apple.com/us/album/relieve-the-pressure/6793076673",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://f4.bcbits.com/img/a1587604811_5.jpg"
+            }
+          ],
+          "tags": [
+            "Venjent",
+            "album",
+            "kytary",
+            "drum & bass"
+          ]
+        },
+        {
+          "id": "diverse-resurgence-interview-make-your-era",
+          "published_at": "2026-10-23",
+          "event_start": null,
+          "event_end": null,
+          "title": "Diverse staví Resurgence na melodiích. V rozhovoru popisuje práci s Cinet",
+          "summary": [
+            "Švýcarský producent Diverse vydal na Make Your Era pětiskladbové EP Resurgence. V rozhovoru pro Drum & Bass UK vysvětluje, že po třech EP věnovaných minulosti, přítomnosti a budoucnosti chtěl začít nový příběh.",
+            "Skladby tear everything down a falling next to you vznikaly od akordů a melodických nápadů. Ve druhé z nich pracoval s vokály Cinet a hledal rovnováhu mezi hlasem a syntezátory; vlastní skladby pak testuje při hraní, kde podle něj okamžitě pozná ztrátu energie na parketu."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Drum & Bass UK – rozhovor s Diverse",
+              "url": "https://drumandbassuk.com/news/interview/diverse-resurgence-interview",
+              "kind": "primary"
+            },
+            {
+              "name": "Make Your Era / Cygnus – Resurgence",
+              "url": "https://cygnusmusic.link/9xqjoe1",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.drumandbassuk.com/public/frontend/news/269760/in_conversation_with_diverse_resurgence_melody_and_starting_again_news_image.jpg"
+            }
+          ],
+          "tags": [
+            "Diverse",
+            "Make Your Era",
+            "Cinet",
+            "rozhovor"
+          ]
+        },
+        {
+          "id": "tsuki-drum-bass-devotions-026-interview",
+          "published_at": "2026-10-20",
+          "event_start": null,
+          "event_end": null,
+          "title": "Tsuki po Ride The Wave znovu hledá zvuky, které ho přivedly k drum & bassu",
+          "summary": [
+            "Tsuki doprovodil nový mix pro sérii Drum & Bass Devotions rozhovorem pro EDM Identity. Po dokončení projektu Ride The Wave připravuje další materiál a říká, že se znovu vrací k některým zvukům ze svých začátků.",
+            "Šéf Tsunami Records v rozhovoru rozlišuje podporu labelu od budování vlastní identity. Zkušenost s bassline podle něj rozšířila jeho tvůrčí možnosti, přestože se na tento styl dnes nesoustředí. Nový mix nabízí konkrétní poslechový doprovod k jeho pohledu na vývoj scény."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "EDM Identity – rozhovor s Tsukim",
+              "url": "https://edmidentity.com/2026/10/20/drum-bass-devotions-026-tsuki/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://edmidentity.com/wp-content/uploads/2026/10/TSUKIPRESS25-02-819x1024.jpg"
+            },
+            {
+              "type": "soundcloud",
+              "url": "https://api.soundcloud.com/tracks/2422921974"
+            }
+          ],
+          "tags": [
+            "Tsuki",
+            "Tsunami Records",
+            "jump-up",
+            "rozhovor",
+            "mix"
+          ]
+        },
+        {
+          "id": "tekill-vial-swashbuckler-track-story",
+          "published_at": "2026-10-19",
+          "event_start": null,
+          "event_end": null,
+          "title": "Tekill vysvětluje, jak do Vial Swashbuckler dostal vodopád i newyorský spěch",
+          "summary": [
+            "Tekill v novém rozhovoru rozebírá vznik Vial Swashbuckler z releasu Louder Than Words na Dirtbox Recordings. Základ aranže napsal během jedné session, později ale původní krátké intro rozšířil, aby lépe připravilo nástup dropu.",
+            "Do skladby zapojil vlastní nahrávku z Kulaniapia Falls a vokální odkaz na období strávené v Atlantě. U jump-upu z let 2012–2015 oceňuje hlavně střídmost: několik basových zvuků, které spolu fungují, místo neustálého předvádění nových efektů. Groove podle něj stojí na dialogu hi-hatů a basové linky."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "world",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Drum & Bass UK – rozhovor s Tekillem",
+              "url": "https://drumandbassuk.com/news/interview/tekill-vial-swashbuckler-interview",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.drumandbassuk.com/public/frontend/news/269636/in_conversation_with_tekill_vial_swashbuckler_new_york_and_finding_the_groove_news_image.jpg"
+            }
+          ],
+          "tags": [
+            "Tekill",
+            "Dirtbox Recordings",
+            "track story",
+            "jump-up"
+          ]
+        },
+        {
+          "id": "dead-pa-advanced-training-live-interview",
+          "published_at": "2026-10-22",
+          "event_start": null,
+          "event_end": null,
+          "title": "DEAD P.A. vydávají skladby z živých setů a chystají materiál s novou spoluhráčkou",
+          "summary": [
+            "DEAD P.A. v rozhovoru pro Drum and Bass Proper přibližují vydávání dosud nevydaných skladeb, které už dříve hráli živě. Advanced Training pochází z období spolupráce s Jordanem Kolarem a v koncertních verzích nechával prostor pro zpěv, MCing a improvizaci.",
+            "Projekt nyní připravuje novou hudbu s Brooke Williamson a pro živé perkuse používá Roland HandSonic. Rozhovor popisuje také praktické limity koncertní elektroniky: aparatura se musí vejít do cestovního provozu a jednotlivé verze skladeb mají umožnit skutečnou souhru na pódiu."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "world",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Drum and Bass Proper – rozhovor s DEAD P.A.",
+              "url": "https://www.drumandbassproper.com/advanced-training-with-dead-p-a-interview/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.drumandbassproper.com/wp-content/uploads/2026/10/A-1253459-1440026798-5142.jpg"
+            }
+          ],
+          "tags": [
+            "DEAD P.A.",
+            "live",
+            "rozhovor",
+            "Advanced Training"
+          ]
+        },
+        {
+          "id": "jfb-seven-turntables-dmc-world-finals-2026",
+          "published_at": "2026-10-20",
+          "event_start": "2026-11-14",
+          "event_end": "2026-11-14",
+          "title": "JFB chystá sedm gramofonů pro DMC. Ve finále se vrátí i Scratch Perverts",
+          "summary": [
+            "Program DMC World Finals v londýnském KOKO počítá 14. listopadu se setem JFB na sedmi gramofonech Technics. Drum & Bass UK zároveň informoval o návratu Scratch Perverts, které pořadatelé uvádějí jako první společné vystoupení po více než dvaceti letech.",
+            "Scratch Perverts mají při akci vstoupit do DMC Hall of Fame. Finálový den propojí soutěžní disciplíny s vystoupeními hostů včetně A-Traka a Skratch Bastida; po programu v KOKO naváže samostatně vstupenkovaná afterparty v Dingwalls."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DMC – oficiální program a vstupenky",
+              "url": "https://www.dmcdjchamps.com/tickets",
+              "kind": "primary"
+            },
+            {
+              "name": "Drum & Bass UK – zpráva z 20. října",
+              "url": "https://drumandbassuk.com/news/article/dmc-world-finals-2026-scratch-perverts-jfb",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.drumandbassuk.com/public/frontend/news/269683/scratch_perverts_reunite_as_jfb_brings_seven_decks_to_dmc_world_finals_news_image.jpg"
+            }
+          ],
+          "tags": [
+            "JFB",
+            "DMC",
+            "Scratch Perverts",
+            "turntablismus"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": [
+        {
+          "id": "qo-advanced-album-hoofbeats-2026",
+          "published_at": "2026-10-23",
+          "event_start": null,
+          "event_end": null,
+          "title": "Qo vydal Advanced. Šestnáct skladeb spojuje domácí producenty i zahraniční hosty",
+          "summary": [
+            "Na Hoofbeats Music vyšlo 23. října album Advanced od Qo. Šestnáct skladeb má dohromady přibližně hodinu a navazuje na předchozí oznámení desky i plánovaného olomouckého křtu.",
+            "Mezi spolupracovníky v katalogu vydání figurují Prdk, Computerartist, Merikan, Neonlight, Disphonia, Trilo nebo Kryptomedic. V Thunder hostuje Johanka; vedle úvodní Advanced (Intro) obsahuje album také Mosaik, Kick It a Existence. Tentokrát už je k dispozici celé vydání, nejen pozvánka na křest."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Apple Music – Advanced",
+              "url": "https://music.apple.com/us/album/advanced/6815011199",
+              "kind": "primary"
+            },
+            {
+              "name": "Beatport – katalog vydání s Prdk",
+              "url": "https://www.beatport.com/artist/prdk/961163/releases",
+              "kind": "primary"
+            },
+            {
+              "name": "Volumo – Qo a Johanka, Thunder",
+              "url": "https://volumo.com/track/6761733-thunder",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/65/3a/cb/653acb0f-a907-8b1c-dcd8-583bb2648ca9/5063879060372.png/1200x630wp-60.jpg"
+            }
+          ],
+          "tags": [
+            "Qo",
+            "Advanced",
+            "Hoofbeats Music",
+            "neurofunk",
+            "česká scéna"
+          ]
+        },
+        {
+          "id": "1991-roxy-prague-october-30-outlook",
+          "published_at": "2026-10-26",
+          "event_start": "2026-10-30",
+          "event_end": "2026-10-31",
+          "title": "Páteční tip: 1991 v Roxy, vedlejší ROOM8 obsadí Zigi SC Alterego Tour",
+          "summary": [
+            "V pátek 30. října vystoupí v pražské Roxy britský producent 1991. Klub otevírá ve 23:00 a jeho set je podle zveřejněného timetable naplánovaný na 01:00–02:15 v noci na sobotu.",
+            "Hlavní program doplní Kayak, Akira, Bifidus Aktif a Pixie. V prostoru ROOM8 poběží Zigi SC Alterego Tour se Zigi SC, A-Crayem, Prdk, Dys.ko a SLWDWN. Jde o praktický výhled na následující víkend; časový plán a prodej zveřejňuje přímo klub."
+          ],
+          "why_it_matters": "Praktický výhled sestavený 26. října na bezprostředně následující víkend; published_at není původní datum oznámení akce.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "ROXY – oficiální program 1991",
+              "url": "https://www.roxy.cz/events/detail/4985/1991",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.roxy.cz/upload/temp/1991-web-afce3ytwunkc-crop-480-480.jpg"
+            }
+          ],
+          "tags": [
+            "1991",
+            "Roxy",
+            "Praha",
+            "Zigi SC",
+            "víkendový tip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Nálada publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Releasy a labely",
+      "items": [
+        {
+          "id": "workforce-outlier-dub-must-make-music",
+          "published_at": "2026-10-23",
+          "event_start": null,
+          "event_end": null,
+          "title": "Workforce v Outlier Dub sází na minimum prvků a dubové detaily",
+          "summary": [
+            "Workforce vydal 23. října na Must Make Music singl Outlier Dub. Jack Stevens, dříve polovina SpectraSoul, jej představuje jako cvičení ve střídmosti: pevně naprogramované bicí a výraznou basu doplňují vokální útržky a dubové efekty.",
+            "Popis vydání upozorňuje na detaily, které v jednoduché stavbě vystupují do popředí, zejména delaye, pružinové reverby a střihy bicích. Na autorově Bandcampu je skladba dostupná také ke stažení ve 24bitovém formátu."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Workforce / Must Make Music – Outlier Dub",
+              "url": "https://workforce.bandcamp.com/track/outlier-dub",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://f4.bcbits.com/img/a2294854000_5.jpg"
+            }
+          ],
+          "tags": [
+            "Workforce",
+            "Must Make Music",
+            "deep",
+            "dub"
+          ]
+        },
+        {
+          "id": "anile-gin-walk-soul-in-motion-sampler",
+          "published_at": "2026-10-23",
+          "event_start": null,
+          "event_end": null,
+          "title": "Anile uzavírá Gin Walk sérii samplerů ke kompilaci SIM SIM",
+          "summary": [
+            "Anile vydal na Soul In Motion Records skladbu Gin Walk, poslední díl pětidílné samplerové série. Šestiminutová nahrávka vyšla 23. října a podle labelu představuje jeho první příspěvek do katalogu značky.",
+            "Série od září postupně nabídla Basic Rhythma, Channella, L-Sidea a zakladatele labelu Need For Mirrors. Všech pět singlů vede ke kompilaci SIM SIM se šestnácti dosud nevydanými skladbami, které Joe Moses alias Need For Mirrors vybral jako obraz současného zvuku labelu."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Soul In Motion – Gin Walk a harmonogram samplerů",
+              "url": "https://soulinmotion.bandcamp.com/album/simlp002s5-gin-walk",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://f4.bcbits.com/img/a1747570059_5.jpg"
+            }
+          ],
+          "tags": [
+            "Anile",
+            "Soul In Motion",
+            "Need For Mirrors",
+            "kompilace"
+          ]
+        },
+        {
+          "id": "4am-kru-chicken-soup-for-the-rave",
+          "published_at": "2026-10-23",
+          "event_start": null,
+          "event_end": null,
+          "title": "4am Kru a Shout Out Out Out Out vydali Chicken Soup for the Rave",
+          "summary": [
+            "Londýnští 4am Kru spojili síly se Shout Out Out Out Out na singlu Chicken Soup for the Rave. Novinka vyšla 23. října na Embrace The Real Records a rozšiřuje letošní katalog jungleového dua po jarním Love On The Line EP s Laylou Sibelle.",
+            "Pro poslech je dostupná verze dlouhá 3:28. Vlastní Bandcamp 4am Kru nabízí také Extended Mix o délce 4:48, takže DJs mají vedle krátkého singlu k dispozici delší klubovou variantu."
+          ],
+          "why_it_matters": "Aktuální hudební a scénový přehled založený na uvedených zdrojích.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "4am Kru – oficiální Extended Mix",
+              "url": "https://4amkru.bandcamp.com/album/chicken-soup-for-the-rave-extended-mix",
+              "kind": "primary"
+            },
+            {
+              "name": "Drum & Bass UK – singl a délka",
+              "url": "https://drumandbassuk.com/artist/4am-kru/chicken-soup-for-the-rave-66771",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://f4.bcbits.com/img/a1812263035_5.jpg"
+            },
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/track/2DS1lEGVFhTp84ggZJ16KQ"
+            }
+          ],
+          "tags": [
+            "4am Kru",
+            "jungle",
+            "Embrace The Real",
+            "Shout Out Out Out Out"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lir_actions",
+      "title": "Interní akce pro LIR",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "UKF / Pilot – web a články; Ekula zveřejněn až 26. 10., mimo období",
+    "Drum & Bass UK – aktuální zprávy, rozhovory a release katalog",
+    "Kmag – web a rozhovory; otevřené profily Valkyrie a L-Side jsou starší",
+    "LoveThatBass – web nedostupný",
+    "EDM Identity – zprávy, rozhovory a mixy; články čteny přes webovou cache",
+    "We Are Studio – web; nejnovější datovaný rozhovor Mefjus 13. 10., mimo období",
+    "DJ Mag, Mixmag – aktuální zpravodajské výpisy",
+    "RA News – stránka bez dostupného zpravodajského obsahu",
+    "Beatportal, Data Transmission DnB – aktuální výpisy",
+    "Critical – web, release a event přehled",
+    "Metalheadz – web; Counter Culture odkaz nedostupný",
+    "Shogun Audio – web nedostupný",
+    "Hospital Records, The North Quarter, 1985 – weby a katalogy",
+    "Dispatch – web 403; Sofa Sound – Bandcamp se starší cache",
+    "VISION – web a release přehled; SUNANDBASS – web, odkaz ArpXP nedostupný",
+    "Liquicity label – web a release přehled",
+    "Reddit r/DnB: hot + top/week – dostupné výpisy; top/week má starší cache",
+    "Reddit r/DnB: new – starší cache; dohledána a přečtena diskuse o Spotify playlistech z 22. 10.",
+    "Reddit – diskuse o Spotify má málo věcných reakcí; nezařazena jako širší sentiment",
+    "Reddit r/LetItRollFestival a r/electronicmusic – výpisy se starší cache; aktuální sentiment nepotvrzen",
+    "Instagram DnB District a DnB Universe – načtení selhalo; obsah a komentáře neověřeny",
+    "Instagram Chase & Status – 429; webová rešerše bez doloženého nového příběhu pro tento týden",
+    "Rampage – oficiální web, Weekend lineup a ticket odkazy; Open Air web bez čitelného obsahu",
+    "Rampage – IG ověřen z webu, nedostupný; FB a X cache miss; YouTube bez aktuálních videí",
+    "Rampage – druhá vlna na webu, datum oznámení neověřeno; nezařazena, komentáře nedostupné",
+    "Liquicity – web, festival a Celebratix ticketing; nové datum oznámení nelze potvrdit",
+    "Liquicity – IG ověřen z webu, nedostupný; FB vyžaduje login; YouTube bez aktuálního výpisu",
+    "Darkshire – web, Arena GoOut ticketing a video odkazy; datum nového oznámení neověřeno",
+    "Darkshire – IG ověřen z webu, 429; FB nedostupný; YouTube bez aktuálních videí a komentářů",
+    "Beats for Love – oficiální web; DnB Allstars – eventový přehled; bez ověřené nové publikace v období",
+    "Hospitality – web Loading; Weekender článek a oficiální booking prověřeny, novost oznámení nejasná",
+    "Outlook – web 403; SUNANDBASS a Let It Roll – oficiální weby bez doložené nové publikace v období",
+    "DNBe HearD – web; DNB CZ EVENTS – web dostupný, přehled akcí se nenačetl",
+    "Musicserver – timeout; Rave.cz – 403; Hoofbeats Booking – web a profil Qo",
+    "GoOut – Darkshire ticketing a Pirapus profil; ROXY – oficiální program a timetable",
+    "Venjent, Workforce, Anile / Soul In Motion, 4am Kru – původní Bandcampy, data a artworky",
+    "Qo – Apple Music, Beatport a Volumo; vydání alba potvrzeno, recap křtu bez důkazů nezařazen",
+    "Diverse / Make Your Era, Tekill / Dirtbox – původní rozhovory a oficiální sociální odkazy",
+    "Tsuki – původní rozhovor a připojený SoundCloud mix; IG nedostupný, YouTube jen obecný výpis",
+    "DEAD P.A. – původní rozhovor; JFB / DMC – oficiální program, IG nedostupný a YouTube bez nových videí",
+    "IG Diverse, Tekill, Venjent, 4am Kru, Soul In Motion a ROXY – nedostupné; komentáře nepřečteny",
+    "YouTube Make Your Era, Dirtbox, Venjent a ROXY – cache miss nebo obecné výpisy bez aktuálních videí",
+    "LICK – článek 23. 10.; původní IG oznámení nedostupné, nezařazen bez dalšího ověření",
+    "Vandal x Flexout – Bandcamp datum 2. 10. oproti stream singlu 23. 10.; nezařazen jako nový projekt"
+  ]
+}
