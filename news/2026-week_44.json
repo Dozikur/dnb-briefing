@@ -1,0 +1,446 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 44,
+    "window_start": "2026-10-26",
+    "window_end": "2026-11-01",
+    "generated_at": "2026-11-02T10:13:32.722160+00:00"
+  },
+  "headline": "Korsakov odhalil lineup, Art Delivery zaplnilo BVV; Andromedik Invites, REAPER a komunita LIR",
+  "executive_summary": [
+    "Korsakov přiváží Camo & Krooked B2B Mefjus, NERO a Black Sun Empire B2B Burr Oak; Otherways a WAH pokračují v prodeji.",
+    "Sobotní Art Delivery na BVV hlásí full-house; lineup vedl Dimension s Camo & Krooked, Koven a dalšími hosty.",
+    "Andromedik Invites se rozloučilo s Antwerp Expo; Reddit chválí produkci a přináší i osobní srovnání s pražským EPICem.",
+    "REAPER vydal album BONEYARD; domácí výběr pro další týden tvoří Double Trouble s Magnetude v Crossu.",
+    "Let It Roll Winter se objevuje v malé diskusi o sólo návštěvě a hledání dalších návštěvníků."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "korsakov-weekender-lineup-otherways-wah-october-2026",
+          "published_at": "2026-10-28",
+          "event_start": "2027-01-29",
+          "event_end": "2027-01-30",
+          "title": "Korsakov odhalil lineup: Camo & Krooked B2B Mefjus, NERO i Black Sun Empire B2B Burr Oak",
+          "summary": [
+            "Korsakov Weekender se vrátí 29.–30. ledna 2027 do rotterdamských Maassilo a Now&Wow. Lineup zveřejněný 28. října spojuje Camo & Krooked B2B Mefjus, NERO, Black Sun Empire B2B Burr Oak, samostatný classics set Black Sun Empire, Koven či The Upbeats. Českou stopu přidává dvouhodinový Darkshire Sound: Zigi SC B2B PRDK B2B Kaira.",
+            "Ve vlákně r/DnB z 28. října, které mělo při kontrole 2. listopadu 43 bodů a 32 komentářů, se opakuje nadšení pro spojení Black Sun Empire s Burr Oak, jejich classics set i návrat NERO. Část komentujících oceňuje také S.P.Y, Mandidextrous a Flowidus. Jde o reakce účastníků konkrétní diskuse.",
+            "Zkušenosti s venues se rozcházejí: někteří preferují Maassilo před někdejším RDM kvůli atmosféře a dostupnosti, jiný návštěvník považuje Now&Wow za stísněnější. Dva diskutující si stěžují na údajné bránění v doplňování vody u toalet v Maassilu; aktuální pravidla pořadatele tím nejsou nezávisle potvrzena.",
+            "Další vývoj konkurence: Otherways na Mallorce spustil 30. října prodej vstupenek a hotelů pro 30. dubna–2. května 2027. WAH Malta proběhne 29. dubna–2. května; mezi dříve oznámenými headlinery jsou Sub Focus a Hybrid Minds. Při kontrole 2. listopadu nabízí druhou cenovou vlnu za 215 liber plus poplatky, první dvě vlny jsou označené jako vyprodané."
+          ],
+          "why_it_matters": "Ověřený aktuální příběh pro přehled DnB scény a značky Let It Roll; komunitní zkušenosti jsou připsány jejich autorům.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Korsakov",
+            "Otherways",
+            "Worried About Henry"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Korsakov – původní lineup, 28. října",
+              "url": "https://www.instagram.com/p/DfDAY_gxt7x/",
+              "kind": "primary"
+            },
+            {
+              "name": "Reddit – Korsakov lineup a dostupné komentáře",
+              "url": "https://www.reddit.com/r/DnB/comments/1xhwcxa/korsakov_lineup/",
+              "kind": "community"
+            },
+            {
+              "name": "Otherways – termín a otevřený prodej",
+              "url": "https://www.otherwaysworld.com/",
+              "kind": "primary"
+            },
+            {
+              "name": "WAH Malta – termín a aktuální cenové vlny",
+              "url": "https://wah-malta.com/tickets",
+              "kind": "primary"
+            },
+            {
+              "name": "WAH – původní oznámení prvních headlinerů, 22. října",
+              "url": "https://www.instagram.com/p/DezfiKWCBMv/?img_index=1",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://preview.redd.it/korsakov-line-up-v0-4gjoyfbu49yh1.jpeg?width=640&crop=smart&auto=webp&s=3da0a75408636d877b9eacc3a50f5946fecd7d34"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DfDAY_gxt7x/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DezfiKWCBMv/?img_index=1"
+            }
+          ],
+          "tags": [
+            "Korsakov",
+            "lineup",
+            "Otherways",
+            "WAH Malta",
+            "Reddit"
+          ]
+        },
+        {
+          "id": "art-delivery-bvv-brno-dimension-full-house-october-2026",
+          "published_at": "2026-11-01",
+          "event_start": "2026-10-31",
+          "event_end": "2026-11-01",
+          "title": "Art Delivery zaplnilo brněnské BVV. Pořadatel hlásí full-house",
+          "summary": [
+            "V sobotu 31. října proběhlo na brněnském výstavišti Art Delivery presents Dimension. Společný příspěvek Musart a Art Delivery z noci na 1. listopadu hlásí full-house a ukazuje zaplněnou halu.",
+            "Program vedle Dimensiona nabídl Camo & Krooked, Koven, Kanine, Delta Heavy, 1991 a Lens; domácí a slovenskou část doplnili mimo jiné Leduy a C:rcle. Následný recap Musart potvrzuje, že Dimension vystoupil po jedné hodině ráno a program pokračoval do rána.",
+            "Ve viditelných komentářích k recapu převažují jednotlivé pochvaly večera a plné haly; jeden návštěvník zmiňuje výhradu k šatně a jiný ke zvuku. Tyto reakce nejsou reprezentativním hodnocením všech návštěvníků."
+          ],
+          "why_it_matters": "Ověřený aktuální příběh pro přehled DnB scény a značky Let It Roll; komunitní zkušenosti jsou připsány jejich autorům.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "competition",
+          "competitors": [
+            "Art Delivery"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Musart × Art Delivery – původní full-house recap",
+              "url": "https://www.instagram.com/p/DfLfnJICMoi/?img_index=2",
+              "kind": "primary"
+            },
+            {
+              "name": "Art Delivery – oficiální ticketing, datum, místo a lineup",
+              "url": "https://tickets.nfctron.com/event/art-delivery/dimension-kanine-koven-delta-heavy-camo-krooked-and-more-2026",
+              "kind": "primary"
+            },
+            {
+              "name": "Musart × Art Delivery – následný recap a komentáře",
+              "url": "https://www.instagram.com/p/DfNJ2D_EV8G/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DfLfnJICMoi/?img_index=2"
+            }
+          ],
+          "tags": [
+            "Art Delivery",
+            "BVV",
+            "Brno",
+            "Dimension",
+            "recap"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "andromedik-invites-antwerp-expo-reddit-october-2026",
+          "published_at": "2026-10-31",
+          "event_start": "2026-10-30",
+          "event_end": "2026-10-31",
+          "title": "Andromedik Invites v Antwerp Expo: Reddit chválí produkci, zaznívá i srovnání s Prahou",
+          "summary": [
+            "Páteční Andromedik Invites – The Final Edition proběhlo 30. října v Antwerp Expo. S Andromedikem vystoupili Koven, Licia, Maze, Subsonic B2B Rova a SOTA. Pořadatel popisuje uzavření éry tohoto venue a další pokračování konceptu; nejde o konec všech akcí Andromedik Invites.",
+            "Autor vlákna r/DnB z 31. října vyzdvihuje audiovizuální produkci pro celý program, zvuk a souvislou energii danceflooru a jump-upu. Jako vrcholy jmenuje Koven s živými vokály, Andromedikovy hymny, SOTA a Subsonic B2B Rova. Při sběru 2. listopadu mělo vlákno 34 bodů a 17 komentářů.",
+            "Několik dalších účastníků sdílí nadšení z vizuálů, energie a publika. Jeden diskutující zároveň kritizuje vlastní dřívější zkušenost s Andromedik Invites v pražském EPICu: prostor mu připadal malý a jako fanouškovi melodičtějšího DnB mu neseděl poměr jump-upu a supportu. Jde o konkrétní osobní srovnání, nikoli o názor celé české scény."
+          ],
+          "why_it_matters": "Ověřený aktuální příběh pro přehled DnB scény a značky Let It Roll; komunitní zkušenosti jsou připsány jejich autorům.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Andromedik – původní plakát a lineup, zveřejněno v červnu",
+              "url": "https://www.instagram.com/p/DaA_Az_CX0j/",
+              "kind": "primary"
+            },
+            {
+              "name": "Andromedik Invites – eventový profil s programem a popisem pořadatele",
+              "url": "https://ra.co/events/2513047",
+              "kind": "primary"
+            },
+            {
+              "name": "Reddit – Andromedik Invites a všech 17 dostupných komentářů",
+              "url": "https://www.reddit.com/r/DnB/comments/1xkd3ca/andromedik_invites_the_peak_of_modern/",
+              "kind": "community"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://images.ra.co/0c4c1d547d03cc9ac6ec2c209ec78dada6eecb87.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DaA_Az_CX0j/"
+            }
+          ],
+          "tags": [
+            "Andromedik",
+            "Antwerp Expo",
+            "Andromedik Invites",
+            "Reddit",
+            "EPIC Praha"
+          ]
+        },
+        {
+          "id": "reaper-boneyard-third-album-bassrush-2026",
+          "published_at": "2026-10-30",
+          "event_start": null,
+          "event_end": null,
+          "title": "REAPER vydal BONEYARD. Třetí album obsahuje 19 skladeb",
+          "summary": [
+            "Americký REAPER vydal 30. října na Bassrush Records třetí album BONEYARD. Devatenáct skladeb spojuje tvrdý drum & bass s industriálními texturami a vokálními spolupracemi; v SUNLIGHT se připojují AIRGLO a AC13, v SWEET TALKER Dani King a v TAKE FLIGHT Crumb Pit.",
+            "Deska vyrostla z konceptu stejnojmenných živých show. REAPER v původním oznámení popisuje, že rozpracované verze skladeb během roku testoval před publikem a nyní je propojuje do celého alba."
+          ],
+          "why_it_matters": "Ověřený aktuální příběh relevantní pro scénu, booking a přehled značky Let It Roll.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "world",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Bassrush / Insomniac Music Group – datum, katalog a koncept alba",
+              "url": "https://inflyteapp.com/r/uq41i2",
+              "kind": "primary"
+            },
+            {
+              "name": "REAPER – původní oznámení vydání BONEYARD",
+              "url": "https://www.instagram.com/p/DfIS2R_D7Vv/",
+              "kind": "primary"
+            },
+            {
+              "name": "Spotify – BONEYARD, REAPER, všech 19 skladeb",
+              "url": "https://open.spotify.com/album/4WGwcJAjNdRgOsX0Dc5TKt",
+              "kind": "primary"
+            },
+            {
+              "name": "EDM Identity – BONEYARD a spolupracovníci",
+              "url": "https://edmidentity.com/2026/10/30/reaper-boneyard/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://edmidentity.com/wp-content/uploads/2026/10/REAPER-Boneyard-Artwork-1024x1024.jpg"
+            },
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/album/4WGwcJAjNdRgOsX0Dc5TKt"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DfIS2R_D7Vv/"
+            }
+          ],
+          "tags": [
+            "REAPER",
+            "BONEYARD",
+            "Bassrush Records",
+            "album",
+            "americká scéna"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": [
+        {
+          "id": "magnetude-double-trouble-cross-november-6-2026-outlook",
+          "published_at": "2026-11-02",
+          "event_start": "2026-11-06",
+          "event_end": "2026-11-07",
+          "title": "Double Trouble v Crossu: v pátek dorazí Magnetude",
+          "summary": [
+            "V pátek 6. listopadu přivítá pražský Cross Club duo Magnetude na Double Trouble. Oficiální klubový program uvádí začátek ve 20:00 a konec v sobotu 7. listopadu v 07:00.",
+            "DnB program dále doplní Naymes, Linegiv, Gr1nd3r, Szuggi, Tensyy, Volume Plus, Chombo, Bruny, Plus One, Sagitta a Skáčko."
+          ],
+          "why_it_matters": "Výhled sestavený 2. listopadu pro nejbližší týden; published_at není datem původního oznámení. Čas převzat z primárního klubového programu.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Cross Club – Double Trouble, oficiální program a plakát",
+              "url": "https://www.crossclub.cz/en/program-1/8699-double-trouble-w-magnetude-uk/",
+              "kind": "primary"
+            },
+            {
+              "name": "GoOut – Double Trouble a ticketing",
+              "url": "https://goout.net/cs/double-trouble-magnetude%2Bnaymes%2Bmore/szsgtny/",
+              "kind": "secondary"
+            },
+            {
+              "name": "DNB CZ EVENTS – profil Double Trouble",
+              "url": "https://dnbczevents.cz/akce-profil.php?id=1780",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.crossclub.cz/files/2026/listopad/dou.jpg"
+            }
+          ],
+          "tags": [
+            "Praha",
+            "Cross Club",
+            "Magnetude",
+            "Double Trouble",
+            "týdenní výhled"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Komunita a publikum",
+      "items": [
+        {
+          "id": "lir-winter-solo-ravers-reddit-october-28-2026",
+          "published_at": "2026-10-28",
+          "event_start": null,
+          "event_end": null,
+          "title": "Na Redditu se řeší sólová návštěva Let It Roll Winter a společný chat",
+          "summary": [
+            "Ve vlákně Let It Roll Winter solo z 28. října se autor ptá, zda na zimní festival vyrazit sám a jak najít další návštěvníky před akcí. Při sběru 2. listopadu mělo vlákno 5 bodů a 4 komentáře.",
+            "Jeden z diskutujících popisuje dvě pozitivní sólové návštěvy, nová přátelství a nabízí odkaz do soukromého WhatsApp chatu. Další zmiňuje údajnou oficiální skupinu přes Instagram LIR, její existenci se ale nepodařilo nezávisle potvrdit. V těchto čtyřech reakcích se neobjevila kritika ani spor; jde o malou osobní diskusi, nikoli reprezentativní hodnocení festivalu."
+          ],
+          "why_it_matters": "Povinné pokrytí aktuální přímé zmínky značky LIR bez ohledu na engagement. Primární LIR zdroj dokládá pouze kontext a ilustrační plakát; zkušenosti a tvrzení o skupinách jsou připsané komentujícím.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Reddit – Let It Roll Winter solo, původní příspěvek a čtyři komentáře",
+              "url": "https://www.reddit.com/r/LetItRollFestival/comments/1xhnszh/let_it_roll_winter_solo/",
+              "kind": "community"
+            },
+            {
+              "name": "Let It Roll – oficiální podklady k Winteru; ilustrační plakát",
+              "url": "https://letitroll.eu/let-it-roll-winter-2027-the-full-lineup-is-here/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://letitroll.eu/wp-content/uploads/2026/10/lirw27_web-news_1x1_full-lineup.jpg"
+            }
+          ],
+          "tags": [
+            "Let It Roll",
+            "Winter 2027",
+            "Reddit",
+            "solo ravers",
+            "komunita"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Hudební novinky",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Interní kroky LIR",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "Rampage: web, Weekend lineup/tickets, Open Air landing; aktuální IG přes prohlížeč, hlavně ADE/throwbacky.",
+    "Rampage: oficiální IG rampage.international ověřen z webu; web tool cache miss, browser čtení úspěšné.",
+    "Rampage: FB/YouTube odkazy z webu zjištěny; samostatný aktuální obsah těchto kanálů neověřen.",
+    "Liquicity: oba weby a klubový kalendář; browser IG 26./29./30.10. a 1.11. včetně viditelných komentářů.",
+    "Liquicity: Sub Focus 20.10. už pokryt; aktuální IG recap, community a dotaz na další jména, bez nové vlny.",
+    "Darkshire: web/GoOut odkazy, oficiální IG darkshire.events v browseru; web tool IG cache miss překonán.",
+    "Darkshire: 26./28.10. promo starých F2F dvojic, 29.10. Nu:Tone set; novou festivalovou vlnu neověřeno.",
+    "WAH: worriedabouthenry.com, wah-malta.com a tickets; Skiddle prodejní harmonogram a kalendář UK akcí.",
+    "WAH: oficiální IG v browseru včetně aktuálního Halloween feedu; Malta ceny z oficiálního webu k 2.11.",
+    "Otherways: oficiální web/ticketing/IG; 30.10. spuštění prodeje, 31.10. připomínka; komentáře přečteny.",
+    "Beats for Love: oficiální web a program; poslední datované webové zprávy ze září, bez nového kandidáta.",
+    "DnB Allstars: oficiální kalendář Mannheim/NYE/Thailand; nové datum oznámení pro období neověřeno.",
+    "Hospitality: web JS loading; DnBUK Weekender článek 23.10. je mimo okno, nezařazen.",
+    "Outlook: oficiální web 403; SUNANDBASS: web a aktuální přehled labelových zpráv přečten.",
+    "UKF: homepage a READ, přehled článků/releasů; bez ověřeného dalšího zásadního kandidáta v okně.",
+    "Drum & Bass UK: news; relativní stáří cache nestačilo, Hospitality datum 23.10. ověřeno v článku.",
+    "Kmag: homepage/sekční přehledy; viditelné články převážně červenec/srpen, nezařazeny.",
+    "LoveThatBass: news, poslední viditelná zpráva 20.8.; nevydáváno za aktuální říjnové pokrytí.",
+    "We Are Studio: přehled článků, nejnovější datované 15.10.; bez vhodné zprávy v okně.",
+    "EDM Identity: aktuální přehled a REAPER BONEYARD; primární labelová tisková zpráva doplněna.",
+    "DJ Mag: news přehled čitelný; část cíleného vyhledávání robots; bez dalšího ověřeného DnB kandidáta.",
+    "Mixmag: news přehled; RA: homepage/news/music přehledy; bez dalšího zásadního DnB kandidáta.",
+    "Beatportal: homepage a aktuální přehled zpráv; žádná další doložená zásadní DnB zpráva vybrána.",
+    "Data Transmission: homepage + DT DNB; nejnovější viditelné DnB příspěvky 2.10., mimo okno.",
+    "Critical: oficiální web a QZB Dreams To Dust; Metalheadz: homepage/releases; bez vybraného nového příběhu.",
+    "Shogun Audio, Hospital, The North Quarter, 1985: oficiální katalogy/weby přečteny, bez nového výběru.",
+    "Dispatch: oficiální web 403; Sofa Sound: Bandcamp starší cache; Vision: oficiální přehled releasů.",
+    "Liquicity label: katalog; UKF/Pilot: přehled UKF; SUNANDBASS Recordings: přehled labelových zpráv na webu.",
+    "DNBe HearD: homepage a týdenní rubrika bez článků ve výpisu; Hoofbeats: oficiální booking web.",
+    "Musicserver: aktuální homepage; Rave.cz: 403; přehledy bez dalšího vybraného současného DnB příběhu.",
+    "DNB CZ EVENTS: browser čerstvý akce.php a všech 12 profilů 5.–7.11.; web cache starší překonána.",
+    "CZ profily: 1894,1890,1780,1695,1869,1837,1775,1774,1880,1760,1907,1798 otevřeny jednotlivě.",
+    "CZ primární: ROXY, Cross, LIR ticketing, Nuclear Factory IG; Fabric program doplněn, Storm web nedostupný.",
+    "CZ/SK: doplňkové dotazy Praha/Brno/Ostrava/Bratislava a 6.–7.11.; neznámý původ lokálních DJs neodhadován.",
+    "F3RZ: původní IG plakát se španělskou vlajkou, vlastní profil + DNB CZ EVENTS + Hradecký vlny.",
+    "Reddit r/DnB: hot + top/week; web cache různě staré, browser obě stránky čerstvé a New úspěšně přečten.",
+    "Reddit r/DnB: aktuální top Hospital30/Napes/Hazard, hot/new; bez výplňové obecné sentimentové karty.",
+    "Reddit r/LetItRollFestival: web stará cache; browser čerstvý New, solo post 28.10. a všechny 4 komentáře.",
+    "Reddit: LIR/Let It Roll/Winter cíleně hledáno v r/DnB i globálně; většina výsledků starší nebo nesouvisející.",
+    "Reddit r/electronicmusic: New v browseru a doplňkové hledání; bez vhodné další současné LIR zprávy.",
+    "Instagram DnB District: browser feed i konkrétní posty/komentáře; C&S a REAPER ověřeny u původních účtů.",
+    "Instagram DnB Universe: browser aktuální feed/reposty 29.–30.10.; bez vybraného zásadního kandidáta.",
+    "Instagram Chase & Status: browser profil, původní AUS/NZ sale post, čas a viditelné komentáře ověřeny.",
+    "Instagram REAPER: browser profil a původní BONEYARD post; Spotify embed načetl název, autora a 19 skladeb.",
+    "YouTube REAPER: veřejný kanál přes web vrátil jen starý obecný footer; nepředstíráno ověření videí.",
+    "X Chase & Status: přímý odkaz 403; nepoužito jako důkaz. LIR Instagram profil v browseru přečten.",
+    "GoOut: přímý profil Double Trouble čitelný ve webu i browseru; souhlasí s bookingem, časy odlišné od klubu.",
+    "Revize v2: Korsakov oficiální web a Weekender 2027, IG DfDAY_gxt7x v browseru včetně posteru a komentářů; timestamp 28.1",
+    "0.2026.",
+    "Revize v2: Korsakov Reddit web/cache neúplný; přímý browser úspěšný, dostupné komentáře a rozbalené odpovědi, 43 bodů/32",
+    " celkem, 2.11.2026.",
+    "Revize v2: WAH dodaný IG DezfiKWCBMv browser úspěšný, 22.10. a soutěžní komentáře; nejde o nové oznámení v týdnu44.",
+    "Revize v2: Art Delivery DfLfnJICMoi a DfNJ2D_EV8G, oficiální reel DfMMdkAABP- a profil v browseru čitelné; full-house ov",
+    "ěřeno, výslovný ticketing sold-out nezjištěn.",
+    "Revize v2: Art Delivery NFCtron profil přečten, termín31.10. a lineup; artdelivery.cz web tool nedostupný a browser ERR_",
+    "NAME_NOT_RESOLVED.",
+    "Revize v2: Andromedik Reddit přímý browser úspěšný, 31.10., 34 bodů/17 komentářů, všech17 v DOM přečteno.",
+    "Revize v2: Andromedik IG DaA_Az_CX0j červen25, pouze historický poster téže akce; RA2513047 potvrzuje termín, lineup a k",
+    "onec éry Expo.",
+    "Revize v2: RA poster stažen ze skutečného img src a vizuálně ověřen; Cross dou.jpg z oficiálního HTML stažen a vizuálně ",
+    "ověřen.",
+    "Revize v2: Chase & Status, Nuclear Factory a domácí tip Mandidextrous vyřazeny na výslovný pokyn uživatele; zachována hi",
+    "storie rešerše v1."
+  ]
+}
