@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "briefings": [
+    { "year": 2026, "week": 45, "file": "news/2026-week_45.json" },
     { "year": 2026, "week": 44, "file": "news/2026-week_44.json" },
     { "year": 2026, "week": 43, "file": "news/2026-week_43.json" },
     { "year": 2026, "week": 42, "file": "news/2026-week_42.json" },

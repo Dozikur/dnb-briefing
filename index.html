@@ -203,6 +203,21 @@
           </div>`;
       }
 
+      if (media.type === "reddit") {
+        const parsed = new URL(url);
+        if (parsed.protocol !== "https:" || !["www.reddit.com", "reddit.com"].includes(parsed.hostname) || parsed.port || parsed.username || parsed.password) return "";
+        const match = parsed.pathname.match(/^\/r\/([A-Za-z0-9_]+)\/comments\/([a-z0-9]+)\/([A-Za-z0-9_]+)\/?$/);
+        if (!match) return "";
+        const path = `/r/${match[1]}/comments/${match[2]}/${match[3]}/`;
+        const canonical = `https://www.reddit.com${path}`;
+        return `<div class="instagram-embed rounded-xl border border-slate-700 bg-slate-900/60 p-3">
+          <iframe class="media-frame" height="740" loading="lazy" scrolling="no" title="Reddit video – původní příspěvek"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+            src="https://embed.reddit.com${path}?embed=true&ref_source=embed&ref=share&utm_medium=widgets&utm_source=embedv2&utm_name=post_embed"></iframe>
+          <p class="mt-3 text-center text-sm text-slate-400"><a class="text-pink-400 hover:underline" href="${canonical}" target="_blank" rel="noopener noreferrer">Otevřít video a diskusi na Redditu</a></p>
+        </div>`;
+      }
+
       if (media.type === "youtube") {
         const id = youtubeId(url);
         return id ? `

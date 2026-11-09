@@ -24,7 +24,7 @@ CATEGORIES = {
 REGIONS = {"world", "europe", "cz_sk", "global"}
 CONFIDENCE = {"confirmed", "probable", "unverified"}
 SOURCE_KINDS = {"primary", "secondary", "community"}
-MEDIA_TYPES = {"image", "instagram", "youtube", "spotify", "soundcloud"}
+MEDIA_TYPES = {"image", "instagram", "youtube", "spotify", "soundcloud", "reddit"}
 EDITORIAL_COVERAGE_START = (2026, 29)
 
 
@@ -237,7 +237,9 @@ def validate_v2(path: Path, report: dict) -> list[str]:
 
         if (period["year"], period["week"]) >= EDITORIAL_COVERAGE_START:
             section_map = {section["id"]: section["items"] for section in sections}
-            if len(section_map["dnb_scene"]) < 2:
+            # From 26 October 2026 (week 44), the user's editorial rules
+            # prefer shorter briefings over filling a section quota.
+            if (period["year"], period["week"]) < (2026, 44) and len(section_map["dnb_scene"]) < 2:
                 fail("dnb_scene must contain at least 2 items")
 
             scan_labels = [label.casefold() for label in report["sources_scanned"]]

@@ -1,0 +1,328 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 45,
+    "window_start": "2026-11-02",
+    "window_end": "2026-11-08",
+    "generated_at": "2026-11-09T10:53:26.599809+00:00"
+  },
+  "headline": "Rampage a Darkshire odkrývají rok 2027; Modestep, Venjent a třicet let Hospital Records",
+  "executive_summary": [
+    "Rampage zveřejnil hlavní lineup Weekendu 2027 v čele s Dimensionem a Wilkinsonem.",
+    "Darkshire Sanctuary se vrátí 20. března 2027 do pražského Sacre Coeur.",
+    "Modestep zveřejnili odhad ztráty 7 805 eur i při vyprodaném evropském turné.",
+    "Reddit chválí energii a humor Venjentovy live show; část publika jeho chaotický styl nevyhledává.",
+    "Hospital Records vydalo jubilejní HOSPITAL30: 30 skladeb, novinky i remixy a pětidiskový vinylový box."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "rampage-weekend-2027-main-room-lineup-november-6",
+          "published_at": "2026-11-06",
+          "event_start": "2027-03-05",
+          "event_end": "2027-03-06",
+          "title": "Rampage Weekend 2027: Dimension, Wilkinson, A.M.C i Control Alt Delete",
+          "summary": [
+            "Rampage zveřejnil 6. listopadu kompletní program hlavní haly pro Weekend 2027, který proběhne 5.–6. března v antverpské AFAS Dome. V čele plakátu stojí Dimension a Wilkinson; DnB část doplňují A.M.C s MC Phantomem, K Motionz, Macky Gee, Murdock s MC Motou a Pythius.",
+            "Don Diablo přiveze projekt Control Alt Delete. Mezi speciálními hosty figurují ATLiens, Kai Wachi a Seven Lions; program zahrnuje také Atmos B2B T-Lex či Dubtendo Allstars B2B Gladde Paling. Jde o hlavní halu, nikoli o definitivní program celé akce: pořadatel současně avizuje další jména."
+          ],
+          "why_it_matters": "Aktuální ověřené oznámení relevantní pro festivalovou scénu, booking a týdenní přehled značky Let It Roll.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [
+            "Rampage"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Rampage – původní oznámení 6. listopadu",
+              "url": "https://www.instagram.com/p/DfZ_IMyiGfN/",
+              "kind": "primary"
+            },
+            {
+              "name": "Rampage – oficiální main-room announcement",
+              "url": "https://rampage.eu/news/full-lineup-main-room",
+              "kind": "primary"
+            },
+            {
+              "name": "Rampage Weekend – lineup",
+              "url": "https://www.rampage-weekend.eu/line-up",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://rampage.eu/content/img/1/1712-42088-main-portrait-1350-4e1a396787c9a797.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DfZ_IMyiGfN/"
+            }
+          ],
+          "tags": [
+            "Rampage",
+            "lineup",
+            "Dimension",
+            "Wilkinson",
+            "A.M.C",
+            "Control Alt Delete"
+          ]
+        },
+        {
+          "id": "darkshire-sanctuary-sacre-coeur-march-2027-announcement",
+          "published_at": "2026-11-08",
+          "event_start": "2027-03-20",
+          "event_end": null,
+          "title": "Darkshire Sanctuary se vrátí do Sacre Coeur. Prodej začne v pondělí",
+          "summary": [
+            "Darkshire oznámilo 8. listopadu další Sanctuary v pražském kostele Sacre Coeur. Akce se uskuteční 20. března 2027; původní příspěvek uvádí spuštění prodeje na pondělí 9. listopadu v 15:00 SEČ.",
+            "Oficiální web potvrzuje stejný termín a prostor. Oznámení zatím představuje datum, vizuál a prodej vstupenek; jména interpretů v něm zveřejněna nejsou. Sanctuary doplňuje samostatný program Darkshire vedle listopadové Arena: Face 2 Face a letního In The Woods."
+          ],
+          "why_it_matters": "Aktuální ověřené oznámení relevantní pro festivalovou scénu, booking a týdenní přehled značky Let It Roll.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "competition",
+          "competitors": [
+            "Darkshire"
+          ],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Darkshire – původní oznámení 8. listopadu",
+              "url": "https://www.instagram.com/p/Dfe6_lJIoQZ/",
+              "kind": "primary"
+            },
+            {
+              "name": "Darkshire – oficiální web a vizuál Sanctuary",
+              "url": "https://darkshire.cz/line-up/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://darkshire.cz/wp-content/uploads/2026/11/announcement_4-5.png"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Dfe6_lJIoQZ/"
+            }
+          ],
+          "tags": [
+            "Darkshire",
+            "Sanctuary",
+            "Sacre Coeur",
+            "Praha",
+            "ticketing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": [
+        {
+          "id": "modestep-european-tour-costs-loss-november-2026",
+          "published_at": "2026-11-04",
+          "event_start": null,
+          "event_end": null,
+          "title": "Modestep: ani vyprodané evropské turné nepokryje náklady",
+          "summary": [
+            "Modestep zveřejnili 4. listopadu vlastní kalkulaci největšího evropského turné, které dosud podnikli. Podle kapely se nezaplatí ani při vyprodání všech zastávek: ukázka rozpočtu končí částkou minus 7 805 eur. Přitom cestují s minimálním týmem a bez tourbusu; během měsíce chtějí v dodávce ujet přibližně 5 000 mil.",
+            "Kapela popisuje vysoké náklady jako překážku udržitelného koncertování nezávislých interpretů. Vedle vstupenek a merche letos přidala VIP balíčky se setkáním, návštěvou zvukové zkoušky a podepsanými předměty. Zdůrazňuje, že od fanoušků nečeká vyřešení celého problému; jejich podporu ale označuje za důvod, proč může pokračovat."
+          ],
+          "why_it_matters": "Konkrétní zveřejněná zkušenost kapely s ekonomikou evropského turné; částka je vlastní kalkulací Modestep, nikoli obecnou statistikou všech interpretů.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "festival_industry",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Modestep – původní osmislidový příspěvek o nákladech turné",
+              "url": "https://www.instagram.com/p/DfUzmfYmoQQ/?img_index=1",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/DfUzmfYmoQQ/?img_index=1"
+            }
+          ],
+          "tags": [
+            "Modestep",
+            "turné",
+            "náklady",
+            "live show",
+            "VIP",
+            "merch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": []
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": []
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Komunitní diskuse",
+      "items": [
+        {
+          "id": "venjent-live-show-positive-reddit-november-6-2026",
+          "published_at": "2026-11-06",
+          "event_start": null,
+          "event_end": null,
+          "title": "Venjentova live show sklízí na Redditu chválu za energii a humor",
+          "summary": [
+            "Video z Venjentova vystoupení vyvolalo 6. listopadu na r/DnB debatu o jeho výrazném pódiovém projevu. Autor píše, že dosud neviděl nikoho, koho by živé hraní tak bavilo. Při kontrole 9. listopadu mělo vlákno 306 bodů a 54 komentářů.",
+            "V přečtených reakcích převažují pochvaly energie, humoru a kontaktu s publikem. Další fanoušci připomínají vlastní pozitivní zkušenosti z dřívějších koncertů a oceňují, že Venjent neskrývá radost z vystupování. Autor videa dodává, že ho během setu ještě nikdo tolik nerozesmál.",
+            "Část diskutujících označuje show za příliš chaotickou nebo píše, že nejde o jejich vkus; současně uznává, že se publikum baví. Jde o reakce v konkrétním vlákně a osobní zkušenosti, nikoli reprezentativní hodnocení celé DnB scény."
+          ],
+          "why_it_matters": "Aktuální návštěvnické reakce na živý formát interpreta relevantního pro domácí booking; pochvaly i výhrady jsou připsány autorům diskuse.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "world",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "probable",
+          "sources": [
+            {
+              "name": "Reddit – původní video Venjenta a diskuse, 6. listopadu",
+              "url": "https://www.reddit.com/r/DnB/comments/1xphm9w/went_to_see_venjent_last_night_and_ive_never_seen/",
+              "kind": "community"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://external-preview.redd.it/went-to-see-venjent-last-night-and-ive-never-seen-someone-v0-cjd1NG9tOGV1MDBpMcnM3qG9pA52FpC8ftRMpw4nkSYKKtQ5e4rpJdYr6dec.jpeg?width=640&crop=smart&format=pjpg&auto=webp&s=6a683708eab043c064435950d4eab7024353f0a2"
+            },
+            {
+              "type": "reddit",
+              "url": "https://www.reddit.com/r/DnB/comments/1xphm9w/went_to_see_venjent_last_night_and_ive_never_seen/"
+            }
+          ],
+          "tags": [
+            "Venjent",
+            "live show",
+            "Reddit",
+            "energie",
+            "publikum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Hudební novinky",
+      "items": [
+        {
+          "id": "hospital30-thirtieth-anniversary-compilation-november-2026",
+          "published_at": "2026-11-06",
+          "event_start": null,
+          "event_end": null,
+          "title": "Hospital Records slaví třicet let kompilací HOSPITAL30",
+          "summary": [
+            "Hospital Records vydalo 6. listopadu jubilejní kompilaci HOSPITAL30. Třicet skladeb spojuje nové nahrávky s remixy katalogu labelu; zastoupeni jsou Netsky, Grafix, S.P.Y, Nu:Logic, Etherwood, Tim Reaper i DJ Marky.",
+            "Výběr zahrnuje například Grafixův remix Netskyho Come Alive a spolupráci DJ Markyho, Makota a MC Conrada Dedicated to Conrad. Pro sběratele label připravil box pěti bílých dvanáctipalcových vinylů s dopisem, grafikou a samolepkami. Digitální album už je venku; oficiální obchod u fyzického boxu uvádí předobjednávku a očekávanou expedici 30. listopadu."
+          ],
+          "why_it_matters": "Výroční projekt jednoho z nejvýznamnějších DnB labelů propojuje klíčová jména jeho katalogu s další generací producentů.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "world",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Hospital Records – oficiální HOSPITAL30 a vinylový box",
+              "url": "https://www.hospitalrecords.com/products/hospital30",
+              "kind": "primary"
+            },
+            {
+              "name": "HOSPITAL30 – vydané album, datum a tracklist na Spotify",
+              "url": "https://open.spotify.com/album/6f7IsNoXO2dIvnnQVJ1GE2",
+              "kind": "primary"
+            },
+            {
+              "name": "EDM Identity – HOSPITAL30, 6. listopadu",
+              "url": "https://edmidentity.com/2026/11/06/hospital-records-hospital30/",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.shopify.com/s/files/1/0921/2946/0551/files/NHS620HOSPITAL30.jpg?v=1788973198"
+            },
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/album/6f7IsNoXO2dIvnnQVJ1GE2"
+            }
+          ],
+          "tags": [
+            "Hospital Records",
+            "HOSPITAL30",
+            "30 let",
+            "Netsky",
+            "Grafix",
+            "Tim Reaper",
+            "DJ Marky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lir_actions",
+      "title": "LIR akce",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "Otherways: oficiální web a prodej zkontrolovány; neopakován říjnový příběh bez nového data.",
+    "Beats for Love, DnB Allstars, SUNANDBASS: weby; Hospitality jen Loading; Outlook HTTP 403.",
+    "UKF: aktuální články Kit Rice a Froidy otevřeny; rutinní profily mimo přísný výběr.",
+    "Drum & Bass UK, Kmag, EDM Identity, DJ Mag, Beatportal, Data Transmission: dostupné webové výpisy.",
+    "LoveThatBass nedostupné; We Are Studio timeout; Mixmag HTTP 403; RA News bez vypsaných článků.",
+    "Critical timeout; Metalheadz katalog; Shogun nedostupný; Hospital a 1985 weby zkontrolovány.",
+    "DNBe HearD, Hoofbeats, Musicserver otevřeny; Rave.cz HTTP 403; GoOut a klubové/ticketing zdroje.",
+    "Drum&Bass Slovensko: kalendář a Dub Ten/Komárno; chybí druhé ověření venue/promotéra.",
+    "Boomtown/Noisia DJ Mag 28.10.: mimo reportované období; nezařazeno.",
+    "Rampage: web, Weekend/Open Air; IG původní main-room post 6.11., plakát a dostupné komentáře úspěšně čteny.",
+    "Liquicity: web, festival, ticketing a IG úspěšně; aftermovie premiéra 5.11., dostupné komentáře přečteny.",
+    "Darkshire: web + GoOut; IG Sanctuary 8.11. a původní Arena plakát ověřeny, dostupné komentáře čteny.",
+    "WAH: Malta web/prodej a IG profil; sobotní Drumsheds původní recap + komentáře; RA program ověřen.",
+    "Otherways: oficiální web/prodej; původní říjnový příběh neopakován bez nového datovaného vývoje.",
+    "Reddit r/DnB: hot + top/week + new přímo v prohlížeči úspěšně; webový nástroj předtím vracel staré cache.",
+    "Reddit LIR: aktuální r/LetItRollFestival new a brand search přečteny; žádná nová kvalifikovaná diskuse ověřena.",
+    "Reddit LIR zkušenost 22.10.: dostupné komentáře čteny, nové datum v okně nepotvrzeno; neopakováno.",
+    "Reddit WAH: původní r/Drumsheds 8.11., skóre15/25komentářů a dostupné odpovědi čteny; důvod neověřen.",
+    "Instagram DnB District: profily/posty 4.–5.11. úspěšně; Wilkinson throwback, Basstripper a A.M.C rutinní.",
+    "Instagram DnB Universe: veřejný profil čten; dostupný grid neukázal novinku z reportovaného týdne.",
+    "Chase & Status IG: původní tour reminder 5.11. přečten; bez nových dat či oznámení oproti staršímu příběhu.",
+    "LIR Puerto Rico: původní společný IG post 4.11. a plakát potvrzují lineup; starší webový seznam nepřebírán.",
+    "DNB CZ EVENTS: seznam + všech16profilů9.–15.11. reálně načtenoHTTP200; 3relevantní velké akce ve výhledu.",
+    "GoOut/Cross Arakis + SK kalendář: žádný další velký zahraniční DnB booking pro výběr ověřen.",
+    "Toxymoron výslovně vyřazen uživatelem9.11.: nesplňuje relevanci; menší booking není důvod k naplnění kvóty.",
+    "X/YouTube cílené hledání a Liquicity exact video ID; rutinní nahrávky bez zásadního příběhu nezařazeny.",
+    "Modestep4.11.: původníIGcarousel všech8slidů přečten; rozpočet-7805EUR,5000mil,minimálnícrew,VIP ověřeny.",
+    "VenjentReddit6.11.: původnívideo a dostupnékomentáře přečteny; při sběru9.11.306bodů/54komentářů.",
+    "Výběr v3 dle uživatele: bez LIRPuertoRico,DarkshireArena,Aphrodite,EPICPendulum a WAHDrumsheds.",
+    "Venjent: official Reddit embed obtained via Share > Embed; original28s video played.",
+    "Hospital: official shop,30tracks,5whitevinyls; shipping30Nov. Spotify album confirms6Nov2026.",
+    "Hospital: EDM Identity6Nov read in browser; stale prerelease replaced with released Spotify album."
+  ]
+}
