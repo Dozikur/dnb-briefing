@@ -1,0 +1,239 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 46,
+    "window_start": "2026-11-09",
+    "window_end": "2026-11-15",
+    "generated_at": "2026-11-16T11:53:38.987732+00:00"
+  },
+  "headline": "Chase & Status na Coachelle, nové album Sigma a domácí výhled",
+  "executive_summary": [
+    "Chase & Status jsou v nedělním programu Coachelly 2027.",
+    "Sigma vydali album Country Greaze s hosty z britské scény.",
+    "Domácí výhled spojuje akce od Brna přes Prahu a Ostravu po Hradec Králové.",
+    "DnB Direct porovnává podoby DJs mezi GTA V a očekávaným GTA VI."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "chase-status-coachella-lineup-2027",
+          "published_at": "2026-11-11",
+          "event_start": "2027-04-09",
+          "event_end": "2027-04-18",
+          "title": "Chase & Status jsou v lineupu Coachelly 2027",
+          "summary": [
+            "Coachella zveřejnila program pro rok 2027 a mezi nedělními účinkujícími figurují Chase & Status. Festival v kalifornském Indiu proběhne během dvou víkendů 9.–11. a 16.–18. dubna.",
+            "Hlavními jmény jednotlivých dnů jsou Dua Lipa, Tame Impala a SZA. Chase & Status jsou na nedělním programu společně například s Four Tetem a Domem Dollou."
+          ],
+          "why_it_matters": "Zpráva přináší konkrétní informace pro přehled drum and bassové scény a jejího publika.",
+          "recommended_action": "Informační přehled bez dalšího doporučení.",
+          "region": "world",
+          "category": "competition",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DJ Mag – oznámení lineupu",
+              "url": "https://djmag.com/news/coachella-2027-line-announced",
+              "kind": "secondary"
+            },
+            {
+              "name": "DJ Mag Asia – dostupná verze článku",
+              "url": "https://djmag.asia/news/coachella-2027-line-announced",
+              "kind": "secondary"
+            },
+            {
+              "name": "Coachella – oficiální lineup",
+              "url": "https://www.coachella.com/lineup/",
+              "kind": "primary"
+            }
+          ],
+          "media": [],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "sigma-country-greaze-album-2026-11-13",
+          "published_at": "2026-11-13",
+          "event_start": null,
+          "event_end": null,
+          "title": "Sigma vydali album Country Greaze s hosty z britské scény",
+          "summary": [
+            "Sigma vydali 13. listopadu na Day Ones dvanáctiskladbové album Country Greaze. Na desce se objevují Soul II Soul, Danny Byrd, Kurupt FM, Professor Green a Basslayerz.",
+            "BACK 2 LIFE propojuje duo se Soul II Soul; LEGENDARY STATUS spojuje Sigmu s Dannym Byrdem a Kurupt FM. Album vedle drum and bassu pracuje i s vlivy garage, jungle, grime a reggae."
+          ],
+          "why_it_matters": "Doložená informace pro orientaci v dramaturgii, publiku a domácí drum and bass scéně.",
+          "recommended_action": "Informační přehled bez dalšího doporučení.",
+          "region": "global",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Beatport – album",
+              "url": "https://www.beatport.com/release/country-greaze/7451569",
+              "kind": "secondary"
+            },
+            {
+              "name": "Drop The Bass – tracklist a přehrávač",
+              "url": "https://dropthebass.co/releases/sigma-country-greaze",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/album/4LCRdTNQxgkW556DEVY5e9"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "ČR a Slovensko",
+      "items": [
+        {
+          "id": "cz-week47-zahranicni-hoste-2026",
+          "published_at": "2026-11-16",
+          "event_start": "2026-11-16",
+          "event_end": "2026-11-22",
+          "title": "Domácí výhled: Maduk, Modestep, Virus Trinity, Primate i Zardonic",
+          "summary": [
+            "V pondělí 16. listopadu přijede Maduk do brněnské Tržnice a ve středu 18. listopadu vystoupí Modestep na Flédě. U Modestep se rozcházejí uváděné časy, proto doporučujeme ověřit začátek u pořadatele.",
+            "V pátek 20. listopadu slaví ostravský Fabric výročí FSRECS s Audio, Opticalem a Ed Rushem. V Praze tentýž večer hraje Primate v Radost FX a Cross Club hostí Moordoor se Sinister Souls a Skrimorem.",
+            "V sobotu 21. listopadu se DnB MOOD přesouvá do KD Střelnice v Hradci Králové, kde vystoupí Zardonic a Youphoria. Domácí kalendář nemusí zachycovat všechny akce se zahraničními hosty."
+          ],
+          "why_it_matters": "Zpráva přináší konkrétní informace pro přehled drum and bassové scény a jejího publika.",
+          "recommended_action": "Informační přehled bez dalšího doporučení.",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DNBe HearD – kalendář",
+              "url": "https://dnbeheard.cz/kalendar-akci/",
+              "kind": "secondary"
+            },
+            {
+              "name": "Modestep – GoOut",
+              "url": "https://goout.net/en/modestep/szgqoly/",
+              "kind": "primary"
+            },
+            {
+              "name": "Fabric – program",
+              "url": "https://www.fabric.cz/program/",
+              "kind": "primary"
+            },
+            {
+              "name": "Pulsation – Primate",
+              "url": "https://www.pulsation.agency/tickets",
+              "kind": "primary"
+            },
+            {
+              "name": "DnB MOOD – pořadatelský popis",
+              "url": "https://www.sway.events/event/4748",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://assets.sway.events/events/4748/cover/cd542e1e-225f-4644-9b00-bca2a216a47e.png"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Sentiment publika",
+      "items": [
+        {
+          "id": "dnb-direct-gta-dj-promeny-2026",
+          "published_at": "2026-11-13",
+          "event_start": null,
+          "event_end": null,
+          "title": "Jak se změnili DnB DJs mezi GTA V a GTA VI?",
+          "summary": [
+            "DnB Direct zveřejnil 13. listopadu carousel, který porovnává podoby drum and bassových umělců při vydání GTA V v roce 2013 a před vydáním GTA VI. Mezi označenými na prvních snímcích jsou Sub Focus a Andy C.",
+            "Rockstar Games plánuje vydání GTA VI na 19. listopadu 2026. Příspěvek nabízí odlehčený pohled na třináct let proměn scény i samotných interpretů."
+          ],
+          "why_it_matters": "Zpráva přináší konkrétní informace pro přehled drum and bassové scény a jejího publika.",
+          "recommended_action": "Informační přehled bez dalšího doporučení.",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DnB Direct – původní carousel",
+              "url": "https://www.instagram.com/p/Dftrr2piFAU/",
+              "kind": "primary"
+            },
+            {
+              "name": "Rockstar Games – datum vydání",
+              "url": "https://www.rockstargames.com/VI",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Dftrr2piFAU/"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Strategické releasy",
+      "items": []
+    },
+    {
+      "id": "lir_actions",
+      "title": "Doporučené kroky pro LIR",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "Rampage: web; sociální oznámení za týden neúplná",
+    "Liquicity: web; sociální oznámení za týden neúplná",
+    "Darkshire: web; datum oznámení neověřeno",
+    "WAH: Birmingham web; Malta a sociální kanály neúplné",
+    "Reddit r/DnB: hot + top/week a new, webové výpisy starší cache",
+    "Reddit LetItRollFestival: přímé vlákno a komentáře v prohlížeči",
+    "DNBe HearD: kalendář; GoOut, kluby, ticketing",
+    "Drum and Bass UK, Beatport, Drop The Bass, Dubai 7s, EFG London Jazz Festival",
+    "DJ Mag a Coachella – lineup 2027",
+    "DnB Direct Instagram: příspěvek a viditelné komentáře",
+    "Rockstar Games – plánované datum GTA VI"
+  ]
+}
