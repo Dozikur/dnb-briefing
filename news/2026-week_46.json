@@ -52,7 +52,12 @@
               "kind": "primary"
             }
           ],
-          "media": [],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://aegwebprod.blob.core.windows.net/content/coachella-2027/coachella-2027-poster.jpg"
+            }
+          ],
           "tags": [
             "drum and bass"
           ]
@@ -76,7 +81,7 @@
           "title": "Sigma vydali album Country Greaze s hosty z britské scény",
           "summary": [
             "Sigma vydali 13. listopadu na Day Ones dvanáctiskladbové album Country Greaze. Na desce se objevují Soul II Soul, Danny Byrd, Kurupt FM, Professor Green a Basslayerz.",
-            "BACK 2 LIFE propojuje duo se Soul II Soul; LEGENDARY STATUS spojuje Sigmu s Dannym Byrdem a Kurupt FM. Album vedle drum and bassu pracuje i s vlivy garage, jungle, grime a reggae."
+            "Album vedle drum and bassu pracuje i s vlivy garage, jungle, grime a reggae."
           ],
           "why_it_matters": "Doložená informace pro orientaci v dramaturgii, publiku a domácí drum and bass scéně.",
           "recommended_action": "Informační přehled bez dalšího doporučení.",
@@ -119,7 +124,7 @@
           "event_end": "2026-11-22",
           "title": "Domácí výhled: Maduk, Modestep, Virus Trinity, Primate i Zardonic",
           "summary": [
-            "V pondělí 16. listopadu přijede Maduk do brněnské Tržnice a ve středu 18. listopadu vystoupí Modestep na Flédě. U Modestep se rozcházejí uváděné časy, proto doporučujeme ověřit začátek u pořadatele.",
+            "V pondělí 16. listopadu přijede Maduk do brněnské Tržnice a ve středu 18. listopadu vystoupí Modestep na Flédě.",
             "V pátek 20. listopadu slaví ostravský Fabric výročí FSRECS s Audio, Opticalem a Ed Rushem. V Praze tentýž večer hraje Primate v Radost FX a Cross Club hostí Moordoor se Sinister Souls a Skrimorem.",
             "V sobotu 21. listopadu se DnB MOOD přesouvá do KD Střelnice v Hradci Králové, kde vystoupí Zardonic a Youphoria. Domácí kalendář nemusí zachycovat všechny akce se zahraničními hosty."
           ],
