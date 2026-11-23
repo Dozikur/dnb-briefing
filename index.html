@@ -243,6 +243,16 @@
           </div>` : "";
       }
 
+      if (media.type === "audio") {
+        if (!new URL(url).pathname.toLowerCase().endsWith(".mp3")) return "";
+        return `<div class="my-5">
+          <p class="mb-2 text-sm text-slate-300">Oficiální zvuková ukázka remixu</p>
+          <audio class="w-full" controls preload="none" aria-label="Oficiální zvuková ukázka remixu" src="${esc(url)}">
+            <a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Otevřít zvukovou ukázku</a>
+          </audio>
+        </div>`;
+      }
+
       if (media.type === "soundcloud") {
         return `
           <div class="my-5">

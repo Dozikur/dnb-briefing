@@ -1,0 +1,441 @@
+{
+  "schema_version": 2,
+  "period": {
+    "year": 2026,
+    "week": 47,
+    "window_start": "2026-11-16",
+    "window_end": "2026-11-22",
+    "generated_at": "2026-11-23T11:23:03.187215+00:00"
+  },
+  "headline": "Chase & Status vysoko na Glastonbury, očekávání od show a český týdenní výhled",
+  "executive_summary": [
+    "Chase & Status jsou ve druhém řádku plakátu Glastonbury 2027.",
+    "Bristolské reakce upozorňují na rozdíl mezi album-launch DJ setem a očekáváním celého večera.",
+    "DnB zastupují v nominacích Best of British Lens, Double O a Metalheadz.",
+    "Český výhled pokrývá šest akcí; Slovensko je podle aktuálního zadání vynechané.",
+    "Todd Terry chystá remix Blackout; The Selector nabízí sety bez samostatného zdroje Let It Roll."
+  ],
+  "sections": [
+    {
+      "id": "competition",
+      "title": "Přímá konkurence",
+      "items": [
+        {
+          "id": "chase-status-glastonbury-2027-second-poster-row",
+          "published_at": "2026-11-18",
+          "event_start": "2027-06-23",
+          "event_end": "2027-06-27",
+          "title": "Chase & Status jsou ve druhém řádku plakátu Glastonbury, nad The xx i Kraftwerk",
+          "summary": [
+            "Glastonbury zveřejnilo 18. listopadu první plakát pro ročník 2027. Chase & Status jsou ve druhém řádku společně s Massive Attack, Sombr a Little Simz, hned pod Samem Fenderem, Harrym Stylesem, Billie Eilish a Cher. Graficky stojí nad The xx, Lily Allen, Kraftwerk, Basement Jaxx, Bonobem i Underworld; pořadí plakátu však samo nepotvrzuje konkrétní stage ani čas vystoupení.",
+            "Poslední účast doložená oficiálním programem je z roku 2022: Carl Cox B2B Chase & Status (Jungle Set) uzavírali páteční Arcadii od 01:00 do 03:00, v noci z 24. na 25. června. Na tehdejším samostatném plakátu Arcadie byli ve druhém řádku pod Calvinem Harrisem. Plakát ovšem výslovně uváděl abecední řazení A–Z, takže tento řádek nelze vydávat za oficiální výkonnostní tier."
+          ],
+          "why_it_matters": "Konkrétní doložené informace pro týdenní přehled drum and bassové scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "europe",
+          "category": "competition",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Glastonbury – první plakát 2027",
+              "url": "https://www.glastonburyfestivals.co.uk/news/glastonbury-2027-line-up-so-far/",
+              "kind": "primary"
+            },
+            {
+              "name": "Glastonbury – program 2022",
+              "url": "https://www.glastonburyfestivals.co.uk/line-up/line-up-2022/",
+              "kind": "primary"
+            },
+            {
+              "name": "Glastonbury – původní plakát Arcadia 2022",
+              "url": "https://www.glastonburyfestivals.co.uk/news/the-arcadia-spider-is-back-with-an-incredible-line-up/",
+              "kind": "primary"
+            },
+            {
+              "name": "Glastonbury – program 2024",
+              "url": "https://www.glastonburyfestivals.co.uk/line-up/line-up-2024/",
+              "kind": "primary"
+            },
+            {
+              "name": "Glastonbury – program 2025",
+              "url": "https://www.glastonburyfestivals.co.uk/line-up/line-up-2025/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.glastonburyfestivals.co.uk/wp-content/uploads/2026/11/Glastonbury2027_socials_18.11.26-1-768x1024.png"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "festival_industry",
+      "title": "Festivalový průmysl",
+      "items": []
+    },
+    {
+      "id": "dnb_scene",
+      "title": "DnB scéna",
+      "items": [
+        {
+          "id": "chase-status-bristol-release-show-expectations",
+          "published_at": "2026-11-17",
+          "event_start": "2026-11-16",
+          "event_end": "2026-11-16",
+          "title": "Hodina Chase & Status místo tříhodinového večera: Bristol řeší očekávání od release show",
+          "summary": [
+            "Autor vlákna na r/DnB popisuje zklamání z bristolské release show k albu Generic Everything. Podle jeho zkušenosti očekával program 19:30–22:30, ale Chase & Status hráli jen 20:30–21:30 a nebyl žádný předskokan. Jde o jeho popis, nikoli nezávisle ověřený průběh celé akce.",
+            "Další návštěvník píše, že si časy předem vyžádal e-mailem a věděl o otevření v 19:30, setu ve 20:30 a konci ve 21:30. Několik reakcí upozorňuje, že šlo o krátký album-launch DJ set, u něhož bylo možné očekávat 45–60 minut. Jiní kritizují chybějící warm-up a nejasnost informací napříč kanály.",
+            "Ohlasy na další zastávky nejsou jednotné: diskutující z Leedsu a Dundee chválí zážitek, někteří zmiňují předskokana či vstupenku spojenou s albem. Debata tak rozlišuje délku a formát release akce, konkrétní servis pořadatele i osobní hudební vkus; nejde o reprezentativní hodnocení všech show dua."
+          ],
+          "why_it_matters": "Konkrétní doložené informace pro týdenní přehled drum and bassové scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "audience_sentiment",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Reddit – původní vlákno a dostupné komentáře",
+              "url": "https://www.reddit.com/r/DnB/comments/1xy5qt0/chase_status_generic_everything_release_show/",
+              "kind": "community"
+            },
+            {
+              "name": "DICE – původní bristolská DJ událost",
+              "url": "https://dice.fm/event/mxw2gv-chase-status-dj-set-16th-nov-the-prospect-building-bristol-tickets",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://dozikur.github.io/dnb-briefing/news/assets/2026-week_47/chase-status.jpg"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        },
+        {
+          "id": "djmag-best-british-2026-dnb-nominations",
+          "published_at": "2026-11-18",
+          "event_start": null,
+          "event_end": null,
+          "title": "Best of British 2026: Lens, Double O a Metalheadz mezi mezižánrovými nominacemi",
+          "summary": [
+            "DJ Mag 18. listopadu představil nominace na dvacátý ročník Best of British Awards. Drum & bass a jungle zastupují Lens v Best DJ, Double O v Best Producer a Metalheadz v Best Label. Nia Archives je nominovaná za Get Me Down s Jorjou Smith v Best Track.",
+            "Fez The Kid figuruje v Breakthrough Producer, Maddy V v Best MC/Vocalist a Jolie P v Breakthrough MC/Vocalist. Hospital 30 má nominaci v Best Compilation – další výrazné zastoupení DnB vedle jednotlivých interpretů a labelů.",
+            "K širším přesahům patří Riko Dan v Best MC/Vocalist a DJ-Kicks: Djrum v Best Compilation. Gottwood a We Out Here jsou mezi nominovanými festivaly; jejich program přesahuje jungle a DnB a nejde o žánrově specializované ceny.",
+            "Ceny mají 17 kategorií. Hlasování končí 27. listopadu ve 12:00 GMT, tedy ve 13:00 SEČ. Vyhlášení proběhne 17. prosince v londýnském The Steel Yard. Nominace jsou výběrem kandidátů pro hlasování, nikoli konečnými výsledky."
+          ],
+          "why_it_matters": "Konkrétní doložené informace pro týdenní přehled drum and bassové scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DJ Mag – úplné oficiální nominace, 18. listopadu",
+              "url": "https://djmag.com/news/dj-mags-best-of-british-awards-2026-voting-now-open",
+              "kind": "primary"
+            },
+            {
+              "name": "Flavourmag – nominace, 18. listopadu",
+              "url": "https://www.flavourmag.co.uk/dj-mag-best-of-british-awards-2026-nominees/",
+              "kind": "secondary"
+            },
+            {
+              "name": "London Post – termíny a kategorie",
+              "url": "https://london-post.co.uk/dj-mag-announces-nominations-for-20th-best-of-british-awards/",
+              "kind": "secondary"
+            },
+            {
+              "name": "DJ Mag – oficiální hlasovací web",
+              "url": "https://bestofbritishvote.djmag.com/node/1",
+              "kind": "primary"
+            },
+            {
+              "name": "DJ Mag – původní nominační carousel",
+              "url": "https://www.instagram.com/p/Df4dMdukZxv/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://www.flavourmag.co.uk/wp-content/uploads/2026/11/dj-mag-best-of-british-awards-2026-nominees.jpg"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Df4dMdukZxv/"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        },
+        {
+          "id": "gta6-ukf-macky-gee-unconfirmed-radio-claims",
+          "published_at": "2026-11-19",
+          "event_start": null,
+          "event_end": null,
+          "title": "UKF Radio ani Macky Gee nejsou v oficiálních hudebních titulcích GTA VI",
+          "summary": [
+            "UKF svůj carousel z 19. listopadu představuje jako výběr skladeb, které by fanoušci chtěli pro hypotetickou UKF stanici v GTA VI. V popisku zároveň výslovně píše, že hra bassovou stanici nemá. Nejde o oznámení oficiálního rádia ani soundtracku.",
+            "Druhý příspěvek z 18. listopadu zveřejnil sám Macky Gee. Video pokládá otázku, zda je na rádiu GTA 6, a popisek propojuje jeho jméno s hrou. Oficiální hudební titulky Rockstaru ale Mackyho Gee ani UKF Radio neuvádějí. Video tedy není dokladem jeho zařazení do hry; nejde o příspěvek DnB Allstars.",
+            "Rockstar naopak uvádí Kenya Grace – Mr. Cool na Flash FM a 4hero – Star Chasers na Worldwide FM. Pro DnB zprávu jsou podstatné tyto doložené skladby. Tvrzení o samostatném UKF rádiu nebo potvrzeném Mackym Gee dostupné oficiální podklady nepodporují."
+          ],
+          "why_it_matters": "Konkrétní doložené informace pro týdenní přehled drum and bassové scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Rockstar Games – oficiální titulky GTA VI",
+              "url": "https://www.rockstargames.com/VI/credits",
+              "kind": "primary"
+            },
+            {
+              "name": "UKF – původní hypotetický výběr skladeb",
+              "url": "https://www.instagram.com/p/Df672tBDX_U/",
+              "kind": "primary"
+            },
+            {
+              "name": "Macky Gee – původní video",
+              "url": "https://www.instagram.com/p/Df4chcMIRd9/",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Df672tBDX_U/"
+            },
+            {
+              "type": "instagram",
+              "url": "https://www.instagram.com/p/Df4chcMIRd9/"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cz_sk",
+      "title": "Česko a Slovensko",
+      "items": [
+        {
+          "id": "cz-week48-complete-foreign-guests-outlook",
+          "published_at": "2026-11-23",
+          "event_start": "2026-11-23",
+          "event_end": "2026-11-29",
+          "title": "Český týdenní výhled: Venjent, Sub Zero, Eatbrain, Magnetude, Kanine",
+          "summary": [
+            "Pondělí 23. listopadu: Praha, ROXY – britský Venjent s Live Band Tour, klub uvádí začátek v 19:00.",
+            "Pátek 27. listopadu: Praha, Cross Club – britský Sub Zero na Drumstation. Ostrava, Marley Club – anglicko-ruské duo Magnetude na Shapeless Audio Warriors 3. Olomouc, Sklub – Hoofbeats × Eatbrain: 15 Years Anniversary s Jade Venom z Maďarska, ukrajinskými Agressor Bunx a britským Prolixem; spolu s Qo vystoupí také Kryptomedic.",
+            "Sobota 28. listopadu: Praha, ROXY – britský Kanine v rámci Reflections Tour od 23:00. Brno, Fléda – Venjent Live presented by Let It Roll."
+          ],
+          "why_it_matters": "published_at je datum sestavení týdenního výhledu, nikoli datum původních oznámení jednotlivých akcí.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "cz_sk",
+          "category": "cz_sk",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "DNBe HearD – týdenní kalendář",
+              "url": "https://dnbeheard.cz/kalendar-akci/",
+              "kind": "secondary"
+            },
+            {
+              "name": "ROXY – program a vstupenky",
+              "url": "https://www.roxy.cz/tickets/",
+              "kind": "primary"
+            },
+            {
+              "name": "Cross Club – program",
+              "url": "https://www.crossclub.cz/cs/program/",
+              "kind": "primary"
+            },
+            {
+              "name": "Let It Roll – Venjent v Brně",
+              "url": "https://letitroll.cz/akce/venjent-live-presented-by-let-it-roll/",
+              "kind": "primary"
+            },
+            {
+              "name": "Hoofbeats / Eatbrain – pořadatelská událost",
+              "url": "https://www.sway.events/event/4753",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://letitroll.cz/wp-content/uploads/2026/09/venjent_web.jpg"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience_sentiment",
+      "title": "Nálada publika",
+      "items": []
+    },
+    {
+      "id": "strategic_releases",
+      "title": "Hudba a tip na poslech",
+      "items": [
+        {
+          "id": "todd-terry-blackout-voltage-remix-announcement",
+          "published_at": "2026-11-19",
+          "event_start": null,
+          "event_end": null,
+          "title": "Todd Terry vrací svou DnB skladbu Blackout z roku 1999. První remix připravil Voltage",
+          "summary": [
+            "Viper Recordings připravuje návrat skladby Blackout, kterou Todd Terry vydal v roce 1999 jako neobvyklou drum & bassovou kapitolu své tvorby. Voltage remix má podle oficiálního obchodu vyjít 27. listopadu pod katalogovým číslem VPR415.",
+            "Oznámení představuje také nové verze od Futurebounda a Horizon a návrat originálu. Jungle Drum & Bass uvádí společné EP na leden 2027; Viper už samostatně vypisuje Futureboundův remix na 18. prosince. Jednotlivé termíny tedy označují různé části postupného vydávání.",
+            "K poslechu připojujeme původní Blackout a oficiální ukázku chystaného Voltage remixu od Viper Recordings. Celý remix vychází 27. listopadu."
+          ],
+          "why_it_matters": "Konkrétní doložené informace pro týdenní přehled drum and bassové scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "strategic_release",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "Viper Recordings – poslechnout ukázku Blackout (Voltage Remix)",
+              "url": "https://store.viperrecordings.co.uk/download/vpr415",
+              "kind": "primary"
+            },
+            {
+              "name": "Jungle Drum & Bass – původní oznámení",
+              "url": "https://www.jungledrumandbass.co.uk/post/todd-terry-blackout-voltage-remix",
+              "kind": "secondary"
+            },
+            {
+              "name": "Viper Recordings – katalog a další remix",
+              "url": "https://store.viperrecordings.co.uk/downloads",
+              "kind": "primary"
+            },
+            {
+              "name": "Todd Terry – Blackout, původní nahrávka",
+              "url": "https://open.spotify.com/track/3qNnHufeIIc9wd2pbVoZ4s",
+              "kind": "primary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://products.dbapp.io/viperrecordings/VPR415.jpg"
+            },
+            {
+              "type": "spotify",
+              "url": "https://open.spotify.com/track/3qNnHufeIIc9wd2pbVoZ4s"
+            },
+            {
+              "type": "audio",
+              "url": "https://s3.eu-west-2.amazonaws.com/databeats-samples/viperrecordings/vpr415-001-s.mp3"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        },
+        {
+          "id": "the-selector-dj-sets-discovery-no-lir-source",
+          "published_at": "2026-11-18",
+          "event_start": null,
+          "event_end": null,
+          "title": "Tip na poslech: The Selector vybírá z více než 70 tisíc setů. Let It Roll mezi zdroji není",
+          "summary": [
+            "The Selector od producenta The Cat Rave náhodně vybírá DJ sety z veřejných YouTube kanálů. Mixmag při představení uváděl 72 458 setů z 58 zdrojů. Výběr lze omezit žánrem, délkou nebo režimy Popular, Hidden Gems a Niche; uložené sety zůstávají v daném prohlížeči bez nutnosti registrace.",
+            "Ve zveřejněném seznamu zdrojů jsou Rampage, DnB Allstars, Hospital Records, Metalheadz, Critical Music, UKF On Air a Liquicity. Let It Roll mezi 58 kanály uvedené není. Neznamená to, že se v jiném kanálu nemůže objevit set natočený na LIR; samostatný oficiální archiv LIR ale služba v tomto seznamu nenabízí."
+          ],
+          "why_it_matters": "Konkrétní doložené informace pro týdenní přehled drum and bassové scény.",
+          "recommended_action": "Bez akce, pouze informační přehled",
+          "region": "global",
+          "category": "dnb_scene",
+          "competitors": [],
+          "confidence": "confirmed",
+          "sources": [
+            {
+              "name": "The Selector – nástroj a seznam zdrojových kanálů",
+              "url": "https://thecatrave.com/selector",
+              "kind": "primary"
+            },
+            {
+              "name": "Mixmag Asia – zpráva z 18. listopadu",
+              "url": "https://mixmag.asia/read/new-music-discovery-website-lets-you-scroll-through-over-70-000-dj-sets-news",
+              "kind": "secondary"
+            }
+          ],
+          "media": [
+            {
+              "type": "image",
+              "url": "https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/assets/images/app-selector.jpg?fit=cover&width=660&s=u3A83yuMDkF0JKWocmWZZCW0aIHMDPQTX8ujxTyCNv0"
+            }
+          ],
+          "tags": [
+            "drum and bass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lir_actions",
+      "title": "Interní akce pro LIR a Beatworx",
+      "items": []
+    }
+  ],
+  "sources_scanned": [
+    "Rampage: web, news, Weekend a Open Air; hlavní lineup už v týdnu 45; IG v tomto běhu neověřen",
+    "Liquicity: web/events/festival; nové datum oznámení nedoloženo; IG neověřen",
+    "Darkshire: web/info/tickets; datum čerstvého oznámení nedoloženo; IG neověřen",
+    "WAH: oficiální web, Malta, In The City, Skiddle; přesun do Gunnersbury ověřen; IG feed starší",
+    "UKF: výpis a rozhovor Klinical; album EDEN potvrzeno na Bandcampu, hráč celého releasu neověřen",
+    "Drum & Bass UK, Kmag, LoveThatBass, EDM Identity, We Are Studio: výpisy; úplný týdenní sweep nedokončen",
+    "DJ Mag, Beatportal, Data Transmission, Musicserver: výpisy; Mixmag a Rave.cz 403; RA jen navigace",
+    "Critical, Metalheadz, Hospital, North Quarter, 1985, Sofa Sound, VISION: weby, dílčí kontrola",
+    "Dispatch: 403; Shogun: chyba webu; SUNANDBASS web; Liquicity katalog a UKF/Pilot sweep neúplný",
+    "Beats for Love a DnB Allstars: weby; Hospitality chyba; Outlook 403; data nových oznámení neověřena",
+    "DNBe HearD: kalendář 23.–29. 11.; GoOut, ROXY, Cross, LIR, Venjent, Pulsation, Sway a smsticket",
+    "Reddit r/DnB: hot + top/week",
+    "Reddit hot/new: cache 3 týdny; top/week starší; hledání LIR a permalink solo přečten, nové reakce nedoloženy",
+    "Instagram DnB District/Universe: chyby; Chase & Status 429; prohlížeč nedostupný dle diagnostiky",
+    "Reddit související komunity, X a YouTube: úplný aktuální sweep nedokončen; absence novinek netvrzena",
+    "Glastonbury: plakát 2027 a programy 2022–2025; vizuální kontrola druhého řádku a Arcadia slotu",
+    "Reddit: konkrétní Bristol vlákno a dostupné komentáře; absolutní timestamp a metriky nezobrazeny",
+    "Best of British: Flavourmag, London Post a hlasovací web; část MC/breakthrough nominací neověřena",
+    "Rockstar GTA VI credits: UKF/Macky nenalezeni, Mr. Cool a Star Chasers doloženy",
+    "IG Df672tBDX_U a Df4chcMIRd9: cache miss, přesný kontext neověřen; neprezentovat jako přečtené",
+    "Viper: oficiální VPR415 a downloads; JDNB metadata datum 19. 11.; player v podporovaném formátu chybí",
+    "The Selector: veřejný seznam všech 58 kanálů; LIR neuveden; Mixmag Asia článek dostupný",
+    "Aktualizace v3: UKF Df672tBDX_U a Macky Gee Df4chcMIRd9 přímo otevřeny, captions, obraz a relevantní komentáře přečteny;",
+    "původní cache miss překonán. Macky timestamp 2026-11-18T11:55:18Z.",
+    "Aktualizace v3: plný primární článek DJ Mag přečten v prohlížeči; Fez The Kid, Maddy V, Jolie P a Hospital 30 ověřeny.",
+    "Aktualizace v3: přesné hledání Blackout Voltage na YouTube/SoundCloud bez odpovídajícího výsledku; veřejný profil Viper",
+    "zkontrolován bez nalezeného původního IG oznámení. VPR415 má vlastní Databeats preview, není podporovaným embedem",
+    "stávajícího rendereru.",
+    "V4: uživatel schválil publikaci po konkrétních škrtech a doplnění médií.",
+    "V4: obrázek Bristol od uživatele stažen a vizuálně ověřen; expirující CDN nahrazena vlastní kopií.",
+    "V4: carousel DJ Mag Df4dMdukZxv přímo přečten; obrázek The Selector od uživatele vizuálně ověřen.",
+    "V4: originál Blackout na Spotify, album Resolutions (1999); remix jako oficiální Databeats ukázka z VPR415."
+  ]
+}

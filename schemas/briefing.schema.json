@@ -87,7 +87,7 @@
       "additionalProperties": false,
       "required": ["type", "url"],
       "properties": {
-        "type": { "enum": ["image", "instagram", "youtube", "spotify", "soundcloud", "reddit"] },
+        "type": { "enum": ["image", "instagram", "youtube", "spotify", "soundcloud", "reddit", "audio"] },
         "url": { "type": "string", "format": "uri", "pattern": "^https://" }
       }
     }

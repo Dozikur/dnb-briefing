@@ -24,7 +24,7 @@ CATEGORIES = {
 REGIONS = {"world", "europe", "cz_sk", "global"}
 CONFIDENCE = {"confirmed", "probable", "unverified"}
 SOURCE_KINDS = {"primary", "secondary", "community"}
-MEDIA_TYPES = {"image", "instagram", "youtube", "spotify", "soundcloud", "reddit"}
+MEDIA_TYPES = {"image", "instagram", "youtube", "spotify", "soundcloud", "reddit", "audio"}
 EDITORIAL_COVERAGE_START = (2026, 29)
 
 
