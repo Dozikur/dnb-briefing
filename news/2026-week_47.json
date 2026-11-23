@@ -124,6 +124,50 @@
           ]
         },
         {
+  "id": "worship-boiler-room-debut-budapest-2026",
+  "published_at": "2026-11-20",
+  "event_start": "2026-11-19",
+  "event_end": "2026-11-20",
+  "title": "Worship debutovali v Boiler Roomu. Premiéra proběhla v Budapešti",
+  "summary": [
+    "Worship mají za sebou premiéru pod hlavičkou Boiler Room. Kolektiv tvořený Sub Focusem, Dimensionem, Culture Shockem a 1991 vystoupil 19. listopadu v budapešťském klubu Arzenál. Akci připravili Otherside a Arzenál ve spolupráci s Boiler Room.",
+    "Worship debut potvrdili 20. listopadu krátkým videem na Instagramu a oznámili, že stream bude následovat. Konkrétní datum zveřejnění v příspěvku neuvedli. Pořadatelé už v pozvánce avizovali natáčení večera pro kanál Boiler Room."
+  ],
+  "why_it_matters": "Společný debut Worship přináší současný taneční drum & bass na platformu Boiler Room a naváže na něj zveřejnění záznamu.",
+  "recommended_action": "Bez akce, pouze informační přehled",
+  "region": "europe",
+  "category": "dnb_scene",
+  "competitors": [],
+  "confidence": "confirmed",
+  "sources": [
+    {
+      "name": "Resident Advisor – Boiler Room Budapest w/WORSHIP",
+      "url": "https://ra.co/events/2569443",
+      "kind": "primary"
+    },
+    {
+      "name": "Worship – potvrzení debutu a avízo streamu",
+      "url": "https://www.instagram.com/p/Df-COL0KVUA/",
+      "kind": "primary"
+    }
+  ],
+  "media": [
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/p/Df-COL0KVUA/"
+    }
+  ],
+  "tags": [
+    "Worship",
+    "Boiler Room",
+    "Sub Focus",
+    "Dimension",
+    "Culture Shock",
+    "1991",
+    "Budapešť"
+  ]
+},
+        {
           "id": "djmag-best-british-2026-dnb-nominations",
           "published_at": "2026-11-18",
           "event_start": null,
